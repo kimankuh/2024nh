@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* v1.0 | 2022-06-02 */
+
+
+/*
+	대분류
+*/
+/* 소분류 */
+
+
+/*
+	color
+*/
+.color01 { color: #ea3636 !important; }
+.color02 { color: #009870 !important; } /* A11Y 240214 명도대비 컬러 수정 */
+.color03 { color: #0066b1 !important; }
+.color04 { color: #1e4066 !important; }
+.color05 { color: #707070 !important; }
+.color06 { color: #f06000 !important; } /* A11Y 240320 명도대비 컬러 수정 */
+.color07 { color: #303030 !important; }
+.color09 { color: #1e9d70 !important; }
+
+
+
+/*
+	정렬
+*/
+/* 세로정렬 */
+.va_t { vertical-align: top !important; }
+.va_c { vertical-align: middle !important; }
+.va_b { vertical-align: bottom !important; }
+
+/* 가로정렬 */
+.txt_l { text-align: left !important; }
+.txt_c { text-align: center !important; }
+.txt_r { text-align: right !important; }
+
+
+
+/*
+	width
+*/
+/* % */
+.w100per { width: 100% !important; }
+
+
+
+/*
+	margin
+*/
+.mt0 { margin-top: 0px !important; }
+.mt15 { margin-top: 15px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt30 { margin-top: 30px !important; }
+.mt40 { margin-top: 40px !important; }
+
+
+
+/*
+	줄떨어짐
+*/
+.wordk { word-break: keep-all !important; }
+
+
+/*
+	텍스트
+*/
+.fwb{font-weight:bold; }
