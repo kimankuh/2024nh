@@ -94,7 +94,7 @@ em {font-style:normal;}
 [data-status="완료"]:before {content:'완료';color:var(--primaryColor);}
 [data-status="삭제"]:before {content:'삭제';color:#999;}
 .del-tr *,
-.del-tr:hover * {text-decoration:line-through;background-color:#f7f7f7;}
+.del-tr .link-id:hover {text-decoration:line-through;background-color:#f7f7f7;}
 
 /* status */
 .status-item {display:inline-block;padding:3px 10px;font-size:13px;color:#666;background-color:#eee;border-radius:12px;}
