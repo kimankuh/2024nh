@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+<!-- 2022-03-31 수정 : 페이지에서 팝업으로 변경 -->
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+
+					<div class="process_end_part">
+						<div class="icon_box">
+							<span class="ebicon icon_fail"></span>
+						</div>
+						<div class="title_box">
+							<h2 class="ebtitle2">한도조회 실패</h2>
+						</div>
+						<div class="desc_box">
+							<p>한도조회가 실패하였습니다.</p>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+
+                    <div class="btn_box">
+                        <div class="box_t">
+                            <button type="button" class="ebbtn btn_main ty_light">한도조회 재시도</button>
+                        </div>
+                        <div class="box_b">
+                            <a href="#" class="ebbtn btn_main ty_bg">홈으로 이동</a>
+                        </div>
+                    </div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<!-- //2022-03-31 수정 : 페이지에서 팝업으로 변경 -->
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+h1,.h1{font-size:3rem;font-weight:bold;color:#111;line-height:3.8rem}
+h2,.h2{font-size:2.2rem;font-weight:bold;color:#111;line-height:3rem}
+h3,.h3{font-size:2rem;font-weight:bold;color:#111;line-height:2.8rem}
+h4,.h4{font-size:1.6rem;font-weight:bold;color:#111;line-height:2.4rem}
+h5,.h5{font-size:1.5rem;font-weight:bold;color:#111}
+
+.conv-menu{display:flex;min-width:156rem;padding:3rem;border-bottom:1px dashed #08862a}
+.conv-menu h1{line-height:2.8rem;font-size:1.8rem;color:#08862a}
+.conv-menu nav{display:flex;align-items:center;margin-left:2rem}
+.conv-menu nav a{display:block;padding:.1rem 2rem .3rem;border-left:1px solid #111;font-size:1.3rem;color:#111}
+
+.conv-cont{display:flex;flex-wrap:wrap;min-width:156rem;padding-bottom:20rem}/* padding-bottom = 페이지 가독성 */
+.conv-cont > .conv-col{width:100%;max-width:25%;min-width:39rem;padding:0 1.5rem}
+.conv-cont > .conv-col.col33{max-width:33.33%}
+.conv-cont > .conv-col.col50{max-width:50%}
+.conv-cont > .conv-col.col100{max-width:100%}
+.conv-col > h4.conv-title{padding-bottom:1rem;margin:2.4rem 0 1.6rem;border-bottom:1px solid #ccc;font-size:2rem}
+.conv-col > h5.conv-title{position:relative;padding:0 0 1.6rem 1.3rem;margin:3rem 0 1.6rem;color:#6c757d;border-bottom:1px solid #f2f2f4}
+.conv-col > h5.conv-title::before{content:'';position:absolute;left:0;top:.4rem;width:.6rem;height:1.5rem;background-color:#6c757d}
+.conv-col > h5.conv-title:empty{padding:0;margin:0;border-bottom:none}
+.conv-col > h5.conv-title:empty::before{display:none}
+
+.ol-list li{font-size:1.3rem;color:#111}
+.ul-list li{position:relative;padding-left:1rem;font-size:1.3rem;color:#111}
+.ul-list li::before{content:'-';position:absolute;left:0;top:0}
+[class$="-list"] [class$="-list"]{padding:1rem}
+
+.text{font-size:1.3rem;color:#666}
+.text + [class$="-list"]{margin-top:1.5rem}
+[class$="-list"] + .text{margin-top:1.5rem}
+
+.conv-col .pre{margin:1.5rem 0}
+.conv-col .conv-code{display:block;overflow-x:auto;width:100%;padding:0 .8rem 2rem;font-size:1.4rem;color:#d6deeb;background-color:#011627;letter-spacing:.1rem;word-break:break-all}
+.conv-col .conv-code span{font-size:inherit;line-height:normal}
+.conv-col .conv-code .code-comment{color:#637777;font-style:italic}
+.conv-col .conv-code .code-tag{color:#7fdbca}
+.conv-col .conv-code .code-string{color:#ecc48d}
+
+.table{margin-top:2rem;border-top:1px solid #aeafb4;text-align:left}
+.table.text-center thead th,
+.table.text-center tbody td{text-align:center;vertical-align:middle}
+.table th, 
+.table tbody td{font-size:1.4rem;line-height:1.8rem;padding:1rem 0.4rem;color:#111;border-left:1px solid #d3d3d9;border-right:1px solid #d3d3d9;border-bottom:1px solid #d3d3d9;vertical-align:middle}
+.table th{background-color:#f6f6f6;color:#646873;font-weight:normal;vertical-align:middle}
+.table th:first-child,
+.table td:first-child{border-left:none}
+.table th:last-child,
+.table td:last-child{border-right:none}
+
+.tree {width:70%;min-width:50rem;padding:5rem}
+.tree li > li:first-child {padding-left:0}
+.tree li {position:relative;margin-left:0;padding-left:2rem;list-style:none;line-height:1.8}
+.tree li a{display:block}
+.tree li::before {content:'\e94b';display:block;position:absolute;left:0;font-size:1.5rem;height:1.6em;margin-top:.2rem;font-family:'allonebank'}
+.tree li.treechecked::before {content:'\e949'}
+.tree li .file {margin-left:-1px !important;padding-left:2rem}
+.tree li .file::before {content:'\e983';display:block;position:absolute;left:-.3rem;line-height:3rem;font-size:2.4rem;color:#333;font-family:'allonebank'}
+.tree li .file a {position:relative;font-size:1.6rem;color:#555;}
+.tree li .file a::before {content:'';position:absolute;left:0;top:100%;width:100%;height:1px;background-color:#ccc}
+.tree li .file a::after {position:absolute;right:0;top:0;content:attr(data-desc);color:#08862a}
+.tree li .file a.comment-directory{color:#ddd}
+.tree li input {position:absolute;left:0;top:0;margin-left:0;opacity:0;z-index:2;height:1.6em;width:1.6em}
+.tree li input + ol {padding:0;position:relative}
+.tree li input + ol > li {display:none}
+.tree li label {display:block;font-size:1.6rem;color:#666}
+.tree li label:hover,
+.tree li .file a:hover	 {color:#11a4b3}
+.tree li input:checked + ol {height:auto}
+.tree li input:checked + ol > li {display:block}
+.tree li input:checked + ol > li:last-child {margin:0}
+
+.underline-link{border-bottom:1px solid #08862a;color:#08862a;}

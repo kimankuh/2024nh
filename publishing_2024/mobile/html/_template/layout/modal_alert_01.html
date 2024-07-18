@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆사용가이드
+	-기본얼럿 : 화면설계서에 문구만 있는 경우 사용
+	-완료얼럿 : 화면설계서에 문구만 있더라도 완료하는 내용인 경우 사용
+	-주의얼럿 : 화면설계서에 느낌표 아이콘 있는 경우 사용
+
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_alert"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+			<div class="popup_body">
+				<div class="popup_container">
+
+					<div class="alert_title_part">
+                        <div class="icon_box">
+                            <span class="ebicon icon_fail"></span>
+                        </div>
+						<p class="title">타이틀타이틀타이틀타이틀</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+					<button type="button" class="ebbtn btn_cancel">취소</button>
+					<button type="button" class="ebbtn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	 //팝업호출
+	 popupFunc('#tempId').show();
+</script>
+
+
+</body>
+</html>

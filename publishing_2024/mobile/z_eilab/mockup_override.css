@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* EiLAB Publishing Guide | version 5.5.3 | date 2021-06-08 since 2016.12.23 */
+
+/********************************************************************************************************
+	mockup override (프로젝트마다 커스텀)
+*********************************************************************************************************/
+/* 프로젝트로고 */
+div.layout div.header div.info_project .logo { width: 197px; }
+div.header div.info_project .subtitle { margin-left: 0; padding-top: 6px;  }
+div.header div.info_project .title { display: block; margin-top: 5px; }
+div.layout div.info_project .eilab { width: 57px; position: absolute; top: 3px; right: 6px; }
+
+/* 목업타이틀 배경색 */
+.bg_main { color: #ffffff !important; background: #44445c !important; } /* 메인컬러 */
+.bg_common { color: #ffffff !important; background: #228b22 !important; } /* 공통 */
+.bg_guide { background: #000000 !important; color: #ffffff !important; }
+.bg_template { background: #454545 !important; color: #ffffff !important; }
+.bg_wcomn { background: orange !important; color: #fff !important; }
+
+/* IA - page - 화면유형 */
+.page_type.common { background: forestgreen; }
+.page_type.alert { background: #ca0000; }
+.page_type.popup { background: #0000a2; }
+.page_type.popup_full { background: #359af8; }
+.page_type.layer { background: #178882; }
+.page_type.tab { background: #00ffc8; }
+.page_type.conts { background: #ff00ff; }
+.page_type.pc_only { background: #680068; }
+.page_type.allpub { background: #3600cc ; }
+.page_type.cross { border: 1px solid #0040ff; color: #0040ff; background: transparent; }
+.page.share .info.date { color: #fff; background: #a30095; }
+.page_type.share { border: 1px solid #a30095; background: #a30095 !important; }
+.page.link .info.date { border: 1px solid #0040ff; color: #0040ff; }
+.page_type.link { border: 0; border-radius: 0; padding: 0; padding-bottom: 1px; text-decoration: underline; _border-bottom: 1px solid #0040ff; color: #0040ff; background: transparent; }
+.page_type.wcomn { background: orange; }
+.page.link a { color: #0040ff !important; text-decoration: underline !important; }
+.page_step { background: #424242; color: #ffffff; }
+
+/* IA - page - 진척률관리 */
+.info.date.ing { background: gray; color: #fff; }
+.info.date.done { background: #000; color: #fff; }
+.info.date.recent { background: #ffef72; color: #000; }
+.info.date.finish { background: #00ce36; color: #fff; }
+.info.date.default { background: #00ce36 !important; color: #fff !important; }
+.info.date.default.finish { background: #00ce36 !important; color: #fff !important; }
+.page.native .info.date { background: #00ffea !important; color: #000 !important; }
+/* .page.slt .info.date { background: #00ffea !important; color: #000 !important; } */
+.info.date.wcomn { background: orange !important; color: #fff !important; }
+.page.common:not(.native) .info.date.no_calc { background: forestgreen !important; color: #fff !important; }
+
+.page.common.del .info.date.no_calc,
+.page.del .info.date { background: transparent !important; border: 1px solid red !important; color: red !important; }
+.page.del .info.title { text-decoration: line-through; color: red !important; }
+/* .page.del,
+.page.del .row.row_modify { background: #000; color: #818080; } */
+
+
+
+
+
+/* IA - page */
+.page .bllt { _float:right; display: inline-block; padding: 2px 4px; width: 30px; height: 18px; line-height: 15px; box-sizing: border-box; border-radius: 2px; font-size: 10px; font-weight: bold; text-align: center; margin-right:2px; }
+.page.mweb .bllt.bllt_mw { background: #fc7777; color: #fff; }
+.page.app .bllt.bllt_app { background: #4b4be0; color: #fff; }
+div.page .row .info.date { margin-left: 6px; }
+
+div.page .row .info.date { width: 77px; }
+div.page .modify_wrap { _float: right; margin: 1px 6px 0 0; }
+div.page .row { padding: 2px 3px; }
+.page .row:first-child { display: flex; align-items: flex-start; }
+.page .row:first-child > .info.title { flex: 1; }
+.page .row:first-child > * { flex: none; }
+
+div.page .row:first-child { padding-right: 3px; }
+div.page .btn_txt_copy + .info.title, div.page .btn.new_window + .info.title { width: calc(100% - 205px) }
+.info.date { float: right; }
+div.page .row .info.date { z-index: 10; position: relative; top: 0; right: 0; } 
+
+
+div.depth,
+div.depth.split > .conts,
+div.page + div.page,
+div.ia > div.depth { border-color: #545454; }
+div.page .row ~ .row { border-top: 1px dotted #545454; }
+div.page .row.row_modify .modify + .modify { border-top: 1px dotted #cccccc; }
+div.page .row.row_modify p { margin: 0; padding: 2px 0 0 20px; }
+div.page .info.file { color: #818080; }
+div.page .info.title { }
+div.page .modify_wrap .modify { min-width: 16px; min-height: 16px; line-height: 17px; padding: 0 6px 0 5px; right: 3px; border: 1px solid #000; border-radius: 0;  color: #000 ; background: #fff700; }
+
+div.page .row.row_modify { min-height: auto; }
+div.page .row.row_modify .modify { margin: 0; padding: 2px 0 0 20px; }
+div.page.active .row.row_modify { background: #fff400 !important; }
+div.depth > .title { cursor: auto; }
+div.navi_wrap .category_list { font-size: 13px; }
+
+
+
+
+/*------------------------------------------------------------------------------
+	IA - 숨김옵션
+-------------------------------------------------------------------------------*/
+/* 게이지바 */
+div.depth .title div.gauge_wrap { display: none; }
+.btn_guide .percent { display: none; }
+
+/* 가이드 */
+div.depth.guide .gauge_wrap { display: none; }
+div.depth.guide .percent { display: none; }
+div.depth.guide .info.id { display: none; }
+
+/* 템플릿 */
+div.depth.template .gauge_wrap { display: none; }
+div.depth.template .percent { display: none; }
+div.depth.template .info.id { display: none; }
+
+/* 페이지 */
+div.ia .info.id { display: none; }
+/*div.depth.split > .title { width: 100px !important; }*/
+
+
+
+
+/* 날짜검색영역 */
+.datesearch_area { _float: right; text-align: right; _padding-right: 20px; }
+
+
+/* 완료날짜 색상가이드 */
+.color_guide { display: inline-block; text-align: right; font-size: 12px; color: #000; }
+/* .color_guide { position: absolute; top: 3px; right: 3px; } */
+.color_guide { vertical-align: top; }
+.color_guide .date_box { display: inline-block; vertical-align: middle; }
+.color_guide .date_box { margin-right: 6px; padding-right: 15px; border-right: 1px solid #aaa; }
+.color_guide .date_box:last-child { margin-right: 0; padding-right: 0; border: 0; }
+.color_guide .date_box .text { display: inline-block; vertical-align: middle; position: relative; top: 2px; }
+.color_guide .date_box .ball { display: inline-block; vertical-align: middle; }
+.color_guide .date_box .ball { min-width: 22px; min-height: 22px; padding: 0 5px 0 2px; border: 1px solid #aaa; box-sizing: border-box; border-radius: 3px; line-height: 20px; text-align:center; background: #fff; }
+.color_guide .date_box .ball.finish { background: #00ce36; color: #fff; }
+.color_guide .date_box .ball.recent { background: #ffef72; }
+.color_guide .date_box .ball.ing { background: gray; color: #fff; }
+.color_guide .date_box .ball.done { background: #000; color: #fff;  }
+.color_guide .date_box .ball.pre {  }
+
+
+/* select_date */
+.sortbox { display: inline-block; text-align: right; margin: 0 0 4px 0; }
+.sortbox { vertical-align: top; }
+.sortbox .sortitem { display: inline-block; margin-left: 6px; }
+.sortbox .sortitem .sb-titl { font-size: 12px; position: relative; top: 2px; }
+
+.select_date { display: inline-block; _width: 87px; height: 22px; font-size: 12px; }
+.select_date { vertical-align: middle; }
+.select_date > select { width: 100%; height: 100%; border: 1px solid #aaa; border-radius: 3px; text-align: center; }
+.select_date.active select { background: gold; }
+
+.dstbl { _display: inline-block; vertical-align: top; margin-left: 4px; }
+.dstbl table { display: inline-table; border-spacing: 0; border-collapse: collapse; }
+.dstbl table thead th { padding: 1px; text-align: center; border: 1px solid #aaa; box-sizing: border-box; font-size: 11px; background: #ccc; }
+.dstbl table tbody td { height: 16px; padding-top: 3px; text-align: center; border: 1px solid #aaa; box-sizing: border-box; font-size: 11px; background: #fff; }
+.dstbl .finish { background: #00ce36; color: #fff; } 
+.dstbl .recent { background: #ffef72; color: #000; } 
+.dstbl .ing { background: gray; color: #fff; }
+.dstbl .done { background: #000; color: #fff;  }
+
+div.remote_wrap .btn_remote_wrap { display: inline-block; float: none; vertical-align: middle; margin-left: 10px; }

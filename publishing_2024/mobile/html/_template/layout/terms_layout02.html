@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout">
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">약관동의</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="active"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">Step</span>
+							</li>
+							<li>
+								<span class="num">2</span>
+								<span class="txt">Step</span>
+							</li>
+							<li>
+								<span class="num">3</span>
+								<span class="txt">Step</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">약관동의</h2>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+
+
+				<div class="smalltitle_part">
+					<div class="ebtitle_medium">
+						본 동의서는 요약동의서이며 요청하면 전체 동의서를 안내받으실 수 있습니다.<br> 요청하시겠습니까?
+					</div>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">네</button>
+							</li>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">아니오</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+                <div class="table_conts_part ty_01">
+					<div class="conts_title_pack">
+						<div class="subtitle">제목</div><!-- 템플릿 사용시 subtitle 바꾸면 테이블 캡션도 수정 필요!! -->
+					</div>
+					<div class="table_view_pack">
+						<table class="ebtable">
+							<caption>제목</caption>
+							<colgroup>
+								<col>
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">
+										<span class="title">파일명.pdf</span>
+										<a href="#" class="ebbtn btn_multi btn_icon_download02" title="오토론 설명서 다운로드"></a>
+									</th>
+									<td>
+										<span class="chkstatus">다운완료</span><!-- 다운로드 완료시 노출 -->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="term_part">
+
+					<div class="term_pack">
+						<div class="total_agree">
+							<div class="checkbox_pack ty_01">
+								<input type="checkbox" class="ebcheckbox" id="chk0_0">
+								<label for="chk0_0" class="eblabel">약관 전체동의</label>
+							</div>
+						</div>
+
+						<div class="detail_agree ty_01">
+							<ul>
+								<li class="active"><!-- 상세약관 열기 addClass="active" -->
+									<div class="detail_name">
+										<div class="title">
+											<span class="color02">[필수]</span> 약관제목
+										</div>
+									</div>
+									<div class="detail_conts">
+										<ul>
+											<li>
+												<div class="detail_title">
+													<div class="checkbox_pack">
+														<input type="checkbox" class="ebcheckbox" id="chk1_1">
+														<label for="chk1_1" class="eblabel"><span class="color02">[필수]</span> 약관내용</label>
+													</div>
+													<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+												</div>
+											</li>
+											<li>
+												<div class="detail_title">
+													<div class="checkbox_pack">
+														<input type="checkbox" class="ebcheckbox" id="chk1_2">
+														<label for="chk1_2" class="eblabel"><span class="color02">[필수]</span> 약관내용</label>
+													</div>
+													<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+												</div>
+											</li>
+											<li>
+												<div class="detail_title">
+													<div class="checkbox_pack">
+														<input type="checkbox" class="ebcheckbox" id="chk1_3">
+														<label for="chk1_3" class="eblabel"><span class="color02">[필수]</span> 약관내용</label>
+													</div>
+													<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+												</div>
+											</li>
+											<li>
+												<div class="detail_title">
+													<div class="checkbox_pack">
+														<input type="checkbox" class="ebcheckbox" id="chk1_4">
+														<label for="chk1_4" class="eblabel"><span class="color02">[필수]</span> 약관내용</label>
+													</div>
+													<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="active"><!-- 상세약관 열기 addClass="active" -->
+									<div class="detail_name">
+										<div class="title">
+											<span>[선택]</span> 약관제목
+										</div>
+									</div>
+									<div class="detail_conts">
+										<ul>
+											<li>
+												<div class="detail_title">
+													<div class="checkbox_pack">
+														<input type="checkbox" class="ebcheckbox" id="chk2_1">
+														<label for="chk2_1" class="eblabel"><span>[선택]</span> 약관내용</label>
+													</div>
+													<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+	</div>
+</div>
+
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

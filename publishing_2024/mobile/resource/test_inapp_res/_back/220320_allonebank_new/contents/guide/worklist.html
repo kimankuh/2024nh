@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>2022 AllOne Finance HTML 코딩 리스트 Creator OJH</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="resource_worklist/css/worklist.css" />
+	<script type="text/javascript" src="../../assets/dist/js/jquery-3.4.1.slim.min.js"></script>
+	<script type="text/javascript" src="resource_worklist/js/worklist.js"></script>
+</head>
+<body>
+	<main>
+		<nav class="nav">
+			<ul class="nav-list">
+				<li><a href="#all" class="menu">전체</a></li>
+				<li><a href="#menu6" class="menu">캐피탈</a></li>
+			</ul>
+			<div class="option-area">
+				<a href="../guide/styleguide/Convention_index.html" target="_blank">컨벤션 가이드</a>
+				<a href="../guide/styleguide/styleguide_index.html" target="_blank">스타일 가이드</a><br>
+			</div>
+		</nav>
+		<menu class="option-menu">
+			<button href="javascript:void(0)" class="close-menu"><span></span></button>
+		</menu>
+		<div class="wrap">
+			<header>
+				<div class="search-list-area">
+					<input type="text" placeholder="검색어 입력 후 Enter" class="search-input" tabindex="1">
+					<button type="button" class="btn-reset">reset</button>
+					<p class="info-text">'<span>!!</span>' 느낌표 두개를 추가시 정확검색 || 없으면 포함검색</p>
+				</div>
+				<div class="bar off">
+					<div class="state-num-check"></div>
+					<div class="state-num-working"></div>
+					<div class="state-num-inspe"></div>
+					<div class="state-num-comf"></div>
+					<div class="state-num-hold"></div>
+					<div class="total-count">
+						<div class="total-count-unit-check">작업전<span class="val"></span></div>
+						<div class="total-count-unit-working">작업중<span class="val"></span></div>
+						<div class="total-count-unit-inspe">검수중<span class="val"></span></div>
+						<div class="total-count-unit-comf">완료<span class="val"></span></div>
+						<div class="total-count-unit-hold">보류<span class="val"></span></div>
+						<div class="total-count-unit-del">삭제<span class="val"></span></div>
+					</div>
+				</div>
+			</header>
+
+			<div class="header">
+				<div class="num">번호</div>
+				<div class="level2">Level2</div>
+				<div class="level3">Level3</div>
+				<div class="level4">Level4</div>
+				<div class="level5">Level5</div>
+				<div class="level6">Level6</div>
+				<div class="identity identity_sort" title="page|tab|popup|layer|alert (소문자 기재)">유형</div>
+				<div class="page">화면ID</div>
+				<div class="name planner_sort">기획</div>
+				<div class="name publs_sort">퍼블</div>
+				<div class="state">상태</div>
+				<div class="date">완료일</div>
+				<div class="note">비고</div>
+			</div>
+			
+			<div class="content">
+				<ul id="menu6" class="menu-area">
+					<li class="unit line-check">
+						<div class="num"></div>
+						<div class="level2">서비스 이용안내</div>
+						<div class="level3"></div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">page</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3502</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">개인정보제공동의</div>
+						<div class="level3"></div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3503</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">서브메인(대출 내역이 있는 경우)</div>
+						<div class="level3"></div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">page</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3500</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">서브메인(대출 내역이 없는 경우)</div>
+						<div class="level3"></div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">page</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3501</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출 상품 상세</div>
+						<div class="level3">상품상세</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">page</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3509</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출 상품 상세</div>
+						<div class="level3">가입 안내</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">page</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3516</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출 상품 상세</div>
+						<div class="level3">상환 방식</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">page</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3517</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">한도조회</div>
+						<div class="level3">고객정보 확인</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3507</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">한도조회</div>
+						<div class="level3">개인정보 약관동의 팝업</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3540</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">한도조회</div>
+						<div class="level3">약관동의 및 본인인증</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3518</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">한도조회</div>
+						<div class="level3">약관동의 및 본인인증</div>
+						<div class="level4">약관동의 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3519</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">한도조회</div>
+						<div class="level3">한도확인</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3508</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3510</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">동의 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3520</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">일반금융소비자 해당여부 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3541</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">보유자산 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3522</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">연간소득 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3523</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">부채 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3524</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">연체여부 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3525</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">신용점수 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3526</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">변제계획 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3527</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">고정지출 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3528</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">적합성·적정성 원칙 확인서</div>
+						<div class="level4">가계대출(신용)설명서 확인 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3529</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">대출신청정보</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3530</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">대출기간 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3531</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">결제일 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3532</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">월 상환 스케줄표 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3533</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정">내용 확인 필요</div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">계좌선택 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3534</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">청구지 선택 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3536</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">대출정보 확인</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3537</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 정보</div>
+						<div class="level4">약관 확인 팝업</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3538</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">대출신청</div>
+						<div class="level3">대출신청 완료</div>
+						<div class="level4">대출 신청 완료</div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">popup</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3539</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">계좌정보</div>
+						<div class="level3"></div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">tab</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3504</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">계좌정보</div>
+						<div class="level3">조회옵션</div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3505</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">이용안내</div>
+						<div class="level3"></div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3514</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+					<li class="unit">
+						<div class="num"></div>
+						<div class="level2">상담신청</div>
+						<div class="level3"></div>
+						<div class="level4"></div>
+						<div class="level5"></div>
+						<div class="level6"></div>
+						<div class="identity" title="page|tab|popup|layer|alert (소문자 기재)">layer</div>
+						<div class="page"><a href="../content/GF/" target="_blank">GF-3515</a></div>
+						<div class="name planner">박창용</div>
+						<div class="name publs">오지환</div>
+						<div class="state" title="작업전|작업중|검수중|완료|보류">완료</div>
+						<div class="date"></div>
+						<div class="note" title="[21.00.00] OOO 수정"></div>
+					</li>
+				</ul>
+
+				<p class="none-data-text">찾으시는 내용이 없습니다.<br>정확히 입력해주세요.</p>
+			</div>
+		</div>
+		
+		<button type="button" class="scroll_top"></button>
+		<div class="planner_sort_sel">
+			<div class="cell">
+				<a href="javascript:void(0)">전체</a>
+				<a href="javascript:void(0)">김은지</a>
+				<a href="javascript:void(0)">박창용</a>
+			</div>
+		</div>
+
+		<div class="publs_sort_sel">
+			<div class="cell">
+				<a href="javascript:void(0)">전체</a>
+				<a href="javascript:void(0)">김규연</a>
+				<a href="javascript:void(0)">오지환</a>
+			</div>
+		</div>
+
+		<div class="identity_sort_sel">
+			<div class="cell">
+				<a href="javascript:void(0)">전체</a>
+				<a href="javascript:void(0)">page</a>
+				<a href="javascript:void(0)">popup</a>
+				<a href="javascript:void(0)">layer</a>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

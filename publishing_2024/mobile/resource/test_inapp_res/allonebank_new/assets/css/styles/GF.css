@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/* 메인 */
+.nh-sub-main-list {padding-top:2.6rem;}
+/* 메인 - 상단 */
+.sub-main-list-header {text-align:center;}
+.sub-main-list-header .title {font-size:2rem;font-weight:bold;color:#111}
+.sub-main-list-header .money {font-size:2.3rem;font-weight:bold;color:#08862a}
+.sub-main-list-header .money .unit {font-size:1.7rem;font-weight:bold;color:inherit}
+.sub-main-list-header .money .unit {font-size:1.7rem;font-weight:bold;color:inherit}
+.sub-main-list-header + .shadowbox {margin-top:3rem}
+/* 메인 - 리스트 */
+.sub-main-list-area {margin-top:4rem}
+.sub-main-list-area .sub-main-list li {position:relative;padding:2rem 1.9rem;border-radius:0.4rem;box-shadow:var(--shadowStyle);}
+.sub-main-list-area .sub-main-list li:not(:first-child) {margin-top:2.5rem;}
+.sub-main-list-area .sub-main-list .list-top {}
+.sub-main-list-area .sub-main-list .list-top .account-info {font-size:1.8rem;}
+.sub-main-list-area .sub-main-list .list-top .account-number {font-size:1.6rem;}
+.sub-main-list-area .sub-main-list .list-cont .listbox {padding-bottom:0; border:0}
+.sub-main-list-area .sub-main-list .button-group-half {margin-top:2rem;}
+.sub-main-list-area .sub-main-list .button-group-half .btn {font-weight:bold}
+.sub-main-list-area .sub-main-list.expand li {display:block;}
+.sub-main-list-area .sub-main-list .btn-layer {position:absolute;right:1.2rem;top:2rem;}
+.sub-main-list-area .sub-main-list .btn-layer .btn-icon {padding:0;}
+/* 메인 - 목록 접,펼 */
+.list-fold li {display:none;}
+.list-fold li.show,
+.list-fold.expand li {display:block;}
+/* 메인 - 버튼 정렬 */
+.button-group-main {flex-wrap:wrap;margin-top:2rem}
+.button-group-main .btn {flex: 0 0 auto;width:calc(50% - 0.4rem);}
+.button-group-main .btn:not(:first-of-type) {margin:0 0 0 0.8rem}
+.button-group-main .btn:not(:last-of-type) {margin-right:0;}
+.button-group-main .btn:nth-of-type(odd) {margin-left:0;}
+.button-group-main .btn:nth-of-type(even) {margin-left:0.8rem;}
+.button-group-main .btn:nth-of-type(n+3) {margin-top:2rem;}
+.button-group-main .btn:nth-of-type(odd):last-child {width:100%;}
+/* 리스트 회색 박스 */
+.bg-gray-box {display:block;position:relative;padding:1.8rem 1.8rem 2.2rem;margin-top:4rem;border:1px solid #e0e0e4; border-radius:0.4rem; background-color:#f9f9f9;}
+.bg-gray-box::after {content:'\e95b';position:absolute;right:1.3rem;top:1rem;font-size:2rem;font-family:'allonebank';}
+.bg-gray-box [class^="listbox"]:not(.listbox-agreement) {padding:0.7rem 0 0.5rem; border:0;}
+.bg-gray-box [class^="listbox"]:not(.listbox-agreement) [class^="list-"] {line-height:1.2rem}
+.bg-gray-box [class^="h"] + p{margin-top:0.7rem;}
+
+/* 캐피탈 전용 리스트 */
+.border-botton-info{border-bottom:1px solid #e0e0e4;}
+.border-botton-info:not(:first-child){margin-top:1rem}
+.border-botton-info .list{padding:2rem 0}
+.border-botton-info .list li{display:flex;justify-content:space-between;align-items:flex-start;margin-top:2rem}
+.border-botton-info .list li:first-child{margin-top:0}
+.border-botton-info .list li .info-left{font-size:1.6rem;color:#111;line-height:1.8rem;}
+.border-botton-info .list li .info-right{font-size:1.5rem;color:#111;line-height:1.8rem;}
+
+/* 캐피탈 결과 리스트 */
+.border-result-list {margin-top:1rem;border:1px solid #e0e0e4;}
+.border-result-list .listbox {padding:1.2rem 2rem;border:0}
+
+/* 프로세스 안내 */
+.process-type-info{margin-top:4rem}
+.process-type-info .proc-type-unit{display:flex;justify-content:space-between;align-items:center;position:relative;padding:0.8rem 2.5rem 0.9rem;border:0.1rem solid #e0e0e4;border-radius:2.2rem;color:#737686}
+.process-type-info .proc-type-unit:not(:first-child){margin-top:3.6rem}
+.process-type-info .proc-type-unit::before{content:'';position:absolute;left:50%;bottom:-2.8rem;transform:translateX(-50%);border-top:0.6rem solid #737686;border-left:0.4rem solid transparent;border-right:0.4rem solid transparent;border-bottom:0.6rem solid transparent;font-size:0.8rem;}
+.process-type-info .proc-type-unit:last-child::before{display:none}
+.process-type-info .proc-type-unit::after{content:'\e92b';line-height:1rem;font-size:2.8rem;font-family:'allonebank';}
+.process-type-info .proc-type-unit.on{border:0.1rem solid #08862a;color:#08862a}
+.process-type-info .proc-type-unit.on::before{border-top:0.6rem solid #08862a;color:#08862a}
+
+/* ETC 라디오 버튼 보더 영역 표시 */
+.form-group-line-box{padding:2rem 0;border-top:1px solid #e0e0e4;border-bottom:1px solid #e0e0e4}

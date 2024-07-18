@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<link rel="stylesheet" href="../../../assets/css/common.css">
+	<link rel="stylesheet" href="../../../assets/css/styles/GF.css">
+	<script src="../../../assets/dist/js/jquery-3.4.1.slim.min.js"></script>
+	<script src="../../../assets/js/common.js"></script>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header class="header" role="presentation">
+			<nav role="presentation">
+				<ul class="column-set lefted-column">
+					<li>
+						<a href="#none-back" class="header-btn back-btn">뒤로가기</a>
+					</li>
+				</ul>
+				<h1 class="header-title">NH농협캐피탈</h1>
+				<ul class="column-set righted-column">
+					<li>
+						<a href="#none-home" class="header-btn home-btn">홈</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- // header -->
+
+		<!-- container -->
+		<div class="container">
+			<div class="content" data-role="content">
+				<section>
+					<div style="display:flex;align-items:center;justify-content:center;width:100%;height:calc(100vh - 19rem);font-size:1.7rem;background-color:#ddd;">본문 내용</div> 
+				</section>
+			</div>
+		</div>
+		<!-- // container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- 팝업 -->
+	<div class="popup-wrapper opened" role="dialog">
+		<div class="pop full fixed">
+			<div class="pop-header">
+				<h2 class="pop-title">한도 조회</h2>
+				<button type="button" class="btn-icon close">닫기</button>
+			</div>
+			<div class="pop-content">
+				<div class="heading-wrap">
+					<h2><strong class="text-highlight-step2">약관동의 및 본인인증</strong>을<br>확인해 주세요</h2>
+				</div>
+
+				<p class="gap-xs">약관동의 후 본인인증이 필요합니다.</p>
+
+				<div class="form-group gap-xs">
+					<div class="tooltip-group">
+						<label for="필수전체동의" class="text-16 text-bold">금융상품 한도조회를 위한 동의</label>
+						<div class="tooltip-item">
+							<button type="button" class="btn-icon tooltip" data-rel="tooltip">툴팁</button>
+							<div class="tooltip-layer" data-role="tooltip">
+								<button type="button" class="btn-icon close">닫기</button>
+								귀하는 개인(신용)정보 수집〮이용〮조회 및 제공 동의에 대해 거부하실 수 있습니다. 다만, 개인(신용)정보 수집〮이용〮조회 및 제공에 관한 동의는 상거래관계의 설정, 유지에 필수적이거나, 상거래관례에 따라 귀하에게 제공되는 서비스와 직접적으로 관련된 필수적 사항이므로, 아래의 사항에 동의하셔야만(금융)거래관계의 설정및 유지가 가능합니다. 개인(신용)정보의 수집〮이용〮조회 및 제공에 관한 동의에서 거래종료일이란 회원탈회 또는 채권〮채무 관계가 소명된 날을 말합니다.
+							</div>
+						</div>
+					</div>
+					<ul class="listbox-agreement">
+						<li class="list-item">
+							<div class="form-check">
+								<input type="checkbox" id="필수전체동의" class="check-input"><label for="">필수 전체 동의</label>
+							</div>
+							<a href="#none">필수 전체 동의</a>
+							<ul class="list-agreement">
+								<li class="list-item">
+									<div class="form-check">
+										<input type="checkbox" id="" class="check-input"><label for="">개인(신용)정보 필수적 수집〮이용에 관한 사항</label>
+									</div>
+									<a href="#none">개인(신용)정보 필수적 수집〮이용에 관한 사항</a>
+								</li>
+								<li class="list-item">
+									<div class="form-check">
+										<input type="checkbox" id="" class="check-input"><label for="">개인(신용)정보 조회에 관한 사항</label>
+									</div>
+									<a href="#none">개인(신용)정보 조회에 관한 사항</a>
+								</li>
+								<li class="list-item">
+									<div class="form-check">
+										<input type="checkbox" id="" class="check-input"><label for="">개인(신용)정보 제공에 관한 사항</label>
+									</div>
+									<a href="#none">개인(신용)정보 제공에 관한 사항</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="form-group gap-xs">
+					<div class="tooltip-group">
+						<label for="radiobun1" class="text-16 text-bold">필수 전체 동의서 안내 요청</label>
+						<div class="tooltip-item">
+							<button type="button" class="btn-icon tooltip" data-rel="tooltip">툴팁</button>
+							<div class="tooltip-layer" data-role="tooltip">
+								<button type="button" class="btn-icon close">닫기</button>
+								본 동의서는 필수요약동의서이며 요청하면 전체 동의서를 안내받으실 수 있습니다. 
+							</div>
+						</div>
+					</div>
+					<div class="form-group-inline">
+						<div class="form-check flex-1">
+							<input type="radio" id="radiobun1" name="안내요청" class="check-input"><label for="radiobun1" class="text-16">아니오</label>
+						</div>
+						<div class="form-check flex-1">
+							<input type="radio" id="radiobun2" name="안내요청" class="check-input"><label for="radiobun2" class="text-16">예</label>
+						</div>
+					</div>
+				</div>
+				
+				<ul class="listbox-agreement">
+					<li class="list-item">
+						<div class="form-check">
+							<input type="checkbox" id="" class="check-input"><label for=""><span>선택 전체 동의</label>
+						</div>
+						<a href="#none">선택 전체 동의</a>
+						<ul class="list-agreement naxt-add-agreement">
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">금융상품 안내 및 이용권유를 위한 수집〮이용</label>
+								</div>
+								<a href="#none">금융상품 안내 및 이용권유를 위한 수집〮이용</a>
+							</li>
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">NH농협은행 등 농협금융그룹 내 자회사에 제공에 관한 사항</label>
+								</div>
+								<a href="#none">NH농협은행 등 농협금융그룹 내 자회사에 제공에 관한 사항</a>
+							</li>
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">신용정보 제공 활용에 대한 고객금리안내문</label>
+								</div>
+								<a href="#none">신용정보 제공 활용에 대한 고객금리안내문</a>
+							</li>
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">상품서비스 안내 전자적 전송매체를 통한 광고성 정보의 수신을 동의하시겠습니까?</label>
+								</div>
+								<a href="#none">상품서비스 안내 전자적 전송매체를 통한 광고성 정보의 수신을 동의하시겠습니까?</a>
+							</li>
+						</ul>
+						<div class="add-agreement">
+							<label class="title visualhide">마케팅 정보 수신 동의</label>
+							<div class="form-group-inline">
+								<div class="form-check">
+									<input type="checkbox" id="수단전체" class="check-input"><label for="수단전체">전체</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단전화" class="check-input"><label for="수단전화">전화</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단SMS" class="check-input"><label for="수단SMS">SMS</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단우편물" class="check-input"><label for="수단우편물">우편물</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단이메일" class="check-input"><label for="수단이메일">이메일</label>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="form-group gap-xs">
+					<div class="tooltip-group">
+						<label for="radiobun3" class="text-16 text-bold">선택 전체 동의서 안내 요청</label>
+						<div class="tooltip-item">
+							<button type="button" class="btn-icon tooltip" data-rel="tooltip">툴팁</button>
+							<div class="tooltip-layer" data-role="tooltip">
+								<button type="button" class="btn-icon close">닫기</button>
+								본 동의서는 선택요약동의서이며 요청하면 전체 동의서를 안내받으실 수 있습니다.
+							</div>
+						</div>
+					</div>
+					<div class="form-group-inline">
+						<div class="form-check flex-1">
+							<input type="radio" id="radiobun3" name="안내요청2" class="check-input"><label for="radiobun1" class="text-16">아니오</label>
+						</div>
+						<div class="form-check flex-1">
+							<input type="radio" id="radiobun4" name="안내요청2" class="check-input"><label for="radiobun2" class="text-16">예</label>
+						</div>
+					</div>
+				</div>
+				
+				<ul class="listbox-agreement">
+					<li class="list-item">
+						<div class="form-check">
+							<input type="checkbox" id="" class="check-input"><label for=""><span>선택 전체 동의</label>
+						</div>
+						<a href="#none">선택 전체 동의</a>
+						<ul class="list-agreement naxt-add-agreement">
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">금융상품 안내 및 이용권유를 위한 수집〮이용</label>
+								</div>
+								<a href="#none">금융상품 안내 및 이용권유를 위한 수집〮이용</a>
+							</li>
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">NH농협은행 등 농협금융그룹 내 자회사에 제공에 관한 사항</label>
+								</div>
+								<a href="#none">NH농협은행 등 농협금융그룹 내 자회사에 제공에 관한 사항</a>
+							</li>
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">신용정보 제공 활용에 대한 고객금리안내문</label>
+								</div>
+								<a href="#none">신용정보 제공 활용에 대한 고객금리안내문</a>
+							</li>
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">상품서비스 안내 전자적 전송매체를 통한 광고성 정보의 수신을 동의하시겠습니까?</label>
+								</div>
+								<a href="#none">상품서비스 안내 전자적 전송매체를 통한 광고성 정보의 수신을 동의하시겠습니까?</a>
+							</li>
+						</ul>
+						<div class="add-agreement">
+							<label class="title visualhide">마케팅 정보 수신 동의</label>
+							<div class="form-group-inline">
+								<div class="form-check">
+									<input type="checkbox" id="수단전체" class="check-input"><label for="수단전체">전체</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단전화" class="check-input"><label for="수단전화">전화</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단SMS" class="check-input"><label for="수단SMS">SMS</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단우편물" class="check-input"><label for="수단우편물">우편물</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" id="수단이메일" class="check-input"><label for="수단이메일">이메일</label>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="form-group gap-xs">
+					<div class="tooltip-group">
+						<label for="휴대폰본인확인" class="text-16 text-bold">휴대폰 본인확인에 관한 사항</label>
+					</div>
+					<ul class="listbox-agreement">
+						<li class="list-item">
+							<div class="form-check">
+								<input type="checkbox" id="휴대폰본인확인" class="check-input"><label for="">필수 전체 동의</label>
+							</div>
+							<a href="#none">필수 전체 동의</a>
+							<ul class="list-agreement">
+								<li class="list-item">
+									<div class="form-check">
+										<input type="checkbox" id="" class="check-input"><label for="">개인(신용)정보 수집〮이용 활용 동의</label>
+									</div>
+									<a href="#none">개인(신용)정보 수집〮이용 활용 동의</a>
+								</li>
+								<li class="list-item">
+									<div class="form-check">
+										<input type="checkbox" id="" class="check-input"><label for="">고유식별번호처리 동의</label>
+									</div>
+									<a href="#none">고유식별번호처리 동의</a>
+								</li>
+								<li class="list-item">
+									<div class="form-check">
+										<input type="checkbox" id="" class="check-input"><label for="">본인확인 이용약관</label>
+									</div>
+									<a href="#none">본인확인 이용약관</a>
+								</li>
+								<li class="list-item">
+									<div class="form-check">
+										<input type="checkbox" id="" class="check-input"><label for="">(통신사) 본인확인 이용약관</label>
+									</div>
+									<a href="#none">(통신사) 본인확인 이용약관</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="form-group">
+					<h3 class="input-title">통신사 선택</h3>
+					<div class="form-group-inline bordered radius-reset-bottom">
+						<div class="form-check">
+							<input type="radio" name="radio333" id="" class="check-input" checked><label for="">SKT</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" name="radio333" id="" class="check-input"><label for="">KT</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" name="radio333" id="" class="check-input"><label for="">LGU+</label>
+						</div>
+					</div>
+					<div class="form-group-inline bordered radius-reset-top">
+						<div class="form-check">
+							<input type="radio" name="radio333" id="" class="check-input"><label for="">SKT 알뜰폰</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" name="radio333" id="" class="check-input"><label for="">KT 알뜰폰</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" name="radio333" id="" class="check-input"><label for="">LGU+ 알뜰폰</label>
+						</div>
+					</div>
+					<div class="form-group-inline phone-number">
+						<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+							<div class="btn btn-select" role="button" aria-label="선택버튼">010</div>
+							<select id="inputLabel111" class="dp-none" name="">
+								<option value="SKT" label="SKT">SKT</option>
+								<option value="KT" label="KT">KT</option>
+								<option value="LG" label="LG">LG</option>
+								<option value="알뜰폰" label="알뜰폰">알뜰폰</option>
+							</select>
+						</div>
+						<input type="text" id="" placeholder="[-]없이 입력" class="form-input">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="인증번호입력" class="visualhide">인증번호입력</label>
+					<input type="tel" id="인증번호입력" placeholder="인증번호 입력" class="form-input">
+					<button type="button" class="btn delete-btn">삭제</button>
+					<div class="form-info text-red">인증이 완료되었습니다.</div>
+				</div>
+
+				<div class="button-group gap-sm">
+					<button type="button" class="btn btn-fill-light btn-md">인증번호 요청</button>
+				</div>
+
+			</div>
+			<div class="pop-footer">
+				<div class="button-group">
+					<button type="button" class="btn btn-fill">대출신청</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //팝업 -->
+</body>
+</html>

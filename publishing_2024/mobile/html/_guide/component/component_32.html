@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>인풋 라디오 가이드</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+
+	<!-- zEiLAB - Guide(가이드에만 선언) -->
+	<link rel="stylesheet" href="../../../z_eilab/template/guide/guide.css">
+	<script src="../../../z_eilab/template/guide/guide.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : Layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; 인풋 라디오 가이드 &gt;</h1>
+
+
+
+<!-- <div class="example_box">
+	<div class="ex_title">대분류</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류</span><span class="class_name">셀렉터명</span><button type="button" class="source">copy</button></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_code">
+소스코드
+		</div>
+	</div>
+</div> -->
+
+
+
+<div class="example_box">
+	<div class="ex_title">라디오</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">기본</span><span class="class_name">.ebradio</span><button type="button" class="source">copy</button></div>
+		<!-- <div class="etc_info_wrap"></div> -->
+		<div class="source_code">
+
+<input type="radio" class="ebradio" title="라벨명" name="rad0">
+<input type="radio" class="ebradio" title="라벨명" name="rad0" checked="checked">
+<input type="radio" class="ebradio" title="라벨명" name="rad1" disabled="disabled">
+<input type="radio" class="ebradio" title="라벨명" name="rad1" checked="checked" disabled="disabled">
+
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">label이 있는 경우</span><span class="class_name">.radio_pack</span><button type="button" class="source">copy</button></div>
+		<div class="etc_info_wrap">
+			※ label이 있는 경우 radio_pack을 기본 컴포넌트 단위로 사용
+		</div>
+		<div class="source_code">
+
+<div class="radio_pack">
+	<input type="radio" class="ebradio" name="rad3" id="rad3_1">
+	<label for="rad3_1" class="eblabel">라디오</label>
+</div>
+<div class="radio_pack">
+	<input type="radio" class="ebradio" name="rad3" id="rad3_2" checked="checked">
+	<label for="rad3_2" class="eblabel">라디오<br>라디오</label>
+</div>
+<div class="radio_pack">
+	<input type="radio" class="ebradio" name="rad4" id="rad4_1" disabled="disabled">
+	<label for="rad4_1" class="eblabel">라디오</label>
+</div>
+<div class="radio_pack">
+	<input type="radio" class="ebradio" name="rad4" id="rad4_2" checked="checked" disabled="disabled">
+	<label for="rad4_2" class="eblabel">라디오</label>
+</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+<!-- E : layout -->
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 메인 */
+.nh-sub-main-list {padding-top:2.6rem;}
+/* 메인 - 상단 */
+.sub-main-list-header {text-align:center;}
+.sub-main-list-header .title {font-size:2rem;font-weight:bold;color:#111}
+.sub-main-list-header .money {font-size:2.3rem;font-weight:bold;color:#08862a}
+.sub-main-list-header .money .unit {font-size:1.7rem;font-weight:bold;color:inherit}
+.sub-main-list-header .money .unit {font-size:1.7rem;font-weight:bold;color:inherit}
+.sub-main-list-header + .shadowbox {margin-top:3rem}
+/* 메인 - 리스트 */
+.sub-main-list-area {margin-top:4rem}
+.sub-main-list-area .sub-main-list li {padding:2rem 1.9rem;border-radius:0.4rem;box-shadow:var(--shadowStyle);}
+.sub-main-list-area .sub-main-list li:not(:first-child) {margin-top:2.5rem;}
+.sub-main-list-area .sub-main-list .list-top {}
+.sub-main-list-area .sub-main-list .list-top .account-info {font-size:1.8rem;}
+.sub-main-list-area .sub-main-list .list-top .account-number {font-size:1.6rem;}
+.sub-main-list-area .sub-main-list .list-cont .listbox {padding-bottom:0; border:0}
+.sub-main-list-area .sub-main-list .button-group-half {margin-top:2rem;}
+.sub-main-list-area .sub-main-list .button-group-half .btn {font-weight:bold}
+.sub-main-list-area .sub-main-list.expand li {display:block;}
+/* 메인 - 목록 접,펼 */
+.list-fold li {display:none;}
+.list-fold li.show,
+.list-fold.expand li {display:block;}
+/* 메인 - 버튼 정렬 */
+.button-group-main {flex-wrap:wrap;margin-top:2rem}
+.button-group-main .btn {flex: 0 0 auto;width:calc(50% - 0.4rem);}
+.button-group-main .btn:not(:first-of-type) {margin:0 0 0 0.8rem}
+.button-group-main .btn:not(:last-of-type) {margin-right:0;}
+.button-group-main .btn:nth-of-type(odd) {margin-left:0;}
+.button-group-main .btn:nth-of-type(even) {margin-left:0.8rem;}
+.button-group-main .btn:nth-of-type(n+3) {margin-top:2rem;}
+.button-group-main .btn:nth-of-type(odd):last-child {width:100%;}
+/* 리스트 회색 박스 */
+.bg-gray-box {display:block;position:relative;padding:1.8rem 1.8rem 2.2rem;margin-top:4rem;border:1px solid #e0e0e4; border-radius:0.4rem; background-color:#f9f9f9;}
+.bg-gray-box::after {content:'\e95b';position:absolute;right:1.3rem;top:1rem;font-size:2rem;font-family:'allonebank';}
+.bg-gray-box [class^="listbox"]:not(.listbox-agreement) {padding:0.7rem 0 0.5rem; border:0;}
+/* .bg-gray-box [class^="listbox"]:not(.listbox-agreement) [class^="list-"] {line-height:1.2rem} */
+.bg-gray-box .listbox .list-title {flex:1 0 34%;max-width:34%}
+.bg-gray-box .listbox .list-title ~ .list-item {flex:1 0 66%;max-width:66%;font-size:1.6rem;}
+.bg-gray-box .listbox .list-title.border-top {padding-top:1.4rem;margin-top:1.4rem;border-top:1px solid #e0e0e4}
+.bg-gray-box .listbox .list-title ~ .list-item.border-top {padding-top:1.4rem;margin-top:1.4rem;border-top:1px solid #e0e0e4}
+.bg-gray-box .btn-sm-radius{padding:0 1.2rem;color:#646873}
+.bg-gray-box.none-arr::after{content:none;}
+/* 상품 리스트 텝 영역 */
+.product-list-tab-area{margin-top:3.3rem}
+.product-list-tab-area .tabs{margin-top:3.5rem;}
+.product-list-tab-area .tabs .item{padding:0 .8rem;border:0;}
+.product-list-tab-area .tabs .item a{padding:.1vw 1.1vw;border-radius:1.2rem;font-size:1.3rem;background-color:#eff4fc;}
+.product-list-tab-area .tabs .item.on a{padding:0 1.1vw;font-size:1.5rem;font-weight:bold;background-color:#fff;}

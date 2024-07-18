@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<link rel="stylesheet" href="../../../assets/css/common.css">
+	<link rel="stylesheet" href="../../../assets/css/styles/GF.css">
+	<script src="../../../assets/dist/js/jquery-3.4.1.slim.min.js"></script>
+	<script src="../../../assets/js/common.js"></script>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header class="header" role="presentation">
+			<nav role="presentation">
+				<ul class="column-set lefted-column">
+					<li>
+						<a href="#none-back" class="header-btn back-btn">뒤로가기</a>
+					</li>
+				</ul>
+				<h1 class="header-title">NH농협캐피탈</h1>
+				<ul class="column-set righted-column">
+					<li>
+						<a href="#none-home" class="header-btn home-btn">홈</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- // header -->
+
+		<!-- container -->
+		<div class="container">
+			<div class="content" data-role="content">
+				<section>
+					<div style="display:flex;align-items:center;justify-content:center;width:100%;height:calc(100vh - 19rem);font-size:1.7rem;background-color:#ddd;">본문 내용</div> 
+				</section>
+			</div>
+		</div>
+		<!-- // container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- 팝업 -->
+	<div class="popup-wrapper opened" role="dialog">
+		<div class="pop full fixed">
+			<div class="pop-header">
+				<h2 class="pop-title">한도조회</h2>
+				<button type="button" class="btn-icon close">닫기</button>
+			</div>
+			<div class="pop-content">
+				<div class="heading-wrap">
+					<h2><strong class="text-highlight-step1">고객정보를</strong><br>확인해 주세요</h2>
+				</div>
+
+				<p class="gap-xs">휴대폰 본인인증시 입력된 개인정보는 저장하지 않습니다.</p>
+
+				<div class="form-group-area">
+					<h6 class="title">실명확인</h6>
+					<div class="form-group">
+						<label for="inputLabel1">성명</label>
+						<input type="text" id="inputLabel1" placeholder="이름을 입력" class="form-input">
+						<button type="button" class="btn delete-btn">삭제</button>
+					</div>
+					
+					<div class="form-group">
+						<div class="form-group-inline id-number">
+							<label for="inputLabel107">주민번호</label>
+							<input type="tel" id="inputLabel107" placeholder="앞 6자리" class="form-input" maxlength="6">
+							<div class="form-entities dash"></div>
+							<label for="inputLabel108" class="visualhide">주민번호 뒷자리</label>
+							<input type="tel" id="inputLabel108" placeholder="뒤 7자리" class="form-input" maxlength="7">
+						</div>
+						<div class="button-group btn-bottom">
+							<button type="button" class="btn btn-border-light btn-sm">실명확인</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group-inline phone-number">
+					<label for="휴대폰번호">휴대폰번호</label>
+					<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+						<div class="btn btn-select" role="button" aria-label="선택버튼">SKT</div>
+						<select id="inputLabel111" id="휴대폰번호" class="dp-none" name="">
+							<option value="SKT" label="SKT">SKT</option>
+							<option value="KT" label="KT">KT</option>
+							<option value="LG" label="LG">LG</option>
+							<option value="알뜰폰" label="알뜰폰">알뜰폰</option>
+						</select>
+					</div>
+					<input type="text" id="" placeholder="[-]없이 입력" class="form-input">
+				</div>
+
+				<ul class="listbox-agreement">
+					<li class="list-item">
+						<div class="form-check">
+							<input type="checkbox" id="" class="check-input"><label for="">전체동의</label>
+						</div>
+						<a href="#none">전체동의</a>
+						<ul class="list-agreement">
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">[필수] 개인정보 수집·이용 동의</label>
+								</div>
+								<a href="#none">[필수] 개인정보 수집·이용 동의</a>
+							</li>
+							<li class="list-item">
+								<div class="form-check">
+									<input type="checkbox" id="" class="check-input"><label for="">[필수] 고유식별정보 처리동의</label>
+								</div>
+								<a href="#none">[필수] 고유식별정보 처리동의</a>
+							</li>					
+						</ul>
+					</li>
+				</ul>
+				
+				<div class="req-accordion">
+					<ul class="accordion">
+						<li class="list-item">
+							<dl>
+								<dt class="none-action">알아두세요</dt>
+								<dd>
+									<ul class="p-notelist">
+										<li class="list-item">대출가능여부 확인을 위한 신용조회는 고객님의 신용등급 또는 개인신용평점에 영향을 주지 않습니다.</li>
+										<li class="list-item">시스템오류 등 대출신청이 완료되지 못할 경우 NH농협캐피탈 상담원이 전화를 드릴 수 있습니다.</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="pop-footer">
+				<div class="button-group">
+					<button type="button" class="btn btn-fill">다음</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //팝업 -->
+</body>
+</html>

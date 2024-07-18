@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<link rel="stylesheet" href="../../../assets/css/common.css">
+	<link rel="stylesheet" href="../../../assets/css/styles/GF.css">
+	<script src="../../../assets/dist/js/jquery-3.4.1.slim.min.js"></script>
+	<script src="../../../assets/js/common.js"></script>
+</head>
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header class="header" role="presentation">
+			<nav role="presentation">
+				<ul class="column-set lefted-column">
+					<li>
+						<a href="#none-back" class="header-btn back-btn">뒤로가기</a>
+					</li>
+				</ul>
+				<h1 class="header-title">NH농협캐피탈</h1>
+				<ul class="column-set righted-column">
+					<li>
+						<a href="#none-home" class="header-btn home-btn">홈</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- // header -->
+
+		<!-- container -->
+		<div class="container">
+			<div class="content" data-role="content">
+				<section>
+					<div style="display:flex;align-items:center;justify-content:center;width:100%;height:calc(100vh - 19rem);font-size:1.7rem;background-color:#ddd;">본문 내용</div> 
+				</section>
+			</div>
+		</div>
+		<!-- // container -->
+	</div>
+	<!-- //#wrap -->
+
+	<!-- 팝업 -->
+	<div class="popup-wrapper opened" role="dialog">
+		<div class="pop full fixed">
+			<div class="pop-header">
+				<h2 class="pop-title">한도조회</h2>
+				<button type="button" class="btn-icon close">닫기</button>
+			</div>
+			<div class="pop-content">
+				<div class="heading-wrap">
+					<h2><span class="text-highlight-step5">대출신청 정보</span>를<br>입력 해주세요.</h2>
+				</div>
+
+				<p class="gap-xs">개인정보는 대출신청을 위한 정보로만 이용됩니다.</p>
+
+				<div class="listgroup-wrap">
+					<dl class="listbox">
+						<dt class="list-title">대출한도</dt>
+						<dd class="list-item text-green">5,000만원</dd>
+						<dt class="list-title">대출금리</dt>
+						<dd class="list-item text-green">연<span class="text-bold">11.90</span>%</dd>
+						<dt class="list-title">취급 수수료</dt>
+						<dd class="list-item"><span class="text-bold">0</span>%</dd>
+						<dt class="list-title">월 상환금액</dt>
+						<dd class="list-item"><span class="text-bold">663,340</span>원</dd>
+					</dl>
+				</div>
+
+				<div class="form-group-area">
+					<h6 class="title">대출신청정보</h6>
+					
+					<div class="form-group">
+						<label for="대출신청금액">대출신청금액</label>
+						<div class="balance" data-currency="원">
+							<input type="tel" id="대출신청금액" placeholder="200만원 이상, 100만원 단위 입력" class="form-input text-18">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="대출기간">대출기간</label>
+						<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+							<div class="btn btn-select" role="button" aria-label="선택버튼">선택하세요</div>
+							<select id="대출기간" class="dp-none">
+								<option value="default" label="선택하세요">선택하세요</option>
+								<option value="option2" label="option2">Option2</option>
+								<option value="option3" label="option3">Option3</option>
+								<option value="option4" label="option4">Option4</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="상환방법">상환방법</label>
+						<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+							<div class="btn btn-select" role="button" aria-label="선택버튼">원리금균등상환</div>
+							<select id="상환방법" class="dp-none">
+								<option value="default" label="원리금균등상환">원리금균등상환</option>
+								<option value="option2" label="option2">Option2</option>
+								<option value="option3" label="option3">Option3</option>
+								<option value="option4" label="option4">Option4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group-area">
+					<h6 class="title">결제정보</h6>
+
+					<div class="form-group">
+						<label for="결제일">결제일</label>
+						<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+							<div class="btn btn-select" role="button" aria-label="선택버튼">1일</div>
+							<select id="결제일" class="dp-none">
+								<option value="default" label="1일">1일</option>
+								<option value="option2" label="option2">Option2</option>
+								<option value="option3" label="option3">Option3</option>
+								<option value="option4" label="option4">Option4</option>
+							</select>
+						</div>
+						<div class="border-result-list">
+							<dl class="listbox">
+								<dt class="list-title">첫 결제일</dt>
+								<dd class="list-item">2022.02.01</dd>
+								<dt class="list-title">월 상환금액</dt>
+								<dd class="list-item text-bold">430,230원</dd>
+								<dt class="list-title">월 상환 스케줄</dt>
+								<dd class="list-item"><a href="#none" class="text-underline">스케줄 보기</a></dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="결제계좌">결제계좌</label>
+						<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+							<div class="btn btn-select" role="button" aria-label="선택버튼">선택하세요</div>
+							<select id="결제계좌" class="dp-none">
+								<option value="default" label="선택하세요">선택하세요</option>
+								<option value="option2" label="option2">Option2</option>
+								<option value="option3" label="option3">Option3</option>
+								<option value="option4" label="option4">Option4</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="청구지">청구지</label>
+						<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+							<div class="btn btn-select" role="button" aria-label="선택버튼">선택하세요</div>
+							<select id="청구지" class="dp-none">
+								<option value="default" label="선택하세요">선택하세요</option>
+								<option value="option2" label="option2">Option2</option>
+								<option value="option3" label="option3">Option3</option>
+								<option value="option4" label="option4">Option4</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group-area">
+					<h6 class="title">주소/연락처 정보</h6>
+
+					<div class="form-group">
+						<label for="자택주소">자택 주소</label>
+						<div class="form-search">
+							<input type="text" id="자택주소" placeholder="주소 검색 입력" class="form-input">
+							<button type="button" class="btn delete-btn">삭제</button>
+							<button type="button" class="btn-icon search">직원찾기</button>
+						</div>
+						<input type="text" id="" placeholder="상세 주소 입력" class="form-input">
+					</div>
+
+					<div class="form-group">
+						<h3 class="input-title">직장 전화번호</h3>
+						<div class="form-group-inline phone-number">
+							<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+								<div class="btn btn-select" role="button" aria-label="선택버튼">선택</div>
+								<select id="inputLabel111" class="dp-none" name="">
+									<option value="SKT" label="SKT">SKT</option>
+									<option value="KT" label="KT">KT</option>
+									<option value="LG" label="LG">LG</option>
+									<option value="알뜰폰" label="알뜰폰">알뜰폰</option>
+								</select>
+							</div>
+							<input type="text" id="" placeholder="[-]없이 입력" class="form-input">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="이메일">이메일</label>
+						<div class="form-group-inline">
+							<input type="text" id="이메일" placeholder="이메일 입력" class="form-input">
+							<div class="form-entities at"></div>
+							<div class="form-group-select"><!-- 비활성화 시 disabled 클레스 추가 -->
+								<div class="btn btn-select" role="button" aria-label="선택버튼">선택하세요</div>
+								<select id="mailProvider" class="dp-none">
+									<option value="선택하세요" label="선택하세요">선택하세요</option>
+									<option value="hanmail.net" label="hanmail.net">hanmail.net</option>
+									<option value="naver.com" label="naver.com">naver.com</option>
+									<option value="nate.com" label="nate.com">nate.com</option>
+									<option value="직접입력" label="direct input">직접입력</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+			<div class="pop-footer">
+				<div class="button-group">
+					<button type="button" class="btn btn-fill" disabled>다음</button>
+					<!-- <button type="button" class="btn btn-fill">대출신청</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //팝업 -->
+</body>
+</html>
