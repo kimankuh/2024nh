@@ -90,24 +90,24 @@ $(function(){
     /*********************
         드래깅 바텀시트     
     **********************/    
-    var wH = $(window).height();
-    var hH = $('.header').outerHeight();
-    var upH = $('.desc-area').outerHeight();
-    var bsH = wH - (hH + upH);
+    var wideFlag = false; // 마우스 누르고 있을 때만 
+$('#drag-handle').on("mousedown", function(e){
+  wideFlag = true;
+});
+$("#drag-object").on('mousemove', function (e) {
+  if (wideFlag == true && e.clientX > 220 && e.clientX < 1000) { // 최소, 최대 영역 지정
+    $('#section').css('width', e.clientX);
+  };
+}).on('mouseup', function (e) {
+  wideFlag = false;
+});
 
-    console.log('화면 높이 : ', wH);
-    console.log('헤더 높이 : ', hH);
-    console.log('상단 높이 : ', upH);
-    console.log('바텀 높이 : ', wH - (hH + upH));
+// 사용이 끝나고 이벤트 삭제
+$('#drag-object-handle').unbind("mousedown");
+$("#main").unbind("mousemove");
+$("#main").unbind("mouseup");
 
-    $('.dragging-bs').height(bsH);
-    
-    var isDrag = false;
 
-    function startDrag(e){ 
-        e.preventDefault();
-        isDrag = true;//함수가 호출되면 true로 바꿔줌. mousedown시 호출될 예정.
-    }
 
 
 });
