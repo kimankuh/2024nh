@@ -90,22 +90,22 @@ $(function(){
     /*********************
         드래깅 바텀시트     
     **********************/    
-    var wideFlag = false; // 마우스 누르고 있을 때만 
-$('#drag-handle').on("mousedown", function(e){
-  wideFlag = true;
-});
-$("#drag-object").on('mousemove', function (e) {
-  if (wideFlag == true && e.clientX > 220 && e.clientX < 1000) { // 최소, 최대 영역 지정
-    $('#section').css('width', e.clientX);
-  };
-}).on('mouseup', function (e) {
-  wideFlag = false;
-});
+//     var wideFlag = false; // 마우스 누르고 있을 때만 
+// $('#drag-handle').on("mousedown", function(e){
+//   wideFlag = true;
+// });
+// $("#drag-object").on('mousemove', function (e) {
+//   if (wideFlag == true && e.clientX > 220 && e.clientX < 1000) { // 최소, 최대 영역 지정
+//     $('#section').css('width', e.clientX);
+//   };
+// }).on('mouseup', function (e) {
+//   wideFlag = false;
+// });
 
-// 사용이 끝나고 이벤트 삭제
-$('#drag-object-handle').unbind("mousedown");
-$("#main").unbind("mousemove");
-$("#main").unbind("mouseup");
+// // 사용이 끝나고 이벤트 삭제
+// $('#drag-object-handle').unbind("mousedown");
+// $("#main").unbind("mousemove");
+// $("#main").unbind("mouseup");
 
 
 
