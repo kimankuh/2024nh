@@ -37,17 +37,19 @@ $(function(){
 
     // nav 고정
     function scrollTopCheck(){
-        var $nav = $('.prod_nav_list');
-        var navTop = $nav.offset().top;
-        var scrollTop = $(window).scrollTop();
+        var $nav = $('.prod_nav_list');// .prod_nav_list가 존재하는 곳에서만 실행
+        if($nav.length > 0){            
+            var navTop = $nav.offset().top;
+            var scrollTop = $(window).scrollTop();
 
-        if(navTop - scrollTop < 55){
-            $nav.addClass('active');            
-        }else if(scrollTop < 40){
-            $nav.removeClass('active');
-        }
+            if(navTop - scrollTop < 55){
+                $nav.addClass('active');            
+            }else if(scrollTop < 40){
+                $nav.removeClass('active');
+            }
+        }        
     }
-    scrollTopCheck();//init용
+    scrollTopCheck();//init
 
 
 
@@ -82,5 +84,30 @@ $(function(){
         $('.gnb_total').scrollTop(top2);
 
     });
+
+
+
+    /*********************
+        드래깅 바텀시트     
+    **********************/    
+    var wH = $(window).height();
+    var hH = $('.header').outerHeight();
+    var upH = $('.desc-area').outerHeight();
+    var bsH = wH - (hH + upH);
+
+    console.log('화면 높이 : ', wH);
+    console.log('헤더 높이 : ', hH);
+    console.log('상단 높이 : ', upH);
+    console.log('바텀 높이 : ', wH - (hH + upH));
+
+    $('.dragging-bs').height(bsH);
+    
+    var isDrag = false;
+
+    function startDrag(e){ 
+        e.preventDefault();
+        isDrag = true;//함수가 호출되면 true로 바꿔줌. mousedown시 호출될 예정.
+    }
+
 
 });
