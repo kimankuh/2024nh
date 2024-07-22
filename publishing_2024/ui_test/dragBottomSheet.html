@@ -102,12 +102,12 @@
         if((bottom_touch_start - lastTouch) > 0){// up, 플러스
             // console.log('열림', lastTouch);
             bottomSheet.animate({
-                'height' : 600
+                'height' : 400
             }, 200);
         }else if((bottom_touch_start - lastTouch) < 0){// down, 마이너스
             // console.log('접힘');
             bottomSheet.animate({
-                'height' : 300
+                'height' : 150
             }, 200);
         }
     });
