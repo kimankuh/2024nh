@@ -119,6 +119,7 @@ $(function(){
             if(gap < 0 && bsIngH < bsMaxH){// gap이 마이너스 값임 && 드래그시 bsMaxH까지 높이 적용
                 $bs.height(bsIngH);
             }
+            $('body').css('overflow', 'hidden');
         });
     
         $handle.on('touchend', function(e){
