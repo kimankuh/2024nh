@@ -90,23 +90,89 @@ $(function(){
     /*********************
         드래깅 바텀시트     
     **********************/    
-//     var wideFlag = false; // 마우스 누르고 있을 때만 
-// $('#drag-handle').on("mousedown", function(e){
-//   wideFlag = true;
-// });
-// $("#drag-object").on('mousemove', function (e) {
-//   if (wideFlag == true && e.clientX > 220 && e.clientX < 1000) { // 최소, 최대 영역 지정
-//     $('#section').css('width', e.clientX);
-//   };
-// }).on('mouseup', function (e) {
-//   wideFlag = false;
-// });
+        var wH = $(window).height();
+        // var hH = $('.header').outerHeight();
+        // var upH = $('.desc-area').outerHeight();
+        // var bsH = wH - (hH + upH);
+    
+        // console.log('화면 높이 : ', wH);
+        // console.log('헤더 높이 : ', hH);
+        // console.log('상단 높이 : ', upH);
+        // console.log('바텀 높이 : ', wH - (hH + upH));
+    
+        // $('.dragging-bs').height(bsH);
+    
+        var bottomSheet = $('.dragging-bs');
+        var bottomSheetH = $('.dragging-bs').outerHeight();
+        var draghandle = $('.drag-handle');
+        // var bottomTouchStart = 0;
+        // var bottomScrollStart;
+        var lastTouch;
+    
+        // 초기 터치
+        draghandle.on('touchstart', function(e){
+            bottom_touch_start = e.touches[0].pageY;
+            // console.log('초기터치 : ', bottom_touch_start)
+    
+            lastTouch = 0;
+        });
 
-// // 사용이 끝나고 이벤트 삭제
-// $('#drag-object-handle').unbind("mousedown");
-// $("#main").unbind("mousemove");
-// $("#main").unbind("mouseup");
+        //핸들을 터치한 경우 => 바텀시트 up
+        draghandle.on('touchmove', function(e){
+            lastTouch = e.touches[0].pageY;
+            console.log('마지막터치 : ', lastTouch);
 
+            var gap = lastTouch - bottom_touch_start;
+            var bsIngH = bottomSheetH + (-gap);
+            var bsMaxH = wH - ($('#headerLay').outerHeight() + 50);
+
+            if(bottomSheet.hasClass('active')) return;
+            if(gap < 0 && bsIngH < bsMaxH){// 갭이 0보다 작고 active가 있으면?
+                bottomSheet.height(bsIngH);
+            }
+            // 다 올라갔을 땐 몬가 구분자를 추가하여 높이값 변경 막기
+            // 뭘로 구분하지..??
+            // 지정 높이만큼 올라가면 터치 함수를 off 해주야해. 그럼 닫는 건 어째...?
+            // 만약 지정 높이만큼 올라가면 lastTouch 업데이트 막기
+            // 또는 바텀시트 높이값 대입 막기
+        });
+    
+        draghandle.on('touchend', function(e){
+            if((bottom_touch_start - lastTouch) > 0 && lastTouch != 0){// up
+                // console.log('열림 : ', bottom_touch_start - lastTouch);
+                // console.log('초기 : ' + bottom_touch_start + ' 마지막 : ' + lastTouch);
+    
+                bottomSheet.animate({
+                    'height' : 500
+                }, 200, "swing");
+
+                $('.dragging-bs').addClass('active');
+
+            }else if((bottom_touch_start - lastTouch) < 0 && lastTouch != 0){// down
+                // console.log('접힘 : ', bottom_touch_start - lastTouch);
+                // console.log('초기 : ' + bottom_touch_start + ' 마지막 : ' + lastTouch);
+    
+                bottomSheet.animate({
+                    'height' : 150
+                }, 300, "swing");
+
+                $('.dragging-bs').removeClass('active');
+            }   
+    
+        });
+
+        // 드래그 테스트
+        // $('body').on("touchstart", function (e) {
+        // 	console.log('touchstart : ',  e.touches[0].pageY)
+        // })
+
+        // $('body').on("touchmove", function (e) {
+        // 	console.log('touchmove : ',  e.touches[0].pageY)
+        // })
+
+        // $('body').on("touchend", function (e) {
+        // 	console.log('touchend : ')
+        // })
 
 
 
