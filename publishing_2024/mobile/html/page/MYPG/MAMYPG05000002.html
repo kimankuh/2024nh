@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout">
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">회원정보 수정</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+				<div class="page_title_part">
+					<h2 class="ebtitle2">회원정보 수정</h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+				<!-- 2022-04-27 수정 : 디자인 변경으로 마크업 수정 -->
+				<!-- 2022-02-28 수정 : 휴대폰입력폼 변경 및 자택,직장정보삭제 -->
+				<div class="subtitle_wrap">
+					<div class="conts_box">
+						<div class="form_part">
+							<div class="form_set">
+								<div class="ebform_label">이름</div>
+								<div class="form_pack">
+									<div class="input_pack">
+										<input type="text" class="ebinput" placeholder="이름입력" title="이름" value="표소희" readonly="readonly">
+										<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+									</div>
+								</div>
+							</div>
+							<div class="form_set">
+								<div class="ebform_label">생년월일</div>
+								<div class="form_pack">
+									<div class="input_pack">
+										<input type="tel" class="ebinput" placeholder="생년월일 입력" title="생년월일" value="2021년 12월 12일" readonly="readonly">
+										<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+									</div>
+								</div>
+							</div>
+							<div class="form_set">
+								<div class="ebform_label">아이디</div>
+								<div class="form_pack">
+									<div class="input_pack">
+										<input type="email" class="ebinput" placeholder="아이디 입력" title="아이디" value="Soheepyo" readonly="readonly">
+										<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+									</div>
+								</div>
+							</div>
+							<div class="form_set">
+								<div class="ebform_label">휴대폰번호</div>
+								<div class="form_pack">
+									<div class="input_pack">
+										<input type="tel" class="ebinput" placeholder="-없이 숫자만 입력" title="휴대폰번호" value="010-0000-0000">
+										<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+									</div>
+								</div>
+							</div>
+							<div class="form_set">
+								<div class="ebform_label">이메일</div>
+								<div class="form_pack">
+									<div class="input_pack ty_email">
+										<input type="email" class="ebinput" placeholder="이메일 입력" title="이메일" value="">
+										<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+										<div class="email_layer"><!-- 레이어 활성화시 addClass="show" -->
+											<ul>
+												<li>nhcapital@naver.com</li>
+												<li>nhcapital@hanmail.net</li>
+												<li>nhcapital@gmail.com</li>
+												<li>nhcapital@nate.com</li>
+												<li>nhcapital@kakao.com</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //2022-02-28 수정 : 휴대폰입력폼 변경 및 자택,직장정보삭제 -->
+				<!-- //2022-04-27 수정 : 디자인 변경으로 마크업 수정 -->
+
+				<div class="bullet_part">
+					<div class="bullet_pack">
+						<p class="ebbullet_title">안내 유의사항</p>
+						<ul class="ebullet_circle">
+							<li>수령지(이메일 주소, 자택 주소, 직장 주소)의 정보 가 변경될 졍우, 변경된 주소로 명세서가 발송됩니다.</li>
+							<li>명세서 발송일에 따라 수정사항이 바로 적용되지 않을 수  있습니다. </li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed">
+			<button type="button" class="ebbtn btn_main ty_bg">인증하고 저장하기</button>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* v1.0 | 2022-06-08 */
+
+
+/*
+	대분류
+*/
+/* 소분류 */
+
+/*
+	메인 english
+*/
+.header_area .link_box { position: absolute; top: 50%; right: 100px; transform: translateY(-50%); font-size: 0; }
+.ebbtn.btn_toplink { padding: 0 40px 0 20px; height: 40px; margin-left: 10px; line-height: 40px; border-radius: 22px; font-size: 14px; color: #707070; box-sizing: border-box; background: #f3f4f8 url('../image/contents/foreign/btn_link.png') no-repeat right 20px center; }
+.ebbtn.btn_toplink:hover { background-image: url('../image/contents/foreign/btn_link_hover.png'); color: #0066b1; }
+
+.ebtab_content > li > .page_title_part { padding: 70px 0 45px; }
+
+.process_img_box.ty_01 { margin: 55px -47px 0; }
+
+.history_nhcap_part > ul > li .history_pack .conts .todo { display: table; table-layout: fixed;}
+.history_nhcap_part > ul > li .history_pack .conts .todo .dates { display: table-cell; min-width: 52px; vertical-align: top; }
+.history_nhcap_part > ul > li .history_pack .conts .todo .text { display: table-cell; vertical-align: top; }
+
+.footer .footer_area .footer_info { padding: 38px 0; }
+.copyright > p { font-size: 15px; color: #7d8088; }

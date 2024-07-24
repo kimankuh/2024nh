@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout">
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">고객정보입력</h2>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">고객정보입력</h2>
+				</div>
+
+				<div class="page_subtitle_part">
+					<p>고객님의 정보를 입력해주세요.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+
+
+				<div class="form_part">
+					<div class="form_set">
+						<div class="ebform_label">이름</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="이름 입력" value="홍길동" title="이름" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set">
+						<div class="ebform_label">성별</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="성별 입력" value="남성" title="성별" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set">
+						<div class="ebform_label">생년월일</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="tel" class="ebinput" placeholder="생년월일 입력" value="1979.11.06" title="생년월일" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set">
+						<div class="ebform_label">휴대전화번호</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="tel" class="ebinput" placeholder="-없이 숫자만 입력" value="010-1111-2222" title="휴대전화번호" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set">
+						<div class="ebform_label">이메일(선택)</div>
+						<div class="form_pack">
+							<div class="input_pack ty_email">
+								<input type="email" class="ebinput" placeholder="이메일 입력" title="이메일" value="">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								<div class="email_layer"><!-- 레이어 활성화시 addClass="show" -->
+									<ul>
+										<li>nhcapital@naver.com</li>
+										<li>nhcapital@hanmail.net</li>
+										<li>nhcapital@gmail.com</li>
+										<li>nhcapital@nate.com</li>
+										<li>nhcapital@kakao.com</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

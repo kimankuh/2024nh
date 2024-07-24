@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout">
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">결제정보</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">한도조회</span>
+							</li>
+							<li class="active">
+								<span class="num">2</span>
+								<span class="txt">대출신청</span>
+							</li>
+							<li>
+								<span class="num">3</span>
+								<span class="txt">약정서 작성</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li></li>
+							<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">결제정보</h2>
+				</div>
+
+				<div class="page_subtitle_part">
+					<p>결제정보를 입력해주세요.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+				<div class="form_part">
+					<div class="form_set">
+						<div class="ebform_label">결제일</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" title="결제일" data-placeholder="선택">
+									<option value="option1" selected="selected">1일</option>
+									<option value="option2">5일</option>
+									<option value="option3">option3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form_set">
+						<div class="ebform_label">월상환금액</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word1">
+								<input type="tel" class="ebinput" title="월상환금액" value="921,150" readonly="readonly">
+								<span class="unit">원</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set">
+						<div class="ebform_label">결제계좌</div>
+
+						<!-- 2022-02-23 수정 : 셀렉트 버튼형식으로 수정 -->
+						<div class="form_pack ty_account">
+							<div class="select_pack has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+								<button type="button" class="ebbtn btn_select" title="결제계좌">
+									<span class="icon_pack">
+										<span class="ebicon icon_bank">
+											<img src="../../../resource/image/ci/ci_004.png" alt="">
+										</span>
+										<span class="text">국민은행</span>
+									</span>
+								</button>
+							</div>
+							<div class="input_pack">
+								<input type="tel" class="ebinput" placeholder="-없이 숫자만 입력" value="" title="계좌번호 입력">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+						<!-- //2022-02-23 수정 : 셀렉트 버튼형식으로 수정 -->
+
+						<div class="btn_box">
+							<button type="button" class="ebbtn btn_normal ty_bg w100per">본인계좌확인</button>
+						</div>
+						<!-- 2022-05-24 수정 : 문구 수정 -->
+						<ul class="ebullet_circle">
+							<li>현재 당사 대출을 이용 중이신 경우, 추가대출은 동일한 계좌로 대출신청이 가능합니다. 평생계좌(휴대폰 번호 등)는 등록이 불가능합니다.</li>
+						</ul>
+						<!-- //2022-05-24 수정 : 문구 수정 -->
+					</div>
+
+				</div>
+
+				<div class="form_part ty_ani">
+					<div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
+						<div class="ebform_label">청구방식</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" title="청구방식" data-placeholder="청구지 선택">
+									<option value="option1">모바일</option>
+									<option value="option2">이메일</option>
+									<option value="option3" selected="selected">우편수령</option>
+								</select>
+							</div>
+						</div>
+						<div class="form_next_box"><!-- 모바일, 이메일 선택시 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
+							<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+						</div>
+					</div>
+
+					<div class="form_set show"><!-- 청구방식 option 우편수령 선택시 노출 / 입력폼 활성화시 addclass="show" -->
+						<div class="ebform_label">청구지</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" title="청구지" data-placeholder="청구지 선택">
+									<option value="option1" selected="selected">자택</option>
+									<option value="option2">직장</option>
+								</select>
+							</div>
+						</div>
+						<div class="form_next_box show"><!-- 마지막 form까지 입력 완료 후 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
+							<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+	</div>
+</div>
+
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

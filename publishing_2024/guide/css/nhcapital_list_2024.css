@@ -57,6 +57,7 @@ em {font-style:normal;}
 .nav-menu-item + .nav-menu-item {margin-top:5px;}
 .nav-menu-link {display:block;padding:10px;font-size:14px;font-weight:normal;background-color:#0f73ff;}
 .nav-menu-link:hover {background-color:#2580ff;}
+.nav-menu-link.active {border:1px solid rgba(255,255,255, 0.4)}
 
 /* content */
 #contents {position:relative;flex:1;padding-left:0;padding-bottom:70px;transition:0.5s;}
@@ -81,9 +82,10 @@ em {font-style:normal;}
 .page-list-table .th {padding:10px 3px;background-color:#eee;}
 .page-list-table .td {padding:5px 3px;}
 [data-pagepart="MW"]:before,
-[data-pagepart="MA"]:before {display:inline-block;margin-right:2px;padding:0 3px;min-width:20px;text-align:center;font-size:11px;color:#fff;border-radius:3px;}
+[data-pagepart="MA"]:before {display:inline-block;margin-right:3px;padding:0 3px;min-width:20px;text-align:center;font-size:11px;color:#fff;border-radius:3px;}
 [data-pagepart="MW"]:before {content:'MW';background-color:#005a42;}
 [data-pagepart="MA"]:before {content:'MA';background-color:#009870;}
+[data-pagenew="true"]:after {content:'N';display:inline-block;margin-left:3px;width:13px;height:13px;line-height:13px;font-size:9px;text-align:center;color:#fff;font-weight:bold;background-color:rgba(255, 0, 0, 0.615);border-radius:3px;}
 .text-memo + .text-memo {margin-top:5px;}
 .text-memo {line-height:1.2;color:#777;font-size:12px;}
 .text-memo:before {content:attr(data-date);margin-right:2px;font-size:11px;font-weight:bold;color:var(--fontBasicColor);}
@@ -93,6 +95,7 @@ em {font-style:normal;}
 [data-status="진행"]:before {content:'진행'}
 [data-status="완료"]:before {content:'완료';color:var(--primaryColor);}
 [data-status="삭제"]:before {content:'삭제';color:#999;}
+.link-id:hover {color:var(--primaryColor);}
 .del-tr *,
 .del-tr .link-id:hover {text-decoration:line-through;background-color:#f7f7f7;}
 

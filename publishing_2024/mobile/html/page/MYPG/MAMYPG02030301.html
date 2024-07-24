@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout">
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">명세서 수령방법</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="active"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">대출상품 선택</span>
+							</li>
+							<li>
+								<span class="num">2</span>
+								<span class="txt">수령방법 입력</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="page_title_part">
+					<h2 class="ebtitle2">명세서 수령방법</h2>
+				</div>
+				<div class="page_subtitle_part">
+					<p>
+						실행 중인 대출의 명세서 수령방법을 변경할 수 있습니다.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+				<div class="inquiry_part">
+
+					<!-- 개인사업자 있는 경우 -->
+					<div class="inquiry_select_part borderdiv">
+						<div class="form_pack">
+							<div class="select_pack ty_noborder" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="개인/사업자 선택" title="대출계좌확인">
+									<option value="option1">개인/사업자 선택</option>
+									<option value="option2">옵션2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!-- //개인사업자 있는 경우 -->
+
+					<div class="inquiry_select_part borderdiv">
+						<div class="form_pack">
+							<div class="select_pack ty_noborder has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+								<!-- <button type="button" class="ebbtn btn_select" title="대출계좌확인">상품 선택</button> -->
+								<button type="button" class="ebbtn btn_select" title="대출계좌확인">개인신용다이렉트추가 (일반 직장인론)</button>
+							</div>
+						</div>
+						<div class="btn_box">
+							<button type="button" class="ebbtn btn_normal ty_bg w100per">상세보기</button>
+						</div>
+					</div>
+
+					<!--  조회 후 영역 -->
+					<div class="calc_data_part bgdiv nopad">
+						<div class="ebtitle_normal">현재 수령정보</div>
+						<div class="calc_data_box">
+							<div class="calc_data_list">
+								<ul>
+									<li>
+										<div class="title">이메일</div>
+										<div class="conts">soheepyo@nhcapital.com</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--  //조회 후 영역 -->
+
+					<!-- 2022-03-11 수정 : 안내 유의사항 내용 수정 -->
+					<div class="bullet_part">
+						<div class="bullet_pack">
+							<p class="ebbullet_title">안내 유의사항</p>
+							<ul class="ebullet_circle">
+								<li>명세서 수령방법 변경을 위해서는 인증이 반드시 필요합니다.</li>
+								<li>수령방법 변경은 e-mail, 우편, 발송거부 중 선택 가능합니다.</li>
+								<li>오토/산업재 상품은 우편 명세서 신청이 불가합니다. 우편으로 변경을 원하시는 경우 고객센터 <a href="tel:1644-3700"><span class="ebunderline ty_blue">1644-3700</span></a>으로 문의해주세요.</li>
+								<li>결제일로부터 약 2주 전에 변경완료해야만 당월 명세서부터 적용 가능합니다.</li>
+								<li>당월 명세서부터 적용을 원하시는 고객님께서는 별도로 명세서 재발송을 요청해주세요.</li>
+								<li>수령지 정보 변경은 회원정보변경에서 가능합니다</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //2022-03-11 수정 : 안내 유의사항 내용 수정 -->
+
+				</div>
+
+
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed">
+			<button type="button" class="ebbtn btn_main ty_bg">신청하기</button>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>
