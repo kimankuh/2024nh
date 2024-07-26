@@ -49,3 +49,12 @@
 .card-back {position:absolute;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
 .card-front {background-color:yellowgreen;}
 .card-back {background-color:rgb(25, 84, 0);transform: rotateY(180deg);}
+
+/* 테스트 목록 */
+.ui-test-p + .ui-test-list {margin-top:5px;}
+.ui-test-list {padding-left:20px;width:100%;max-width:400px;border-top:2px solid #0765e5;}
+.ui-test-item {padding-left:10px;list-style:decimal;font-size:10px;border-bottom:1px solid #eee;}
+.ui-test-item::marker {border-right:1px solid #ccc;border-radius:20px;}
+.ui-test-item:hover {background-color:#f7f7f7;}
+.ui-test-link {display:inline-block;padding:10px;font-size:13px;}
+.ui-test-link:hover {color:#0765e5;}

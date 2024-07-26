@@ -86,17 +86,9 @@ $(function(){
 
 
 
-
-
-
-    
-
-
-});
-
-
-var draggableBottom = {
-    init : function(){
+    /*********************
+        draggable 바텀시트     
+    **********************/    
         var $bs = $('.dragging-bs');
         var $handle = $('.drag-handle');
         var wh = $(window).height();        
@@ -110,34 +102,18 @@ var draggableBottom = {
         // init
         $bs.height(bsh);
 
-        draggableBottom.touchstart();
-        draggableBottom.touchmove();
-        draggableBottom.touchend();
-
-        console.log('나옴?')
-    },
-    touchstart : function(){
-        var _this = this;
-        
-
-
         // 초기 터치
         $handle.on('touchstart', function(e){
             touchStart = e.touches[0].pageY;
             touchLast = 0;// touchmove시 저장된 값 초기화
         });
 
-        _this.touchmove();
-
-    },
-    touchmove : function(){
-        var _this = this;
-
         //핸들을 터치한 경우 => 바텀시트 up
-        touchstart.$handle.on('touchmove', function(e){
+        $handle.on('touchmove', function(e){
             touchLast = e.touches[0].pageY;            
             var gap = touchLast - touchStart;
             var bsIngH = bsh + (-gap);
+            // console.log('마지막터치 : ', touchLast);            
 
             if($bs.hasClass('active')) return;// 바텀시트 펼침 상태시 패스
             if(gap < 0 && bsIngH < bsMaxH){// gap이 마이너스 값임 && 드래그시 bsMaxH까지 높이 적용
@@ -145,10 +121,7 @@ var draggableBottom = {
             }
             $('body').css('overflow', 'hidden');
         });
-
-        _this.touchend();
-    },
-    touchend : function(){
+    
         $handle.on('touchend', function(e){
             if((touchStart - touchLast) > 0 && touchLast != 0){// up
                 $bs.animate({
@@ -164,21 +137,6 @@ var draggableBottom = {
                 $('.dragging-bs').removeClass('active');
             }       
         });
-    }
-}
-draggableBottom.init();
-// $(function(){
-//     draggableBottom.init();
-// });
-        
-
-        
-        
-
-        
-        
-    
-        
 
         // 드래그 테스트
         // $('body').on("touchstart", function (e) {
@@ -192,3 +150,9 @@ draggableBottom.init();
         // $('body').on("touchend", function (e) {
         // 	console.log('touchend : ')
         // })
+
+
+    
+
+
+});
