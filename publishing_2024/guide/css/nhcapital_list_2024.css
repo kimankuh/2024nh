@@ -121,6 +121,9 @@ em {font-style:normal;}
 .btn-top:hover {background-color:#636363;}
 .prev-active .btn-top {right:422px;}
 
+.hidden-area{z-index:110;position:fixed;left:0;bottom:0;color:var(--primaryColor);}
+
+
 /* media query */
 @media (max-width:768px) {    
     #nav br,
@@ -133,6 +136,7 @@ em {font-style:normal;}
     .header {padding-top:10px;}
     .status-area {padding-right:10px;}
     .content {padding-left:10px;padding-right:10px;}
+    .hidden-area {position:absolute;color:#fff;}
 }
 
 @media (max-width:414px) {
