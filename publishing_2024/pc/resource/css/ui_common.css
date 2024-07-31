@@ -484,6 +484,7 @@ dl, dt, dd, ol, ul, li { margin: 0; padding: 0; list-style: none; }
 .form_part.ty_ani .form_set.show:first-child { margin-top: 0px; }
 .form_part.ty_ani .form_set.done .form_next_box { display: none; }
 
+
 /*
 	확대,축소 팝업  2024-04-24 추가
 */

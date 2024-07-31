@@ -18,8 +18,8 @@
 .color05 { color: #707070 !important; }
 .color06 { color: #f8c029 !important; }
 .color07 { color: #303030 !important; }
+.color08 { color: #003DCA !important; }
 .color08 { color: #1e9d70 !important; }
-
 
 
 /*
@@ -56,7 +56,6 @@
 /*
 	margin
 */
-.mt50 { margin-top: 50px !important; }
 .mt40 { margin-top: 40px !important; }
 .mt30 { margin-top: 30px !important; }
 .mt20 { margin-top: 20px !important; }

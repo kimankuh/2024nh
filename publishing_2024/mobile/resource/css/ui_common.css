@@ -383,8 +383,10 @@ button, a, label, select, div { -webkit-tap-highlight-color: rgba(0,0,0,0.1); }
 .form_part.ty_ani .form_set.show:first-child { margin-top: 0px; }
 .form_part.ty_ani .form_set.done .form_next_box { display: none; }
 
+
+
 /*
-	A11Y 240214 접근성 수정
+	A11Y
 */
 .hidden {position:absolute;margin:-1px;padding:0;overflow:hidden;width:1px;height:1px;clip:rect(0,0,0,0);}
 a:focus, area:focus, input:focus, select:focus, textarea:focus, button:focus, iframe:focus, object:focus, embed:focus, *[tabindex]:focus, *[contenteditable]:focus {outline: none;}

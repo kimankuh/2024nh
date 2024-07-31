@@ -18,8 +18,8 @@
 .color05 { color: #707070 !important; }
 .color06 { color: #f06000 !important; } /* A11Y 240320 명도대비 컬러 수정 */
 .color07 { color: #303030 !important; }
+.color08 { color: #003DCA !important; }
 .color09 { color: #1e9d70 !important; }
-
 
 
 /*
@@ -49,11 +49,21 @@
 	margin
 */
 .mt0 { margin-top: 0px !important; }
+.mt10 { margin-top: 10px !important; }
 .mt15 { margin-top: 15px !important; }
 .mt20 { margin-top: 20px !important; }
 .mt30 { margin-top: 30px !important; }
 .mt40 { margin-top: 40px !important; }
 
+.ml20 { margin-left: 20px !important; }
+
+/*
+	padding
+*/
+.pb100 { padding-bottom: 100px !important; }
+
+.pr-20 { padding-right: 20px !important; }
+.pr-40 { padding-right: 40px !important; }
 
 
 /*
@@ -61,8 +71,17 @@
 */
 .wordk { word-break: keep-all !important; }
 
-
 /*
 	텍스트
 */
 .fwb{font-weight:bold; }
+
+.fs-17 { font-size: 17px !important; }
+.fs-18 { font-size: 18px !important; }
+
+/*
+	line-height
+*/
+.lh17{line-height: 1.7; }
+.lh18{line-height: 1.8; }
+.lh20{line-height: 2; }

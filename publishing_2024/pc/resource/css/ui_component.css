@@ -87,7 +87,6 @@ ul.ebullet_bar > li:before { content:''; position: absolute; left: 0; top: 12px;
 .txt_indent_list{padding-left:35px; }
 .txt_indent_list li{text-indent:-35px; }
 
-
 /*
 	입력 공통
 */
@@ -537,6 +536,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 
 /* 체크박스 + 라벨 */
 .checkbox_pack { position: relative; display: inline-block; vertical-align: middle; font-size: 0; }
+.checkbox_pack.multiLine { width: 100px; }
 .checkbox_pack .ebcheckbox { position: absolute; top: 50%; left: 0; margin-top: -12px; }
 .checkbox_pack .eblabel span { padding-right: 4px; }
 .checkbox_pack .ebcheckbox + .eblabel { display: inline-block; vertical-align: middle; padding: 2px 0 1px 35px; font-size: 15px; text-align: left; cursor: pointer; }
@@ -1577,7 +1577,6 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .accordion_absolute_pack .accordion_absolute_content .close{background: url(../image/component/popup_close.png) no-repeat center;
     top: 16px; position: absolute; right: 15px; width: 11px; height: 11px; cursor: pointer; border: 0; }
 
-
 /*
 	약관
 */
@@ -1848,3 +1847,7 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .img_desc_pack .img_desc_area .txt_box .tit{font-size:18px; font-weight:bold; color:#303030; }
 .img_desc_pack .img_desc_area .txt_box .desc{font-size:16px; color:#707070; margin:13px 0 0 0; }
 .img_desc_pack .img_desc_area .txt_box .desc ul li{margin-top:2px; }
+
+/*라디오 버튼 투뎁스 추가 - 2023-03-27 */
+.radio_pack_two_depth_hidden{background: #fafafc; margin: 0px 0 20px 0; padding: 20px 20px 4px 20px;
+    border-radius: 8px; display: none; }

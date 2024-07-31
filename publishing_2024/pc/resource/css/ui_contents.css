@@ -1964,7 +1964,7 @@ a.intro_tel_box .txt { display: inline-block; vertical-align: middle; padding-ri
 .intro_fixed_part.show { position: relative; min-width: 1280px; }
 .intro_fixed_part.show .intro_btn_box { display: block; }
 
-.stock_part.bgsimplediv { display: table; padding: 45px 50px; box-sizing: border-box; width: 100%; border-radius: 14px; box-shadow: 0 8px 32px rgb(0 0 0 / 24%); }
+.stock_part.bgsimplediv { display: table; padding: 45px 50px; box-sizing: border-box; width: 100%; border-radius: 14px 0px 14px 14px; box-shadow: 0 8px 32px rgb(0 0 0 / 24%); }
 .stock_part .ebbtn.btn_main.ty_light { border: none; background: rgba(255,255,255, 0.2); color: #ffffff; }
 .stock_part .ebbtn.btn_main.ty_light:hover { background: rgba(255,255,255, 0.2); box-shadow: 0 0 48px rgba(0, 0, 0, 0.4); }
 .stock_part .ebbtn.btn_main.ty_bg:hover { background: #ffffff; color: #2a6f75; box-shadow: 0 0 48px rgba(0, 0, 0, 0.4); }
@@ -2084,7 +2084,7 @@ a.intro_tel_box .txt { display: inline-block; vertical-align: middle; padding-ri
 /* CEO 인사말 */
 .greeting_ceo { margin-bottom: -100px; }
 .greeting_ceo .img_box { position: relative; z-index: 1; }
-.greeting_ceo .words_box { position: relative; /*margin-top: -94px;*/ padding: 90px 0; background-color: #f6f9fe;  }
+.greeting_ceo .words_box { position: relative;/* margin-top: -94px;*/ padding: 90px 0; background-color: #f6f9fe;  }
 .greeting_ceo .words_box:before { content: ''; position: absolute; left: -100%; top: 0; width: 100%; height: 100%; background-color: #f6f9fe; }
 .greeting_ceo .words_box:after { content: ''; position: absolute; left: 100%; top: 0; width: 100%; height: 100%; background-color: #f6f9fe;}
 .greeting_ceo .words_box .title { padding-bottom: 28px; font-size: 22px; font-weight: bold;  }
@@ -2623,10 +2623,13 @@ ul.chk_list > li .checkbox_pack .ebcheckbox + .eblabel { font-weight: normal; }
 .stipulation_area .sti_title { margin-top: 19px; font-size: 16px; margin-bottom: 11px; font-weight: bold; }
 .stipulation_area .sti_title:first-child { margin-top: 0; }
 .stipulation_area .sti_title.fs17 { font-size: 20px; }
+.stipulation_area .sti_title.fs18 { font-size: 18px; }/*2022-10-25추가*/
 .stipulation_area p + p { margin-top: 10px; }
 .stipulation_area dl dt { margin-top: 12px; margin-bottom: 10px; }
 .stipulation_area ol ol > li { color: #707070; }
 .stipulation_area ol ol ol > li { color: #707070; }
+.stipulation_area ol ol.color00 > li { color: #000; }
+.stipulation_area ol ol ol.color00 > li { color: #000; }
 .stipulation_area .cell_box { display: table; width: 100%; }
 .stipulation_area .cell_box .cell { display: table-cell; vertical-align: middle; }
 .stipulation_area .cell_box .cell .mt40 { margin-top: 0 !important; }
@@ -3037,6 +3040,7 @@ ul.calc_datalist_part > li:last-child .calc_data_box { background-color: #f6f9fe
 .branch_guide_pack > li .cont_box .cell:first-of-type .info_box > dl > dd { display: table-cell; vertical-align: middle; }
 .branch_guide_pack > li .cont_box .cell:last-of-type { width: 100px; }
 
+
 /*
 	신용조회 동의 - 아코디언추가 - 2022-09-15 추가
 */
@@ -3058,6 +3062,9 @@ ul.calc_datalist_part > li:last-child .calc_data_box { background-color: #f6f9fe
 .new0915 .term_pack .detail_agree .detail_conts .accordion_pack.three .ebbtn.btn_accordion{ height: 20px;
     width: 20px; top: 33px; right: 36px; }
 .new0915 .term_part .term_pack .detail_agree > ul > li .accordion_pack.three .detail_title .eblabel{font-weight:400; }
+
+.new0915 .term_part.ty_01 .term_pack .detail_agree .detail_conts { padding: 10px 30px 17px 70px !important; }
+.new0915 .table_conts_part > .table_view_pack table.file_down th { padding: 20px !important; }
 
 /*
 	ESG 메뉴 추가 - 2022-10-24 추가
@@ -3119,7 +3126,7 @@ ul.calc_datalist_part > li:last-child .calc_data_box { background-color: #f6f9fe
 .esg_result_part .esg_result_area .txt .sub_title_section{margin-bottom:15px; }
 .esg_result_part .accordion_absolute_pack_wrap .accordion_absolute_pack .accordion_absolute_content{left: 146px;
     right: initial; max-height: inherit; padding: 0; top: -117px; }
-
+   
 /* ESG 홍보*/
 .report_download_pack{margin:120px 0; }
 .report_download_pack .bg_area{ position:relative;  }
@@ -3146,6 +3153,17 @@ ul.calc_datalist_part > li:last-child .calc_data_box { background-color: #f6f9fe
 .report_download_list_pack li .thum img{width:100%; }
 .report_download_list_pack li .txt_area{width:55%; text-align:left; font-weight: bold; }
 
+/* 한도조회 결과 좁은 화면 */
+.container.min_size .step_part, .container.min_size .contents_zone.has_step, .container.min_size .contents_bottom_area { padding-top: 10px; }
+.container.min_size .text_box { margin-bottom: 15px; border: 1px solid #e6e6e6; padding: 10px 20px; }
+.container.min_size .form_set { margin-top: 5px; }
+.container.min_size .result_data_part .img_txt_pack { margin-top: 20px; padding: 20px; }
+.container.min_size .ebselect { text-align: right; padding-right: 20px; }
+
+.pr-20 { padding-right: 20px !important; }
+.pr-40 { padding-right: 40px !important; }
+
+.fs-17 { font-size: 17px !important; }
 
 /*esg 채권*/
 .esg_bond_part .tab_pack+.ebtitle3{margin-top:75px; }
@@ -3171,14 +3189,19 @@ ul.calc_datalist_part > li:last-child .calc_data_box { background-color: #f6f9fe
 .slogan .img_box{margin-bottom:80px; }
 .slogan .slogan_txt{margin-bottom:70px; font-size:30px; font-weight:500; color:#303030; }
 
+/*탭*/
+.tab_box{display: flex; justify-content: flex-end; width: 50%; float: right; text-align: center; }
+.tab_box li{width: 50%; font-size: 20px; padding: 12px 0;background: #E2F0D9; color: #000; }
+.tab_box li.active{background: #18a474; color: #fff; }
+.tab_box li:first-child{border-radius: 14px 14px 0 0; }
+.tab_box li:last-child{border-radius: 14px 14px 0 0; }
+.tab_box li a{display: block; }
+.tab_box+.loan_part.bgsimplediv{border-radius: 14px 0 14px 14px; }
+
 /*2023-06-22 추가*/
 .blue_shadow_box_pack{background:#0065b0; color:#fff; font-size:24px; max-width:530px; width: 80%;
     text-align: center; margin: 40px auto; padding: 11px 0; border-radius: 10px 0 10px 0;
     box-shadow: 0px 8px 32px rgb(0, 101, 176, 0.28); }
-
-/*라디오 버튼 투뎁스 추가 - 2023-03-27 */
-.radio_pack_two_depth_hidden{background: #fafafc; margin: 0px 0 20px 0; padding: 20px 20px 4px 20px;
-    border-radius: 8px; display: none; }
 
 /*농축협 조합원 특화상품 랜딩페이지 추가 - 2024-04-08 */
 .landing_zohabwon.container{background: #dddddd; }
