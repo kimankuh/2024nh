@@ -169,7 +169,7 @@ em {font-style:normal;}
     .page-list-table td:nth-child(8),
     .page-list-table td:nth-child(9),
     .page-list-table td:nth-child(10),
-    .page-list-table td:nth-child(11) {display:none;}
+    .page-list-table td:nth-child(11) {display:none;} 
 }
 
 @media (max-width:375px) {
