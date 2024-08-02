@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* v1.0 | 2022-06-27 */
+
+
+
+/* 웹폰트 */
+/* NotoSansKR */
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../font/NotoSansKR/NotoSansKR-Regular.eot');
+	src: url('../font/NotoSansKR/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../font/NotoSansKR/NotoSansKR-Regular.woff') format('woff');
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../font/NotoSansKR/NotoSansKR-Medium.eot');
+	src: url('../font/NotoSansKR/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../font/NotoSansKR/NotoSansKR-Medium.woff') format('woff');
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: 600;
+}
+
+/* reset override */
+html { font-size:62.5%; }
+body { font-family: 'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; font-size: 1.6rem; -webkit-text-size-adjust: none; }
+button, input, textarea, select, a { font-family: 'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; }
+
+/* contents override */
+.header .header_area .header_title h2 { font-size: 1.7rem; }
+.ebtitle2 { font-family: 'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; font-size: 2.2rem; }
+.ebtitle3 { font-family: 'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; }
+
+/* footer */
+.call_part { position: relative; margin: -1px -25px 0; padding-top: 12px; text-align: center; font-size: 1.3rem; color: #707070; background: #f2f2f4; }
+.call_part:after { content: ''; position: absolute; left: 0; bottom: -50px; width: 100%; height: 50px; background: #f2f2f4; }
+.call_part > p span { color: #111; font-weight: 600; }
+.call_pack p { display: inline-block; margin-top: 4px; font-size: 14px; vertical-align: middle; }
+.call_pack .ebbtn.btn_cscall { margin: 0 0 0 2px; vertical-align: middle; line-height: 1; }
+.call_pack .ebbtn.btn_cscall .icon_cscall { margin-right: 0px; }
+.call_pack .ebbtn.btn_cscall .num { vertical-align: middle; font-size: 1.3rem; font-weight: normal; text-decoration: underline; }
+.call_pack .ebicon.icon_cscall { width: 17px; height: 17px; background: url('../image/contents/albk/icon_cscall.png') no-repeat center; background-size: 100%; }
+
+.accordion_pack.ty_data .accordion_title .ebbtn.btn_txt_golink { font-size: 1.8rem; }
+.accordion_pack.ty_data .accordion_title .info .titltxt { font-size: 1.6rem; }
+.accordion_pack.ty_data .accordion_title .info .datatxt { font-size: 1.6rem; }
+.accordion_pack.ty_data .accordion_title .info .desctxt { font-size: 1.6rem; }
+
+.ebbtn.btn_pagelink > .text .ttl { font-size: 1.7rem; }
+.ebbtn.btn_pagelink > .text .etc { font-size: 1.3rem; }
+.toapp .ebbtn.btn_toapp .text .ttl { font-size: 1.6rem; }
+
+.utility_pack .ebbtn.btn_multicase .title { font-size: 1.7rem; }
+.utility_pack .ebbtn.btn_multicase .desc { font-size: 1.3rem; }
+
+/* 상품소개 애니메이션 제거 */
+/* 신용대출 */
+.loan_part ~ .tabcontent_pack .intro_part .intro_main > .cont_box .img_box img { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+.loan_part ~ .tabcontent_pack .intro_part .intro_main > .cont_box .title_wrap .title { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+.loan_part ~ .tabcontent_pack .intro_part .intro_main > .cont_box .title_wrap .desc { opacity: 1; transform: translate3d(0px, 0px, 0px); }
+
+.loan_part ~ .tabcontent_pack .intro_part .intro_main > .cont_box.active .img_box img { animation: none; }
+.loan_part ~ .tabcontent_pack .intro_part .intro_main > .cont_box.active .title_wrap .title { animation: none; }
+.loan_part ~ .tabcontent_pack .intro_part .intro_main > .cont_box.active .title_wrap .desc { animation: none; }
+
+/* 자동차리스 */
+.car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box.active .ani.ani_1 { opacity: 1; animation: none; }
+.car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box.active .ani.ani_2 { opacity: 1; animation: none; }
+.car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box.active .ani.ani_3 { opacity: 1; animation: none; }
+
+/* 장기렌터카 */
+.car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box.ty_02.active .ani.ani_8 .img_box { transition: none; }
+.car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box.ty_02.active .ani.ani_9 { opacity: 1; transition: none; }

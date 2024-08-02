@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 신용대출 약관동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
+<div class="layout">
+
+	<div class="header">
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+			</div>
+
+			<div class="header_home">
+				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+	<div class="subheader">
+		<div class="subheader_area">
+			<div class="page_title_part">
+				<h2 class="ebtitle2">자동차 리스</h2>
+				<!-- 2022-05-13 수정 : 문구수정 -->
+			</div>
+		</div>
+	</div>
+
+	<!-- 여기부터 컨텐츠 -->
+	<div class="contents_area">
+		<div class="contents">
+
+			<input type="hidden" id="enterType" name="enterType" value="${menu}"
+				data-mid="${mid}" />
+
+			<!-- 2022-05-04 수정 : 버튼명변경 및 컨텐츠 내용 변경 -->
+			<div class="inquiry_part">
+				<div class="car_part bgsimplediv">
+
+					<div class="intro_info_box">
+						<div class="text">구매와 임대를 복합적으로 선택할 수 있는 선진 자동차 금융상품으로써 고객이
+							원하는 차량을 각종 부대비용 및 편의서비스를 포함하여 매월 일정 리스료로 대여해 주는 상품입니다.</div>
+						<div class="data">
+							<dl>
+								<dt>${(empty productInfo.periodSubtitle) ? '리스 기간' : productInfo.periodSubtitle}</dt>
+								<dd>
+									<c:set var="periodContent" value="${fn:split(productInfo.periodContent, ' ,')}"></c:set>
+									<span class="max"><c:forEach var="text" items="${periodContent }" varStatus="i"><c:if test="${i.last }">${text }</c:if></c:forEach></span>개월(최장)
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="intro_btn_box">
+						<div class="btn_box">
+							<!-- 2022-05-09 수정 : 버튼디자인 수정으로 상하단 클래스 제거 -->
+							<div class="box_l">
+								<button type="button"
+									class="ebbtn btn_main ty_light phConsultationBtn"
+									data-mid="2432">전화상담신청</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab_pack ty_normal" data-module-id="introleasecartab">
+					<ul class="ebtab">
+						<li class="active">
+							<button type="button" class="ebbtn btn_tab">상품소개</button>
+						</li>
+						<li class="">
+							<button type="button" class="ebbtn btn_tab">상세정보</button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="tabcontent_pack" data-module-for="introleasecartab">
+					<ul class="ebtab_content">
+						<li class="active">
+
+							<div class="intro_part">
+								<div class="intro_main">
+
+									<div class="title_wrap">
+										<div class="title">
+											승용 신차 (국산/수입)<br> 15인승 이하 승합<br> 2.5톤 이하 화물
+										</div>
+										<div class="desc">자동차를 구입하고자 하는 개인, 개인사업자, 법인</div>
+									</div>
+									<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+									<div class="img_wrap widediv">
+										<div class="loan_img_box">
+											<div class="imgani_box">
+												<div class="ani ani_1">
+													<span class="img_box"> <img
+														src="/resource/mobile/image/contents/car/intro_car_ani3.png"
+														alt="승용 신차">
+													</span>
+												</div>
+												<div class="ani ani_2">
+													<span class="img_box"> <img
+														src="/resource/mobile/image/contents/car/intro_car_ani2.png"
+														alt="15인승 이하 승합">
+													</span>
+												</div>
+												<div class="ani ani_3">
+													<span class="img_box"> <img
+														src="/resource/mobile/image/contents/car/intro_car_ani1.png"
+														alt="2.5톤 이하 화물">
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+
+								</div>
+
+								<div class="layoutline_light"></div>
+
+								<dl class="small_title_pack">
+									<dt>종료 후 처리</dt>
+									<dd>- 운용리스 : 인수, 반납 또는 재리스 중 선택</dd>
+									<dd>- 금융리스 : 인수</dd>
+								</dl>
+								<dl class="small_title_pack">
+									<dt>${(empty productInfo.periodSubtitle) ? '리스기간' : productInfo.periodSubtitle}</dt>
+									<!-- 										<dd>18, 24, 36, 44, 48, 60 개월</dd> -->
+									<dd>${productInfo.periodContent}개월</dd>
+								</dl>
+								<div class="loan_info_part">
+									<div class="loan_info_pack">
+										<div class="title">신청 프로세스</div>
+										<ul class="process_list ty_intro">
+											<li>
+												<div class="title_wrap">
+													<span class="num">1</span>
+													<p class="title">상담신청</p>
+												</div>
+											</li>
+											<li>
+												<div class="title_wrap">
+													<span class="num">2</span>
+													<p class="title">상담원 연락</p>
+												</div>
+											</li>
+											<li>
+												<div class="title_wrap">
+													<span class="num">3</span>
+													<p class="title">한도확인</p>
+												</div>
+											</li>
+											<li>
+												<div class="title_wrap">
+													<span class="num">4</span>
+													<p class="title">약정서 작성(방문서비스)</p>
+													<!-- 2022-05-16 수정 : 문구수정 -->
+												</div>
+											</li>
+											<li>
+												<div class="title_wrap">
+													<span class="num">5</span>
+													<p class="title">계약실행</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- 									<div class="base_date">2021년 07월 01일 기준</div>2022-04-28 수정 : 기준날짜 수정 -->
+								<div class="base_date">${productInfo.baseDateContent}</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="intro_part">
+								<dl class="small_title_pack">
+									<dt>중도해지손해배상금 (차량반납)</dt>
+									<dd>- 운용리스 : 미회수원금 X 85% X (잔여기간 월수/리스기간 전체월수)</dd>
+									<dd>- 금융리스 : 중도반납 불가</dd>
+								</dl>
+								<dl class="small_title_pack">
+									<dt>규정손해배상금 (차량매입)</dt>
+									<dd>- 운용리스 : 미회수원금 X 20% X (잔여기간 월수/리스기간 전체월수)</dd>
+									<dd>- 금융리스 : 미회수원금 X 3% X (잔여기간 월수/리스기간 전체월수)</dd>
+								</dl>
+								<dl class="small_title_pack">
+									<dt><b>연체이자율</b></dt>
+									<dd>- <b>${fn:split(productInfo.intrContent, '#@_@#')[0]}</b></dd>
+									<dd>- <b>${fn:split(productInfo.intrContent, '#@_@#')[1]}</b></dd>
+									<dd>
+										<div class="bullet_pack">
+											<ul class="ebullet_circle">
+												<li>
+													<p>
+														<b>연체이자 발생 시점에 약정이율이 없는 경우에는 다음 각 호에 해당하는 금리 중 높은 금리를
+															약정이자율로 적용합니다.</b>
+													</p>
+													<p>
+														<b> 1. ‘상법’ 제 54조에 따른 상사법정이율<br> 2. ‘한국은행법’ 제
+															86조에 따라 한국은행에서 매월 발표하는 가장 최근의 비은행 금융기관 가중평균대출금리(신규취급액 기준)
+															중 상호 금융 가계자금 대출금리
+														</b>
+													</p>
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+								<dl class="small_title_pack">
+									<dt>승계수수료</dt>
+									<dd>승계금액 X 1.5% X (잔여기간 월수/리스기간 전체 월수) (최소 30만원, 최대 100만원)</dd>
+								</dl>
+								<dl class="small_title_pack">
+									<dt>인지세</dt>
+									<dd>인지세는 1만원이며 당사 50%, 고객 50% 부담</dd>
+								</dl>
+
+								<div class="table_conts_part">
+									<div class="conts_title_pack">
+										<div class="ebtitle_small">필요서류</div>
+									</div>
+									<!-- 2022-05-23 수정 : 테이블 마크업 수정 -->
+									<div class="table_info_pack">
+										<table class="ebtable">
+											<caption>필요서류</caption>
+											<colgroup>
+												<col style="width: 33%;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th>
+													<th scope="col">필요서류</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">공통</th>
+													<td class="txt_l">
+														<p>차량등록증사본</p>
+														<p>매매계약서</p>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">개인/<br> 개인사업자
+													</th>
+													<td class="txt_l">
+														<p>
+															운전면허증사본<br> (면허 유 : 신분증 대체)
+														</p>
+														<p>주민등록등본</p>
+														<p>인감증명서</p>
+														<p>자동이체통장사본</p>
+														<p>소득증명서류</p>
+														<p>- 개인 : 소득금액증명</p>
+														<p>- 개인사업자 : 부가세표준증명</p>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">법인</th>
+													<td class="txt_l">
+														<p>법인등기부등본</p>
+														<p>법인인감증명서 / 사업자등록증사본</p>
+														<p>재무제표</p>
+														<p>주주명부</p>
+														<p>자동이체통장사본</p>
+														<p>보증인 인감증명서 / 주민등록등본 / 신분증 사본</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //2022-05-23 수정 : 테이블 마크업 수정 -->
+									<!-- 2022-05-02 수정 : 테이블 하단 안내문구 추가 -->
+									<ul class="ebullet_circle">
+										<li>심사 시 추가적인 서류를 요청할 수 있습니다.</li>
+									</ul>
+									<!-- //2022-05-02 수정 : 테이블 하단 안내문구 추가 -->
+								</div>
+
+								<dl class="small_title_pack">
+									<dt>상환방식</dt>
+									<dd>
+										<p>원리금균등상환으로 매월 일정한 금액을 상환하는 방식</p>
+										<div class="boxing_pack">
+											<div class="img_group">
+												<div class="img_box">
+													<img
+														src="/resource/mobile/image/contents/car/intro_newcar01.png"
+														alt="1개월, 2개월, 3개월부터 만기일자까지 원금+이자를 매월 일정하게 납부하세요.">
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+
+								<dl class="small_title_pack">
+									<dt>자동차리스의 장점 (운용리스 기준)</dt>
+									<dd>
+										<p>저렴한 월불입금 (할부 대비 평균 40% 불입금 인하)</p>
+										<div class="boxing_pack">
+											<div class="img_group">
+												<div class="img_box">
+													<img
+														src="/resource/mobile/image/contents/car/intro_leasecar01.png"
+														alt="할부 및 현금 구입일 경우는 차량가격과 차량등록비용, 자동차세를 합산한 가격입니다.
+														자동차리스 이용인 경우에는 전체 금액에서 잔존가치를 제외한 금액이 리스료(지불총액)입니다.
+														예시로 일시불 또는 할부 구입 시 지불 총액이 오천 만원일 경우(그림A)에 자동차리스를 이용하는 경우에는 리스료 지불총액이 이천오백만원(그림B)이며 잔존가치 이천오백만원(그림C)를 제외한 예시입니다"> 
+														<!-- <span class="hidden_txt"> 할부 및 현급 구입
+														- A 차랑가격 + 차량등록비용 자동차세, 자동차리스 이용 - B 리스료, C 잔존가치 - 지불 총액 A
+														일시불 또는 할부 구입시 지불 총액(예: 50,000,000원) B 리스료 지불 총액(예:
+														25,000,000원) C 잔존가치(예: 25,000,000원) </span> --><!-- 2024-01-17 -->
+												</div>
+												<div class="img_text_box">
+													<div class="title">할부 및 현금 구입</div>
+													<div class="text">차량가 전액에 대해 상환 : 월 불입금↑</div>
+												</div>
+												<div class="img_text_box">
+													<div class="title">자동차리스 이용</div>
+													<div class="text">잔존가치 제외분에 대해서만 상환 : 월 불입금↓</div>
+													<div class="text color07">
+														<!-- 2022-05-13 수정 : 텍스트색상변경에 따른 클래스명수정 -->
+														※ 자동차리스의 상기 지불 총액은 반납 시 기준임
+													</div>
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+
+								<dl class="small_title_pack">
+									<dt>중고차 가치하락 Risk Hedge</dt>
+									<dd>
+										<div class="boxing_pack">
+											<div class="img_group">
+												<div class="img_box">
+													<img
+														src="/resource/mobile/image/contents/car/intro_leasecar02.png"
+														alt="할부 및 현금 구입일 경우는불입금액만 존재하며, 지동자리스이용 시에는 불입금액과 잔존가치가 있습니다. 이에 리스 종료 시에는 중고차 가치와 잔존가치를 비교하게 됩니다.(그림A) 비교를 한 결과 중고차시세가 잔존가치보다  높을 시 매입을 선택할 수 있으며(재무상태를 고려하여 잔존가치에 대해서 재 리스 가능), 중고차시세가 잔존가치 보다 낮을 시 반납을 선택하게 됩니다.(그림B)"> 
+														<!-- <span class="hidden_txt"> 할부 및 현급 구입
+														- 불입금액, 자동차리스 이용 - 불입금액, 잔존가치 - 신차가격, 중고차 시세A, 중고차 시세B A
+														리스 종료시 중고차 가치와 잔존가치 비교 B 중고차시세가 잔존가치보다 높을 시 : 매입 선택 -
+														재무상태를 고려하여 잔존가치에 대해서 재리스 가능 중고차시세가 잔존가치보다 낮을 시: 반납 선택 </span> --><!-- 2024-01-17 -->
+												</div>
+												<div class="img_text_box">
+													<div class="text color07">
+														<!-- 2022-05-13 수정 : 텍스트색상변경에 따른 클래스명수정 -->
+														※ 매입 / 반납 / 재리스는 만기 시 제약 없이 선택 가능
+													</div>
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+
+								<!-- 									<div class="base_date">2021년 07월 01일 기준</div>2022-04-28 수정 : 기준날짜 수정 -->
+								<div class="base_date">${productInfo.baseDateContent}</div>
+
+							</div>
+
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="layoutline nopad"></div>
+
+				<div class="guide_part">
+					<div class="ebbullet_title">안내 유의사항</div>
+					<ul class="ebullet_circle">
+						<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
+						<li>고객님의 신용평점 및 대출기간등에 따라 한도, 대출금리 및 월 납입 리스료 등이 다를 수 있습니다.<br/> <b>※ 금융리스약정금리 : 최저 연4.0% ~ 최대 연13.0%입니다.</b></li>
+						<li><b>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용 평점이 하락할 수 있습니다.</b></li>
+						<li><b>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</b></li>
+						<li>대출취급이 부적정한 경우(개인신용평점 낮음 등) 대출이 제한될 수 있습니다.</li>
+						<li><b>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</b></li>
+						<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품 또는 서비스에 대하여 설명을 받을 권리가 있습니다.</li>
+					</ul>
+					<div class="sub_info" id="deliberation">
+						※ ${fn:split(productInfo.deliberateMoContent, '#@_@#')[0]}<br>${fn:split(productInfo.deliberateMoContent, '#@_@#')[1]}
+					</div>
+				</div>
+
+				<div class="intro_fixed_part">
+					<div class="intro_btn_box">
+						<div class="btn_box">
+							<!-- 2022-05-09 수정 : 버튼디자인 수정으로 상하단 클래스 제거 -->
+							<div class="box_l">
+								<button type="button"
+									class="ebbtn btn_main ty_light phConsultationBtn">전화상담신청</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- //2022-05-04 수정 : 버튼명변경 및 컨텐츠 내용 변경 -->
+
+		</div>
+
+	</div>
+
+	<input type="hidden" name="INTFLDCHN" value="${intfldchn}" />
+	<!-- 유입채널 매체 -->
+	<input type="hidden" name="INTFLDTYP" value="${intfldtyp}" />
+</div>
+	<input type="hidden" id="loadingType" name="loadingType" value="allone" />
+</div>
+<!-- //여기까지 컨텐츠 -->
+
+	</div>
+</div>
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+
+	introPageFn();//소개페이지 버튼영역 함수
+	productAni(); //상품소개 애니메이션 함수
+</script>
+
+
+</body>
+
+</html>

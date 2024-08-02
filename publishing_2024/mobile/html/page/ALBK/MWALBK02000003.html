@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 신용대출 약관동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
+<div class="layout">
+
+	<div class="header">
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+			</div>
+
+			<div class="header_home">
+				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+	<div class="subheader">
+		<div class="subheader_area">
+
+			<div class="step_part">
+				<div class="step_pack">
+					<ol>
+						<li class="active">
+							<!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+							<span class="num">1</span> <span class="txt">한도조회</span>
+						</li>
+						<li><span class="num">2</span> <span class="txt">대출신청</span>
+						</li>
+						<li><span class="num">3</span> <span class="txt">약정서 작성</span></li>
+					</ol>
+				</div>
+
+				<div class="progress_pack">
+					<ul>
+						<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="page_title_part">
+				<h2 class="ebtitle2">약관동의</h2>
+			</div>
+
+		</div>
+	</div>
+
+
+		<input type="hidden" name="INTFLDCHN" value="${intfldchn}" />
+		<!-- 유입채널_매체 -->
+		<input type="hidden" name="INTFLDTYP" value="${intfldtyp}" />
+		<!-- 유입채널_유형 -->
+		<input type="hidden" name="ACPTNO" value="${acptNo}" />
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents new0915">
+
+				<div class="term_part ty_01">
+
+					<div class="term_pack">
+
+						<div class="total_agree">
+							<div class="checkbox_pack ty_01">
+								<input type="checkbox" class="ebcheckbox chk_all_credit" id="chk0_0">
+								<label for="chk0_0" class="eblabel">전체 동의</label>
+							</div>
+						</div>
+						
+						<!-- 2022-05-24 수정 ; 문구추가 -->
+						<div class="smalltitle_part">
+							<div class="ebtitle_medium">
+								본 동의서는 요약동의서이며 요청하면 전체 동의서를 안내받으실 수 있습니다.
+							</div>
+						</div>
+						<!-- //2022-05-24 수정 ; 문구추가 -->
+
+						<div class="detail_agree">
+							<ul>
+								<li class="accordion_pack">
+									<div class="detail_title accordion_title" data-file-name="new_comm_pop_agree05">
+										<div class="checkbox_pack">
+											<input type="checkbox" class="ebcheckbox chk_required chk_accordion terms terms_lv1" id="chk1_0" name="esnYn" value="Y" data-target="#divChk1">
+											<label for="chk1_0" class="eblabel" data-function="accordion"><span class="color02">[필수]</span>개인(신용)정보 필수적동의서</label>
+										</div>
+										<button type="button" class="ebbtn btn_accordion two" data-function="accordion"></button>
+									</div>
+									<div class="accordion_content one">
+										<div class="toggle_pack ty_linebreak">
+											<ul>
+												<li class="active">
+													<button type="button" class="ebbtn btn_toggle" data-file-name-toggle="new_comm_pop_agree05">요약</button>
+												</li>
+												<li>
+													<button type="button" class="ebbtn btn_toggle" data-file-name-toggle="new_comm_pop_agree06">전체</button>
+												</li>
+											</ul>
+										</div>
+										<div class="detail_conts div_lv2" id="divChk1">
+											<ul>
+												<li class="accordion_pack two">
+													<div class="detail_title accordion_title">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox chk_accordion terms_lv2" id="chk1_1" data-page-no="01">
+															<label for="chk1_1" class="eblabel" data-function="accordion">개인(신용)정보의 수집/이용 동의서</label>
+														</div>
+														<button type="button" class="ebbtn btn_accordion two" data-function="accordion" tabindex="0"></button>
+													</div>
+													<div class="detail_conts accordion_content two">
+														<ul>
+															<li>
+																<div class="checkbox_pack ty_01 mt10">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_10" data-page-no="01">
+																	<label for="chk1_10" class="eblabel">개인(신용)정보의 필수적 수집/이용 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_11" data-page-no="01">
+																	<label for="chk1_11" class="eblabel">고유식별정보의 필수적 수집/이용 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="accordion_pack two">
+													<div class="detail_title accordion_title">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox chk_accordion terms_lv2" id="chk1_2" data-page-no="02">
+															<label for="chk1_2" class="eblabel" data-function="accordion">개인(신용)정보 조회 동의서</label>
+														</div>
+														<button type="button" class="ebbtn btn_accordion two" data-function="accordion" tabindex="0"></button>
+													</div>
+													<div class="detail_conts accordion_content two">
+														<ul>
+															<li>
+																<div class="checkbox_pack ty_01 mt10">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_20" data-page-no="02">
+																	<label for="chk1_20" class="eblabel">개인(신용)정보의 필수적 조회 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_21" data-page-no="02">
+																	<label for="chk1_21" class="eblabel">고유식별정보의 필수적 조회 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="accordion_pack two">
+													<div class="detail_title accordion_title">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox chk_accordion terms_lv2" id="chk1_3" data-page-no="03">
+															<label for="chk1_3" class="eblabel" data-function="accordion">개인(신용)정보의 제공 동의서</label>
+														</div>
+														<button type="button" class="ebbtn btn_accordion two" data-function="accordion" tabindex="0"></button>
+													</div>
+													<div class="detail_conts accordion_content two">
+														<ul>
+															<li>
+																<div class="checkbox_pack ty_01 mt10">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_30" data-page-no="03">
+																	<label for="chk1_30" class="eblabel">개인(신용)정보 필수적 제공 동의서(종합신용정보집중기관 등)</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_31" data-page-no="03">
+																	<label for="chk1_31" class="eblabel">고유식별정보의 필수적 제공 동의서(종합신용정보집중기관 등)</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_32" data-page-no="03">
+																	<label for="chk1_32" class="eblabel">개인(신용)정보 필수적 제공 동의서(여신금융협회 등)</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk1_33" data-page-no="03">
+																	<label for="chk1_33" class="eblabel">고유식별정보의 필수적 제공 동의서(여신금융협회 등)</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+									
+								<li class="accordion_pack">
+									<div class="detail_title accordion_title" data-file-name="comm_pop_agree61_summary">
+										<div class="checkbox_pack">
+											<input type="checkbox" class="ebcheckbox chk_required chk_accordion terms terms_lv1" id="chk2_0" name="mydaAgrDivCd" value="00001" data-target="#divChk2">
+											<label for="chk2_0" class="eblabel" data-function="accordion"><span class="color02">[필수]</span>공공마이데이터 개인(신용)정보조회 필수적 동의서</label>
+										</div>
+										<button type="button" class="ebbtn btn_accordion two" data-function="accordion"></button>
+									</div>
+									<div class="accordion_content one">
+										<div class="toggle_pack ty_linebreak">
+											<ul>
+												<li class="active">
+													<button type="button" class="ebbtn btn_toggle" data-file-name-toggle="comm_pop_agree61_summary">요약</button>
+												</li>
+												<li>
+													<button type="button" class="ebbtn btn_toggle" data-file-name-toggle="comm_pop_agree61">전체</button>
+												</li>
+											</ul>
+										</div>
+										<div class="detail_conts div_lv2" id="divChk2">
+											<ul>
+												<li class="accordion_pack two">
+													<div class="detail_title accordion_title">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox chk_accordion terms_lv2" id="chk2_1" data-page-no="01">
+															<label for="chk2_1" class="eblabel" data-function="accordion">개인(신용)정보의 수집/이용 동의서</label>
+														</div>
+														<button type="button" class="ebbtn btn_accordion two" data-function="accordion" tabindex="0"></button>
+													</div>
+													<div class="detail_conts accordion_content two">
+														<ul>
+															<li>
+																<div class="checkbox_pack ty_01 mt10">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk2_10" data-page-no="01">
+																	<label for="chk2_10" class="eblabel">개인(신용)정보의 필수적 수집/이용 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk2_11" data-page-no="01">
+																	<label for="chk2_11" class="eblabel">고유식별정보의 필수적 수집/이용 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="accordion_pack two">
+													<div class="detail_title accordion_title">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox chk_accordion terms_lv2" id="chk2_2" data-page-no="02">
+															<label for="chk2_2" class="eblabel" data-function="accordion">개인(신용)정보의 제공 동의서</label>
+														</div>
+														<button type="button" class="ebbtn btn_accordion two" data-function="accordion" tabindex="0"></button>
+													</div>
+													<div class="detail_conts accordion_content two">
+														<ul>
+															<li>
+																<div class="checkbox_pack ty_01 mt10">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk2_20" data-page-no="02">
+																	<label for="chk2_20" class="eblabel">개인(신용)정보의 필수적 제공 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk2_21" data-page-no="02">
+																	<label for="chk2_21" class="eblabel">고유식별정보의 필수적 제공 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="accordion_pack two">
+													<div class="detail_title accordion_title">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox chk_accordion terms_lv2" id="chk2_3" data-page-no="03">
+															<label for="chk2_3" class="eblabel" data-function="accordion">제 3자 제공 및 행정정보 제3자 제공 여부에 관한 사항</label>
+														</div>
+														<button type="button" class="ebbtn btn_accordion two" data-function="accordion" tabindex="0"></button>
+													</div>
+													<div class="detail_conts accordion_content two">
+														<ul>
+															<li>
+																<div class="checkbox_pack ty_01 mt10">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk2_30" data-page-no="03">
+																	<label for="chk2_30" class="eblabel">개인(신용)정보 필수적 제공 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk2_31" data-page-no="03">
+																	<label for="chk2_31" class="eblabel">고유식별정보의 필수적 제공 동의서</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+															<li>
+																<div class="checkbox_pack ty_01">
+																	<input type="checkbox" class="ebcheckbox terms_lv3" id="chk2_32" data-page-no="03">
+																	<label for="chk2_32" class="eblabel">본인 행정정보 제3자 제공 요구여부</label>
+																</div>
+																<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								
+								<li class="accordion_pack">
+									<div class="detail_title accordion_title">
+										<div class="checkbox_pack">
+											<input type="checkbox" class="ebcheckbox chk_credit chk_accordion terms_lv1" id="chk3_0" name="sltYn" value="Y">
+											<label for="chk3_0" class="eblabel" data-function="accordion"><span>[선택]</span>개인(신용)정보 선택적동의서</label>
+										</div>
+										<button type="button" class="ebbtn btn_accordion two" data-function="accordion"></button>
+									</div>
+									<div class="accordion_content one">
+										<div class="toggle_pack ty_linebreak">
+											<ul>
+											    <li class="active">
+													<button type="button" class="ebbtn btn_toggle" data-file-name-toggle="new_comm_pop_agree11 new_comm_pop_agree12">요약</button>
+												</li>
+												<li>
+													<button type="button" class="ebbtn btn_toggle" data-file-name-toggle="new_comm_pop_agree13 new_comm_pop_agree14">전체</button>
+												</li>
+											</ul>
+										</div>
+										<div class="detail_conts">
+											<ul>
+												<li class="accordion_pack two">
+													<div class="detail_title accordion_title" data-file-name="new_comm_pop_agree11">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox chk_credit_lv2 chk_accordion terms" id="chk3_1" name="idifgtUnqIdntSltifYn" value="Y">
+															<label for="chk3_1" class="eblabel" data-function="accordion">개인(신용)정보의 수집/이용 동의서</label>
+														</div>
+														<button type="button" class="ebbtn btn_accordion two" data-function="accordion"></button>
+													</div>
+													<div class="detail_conts accordion_content two div_lv2">
+														<ul>
+															<li>
+																<div class="recommend_part">
+																	<div class="chkbox_list">
+																		<div class="checkbox_pack ty_01 mkblock">
+																			<input type="checkbox" class="ebcheckbox chk_all_collection" id="chk3_2">
+																			<label for="chk3_2" class="eblabel">전체</label>
+																		</div>
+																		<div class="checkbox_pack ty_01">
+																			<input type="checkbox" class="ebcheckbox chk_collection" id="chk3_3" name="telMktAgrYn" value="Y">
+																			<label for="chk3_3" class="eblabel">전화</label>
+																		</div>
+																		<div class="checkbox_pack ty_01">
+																			<input type="checkbox" class="ebcheckbox chk_collection" id="chk3_4" name="txtMktAgrYn" value="Y">
+																			<label for="chk3_4" class="eblabel">문자(SMS)</label>
+																		</div>
+																		<div class="checkbox_pack ty_01">
+																			<input type="checkbox" class="ebcheckbox chk_collection" id="chk3_6" name="emailMktAgrYn" value="Y">
+																			<label for="chk3_6" class="eblabel">이메일</label>
+																		</div>
+																		<div class="checkbox_pack ty_01">
+																			<input type="checkbox" class="ebcheckbox chk_collection" id="chk3_5" name="dcmtMktAgrYn" value="Y">
+																			<label for="chk3_5" class="eblabel">DM</label>
+																		</div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li>
+													<div class="detail_title" data-file-name="new_comm_pop_agree12">
+														<div class="checkbox_pack">
+															<input type="checkbox" class="ebcheckbox terms" id="chk4_1" name="idifofUnqIdntSltifYn" value="Y">
+															<label for="chk4_1" class="eblabel">개인(신용)정보의 제공 동의서</label>
+														</div>
+													</div>
+													<button type="button" class="ebbtn btn_agree_detail terms_detail" title="상세보기" data-target="#chk4_1"></button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<button type="button" class="ebbtn btn_main ty_bg" disabled="disabled" id="btnNext">다음</button>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+
+
+	introPageFn();//소개페이지 버튼영역 함수
+	productAni(); //상품소개 애니메이션 함수
+</script>
+
+
+</body>
+
+</html>
