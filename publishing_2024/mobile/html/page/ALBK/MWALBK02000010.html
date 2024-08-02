@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 신용대출 약관동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
+<div class="layout">
+
+	<div class="header">
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+			</div>
+
+			<div class="header_home">
+				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+        <div class="subheader">
+            <div class="subheader_area">
+
+                <div class="step_part">
+                    <div class="step_pack">
+                        <ol>
+                            <li ><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+                                <span class="num">1</span>
+                                <span class="txt">step명</span>
+                            </li>
+                            <li class="active">
+                                <span class="num">2</span>
+                                <span class="txt">대출신청</span>
+                            </li>
+                            <li>
+                                <span class="num">3</span>
+                                <span class="txt">step명</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="progress_pack">
+                        <ul>
+                            <li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="page_title_part">
+                    <h2 class="ebtitle2">적합성/적정성 진단</h2>
+                </div>
+
+                <div class="guide_part">
+                    <div class="bullet_pack">
+                        <div class="ebbullet_subtitle">고객님, 저희 NH농협캐피탈을 이용해 주셔서 감사합니다.</div>
+                        <div class="ebbullet_text">
+                            본 확인서는 금융소비자 보호에 관한 법률에 의거
+                            하여 고객님의 재산상황, 금융상품 취득/처분 경험
+                            등을 파악하여, 고객님께서 신청하신 상품이 고객
+                            님의 상황에 적합/적정한지 여부를 확인하기 위해
+                            활용됩니다.<br>
+                            아래 체크리스트에 고객님의 상황에 부합하거나
+                            가장 가까운 항목을 정확히 선택하여 주시기 바랍니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 여기부터 컨텐츠 -->
+        <div class="contents_area">
+            <div class="contents">
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">소비자 분류</h3>
+                    <div  class="toggle_pack ty_linebreak hidPfcCstmrDvcd">
+                        <ul id="consumer_type">
+                            <li class="active" data-code="02">
+                                <button type="button" class="ebbtn btn_toggle" value="02">일반금융소비자</button>
+                            </li>
+                            <li data-code="01">
+                                <button type="button" class="ebbtn btn_toggle" value="01">전문금융소비자</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="ebullet_circle">
+                        <li>전문금융소비자 : 상시근로자 5인 이상 법인, 조합, SPC 등</li>
+                    </ul>
+                    <div class="form_part">
+                        <div class="form_set">
+                            <div class="ebform_label">연령</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="tel" name="pfcCstmrAge" class="ebinput" placeholder="연령(만 나이)" value="" title="연령" id="age">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">대출용도</h3>
+                    <div  class="toggle_pack ty_linebreak hidPfcLoanPpcd">
+                        <ul id="loan_usage">
+                            <c:forEach var="item" items="${pfcLoanPpCdList}" varStatus="status">
+                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
+                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
+                                </li>
+                            </c:forEach>
+                            <%-- <li class="active">
+                                <button type="button" class="ebbtn btn_toggle">가계자금</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">사업자금</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">주택자금</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">타기관 대출금상환</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">자동차구입</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">임차보증금</button>
+                            </li> --%>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">보유자산</h3>
+                    <div class="toggle_pack ty_linebreak hidPfcHoldAsetScalCd">
+                        <ul id="assets">
+                            <c:forEach var="item" items="${pfcHoldAsetScalCdList}" varStatus="status">
+                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
+                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
+                                </li>
+                            </c:forEach>
+                            <%-- <li class="active">
+                                <button type="button" class="ebbtn btn_toggle">5억원 미만</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">5억원 이상</button>
+                            </li> --%>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">연간소득</h3>
+                    <div class="toggle_pack ty_linebreak hidPfcAnlicSecd">
+                        <ul id="income_yearly">
+                            <c:forEach var="item" items="${pfcAnlicSecdList}" varStatus="status">
+                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
+                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
+                                </li>
+                            </c:forEach>
+                            <%-- <li class="active">
+                                <button type="button" class="ebbtn btn_toggle">5천만원 미만</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">5천만원 이상</button>
+                            </li> --%>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">부채</h3>
+                    <div  class="toggle_pack ty_linebreak hidPfcDebtSecd">
+                        <ul id="liability">
+                            <c:forEach var="item" items="${pfcDebtSecdList}" varStatus="status">
+                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
+                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">연체여부</h3>
+                    <div class="toggle_pack ty_linebreak hidPfcOvrdXnDvcd">
+                        <ul id="overdue_status">
+                            <c:forEach var="item" items="${pfcOvrdXnDvcdList}" varStatus="status">
+                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
+                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                </div>
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">신용점수</h3>
+                    <div class="toggle_pack ty_linebreak divide3 hidPfcCredScrSecd">
+                        <ul id="credit_score">
+                             <c:forEach var="item" items="${pfcCredScrSecdList}" varStatus="status">
+                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
+                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">변제계획</h3>
+                    <div class="toggle_pack ty_linebreak divide3 hidPfcDtDvcd">
+                        <ul id="liquidate_date">
+                            <li class="active" data-code="01">
+                                <button type="button" class="ebbtn btn_toggle">1일</button>
+                            </li>
+                            <li data-code="05">
+                                <button type="button" class="ebbtn btn_toggle">5일</button>
+                            </li>
+                            <li data-code="10">
+                                <button type="button" class="ebbtn btn_toggle">10일</button>
+                            </li>
+                            <li data-code="15">
+                                <button type="button" class="ebbtn btn_toggle">15일</button>
+                            </li>
+                            <li data-code="20">
+                                <button type="button" class="ebbtn btn_toggle">20일</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="smalltitle_part">
+                    <h3 class="ebtitle_medium">고정지출</h3>
+                    <div class="toggle_pack ty_linebreak hidPfcFixXpndIncmSecd">
+                        <ul id="fixed_outcome_rate">
+                             <c:forEach var="item" items="${pfcFixXpndIncmSecdList}" varStatus="status">
+                                <c:if test="${item.CD_VALD_VAL eq '01' or item.CD_VALD_VAL eq '02'}">
+                                    <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
+                                        <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
+                                    </li>
+                                </c:if>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="term_part">
+                    <div class="term_simple_pack">
+                        <div class="ebterm_title">본인은 당사에 제공한 적합성/적정성 관련 정보와 관련하여 다음의 사항을 확인합니다.</div>
+                        <ul class="ebterm_list">
+                            <li>1. 당사에 제공한 적합성/적정성 관련 정보는 본인 의 재산상황, 용도 등의 정보를 정확히 알려드린 것 입니다.</li>
+                            <li>2. 본인이 제공한 정보가 정확하지 않거나, 정보에 변경사항이 발생한 경우에는 적합성/적정성 판단 이 달라질 수 있음을 설명 받았습니다.</li>
+                            <li>3. 상기 목적을 위해 개인정보를 수집, 이용, 제공하 는 것에 동의 합니다.</li>
+                        </ul>
+                        <div class="checkbox_pack">
+                            <input type="checkbox" class="ebcheckbox" id="chk1_1" value="Y">
+                            <label for="chk1_1" class="eblabel">동의함</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //여기까지 컨텐츠 -->
+    
+        <!-- 컨텐츠 하단 버튼영역 -->
+        <div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+            <button type="button" class="ebbtn btn_main ty_bg" id="btn_next" disabled="disabled">다음</button>
+        </div>
+
+	</div>
+</div>
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+
+</html>

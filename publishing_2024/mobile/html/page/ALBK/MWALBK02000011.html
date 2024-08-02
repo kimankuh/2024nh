@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 신용대출 약관동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
+<div class="layout">
+
+	<div class="header">
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+			</div>
+
+			<div class="header_home">
+				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+        <div class="subheader">
+            <div class="subheader_area">
+    
+                <div class="step_part">
+                    <div class="step_pack">
+                        <ol>
+                            <li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+                                <span class="num">1</span>
+                                <span class="txt">한도조회</span>
+                            </li>
+                            <li class="finish">
+                                <span class="num">2</span>
+                                <span class="txt">대출신청</span>
+                            </li>
+                            <li class="active">
+                                <span class="num">3</span>
+                                <span class="txt">약정서 작성</span>
+                            </li>
+                        </ol>
+                    </div>
+    
+                    <div class="progress_pack">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="page_title_part">
+                    <h2 class="ebtitle2">약정서 확인</h2>
+                </div>
+    
+                <div class="page_subtitle_part">
+                    <p>약정서 정보를 확인해주세요.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- 여기부터 컨텐츠 -->
+        <div class="contents_area">
+            <div class="contents">
+    
+                <div class="table_conts_part">
+                    <div class="conts_title_pack">
+                        <div class="ebtitle_normal">대출신청인 정보</div>
+                    </div>
+                    <div class="table_view_pack">
+                        <table class="ebtable">
+                            <caption>대출신청인 정보</caption>
+                            <colgroup>
+                                <col style="width: 30%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">이름</th>
+                                    <td>${info.custNm}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">생년월일</th>
+                                    <td>${byear}년 ${bmth}월 ${bdt}일</td>
+                                </tr>
+                                <%-- <c:if test="${cpno.length == 11}"><c:set var="tel1" value="${fn:substring(cpno,0,3)}"/></c:if>
+                                <tr> --%>
+                                    <th scope="row">휴대전화</th>
+                                   <td>${cpno}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">이메일</th>
+                                    <td>${info.emladr}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">자택전화</th>
+                                    <td>${info.homeTellno}-${info.homeTeltno}-${info.homeTeleno}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">자택주소</th>
+                                    <td>${info.homeBsadr} ${info.homeDtadr}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <c:if test="${not empty info.wkplcNm and info.wkplcNm ne ''}">
+                <div class="table_conts_part">
+                    <div class="conts_title_pack">
+                        <div class="ebtitle_normal">직장(사업장) 정보</div>
+                    </div>
+                    <div class="table_view_pack">
+                        <table class="ebtable">
+                            <caption>직장(사업장) 정보</caption>
+                            <colgroup>
+                                <col style="width: 30%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">직장(상호명)</th>
+                                    <td>${info.wkplcNm}</td>
+                                </tr>
+                                <%-- <tr>
+                                    <th scope="row">부서명</th>
+                                    <td>${info.dptNm}</td>
+                                </tr> --%>
+                                <tr>
+                                    <th scope="row">직장전화</th>
+                                    <td>${info.wkplcTellno}-${info.wkplcTeltno}-${info.wkplcTeleno}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">직장주소</th>
+                                    <td>${info.wkplcBsadr} ${info.wkplcDtadr}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </c:if>
+                <div class="table_conts_part">
+                    <div class="conts_title_pack">
+                        <div class="ebtitle_normal">대출신청정보</div>
+                    </div>
+                    <div class="table_view_pack">
+                        <table class="ebtable">
+                            <caption>대출신청정보</caption>
+                            <colgroup>
+                                <col style="width: 30%;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">대출한도</th>
+                                    <td><fmt:formatNumber type="number" maxFractionDigits="3" value="${info.lmtAmt/10000}" />만원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대출신청금액</th>
+                                    <td><fmt:formatNumber type="number" maxFractionDigits="3" value="${info.aplcAmt/10000}" />만원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대출금리</th>
+                                    <td>${info.aplyIntr}%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대출기간</th>
+                                    <td>${info.loanMcnt}개월</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상환방법</th>
+                                    <td>원리금균등상환</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">중도상환수수료율</th>
+                                    <td>${info.mdrpFeRt}%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연체이자율</th>
+                                    <td>
+                                            약정이율+최대 3%
+                                            <br>(단, 법정 최고금리 이내)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul class="ebullet_circle">
+                        <li>연체이자는 대출금리에 연체기간 별 연체가산금리를 더하여 계산합니다.</li>
+                    </ul>
+                    <div class="bullet_pack">
+                        <div class="ebbullet_title">중도상환수수료 산식</div>
+                        <ul class="ebullet_circle">
+                            <li>[약정만기 1년이상]상환원금x1%+상환원금x(중도상환수수료율-1%)x잔존기간*/(대출기간-30일)<br>
+                                [약정만기 1년미만]상환원금x중도상환수수료율x잔존기간*/(대출기간-30일)
+                                <p class="ebbullet_info">* 30일 미만 상환시 "대출 사용기간"을 30일로 간주합니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-- //여기까지 컨텐츠 -->
+    
+        <!-- 컨텐츠 하단 버튼영역 -->
+        <div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+            <div class="btn_box">
+                <div class="box_l">
+                    <button type="button" class="ebbtn btn_main ty_light" id="editInfoBtn">대출정보 수정</button>
+                </div>
+                <div class="box_r">
+                    <button type="button" class="ebbtn btn_main ty_bg" id="agreementBtn">다음</button>
+                </div>
+            </div>
+        </div>
+
+	</div>
+</div>
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+
+</html>

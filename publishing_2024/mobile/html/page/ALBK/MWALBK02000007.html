@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 신용대출 약관동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
+<div class="layout">
+
+	<div class="header">
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+			</div>
+
+			<div class="header_home">
+				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+        <div class="subheader">
+            <div class="subheader_area">
+    
+                <div class="step_part">
+                    <div class="step_pack">
+                        <ol>
+                            <li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+                                <span class="num">1</span>
+                                <span class="txt">한도조회</span>
+                            </li>
+                            <li class="active">
+                                <span class="num">2</span>
+                                <span class="txt">대출신청</span>
+                            </li>
+                            <li>
+                                <span class="num">3</span>
+                                <span class="txt">약정서 작성</span>
+                            </li>
+                        </ol>
+                    </div>
+    
+                    <div class="progress_pack">
+                        <ul>
+                            <li></li>
+                            <li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="page_title_part">
+                    <h2 class="ebtitle2">대출신청정보</h2>
+                </div>
+    
+                <div class="page_subtitle_part">
+                    <p>대출신청정보를 입력해주세요.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- 여기부터 컨텐츠 -->
+        <div class="contents_area">
+            <div class="contents">
+    
+            <form id="frm" method="post">
+    
+                <div class="form_part">
+                    <div class="form_set">
+                        <div class="ebform_label">대출신청금액(만원단위)</div>
+                        <div class="form_pack"  id="amountDiv">
+                            <div class="input_pack ty_word2">
+                                <%-- <fmt:parseNumber var="limtAmt" integerOnly="true" value="${lmtAmt / 10000}" /> --%>
+                                <input type="hidden" id="getLmtAmtFormat" value="${lmtAmt}">
+                                <%--input type="hidden" id="getLmtAmtFormat" value="100000000"--%>
+                                <input type="text" class="ebinput" title="대출신청금액(만원단위)" placeholder="대출신청금액(만원단위) 입력" value="" id="amount" name="aplcAmt" maxlength="6">
+                                <span class="unit">만원</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form_set">
+                        <div class="ebform_label">대출기간</div>
+                        <div class="form_pack">
+                            <div class="select_pack" data-ui="customSelect">
+                                <select class="ebselect" title="대출기간" data-placeholder="선택"  id="selectLoanMth" name="loanMcnt">
+                                    <%--option value="">선택</option>
+                                    <option value="12">12개월</option>
+                                    <option value="24">24개월</option>
+                                    <option value="36">36개월</option>
+                                    <option value="48">48개월</option>
+                                    <option value="60">60개월</option>
+                                    <option value="72" selected="selected">72개월</option --%>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form_set">
+                        <div class="ebform_label">상환방식</div>
+                        <div class="form_pack">
+                            <div class="select_pack" title="상환방식" data-ui="customSelect">
+                                <select class="ebselect" data-placeholder="선택" id="repaymentMethod" name="prncRepyMtcd" title="상환방식">
+                                    <option value="02" selected="selected">원리금균등상환</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form_next_box show" id="nextBtnDiv"><!-- 버튼 활성화시 addclass="show" -->
+                            <button type="button" class="ebbtn btn_arrow" id="btn_next"><span>다음</span></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <input type="hidden" id="loadingType" name="loadingType" value="allone" />
+        </div>
+        <!-- //여기까지 컨텐츠 -->
+
+	</div>
+</div>
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+
+</html>

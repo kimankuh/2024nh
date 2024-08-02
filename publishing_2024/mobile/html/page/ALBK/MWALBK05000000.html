@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+	-팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+			<div class="popup_header">
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+					<div class="process_end_part">
+						<div class="title_box">
+							<h2 class="ebtitle2">이용안내</h2>
+						</div>
+					</div>
+
+					<div class="loan_info_part">
+
+						<div class="loan_info_pack">
+							<div class="title">인터넷 대출</div>
+							<ul>
+								<li>
+									<dl>
+										<dt>
+											<span class="num">1</span>
+											<p class="title">한도확인</p>
+										</dt>
+										<dd>
+											홈페이지에서는 대출한도를 고객님이 직접 조회합니다.
+											<p class="content_ex">* 개인신용평점 영향없음</p>
+										</dd>
+									</dl>
+									<div class="icon_wrap">
+										<span class="ebicon icon_limit"></span>
+									</div>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<span class="num">2</span>
+											<p class="title">대출신청</p>
+										</dt>
+										<dd>
+											홈페이지에서 고객님이 직접 대출약정 및 신청을 합니다.
+											<p class="content_ex">* 인증서 필수</p>
+										</dd>
+									</dl>
+									<div class="icon_wrap">
+										<span class="ebicon icon_paper"></span>
+									</div>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<span class="num">3</span>
+											<p class="title">최종확인</p>
+										</dt>
+										<dd>
+											당사 직원의 유선으로 본인 및 재직 확인을 통해 최종 대출 여부가 결정됩니다.
+										</dd>
+									</dl>
+									<div class="icon_wrap">
+										<span class="ebicon icon_check"></span>
+									</div>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<span class="num">4</span>
+											<p class="title">대출금 입금</p>
+										</dt>
+										<dd>
+											고객님께서 요청하신 계좌에 대출금액을 입금합니다.
+										</dd>
+									</dl>
+									<div class="icon_wrap">
+										<span class="ebicon icon_loan"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="loan_info_pack">
+							<div class="title">전화상담 대출</div>
+							<ul>
+								<li>
+									<dl>
+										<dt>
+											<span class="num">1</span>
+											<p class="title">상담신청</p>
+										</dt>
+										<dd>
+											홈페이지에서는 고객님의 연락처를 남겨주시면 당사 상담원이 30분 이내에 전화를 드려 상담을 도와드립니다.
+										</dd>
+									</dl>
+									<div class="icon_wrap">
+										<span class="ebicon icon_cs"></span>
+									</div>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<span class="num">2</span>
+											<p class="title">한도확인</p>
+										</dt>
+										<dd>
+											상담원을 통해 한도 확인을 합니다.
+										</dd>
+									</dl>
+									<div class="icon_wrap">
+										<span class="ebicon icon_limit"></span>
+									</div>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											<span class="num">3</span>
+											<p class="title">대출신청</p>
+										</dt>
+										<dd>
+											고객님이 원하시는 시간과 장소에 직원이 방문하여 약정서 작성을 통해 대출신청을 합니다.
+										</dd>
+									</dl>
+									<div class="icon_wrap">
+										<span class="ebicon icon_paper"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+					<button type="button" class="ebbtn btn_main ty_bg">확인</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+<script>
+	//팝업호출
+	popupFunc('#tempId').show();
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

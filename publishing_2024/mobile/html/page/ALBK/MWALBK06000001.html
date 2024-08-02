@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    <link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_layout">
+
+			<div class="popup_inner">
+
+				<div class="popup_header">
+					<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+				</div>
+				
+				<div class="popup_body">
+					<div class="popup_container">
+
+						<div class="process_end_part">
+							<div class="title_box">
+								<h2 class="ebtitle2">전화상담신청</h2>
+							</div>
+							<div class="desc_box">
+								<p>상담 가능한 연락처를 알려주시면 전문상담원이 <br/>전화드려 대출상담을 도와드립니다.</p>
+							</div>
+						</div>
+
+						<div class="form_part">
+							<div class="form_set">
+								<div class="ebform_label">대출상품선택</div>
+								<div class="form_pack">
+									<c:set var="loanCodesCredit" value="21113, 21213, 21153, 41A, 21122, 21132, 21222, 21232" />
+									<c:set var="loanCodesCreditMember" value="2111M3" />
+									<c:set var="loanCodesNewCar" value="2413, 2623, 2713" />
+									<c:set var="loanCodesCarLease" value="2432, 2632, 2732" />
+									<c:set var="loanCodesLongTermRentalCar" value="2441" />
+									<ul class="chklist_box">
+										<li>
+										<div class="radio_pack">
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCredit" checked="checked" value="credit"
+											<c:if test="${fn:contains(loanCodesCredit, mid)}">
+														checked
+											</c:if> 
+											>
+											<label for="radioLoanCredit" class="eblabel">신용대출</label>
+										</div>
+									</li>
+									
+									<li>
+										<div class="radio_pack">
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCreditM" value="creditM"
+											<c:if test="${fn:contains(loanCodesCreditMember, mid)}">
+														checked
+											</c:if> 
+											>
+											<label for="radioLoanCreditM" class="eblabel">임직원신용대출</label>
+										</div>
+									</li>
+									<li>
+										<div class="radio_pack">
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanNewCar" value="newCar"
+											<c:if test="${fn:contains(loanCodesNewCar, mid)}">
+														checked
+											</c:if>
+											>
+											<label for="radioLoanNewCar" class="eblabel">신차</label>
+										</div>
+									</li>
+									<li>
+										<div class="radio_pack">
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCarLease" value="carLease"
+											<c:if test="${fn:contains(loanCodesCarLease, mid)}">
+														checked
+											</c:if>
+											>
+											<label for="radioLoanCarLease" class="eblabel">자동차리스</label>
+										</div>
+									</li>
+									<li>
+										<div class="radio_pack">
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanLongTermRentalCar" value="longTermRentalCar"
+											<c:if test="${fn:contains(loanCodesLongTermRentalCar, mid)}">
+														checked
+											</c:if>
+											>
+											<label for="radioLoanLongTermRentalCar" class="eblabel">장기렌터카</label>
+										</div>
+									</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form_set" id="validation_phone_container">
+								<div class="ebform_label">휴대전화번호</div>
+								<div class="form_pack">
+									<div class="input_pack">
+										<input maxLength="13" type="tel" id="inputPhone" class="ebinput" placeholder="-없이 숫자만 입력" title="휴대전화번호" 입력" value="">
+										<button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+									</div>
+								</div>
+								<div class="term_pack ty_01">
+									<div class="detail_agree">
+										<ul>
+											<li>
+												<div class="detail_title">
+													<div class="checkbox_pack">
+														<input type="checkbox" class="ebcheckbox chk_required" id="chkTermsApplyCallCounsel" data-file-name="comm_pop_agree29">
+														<label for="chkTermsApplyCallCounsel" class="eblabel"><span class="emph">[필수]</span>개인(신용)정보 이용동의</label>
+													</div>
+													<button id="btnOpenTermsDetailApplyCallCounsel" type="button" class="ebbtn btn_agree_detail" data-file-name="comm_pop_agree29" title="상세보기"></button>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+						<!-- 2022-02-11 수정 : 옵션추가,유의사항추가 -->
+						<div class="bullet_part">
+							<div class="bullet_pack">
+								<div class="ebbullet_title">안내 유의사항</div>
+								<ul class="ebullet_circle">
+									<li>운영시간 : 월~금 09:00 ~ 18:00</li>
+									<li>궁금하신 사항은 대표번호 <a href="tel:1644-3700" title="전화 앱 화면으로 전환됩니다"><span class="ebunderline ty_blue">1644-3700</span></a>으로 문의해주세요.(업무시간: 평일 9:00 ~ 18:00)</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //2022-02-11 수정 : 옵션추가,유의사항추가 -->
+
+						
+					</div>
+				</div>
+
+				<div class="popup_footer">
+					<div class="popup_footer_area">
+						<input type="hidden" name="mid" value="${mid}" />
+						<input type="hidden" name="intfldchn" value="${intfldchn}" />
+						<input type="hidden" name="intfldtyp" value="${intfldtyp}" />
+						<button id="btnApply" type="button" class="ebbtn btn_main ty_bg" disabled="disabled">신청하기</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+<script>
+	//팝업호출
+    popupFunc('#tempId').show();
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

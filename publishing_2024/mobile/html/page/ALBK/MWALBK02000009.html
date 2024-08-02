@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 신용대출 약관동의</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css-->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
+<div class="layout">
+
+	<div class="header">
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+			</div>
+
+			<div class="header_home">
+				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+        <div class="subheader">
+            <div class="subheader_area">
+    
+                <div class="step_part">
+                    <div class="step_pack">
+                        <ol>
+                            <li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+                                <span class="num">1</span>
+                                <span class="txt">한도조회</span>
+                            </li>
+                            <li class="active">
+                                <span class="num">2</span>
+                                <span class="txt">대출신청</span>
+                            </li>
+                            <li>
+                                <span class="num">3</span>
+                                <span class="txt">약정서 작성</span>
+                            </li>
+                        </ol>
+                    </div>
+    
+                    <div class="progress_pack">
+                        <ul>
+                            <li></li>
+                            <li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="page_title_part">
+                    <h2 class="ebtitle2">주소/연락처정보</h2>
+                </div>
+    
+                <div class="page_subtitle_part">
+                    <p>주소 및 연락처 정보를 입력해주세요.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- 여기부터 컨텐츠 -->
+        <div class="contents_area">
+            <div class="contents">
+                <input type="hidden" id="bladDvcd" value="${bladDvcd}" /> <!-- 수령방법 // 3이 이메일 -->
+                <input type="hidden" id="aplctQlfcStdCd" value="${aplctQlfcStdCd}" />		<!-- 직업구분 // 01이 직장인, 02가 자영업자 -->
+    
+                <form id="frm" method="post">
+                    <input type="hidden" id="hidHomeAdrDvcd" name="homeAdrDvcd" value="" />			<!-- 자택주소구분코드 -->
+                    <input type="hidden" id="hidHomeZpcd" name="homeZpcd" value="" />				<!-- 자택우편번호 -->
+                    <input type="hidden" id="hidHomeZpcdSqn" name="homeZpcdSqn" value="" />			<!-- 자택우편번호순번 -->
+                    <input type="hidden" id="hidWkplcAdrDvcd" name="wkplcAdrDvcd" value="" />		<!-- 직장주소구분코드 -->
+                    <input type="hidden" id="hidWkplcZpcd" name="wkplcZpcd" value="" />				<!-- 직장우편번호 -->
+                    <input type="hidden" id="hidWkplcZpcdSqn" name="wkplcZpcdSqn" value="" />		<!-- 직장우편번호순번 -->
+                    
+                    
+                    <div class="form_part">
+    
+                        <!-- 주소 미입력 상태 시 -->
+                        <div class="form_set" id="homePop">
+                            <div class="ebform_label">자택주소</div>
+                            <div class="form_pack">
+                                <div class="select_pack">
+                                    <button type="button" class="ebbtn btn_select ty_search searchHouseBtn" title="자택주소" >주소 검색</button>
+                                </div>
+                            </div>
+                        </div> 
+    
+                        <!-- 주소 검색 후 활성화 -->
+                        <div class="form_set searchHomeAfter" >
+                            <div class="ebform_label">자택주소</div>
+                            <div class="form_pack ty_flex">
+                                <div class="input_pack">
+                                    <input type="text" class="ebinput" placeholder="자택주소 입력" title="자택주소" value="" readonly="readonly" id="homeAddress" name="homeBsadr">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                                <div class="btn_pack">
+                                    <button type="button" class="ebbtn btn_multi searchHouseBtn" id="searchHome">주소수정</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_set searchHomeAfter" >
+                            <div class="ebform_label">상세주소</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="text" class="ebinput input_required" placeholder="상세주소 입력" title="상세주소" value="" id="homeDetailAddress" name="homeDtadr">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="form_set searchHomeAfter" >
+                            <div class="ebform_label">자택전화번호</div>
+                            <div class="form_pack ty_phonenum tel_input">
+                                <div class="select_pack " data-ui="customSelect">
+                                    <select class="ebselect area_code" title="지역번호 입력" data-placeholder="지역번호" name="homeTellno">
+                                        <!-- <option value="option1" selected="selected">02</option>
+                                        <option value="option2">031</option>
+                                        <option value="option3">option3</option> -->
+                                    </select>
+                                </div>
+                                <div class="input_pack">
+                                    <input type="tel" class="ebinput input_tel" title="자택전화번호" placeholder="-없이 숫자만 입력" value="" id="homeTel" name="homeTelno" maxlength="9">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    <!-- 2022-04-05 수정 : 직장검색 입력형태 변경 -->
+                        <%-- <div class="form_set" id="searchOffice_div">
+                            <div class="ebform_label">직장주소</div>
+                            <div class="form_pack">
+                                <div class="select_pack">
+                                    <button type="button" id="searchOffice" class="ebbtn btn_select ty_search" title="직장주소">직장검색</button>
+                                </div>
+                            </div>
+                        </div> --%>
+                    <!-- //2022-04-05 수정 : 직장검색 입력형태 변경 -->
+                    <!-- 직장주소 미입력 상태 -->
+                        <div class="form_set" id="searchOffice_div">
+                            <div class="ebform_label">직장주소</div>
+                            <div class="form_pack">
+                                <div class="select_pack"><!-- 값이 입력된 경우 addclass="has_selected" -->
+                                    <button type="button" class="ebbtn btn_select ty_search searchOffice" title="직장주소">주소 검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 직장주소 미입력 상태 --> 
+                    <!-- 직장주소 입력 후 -->
+                        <div class="form_set searchOfficeAfter_div" >
+                            <div class="ebform_label">직장주소</div>
+                            <div class="form_pack ty_flex">
+                                <div class="input_pack">
+                                    <input type="text" class="ebinput" placeholder="직장주소 입력" title="직장주소" value="" id="officeBasicAdr" name="wkplcBsadr">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                                <div class="btn_pack">
+                                    <button type="button" class="ebbtn btn_multi searchOffice">주소수정</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_set searchOfficeAfter_div">
+                            <div class="ebform_label">상세주소</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="text" class="ebinput input_required" placeholder="상세주소 입력" title="상세주소" value="" id="officeDetail" name="wkplcDtadr">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- 직장주소 입력 후 -->
+                        <div class="form_set searchOfficeAfter_div">
+                            <div class="ebform_label">직장전화번호</div>
+                            <div class="form_pack ty_phonenum officeTel_input">
+                                <div class="select_pack " data-ui="customSelect">
+                                    <select class="ebselect area_code" title="지역번호 입력" data-placeholder="지역번호" name="wkplcTellno">
+                                        <!-- <option value="option1">02</option>
+                                        <option value="option2" selected="selected">031</option>
+                                        <option value="option3">option3</option> -->
+                                    </select>
+                                </div>
+                                <div class="input_pack">
+                                    <input type="tel" class="ebinput input_tel" title="직장전화번호" placeholder="-없이 숫자만 입력" value="" id="officeTel" name="wkplcTelno" maxlength="9">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form_set">
+                            <div class="ebform_label">이메일</div>
+                            <div class="form_pack" id="email_input">
+                                <div class="input_pack" id="set_email" >
+                                    <input type="email" class="ebinput input_required" title="이메일" placeholder="이메일 입력" value="" id="userEmail" name="emladr">
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- //여기까지 컨텐츠 -->
+    
+        <!-- 컨텐츠 하단 버튼영역 -->
+        <div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+            <button type="button" class="ebbtn btn_main ty_bg" disabled="disabled" id="btn_next">다음</button>
+        </div>
+        <input type="hidden" id="loadingType" name="loadingType" value="allone" />
+
+	</div>
+</div>
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+
+</html>
