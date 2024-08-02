@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<!-- 2022-02-09 수정 : 페이지에서팝업으로변경 -->
+<div id="tempId" class="modal_popup ty_popup"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+					<!-- 2022-01-27 수정 : 인증방식변경 -->
+					<div class="page_title_part">
+						<p class="title">전자서명 방식 선택</p>
+					</div>
+
+					<div class="choice_method_part">
+						<div class="choice_method_list">
+							<ul>
+								<li>
+									<a href="#" class="method">
+										<span class="ebicon icon_method_common"></span>
+										<span class="name">공동인증서</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="method">
+										<span class="ebicon icon_method_kakao"></span>
+										<span class="name">카카오페이 인증</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="method">
+										<span class="ebicon icon_method_pass"></span>
+										<span class="name">PASS 인증</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="method">
+										<span class="ebicon icon_method_naver"></span>
+										<span class="name">네이버 인증</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="method">
+										<span class="ebicon icon_method_nhonepass"></span>
+										<span class="name">NHOnePass 인증</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="method">
+										<span class="ebicon icon_method_self"></span>
+										<span class="name">직접 서명하기</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //2022-01-27 수정 : 인증방식변경 -->
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<!-- //2022-02-09 수정 : 페이지에서팝업으로변경 -->
+
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>
