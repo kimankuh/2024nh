@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+<!-- 2022-04-13 수정 : 페이지에서팝업으로변경 -->
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+	-팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+			<div class="popup_header">
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+					<div class="page_title_part">
+						<h2 class="ebtitle2">신분증 인증</h2>
+					</div>
+
+					<div class="page_subtitle_part">
+						<p>인식된 신분증의 정보를 확인해주세요.</p>
+					</div>
+
+					<div class="id_photo_part">
+
+						<div class="id_img_box">
+							<!-- 촬영된 주민등록증 이미지 영역 -->
+
+							<div style="height: 170px; background: rgba(0,0,0,.3)">촬영된 주민등록증 이미지</div>
+
+							<!-- //촬영된 주민등록증 이미지 영역 -->
+						</div>
+
+						<div class="id_btn_box">
+							<button type="button" class="ebbtn btn_txt_arrow">다시 촬영하기</button>
+						</div>
+					</div>
+
+					<div class="form_part">
+						<div class="form_set">
+							<div class="ebform_label">이름</div>
+							<div class="form_pack">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="이름입력" value="홍길동" title="이름">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+						<div class="form_set">
+							<div class="ebform_label">생년월일/성별</div>
+							<div class="form_pack">
+								<div class="input_pack ty_registnum"><!-- 인풋 값 모두 입력시 addClass="has_value" -->
+									<input type="tel" class="ebinput" placeholder="생년월일/성별입력" value="" title="생년월일">
+									<span class="unit bar"></span>
+									<input type="tel" class="ebinput" placeholder="" value="" title="주민등록번호 뒷자리 첫번째">
+									<span class="input_mask">
+										<span class="mask"></span><!-- 인풋 값 입력시 addClass="active" -->
+										<span class="mask"></span>
+										<span class="mask"></span>
+										<span class="mask"></span>
+										<span class="mask"></span>
+										<span class="mask"></span>
+									</span>
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+						<div class="form_set">
+							<div class="ebform_label">발급일자</div>
+							<div class="form_pack">
+								<!--
+									datepicker option
+									오늘날짜이전 선택금지: data-mindate="0"
+									지정날짜이전 선택금지: data-mindate="yy.mm.dd"
+									오늘날짜이후 선택금지: data-maxdate="0"
+									지정날짜이후 선택금지: data-maxdate="yy.mm.dd"
+								-->
+								<div class="input_pack ty_date">
+									<input type="text" class="ebinput" data-date="trigger" placeholder="발급일자 입력" title="발급일자" readonly="readonly"/>
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+					<button type="button" class="ebbtn btn_main ty_bg">제출하기</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<!-- //2022-04-13 수정 : 페이지에서팝업으로변경 -->
+
+<script>
+	//팝업호출
+	popupFunc('#tempId').show();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

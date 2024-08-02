@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<!-- 2022-02-24 수정 : 페이지에서 팝업으로 변경 -->
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <!-- <h3 class="ebtitle3"></h3> -->
+                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+
+					<div class="process_end_part">
+                        <div class="title_box">
+                            <h2 class="ebtitle2">
+								신분증 인증
+							</h2>
+                        </div>
+						<div class="desc_box">
+							<p>정확한 본인확인을 위해 주민등록증 또는<br> 운전면허증을 준비해주세요</p>
+						</div>
+
+						<div class="id_preview_part">
+							<div class="preview_box widediv">
+								<img src="../../../resource/image/contents/common/preview_id.png" alt="주민등록증 이미지">
+							</div>
+
+							<div class="bullet_pack">
+								<ul class="ebullet_circle">
+									<li>반드시 신분증 원본으로 촬영해주세요.</li>
+									<li>정보 확인이 어렵거나 훼손된 신분증은 거래가 제한될 수 있어요.</li>
+								</ul>
+							</div>
+						</div>
+
+                    </div>
+
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+					<button type="button" class="ebbtn btn_main ty_bg">확인</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<!-- 2022-02-24 수정 : 페이지에서 팝업으로 변경 -->
+
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>
