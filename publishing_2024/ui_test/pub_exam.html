@@ -19,7 +19,7 @@
 	<script src="resource/js/ui_test_2024.js"></script><!-- 테스트용 js -->
 	
 	<style>
-		.title{padding:20px 25px; border-bottom:2px solid #0765e5;}
+		.title{padding:20px 20px 10px 0; font-weight:bold; color:#0765e5; border-bottom:2px solid #0765e5;}
 		.s_title{margin-top:30px; font-size:14px; color:#0093e1}
 		.btn_box{margin-top:20px;}
 	</style>
@@ -35,12 +35,54 @@
 				<p class="ebtitle3">ebtitle3</p>
 				<p class="ebtitle4">ebtitle4</p>
 			</div>
-			<!---->
 			<p class="ebtitle_normal">ebtitle_normal</p>
 			<p class="subtitle">subtitle</p>
 			<p class="subtitle ty_line">subtitle ty_line????</p>
 			<p class="ebtitle_medium">ebtitle_medium</p>
 			<p class="ebtitle_small">ebtitle_small</p>
+
+			<!--===============================================================================================================-->
+			<p class="title">step</p>
+			<div class="step_part" role="img" aria-label="총 3단계 중 현재 1단계 한도조회">
+				<div class="step_pack">
+					<ol>
+						<li class="active"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+							<span class="num">1</span>
+							<span class="txt">한도조회</span>
+						</li>
+						<li>
+							<span class="num">2</span>
+							<span class="txt">대출신청</span>
+						</li>
+						<li>
+							<span class="num">3</span>
+							<span class="txt">약정서 작성</span>
+						</li>
+					</ol>
+				</div>
+				<div class="progress_pack">
+					<ul>
+						<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+
+			<!--===============================================================================================================-->
+			<p class="title">폼요소</p>
+
+			<div class="form_part">
+				<div class="form_set">
+					<div class="checkbox_pack ty_02">
+						<input type="checkbox" class="ebcheckbox" id="chk1_0" title="전자서명 작성확인">
+						<label for="chk1_0" class="eblabel">
+							전자서명 [1단계 성명기재] <b>제 3자가 알아볼 수 있도록 성과 이름을 정자체</b>로 작성했나요?<br>
+							성명 확인이 불가한 경우 <b>대출진행의 불가</b> 또는 <b>전자약정 재진행</b>이 될 수 있습니다.
+						</label>
+					</div>
+				</div>
+			</div>
 
 			<!--===============================================================================================================-->
 			<p class="title">버튼</p>
