@@ -259,6 +259,7 @@ button, a, label, select, div { -webkit-tap-highlight-color: rgba(0,0,0,0.1); }
 .form_part .form_set + .btn_box { margin-top: 20px; }
 
 .term_part { padding-top: 25px; }
+.term_part .color02{color:#2F6DFC !important;}/* 2024-08-05 2024고도화 : 필수 표시 컬러 변경 */
 .term_part .form_next_box { display: none; padding-top: 20px; text-align: right; }
 .term_part .form_next_box.show { display: block; }
 .term_part > .ebtitle_normal { padding-bottom: 17px; }

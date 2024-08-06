@@ -7,19 +7,18 @@
 	<title>publishing exam</title>
 
 	<!-- Publishing CSS -->
-	<link rel="stylesheet" href="resource/css/ui_plugin.css">
-	<link rel="stylesheet" href="resource/css/ui_style.css">
-	<link rel="stylesheet" href="resource/css/ui_test_2024.css"><!-- 테스트용 css -->
+	<link rel="stylesheet" href="../mobile/resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../mobile/resource/css/ui_style.css">
 
 	<!-- Publishing JS -->
-	<script src="resource/js/jquery-3.6.0.min.js"></script>
-	<script src="resource/js/jquery-ui-1.12.1.min.js"></script>
-	<!-- <script src="resource/js/ui_plugin.js"></script> -->
-	<!-- <script src="resource/js/ui_common.js"></script> -->
-	<script src="resource/js/ui_test_2024.js"></script><!-- 테스트용 js -->
+	<script src="../mobile/resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../mobile/resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../mobile/resource/js/ui_plugin.js"></script>
+	<script src="../mobile/resource/js/ui_common.js"></script>
+
 	
 	<style>
-		.title{padding:20px 20px 10px 0; font-weight:bold; color:#0765e5; border-bottom:2px solid #0765e5;}
+		.b_title{margin:10px 0; padding:20px 20px 10px 0; font-weight:bold; color:#0765e5; border-bottom:2px solid #0765e5;}
 		.s_title{margin-top:30px; font-size:14px; color:#0093e1}
 		.btn_box{margin-top:20px;}
 	</style>
@@ -29,7 +28,7 @@
 	<div class="container">
 		<!-- 여기부터 컨텐츠 -->
 		<div class="contents">
-			<p class="title">타이틀,텍스트</p>
+			<p class="b_title">타이틀,텍스트</p>
 			<div class="page_title_part">
 				<h2 class="ebtitle2">ebtitle2</h2>
 				<p class="ebtitle3">ebtitle3</p>
@@ -42,7 +41,315 @@
 			<p class="ebtitle_small">ebtitle_small</p>
 
 			<!--===============================================================================================================-->
-			<p class="title">step</p>
+			<p class="b_title">토글버튼(role="radio")</p>
+
+			<div class="toggle_pack ty_linebreak">
+				<ul>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">요약</button>
+					</li>
+					<li class="active">
+						<button type="button" class="ebbtn btn_toggle">전체</button>
+					</li>
+				</ul>
+			</div>
+			<br>
+			<div class="toggle_pack ty_linebreak">
+				<ul>
+					<li class="active">
+						<button type="button" class="ebbtn btn_toggle">가계자금</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">사업자금</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">주택자금</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">타기관 대출금상환</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">자동차구입</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">임차보증금</button>
+					</li>
+				</ul>
+			</div>
+			<br>
+			<div class="toggle_pack ty_linebreak divide3">
+				<ul>
+					<li class="active">
+						<button type="button" class="ebbtn btn_toggle">1억</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">2억</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">3억</button>
+					</li>
+				</ul>
+			</div>
+			<br>
+			<div class="toggle_pack ty_linebreak divide3">
+				<ul>
+					<li class="active">
+						<button type="button" class="ebbtn btn_toggle">1일</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">5일</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">10일</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">15일</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">20일</button>
+					</li>
+				</ul>
+			</div>
+			<!--===============================================================================================================-->
+
+			<p class="b_title">폼요소</p>
+			<p class="s_title">체크박스</p>
+			<div>
+				<input type="checkbox" class="ebcheckbox" title="라벨명">
+				<input type="checkbox" class="ebcheckbox" title="라벨명" checked="checked">
+				<input type="checkbox" class="ebcheckbox" title="라벨명" disabled="disabled">
+				<input type="checkbox" class="ebcheckbox" title="라벨명" checked="checked" disabled="disabled">
+			</div>
+			<div class="checkbox_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_1">
+				<label for="chk1_1" class="eblabel">체크박스</label>
+			</div>
+			<div class="checkbox_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_2" checked="checked">
+				<label for="chk1_2" class="eblabel">체크박스<br>체크박스</label>
+			</div>
+			<div class="checkbox_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_3" disabled="disabled">
+				<label for="chk1_3" class="eblabel">체크박스</label>
+			</div>
+			<div class="checkbox_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_4" checked="checked" disabled="disabled">
+				<label for="chk1_4" class="eblabel">체크박스</label>
+			</div>
+			<div class="form_part">
+				<div class="form_set">
+					<div class="checkbox_pack ty_02">
+						<input type="checkbox" class="ebcheckbox" id="chk1_0" title="전자서명 작성확인">
+						<label for="chk1_0" class="eblabel">
+							전자서명 [1단계 성명기재] <b>제 3자가 알아볼 수 있도록 성과 이름을 정자체</b>로 작성했나요?<br>
+							성명 확인이 불가한 경우 <b>대출진행의 불가</b> 또는 <b>전자약정 재진행</b>이 될 수 있습니다.
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<p class="s_title">라디오</p>
+			<div>
+				<input type="radio" class="ebradio" title="라벨명" name="rad0">
+				<input type="radio" class="ebradio" title="라벨명" name="rad0" checked="checked">
+				<input type="radio" class="ebradio" title="라벨명" name="rad1" disabled="disabled">
+				<input type="radio" class="ebradio" title="라벨명" name="rad1" checked="checked" disabled="disabled">
+			</div>
+
+			<div class="radio_pack">
+				<input type="radio" class="ebradio" name="rad3" id="rad3_1">
+				<label for="rad3_1" class="eblabel">라디오</label>
+			</div>
+			<div class="radio_pack">
+				<input type="radio" class="ebradio" name="rad3" id="rad3_2" checked="checked">
+				<label for="rad3_2" class="eblabel">라디오<br>라디오</label>
+			</div>
+			<div class="radio_pack">
+				<input type="radio" class="ebradio" name="rad4" id="rad4_1" disabled="disabled">
+				<label for="rad4_1" class="eblabel">라디오</label>
+			</div>
+			<div class="radio_pack">
+				<input type="radio" class="ebradio" name="rad4" id="rad4_2" checked="checked" disabled="disabled">
+				<label for="rad4_2" class="eblabel">라디오</label>
+			</div>
+
+			<p class="s_title">스위치</p>
+			<div class="divide_pack">
+				<div class="cell">
+					<span class="title">푸시 알림 수신</span>
+				</div>
+				<div class="cell">
+					<div class="switch_pack">
+						<input type="checkbox" class="ebcheckbox" id="chk1_1" checked="checked" >
+						<label for="chk1_1" class="eblabel"></label>
+					</div>
+				</div>
+			</div>
+			<div class="divide_pack">
+				<div class="cell">
+					<span class="title">일주일전</span>
+				</div>
+				<div class="cell">
+					<div class="switch_pack">
+						<input type="checkbox" class="ebcheckbox" id="chk2_1" checked="checked">
+						<label for="chk2_1" class="eblabel"></label>
+					</div>
+				</div>
+			</div>
+
+			<div class="switch_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_2">
+				<label for="chk1_2" class="eblabel"></label>
+			</div>
+			
+			<!--===============================================================================================================-->
+			<p class="b_title">탭</p>
+			<p class="s_title">일반탭</p>
+			<div class="tab_pack ty_normal" data-module-id="tab1">
+				<ul class="ebtab">
+					<li class="active">
+						<button type="button" class="ebbtn btn_tab">탭목록</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_tab">탭목록</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_tab">탭목록</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tabcontent_pack" data-module-for="tab1">
+				<ul class="ebtab_content">
+					<li class="active">
+						탭컨텐츠1
+					</li>
+					<li>
+						탭컨텐츠2
+					</li>
+					<li>
+						탭컨텐츠3
+					</li>
+				</ul>
+			</div>
+
+			<p class="s_title">일반탭-스크롤</p>
+			<div class="tab_pack ty_normal" data-module-id="tab2">
+				<div class="tab_scroll">
+					<ul class="ebtab">
+						<li class="">
+							<button type="button" class="ebbtn btn_tab">탭목록</button>
+						</li>
+						<li class="">
+							<button type="button" class="ebbtn btn_tab">탭목록</button>
+						</li>
+						<li class="active">
+							<button type="button" class="ebbtn btn_tab">탭목록</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabcontent_pack" data-module-for="tab2">
+				<ul class="ebtab_content">
+					<li class="active">
+						탭컨텐츠1
+					</li>
+					<li>
+						탭컨텐츠2
+					</li>
+					<li>
+						탭컨텐츠3
+					</li>
+				</ul>
+			</div>
+
+			<p class="s_title">라운드탭 - 스크롤</p>
+			<div class="tab_pack ty_round" data-module-id="tab3">
+				<div class="tab_scroll">
+					<ul class="ebtab">
+						<li class="active">
+							<button type="button" class="ebbtn btn_tab">탭목록</button>
+						</li>
+						<li>
+							<button type="button" class="ebbtn btn_tab">탭목록</button>
+						</li>
+						<li>
+							<button type="button" class="ebbtn btn_tab">탭목록</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabcontent_pack" data-module-for="tab3">
+				<ul class="ebtab_content">
+					<li class="active">
+						탭컨텐츠1
+					</li>
+					<li>
+						탭컨텐츠2
+					</li>
+					<li>
+						탭컨텐츠3
+					</li>
+				</ul>
+			</div>
+
+			<p class="s_title">라인탭</p>
+			<div class="tab_pack ty_line" data-module-id="tab4">
+				<ul class="ebtab">
+					<li class="active">
+						<button type="button" class="ebbtn btn_tab">탭목록</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_tab">탭목록</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_tab">탭목록</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tabcontent_pack" data-module-for="tab4">
+				<ul class="ebtab_content">
+					<li class="active">
+						탭컨텐츠1
+					</li>
+					<li>
+						탭컨텐츠2
+					</li>
+					<li>
+						탭컨텐츠3
+					</li>
+				</ul>
+			</div>
+
+			<!--===============================================================================================================-->
+			<p class="b_title">아코디언</p>
+			<div class="accordion_pack ty_boxing active">
+				<div class="accordion_title" data-function="accordion" tabindex="0">
+					<div class="title">타이틀</div>
+					<div class="control">
+						<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
+					</div>
+				</div>
+				<div class="accordion_content" style="display: block;">
+					내용<br>
+					내용
+				</div>
+			</div>
+			<div class="accordion_pack ty_boxing">
+				<div class="accordion_title" data-function="accordion" tabindex="0">
+					<div class="title">타이틀</div>
+					<div class="control">
+						<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
+					</div>
+				</div>
+				<div class="accordion_content">
+					내용
+				</div>
+			</div>
+
+		
+
+			<!--===============================================================================================================-->
+			<p class="b_title">step</p>
 			<div class="step_part" role="img" aria-label="총 3단계 중 현재 1단계 한도조회">
 				<div class="step_pack">
 					<ol>
@@ -69,23 +376,9 @@
 				</div>
 			</div>
 
+			
 			<!--===============================================================================================================-->
-			<p class="title">폼요소</p>
-
-			<div class="form_part">
-				<div class="form_set">
-					<div class="checkbox_pack ty_02">
-						<input type="checkbox" class="ebcheckbox" id="chk1_0" title="전자서명 작성확인">
-						<label for="chk1_0" class="eblabel">
-							전자서명 [1단계 성명기재] <b>제 3자가 알아볼 수 있도록 성과 이름을 정자체</b>로 작성했나요?<br>
-							성명 확인이 불가한 경우 <b>대출진행의 불가</b> 또는 <b>전자약정 재진행</b>이 될 수 있습니다.
-						</label>
-					</div>
-				</div>
-			</div>
-
-			<!--===============================================================================================================-->
-			<p class="title">버튼</p>
+			<p class="b_title">버튼</p>
 
 			<p class="s_title">메인버튼</p>				
 			<div class="btn_box">
@@ -136,7 +429,7 @@
 			<div class="btn_box">
 				<a id="appStore" href="javascript:void(0);" class="ebbtn btn_normal ty_line" role="button">
 					<span class="icon_pack">
-						<span class="ebicon icon_appstore"><img src="./resource/image/icon/icon_appstore.png" alt=""></span>
+						<span class="ebicon icon_appstore"><img src="../mobile/resource/image/icon/icon_appstore.png" alt=""></span>
 						<span class="text">App store</span>
 					</span>
 			  	</a>
