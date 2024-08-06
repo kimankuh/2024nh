@@ -546,7 +546,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 
 /* 메인버튼 */
 .ebbtn.btn_main { width: 100%; padding: 18px 0; border-radius: 10px; font-size: 17px; font-weight: 500; }
-.ebbtn.btn_main.ty_bg { color: #fff; background: #1e4066; }
+.ebbtn.btn_main.ty_bg { color: #fff; background: #2F6DFC; }/* 2024-08-05 2024고도화 : 메인 컬러 변경 */
 .ebbtn.btn_main.ty_bg:active { color: #e5e5e5; background: #1b395c; }
 .ebbtn.btn_main.ty_bg[disabled="disabled"],
 .ebbtn.btn_main.ty_bg:disabled { color: #526577; background: #b4bec8; } /* A11Y 240213 명도대비 컬러 수정 */
@@ -593,7 +593,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 
 /* 버튼 안에 아이콘 */
 .ebbtn.btn_arrow { min-width: 100px; padding: 0 42px 0 20px; height: 45px; line-height: 45px; border-radius: 9px 5px 9px 5px; font-weight: bold; text-align: left; }
-.ebbtn.btn_arrow { color: #ffffff; background: #009870 url('../image/component/btn_arrow_white.png') no-repeat right 20px center; background-size: 11px; box-shadow: 0 3px 12px rgba(0,94,69,0.24); } /* A11Y 240213 명도대비 컬러 수정 */
+.ebbtn.btn_arrow { color: #ffffff; background: #2F6DFC url('../image/component/btn_arrow_white.png') no-repeat right 20px center; background-size: 11px; box-shadow: 0 3px 12px rgba(0,94,69,0.24); } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-05 2024고도화 : 컬러 변경됨 */
 .ebbtn.btn_arrow:active { color: #ccece3; background: #005b49 url('../image/component/btn_arrow_white_press.png') no-repeat right 20px center; background-size: 11px; } /* A11Y 240213 명도대비 컬러 수정 */
 .ebbtn.btn_arrow[disabled="disabled"] { color: #526577; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
 .ebbtn.btn_arrow:disabled { color: #526577; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
@@ -848,7 +848,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .switch_pack { position: relative; display: inline-block; vertical-align: middle; width: 45px; height: 26px; border-radius: 14px; background: #909090; } /* A11Y 240213 명도대비 컬러 수정 */
 .switch_pack .ebcheckbox { width: 100%; height: 100%; border-radius: 14px; background: none; transition: .3s; }
 .switch_pack .ebcheckbox[chekced="checked"],
-.switch_pack .ebcheckbox:checked { background: #009870; } /* A11Y 240213 명도대비 컬러 수정 */
+.switch_pack .ebcheckbox:checked { background: #2F6DFC; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-05 2024고도화 : 컬러수정  */
 .switch_pack .eblabel { position: absolute; top: 50%; left: 3px; width: 20px; height: 20px; margin-top: -10px; border-radius: 50%; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,0.18); transition: .3s; cursor: pointer; }
 .switch_pack .ebcheckbox[chekced="checked"] + .eblabel,
 .switch_pack .ebcheckbox:checked + .eblabel { left: 21px; box-shadow: 0 1px 6px rgba(0,0,0,0.24); }
@@ -865,6 +865,8 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 
 
 /* 토글 - 라인 */
+/* 2024-08-05 2024고도화 : 디자인 변경 (as-is) */
+/*
 .toggle_pack.ty_linebreak { margin: 0 -3px -1px 0; border: 1px solid #e6e6e6; border-radius: 5px; box-sizing: border-box; }
 .toggle_pack.ty_linebreak > ul { width: calc(100% + 1px); display: flex; display: -ms-flexbox; flex-wrap: wrap; -ms-flex-wrap: wrap; margin-bottom: -1px; padding: 0; border-radius: unset; background: none; }
 .toggle_pack.ty_linebreak > ul > li { flex: none; display: inline-block; width: calc(50% + 1px); height: auto; margin: -1px 0 0 -1px; border: 1px solid #e6e6e6; box-sizing: border-box; }
@@ -876,7 +878,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle { height: 100%; padding: 12px 5px; border-radius: unset; box-sizing: border-box; background: transparent; color: #707070; font-size: 15px; }
 
 .toggle_pack.ty_linebreak > ul > li.active { z-index: 10; position: relative; border-color: #00ba89; background: #f4fdfb; }
-.toggle_pack.ty_linebreak > ul > li.active .ebbtn.btn_toggle { color: #009870; } /* A11Y 240213 명도대비 컬러 수정 */
+.toggle_pack.ty_linebreak > ul > li.active .ebbtn.btn_toggle { color: #009870; } /* A11Y 240213 명도대비 컬러 수정 
 .toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle:disabled,
 .toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle[disabled="disabled"] { color: #b4b4b4; background-color: #f5f5f5; }
 
@@ -890,6 +892,26 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n):last-child { border-bottom-right-radius: 5px; }
 .toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+1) { border-bottom-left-radius: 5px; }
 .toggle_pack.ty_linebreak.divide3 > ul > li:nth-last-child(n+4):first-child { border-bottom-left-radius: 0; }
+*/
+/* 2024-08-05 2024고도화 : [start]디자인 변경 (to-be) */
+.toggle_pack.ty_linebreak{margin: 0 -3px -1px 0; border: 1px solid #e6e6e6; border-radius: 12px; box-sizing: border-box;}
+.toggle_pack.ty_linebreak > ul { width:100%; display: flex; display: -ms-flexbox; flex-wrap: wrap; -ms-flex-wrap: wrap; padding: 0; border-radius: unset; background: none; }
+.toggle_pack.ty_linebreak > ul > li {position:relative; flex: none; display: inline-block; width: 50%;height:44px; box-sizing: border-box; }
+.toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle {display:inline-block; height:46px; padding:0; line-height:44px; border-radius:12px; box-sizing: border-box; background: transparent; color: #909090; font-size: 14px;}
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n+1):before{content:""; display:block; position:absolute; width:calc(200% - 24px); top:0; left:12px; height:1px; border-top:1px solid #e6e6e6;}
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n+1):first-child:before{display:none;}
+
+.toggle_pack.ty_linebreak > ul > li.active { position: relative; }
+.toggle_pack.ty_linebreak > ul > li.active .ebbtn.btn_toggle {z-index: 10; width:calc(100% + 2px); margin:-1px 0 0 -1px; border: 2px solid #2F6DFC; color: #303030; }
+.toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle[disabled="disabled"] { color: #b4b4b4; background-color: #f5f5f5; }
+
+.toggle_pack.ty_linebreak.divide3 > ul > li {width:33.33%;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n+1):before{display:none;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+1):before{content:""; display:block; position:absolute; width:calc(300% - 24px); top:0; left:12px; height:1px; border-top:1px solid #e6e6e6;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+1):first-child:before{display:none;}
+
+/* 2024-08-05 2024고도화 : [end]디자인 변경 (to-be) */
 
 .toggle_round_pack {  }
 .toggle_round_pack > ul { margin: 0 -10px -10px 0; }
@@ -974,12 +996,12 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 	탭
 */
 /* 일반탭 */
-.tab_pack.ty_normal { border-bottom: 1px solid #f0f0f0; box-sizing: border-box; }
+.tab_pack.ty_normal { border-bottom: 1px solid #f3f4f8; box-sizing: border-box; }/* 2024-08-05 2024고도화 : 라인컬러수정 */
 .tab_pack.ty_normal .ebtab { display: table; width: 100%; table-layout: fixed; }
 .tab_pack.ty_normal .ebtab > li { display: table-cell; vertical-align: bottom; }
-.tab_pack.ty_normal .ebtab > li .ebbtn.btn_tab { position: relative; width: 100%; padding: 13px 14px; font-size: 17px; font-weight: 500; color: #909090; }
+.tab_pack.ty_normal .ebtab > li .ebbtn.btn_tab { position: relative; width: 100%; padding: 13px 14px; font-size: 16px; font-weight: 500; color: #909090; }/* 2024-08-05 2024고도화 : 폰트사이즈수정 */
 .tab_pack.ty_normal .ebtab > li.active .ebbtn.btn_tab { font-weight: bold; color: #303030; }
-.tab_pack.ty_normal .ebtab > li.active .ebbtn.btn_tab:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: #303030; }
+.tab_pack.ty_normal .ebtab > li.active .ebbtn.btn_tab:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: #2f6dfc; }/* 2024-08-05 2024고도화 : 라인컬러,두께수정 */
 
 /* 일반탭 - 스크롤 */
 .tab_pack.ty_normal .tab_scroll { overflow-x: auto; overflow-y: hidden; white-space: nowrap; margin-right: -25px; font-size: 0; }
