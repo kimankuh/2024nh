@@ -39,6 +39,12 @@
             </div>
             <div class="content">
                 <div class="page-list">
+                    <!-- 
+                        - data-pagepart="MA/MW" => "모앱/모웹"
+                        - data-pagenew="true"
+                        - data-status="진행/완료/삭제"
+                        - data-textonly="true"
+                    // -->
                     <table class="page-list-table">
                         <caption>NH농협캐피탈 모바일 작업 목록</caption>
                         <colgroup>
@@ -71,12 +77,27 @@
                         </thead>
                         <tbody>
                             <tr class="page-list-tr">
+                                <td class="td">공통</td>
+                                <td class="td">회원가입유도</td>
+                                <td class="td"></td>
+                                <td class="td"></td>
+                                <td class="td align-c">바텀</td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="true" data-textonly="">회원가입유도</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/000000.html" target="_blank" class="link-id">000000</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0701">내용</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
                                 <td class="td">메인</td>
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="">메인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="">메인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/NHCM/MANHCM00000000.html" target="_blank" class="link-id">MANHCM00000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -91,7 +112,7 @@
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MW" data-pagenew="">메인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MW" data-pagenew="">메인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/NHCM/MWNHCM00000000.html" target="_blank" class="link-id">MWNHCM00000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -106,7 +127,7 @@
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">메인(원장보유)</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">메인(원장보유)</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/NHCM/MANHCM00000001.html" target="_blank" class="link-id">MANHCM00000001</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -121,7 +142,7 @@
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">메인(간편홈)</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="true">메인(간편홈)</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/NHCM/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -136,7 +157,7 @@
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="">전체 메뉴</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="">전체 메뉴</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/layout/layout_common.html" target="_blank" class="link-id">layout_common</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status="진행"></td><!-- 진행/완료/삭제 -->
@@ -151,7 +172,7 @@
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MW" data-pagenew="">전체 메뉴</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MW" data-pagenew="">전체 메뉴</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/layout/layout_common_mweb.html" target="_blank" class="link-id">layout_common_mweb</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -162,11 +183,11 @@
                             </tr>
                             <tr class="page-list-tr">
                                 <td class="td">전체 메뉴</td>
-                                <td class="td">검색</td>
+                                <td class="td">메뉴 검색결과</td>
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">전체 메뉴 검색</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="true">메뉴 검색결과</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/template/layout/totalMenuSearch.html" target="_blank" class="link-id">totalMenuSearch</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -181,7 +202,7 @@
                                 <td class="td"></td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="">발급서비스</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="">발급서비스</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/MAMYPG03000000.html" target="_blank" class="link-id">MAMYPG03000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -196,7 +217,7 @@
                                 <td class="td">신규대출</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">신용대출-신규대출</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">신용대출-신규대출</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/CDLN/MACDLN01000001.html" target="_blank" class="link-id">MACDLN01000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -211,7 +232,7 @@
                                 <td class="td">추가대출</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">신용대출-추가대출</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">신용대출-추가대출</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -225,8 +246,8 @@
                                 <td class="td">대출신청</td>
                                 <td class="td">APP 설치 안내</td>
                                 <td class="td"></td>
-                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MW" data-pagenew="true">APP 설치 안내</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td align-c">팝업</td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="MW" data-pagenew="true">APP 설치 안내</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -238,11 +259,71 @@
                             <tr class="page-list-tr">
                                 <td class="td">신용대출</td>
                                 <td class="td">대출신청</td>
+                                <td class="td">약관동의</td>
+                                <td class="td"></td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">약관동의</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/MACDLN01010003.html" target="_blank" class="link-id">MACDLN01010003</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0701">내용</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
+                                <td class="td">휴대폰 본인확인 서비스동의</td>
+                                <td class="td"></td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">휴대폰 본인확인 서비스동의</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/MOCOMM02000002.html" target="_blank" class="link-id">MOCOMM02000002</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0701">내용</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
+                                <td class="td">본인인증 완료</td>
+                                <td class="td"></td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">본인인증 완료</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/MOCOMMONCERTI12.html" target="_blank" class="link-id">MOCOMMONCERTI12</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0701">내용</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
+                                <td class="td">본인인증 완료</td>
+                                <td class="td">신용대출 이어하기</td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">신용대출 이어하기</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/MACDLN01010019.html" target="_blank" class="link-id">MACDLN01010019</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <p class="text-memo" data-date="0807">바텀시트 -> 팝업으로 변경인지 확인필요</p>
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
                                 <td class="td">고객정보 입력</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">고객정보 입력</td><!-- pagepart:MA/MW, pagenew:true-->
-                                <td class="td align-c"><a href="mobile/html/page/LOGN/MALOGN01000004.html" target="_blank" class="link-id">MALOGN01000004</a></td>
+                                <td class="td" data-pagepart="" data-pagenew="">고객정보 입력</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/LOGN/MACDLN01010004.html" target="_blank" class="link-id">MACDLN01010004</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
                                 <td class="td align-c"></td>
@@ -256,7 +337,7 @@
                                 <td class="td">고객정보 입력</td>
                                 <td class="td">직장검색_직장명</td>
                                 <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">정보입력</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">정보입력</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM14000001.html" target="_blank" class="link-id">MOCOMM14000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -271,7 +352,7 @@
                                 <td class="td">고객정보 입력</td>
                                 <td class="td">직장검색_직장명</td>
                                 <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">검색결과</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">검색결과</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM14000002.html" target="_blank" class="link-id">MOCOMM14000002</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -286,7 +367,7 @@
                                 <td class="td">고객정보 입력</td>
                                 <td class="td">직장검색_사업자번호</td>
                                 <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">정보입력</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="" page-textonly="true">정보입력</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM14000003.html" target="_blank" class="link-id">MOCOMM14000003</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -301,7 +382,7 @@
                                 <td class="td">고객정보 입력</td>
                                 <td class="td">직장검색_사업자번호</td>
                                 <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">검색결과</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">검색결과</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM14000004.html" target="_blank" class="link-id">MOCOMM14000004</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -316,7 +397,7 @@
                                 <td class="td">고객정보 입력</td>
                                 <td class="td">직장검색_직장명+대표명</td>
                                 <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">정보입력</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">정보입력</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM14000005.html" target="_blank" class="link-id">MOCOMM14000005</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -331,8 +412,38 @@
                                 <td class="td">고객정보 입력</td>
                                 <td class="td">직장검색_직장명+대표명</td>
                                 <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">검색결과</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">검색결과</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM14000006.html" target="_blank" class="link-id">MOCOMM14000006</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0701">내용</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
+                                <td class="td">고객정보 입력</td>
+                                <td class="td">직장검색 직접입력</td>
+                                <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">직장검색 직접입력</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM14000007.html" target="_blank" class="link-id">MOCOMM14000007</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0701">내용</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
+                                <td class="td">한도조회 중</td>
+                                <td class="td"></td>
+                                <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">한도조회 중</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/COMM/MOCOMM24000001.html" target="_blank" class="link-id">MOCOMM24000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
                                 <td class="td align-c"></td>
@@ -346,7 +457,7 @@
                                 <td class="td">한도조회 결과(only 대환만)</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">한도조회 결과(only 대환만)</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">한도조회 결과(only 대환만)</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -361,7 +472,7 @@
                                 <td class="td">한도조회 결과(대환or추가 대상)</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">한도조회 결과(대환or추가 대상)</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">한도조회 결과(대환or추가 대상)</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -376,7 +487,7 @@
                                 <td class="td">송금가능안내</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">송금가능안내</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="true">송금가능안내</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/0000.html" target="_blank" class="link-id">0000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -391,7 +502,7 @@
                                 <td class="td">기대출내역확인</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">기대출내역확인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="true">기대출내역확인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/0000.html" target="_blank" class="link-id">0000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -406,7 +517,7 @@
                                 <td class="td">실지급 예정액 확인</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">실지급 예정액 확인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="true">실지급 예정액 확인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/0000.html" target="_blank" class="link-id">0000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -421,7 +532,7 @@
                                 <td class="td">동의여부 확인</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">동의여부 확인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="true">동의여부 확인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/0000.html" target="_blank" class="link-id">0000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -435,8 +546,8 @@
                                 <td class="td">대출신청</td>
                                 <td class="td">APP 설치 안내</td>
                                 <td class="td"></td>
-                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">APP 설치 안내</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td align-c">풀팝</td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="true">APP 설치 안내</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/0000.html" target="_blank" class="link-id">0000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -448,11 +559,26 @@
                             <tr class="page-list-tr">
                                 <td class="td">신용대출</td>
                                 <td class="td">대출신청</td>
-                                <td class="td">결제 정보</td>
+                                <td class="td">결제정보</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">결제 정보</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">결제정보</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/CDLN/MACDLN01010010.html" target="_blank" class="link-id">MACDLN01010010</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0701">내용</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
+                                <td class="td">결제정보</td>
+                                <td class="td">인증코드 찾기</td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="true">인증코드 찾기</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
                                 <td class="td align-c"></td>
@@ -466,7 +592,7 @@
                                 <td class="td">주소/연락처 정보</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">주소/연락처 정보</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">주소/연락처 정보</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/CMFN/MACMFN02020006.html" target="_blank" class="link-id">MACMFN02020006</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -476,12 +602,57 @@
                                 </td>
                             </tr>
                             <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">대출신청</td>
+                                <td class="td">대출신청완료</td>
+                                <td class="td"></td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">대출신청완료</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/MACDLN01010017.html" target="_blank" class="link-id">MACDLN01010017</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <p class="text-memo" data-date="0807">p.19, 20 신청완료 페이지 => 동일화면</p>
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">전자약정</td>
+                                <td class="td">보이스피싱 예방하기</td>
+                                <td class="td"></td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">보이스피싱 예방하기</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/000000.html" target="_blank" class="link-id">000000</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <p class="text-memo" data-date="0807">jsp만 존재함(MOCOMM28000002)</p>
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
+                                <td class="td">신용대출</td>
+                                <td class="td">전자약정</td>
+                                <td class="td">적합성·적정성 진단</td>
+                                <td class="td"></td>
+                                <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
+                                <td class="td" data-pagepart="" data-pagenew="" data-textonly="true">적합성·적정성 진단</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
+                                <td class="td align-c"><a href="mobile/html/page/CDLN/MACDLN01010016.html" target="_blank" class="link-id">MACDLN01010016</a></td>
+                                <td class="td align-c">권지연</td>
+                                <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
+                                <td class="td align-c"></td>
+                                <td class="td">
+                                    <!-- <p class="text-memo" data-date="0807">jsp만 존재함</p> -->
+                                </td>
+                            </tr>
+                            <tr class="page-list-tr">
                                 <td class="td">스탁론</td>
                                 <td class="td">상품소개</td>
                                 <td class="td">개인</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">스탁론 개인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">스탁론 개인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/MASTLN01000001.html" target="_blank" class="link-id">MASTLN01000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -496,7 +667,7 @@
                                 <td class="td">개인사업자</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">스탁론 개인사업자</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">스탁론 개인사업자</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/0000.html" target="_blank" class="link-id">0000</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -511,7 +682,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">신차 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">신차 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/ATFN/MAATFN01000001.html" target="_blank" class="link-id">MAATFN01000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -526,7 +697,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">자동차리스 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">자동차리스 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/ATFN/MAATFN03000001.html" target="_blank" class="link-id">MAATFN03000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -541,7 +712,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">장기렌터카 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">장기렌터카 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/ATFN/MAATFN04000001.html" target="_blank" class="link-id">MAATFN04000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -556,7 +727,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">신산업재 할부 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">신산업재 할부 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/CMFN/MACMFN01000001.html" target="_blank" class="link-id">MACMFN01000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -571,7 +742,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">신산업재 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">신산업재 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/CMFN/MACMFN02000001.html" target="_blank" class="link-id">MACMFN02000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -586,7 +757,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">중고산업재 론 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">중고산업재 론 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/CMFN/MACMFN03000001.html" target="_blank" class="link-id">MACMFN03000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -601,7 +772,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">사업자 아파트담보대출 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">사업자 아파트담보대출 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/HSFN/MAHSFN01000001.html" target="_blank" class="link-id">MAHSFN01000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -616,7 +787,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">임차보증금 대출 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">임차보증금 대출 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/HSFN/MAHSFN02000001.html" target="_blank" class="link-id">MAHSFN02000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -631,7 +802,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">기업금융 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">기업금융 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/OTFN/MAOTFN01000001.html" target="_blank" class="link-id">MAOTFN01000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -646,7 +817,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">투자금융 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">투자금융 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/OTFN/MAOTFN02000001.html" target="_blank" class="link-id">MAOTFN02000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -661,7 +832,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">일반리스 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">일반리스 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/OTFN/MAOTFN03000001.html" target="_blank" class="link-id">MAOTFN03000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -676,7 +847,7 @@
                                 <td class="td">상품소개</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="">NH임직원 신용대출 상품소개</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="">NH임직원 신용대출 상품소개</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/NHEM/MANHEM01000001.html" target="_blank" class="link-id">MANHEM01000001</a></td>
                                 <td class="td align-c">권지연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -691,7 +862,7 @@
                                 <td class="td">신용대출 진행상태 조회</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="" data-pagenew="true">신용대출 진행상태 조회</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="" data-pagenew="true">신용대출 진행상태 조회</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/STLN/0000.html" target="_blank" class="link-id">0000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -706,7 +877,7 @@
                                 <td class="td">명세서수령방법 변경</td>
                                 <td class="td">수령방법 입력 입력</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="">수령방법 입력 입력</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="">수령방법 입력 입력</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/MAMYPG02030302.html" target="_blank" class="link-id">MAMYPG02030302</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -721,7 +892,7 @@
                                 <td class="td">신청서 발급</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">신청서 발급</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">신청서 발급</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -736,7 +907,7 @@
                                 <td class="td">비대면 서류 발급</td>
                                 <td class="td">대상 및 계좌선택</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">대상 및 계좌선택</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">대상 및 계좌선택</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -751,7 +922,7 @@
                                 <td class="td">비대면 서류 발급</td>
                                 <td class="td">발급대상 서류선택</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">발급대상 서류선택</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">발급대상 서류선택</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -766,7 +937,7 @@
                                 <td class="td">비대면 서류 발급</td>
                                 <td class="td">발급완료</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">발급완료</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">발급완료</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -781,7 +952,7 @@
                                 <td class="td">가입정보 확인</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="">가입정보 확인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="">가입정보 확인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/MAMYPG05000001.html" target="_blank" class="link-id">MAMYPG05000001</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status="진행"></td><!-- 진행/완료/삭제 -->
@@ -796,7 +967,7 @@
                                 <td class="td">내 정보 확인</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">내 정보 확인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">내 정보 확인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/내정보확인.html" target="_blank" class="link-id">내정보확인</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status="진행"></td><!-- 진행/완료/삭제 -->
@@ -811,7 +982,7 @@
                                 <td class="td">회원정보 수정</td>
                                 <td class="td"></td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="">회원정보 수정</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="">회원정보 수정</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/MAMYPG05000002.html" target="_blank" class="link-id">MAMYPG05000002</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -826,7 +997,7 @@
                                 <td class="td">내정보 확인</td>
                                 <td class="td">개인</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">내정보 확인-개인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">내정보 확인-개인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -841,7 +1012,7 @@
                                 <td class="td">내정보 확인</td>
                                 <td class="td">개인 및 개인사업자</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">내정보 확인-개인 및 개인사업자</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">내정보 확인-개인 및 개인사업자</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -856,7 +1027,7 @@
                                 <td class="td">내정보 수정</td>
                                 <td class="td">개인</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">내정보 수정-개인</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">내정보 수정-개인</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
@@ -871,7 +1042,7 @@
                                 <td class="td">내정보 수정</td>
                                 <td class="td">개인 및 개인사업자</td>
                                 <td class="td align-c"></td><!-- 풀팝/팝업/바텀/탭 -->
-                                <td class="td" data-pagepart="MA" data-pagenew="true">개인 및 개인사업자</td><!-- pagepart:MA/MW, pagenew:true-->
+                                <td class="td" data-pagepart="MA" data-pagenew="true">개인 및 개인사업자</td><!-- pagepart:MA/MW, pagenew:true, textonly:true-->
                                 <td class="td align-c"><a href="mobile/html/page/MYPG/000000.html" target="_blank" class="link-id">000000</a></td>
                                 <td class="td align-c">송재연</td>
                                 <td class="td align-c" data-status=""></td><!-- 진행/완료/삭제 -->
