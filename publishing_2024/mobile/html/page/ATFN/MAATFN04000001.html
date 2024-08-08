@@ -8,20 +8,29 @@
 
 	<title>NH농협캐피탈</title>
 
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
 	<!-- Publishing CSS -->
 	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
 	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
-
-	<!-- Publishing JS -->
-	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
-	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    
+	<!-- Publishing JS -->	
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 	<div class="header" >
 		<div class="header_area">
@@ -255,6 +264,9 @@
 
 	</div>
 </div>
+
+<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+<div id="layoutPopContent" aria-hidden="true"></div>
 
 
 <script>

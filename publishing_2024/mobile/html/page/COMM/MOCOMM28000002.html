@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+<div id="layoutContent" class="layout"></div><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+<div id="MWCOMM28000002" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <!-- <h3 class="ebtitle3">보이스피싱 확인</h3> -->
+                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+					<div class="page_title_part">
+                        <div class="ebtitle2">보이스피싱 예방하기</div>
+                    </div>
+					<div class="desc_box">
+						<p>금융회사, 금융감독원, 공공기관, 카카오톡 등으로 송금을 요청 받고 대출을 신청하시면 꼭 확인해주세요!</p>
+					</div>
+
+					<div class="bullet_pack mt30">
+						<!-- <p class="ebbullet_title">금융회사, 금융감독원, 공공기관, 카카오톡 등으로 송금을 요청 받고 대출을 신청하시면 꼭 확인해주세요!</p> -->
+						<ul class="ebullet_circle">
+							<li>보이스피싱, 명의도용, 대포통장 등 범죄사건에 연루되었다며 <span class="color03">금융회사</span> 또는 <span class="color03">국가기관, 검찰, 경찰</span>로부터 연락을 받은 경우 <span class="color01">보이스피싱</span></li>
+							<li><span class="color03">저금리 전환 대출, 신용등급 및 거래실적 향상을 목적</span>으로 연락을 받고 대출금을 금융기관 및 고객님 본인명의가 아닌 계좌로 이체하는 경우 <span class="color01">보이스피싱</span></li>
+							<li>
+								<span class="color03">금융</span> 또는 <span class="color03">보안 앱</span> 등을 <span class="color03">설치</span>하라는 경우 <span class="color01">보이스피싱</span>
+								<ul class="ebullet_bar">
+									<li>피싱조직이 악성 앱 설치를 통해 수신/발신번호 조작 등 고객님의 휴대폰을 통제</li>
+								</ul>
+							</li>
+							<li>
+								<span class="color03">가족이나 지인</span>으로부터 <span class="color03">전화가 아닌 문자, 카카오톡, 메신저</span>로 이체 요청을 받은 경우
+								<ul class="ebullet_bar">
+									<li><span class="color01">보이스피싱 확률</span>이 매우 <span class="color01">높음</span>으로 가족이나 지인에게 반드시 확인 필요</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="reconfirm_text_box">
+						<div class="ebtitle_normal wordk">
+							위와 같은 사실이 없는지<br>다시 한번 확인하였으며 계속 대출을 진행하시겠습니까?
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+
+					<div class="btn_box">
+						<div class="box_t">
+							<button type="button" class="ebbtn btn_main ty_light" id="stop">아니오(대출중단)</button>
+						</div>
+						<div class="box_b">
+							<button type="button" class="ebbtn btn_main ty_bg" data-action="remove" id="continue">예(대출진행)</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<script>
+    //팝업호출
+    popupFunc('#MWCOMM28000002').show();
+
+    // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+    // pageloadFunc();
+</script>
+
+
+</body>
+</html>
