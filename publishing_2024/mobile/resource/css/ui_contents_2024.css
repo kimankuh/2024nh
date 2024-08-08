@@ -16,7 +16,7 @@
 .renewal_2024 .section-item:first-child {padding-top:32px;}
 .renewal_2024 .section-title {font-size:19px;}
 .renewal_2024 .section-title + .info-list {margin-top:22px;}
-.info-list-row + .info-list-row {margin-top:16px;}
+.renewal_2024 .info-list-row + .info-list-row {margin-top:16px;}
 .renewal_2024 .info-list-row {display:flex;}
 .renewal_2024 .info-list-key,
 .renewal_2024 .info-list-value {flex-grow:1;font-size:14px;color:var(--text-normal01);}
