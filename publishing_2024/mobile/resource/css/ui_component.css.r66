@@ -29,7 +29,7 @@
 /* 텍스트 */
 .ebtext_desc { font-size: 15px; color: #707070; }
 .ebtext_desc01 { font-size: 14px; color: #707070; }
-.base_date { margin-top: 35px; text-align: right; font-size:13px; color:#303030; font-weight: 700; }/* 2024-08-12 2024고도화 : 폰트 사이즈,컬러 수정 */
+.base_date { margin-top: 35px; text-align: right; font-size: 14px; font-weight: bold; color: #1e4066; }
 
 /* 불릿텍스트 */
 .bullet_pack { padding: 20px; border-radius: 7px; border: 1px solid #e6e6e6; }
@@ -47,7 +47,7 @@
 .ebullet_circle > li { position: relative; margin-top: 8px; padding-left: 10px; font-size: 14px; line-height: 21px; color: #707070; }
 .ebullet_circle > li p + p { margin-top: 7px; }
 .ebullet_circle > li:first-child { margin-top: 0; }
-.ebullet_circle > li:after { content: ''; position: absolute; top: 8px; left: 0; width: 4px; height: 4px; border-radius: 50%; background: #707070; }/* 2024-08-12 2024고도화 : 뷸릿사이즈,위치 수정 */
+.ebullet_circle > li:after { content: ''; position: absolute; top: 9px; left: 0; width: 3px; height: 3px; border-radius: 50%; background: #707070; }
 .ebullet_circle > li a { font-size: 14px; }
 .ebullet_circle > li.color03:after { background: #0066b1; }
 .ebullet_circle + .ebbullet_text { margin-top: 11px; }
@@ -67,8 +67,7 @@
 /* 접근성 숨김텍스트 */
 .hidden_txt { overflow: hidden; position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; clip: rect(0,0,0,0); border: 0; }
 
-/* 2024-08-12 2024고도화 : 인포성 뷸릿텍스트 추가 */
-.icon_info{margin-top:12px; padding-left:26px; font-size:14px; color:#707070; line-height:19px; background:url(../image/icon/icon_info.png) no-repeat 0 0; background-size:20px auto;}
+
 
 /*
 	입력 공통

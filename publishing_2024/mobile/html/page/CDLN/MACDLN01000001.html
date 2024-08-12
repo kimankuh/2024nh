@@ -28,36 +28,81 @@
 	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 
 	<style>
-		/* dragging bottom-sheet */
+/* layout */
 .header.header_blue{background-color:#2f6dfc;}
 .header.header_blue .header_area .header_title h2{padding-left:8px; font-family: 'SpoqaHanSansNeo'; font-size:16px; font-weight:500; color:#fff; text-align:left; opacity:1; }
 
-.accordion_wrap{padding:0 20px}
-.accordion_wrap .accordion_pack.ty_boxing { border: 0; border-radius:20px; background-color: #f3f6fb; }
-.accordion_wrap .accordion_pack.ty_boxing + .accordion_pack.ty_boxing{margin-top:12px;}
-.accordion_wrap .accordion_pack.ty_boxing .accordion_title{padding:20px;}
-.accordion_wrap .accordion_pack.ty_boxing .accordion_title .control{position:absolute; top:50%; right:20px; margin-top:-10px; width:20px; height:20px;}
-.accordion_wrap .accordion_pack.ty_boxing .accordion_title .control .ebbtn.btn_accordion{width:20px; height:20px; background: url(../../../resource/image/component/accordion_arrow02.png) no-repeat center; background-size:100%;}
-
-.accordion_wrap .accordion_pack.ty_boxing.active{box-shadow:none;}
-.accordion_wrap .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
-.accordion_wrap .accordion_pack.ty_boxing.active .accordion_content{border:0;}
-
-.contents_area.product_intro,
-.contents_area.product_intro .contents {padding:0;}
 
 
+/* 상품소개 */
+.renewal_2024 .contents_area.product_info,
+.renewal_2024 .contents_area.product_info .contents {padding:0;}
 
-.desc_area {height:400px;background-color:#2f6dfc;}
+.renewal_2024 .small_title_pack > li{margin-top:16px}
+.renewal_2024 .small_title_pack > li:first-child{margin-top:0}
+.renewal_2024 .small_title_pack > li .tit{display:block; font-size:15px; color:#303030; font-weight:700;}
+.renewal_2024 .small_title_pack > li .cont{margin-top:4px; display:block; font-size:15px; color:#303030;}
+.renewal_2024 .small_title_pack > li .img{display:block; box-sizing: border-box;}
+.renewal_2024 .small_title_pack > li .img img{display:block; width:100%}
+.renewal_2024 .small_title_pack > li .cont + .img{margin-top:4px;}
 
-.dragging_bs {position:fixed;bottom:0;width:100%;border-radius: 18px 48px 0 0; background-color:#fff;}
-.dragging_bs .cont_detail{height:calc(100% - 68px); overflow:hidden;}
-.dragging_bs .cont_detail .scroll{height:100%; overflow-y:auto;}
-.dragging_bs.active .cont_detail{height:calc(100% - 148px);}
-.drag_handle{position:relative;}
-.drag_handle:after{content:""; display:block; clear:both;}
-.btn_handle { display:flex; width:100%;height:48px; border:0; border-radius: 18px 48px 0 0; background:#fff;}
-.btn_handle:before {content:''; display:block; margin:12px auto 0; padding:0; width:50px; height:5px; border-radius:5px; background-color:#909090;}
+.renewal_2024 .intro_btn_box .btn_box .box_l {width: 40%; }
+.renewal_2024 .intro_btn_box .btn_box .box_r {width: 60%;}
+
+.renewal_2024 .product_info .desc_area {height:500px;background-color:#2f6dfc;}
+.renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; background:url(../../../resource/image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px; box-sizing: border-box;}
+.renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../../../resource/image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
+.renewal_2024 .prod_info .prod_txt{font-size:26px; color:#fff; font-weight:700;}
+.renewal_2024 .prod_info .prod_data{position:relative; display:flex; margin-top:24px; }
+.renewal_2024 .prod_info .prod_data:after{content:""; display:block; clear:both;}
+.renewal_2024 .prod_info .prod_data .tit{display:block; font-size:14px; color:#fff;}
+.renewal_2024 .prod_info .prod_data .txt{display:block; font-size:26px; color:#fff; font-weight:700;}
+.renewal_2024 .prod_info .prod_data > li{margin-left:24px;}
+.renewal_2024 .prod_info .prod_data > li:first-child{margin-left:0;}
+.renewal_2024 .prod_info .btn_box{position:absolute; left:0; bottom:0; width:100%; padding:0 20px 16px; box-sizing: border-box;}
+.renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{background-color:#0a47d6;}
+
+.renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;border-radius: 18px 48px 0 0; background-color:#fff;}
+.renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 68px); overflow:hidden;}
+.renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
+.renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
+.renewal_2024 .drag_handle{position:relative;}
+.renewal_2024 .drag_handle:after{content:""; display:block; clear:both;}
+.renewal_2024 .drag_handle .btn_handle { display:flex; width:100%;height:48px; border:0; border-radius: 18px 48px 0 0; background:#fff;}
+.renewal_2024 .drag_handle .btn_handle:before {content:''; display:block; margin:12px auto 0; padding:0; width:50px; height:5px; border-radius:5px; background-color:#909090;}
+
+.renewal_2024 .easy_calculate .input_pack.ty_word1{height:36px; padding-right:20px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput{height:36px; font-size:18px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput::placeholder{font-size:16px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput:-ms-input-placeholder{font-size:16px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .unit{width:20px; height:36px; line-height:36px; font-size:16px;}
+
+.renewal_2024 .easy_calculate .result{margin-top:12px; text-align:right;}
+.renewal_2024 .easy_calculate .result .tit{margin-right:4px; font-size:14px; color:#303030;}
+.renewal_2024 .easy_calculate .result .val{display:inline-block; font-size:22px; font-weight:700; color:#2f6dfc; }
+.renewal_2024 .easy_calculate .result .val .num{display:inline-block; }
+.renewal_2024 .easy_calculate .result .val .unit{display:inline-block; margin-left:4px; font-size:20px;}
+
+.renewal_2024 .easy_calculate .btn_box{margin-top:20px;}
+.renewal_2024 .easy_calculate .ebbtn.btn_normal{height:44px; line-height:44px; border-radius:14px;}
+
+.renewal_2024 .accordion_pack.ty_boxing { border: 0; border-radius:20px; background-color: #f3f6fb; }
+.renewal_2024 .accordion_pack.ty_boxing + .accordion_pack.ty_boxing{margin-top:12px;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title{min-height:64px; padding:21px 20px 20px;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title .title{font-size:16px; font-weight:500;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title .control{position:absolute; top:50%; right:20px; margin-top:-10px; width:20px; height:20px;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title .control .ebbtn.btn_accordion{width:20px; height:20px; background: url(../../../resource/image/component/accordion_arrow02.png) no-repeat center; background-size:100%;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_content{padding-top:0; }
+.renewal_2024 .accordion_pack.ty_boxing .ebullet_circle{margin-top:12px;}
+.renewal_2024 .accordion_pack.ty_boxing .small_title_pack > li .ebullet_circle{margin-top:4px}
+.renewal_2024 .accordion_pack.ty_boxing .base_date{margin-top:20px;}
+.renewal_2024 .accordion_pack.ty_boxing.active{box-shadow:none;}
+.renewal_2024 .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
+.renewal_2024 .accordion_pack.ty_boxing.active .accordion_content{border:0; color:#303030;}
+.renewal_2024 .icon_info{margin-bottom:20px;}
+
+
 
 	</style>
 </head>
@@ -80,26 +125,24 @@
 	
 			</div>
 		</div>
-		<div class="container">
+		<div class="container renewal_2024"><!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 			<!-- 여기부터 컨텐츠 -->
-			<div class="contents_area product_intro"><!-- 상품소개 구분 class -->
+			<div class="contents_area product_info"><!-- 상품소개 구분 class -->
 				<div class="contents">				
 					<div class="section desc_area">
-						<div class="product_info">
-							<p class="cate_tit">NH농협캐피탈 신용대출</p>
-							<p class="tit">모두를 위한 신용대출</p>
-							<div class="data">
-								<ul>
-									<li>
-										<span>최대 한도</span>
-										<strong><span class="num">1.5억</span>원</strong>
-									</li>
-									<li>
-										<span>최저금리(연)</span>
-										<strong><span class="num">7.9</span>%</strong>
-									</li>
-								</ul>
-							</div>
+						<div class="prod_info">
+							<p class="prod_tit">NH농협캐피탈 신용대출</p>
+							<p class="prod_txt">모두를 위한 신용대출</p>
+							<ul class="prod_data">
+								<li>
+									<span class="tit">최대 한도</span>
+									<strong class="txt"><span class="num">1.5억</span>원</strong>
+								</li>
+								<li>
+									<span class="tit">최저금리(연)</span>
+									<strong class="txt"><span class="num">7.9</span>%</strong>
+								</li>
+							</ul>
 							<div class="btn_box">
 								<button type="button" class="ebbtn btn_main ty_bg">간편한도조회</button>
 							</div>
@@ -122,17 +165,22 @@
 											</div>
 										</div>
 										<div class="accordion_content">
-											<ul class="ebullet_circle">
-												<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
-												<li><b>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용 평점이 하락할 수 있습니다.</b></li>
-												<li><b>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</b></li>
-												<li>대출취급이 부적정한 경우(개인신용평점 낮음, 연체(단기포함) 사유 발생 등) 대출이 제한될 수 있습니다.</li>
-												<li><b>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</b></li>
-												<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품에 대하여 설명을 받을 권리가 있습니다.</li>
-											</ul>
-											<div class="sub_info">
-												※ 여신금융협회 심의필 제 2022 - L1h - 03905호<br>
-												(2022.05.19 ~ 2023.05.18)
+											<div class="easy_calculate">
+												<div class="input_pack ty_word1 has_readonly">
+													<input type="text" class="ebinput" placeholder="대출하실 금액을 입력하세요" title="대출금액입력" value="">
+													<span class="unit">원</span>
+												</div>
+												<div class="result">
+													<span class="tit">세전금액</span>
+													<strong class="val"><span class="num">28,583</span><span class="unit">원</span></strong>
+												</div>
+												<div class="btn_box">
+													<button type="button" class="ebbtn btn_normal ty_bg w100per">계산해보기</button>
+												</div>
+												<ul class="ebullet_circle">
+													<li>위 금액은 오늘 최저금리 <strong>7.9%</strong> 기준으로 계산했어요.</li>
+													<li>실제 대출 적용 금리 및 대출금액등에 따라 변동될 수 있어요.</li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -145,49 +193,71 @@
 											</div>
 										</div>
 										<div class="accordion_content">
-											<dl class="small_title_pack">
-												<dt>금리</dt>
-												<dd><b>연 4.9 % ~ 19.9 %</b></dd>
-											</dl>
-											<dl class="small_title_pack">
-												<dt>한도</dt>
-												<dd>200만원 ~ 1억 5,000만원</dd>
-											</dl>
-											<dl class="small_title_pack">
-												<dt>기간</dt>
-												<dd>12, 24, 36, 48, 60, 72, 84 개월</dd>
-											</dl>
-											<ul class="ebullet_circle">
-												<li>금리, 한도, 기간 등 대출조건은 고객의 신용평점,<br> (대출)금액 등에 따라 차등 적용됩니다.</li>
+											<ul class="small_title_pack">
+												<li>
+													<strong class="tit">금리</strong>
+													<div class="cont">연 7.9 % ~ 19.9 %</div>
+												</li>
+												<li>
+													<strong class="tit">한도</strong>
+													<div class="cont">200만원 ~ 1억 5,000만원</div>
+												</li>
+												<li>
+													<strong class="tit">기간</strong>
+													<div class="cont">12, 24, 36, 48, 60, 72, 84 개월</div>
+													<ul class="ebullet_circle">
+														<li>금리, 한도, 기간 등 대출조건은 고객의 신용평점(대출) 금액 등에 따라 차등 적용됩니다.</li>
+														<li>우수고객 대상자는 한도조회 시 별도 안내됩니다.</li>
+													</ul>
+												</li>
+												<li>
+													<strong class="tit">대상</strong>
+													<div class="cont">개인, 개인사업자</div>
+												</li>
 											</ul>
-											<dl class="small_title_pack">
-												<dt>대상</dt>
-												<dd>개인, 개인사업자</dd>
-											</dl>
-				
 										</div>
 									</div>
 
 									<div class="accordion_pack ty_boxing">
 										<div class="accordion_title" data-function="accordion" tabindex="0">
-											<div class="title">상품정보</div>
+											<div class="title">상세정보</div>
 											<div class="control">
 												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
 											</div>
 										</div>
 										<div class="accordion_content">
-											<ul class="ebullet_circle">
-												<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
-												<li><b>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용 평점이 하락할 수 있습니다.</b></li>
-												<li><b>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</b></li>
-												<li>대출취급이 부적정한 경우(개인신용평점 낮음, 연체(단기포함) 사유 발생 등) 대출이 제한될 수 있습니다.</li>
-												<li><b>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</b></li>
-												<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품에 대하여 설명을 받을 권리가 있습니다.</li>
+											<ul class="small_title_pack">
+												<li>
+													<strong class="tit">이자부과시기</strong>
+													<div class="cont">이자 납입일(매월 등)에 이자를 납입하여야 합니다. </div>
+												</li>
+												<li>
+													<strong class="tit">취급수수료</strong>
+													<div class="cont">없음</div>
+												</li>
+												<li>
+													<strong class="tit">중도상환수수료율</strong>
+													<div class="cont">2.0%</div>
+													<div class="img" style="height:150px;background:#999;color:#fff;border-radius:6px">이미지 area</div>
+												</li>
+												<li>
+													<strong class="tit">인지세</strong>
+													<div class="cont">인지세는 대출거래 계약 체결시 대출금액에 따라 납부하는 세금으로, 7만원(대출금액 5천만원 초과) 또는 15만원(대출금액 1억원 초과)이 발생하여 이 중 고객은 50%를 부담합니다.</div>
+												</li>
+												<li>
+													<strong class="tit">인체이자율</strong>
+													<div class="cont">약정이율 + 최대 3% (단, 법정 최고금리 이내)</div>
+												</li>
+												<li>
+													<strong class="tit">필요서류</strong>
+													<div class="cont">신분증, 재직 및 소득서류 등</div>
+												</li>
+												<li>
+													<strong class="tit">상환방식</strong>
+													<div class="cont">원리금균등상환으로 매월 일정한 금액을 상환하는 방식</div>
+												</li>
 											</ul>
-											<div class="sub_info">
-												※ 여신금융협회 심의필 제 2022 - L1h - 03905호<br>
-												(2022.05.19 ~ 2023.05.18)
-											</div>
+											<p class="base_date">2022년 05년 13일 기준</p>
 										</div>
 									</div>
 
@@ -199,26 +269,23 @@
 											</div>
 										</div>
 										<div class="accordion_content">
-											<ul class="ebullet_circle">
+											<ul class="ebullet_circle mt0">
 												<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
-												<li><b>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용 평점이 하락할 수 있습니다.</b></li>
-												<li><b>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</b></li>
+												<li><strong>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용 평점이 하락할 수 있습니다.</strong></li>
+												<li><strong>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</strong></li>
 												<li>대출취급이 부적정한 경우(개인신용평점 낮음, 연체(단기포함) 사유 발생 등) 대출이 제한될 수 있습니다.</li>
-												<li><b>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</b></li>
+												<li><strong>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</strong></li>
 												<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품에 대하여 설명을 받을 권리가 있습니다.</li>
 											</ul>
-											<div class="sub_info">
-												※ 여신금융협회 심의필 제 2022 - L1h - 03905호<br>
-												(2022.05.19 ~ 2023.05.18)
-											</div>
 										</div>
 									</div>
+
+									<p class="icon_info">여신금융협회 심의필 제 2022-L1h-03905호<br>(2022.05.19 ~ 2023.05.18)</p>
 								</div>
 							</div>
 
 							<div class="intro_fixed_part">
 								<div class="intro_btn_box">
-									<!-- 2022-05-03 수정 : 하단 버튼명, 클레스 변경 -->
 									<div class="btn_box">
 										<div class="box_l">
 											<button type="button" class="ebbtn btn_main ty_light">전화상담신청</button>
@@ -227,7 +294,6 @@
 											<button type="button" class="ebbtn btn_main ty_bg">간편한도조회</button>
 										</div>
 									</div>
-									<!-- //2022-05-03 수정 : 하단 버튼명, 클레스 변경 -->
 								</div>
 							</div>
 
@@ -268,18 +334,18 @@ function dargBottomSheet(){
 	var bsMaxH = wh - hh;
 	var touchStart;
 	var touchLast;
-	
+
 	// init
 	$bs.height(bsh);
 
 	// 초기 터치
-	$bs.on('touchstart', function(e){
+	$handle.on('touchstart', function(e){
 		touchStart = e.touches[0].pageY;
 		touchLast = 0;// touchmove시 저장된 값 초기화
 	});
 
 	//핸들을 터치한 경우 => 바텀시트 up
-	$bs.on('touchmove', function(e){
+	$handle.on('touchmove', function(e){
 		touchLast = e.touches[0].pageY;            
 		var gap = touchLast - touchStart;
 		var bsIngH = bsh + (-gap);
@@ -292,7 +358,7 @@ function dargBottomSheet(){
 		$('body').css('overflow', 'hidden');
 	});
 
-	$bs.on('touchend', function(e){
+	$handle.on('touchend', function(e){
 		if((touchStart - touchLast) > 0 && touchLast != 0){// up
 			$bs.animate({
 				'height' : bsMaxH
