@@ -605,17 +605,19 @@ function customSelectSetting(){
 		}, 500);
     }
 
-	if ($('select option[selected]').length > 0){
-		$('select option[selected]').closest('.select_pack').addClass('has_selected');
+	// 2024-08-09 2024고도화 : 코드 위치 변경
+	// if ($('select option[selected]').length > 0){
+	// 	$('select option[selected]').closest('.select_pack').addClass('has_selected');
 
-		// A11Y 2024 버튼 레이블을 기선택값으로 세팅
-		var val = $('select option[selected]').text();
-		setTimeout(function(){
-			$trigger = $('select option[selected]').closest('.select_pack').find('.btn_slct_trigr');
-			$trigger.attr('aria-label', val);
-		}, 500);
+	// 	// A11Y 2024 버튼 레이블을 기선택값으로 세팅
+	// 	var val = $('select option[selected]').text();
+	// 	setTimeout(function(){
+	// 		$trigger = $('select option[selected]').closest('.select_pack').find('.btn_slct_trigr');
+	// 		$trigger.attr('aria-label', val);
+	// 		console.log('$trigger 2 : ', $trigger)
+	// 	}, 500);
 
-	}
+	// }
 
 	$('.select_pack').each(function(){/* 2022-05-06 수정 */
 		var $this = $(this),
@@ -627,6 +629,18 @@ function customSelectSetting(){
 			$select.attr('tabindex','-1');
 			$select.before('<button type="button" class="ebbtn btn_slct_trigr" title="'+$select.attr('title')+' 선택"></button>');
 		};
+
+		// 2024-08-09 2024고도화 : 기선택값의 기준이되는 선택자 this로 변경
+		if ($this.find('select option[selected]').length > 0){
+			$this.find('select option[selected]').closest('.select_pack').addClass('has_selected');
+
+			// A11Y 2024 버튼 레이블을 기선택값으로 세팅
+			var val = $this.find('select option[selected]').text();
+			setTimeout(function(){
+				$trigger = $this.find('.btn_slct_trigr');
+				$trigger.attr('aria-label', val);
+			}, 500);
+		}
 
 	});
 }

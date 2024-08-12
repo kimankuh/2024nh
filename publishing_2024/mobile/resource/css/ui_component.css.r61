@@ -29,7 +29,7 @@
 /* 텍스트 */
 .ebtext_desc { font-size: 15px; color: #707070; }
 .ebtext_desc01 { font-size: 14px; color: #707070; }
-.base_date { margin-top: 35px; text-align: right; font-size:13px; color:#303030; font-weight: 700; }/* 2024-08-12 2024고도화 : 폰트 사이즈,컬러 수정 */
+.base_date { margin-top: 35px; text-align: right; font-size: 14px; font-weight: bold; color: #1e4066; }
 
 /* 불릿텍스트 */
 .bullet_pack { padding: 20px; border-radius: 7px; border: 1px solid #e6e6e6; }
@@ -47,7 +47,7 @@
 .ebullet_circle > li { position: relative; margin-top: 8px; padding-left: 10px; font-size: 14px; line-height: 21px; color: #707070; }
 .ebullet_circle > li p + p { margin-top: 7px; }
 .ebullet_circle > li:first-child { margin-top: 0; }
-.ebullet_circle > li:after { content: ''; position: absolute; top: 8px; left: 0; width: 4px; height: 4px; border-radius: 50%; background: #707070; }/* 2024-08-12 2024고도화 : 뷸릿사이즈,위치 수정 */
+.ebullet_circle > li:after { content: ''; position: absolute; top: 9px; left: 0; width: 3px; height: 3px; border-radius: 50%; background: #707070; }
 .ebullet_circle > li a { font-size: 14px; }
 .ebullet_circle > li.color03:after { background: #0066b1; }
 .ebullet_circle + .ebbullet_text { margin-top: 11px; }
@@ -67,8 +67,7 @@
 /* 접근성 숨김텍스트 */
 .hidden_txt { overflow: hidden; position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; clip: rect(0,0,0,0); border: 0; }
 
-/* 2024-08-12 2024고도화 : 인포성 뷸릿텍스트 추가 */
-.icon_info{margin-top:12px; padding-left:26px; font-size:14px; color:#707070; line-height:19px; background:url(../image/icon/icon_info.png) no-repeat 0 0; background-size:20px auto;}
+
 
 /*
 	입력 공통
@@ -546,34 +545,33 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebbtn.disabled { cursor: default; }
 
 /* 메인버튼 */
-.ebbtn.btn_main { width: 100%; padding:0; height:56px; line-height:56px; border-radius: 16px; font-size: 16px; font-weight: 500; }/* 2024-08-09 2024고도화 : 버튼높이,폰트사이즈,보더라운드 수정 */
-.ebbtn.btn_main.ty_bg { color: #fff; background: #2f6dfc; }/* 2024-08-05 2024고도화 : 메인 컬러 변경 */
-.ebbtn.btn_main.ty_bg:active { color: #e5e5e5; background: #1e59e2; }/* 2024-08-09 2024고도화 : 배경컬러수정 */
+.ebbtn.btn_main { width: 100%; padding: 18px 0; border-radius: 10px; font-size: 17px; font-weight: 500; }
+.ebbtn.btn_main.ty_bg { color: #fff; background: #2F6DFC; }/* 2024-08-05 2024고도화 : 메인 컬러 변경 */
+.ebbtn.btn_main.ty_bg:active { color: #e5e5e5; background: #1b395c; }
 .ebbtn.btn_main.ty_bg[disabled="disabled"],
-.ebbtn.btn_main.ty_bg:disabled { color: #858f99; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
-.ebbtn.btn_main.ty_bg.disabled { color: #858f99; background: #e5e9ee; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
-.ebbtn.btn_main.ty_light { color: #303030; background: #dce2f1; }/* 2024-08-08 2024고도화 : 버튼 색상 변경 */
-.ebbtn.btn_main.ty_light:active { color: #303030; background: #c2c8d6; }/* 2024-08-08 2024고도화 : 버튼 색상 변경 */
-.ebbtn.btn_main.ty_light[disabled="disabled"] { color: #858f99; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
-.ebbtn.btn_main.ty_light:disabled { color: #858f99; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
-.ebbtn.btn_main.ty_light.disabled { color: #858f99; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
+.ebbtn.btn_main.ty_bg:disabled { color: #526577; background: #b4bec8; } /* A11Y 240213 명도대비 컬러 수정 */
+.ebbtn.btn_main.ty_bg.disabled { color: #526577; background: #b4bec8; } /* A11Y 240213 명도대비 컬러 수정 */
+.ebbtn.btn_main.ty_light { color: #303030; background: #CFD5E3; }/* 2024-08-08 2024고도화 : 버튼 색상 변경 */
+.ebbtn.btn_main.ty_light:active { color: #1e4066; background: #d1d4d8; }
+.ebbtn.btn_main.ty_light[disabled="disabled"] { color: #79838e; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 */
+.ebbtn.btn_main.ty_light:disabled { color: #79838e; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 */
+.ebbtn.btn_main.ty_light.disabled { color: #79838e; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 */
 .btn_main > .ebicon.icon_phone { vertical-align: middle; }
 .btn_main > .text { display: inline-block; padding-left: 5px; vertical-align: middle; font-size: 17px; color: #fff; }
 .btn_main > .tel { display: inline-block; padding-left: 5px; vertical-align: middle; font-size: 17px; color: #fff; }
 
-.ebbtn.btn_sub { width: 100%; padding: 10px 0; border-radius: 6px; font-size: 16px; font-weight: 500; color: #fff; background: #2f6dfc; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
+.ebbtn.btn_sub { width: 100%; padding: 10px 0; border-radius: 6px; font-size: 16px; font-weight: 500; color: #fff; background: #009870; } /* A11Y 240213 명도대비 컬러 수정 */
 .ebbtn.btn_sub.ty_dark { background: #595959; }
 .ebbtn.btn_sub[disabled="disabled"] { opacity: .4; }
 .ebbtn.btn_sub:disabled { opacity: .4; }
 .ebbtn.btn_sub.disabled { opacity: .4; }
 
 /* 일반버튼 */
-.ebbtn.btn_normal { min-width: 90px; padding: 0 15px; height: 40px; line-height: 40px; border-radius: 6px; font-size: 14px; font-weight: 500; }/* 2024-08-09 2024고도화 : 폰트사이즈 수정 */
-.ebbtn.btn_normal.ty_bg { color: #2f6dfc; background: #e5f0fc; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 폰트, 백그라운드 컬러 수정 */
-.ebbtn.btn_normal.ty_bg:active{background:#c1d7ef;}/* 2024-08-09 2024고도화 : active 케이스 추가 */
+.ebbtn.btn_normal { min-width: 90px; padding: 0 15px; height: 40px; line-height: 40px; border-radius: 6px; font-size: 15px; font-weight: 500; }
+.ebbtn.btn_normal.ty_bg { color: #2f6dfc; background: #e5f0fc; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-08 2024고도화 : 폰트, 백그라운드 컬러 수정 */
 .ebbtn.btn_normal.ty_bg[disabled="disabled"] { color: #608b7d; background: #eff5f3; } /* A11Y 240213 명도대비 컬러 수정 */
-.ebbtn.btn_normal.ty_bg:disabled { color: #858f99; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
-.ebbtn.btn_normal.ty_bg.disabled { color: #858f99; background: #e5e9ec; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 색상 변경 */
+.ebbtn.btn_normal.ty_bg:disabled { color: #608b7d; background: #eff5f3; } /* A11Y 240213 명도대비 컬러 수정 */
+.ebbtn.btn_normal.ty_bg.disabled { color: #608b7d; background: #eff5f3; } /* A11Y 240213 명도대비 컬러 수정 */
 
 .ebbtn.btn_normal.ty_bg.checked span { padding-left: 21px; background: url('../image/component/checkbox_check_checked.png') no-repeat left center; background-size: 11px; }
 
@@ -594,12 +592,12 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebbtn.btn_util { min-height: 30px; padding: 0 12px; border: 1px solid #e6e6e6; border-radius: 14px; font-size: 14px; color: #707070; }
 
 /* 버튼 안에 아이콘 */
-.ebbtn.btn_arrow { min-width: 100px; padding: 0 42px 0 20px; height: 45px; line-height: 45px; border-radius:12px; font-weight: bold; text-align: left; }/* 2024-08-09 2024고도화 : 보더 라운드 수정 */
-.ebbtn.btn_arrow { color: #ffffff; background: #2F6DFC url('../image/component/btn_arrow_white.png') no-repeat right 20px center; background-size: 11px; /*box-shadow: 0 3px 12px rgba(0,94,69,0.24);*/ } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 컬러 수정, 그림자 삭제 */
-.ebbtn.btn_arrow:active { color: #ffffff; background: #005b49 url('../image/component/btn_arrow_white_press.png') no-repeat right 20px center; background-size: 11px; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 컬러 수정 */
+.ebbtn.btn_arrow { min-width: 100px; padding: 0 42px 0 20px; height: 45px; line-height: 45px; border-radius: 9px 5px 9px 5px; font-weight: bold; text-align: left; }
+.ebbtn.btn_arrow { color: #ffffff; background: #2F6DFC url('../image/component/btn_arrow_white.png') no-repeat right 20px center; background-size: 11px; box-shadow: 0 3px 12px rgba(0,94,69,0.24); } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-05 2024고도화 : 컬러 변경됨 */
+.ebbtn.btn_arrow:active { color: #ccece3; background: #005b49 url('../image/component/btn_arrow_white_press.png') no-repeat right 20px center; background-size: 11px; } /* A11Y 240213 명도대비 컬러 수정 */
 .ebbtn.btn_arrow[disabled="disabled"] { color: #526577; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
-.ebbtn.btn_arrow:disabled { color: #858f99; background: #e5e9ec url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
-.ebbtn.btn_arrow.disabled { color: #858f99; background: #e5e9ec url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 컬러 수정 */
+.ebbtn.btn_arrow:disabled { color: #526577; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
+.ebbtn.btn_arrow.disabled { color: #526577; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
 
 .ebbtn.btn_reset { min-width: 62px; padding: 0 13px; height: 30px; line-height: 30px; border-radius: 15px; font-size: 14px; }
 .ebbtn.btn_reset { color: #707070; border: 1px solid #e6e6e6; background: #ffffff; }

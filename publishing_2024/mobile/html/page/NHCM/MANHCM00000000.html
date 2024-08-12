@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 
-	<title>NH농협캐피탈</title>
+	<title>메인(MA) | NH농협캐피탈</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -30,11 +30,10 @@
 <body>
 
 
-<!-- 상단 안내 영역 -->
-<div class="banner_layer"><!-- 노출 class="show" -->
+<!-- 상단 안내 영역 : toast -->
+<div class="banner_layer" style="display:none"><!-- 노출 class="show" --><!--  2024-08-09 2024고도화 : 개발 사용시 style="display:none" 삭제요 -->
 	<div class="layer">
 		<div class="banner_conts">
-
 			<!-- 이어하기 상태 -->
 			<div class="banner_title">
 				<span class="name">홍길동</span> 고객님, 신청중이던 상품이 있습니다.<br> <b>계속 <span class="color02">이어</span>하시겠어요?</b>
@@ -58,49 +57,53 @@
 		<button type="button" class="ebbtn btn_banner_close" title="배너닫기"></button>
 	</div>
 </div>
-<!-- //상단 안내 영역 -->
+<!-- //상단 안내 영역 : toast -->
 
-<!-- Android 뒤로가기 안내 영역 -->
-<div class="comment_layer show"><!-- 노출 class="show" -->
+<!-- Android 뒤로가기 안내 영역 : toast -->
+<div class="comment_layer show" style="display:none"><!-- 노출 class="show" --><!-- 2024-08-09 2024고도화 : 개발 사용시 style="display:none" 삭제요 -->
 	<div class="layer">
 		<div class="comment_conts">
 			뒤로가기 버튼을 한번 더 누르시면 종료됩니다.
 		</div>
 	</div>
 </div>
-<!-- //Android 뒤로가기 안내 영역 -->
+<!-- //Android 뒤로가기 안내 영역 : toast -->
 
 <div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
-	<div class="header">
+	<!-- 2024-08-09 2024고도화 : 
+	  - renewal_2024 : 고도화 전용 class(필수)
+	  - has-login : 로그인 후 추가되는 class
+	// -->
+	<div id="headerLay" class="header renewal_2024">
 		<div class="header_area">
+			<!-- 2024-08-09 2024고도화 : 헤더 영역 UI 변경 -->
+			<div class="switch_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_1" title="간편홈 선택" />
+				<label for="chk1_1" class="eblabel"></label>
+			</div>
 
 			<!-- <div class="header_back">
 				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
 			</div> -->
-
-			<div class="header_logo">
+			<!-- <div class="header_logo">
 				<a href="#"><img src="../../../resource/image/layout/logo.png" alt="NH농협캐피탈"></a>
-			</div>
-
+			</div> -->
 			<!-- <div class="header_title">
 				<h2 class="ebtitle2">타이틀</h2>
 			</div> -->
 			
 			<div class="header_alarm">
-				<a href="" class="ebbtn btn_header_point"></a>
+				<a href="#noen" class="ebbtn btn_header_point" title="멤버스팟 바로가기, 브라우저로 앱 변환"></a>
 				<button type="button" class="ebbtn btn_header_alarm active" title="알림화면 열기"></button><!-- 새로운 알람 있을 경우 addclass="active" -->
 			</div>
-
 			<div class="header_menu">
 				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
 			</div>
-
-
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container renewal_2024"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 
 		<!-- 컨텐츠 상단 타이틀영역 -->
 		<div class="subheader"></div>
@@ -108,6 +111,255 @@
 		<!-- 여기부터 컨텐츠 -->
 		<div class="contents_area">
 			<div class="contents">
+				<!-- 2024-08-09 2024고도화 : 메인 영역 UI 변경 -->
+				<!-- 상품 영역 : 
+					- BG 설정 : .odd(홀수) / .even(짝수)
+					- 순위에 따라 : .first(1위영역 노출시) / .second(2위영역 노출시) 
+				// -->
+				
+				<div class="main-section odd first"><!-- 1위 영역 : .first -->
+					<!-- 1위 : 신용대출 -->
+					<div class="section-box">
+						<p class="text-section-title ico-01">쉽고 빠른 대출이 필요하세요?</p><!-- 신용대출 : .ico-01 -->
+						<div class="section-content">						
+							<div class="section-content-head">
+								<p class="text-head-title"><em>365</em>일 <em>24</em>시간 언제나<br/> 대출이 가능해요!</p>
+							</div>
+							<ul class="product-keywords">
+								<li class="product-keyword">최대 1.5억원</li>
+								<li class="product-keyword">최저 연7.5%</li>
+								<li class="product-keyword">주부</li>
+								<li class="product-keyword">직장인</li>
+								<li class="product-keyword">자영업</li>
+							</ul>
+							<button type="button" class="ebbtn btn_normal full">나의 한도 알아보기</button>
+						</div>
+					</div>	
+					
+					<!-- 1위 : 스탁론 -->
+					<div class="section-box">
+						<p class="text-section-title ico-02">내 주식으로 받을 수 있는 한도는?</p><!-- 스탁론 : .ico-02 -->
+						<div class="section-content">						
+							<div class="section-content-head">
+								<p class="text-head-title">증권계좌 평가금액의<br/> 최대 300%까지!</p>
+							</div>
+							<ul class="product-reclinks">
+								<li class="product-recitem"><a href="#none" class="product-reclink ico-01" aria-label="스탁론 신규대출">신규대출</a></li>
+								<li class="product-recitem"><a href="#none" class="product-reclink ico-02" aria-label="스탁론 대환대출">대환대출</a></li>
+								<li class="product-recitem"><a href="#none" class="product-reclink ico-03" aria-label="스탁론 추가대출">추가대출</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 1위 : 자동차 -->
+					<div class="section-box">
+						<p class="text-section-title ico-03">자동차 구입이 필요하신가요?</p><!-- 자동차 : .ico-03 -->
+						<div class="section-content">						
+							<div class="section-content-head">
+								<p class="text-head-title">신차부터 리스, 렌터카까지<br/> 대출이 가능해요!</p>
+							</div>
+							<ul class="product-reclinks">
+								<li class="product-recitem"><a href="#none" class="product-reclink ico-04" aria-label="자동차 신차구입">신차구입</a></li>
+								<li class="product-recitem"><a href="#none" class="product-reclink ico-05" aria-label="자동차 자동차리스">자동차리스</a></li>
+								<li class="product-recitem"><a href="#none" class="product-reclink ico-06" aria-label="자동차 장기렌터카">장기렌터카</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // odd -->
+
+				<div class="main-section even second"><!-- 2위 영역 : .second -->
+					<!-- 2위 : 신용대출 -->
+					<div class="section-box">
+						<p class="text-section-title ico-01">쉽고 빠른 대출이 필요하세요?</p><!-- 신용대출 : .ico-01 -->
+						<div class="section-content">						
+							<div class="section-content-head">
+								<p class="text-head-title">365일 24시간 언제나<br/> 대출이 가능해요!</p>
+							</div>
+							<ul class="product-conditions">
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">개인신용대출</span>
+										<span class="text normal">최대 1.5억원</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 7.9%</span>  
+									</div>
+								</li>
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">개인신용대출</span>
+										<span class="text normal">최대 1.5억원</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 7.9%</span>  
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 2위 : 스탁론 -->
+					<div class="section-box">
+						<p class="text-section-title ico-02">내 주식으로 받을 수 있는 한도는?</p><!-- 스탁론 : .ico-02 -->
+						<div class="section-content">						
+							<div class="section-content-head">
+								<p class="text-head-title">증권계좌 평가금액의<br/> 최대 300%까지!</p>
+							</div>
+							<ul class="product-conditions">
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">신규대출</span>
+										<span class="text normal">계좌당 3억원</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 6.0%</span>  
+									</div>
+								</li>
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">대환대출</span>
+										<span class="text normal">계좌당 3억원</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 6.0%</span>  
+									</div>
+								</li>
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">추가대출</span>
+										<span class="text normal">계좌당 3억원</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 6.0%</span>  
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 2위 : 자동차 -->
+					<div class="section-box">
+						<p class="text-section-title ico-01">자동차 구입이 필요하신가요?</p><!-- 신용대출 : .ico-01 -->
+						<div class="section-content">						
+							<div class="section-content-head">
+								<p class="text-head-title">신차부터 리스, 렌터카까지<br/> 대출이 가능해요!</p>
+							</div>
+							<ul class="product-conditions">
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">신차구입</span>
+										<span class="text normal">최대 차량가격 이내</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 5.0%</span>  
+									</div>
+								</li>
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">자동차리스</span>
+										<span class="text normal">리스료 대여상품</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">기간</span>
+										<span class="text highlight">최장 60개월</span>  
+									</div>
+								</li>
+								<li class="product-condition">
+									<div class="condition-item">
+										<span class="text title">장기렌터카</span>
+										<span class="text normal">초기비용 부담 절감</span>
+									</div>
+									<div class="condition-item">
+										<span class="text normal">기간</span>
+										<span class="text highlight">24개월~60개월</span>  
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- // even -->
+
+				<div class="main-section odd">
+					<!-- 2위 : 자동차 -->
+					<div class="section-box">
+						<p class="text-section-title ico-04">다양한 금융상품을 만나보세요.</p><!-- 그 외 : .ico-04 -->
+						<ul class="product-banners">
+							<li class="banner-item">
+								<a href="#none" role="button" class="banner-link type-01">
+									<p class="banner-link-title">신용대출</p>
+									<p class="banner-link-text">쉽고 빠른 즉시대출</p>
+									<p class="banner-link-tag"><span>#개인</span><span>#개인사업자</span></p>
+								</a>
+							</li>
+							<li class="banner-item">
+								<a href="#none" role="button" class="banner-link type-02">
+									<p class="banner-link-title">스탁론</p>
+									<p class="banner-link-text">주식 매입 자금</p>
+									<p class="banner-link-tag"><span>#당사제휴증권사계좌보유</span></p>
+								</a>
+							</li>
+							<li class="banner-item">
+								<a href="#none" role="button" class="banner-link type-03">
+									<p class="banner-link-title">자동차금융</p>
+									<p class="banner-link-text">자동차 구입 또는 리스</p>
+									<p class="banner-link-tag"><span>#신차</span><span>#리스</span><span>#장기렌터카</span></p>
+								</a>
+							</li>							
+							<li class="banner-item">
+								<a href="#none" role="button" class="banner-link type-04">
+									<p class="banner-link-title">주택금융</p>
+									<p class="banner-link-text">아파트 담보 대출</p>
+									<p class="banner-link-tag"><span>#사업기간6개월이상</span><span>#아파트보유자</span></p>
+								</a>
+							</li>
+							<li class="banner-item">
+								<a href="#none" role="button" class="banner-link type-05">
+									<p class="banner-link-title">산업재금융</p>
+									<p class="banner-link-text">건설기계, 상용차 구입</p>
+									<p class="banner-link-tag"><span>#개인</span><span>#개인사업자</span><span>#법인</span></p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="main-section even">
+					자동차 금융<br/>
+					자동차 금융<br/>
+					자동차 금융<br/>
+					자동차 금융<br/>
+					자동차 금융<br/>
+					자동차 금융<br/>
+					자동차 금융<br/>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<div class="main_part">
 
@@ -598,7 +850,7 @@ maineventSwiper();// 메인이벤트슬라이더: 1개이상일경우 maineventS
 mainboardSwiper();
 
 //팝업호출
-popupFunc('#tempId').show();
+// popupFunc('#tempId').show();
 
 // 상단 안내 노출 예시
 $(window).on('load', function() {
@@ -609,6 +861,16 @@ $(window).on('load', function() {
 
 // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
 // pageloadFunc();
+
+
+
+
+// 2024-08-09 2024고도화 : 로그인 전/후에 따른 배경색 설정
+if($('.header').hasClass('has-login')){
+	$('.container').css('background-color', 'pink');
+}else{
+	$('.container').css('background-color', '#F4F5F9');
+}
 
 </script>
 
