@@ -48,7 +48,7 @@
 .delay_layer .delay_box { padding: 21px 0 calc(constant(safe-area-inset-bottom) + 21px); padding: 21px 0 calc(env(safe-area-inset-bottom) + 21px); }
 .marketing_popup .popup_layout { padding-bottom: constant(safe-area-inset-bottom); padding-bottom: env(safe-area-inset-bottom); }
 .marketing_popup.ty_alert .popup_layout { padding-bottom: 0; }
-.banner_layer { padding: 0 10px constant(safe-area-inset-bottom) !important; padding: 0 10px env(safe-area-inset-bottom) !important; }
+.banner_layer { padding: 0 20px constant(safe-area-inset-bottom) !important; padding: 0 20px env(safe-area-inset-bottom) !important; }/* 2024-08-14 2024고도화 : 패딩 변경 */
 
 
 
@@ -581,10 +581,11 @@
 .banner_layer { z-index: 2000; position: fixed; bottom: -100%; left: 0; width: 100%; padding: 0 10px; box-sizing: border-box; transition: bottom .5s; }
 .banner_layer.showapp { bottom: 78px; }
 .banner_layer.showweb { bottom: 10px; }
-.banner_layer .layer { position: relative; padding: 20px 45px 20px 20px; border-radius: 10px; background: #101010; box-sizing: border-box; }
-.banner_layer .layer .banner_conts { }
-.banner_layer .layer .banner_conts .banner_title { font-size: 14px; color: #ffffff; }
-.banner_layer .layer .ebbtn.btn_banner_close { position: absolute; top: 10px; right: 10px; width: 25px; height: 25px; border-radius: 50%; background: #272728 url('../image/main/btn_banner_close.png') no-repeat center; background-size: 9px; }
+.banner_layer .layer { position: relative; padding:16px 20px; border-radius:18px; background:rgba(0, 0, 0, 0.8); box-sizing: border-box;box-shadow: 0px 12px 24px -8px #00000014;}/* 2024-08-14 2024고도화 : 스타일 변경됨 */
+/* .banner_layer .layer .banner_conts { } */
+.banner_layer .layer .banner_conts .banner_title { padding-left:28px;font-size: 14px; color: #ffffff;background:url('../image/main/ico_banner_layer.png') no-repeat;background-size: 22px auto;}/* 2024-08-14 2024고도화 : 아이콘 추가됨 */
+/* .banner_layer .layer .ebbtn.btn_banner_close { position: absolute; top: 10px; right: 10px; width: 25px; height: 25px; border-radius: 50%; background: #272728 url('../image/main/btn_banner_close.png') no-repeat center; background-size: 9px; } */
+.banner_layer .layer .ebbtn.btn_banner_close { position: absolute; top:-7px; right:-6px; width: 26px; height: 26px; border-radius: 50%; background: #828282 url('../image/main/btn_banner_close_02.png') no-repeat center; background-size:10px; }/* 2024-08-14 2024고도화 : 스타일 변경됨 */
 
 
 
