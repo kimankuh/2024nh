@@ -1,1 +1,89 @@
 @charset "utf-8";
+
+/*============= common ============*/
+.header.header_blue{background-color:#2f6dfc;}
+.header.header_blue .header_area .header_title h2{padding-left:8px; font-family: 'SpoqaHanSansNeo'; font-size:16px; font-weight:500; color:#fff; text-align:left; opacity:1; }
+
+
+/*============= content ============*/
+/* 공통 > 상품소개 */
+.renewal_2024 .contents_area.product_info,
+.renewal_2024 .contents_area.product_info .contents {padding:0;}
+
+.renewal_2024 .small_title_pack > li{margin-top:16px}
+.renewal_2024 .small_title_pack > li:first-child{margin-top:0}
+.renewal_2024 .small_title_pack > li .tit{display:block; font-size:15px; color:#303030; font-weight:700;}
+.renewal_2024 .small_title_pack > li .cont{margin-top:4px; display:block; font-size:15px; color:#303030;}
+.renewal_2024 .small_title_pack > li .img{display:block; box-sizing: border-box;}
+.renewal_2024 .small_title_pack > li .img img{display:block; width:100%}
+.renewal_2024 .small_title_pack > li .cont + .img{margin-top:4px;}
+
+.renewal_2024 .intro_btn_box .btn_box .box_l {width: 40%; }
+.renewal_2024 .intro_btn_box .btn_box .box_r {width: 60%;}
+
+.renewal_2024 .product_info .desc_area {height:500px;background-color:#2f6dfc;}
+.renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; background:url(../../../resource/image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px; box-sizing: border-box;}
+.renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../../../resource/image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
+.renewal_2024 .prod_info .prod_txt{font-size:26px; color:#fff; font-weight:700;}
+.renewal_2024 .prod_info .prod_data{position:relative; display:flex; margin-top:24px; }
+.renewal_2024 .prod_info .prod_data:after{content:""; display:block; clear:both;}
+.renewal_2024 .prod_info .prod_data .tit{display:block; font-size:14px; color:#fff;}
+.renewal_2024 .prod_info .prod_data .txt{display:block; font-size:26px; color:#fff; font-weight:700;}
+.renewal_2024 .prod_info .prod_data > li{margin-left:24px;}
+.renewal_2024 .prod_info .prod_data > li:first-child{margin-left:0;}
+.renewal_2024 .prod_info .btn_box{position:absolute; left:0; bottom:0; width:100%; padding:0 20px 16px; box-sizing: border-box;}
+.renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{background-color:#0a47d6;}
+
+.renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;border-radius: 18px 48px 0 0; background-color:#fff;}
+.renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 68px); overflow:hidden;}
+.renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
+.renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
+.renewal_2024 .drag_handle{position:relative;}
+.renewal_2024 .drag_handle:after{content:""; display:block; clear:both;}
+.renewal_2024 .drag_handle .btn_handle { display:flex; width:100%;height:48px; border:0; border-radius: 18px 48px 0 0; background:#fff;}
+.renewal_2024 .drag_handle .btn_handle:before {content:''; display:block; margin:12px auto 0; padding:0; width:50px; height:5px; border-radius:5px; background-color:#909090;}
+
+.renewal_2024 .easy_calculate .input_pack.ty_word1{height:36px; padding-right:20px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput{height:36px; font-size:18px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput::placeholder{font-size:16px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput:-ms-input-placeholder{font-size:16px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .unit{width:20px; height:36px; line-height:36px; font-size:16px;}
+
+.renewal_2024 .easy_calculate .result{margin-top:12px; text-align:right;}
+.renewal_2024 .easy_calculate .result .tit{margin-right:4px; font-size:14px; color:#303030;}
+.renewal_2024 .easy_calculate .result .val{display:inline-block; font-size:22px; font-weight:700; color:#2f6dfc; }
+.renewal_2024 .easy_calculate .result .val .num{display:inline-block; }
+.renewal_2024 .easy_calculate .result .val .unit{display:inline-block; margin-left:4px; font-size:20px;}
+
+.renewal_2024 .easy_calculate .btn_box{margin-top:20px;}
+.renewal_2024 .easy_calculate .ebbtn.btn_normal{height:44px; line-height:44px; border-radius:14px;}
+
+.renewal_2024 .accordion_pack.ty_boxing { border: 0; border-radius:20px; background-color: #f3f6fb; }
+.renewal_2024 .accordion_pack.ty_boxing + .accordion_pack.ty_boxing{margin-top:12px;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title{min-height:64px; padding:21px 20px 20px;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title .title{font-size:16px; font-weight:500;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title .control{position:absolute; top:50%; right:20px; margin-top:-10px; width:20px; height:20px;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_title .control .ebbtn.btn_accordion{width:20px; height:20px; background: url(../../../resource/image/component/accordion_arrow02.png) no-repeat center; background-size:100%;}
+.renewal_2024 .accordion_pack.ty_boxing .accordion_content{padding-top:0; }
+.renewal_2024 .accordion_pack.ty_boxing .ebullet_circle{margin-top:12px;}
+.renewal_2024 .accordion_pack.ty_boxing .small_title_pack > li .ebullet_circle{margin-top:4px}
+.renewal_2024 .accordion_pack.ty_boxing .base_date{margin-top:20px;}
+.renewal_2024 .accordion_pack.ty_boxing.active{box-shadow:none;}
+.renewal_2024 .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
+.renewal_2024 .accordion_pack.ty_boxing.active .accordion_content{border:0; color:#303030;}
+.renewal_2024 .icon_info{margin-bottom:20px;}
+
+/* 공통 > 가입유도 팝업 */
+.renewal_2024.modal_popup.ty_popup .popup_layout .popup_header{text-align:left;}
+.renewal_2024.modal_popup.ty_popup .popup_layout .popup_header .popup_title{padding:0 55px 0 24px; font-family: 'IBM_Plex_Sans_KR', 'malgun gothic', 'sans-serif', 'dotum';font-size:17px; font-weight:500;}
+
+.renewal_2024 .encourage_signup{margin-bottom:20px; padding:24px 0 68px 0; background:url(../../../resource/image/contents/common/encourage_signup.png) no-repeat bottom right;background-size:115px auto;}
+.renewal_2024 .encourage_signup .txt{font-size:14px; color:#707070;}
+.renewal_2024 .encourage_signup .tit{font-size:24px; font-weight:700; line-height:34px; letter-spacing: -0.5%;}
+.renewal_2024 .encourage_signup .tit + .txt{margin-top:20px;}
+
+/* 마이페이지 > 발급서비스 > 발급내역 조회 */
+.renewal_2024 .issuance_details{margin-top:10px;}
+.renewal_2024 .issuance_details .borderdiv{margin-top:-1px; padding:20px 25px;}
+.renewal_2024 .issuance_details .section-title{font-weight:700;}
