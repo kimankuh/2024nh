@@ -23,7 +23,7 @@
 .renewal_2024 .tooltip_msg_pack .exptxt{font-size:15px; line-height:21px;}
 /*============= content ============*/
 /* 공통 > 상품소개 */
-.renewal_2024 .contents_area.product_info,
+.renewal_2024 .contents_area.product_info {height:100vh; padding:0; background-color:#2F6DFC;}
 .renewal_2024 .contents_area.product_info .contents {padding:0;}
 
 .renewal_2024 .small_title_pack > li{margin-top:16px}
