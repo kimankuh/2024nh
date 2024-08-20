@@ -47,7 +47,7 @@
 .ebullet_circle > li { position: relative; margin-top: 8px; padding-left: 10px; font-size: 14px; line-height: 21px; color: #707070; }
 .ebullet_circle > li p + p { margin-top: 7px; }
 .ebullet_circle > li:first-child { margin-top: 0; }
-.ebullet_circle > li:after { content: ''; position: absolute; top: 8px; left: 0; width: 4px; height: 4px; border-radius: 50%; background: #707070; }/* 2024-08-12 2024고도화 : 뷸릿사이즈,위치 수정 */
+.ebullet_circle > li:after { content: ''; position: absolute; top: 9px; left: 0; width: 3px; height: 3px; border-radius: 50%; background: #707070; }
 .ebullet_circle > li a { font-size: 14px; }
 .ebullet_circle > li.color03:after { background: #0066b1; }
 .ebullet_circle + .ebbullet_text { margin-top: 11px; }
