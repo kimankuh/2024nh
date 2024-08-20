@@ -29,7 +29,7 @@
 </head>
 <body>
 	<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
-		<div class="header header_blue">
+		<div class="header renewal_2024 bg_blue"><!-- 2024-08-16 2024고도화 : 고도화 전용 class .renewal_2024 추가, 상품소개 일때 bg-blue 추가 -->
 			<div class="header_area">
 
 				<div class="header_back">
@@ -236,20 +236,19 @@
 // pageloadFunc();
 
 
-introPageFn();//소개페이지 버튼영역 함수
-productAni(); //상품소개 애니메이션 함수
-dargBottomSheet();
-
+//introPageFn();//소개페이지 버튼영역 함수
+//productAni(); //상품소개 애니메이션 함수
+dargBottomSheet(); // 상품소개 drag bottom sheet
 
 
 function dargBottomSheet(){
 	/*********************
         draggable 바텀시트     
-    **********************/    
+    **********************/
 	var $bs = $('.dragging_bs');
 	var $handle = $('.drag_handle');
 	var wh = $(window).height();        
-	var hh = $('.header_blue').outerHeight();
+	var hh = $('.header').outerHeight();
 	var conh = $('.desc_area').outerHeight() - 48;
 	var bsh = wh - (hh + conh) + 48;
 	var bsMaxH = wh - hh;

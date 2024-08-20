@@ -75,7 +75,7 @@
 	  - renewal_2024 : 고도화 전용 class(필수)
 	  - has-login : 로그인 후 추가되는 class
 	// -->
-	<div id="headerLay" class="header renewal_2024 has-bg"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가, 로그인인 경우 .has-bg 추가 -->
+	<div id="headerLay" class="header renewal_2024 has_bg"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가, 로그인인 경우 .has_bg 추가 -->
 		<div class="header_area">
 			<!-- 2024-08-09 2024고도화 : 헤더 영역 UI 변경 -->
 			<div class="switch_pack">
@@ -114,37 +114,37 @@
 		<div class="contents_area">
 			<div class="contents">
                 <!-- 2024-08-09 2024고도화 : 메인 컨텐츠 영역 UI 변경 -->
-                <div class="main-section">
-                    <div class="section-box">
-                        <div class="section-content">						
-                            <div class="section-content-head">
-                                <p class="text-head-title"><em>365</em>일 <em>24</em>시간 언제나<br/> 대출이 가능해요!</p>
+                <div class="main_section">
+                    <div class="section_box">
+                        <div class="section_content">						
+                            <div class="section_content_head">
+                                <p class="text_head_title"><em>365</em>일 <em>24</em>시간 언제나<br/> 대출이 가능해요!</p>
                             </div>
                             <button type="button" class="ebbtn btn_normal full">나의 한도 알아보기</button>
                         </div>
                     </div>
 
-                    <ul class="product-simple-links">
-                        <li class="product-simple-item">
-                            <a href="#none" role="button" class="simple-link type-01">
+                    <ul class="product_simple_links">
+                        <li class="product_simple_item">
+                            <a href="#none" role="button" class="simple_link type_01">
                                 <span class="category">스탁론</span>
                                 <span class="text">성공적인<br />주식투자</span>
                             </a>
                         </li>
-                        <li class="product-simple-item">
-                            <a href="#none" role="button" class="simple-link type-02">
+                        <li class="product_simple_item">
+                            <a href="#none" role="button" class="simple_link type_02">
                                 <span class="category">자동차금융</span>
                                 <span class="text">다이렉트<br />신차</span>
                             </a>
                         </li>
-                        <li class="product-simple-item">
-                            <a href="#none" role="button" class="simple-link type-03">
+                        <li class="product_simple_item">
+                            <a href="#none" role="button" class="simple_link type_03">
                                 <span class="category">산업재 금융</span>
                                 <span class="text">건설 기계를<br />위한</span>
                             </a>
                         </li>                        
-                        <li class="product-simple-item">
-                            <a href="#none" role="button" class="simple-link type-04">
+                        <li class="product_simple_item">
+                            <a href="#none" role="button" class="simple_link type_04">
                                 <span class="category">주택금융</span>
                                 <span class="text">입주예정자를<br />위한</span>
                             </a>
@@ -222,12 +222,13 @@ $(window).on('load', function() {
 
 
 // 2024-08-09 2024고도화 : 로그인 전/후에 따른 배경색 설정
-if($('.header').hasClass('has-bg')){
+// 2024-08-19 2024고도화 : 조건 변경
+if($('.main_section').length > 0){
 	$('.container').css('background-color', '#F4F5F9');
 }
 
 // 2024-08-13 2024고도화 : 메인 이벤트 swiper
-var maineventSwiperNew = new Swiper('.main-event-banners .swiper-container', {
+var maineventSwiperNew = new Swiper('.main_event_banners .swiper-container', {
 	speed: 400,
 	slidesPerView: 1,
 	pagination: {
@@ -240,7 +241,7 @@ var maineventSwiperNew = new Swiper('.main-event-banners .swiper-container', {
 });
 
 // 2024-08-14 2024고도화 : 보유상품
-var maineventSwiperNew = new Swiper('.section-content.my-product .swiper-container', {
+var maineventSwiperNew = new Swiper('.section_content.my_product .swiper-container', {
 	speed: 400,
 	slidesPerView: 1,
 	pagination: {

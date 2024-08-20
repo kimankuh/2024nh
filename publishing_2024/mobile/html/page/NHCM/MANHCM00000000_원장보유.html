@@ -37,22 +37,22 @@
 		<div class="banner_conts">
 			<!-- 이어하기 상태 -->
 			<div class="banner_title">
-				<span class="name">홍길동</span> 고객님, 신청중이던 상품이 있습니다.<br> <b><span class="text-point-01">계속 이어하시겠어요?</span></b>
+				<span class="name">홍길동</span> 고객님, 신청중이던 상품이 있습니다.<br> <b><span class="text_point_01">계속 이어하시겠어요?</span></b>
 			</div>
 
 			<!-- 마감 임박 7일전 -->
 			<!-- <div class="banner_title">
-				<span class="name">홍길동</span> 고객님, 만기가 얼마 남지 않은<br> <b><span class="text-point-01">대출 상품이 있습니다.</span></b>
+				<span class="name">홍길동</span> 고객님, 만기가 얼마 남지 않은<br> <b><span class="text_point_01">대출 상품이 있습니다.</span></b>
 			</div> -->
 
 			<!-- 상품 연체 -->
 			<!-- <div class="banner_title">
-				<span class="name">홍길동</span> 고객님, 이용중이신 대출 상품이<br> <b><span class="text-point-01">연체되었습니다.</span></b>
+				<span class="name">홍길동</span> 고객님, 이용중이신 대출 상품이<br> <b><span class="text_point_01">연체되었습니다.</span></b>
 			</div> -->
 
 			<!-- 상환 알림 -->
 			<!-- <div class="banner_title">
-				<span class="name">홍길동</span> 고객님, 대출상품명이 상환되었습니다.<br> 125회차 납부예정 금액은 <b><span class="text-point-01">100,213,000원</span></b>입니다.
+				<span class="name">홍길동</span> 고객님, 대출상품명이 상환되었습니다.<br> 125회차 납부예정 금액은 <b><span class="text_point_01">100,213,000원</span></b>입니다.
 			</div> -->
 		</div>
 		<!-- // 2024-08-14 2024고도화 : 토스트 팝업 마크업 변경됨 -->
@@ -75,9 +75,9 @@
 
 	<!-- 2024-08-09 2024고도화 : 헤더 UI 변경됨
 	  - renewal_2024 : 고도화 전용 class(필수)
-	  - has-bg : 로그인 후 추가되는 class
+	  - has_bg : 로그인 후 추가되는 class
 	// -->
-	<div id="headerLay" class="header renewal_2024 has-bg"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가, 로그인인 경우 .has-bg 추가 -->
+	<div id="headerLay" class="header renewal_2024 has_bg"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가, 로그인인 경우 .has_bg 추가 -->
 		<div class="header_area">
 			<!-- 2024-08-09 2024고도화 : 헤더 영역 UI 변경 -->
 			<div class="switch_pack">
@@ -116,31 +116,44 @@
 		<div class="contents_area">
 			<div class="contents">
 				<!-- 2024-08-09 2024고도화 : 메인 컨텐츠 영역 UI 변경 -->
+				<!-- 2024-08-19 2024고도화 : 진행상태 알림 토스트 UI 추가 -->
+				<div class="status_toast">					
+					<div class="status_toast_box">
+						<p class="status_msg">신용대출 신청 중이에요.</p><!-- 신용대출 신청 -->
+						<!--<p class="status_msg">신청한 대출이 접수 완료되었어요.</p>--><!-- 접수완료 -->
+						<!--<p class="status_msg">접수한 대출이 심사 진행 중이에요.</p>--><!-- 심사진행중 -->
+						<!--<p class="status_msg">접수한 대출이 심사 완료(승인) 되었어요.</p>--><!-- 심사완료(승인) -->
+						<!--<p class="status_msg">접수한 대출이 심사 완료(거절) 되었어요.</p>--><!-- 심사완료(거절) -->
+						<a href="#none" class="status_link">진행상태 자세히 보기</a>
+						<button type="button" title="진행상태 알림 닫기" class="ebbtn btn_status_close"></button>
+					</div>					
+				</div>
+
 				<!-- 상품 영역 : 
 					- BG 설정 : .odd / .even
 					- 2위 영역 노출시 : .second
 				// -->	
-                <div class="main-section even">
-					<div class="login-greeting">
+                <div class="main_section even">
+					<div class="login_greeting">
 						<strong>안녕하세요. 홍길동님!</strong><br /> 오늘도 즐거운 하루 보내세요.
 					</div>
 
 					<!-- 보유건 수 -->
-					<div class="section-content my-total">
-						<a href="#none" role="button" class="my-total-link">
+					<div class="section_content my_total">
+						<a href="#none" role="button" class="my_total_link">
 							<span>홍길동님의 대출내역</span>
-							<span class="my-total-num">3건</span> 
+							<span class="my_total_num">3건</span> 
 						</a>
 					</div>
 
 					<!-- 보유 상품 -->
-					<div class="section-content my-product">
+					<div class="section_content my_product">
 						<div class="swiper-container">
 							<div class="swiper-wrapper">			
 								<div class="swiper-slide">
-									<div class="my-product-info">
-										<ul class="info-list has-ci"><!-- ci노출시 : .has-ci 추가, 기관명은 스탁론만 노출 -->
-											<li class="info-list-item">
+									<div class="my_product_info">
+										<ul class="info_list has_ci"><!-- ci노출시 : .has_ci 추가, 기관명은 스탁론만 노출 -->
+											<li class="info_list_item">
 												<!-- CI, 기관명은 스탁론만 노출 -->
 												<span class="icon_pack">
 													<span class="ebicon icon_bank"><img src="../../../resource/image/ci/ci_011.png" alt=""></span>
@@ -148,16 +161,16 @@
 												<span class="name">농협캐피탈</span>
 												<span class="name">개인신용다이렉트</span>
 											</li>
-											<li class="info-list-item">2024.12.31 만기</li>
+											<li class="info_list_item">2024.12.31 만기</li>
 										</ul>
-										<div class="dday-badge"><span class="badge"><em class="hidden">디데이</em>D-30</span></div>
+										<div class="dday_badge"><span class="badge"><em class="hidden">디데이</em>D-30</span></div>
 									</div>
-									<div class="my-product-btm">
-										<div class="my-product-amount">
+									<div class="my_product_btm">
+										<div class="my_product_amount">
 											<span class="label">12월 결제 예정금액</span>
 											<span class="amount"><em class="num">2,300,000</em> 원</span>
 										</div>
-										<div class="button-flex-box">
+										<div class="button_flex_box">
 											<button type="button" class="ebbtn ty_bg">중도상환</button>
 											<button type="button" class="ebbtn ty_bg">즉시결제</button>
 										</div>
@@ -165,9 +178,9 @@
 								</div>
 
 								<div class="swiper-slide">
-									<div class="my-product-info">
-										<ul class="info-list"><!-- ci노출시 : .has-ci 추가, 기관명은 스탁론만 노출 -->
-											<li class="info-list-item">
+									<div class="my_product_info">
+										<ul class="info_list"><!-- ci노출시 : .has_ci 추가, 기관명은 스탁론만 노출 -->
+											<li class="info_list_item">
 												<!-- CI, 기관명은 스탁론만 노출 -->
 												<!-- <span class="icon_pack">
 													<span class="ebicon icon_bank"><img src="../../../resource/image/ci/ci_011.png" alt=""></span>
@@ -175,15 +188,15 @@
 												<span class="name">농협캐피탈</span> -->
 												<span class="name">개인신용다이렉트</span>
 											</li>
-											<li class="info-list-item">2024.12.31 만기</li>
+											<li class="info_list_item">2024.12.31 만기</li>
 										</ul>
-										<div class="dday-badge"><span class="badge"><em class="hidden">디데이</em>D-30</span></div>
+										<div class="dday_badge"><span class="badge"><em class="hidden">디데이</em>D-30</span></div>
 									</div>
-									<div class="my-product-amount">
+									<div class="my_product_amount">
 										<span class="label">12월 결제 예정금액</span>
 										<span class="amount"><em class="num">20,000,000,000</em> 원</span>
 									</div>
-									<div class="button-flex-box">
+									<div class="button_flex_box">
 										<button type="button" class="ebbtn ty_bg">중도상환</button>
 										<button type="button" class="ebbtn ty_bg">즉시결제</button>
 									</div>
@@ -198,71 +211,71 @@
 				<!-- // even -->
 
 				<!-- 상품 영역 -->
-				<div class="main-section odd">
-					<div class="section-box">
-						<p class="text-section-title ico-04">다양한 금융상품을 만나보세요.</p><!-- 그 외 : .ico-04 -->
-						<ul class="product-banners">
-							<li class="banner-item">
-								<a href="#none" role="button" class="banner-link type-01"><!-- 신용대출 : type-01 -->
-									<p class="banner-title">신용대출</p>
-									<p class="banner-text">쉽고 빠른 즉시대출</p>
-									<p class="banner-tag"><span class="tag">#개인</span><span class="tag">#개인사업자</span></p>
+				<div class="main_section odd">
+					<div class="section_box">
+						<p class="text_section_title ico_04">다양한 금융상품을 만나보세요.</p><!-- 그 외 : .ico_04 -->
+						<ul class="product_banners">
+							<li class="banner_item">
+								<a href="#none" role="button" class="banner_link type_01"><!-- 신용대출 : type_01 -->
+									<p class="banner_title">신용대출</p>
+									<p class="banner_text">쉽고 빠른 즉시대출</p>
+									<p class="banner_tag"><span class="tag">#개인</span><span class="tag">#개인사업자</span></p>
 								</a>
 							</li>
-							<li class="banner-item">
-								<a href="#none" role="button" class="banner-link type-02"><!-- 스탁론 : type-02 -->
-									<p class="banner-title">스탁론</p>
-									<p class="banner-text">주식 매입 자금</p>
-									<p class="banner-tag"><span class="tag">#당사제휴증권사계좌보유</span></p>
+							<li class="banner_item">
+								<a href="#none" role="button" class="banner_link type_02"><!-- 스탁론 : type_02 -->
+									<p class="banner_title">스탁론</p>
+									<p class="banner_text">주식 매입 자금</p>
+									<p class="banner_tag"><span class="tag">#당사제휴증권사계좌보유</span></p>
 								</a>
 							</li>
-							<li class="banner-item">
-								<a href="#none" role="button" class="banner-link type-03"><!-- 자동차금융 : type-03 -->
-									<p class="banner-title">자동차금융</p>
-									<p class="banner-text">자동차 구입 또는 리스</p>
-									<p class="banner-tag"><span class="tag">#신차</span><span class="tag">#리스</span><span class="tag">#장기렌터카</span></p>
+							<li class="banner_item">
+								<a href="#none" role="button" class="banner_link type_03"><!-- 자동차금융 : type_03 -->
+									<p class="banner_title">자동차금융</p>
+									<p class="banner_text">자동차 구입 또는 리스</p>
+									<p class="banner_tag"><span class="tag">#신차</span><span class="tag">#리스</span><span class="tag">#장기렌터카</span></p>
 								</a>
 							</li>
-							<li class="banner-item">
-								<a href="#none" role="button" class="banner-link type-04"><!-- 산업재금융 : type-04 -->
-									<p class="banner-title">산업재금융</p>
-									<p class="banner-text">건설기계, 상용차 구입</p>
-									<p class="banner-tag"><span class="tag">#개인</span><span class="tag">#개인사업자</span><span class="tag">#법인</span></p>
+							<li class="banner_item">
+								<a href="#none" role="button" class="banner_link type_04"><!-- 산업재금융 : type_04 -->
+									<p class="banner_title">산업재금융</p>
+									<p class="banner_text">건설기계, 상용차 구입</p>
+									<p class="banner_tag"><span class="tag">#개인</span><span class="tag">#개인사업자</span><span class="tag">#법인</span></p>
 								</a>
 							</li>							
-							<li class="banner-item">
-								<a href="#none" role="button" class="banner-link type-05"><!-- 주택금융 : type-05 -->
-									<p class="banner-title">주택금융</p>
-									<p class="banner-text">아파트 담보 대출</p>
-									<p class="banner-tag"><span class="tag">#사업기간6개월이상</span><span class="tag">#아파트보유자</span></p>
+							<li class="banner_item">
+								<a href="#none" role="button" class="banner_link type_05"><!-- 주택금융 : type_05 -->
+									<p class="banner_title">주택금융</p>
+									<p class="banner_text">아파트 담보 대출</p>
+									<p class="banner_tag"><span class="tag">#사업기간6개월이상</span><span class="tag">#아파트보유자</span></p>
 								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="main-section even">
+				<div class="main_section even">
 					<!-- 자주찾는 서비스 -->
-					<div class="section-content no-head">
-						<p class="section-title">자주찾는 서비스</p>
-						<ul class="product-reclinks">
-							<li class="product-recitem"><a href="#none" class="product-reclink ico-01">약정신청</a></li>
-							<li class="product-recitem"><a href="#none" class="product-reclink ico-02">전화상담</a></li>
-							<li class="product-recitem"><a href="#none" class="product-reclink ico-03">대출계산기</a></li>
+					<div class="section_content no_head">
+						<p class="section_title">자주찾는 서비스</p>
+						<ul class="product_reclinks">
+							<li class="product-recitem"><a href="#none" class="product_reclink ico_01">약정신청</a></li>
+							<li class="product-recitem"><a href="#none" class="product_reclink ico_02">전화상담</a></li>
+							<li class="product-recitem"><a href="#none" class="product_reclink ico_03">대출계산기</a></li>
 						</ul>
 					</div>
 
 					<!-- 이벤트 배너 -->
-					<div class="main-event-banners">
+					<div class="main_event_banners">
 						<div class="swiper-container">
 							<div class="swiper-wrapper">			
 								<div class="swiper-slide">
-									<a href="#none" class="event-banner" role="button">
+									<a href="#none" class="event_banner" role="button">
 										<img src="../../../../mobile/resource/image/temp/mainbanner03.jpg" alt="우수고객 추가대출 바로가기 : NH농협캐피탈 거래 고객이세요? 우대금리 및 한도를 지금 확인해보세요 중도상환수수료 면제 혜택 제공"><!-- 임시 이미지 -->
 									</a>
 								</div>
 								<div class="swiper-slide">
-									<a href="#none" class="event-banner" role="button">
+									<a href="#none" class="event_banner" role="button">
 										<img src="../../../../mobile/resource/image/temp/mainbanner05.jpg" alt="nh저축은행 기본 연 2.2% ~ 최고 연 3.0% (세전) 하루만 맡겨도 이자가 통장에 fic nh fic-one 보통예금 저축은행중앙회심의필 제2024-00165호(2024.02.14~2025.02.13) nh저축은행준법감시인심의필 제2024-003호(2024.02.02~2025.02.01)"><!-- 임시 이미지 -->
 									</a>
 								</div>
@@ -345,12 +358,13 @@ $(window).on('load', function() {
 
 
 // 2024-08-09 2024고도화 : 로그인 전/후에 따른 배경색 설정
-if($('.header').hasClass('has-bg')){
+// 2024-08-19 2024고도화 : 조건 변경
+if($('.main_section').length > 0){
 	$('.container').css('background-color', '#F4F5F9');
 }
 
 // 2024-08-13 2024고도화 : 메인 이벤트 swiper
-var maineventSwiperNew = new Swiper('.main-event-banners .swiper-container', {
+var maineventSwiperNew = new Swiper('.main_event_banners .swiper-container', {
 	speed: 400,
 	slidesPerView: 1,
 	pagination: {
@@ -363,7 +377,7 @@ var maineventSwiperNew = new Swiper('.main-event-banners .swiper-container', {
 });
 
 // 2024-08-14 2024고도화 : 보유상품
-var maineventSwiperNew = new Swiper('.section-content.my-product .swiper-container', {
+var maineventSwiperNew = new Swiper('.section_content.my_product .swiper-container', {
 	speed: 400,
 	slidesPerView: 1,
 	pagination: {
