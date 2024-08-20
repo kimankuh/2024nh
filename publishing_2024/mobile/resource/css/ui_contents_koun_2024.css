@@ -23,8 +23,8 @@
 .renewal_2024 .tooltip_msg_pack .exptxt{font-size:15px; line-height:21px;}
 /*============= content ============*/
 /* 공통 > 상품소개 */
-.renewal_2024 .contents_area.product_info,
-.renewal_2024 .contents_area.product_info .contents {padding:0;}
+.renewal_2024 .contents_area.product_info{padding:0;}
+.renewal_2024 .contents_area.product_info .contents {position:relative; height:auto; padding:0;}
 
 .renewal_2024 .small_title_pack > li{margin-top:16px}
 .renewal_2024 .small_title_pack > li:first-child{margin-top:0}
@@ -37,7 +37,7 @@
 .renewal_2024 .intro_btn_box .btn_box .box_l {width: 40%; }
 .renewal_2024 .intro_btn_box .btn_box .box_r {width: 60%;}
 
-.renewal_2024 .product_info .desc_area {height:500px; overscroll-behavior:contain; background-color:#2f6dfc;}
+.renewal_2024 .product_info .desc_area {position:absolute; top:0; left:0; width:100%; height:500px; overscroll-behavior:contain; background-color:#2f6dfc;}
 .renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; background:url(../image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px; box-sizing: border-box;}
 .renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
 .renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
@@ -51,7 +51,7 @@
 .renewal_2024 .prod_info .btn_box{position:absolute; left:0; bottom:0; width:100%; padding:0 20px 16px; box-sizing: border-box;}
 .renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{background-color:#0a47d6;}
 
-.renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;border-radius: 18px 48px 0 0; background-color:#fff;}
+.renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff;}
 .renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 68px); overflow:hidden;}
 .renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
 .renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
