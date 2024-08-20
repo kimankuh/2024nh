@@ -2,6 +2,8 @@
 
 /*============= common ============*/
 /* 상품소개 - 헤더 */
+.bg_blue{background-color:var(--primaryColor);}
+
 .header.renewal_2024.bg_blue{background-color:var(--primaryColor); border-bottom:none;}
 .header.renewal_2024.bg_blue .header_area .header_title h2{padding-left:8px; font-family: 'SpoqaHanSansNeo'; font-size:16px; font-weight:500; color:#fff; text-align:left; opacity:1; }
 .header.renewal_2024.bg_blue .header_area .header_menu .ebbtn.btn_header_menu{background: url(../image/layout/header_menu_02_white.png) no-repeat center; background-size:25px;}
