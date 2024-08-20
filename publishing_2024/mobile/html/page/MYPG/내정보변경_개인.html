@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 
-	<title>내 정보 수정 | NH농협캐피탈</title>
+	<title>내 정보 변경 | NH농협캐피탈</title>
 
     <!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -37,7 +37,7 @@
 				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
 			</div>
 			<div class="header_title">
-				<h2 class="ebtitle2">내 정보 확인</h2>
+				<h2 class="ebtitle2">내 정보 변경</h2>
 			</div>
 			<div class="header_menu">
 				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
@@ -50,7 +50,7 @@
 		<div class="subheader">
 			<div class="subheader_area">
 				<div class="page_title_part">
-					<h2 class="ebtitle2">내 정보 확인</h2>
+					<h2 class="ebtitle2">내 정보 변경</h2>
 				</div>
 			</div>
 		</div>
@@ -59,7 +59,7 @@
 		<div class="contents_area">
 			<div class="contents">
 				<div class="form_part">
-                    <h3 class="section-title">기본정보</h3>
+                    <h3 class="section_title">기본정보</h3>
 
                     <div class="form_set">
 						<div class="ebform_label">이름</div>
@@ -70,7 +70,7 @@
 					</div>
                     
                     <div class="form_set">
-                        <div class="ebform_label">휴대폰 번호</div>
+                        <div class="ebform_label required">휴대폰 번호</div><!-- 필수 항목 : .required 클래스 추가 -->
                         <div class="form_pack ty_phonenum">
                             <div class="select_pack" data-ui="customSelect">
                                 <select class="ebselect" data-placeholder="통신사" title="통신사">
@@ -84,7 +84,7 @@
                                 </select>
                             </div>
                             <div class="input_pack">
-                                <input type="tel" class="ebinput" placeholder="-없이 숫자만 입력" value="" title="휴대폰 번호">
+                                <input type="tel" class="ebinput" placeholder="휴대폰 번호 입력" value="" title="휴대폰 번호">
                                 <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
 						</div>
 					</div>
 
-                    <h3 class="section-title">집정보</h3>
+                    <h3 class="section_title">집정보</h3>
 
                     <div class="form_set">
 						<div class="ebform_label">집 전화번호</div>
@@ -133,7 +133,7 @@
 						</div>
 					</div>
 
-					<!-- 주소 검색 후 활성화
+					<!-- 주소 검색 후 활성화 -->
 					<div class="form_set">
 						<div class="ebform_label">집 주소</div>
 						<div class="form_pack ty_flex">
@@ -155,10 +155,9 @@
 							</div>
 						</div>
 					</div>
-					// -->
+					
 
-                    <h3 class="section-title">직장정보</h3>
-
+                    <h3 class="section_title">직장정보</h3>
                     <div class="form_set">
 						<div class="ebform_label">직장 전화번호</div>
 						<div class="form_pack ty_phonenum">
@@ -176,18 +175,29 @@
 						</div>
 					</div>
 
+					<!-- 주소 미입력 상태 시 -->
                     <div class="form_set">
-						<div class="ebform_label">직장주소</div>
+						<div class="ebform_label">직장주소
+							<div class="checkbox_pack ebform_option">
+								<input type="checkbox" class="ebcheckbox" id="chk1_1">
+								<label for="chk1_1" class="eblabel">집 주소와 동일</label>
+							</div>
+						</div>						
 						<div class="form_pack">
 							<div class="select_pack">
-								<button type="button" class="ebbtn btn_select ty_search" title="직장 주소">직장검색</button>
+								<button type="button" class="ebbtn btn_select ty_search" title="직장 주소 검색">주소 검색</button>
 							</div>
 						</div>
 					</div>
 
-					<!-- 주소 검색 후 활성화
-					<div class="form_set">
-						<div class="ebform_label">직장주소</div>
+					<!-- 주소 검색 후 활성화 -->
+					<!-- <div class="form_set">
+						<div class="ebform_label">직장주소
+							<div class="checkbox_pack ebform_option">
+								<input type="checkbox" class="ebcheckbox" id="chk1_2">
+								<label for="chk1_2" class="eblabel">집 주소와 동일</label>
+							</div>
+						</div>
 						<div class="form_pack ty_flex">
 							<div class="input_pack">
 								<input type="text" class="ebinput" placeholder="직장주소 입력" title="직장주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
@@ -197,23 +207,23 @@
 								<button type="button" class="ebbtn btn_multi">주소수정</button>
 							</div>
 						</div>
-					</div>
-					<div class="form_set">
-						<div class="ebform_label">상세주소</div>
 						<div class="form_pack">
 							<div class="input_pack">
 								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
 							</div>
 						</div>
-					</div>
-					//-->
+					</div> -->
 
-                    <h3 class="section-title">기타정보</h3>
-
+                    <h3 class="section_title">기타정보</h3>
                     <!-- 주소 미입력 상태 시 -->
 					<div class="form_set">
-						<div class="ebform_label">기타 주소</div>
+						<div class="ebform_label">기타 주소
+							<div class="checkbox_pack ebform_option">
+								<input type="checkbox" class="ebcheckbox" id="chk2_1">
+								<label for="chk2_1" class="eblabel">집 주소와 동일</label>
+							</div>
+						</div>
 						<div class="form_pack">
 							<div class="select_pack">
 								<button type="button" class="ebbtn btn_select ty_search" title="기타 주소">주소 검색</button>
@@ -221,9 +231,14 @@
 						</div>
 					</div>
 
-					<!-- 주소 검색 후 활성화
-					<div class="form_set">
-						<div class="ebform_label">기타 주소</div>
+					<!-- 주소 검색 후 활성화 -->
+					<!-- <div class="form_set">
+						<div class="ebform_label">기타 주소
+							<div class="checkbox_pack ebform_option">
+								<input type="checkbox" class="ebcheckbox" id="chk2_2">
+								<label for="chk2_2" class="eblabel">집 주소와 동일</label>
+							</div>
+						</div>
 						<div class="form_pack ty_flex">
 							<div class="input_pack">
 								<input type="text" class="ebinput" placeholder="기타 주소 입력" title="기타 주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
@@ -233,17 +248,13 @@
 								<button type="button" class="ebbtn btn_multi">주소수정</button>
 							</div>
 						</div>
-					</div>
-					<div class="form_set">
-						<div class="ebform_label">상세주소</div>
 						<div class="form_pack">
 							<div class="input_pack">
 								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
 							</div>
 						</div>
-					</div>
-					//-->
+					</div> -->
 				</div>
 			</div>
 		</div>
