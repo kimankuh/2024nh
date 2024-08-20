@@ -52,7 +52,7 @@
 				<div class="contents">				
 					<div class="section desc_area">
 						<div class="prod_info">
-							<p class="prod_tit">NH농협캐피탈 신용대출11</p>
+							<p class="prod_tit">NH농협캐피탈 신용대출22</p>
 							<p class="prod_txt">모두를 위한 신용대출</p>
 							<ul class="prod_data">
 								<li>
@@ -276,6 +276,7 @@ function dargBottomSheet(){
 			$bs.height(bsIngH);
 		}
 		$('body').css('overflow', 'hidden');
+		$('body').addClass('bg_blue');
 	});
 
 	$handle.on('touchend', function(e){
@@ -308,6 +309,9 @@ function dargBottomSheet(){
 
 			$('.dragging_bs').addClass('active');
 			$('.intro_fixed_part').addClass('show');
+
+			$('body').css('overflow', 'hidden');
+			$('body').addClass('bg_blue');
 
 			//$bs.find('.scroll').animate({
 			//	scrollTop: $this.offset().top - 100
