@@ -25,7 +25,7 @@
 .renewal_2024 .tooltip_msg_pack .exptxt{font-size:15px; line-height:21px;}
 /*============= content ============*/
 /* 공통 > 상품소개 */
-.renewal_2024 .contents_area.product_info{padding:0;}
+.renewal_2024 .contents_area.product_info{height:100%; padding:0; background-color:#0a47d6;}
 .renewal_2024 .contents_area.product_info .contents {position:relative; height:auto; padding:0;}
 
 .renewal_2024 .small_title_pack > li{margin-top:16px}
@@ -57,6 +57,7 @@
 .renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 68px); overflow:hidden;}
 .renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
 .renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
+.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box{position:absolute;}
 .renewal_2024 .drag_handle{position:relative;}
 .renewal_2024 .drag_handle:after{content:""; display:block; clear:both;}
 .renewal_2024 .drag_handle .btn_handle { display:flex; width:100%;height:48px; border:0; border-radius: 18px 48px 0 0; background:#fff;}
