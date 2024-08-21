@@ -52,7 +52,7 @@
 				<div class="contents">				
 					<div class="section desc_area">
 						<div class="prod_info">
-							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0515)</p>
+							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0527)</p>
 
 							<p class="prod_txt">모두를 위한 신용대출</p>
 							<ul class="prod_data">
@@ -243,14 +243,14 @@ dargBottomSheet(); // 상품소개 drag bottom sheet
 
 //가상키패드 체크
 $(window).on('load',function(){
-	var originalSize = $(window).width() + $(window).height();
-	var wh = $(window).height();
-	var bsh = $('.dragging_bs').height();
+	var originalSize = $(window).outerWidth() + $(window).outerHeight();
+	var wh = $(window).outerHeight();
+	var bsh = $('.dragging_bs').outerHeight();
 	var hh = $('.header').outerHeight();
 	var bsMaxH = wh - hh;
 
 	$(window).resize(function() {
-		if($(window).width() + $(window).height() != originalSize) {
+		if($(window).outerWidth() + $(window).outerHeight() != originalSize) {
 			// 키보드가 올라온 경우
 			//alert("가상 키보드가 오픈 되었습니다."); 
 			var re_bsh = $('.dragging_bs').height();
