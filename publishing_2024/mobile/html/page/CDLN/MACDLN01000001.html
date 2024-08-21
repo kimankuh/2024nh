@@ -52,7 +52,7 @@
 				<div class="contents">				
 					<div class="section desc_area">
 						<div class="prod_info">
-							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0224)</p>
+							<p class="prod_tit">NH농협캐피탈 신용대출</p>
 							<p class="prod_txt">모두를 위한 신용대출</p>
 							<ul class="prod_data">
 								<li>
@@ -230,7 +230,7 @@
 	<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
 	<div id="layoutPopContent" aria-hidden="true"></div>
 
-
+	
 <script>
 // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
 // pageloadFunc();
@@ -239,88 +239,7 @@
 //introPageFn();//소개페이지 버튼영역 함수
 //productAni(); //상품소개 애니메이션 함수
 dargBottomSheet(); // 상품소개 drag bottom sheet
-$(window).resize(function() {
-	dargBottomSheet();
-});
-$(window).on('load',function(){
 
-	//가상키패드 체크
-	// 처음 시작시 화면의 사이즈 값을 가진다.
-	var originalSize = $(window).width() + $(window).height();
-
-	// 창의 사이즈 변화가 일어났을 경우 실행된다.
-	$(window).resize(function() {
-		if($(window).width() + $(window).height() != originalSize) {
-			// 처음 사이즈와 현재 사이즈가 변경된 경우
-			// 키보드가 올라온 경우
-			alert("가상 키보드가 오픈 되었습니다."); 
-		}else {
-			// 처음 사이즈와 현재 사이즈가 동일한 경우
-			// 키보드가 다시 내려간 경우
-			alert("가상 키보드의 사용지 종료되었습니다.");
-		}
-	});
-	/*
-	setTimeout(function(){
-		$('.easy_calculate .input_pack input').on('focusin keyup keypress',function(){
-			var reHeight = $(window).height();
-			//alert(reHeight)
-			if($('.easy_calculate .input_pack').hasClass('has_focus')){
-				console.log('class in')
-				
-			}
-		});
-		
-	}, 1);
-	*/
-
-	
-	//키패드 높이값
-	
-});
-//가상키패드 체크
-function keypadChk(){
-	// focus in
-	/*
-	if (UserAgent.match(/iPhone|iPod|iPad/)) {
-		disableScrolling(); // System Scroll Event Disable
-		$('.bg').css({
-			'position': 'absolute',
-			'transform': 'translate3d(0, ' + ($(window).scrollTop()) + 'px, 0)'
-		});
-		setTimeout(function() {
-			$('.bg').css({
-				'transform': 'translate3d(0, ' + $(window).scrollTop() + 'px, 0)',
-				'height': mui.common.getWindowHeight() + (mui.common.getWindowHeight() * 0.5)
-			});
-		}, 200); // The `200` that input focus and show virtual keyboards is timing.
-	}
-	*/
-	// focus out
-	/*
-	if (UserAgent.match(/iPhone|iPod|iPad/)) {
-		enableScrolling();  // System Scroll Event Enable
-		$('.bg').removeAttr('style').height(mui.common.getWindowHeight());
-	}
-	*/
-
-
-	// 처음 시작시 화면의 사이즈 값을 가진다.
-	var originalSize = $(window).width() + $(window).height();
-
-	// 창의 사이즈 변화가 일어났을 경우 실행된다.
-	$(window).resize(function() {
-		if($(window).width() + $(window).height() != originalSize) {
-			// 처음 사이즈와 현재 사이즈가 변경된 경우
-			// 키보드가 올라온 경우
-			alert("가상 키보드가 오픈 되었습니다."); 
-		}else {
-			// 처음 사이즈와 현재 사이즈가 동일한 경우
-			// 키보드가 다시 내려간 경우
-			alert("가상 키보드의 사용지 종료되었습니다.");
-		}
-	});
-}
 function dargBottomSheet(){
 	/*********************
         draggable 바텀시트     
@@ -336,9 +255,7 @@ function dargBottomSheet(){
 	var touchLast;
 
 	// init
-	$('.container.renewal_2024').css('height','100%');
 	$bs.height(bsh);
-	
 
 	// 초기 터치
 	$handle.on('touchstart', function(e){
@@ -407,9 +324,6 @@ function dargBottomSheet(){
 		//})
 		
 	})
-
-	
-
 
 	
 	

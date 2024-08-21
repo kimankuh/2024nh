@@ -112,9 +112,9 @@
 .header .header_area .header_logo a { display: inline-block; vertical-align: middle; padding: 12px 0 6px; width: 135px; }
 .header .header_area .header_logo .ebtag { margin-left: 6px; vertical-align: middle; color: #ffffff; border-radius: 5px 3px 5px 3px; background: #156571; }
 .header .header_area .header_alarm { position: absolute; top: 50%; right: 50px; margin-top: -20px; }
-.header .header_area .header_alarm .ebbtn.btn_header_alarm { position: relative; width: 40px; height: 40px; background: url('../image/layout/header_alarm_02.png') no-repeat center; background-size:24px; }/* 2024-08-09 2024고도화 : 아이콘 변경 */
+.header .header_area .header_alarm .ebbtn.btn_header_alarm { position: relative; width:30px; height:40px; background: url('../image/layout/header_alarm_02.png') no-repeat center; background-size:24px; }/* 2024-08-09 2024고도화 : 아이콘 변경 */
 /* .header .header_area .header_alarm .ebbtn.btn_header_alarm.active:after { content: ''; position: absolute; top: 7px; right: 10px; width: 11px; height: 11px; border-radius: 50%; background: #ffffff; } *//* 2024-08-09 2024고도화 : active시 보더 삭제 */
-.header .header_area .header_alarm .ebbtn.btn_header_alarm.active:before { content: ''; z-index: 5; position: absolute; top: 10px; right: 13px; width: 5px; height: 5px; border-radius: 50%; background: #EA3043; }/* 2024-08-09 2024고도화 : active시 색상 변경 */
+.header .header_area .header_alarm .ebbtn.btn_header_alarm.active:before { content: ''; z-index: 5; position: absolute; top:10px; right:7px; width: 5px; height: 5px; border-radius: 50%; background: #EA3043; }/* 2024-08-09 2024고도화 : active시 색상 변경 */
 .header .header_area .header_lp { position: absolute; top: 50%; right: 23px; margin-top: -10px; }
 .header .header_area .header_lp .ebtag { padding: 0 7px; font-size: 10px; color: #ffffff; font-weight: 500; border-radius: 4px 2px 4px 2px; background: #00ba89; }
 .header .header_area .header_lp .name { margin-left: 4px; font-size: 13px; font-weight: bold; }
@@ -127,6 +127,13 @@
 .header .header_area .tab_pack .ebtab { text-align: center; }
 .header .header_area .tab_pack .ebtab > li {  }
 .header .header_area .tab_pack .ebtab > li + li { padding-right: 0; }
+
+/* 2023-07-10 2024고도화 : 헤더 영역 UI변경 */
+.renewal_2024 .header_alarm .header_alarm_login + .btn_header_point {margin-left:0;}
+.renewal_2024 .header_alarm .btn_header_point + .btn_header_alarm {margin-left:5px;}
+.renewal_2024 .header_alarm .header_alarm_login {margin-right:8px;font-size:14px;font-weight:500;text-decoration:underline;line-height:40px;}
+.renewal_2024.header .header_area .header_alarm .ebbtn.btn_header_point{position: relative;width:30px;height:40px; background: url('../image/layout/header_btn_point_02.png') no-repeat center; background-size:24px; }/* 2024-08-09 2024고도화 : 아이콘 변경 */
+.renewal_2024 .totalmenu_layer .layer .ebbtn.btn_header_point{width:35px; height:35px; background:url('../image/layout/header_btn_point_02.png') no-repeat center; background-size: 24px; }/* 2024-07-30 2024고도화 : 아이콘 변경 */
 
 /* 제휴메인 */
 .header.ty_alliance { background: #1e4066; }
@@ -597,6 +604,3 @@
 .comment_layer .layer { display: inline-block; max-width: 295px; padding: 15px 21px; border-radius: 10px; background: rgba(0, 0, 0, 0.8); }
 .comment_layer .layer .comment_conts { font-size: 14px; color: #ffffff; }
 
-/*2023-07-10 추가*/
-.header .header_area .header_alarm .ebbtn.btn_header_point{position: relative; width: 40px; height: 40px; background: url('../image/layout/header_btn_point_02.png') no-repeat center; background-size:24px; }/* 2024-08-09 2024고도화 : 아이콘 변경 */
-.totalmenu_layer .layer .ebbtn.btn_header_point{width:35px; height:35px; background:url('../image/layout/header_btn_point_02.png') no-repeat center; background-size: 24px; }/* 2024-07-30 2024고도화 : 아이콘 변경 */
