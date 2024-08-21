@@ -37,7 +37,7 @@
 				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
 			</div>
 			<div class="header_title">
-				<h2 class="ebtitle2">내 정보(개인) 변경</h2>
+				<h2 class="ebtitle2">내 정보 변경</h2><!-- 2024-08-21 2024고도화 : 타이틀 원복 -->
 			</div>
 			<div class="header_menu">
 				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
@@ -50,7 +50,7 @@
 		<div class="subheader">
 			<div class="subheader_area">
 				<div class="page_title_part">
-					<h2 class="ebtitle2">내 정보(개인) 변경</h2>
+					<h2 class="ebtitle2">내 정보 변경</h2><!-- 2024-08-21 2024고도화 : 타이틀 원복 -->
 				</div>
 			</div>
 		</div>
@@ -58,6 +58,18 @@
 		<!-- 여기부터 컨텐츠 -->
 		<div class="contents_area">
 			<div class="contents">
+				<!-- 2024-08-21 2024고도화 : 개인/개인사업자 선택 영역 추가 -->
+				<div class="form_pack">
+                    <div class="select_pack" data-ui="customSelect">
+                        <button type="button" class="ebbtn btn_slct_trigr" title="개인 또는 사업자 선택"></button>
+                        <select class="ebselect" data-placeholder="선택해주세요" title="개인 또는 사업자 선택" tabindex="-1" disabled>
+                            <option selected="selected">개인</option>
+                            <option>개인사업자1</option>
+                            <option>개인사업자2</option>
+                        </select>
+                    </div>
+                </div>
+
 				<div class="form_part">
                     <h3 class="section_title">기본정보</h3>
 
@@ -97,7 +109,7 @@
 						<div class="ebform_label">이메일</div>
 						<div class="form_pack">
 							<div class="input_pack">
-								<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="Hongabc@bac.cp.kr">
+								<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="">
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
 							</div>
 						</div>
@@ -126,15 +138,15 @@
                     <!-- 주소 미입력 상태 시 -->
 					<div class="form_set">
 						<div class="ebform_label">집 주소</div>
-						<div class="form_pack">
-							<div class="select_pack">
-								<button type="button" class="ebbtn btn_select ty_search" title="집 주소 검색">주소 검색</button>
-							</div>
-						</div>
+						<!-- 2024-08-21 2024고도화 : 항목 삭제
+						<div class="checkbox_pack ebform_option">
+							<input type="checkbox" class="ebcheckbox" id="chk1_1">
+							<label for="chk1_1" class="eblabel">집 주소와 동일</label>
+						</div> -->
 					</div>
 
 					<!-- 주소 검색 후 활성화 -->
-					<div class="form_set">
+					<!-- <div class="form_set">
 						<div class="ebform_label">집 주소</div>
 						<div class="form_pack ty_flex">
 							<div class="input_pack">
@@ -145,17 +157,14 @@
 								<button type="button" class="ebbtn btn_multi">주소수정</button>
 							</div>
 						</div>
-					</div>
-					<div class="form_set">
-						<div class="ebform_label">상세주소</div>
+						!-- 2024-08-21 2024고도화 : 상세주소 마크업 위치 변경 --
 						<div class="form_pack">
 							<div class="input_pack">
 								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
 							</div>
 						</div>
-					</div>
-					
+					</div> -->
 
                     <h3 class="section_title">직장정보</h3>
                     <div class="form_set">
@@ -177,11 +186,12 @@
 
 					<!-- 주소 미입력 상태 시 -->
                     <div class="form_set">
-						<div class="ebform_label">직장주소
+						<div class="ebform_label">직장 주소<!-- 2024-08-21 2024고도화 : 띄어쓰기 -->
+							<!-- 2024-08-21 2024고도화 : 항목 삭제
 							<div class="checkbox_pack ebform_option">
 								<input type="checkbox" class="ebcheckbox" id="chk1_1">
 								<label for="chk1_1" class="eblabel">집 주소와 동일</label>
-							</div>
+							</div> -->
 						</div>						
 						<div class="form_pack">
 							<div class="select_pack">
@@ -192,21 +202,18 @@
 
 					<!-- 주소 검색 후 활성화 -->
 					<!-- <div class="form_set">
-						<div class="ebform_label">직장주소
-							<div class="checkbox_pack ebform_option">
-								<input type="checkbox" class="ebcheckbox" id="chk1_2">
-								<label for="chk1_2" class="eblabel">집 주소와 동일</label>
-							</div>
+						<div class="ebform_label">직장 주소</div>
 						</div>
 						<div class="form_pack ty_flex">
 							<div class="input_pack">
-								<input type="text" class="ebinput" placeholder="직장주소 입력" title="직장주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+								<input type="text" class="ebinput" placeholder="직장 주소 입력" title="직장 주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
 							</div>
 							<div class="btn_pack">
 								<button type="button" class="ebbtn btn_multi">주소수정</button>
 							</div>
 						</div>
+						!-- 2024-08-21 2024고도화 : 상세주소 마크업 위치 변경 --
 						<div class="form_pack">
 							<div class="input_pack">
 								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
@@ -215,14 +222,15 @@
 						</div>
 					</div> -->
 
-                    <h3 class="section_title">기타정보</h3>
+                    <h3 class="section_title">기타정보</h3><!-- 2024-08-21 2024고도화 : 띄어쓰기 X -->
                     <!-- 주소 미입력 상태 시 -->
 					<div class="form_set">
-						<div class="ebform_label">기타 주소
+						<div class="ebform_label">기타 주소<!-- 2024-08-21 2024고도화 : 띄어쓰기 -->
+							<!-- 2024-08-21 2024고도화 : 항목 삭제
 							<div class="checkbox_pack ebform_option">
-								<input type="checkbox" class="ebcheckbox" id="chk2_1">
-								<label for="chk2_1" class="eblabel">집 주소와 동일</label>
-							</div>
+								<input type="checkbox" class="ebcheckbox" id="chk1_1">
+								<label for="chk1_1" class="eblabel">집 주소와 동일</label>
+							</div> -->
 						</div>
 						<div class="form_pack">
 							<div class="select_pack">
@@ -232,12 +240,8 @@
 					</div>
 
 					<!-- 주소 검색 후 활성화 -->
-					<!-- <div class="form_set">
-						<div class="ebform_label">기타 주소
-							<div class="checkbox_pack ebform_option">
-								<input type="checkbox" class="ebcheckbox" id="chk2_2">
-								<label for="chk2_2" class="eblabel">집 주소와 동일</label>
-							</div>
+					<div class="form_set">
+						<div class="ebform_label">기타 주소</div>
 						</div>
 						<div class="form_pack ty_flex">
 							<div class="input_pack">
@@ -248,13 +252,14 @@
 								<button type="button" class="ebbtn btn_multi">주소수정</button>
 							</div>
 						</div>
+						<!-- 2024-08-21 2024고도화 : 상세주소 마크업 위치 변경 -->
 						<div class="form_pack">
 							<div class="input_pack">
 								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
 							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</div>
