@@ -25,8 +25,8 @@
 .renewal_2024 .tooltip_msg_pack .exptxt{font-size:15px; line-height:21px;}
 /*============= content ============*/
 /* 공통 > 상품소개 */
-.renewal_2024 .contents_area.product_info{padding:0;}
-.renewal_2024 .contents_area.product_info .contents {position:relative; height:auto; padding:0;}
+.renewal_2024 .contents_area.product_info,
+.renewal_2024 .contents_area.product_info .contents {position:relative; height:100%; padding:0; box-sizing:border-box;}
 
 .renewal_2024 .small_title_pack > li{margin-top:16px}
 .renewal_2024 .small_title_pack > li:first-child{margin-top:0}
@@ -53,7 +53,7 @@
 .renewal_2024 .prod_info .btn_box{position:absolute; left:0; bottom:0; width:100%; padding:0 20px 16px; box-sizing: border-box;}
 .renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{background-color:#0a47d6;}
 
-.renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff;}
+.renewal_2024 .dragging_bs {position:absolute;bottom:0;width:100%;height:auto; min-height:150px;border-radius: 18px 48px 0 0; background-color:#fff;}
 .renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 68px); overflow:hidden;}
 .renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
 .renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
@@ -129,7 +129,7 @@
 .renewal_2024 .data_result_box .txt{margin-top:6px; font-size:17px; font-weight:700;}
 
 .renewal_2024 .radio_box_pack{margin:32px 0;}
-.renewal_2024 .radio_box_pack .radio_pack.type_box{display:block; margin-top:16px; border-radius:22px; overflow:hidden;} 
+.renewal_2024 .radio_box_pack .radio_pack.type_box{display:block; margin-top:16px; border-radius:22px; box-shadow:0 4px 30px -8px rgba(0, 0, 0, 0.05);} 
 .renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio{position:absolute;margin:-1px;padding:0;overflow:hidden;width:1px;height:1px;clip:rect(0,0,0,0);} 
 .renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio[chekced="checked"],
 .renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio:checked{background:none;}
@@ -163,7 +163,7 @@
 
 .renewal_2024 .acco_box .detail_data_list > ul > li:first-child{margin-top:12px}
 .renewal_2024 .acco_box .control{position:relative; margin-top:12px; text-align:center;}
-.renewal_2024 .acco_box .btn_acco{position:relative; display:inline-block; padding-right:17px; font-size:14px; color:#909090;}
+.renewal_2024 .acco_box .btn_acco{position:relative; display:inline-block; padding-right:17px; font-size:14px; color:#878787;}
 .renewal_2024 .acco_box .btn_acco:after{content:""; display:block; position:absolute; top:50%; right:0; width:9px; height:5px; margin-top:-2px; background:url('../image/component/accordion_arrow.png') no-repeat center; background-size: 100%;  transition: all .3s;}
 .renewal_2024 .acco_box.active .btn_acco:after{transform:rotate(180deg)}
 

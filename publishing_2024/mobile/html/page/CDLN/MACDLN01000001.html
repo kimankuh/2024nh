@@ -52,7 +52,7 @@
 				<div class="contents">				
 					<div class="section desc_area">
 						<div class="prod_info">
-							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0158)</p>
+							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0224)</p>
 							<p class="prod_txt">모두를 위한 신용대출</p>
 							<ul class="prod_data">
 								<li>
@@ -243,6 +243,7 @@ $(window).resize(function() {
 	dargBottomSheet();
 });
 $(window).on('load',function(){
+
 	//가상키패드 체크
 	// 처음 시작시 화면의 사이즈 값을 가진다.
 	var originalSize = $(window).width() + $(window).height();
@@ -259,8 +260,20 @@ $(window).on('load',function(){
 			alert("가상 키보드의 사용지 종료되었습니다.");
 		}
 	});
+	/*
+	setTimeout(function(){
+		$('.easy_calculate .input_pack input').on('focusin keyup keypress',function(){
+			var reHeight = $(window).height();
+			//alert(reHeight)
+			if($('.easy_calculate .input_pack').hasClass('has_focus')){
+				console.log('class in')
+				
+			}
+		});
+		
+	}, 1);
+	*/
 
-	
 	
 	//키패드 높이값
 	
@@ -323,7 +336,9 @@ function dargBottomSheet(){
 	var touchLast;
 
 	// init
+	$('.container.renewal_2024').css('height','100%');
 	$bs.height(bsh);
+	
 
 	// 초기 터치
 	$handle.on('touchstart', function(e){
