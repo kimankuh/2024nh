@@ -52,7 +52,7 @@
 				<div class="contents">				
 					<div class="section desc_area">
 						<div class="prod_info">
-							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_am1024)</p>
+							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_am1030)</p>
 							<p class="prod_txt">모두를 위한 신용대출</p>
 							<ul class="prod_data">
 								<li>
@@ -239,10 +239,32 @@
 //introPageFn();//소개페이지 버튼영역 함수
 //productAni(); //상품소개 애니메이션 함수
 dargBottomSheet(); // 상품소개 drag bottom sheet
-
+jQuery(window).load(function() {
+     
+	 // 처음 시작시 화면의 사이즈 값을 가진다.
+	 var originalSize = jQuery(window).width() + jQuery(window).height();
+	
+	 // 창의 사이즈 변화가 일어났을 경우 실행된다.
+	 jQuery(window).resize(function() {
+		
+	   // 처음 사이즈와 현재 사이즈가 변경된 경우
+	   // 키보드가 올라온 경우
+	   if(jQuery(window).width() + jQuery(window).height() != originalSize) {
+		  
+		 alert("가상 키보드가 오픈 되었습니다."); 
+	   }
+	  
+	   // 처음 사이즈와 현재 사이즈가 동일한 경우
+	   // 키보드가 다시 내려간 경우
+	   else {
+		  
+		 alert("가상 키보드의 사용지 종료되었습니다.");
+	   }
+	 });
+   });
 $(window).load(function(){
 	//가상키패드 체크
-	keypadChk();
+	//keypadChk();
 });
 //가상키패드 체크
 function keypadChk(){
