@@ -260,12 +260,13 @@
 .renewal_2024 .info_list_value {text-align:right;}
 
 /* 마이페이지 > 내정보확인 */
-.renewal_2024 .form_set .ebullet_circle {margin-top:12px;}
-.renewal_2024 .form_set .ebullet_circle > li {font-size:13px;color:var(--grayColor03);line-height:1.5;}
-.renewal_2024 .form_set .ebullet_circle > li:after {width:3px;height:3px;}
+.renewal_2024 [class^="form"] .ebullet_circle {margin-top:12px;}
+.renewal_2024 [class^="form"] .ebullet_circle > li {font-size:13px;color:var(--grayColor03);line-height:1.5;}
+.renewal_2024 [class^="form"] .ebullet_circle > li:after {width:3px;height:3px;}
 
 /* 마이페이지 > 내정보변경 */
-.contents > .tab_pack:first-child {margin-top:10px;}
+.contents > .tab_pack:first-child,
+.contents > .form_pack:first-child {margin-top:10px;}
 .renewal_2024 .ebform_label.required:before {content:'*';display:inline-block;margin-right:3px;}
 .renewal_2024 .ebform_label {position:relative;}
 .renewal_2024 .ebform_option {position:absolute;top:0;right:0;}
