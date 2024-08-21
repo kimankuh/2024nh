@@ -52,7 +52,7 @@
 				<div class="contents">				
 					<div class="section desc_area">
 						<div class="prod_info">
-							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0358)</p>
+							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0457)</p>
 
 							<p class="prod_txt">모두를 위한 신용대출</p>
 							<ul class="prod_data">
@@ -243,22 +243,31 @@ dargBottomSheet(); // 상품소개 drag bottom sheet
 
 //가상키패드 체크
 $(window).on('load',function(){
-	var wh = $(window).height();
 	var originalSize = $(window).width() + $(window).height();
+	var wh = $(window).height();
+	var bsh = $('.dragging_bs').height();
+	var hh = $('.header').outerHeight();
+	var bsMaxH = wh - hh;
 
 	$(window).resize(function() {
 		if($(window).width() + $(window).height() != originalSize) {
 			// 키보드가 올라온 경우
 			alert("가상 키보드가 오픈 되었습니다."); 
-			var bsh = $('.dragging_bs').height();
+			var re_bsh = $('.dragging_bs').height();
 			var re_wh = $(window).height();
-			console.log(bsh,wh, re_wh)
-			if(bsh > re_wh){
-				$('.dragging_bs').height(bsh - (wh - re_wh));
+
+			console.log('act bottom sheet : '+ bsMaxH);
+			console.log('default bottom sheet : '+ bsh);
+			console.log('keypad bottom sheet : '+ re_bsh);
+			console.log('window height : '+ wh , 'keypad window height : '+  re_wh);
+
+			if(re_bsh > re_wh){
+				$('.dragging_bs').height(re_bsh - (wh - re_wh));
 			}
 		}else {
 			// 키보드가 다시 내려간 경우
 			alert("가상 키보드의 사용지 종료되었습니다.");
+			$('.dragging_bs').height(bsMaxH);
 		}
 	});
 });
@@ -279,6 +288,7 @@ function dargBottomSheet(){
 
 	// init
 	$bs.height(bsh);
+	$('.container.renewal_2024').css('height','100%')
 
 	// 초기 터치
 	$handle.on('touchstart', function(e){
