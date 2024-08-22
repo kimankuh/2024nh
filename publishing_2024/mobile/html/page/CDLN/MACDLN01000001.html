@@ -52,7 +52,7 @@
 				<div class="contents">				
 					<div class="section desc_area">
 						<div class="prod_info">
-							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240821_pm0527)</p>
+							<p class="prod_tit">NH농협캐피탈 신용대출(test_20240822_am00908)</p>
 
 							<p class="prod_txt">모두를 위한 신용대출</p>
 							<ul class="prod_data">
@@ -254,12 +254,15 @@ $(window).on('load',function(){
 			// 키보드가 올라온 경우
 			//alert("가상 키보드가 오픈 되었습니다."); 
 			var re_bsh = $('.dragging_bs').height();
-			var re_wh = $(window).height();
+			var re_wh = $(window).outerHeight();
+			var re_bsMaxH = re_wh - hh;
 
-			console.log('act bottom sheet : '+ bsMaxH);
-			console.log('default bottom sheet : '+ bsh);
-			console.log('keypad bottom sheet : '+ re_bsh);
-			console.log('window height : '+ wh , 'keypad window height : '+  re_wh);
+			console.log('act bottom sheet bsMaxH: '+ bsMaxH);
+			console.log('keypad bottom sheet re_bsMaxH: '+ re_bsMaxH );
+			console.log('default bottom sheet bsh: '+ bsh);
+			console.log('keypad bottom sheet re_bsh: '+ re_bsh);
+			console.log('window height wh: '+ wh , 'keypad window height re_wh: '+  re_wh);
+			
 
 			if(re_bsh > re_wh){
 				$('.dragging_bs').height(re_bsh - (wh - re_wh));
@@ -267,8 +270,9 @@ $(window).on('load',function(){
 		}else {
 			// 키보드가 다시 내려간 경우
 			//alert("가상 키보드의 사용지 종료되었습니다.");
-			$('.dragging_bs').height(bsMaxH);
+			$('.dragging_bs').height(re_bsMaxH);
 		}
+	
 	});
 });
 
