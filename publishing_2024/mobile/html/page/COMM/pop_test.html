@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+<div class="layout"></div>
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+	-팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+<!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+    <div id="alertDialogHtml"  class="modal_popup ty_alert renewal_2024"><!-- 노출 className = show -->
+        <div class="popup_layout"><!-- 크기지정 : style=" width: **px; height: **px" -->
+            <div class="popup_inner">																		
+                <div class="popup_body">																		
+                    <div class="popup_container">															   
+                        <div class="alert_title_part">
+                            <div class="icon_box"><span class="ebicon icon_complete_light"></span></div>
+                            <p class="title">입력하신 농협은행 계좌로 1원을 송금하였습니다.</p>
+                        </div>
+                        <div class="alert_text_part">
+                            <p>해당 금융기관의 뱅킹서비스에 접속하셔서 입금자명에 쓰여진 인증번호를 확인하여 주시기 바랍니다.</p>
+                            <p class="fc_caution">※ 계좌 인증은 1일 5회 까지만 가능합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup_footer">
+                    <div class="popup_footer_area">
+                        <button type="button" class="ebbtn btn_cancel" id="btn_cancle">취소</button>
+                        <button type="button" class="ebbtn btn_confirm">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>	
+        <!-- // popup_layout -->
+    </div>
+
+
+<script>
+//팝업호출
+popupFunc('#alertDialogHtml').show();
+
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

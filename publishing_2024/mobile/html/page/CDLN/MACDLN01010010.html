@@ -50,7 +50,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container renewal_2024"><!-- 2024-08-13 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 
 		<!-- 컨텐츠 상단 타이틀영역 -->
 		<div class="subheader">
@@ -113,7 +113,8 @@
 						</div>
 					</div>
 					<div class="form_set">
-						<div class="ebform_label">월상환금액</div>
+						<div class="ebform_label">월상환금액(조회차 원리금)
+						</div>
 						<div class="form_pack">
 							<div class="input_pack ty_word1">
 								<input type="tel" class="ebinput" title="월상환금액" value="921,150" readonly="readonly">
@@ -125,7 +126,6 @@
 					<div class="form_set">
 						<div class="ebform_label">결제계좌</div>
 
-						<!-- 2022-02-23 수정 : 셀렉트 버튼형식으로 수정 -->
 						<div class="form_pack ty_account">
 							<div class="select_pack has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
 								<button type="button" class="ebbtn btn_select" title="결제계좌">
@@ -142,54 +142,47 @@
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
 							</div>
 						</div>
-						<!-- //2022-02-23 수정 : 셀렉트 버튼형식으로 수정 -->
-
+						
 						<div class="btn_box">
 							<button type="button" class="ebbtn btn_normal ty_bg w100per">본인계좌확인</button>
 						</div>
-						<!-- 2022-05-24 수정 : 문구 수정 -->
 						<ul class="ebullet_circle">
-							<li>현재 당사 대출을 이용 중이신 경우, 추가대출은 동일한 계좌로 대출신청이 가능합니다. 평생계좌(휴대폰 번호 등)는 등록이 불가능합니다.</li>
+							<li>결제계좌 등록을 완료하신 이후에 수정이 필요 하실 경우 ‘본인계좌변경‘ 버튼을 선택하셔서 수정이 가능해요</li>
+							<li>결제계좌 입력 후 ‘본인계좌확인’ 버튼을 선택해 주시면 해당 계좌로 1원을 송금 해요</li>
+							<li>평생계좌(휴대폰 번호 등)는 등록이 불가능 해요</li>
 						</ul>
-						<!-- //2022-05-24 수정 : 문구 수정 -->
 					</div>
-
 				</div>
 
 				<div class="form_part ty_ani">
-					<div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
-						<div class="ebform_label">청구방식</div>
-						<div class="form_pack">
-							<div class="select_pack" data-ui="customSelect">
-								<select class="ebselect" title="청구방식" data-placeholder="청구지 선택">
-									<option value="option1">모바일</option>
-									<option value="option2">이메일</option>
-									<option value="option3" selected="selected">우편수령</option>
-								</select>
+					<div class="form_part ty_ani">
+						<div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
+							<div class="ebform_label">인증코드 입력</div>
+							<div class="form_pack">
+								<div class="input_pack ty_wordtime">
+									<input type="number" class="ebinput" placeholder="숫자로 된 세 자리 인증코드" value="" title="인증번호">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+									<span class="time">3:00</span>
+								</div>
 							</div>
-						</div>
-						<div class="form_next_box"><!-- 모바일, 이메일 선택시 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
-							<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
-						</div>
-					</div>
+		
+							<div class="form_multi_box">
+								<button type="button" class="ebbtn btn_multi">인증코드 찾기</button>
+							</div>
 
-					<div class="form_set show"><!-- 청구방식 option 우편수령 선택시 노출 / 입력폼 활성화시 addclass="show" -->
-						<div class="ebform_label">청구지</div>
-						<div class="form_pack">
-							<div class="select_pack" data-ui="customSelect">
-								<select class="ebselect" title="청구지" data-placeholder="청구지 선택">
-									<option value="option1" selected="selected">자택</option>
-									<option value="option2">직장</option>
-								</select>
+							<div class="btn_box">
+								<button type="button" class="ebbtn btn_normal ty_bg w100per">인증코드 일치 확인</button>
 							</div>
-						</div>
-						<div class="form_next_box show"><!-- 마지막 form까지 입력 완료 후 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
-							<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+							<ul class="ebullet_circle">
+								<li>입금내역이 없으시다면 계좌 정보를 다시 확인해 주세요</li>
+							</ul>
+		
+							<div class="form_next_box show"><!-- 버튼 활성화시 addclass="show" -->
+								<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+							</div>
 						</div>
 					</div>
 				</div>
-
-
 
 			</div>
 		</div>
