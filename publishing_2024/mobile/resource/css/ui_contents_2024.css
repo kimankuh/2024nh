@@ -7,9 +7,13 @@
     --grayColor03 : #909090;
     --grayColor04 : #F3F4F8;
     --pointColor01 : #FFD400;
+    --pointColor02 : #FF0000;
 }
 
 /* 공통 */
+.alL {text-align:left;}
+.tit_big {font-size:26px;font-weight:600;}
+.text_normal {font-size:14px;font-weight:400;color:var(--grayColor02);}
 .text_point_01 {color:var(--pointColor01);}/* 토스트 포인트 컬러 */
 .ebbtn.ty_solid {height:40px;line-height:40px;font-size:14px;background-color:var(--grayColor04);border-radius:10px;}
 .ebbtn.full {width:100%;}
@@ -308,5 +312,21 @@
 .renewal_2024 .status_box .txt.type_01 {font-size:19px;font-weight:400;line-height:1.7;}
 
 /* 신용대출 > 앱다운로드안내 */
-.renewal_2024 .status_box.app_down {padding:20px;}
-.renewal_2024 .status_box.app_down .down_intro {display:flex;}
+.renewal_2024 .status_box.app_down {padding:20px 20px 15px;}
+.renewal_2024 .status_box.app_down .down_intro_item + .down_intro_item {padding-top:15px;border-top:1px solid #C5DBED;}
+.renewal_2024 .status_box.app_down .down_intro_item {display:flex;justify-content:space-between;}
+.renewal_2024 .status_box.app_down .down_intro_item:first-child {padding-bottom:17px;padding-left:75px;background:url('../image/contents/cdln/ico_appDownload.png') no-repeat left 5px top;background-size:61px auto;}
+.down_intro_item .text {font-size:14px;font-weight:400;}
+.down_intro_item .text strong {font-size:16px;}
+.down_intro_item .btn_sm_main {margin-top:10px;}
+.down_intro_item .text.has_ico {padding-left:45px;background:url('../image/contents/cdln/ico_shield_22x22.png') no-repeat left 14px center;background-size:22px auto;}
+.btn_sm_main {padding:0 12px;color:#fff;font-size:13px;font-weight:400;height:29px;line-height:29px;background-color:var(--primaryColor);border-radius:12px;}
+.status_box.app_down + .section_appdown_intro {margin-top:32px;}
+.section_appdown_intro .tit_big + .text_normal {margin-top:12px;}
+.section_appdown_intro .text_normal + .img_box {margin-top:20px;}
+.section_appdown_intro .ebullet_circle {margin-top:20px;}
+.section_appdown_intro .ebullet_circle li + li {margin-top:16px;}
+
+/* 신용대출 > 인증코드찾기 */
+.modal_popup.ty_alert .popup_layout .popup_body .popup_container.pd20 {padding:20px;}
+.modal_popup .popup_layout .popup_header .ebtitle3.alL {padding-left:20px;font-size:16px;font-weight:700;}
