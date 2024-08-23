@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout">
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">약관동의</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="active"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">한도조회</span>
+							</li>
+							<li>
+								<span class="num">2</span>
+								<span class="txt">대출신청</span>
+							</li>
+							<li>
+								<span class="num">3</span>
+								<span class="txt">약정서 작성</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">약관동의</h2>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+
+				<!-- 2022-05-09 수정 : sb현행화에 따른 마크업 수정 -->
+				<div class="term_part ty_01">
+
+					<div class="term_pack">
+						<div class="total_agree">
+							<div class="checkbox_pack ty_01">
+								<input type="checkbox" class="ebcheckbox" id="chk0_0">
+								<label for="chk0_0" class="eblabel">전체 동의</label><!-- 2022-05-24 수정 ; 문구수정 -->
+							</div>
+						</div>
+
+						<!-- 2022-05-26 수정 : 텍스트영역 위치변경 -->
+						<!-- 2022-05-24 수정 ; 문구추가 -->
+						<div class="smalltitle_part">
+							<div class="ebtitle_medium">
+								본 동의서는 요약동의서이며 요청하면<br> 전체 동의서를 안내받으실 수 있습니다.
+							</div>
+						</div>
+						<!-- //2022-05-24 수정 ; 문구추가 -->
+						<!-- //2022-05-26 수정 : 텍스트영역 위치변경 -->
+
+						<div class="detail_agree">
+							<ul>
+								<li class="active"><!-- 상세약관 열기 addClass="active" -->
+									<div class="detail_title">
+										<div class="checkbox_pack">
+											<input type="checkbox" class="ebcheckbox" id="chk1_0">
+											<label for="chk1_0" class="eblabel"><span class="color02">[필수]</span>개인(신용)정보 필수적동의서</label>
+										</div>
+										<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+									</div>
+									<div class="toggle_pack ty_linebreak">
+										<ul>
+											<li>
+												<button type="button" class="ebbtn btn_toggle">요약</button>
+											</li>
+											<li class="active">
+												<button type="button" class="ebbtn btn_toggle">전체</button>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="active">
+									<div class="detail_title">
+										<div class="checkbox_pack">
+											<input type="checkbox" class="ebcheckbox" id="chk2_0">
+											<label for="chk2_0" class="eblabel"><span class="color02">[필수]</span>공공마이데이터 개인(신용) 정보조회 필수적 동의서</label>
+										</div>
+										<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+									</div>
+								</li>
+								<li class="active">
+									<div class="detail_title">
+										<div class="checkbox_pack">
+											<input type="checkbox" class="ebcheckbox" id="chk3_0">
+											<label for="chk3_0" class="eblabel"><span>[선택]</span>개인(신용)정보 선택적동의서</label>
+										</div>
+										<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+									</div>
+									<div class="toggle_pack ty_linebreak">
+										<ul>
+											<li>
+												<button type="button" class="ebbtn btn_toggle">요약</button>
+											</li>
+											<li class="active">
+												<button type="button" class="ebbtn btn_toggle">전체</button>
+											</li>
+										</ul>
+									</div>
+									<div class="detail_conts">
+										<ul>
+											<li>
+												<div class="recommend_part">
+													<div class="checkbox_pack ty_01">
+														<input type="checkbox" class="ebcheckbox" id="chk3_1">
+														<label for="chk3_1" class="eblabel">수집·이용에 관한 사항</label>
+													</div>
+													<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+													<div class="chkbox_list">
+														<div class="checkbox_pack ty_01 mkblock">
+															<input type="checkbox" class="ebcheckbox" id="chk3_2">
+															<label for="chk3_2" class="eblabel">전체</label>
+														</div>
+														<div class="checkbox_pack ty_01">
+															<input type="checkbox" class="ebcheckbox" id="chk3_3">
+															<label for="chk3_3" class="eblabel">전화</label>
+														</div>
+														<div class="checkbox_pack ty_01">
+															<input type="checkbox" class="ebcheckbox" id="chk3_4">
+															<label for="chk3_4" class="eblabel">문자메세지(SMS)</label>
+														</div>
+														<div class="checkbox_pack ty_01">
+															<input type="checkbox" class="ebcheckbox" id="chk3_5">
+															<label for="chk3_5" class="eblabel">서면(DM)</label>
+														</div>
+														<div class="checkbox_pack ty_01">
+															<input type="checkbox" class="ebcheckbox" id="chk3_6">
+															<label for="chk3_6" class="eblabel">이메일</label>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox_pack ty_01">
+													<input type="checkbox" class="ebcheckbox" id="chk4_1">
+													<label for="chk4_1" class="eblabel">제공에 관한 사항</label>
+												</div>
+												<button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- //2022-05-09 수정 : sb현행화에 따른 마크업 수정 -->
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>
