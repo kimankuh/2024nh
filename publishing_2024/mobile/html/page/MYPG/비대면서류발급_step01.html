@@ -99,26 +99,32 @@
 		<!-- 여기부터 컨텐츠 -->
 		<div class="contents_area">
 			<div class="contents">
-				<div class="smalltitle_part">
-					<div class="ebtitle_medium">대상 선택</div>
-					<div class="toggle_pack ty_linebreak">
-						<ul>
-							<li class="active">
-								<button type="button" class="ebbtn btn_toggle">개인</button>
-							</li>
-							<li>
-								<button type="button" class="ebbtn btn_toggle">개인사업자</button>
-							</li>
-						</ul>
-					</div>
-				</div>
-
 				<div class="form_part">
+					<div class="form_set">
+						<div class="ebtitle_medium">대상 선택</div>
+						<div class="form_pack">
+							<div class="select_pack has_selected" data-ui="customSelect">
+								<button type="button" class="ebbtn btn_slct_trigr" title="대상 선택"></button>
+								<select class="ebselect" data-placeholder="placeholder" title="대상" tabindex="-1">
+									<option value="option1">개인</option>
+									<option value="option2">개인사업자</option>
+								</select>
+							</div>
+						</div>
+					</div>
 					<div class="form_set">
 						<div class="ebtitle_medium">상품 선택</div>
 						<div class="form_pack">
-							<div class="select_pack">
-								<button type="button" class="ebbtn btn_select" title="상품 선택">상품을 선택해 주세요</button>
+							<div class="select_pack" data-ui="customSelect">
+								<button type="button" class="ebbtn btn_slct_trigr" title="상품 선택"></button>
+								<select class="ebselect" data-placeholder="상품을 선택해 주세요" title="상품" tabindex="-1">
+									<option value="option1">상품을 선택해 주세요</option>
+									<option value="option2">option2</option>
+									<option value="option3">option3</option>
+									<option value="option4">option4</option>
+									<option value="option5">option5</option>
+									<option value="option6">option6</option>
+								</select>
 							</div>
 						</div>
 					</div>

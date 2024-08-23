@@ -878,8 +878,19 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 
 .toggle_pack.ty_linebreak > ul > li.active { position: relative; }
 .toggle_pack.ty_linebreak > ul > li.active .ebbtn.btn_toggle {z-index: 10; width:calc(100% + 2px); height:calc(100% + 2px); margin:-1px; padding:11px; border: 2px solid #2F6DFC; color: #303030; }
+
 .toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle:disabled,
-.toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle[disabled="disabled"] { color: #b4b4b4; background-color: #f5f5f5; }
+.toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle[disabled="disabled"] { color: #b4b4b4; background-color: #f5f5f5; border-radius:0 }
+.toggle_pack.ty_linebreak > ul > li:nth-child(1) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak > ul > li:nth-child(1) .ebbtn.btn_toggle[disabled="disabled"]{ border-radius:0; border-top-left-radius:12px;}
+.toggle_pack.ty_linebreak > ul > li:nth-child(2) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak > ul > li:nth-child(2) .ebbtn.btn_toggle[disabled="disabled"]{border-top-right-radius:12px;}
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n+1):nth-last-child(2) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n+1):nth-last-child(2) .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-left-radius:12px;}
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n):nth-last-child(1) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n):nth-last-child(1) .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-right-radius:12px;}
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n+1):last-child .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak > ul > li:nth-child(2n+1):last-child .ebbtn.btn_toggle[disabled="disabled"]{ border-radius: 0; border-bottom-left-radius:12px; }
 
 .toggle_pack.ty_linebreak.divide3 > ul > li {width:33.33%;}
 .toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n+1):before,
@@ -888,6 +899,25 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+1):first-child:before{display:none;}
 .toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+1):after{content:""; display:block; position:absolute; width:1px; top:50%; right:0; height:20px; margin-top:-10px; border-right:1px solid #e6e6e6;}
 .toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+2):after{content:""; display:block; position:absolute; width:1px; top:50%; right:0; height:20px; margin-top:-10px; border-right:1px solid #e6e6e6;}
+
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n+1):last-child .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n+1):last-child .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-left-radius:0;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n+1):nth-last-child(2) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n+1):nth-last-child(2) .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-left-radius:0;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n):nth-last-child(1) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2n):nth-last-child(1) .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-right-radius:0;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(1) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(1) .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-left-radius:12px;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(2) .ebbtn.btn_toggle[disabled="disabled"]{border-top-right-radius:0;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3) .ebbtn.btn_toggle[disabled="disabled"]{border-top-right-radius:12px;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n):last-child .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n):last-child .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-right-radius:12px;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+1) .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-child(3n+1) .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-left-radius:12px;}
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-last-child(n+4):first-child .ebbtn.btn_toggle:disabled,
+.toggle_pack.ty_linebreak.divide3 > ul > li:nth-last-child(n+4):first-child .ebbtn.btn_toggle[disabled="disabled"]{border-bottom-left-radius:0;}
 /* 2024-08-05 2024고도화 : [end]디자인 변경 */
 
 .toggle_round_pack {  }

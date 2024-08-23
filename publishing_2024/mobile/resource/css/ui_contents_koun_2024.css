@@ -23,6 +23,8 @@
 .renewal_2024 .ebbtn.icon_tooltip.type_02{width:16px; height:16px; overflow: hidden; vertical-align:top; margin-top:2px; background:url('../image/icon/icon_tooltip02.png') no-repeat center; background-size:16px; text-indent:-9999px;}
 .renewal_2024 .tooltip_msg_pack{background-color:#fff}
 .renewal_2024 .tooltip_msg_pack .exptxt{font-size:15px; line-height:21px;}
+
+
 /*============= content ============*/
 /* 공통 > 상품소개 */
 .renewal_2024 .contents_area.product_info{height:100%; padding:0; overscroll-behavior:contain; background-color:#2f6dfc;}
@@ -61,6 +63,7 @@
 .renewal_2024 .drag_handle{position:relative;}
 .renewal_2024 .drag_handle:after{content:""; display:block; clear:both;}
 .renewal_2024 .drag_handle .btn_handle { display:flex; width:100%;height:48px; border:0; border-radius: 18px 48px 0 0; background:#fff;}
+.renewal_2024 .drag_handle .btn_handle:after{content:""; display:block; clear:both;}
 .renewal_2024 .drag_handle .btn_handle:before {content:''; display:block; margin:12px auto 0; padding:0; width:50px; height:5px; border-radius:5px; background-color:#909090;}
 
 .renewal_2024 .easy_calculate .input_pack.ty_word1{height:36px; padding-right:20px;}
@@ -102,10 +105,34 @@
 .renewal_2024 .encourage_signup .tit{font-size:24px; font-weight:700; line-height:34px; letter-spacing: -0.5%;}
 .renewal_2024 .encourage_signup .tit + .txt{margin-top:20px;}
 
-/* 마이페이지 > 발급서비스 > 발급내역 조회 */
+/* 마이페이지 > 발급서비스 > 발급내역조회 */
 .renewal_2024 .issuance_details{margin-top:10px;}
-.renewal_2024 .issuance_details .borderdiv{margin-top:-1px; padding:20px 25px;}
-.renewal_2024 .issuance_details .section-title{font-weight:700;}
+.renewal_2024 .issuance_details .borderdiv{margin-top:24px; padding:20px 25px;}
+.renewal_2024 .issuance_details .search_noresult_part .icon_box{margin-top:40px;}
+.renewal_2024 .issuance_cont{display:none;}
+.renewal_2024 .issuance_cont.active{display:block;}
+.renewal_2024 .issuance_result_area{margin-top:24px;}
+.renewal_2024 .issuance_result_area .issuance_result:first-child{padding-top:0;}
+.renewal_2024 .issuance_result{padding:32px 0;border-bottom:1px solid #F0F0F0;}
+.renewal_2024 .issuance_result .data_list{position:relative; margin-top:22px;}
+.renewal_2024 .issuance_result .data_list:after{content:""; display:block; clear:both;}
+.renewal_2024 .issuance_result .data_list > li{position:relative; display:flex; justify-content: space-between; margin-top:16px;}
+.renewal_2024 .issuance_result .data_list > li:first-child{margin-top:0;}
+.renewal_2024 .issuance_result .data_list > li .key,
+.renewal_2024 .issuance_result .data_list > li .value{font-size:14px; font-weight:500; color:#707070;}
+
+/* 마이페이지 > 발급서비스 > 비대면서류발급 */
+.renewal_2024 .smalltitle_part + .ebullet_circle{margin-top:12px;}
+
+/* 신용대출 > 랜딩페이지 */
+.renewal_2024 .landing{}
+.renewal_2024 .landing .visual_area{position:relative; margin:0 -25px; padding-bottom:30px;}
+.renewal_2024 .landing .visual_area .cont{position:relative; padding:16px 140px 80px 24px; border-radius:0 0 0 44px; background-color:#F5F6FA}
+.renewal_2024 .landing .visual_area .cont:before{content:""; display:block; position:absolute; bottom:-30px; right:0; width:143px; height:189px; background:url(../image/contents/cdln/landing_visual.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .landing .visual_area .logo{width:146px; height:24px; background:url(../image/contents/cdln/landing_logo.png) no-repeat 0 0; background-size:auto 24px;}
+.renewal_2024 .landing .visual_area .tit{margin-top:47px; font-family: 'IBM_Plex_Sans_KR', 'malgun gothic', 'sans-serif', 'dotum'; font-size:26px; font-weight:600; line-height:36px; color:#000;}
+.renewal_2024 .landing .visual_area .txt{font-size:15px; color:#707070;}
+.renewal_2024 .landing .visual_area .tit + .txt{margin-top:12px;}
 
 /* 신용대출 > 대환대출 > 한도조회 결과*/
 .renewal_2024 .status_box{margin-top:20px; padding:24px 68px 93px 20px; border-radius:22px; background-color:#edf6fd}
@@ -153,6 +180,7 @@
 .renewal_2024 .detail_part{margin-top:32px;}
 .renewal_2024 .detail_part > .detail_data_box{margin-top:12px;}
 .renewal_2024 .detail_data_box{position:relative; margin-top:20px; padding:20px; border-radius:21px; background:#F5F6FA;}
+.renewal_2024 .detail_data_box:after{content:""; display:block; clear:both;}
 .renewal_2024 .detail_data_box .detail_acco_tit{margin-bottom:16px; font-size:17px; font-weight:700;}
 .renewal_2024 .detail_data_box .detail_total{position:relative; display:flex; margin-top:12px; padding-top:12px; width:100%; border-top:1px solid #e6e6e6; align-items:center; justify-content:space-between;}
 .renewal_2024 .detail_data_box .detail_total .title{font-size:15px; font-weight:500;}
