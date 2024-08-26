@@ -330,3 +330,8 @@
 /* 신용대출 > 인증코드찾기 */
 .modal_popup.ty_alert .popup_layout .popup_body .popup_container.pd20 {padding:20px;}
 .modal_popup .popup_layout .popup_header .ebtitle3.alL {padding-left:20px;font-size:16px;font-weight:700;}
+.alert_text_part .text_strong {font-weight:bold;color:var(--grayColor01);}
+.alert_text_part p + .text_strong {margin-top:12px;}
+
+/* 신용대출 > 대출신청완료 */
+.desc_box.has_divider_thin {margin-top:30px;padding-top:30px;border-top:1px solid #F0F0F0;}
