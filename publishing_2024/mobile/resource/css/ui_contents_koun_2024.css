@@ -41,7 +41,7 @@
 .renewal_2024 .intro_btn_box .btn_box .box_l {width: 40%; }
 .renewal_2024 .intro_btn_box .btn_box .box_r {width: 60%;}
 
-.renewal_2024 .product_info .desc_area {height:600px; overscroll-behavior:contain; background-color:#2f6dfc;}
+.renewal_2024 .product_info .desc_area {height:530px; overscroll-behavior:contain; background-color:#2f6dfc;}
 .renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; background:url(../image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px; box-sizing: border-box;}
 .renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
 .renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
