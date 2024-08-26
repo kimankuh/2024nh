@@ -1,6 +1,7 @@
 /* 2024고도화 전용 js */
 $(window).on('load',function(){
     accoNewInit();//아코디언 뉴타입
+    toogleBtnIput(); //이메일 input show/hide(발급방법선택)
 });
 
 function accoNewInit(){
@@ -23,4 +24,19 @@ function accoNewInit(){
         }
     });
 
+}
+
+//email input show/hide
+function toogleBtnIput(){
+	$('.btn_toggle').each(function(){
+		$(this).on('click',function(){
+			var txt = $(this).text();
+			if(txt == '이메일'){
+				$(this).closest('.toggle_pack').next('.email_input').show();
+			}else{
+				$(this).closest('.toggle_pack').next('.email_input').hide();
+			}
+			
+		})
+	})
 }

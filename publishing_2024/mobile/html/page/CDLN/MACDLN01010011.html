@@ -193,6 +193,36 @@
 					</div>
 				</div>
 
+				<div class="form_part ty_ani">
+					<div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
+						<div class="ebform_label">청구방식</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" title="청구방식" data-placeholder="청구지 선택">
+									<option value="option1">모바일</option>
+									<option value="option2">이메일</option>
+									<option value="option3" selected="selected">우편수령</option>
+								</select>
+							</div>
+						</div>
+						<div class="form_next_box"><!-- 모바일, 이메일 선택시 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
+							<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+						</div>
+					</div>
+
+					<div class="form_set show"><!-- 청구방식 option 우편수령 선택시 노출 / 입력폼 활성화시 addclass="show" -->
+						<div class="ebform_label">청구지</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" title="청구지" data-placeholder="청구지 선택">
+									<option value="option1" selected="selected">자택</option>
+									<option value="option2">직장</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 		<!-- //여기까지 컨텐츠 -->

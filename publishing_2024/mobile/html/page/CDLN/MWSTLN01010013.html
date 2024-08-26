@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 
-	<title>NH농협캐피탈</title>
+	<title>대출신청완료 | NH농협캐피탈</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -32,96 +32,47 @@
 
 <div id="layoutContent" class="layout"><!-- 2024-08-13 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
-	<div class="header" >
-		<div class="header_area">
-
-			<div class="header_back">
-				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
-			</div>
-
-			<div class="header_title">
-				<h2 class="ebtitle2">신청서 발급</h2>
-			</div>
-
-			<div class="header_menu">
-				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
-			</div>
-
-		</div>
-	</div>
+	<div class="header"></div>
 
 	<div class="container renewal_2024"><!-- 2024-08-13 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
-
 		<!-- 컨텐츠 상단 타이틀영역 -->
-		<div class="subheader">
-			<div class="subheader_area">
-
-				<div class="step_part">
-					<div class="step_pack">
-						<ol>
-							<li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
-								<span class="num">1</span>
-								<span class="txt">신청서 선택</span>
-							</li>
-							<li class="active">
-								<span class="num">2</span>
-								<span class="txt">발급방법 선택</span>
-							</li>
-						</ol>
-					</div>
-
-					<div class="progress_pack">
-						<ul>
-							<li></li><!-- 현재 스텝에 addClass="active" -->
-							<li class="active"></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="page_title_part">
-					<h2 class="ebtitle2">신청서 발급</h2>
-				</div>
-
-				<div class="page_subtitle_part">
-					<p>
-						발급방법을 선택해 주세요
-					</p>
-				</div>
-
-			</div>
-		</div>
+		<div class="subheader"></div>
 
 		<!-- 여기부터 컨텐츠 -->
 		<div class="contents_area">
 			<div class="contents">
-				<div class="smalltitle_part">
-					<div class="ebform_label">발급방법 선택</div>
-					<div class="toggle_pack ty_linebreak">
-						<ul>
-							<li class="active">
-								<button type="button" class="ebbtn btn_toggle ">이메일</button>
-							</li>
-							<li>
-								<button type="button" class="ebbtn btn_toggle">모바일(카카오톡)</button>
-							</li>
-						</ul>
+
+				<div class="process_end_part">
+					<div class="icon_box">
+						<span class="ebicon icon_complete"></span>
 					</div>
-					<div class="form_part email_input">
-						<div class="form_pack">
-							<div class="input_pack">
-								<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="Hongabc@bac.cp.kr">
-								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
-							</div>
+					<div class="title_box">
+						<h2 class="ebtitle2">온라인 약정이 남아 있어요</h2>
+					</div>
+					<div class="desc_box">
+						<p>대출 신청을 완료해 주셨네요<br /> 이제, 온라인 약정 화면으로 이동 하셔서 대출약정을 체결해 주세요</p>
+					</div>
+                    <div class="desc_box has_divider_thin">
+						<div class="ebtitle_normal color07">
+							앱 설치가 되어 있지 않으실 경우,<br /> APP 다운로드 화면으로 이동해요
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 		<!-- //여기까지 컨텐츠 -->
 
 		<!-- 컨텐츠 하단 버튼영역 -->
 		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
-			<button type="button" class="ebbtn btn_main ty_bg">신청하기</button>
+			<div class="btn_box">
+                <div class="box_t">
+                    <button type="button" class="ebbtn btn_main ty_light">온라인 약정 화면으로 이동</button>
+                </div>
+                <div class="box_b">
+                    <button type="button" class="ebbtn btn_main ty_bg">홈으로 이동</button>
+                </div>
+            </div>
 		</div>
 
 	</div>
