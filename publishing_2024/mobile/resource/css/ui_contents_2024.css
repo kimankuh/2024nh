@@ -17,9 +17,13 @@
 .text_point_01 {color:var(--pointColor01);}/* 토스트 포인트 컬러 */
 .ebbtn.ty_solid {height:40px;line-height:40px;font-size:14px;background-color:var(--grayColor04);border-radius:10px;}
 .ebbtn.full {width:100%;}
-.ebbtn.btn_small {padding:0 16px;height:29px;line-height:29px;color:#fff;font-size:13px;font-weight:400;background-color:#0A47D6;border-radius:12px;}
+.ebbtn.btn_small,
+.ebbtn.btn_small_wh {padding:0 16px;height:29px;line-height:29px;font-size:13px;font-weight:400;border-radius:12px;}
+.ebbtn.btn_small {color:#fff;background-color:#0A47D6;}
 .ebbtn.r_arrow {position:relative;padding-right:16px;}
 .ebbtn.r_arrow:after {content:'';display:inline-block;margin-left:4px;width:9px;height:11px;background:url('../image/main/ico_arrow_9x13.png') no-repeat;background-size:100%;}
+.ebbtn.btn_small_wh {color:var(--grayColor02);background-color:#fff;}
+.ebbtn.btn_small_wh.r_arrow:after {background:url('../image/main/ico_arrow_9x13_white.png') no-repeat;background-size:100%;}
 
 /* 공통- as is */
 .renewal_2024 .contents_bottom_area.ty_fixed .box_l {width:40%;}
@@ -51,6 +55,7 @@
 .header.renewal_2024 .switch_pack .ebcheckbox:checked + .eblabel:before {left:-28px;}
 
 /* 메인 - 상품 영역 공통 */
+.renewal_2024 .contents {padding-bottom:40px;}
 .renewal_2024 .main_section {position:relative;margin:0 -25px;padding:40px 20px;}
 .renewal_2024 .main_section:first-child {padding-top:20px;}
 .renewal_2024 .main_section.odd {background-color:#fff;border-radius:0 44px 0 44px;}
@@ -72,7 +77,8 @@
 .renewal_2024 .text_section_title.ico_04:after {background:url('../image/main/ico_product_mini_04.png') no-repeat;background-size:100% 100%;}/* 그 외 */
 .renewal_2024 .text_head_title {font-size:20px;font-weight:bold;color:#fff;}
 .renewal_2024 .text_head_title em {font-style:normal;color:#ffd400;}
-.renewal_2024 .text_head_title + .ebbtn.btn_small {margin-top:12px;}
+.renewal_2024 .text_head_title + .ebbtn.btn_small,
+.renewal_2024 .text_head_title + .ebbtn.btn_small_wh  {margin-top:12px;}
 .renewal_2024 .section_content_head {position:relative;margin-left:-20px;margin-right:-20px;padding:20px;height:150px;background:var(--primaryColor) url('../image/layout/bg_nh_text_01.png') no-repeat right bottom;background-size:167px auto;border-radius:18px 36px 18px 36px;box-sizing:border-box;}
 .renewal_2024 .section_content_head.ico_01:after,
 .renewal_2024 .section_content_head.ico_02:after,
@@ -86,6 +92,7 @@
 .renewal_2024 .section_content_head.ico_04:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_11.png') no-repeat right bottom;background-size:100% auto;}/* 2위:신용대출 */
 .renewal_2024 .section_content_head.ico_05:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_12.png') no-repeat right bottom;background-size:100% auto;}/* 2위:스탁론 */
 .renewal_2024 .section_content_head.ico_06:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_13.png') no-repeat right bottom;background-size:100% auto;}/* 2위:자동차금융 */
+.swiper-slide {/*padding-left:20px;padding-right:20px;*/box-sizing:border;}
 
 /* 메인 - 1위 영역 */
 .renewal_2024 .section_content_head + .product_keywords {margin-top:40px;margin-right:-10px;}
@@ -103,24 +110,28 @@
 .renewal_2024 .product_keyword.ico_08:before {background:url('../image/main/ico_mini_keyword_18x18_08.png') no-repeat top -1px center;background-size:18px 18px;}/* 직업3 */
 
 /* 메인 - 1위, 바로가기  */
-.renewal_2024 .section_content_head + .product_reclinks {margin-top:50px;}
-.renewal_2024 .product_reclinks {display:flex;justify-content:space-between;padding:0 12px 20px 12px;}
+.renewal_2024 .section_content_head + .product_reclinks {margin-top:40px;}
+.renewal_2024 .product_reclinks {display:flex;/*justify-content:space-between;padding:0 12px 20px 12px;*/margin-left:-8px;margin-right:-8px;padding-bottom:12px;}
+.renewal_2024 .product_reclinks .product-recitem {width:33.3%;text-align:center;}
 .renewal_2024 .product_reclinks .product_reclink {display:block;font-size:14px;text-align:center;}
-.renewal_2024 .product_reclinks .product_reclink:before {content:'';display:block;margin-bottom:12px;width:62px;height:62px;border-radius:20px;}
+.renewal_2024 .product_reclinks .product_reclink:before {content:'';display:block;margin:0 auto 12px auto;width:62px;height:62px;border-radius:20px;}
 .renewal_2024 .product_reclinks .product_reclink.ico_01:before {background:var(--grayColor04) url('../image/main/ico_product_link_01.png') no-repeat center center;background-size:36px auto;}/* 자동차 - 신차구입 */
 .renewal_2024 .product_reclinks .product_reclink.ico_02:before {background:var(--grayColor04) url('../image/main/ico_product_link_02.png') no-repeat center center;background-size:35px auto;}/* 자동차 - 자동차리스 */
 .renewal_2024 .product_reclinks .product_reclink.ico_03:before {background:var(--grayColor04) url('../image/main/ico_product_link_03.png') no-repeat center left 18px;background-size:30px auto;}/* 자동차 - 장기렌터카 */
 
 /* 메인 - 자주찾는 서비스 */
-.renewal_2024 .product_reclinks .product_reclink.ico_11:before {background:var(--grayColor04) url('../image/main/ico_favorite_svc_32x36_01.png') no-repeat center center;background-size:32px 36px;}/* 약정신청 */
-.renewal_2024 .product_reclinks .product_reclink.ico_12:before {background:var(--grayColor04) url('../image/main/ico_favorite_svc_32x36_02.png') no-repeat center center;background-size:32px 36px;}/* 전화상담 */
-.renewal_2024 .product_reclinks .product_reclink.ico_13:before {background:var(--grayColor04) url('../image/main/ico_favorite_svc_32x36_03.png') no-repeat center center;background-size:32px 36px;}/* 대출계산기 */
+.renewal_2024 .product_reclinks.has_img .product_reclink:before {display:none;}
+.renewal_2024 .product_reclinks.has_img .product_icon {margin:0 auto 12px auto;width:62px;height:62px;line-height:62px;background-color:var(--grayColor04);border-radius:20px;}
+.renewal_2024 .product_reclinks.has_img .product_icon img {padding-top:13px;width:32px;height:auto;}
+/* .renewal_2024 .product_reclinks .product_reclink.ico_11:before {background:var(--grayColor04) url('../image/main/ico_favorite_svc_32x36_01.png') no-repeat center center;background-size:32px 36px;}약정신청 */
+/* .renewal_2024 .product_reclinks .product_reclink.ico_12:before {background:var(--grayColor04) url('../image/main/ico_favorite_svc_32x36_02.png') no-repeat center center;background-size:32px 36px;}전화상담 */
+/* .renewal_2024 .product_reclinks .product_reclink.ico_13:before {background:var(--grayColor04) url('../image/main/ico_favorite_svc_32x36_03.png') no-repeat center center;background-size:32px 36px;}대출계산기 */
 
 /* 메인 - 2위 영역 */
-.renewal_2024 .main_section.second .section_content_head {height:135px;background:#E2E8FF url('../image/layout/bg_nh_text_02.png') no-repeat right bottom;background-size:167px auto;}
+.renewal_2024 .main_section.second .section_content_head {/*height:135px;*/background:#E2E8FF url('../image/layout/bg_nh_text_02.png') no-repeat right bottom;background-size:167px auto;}
 .renewal_2024 .main_section.second .text_head_title {color:var(--grayColor01);}
 /* 목록 */
-.renewal_2024 .section_content_head + .product_conditions {margin-top:46px;}
+.renewal_2024 .section_content_head + .product_conditions {margin-top:32px;}
 .renewal_2024 .product_conditions {padding-bottom:12px;}
 .renewal_2024 .product_condition + .product_condition {margin-top:24px;}
 .renewal_2024 .product_conditions + .ebbtn.btn_normal {margin-top:20px;}
@@ -131,6 +142,7 @@
 .renewal_2024 .condition_item .text.normal {font-size:14px;color:var(--grayColor02);}
 .renewal_2024 .condition_item .text.highlight {font-size:15px;font-weight:bold;color:var(--primaryColor);}
 .renewal_2024 .condition_item:nth-child(even) .text.normal {text-align:right;}
+
 /* 배너 */
 .renewal_2024 .text_section_title + .product_banners,
 .renewal_2024 .product_banners .banner_item + .banner_item {margin-top:20px;}
@@ -194,7 +206,7 @@
 
 /* 메인 - 보유상품 */
 .renewal_2024 .section_content.my_total + .my_product {margin-top:20px;}
-.renewal_2024 .section_content.my_product {position:relative;margin-bottom:12px;padding-top:24px;height:263px;background-color:var(--primaryColor);box-sizing:border-box;}
+.renewal_2024 .section_content.my_product {position:relative;margin-bottom:12px;padding-top:24px;padding-left:10px;padding-right:10px;height:263px;background-color:var(--primaryColor);box-sizing:border-box;}
 .renewal_2024 .my_product_info {position:relative;height:81px;}
 .renewal_2024 .my_product_info .info_list {margin-top:0;}
 .renewal_2024 .my_product_info .info_list.has_ci {position:relative;padding-left:52px;}
@@ -219,6 +231,7 @@
 .renewal_2024 .section_content.my_product .ty_bg + .ty_bg {margin-left:9px;}
 .renewal_2024 .section_content.my_product .swiper-controls {position:relative;margin-top:27px;}
 .renewal_2024 .info_list_item .name_02:after {content:'|';padding:0 2px 0 7px;font-weight:300;font-size:12px;}
+.renewal_2024 .section_content.my_product .swiper-slide {padding-left:10px;padding-right:10px;box-sizing:border-box;}
 
 /* 메인 - 간편홈 */
 .renewal_2024 .section_box + .product_simple_links {margin-top:20px;}

@@ -141,7 +141,7 @@
 					<!-- 보유건 수 -->
 					<div class="section_content my_total">
 						<a href="#none" role="button" class="my_total_link">
-							<span>홍길동님의 대출내역</span>
+							<span>홍길동님의 대출내역</span><!-- 2024-08-26 2024고도화 : [v0.9] 개인사업자인 경우, 고객명 미출력 -->
 							<span class="my_total_num">3건</span> 
 						</a>
 					</div>
@@ -317,8 +317,8 @@
 							<li class="banner_item">
 								<a href="#none" role="button" class="banner_link type_05"><!-- 주택금융 : type_05 -->
 									<p class="banner_title">주택금융</p>
-									<p class="banner_text">사업자 아파트 담보 대출</p><!-- 2024-08-20 2024고도화 : SB기준으로 텍스트 변경 -->
-									<p class="banner_tag"><span class="tag">#당사 제휴 증권사 계좌보유</span></p><!-- 2024-08-20 2024고도화 : SB기준으로 텍스트 변경 -->
+									<p class="banner_text">아파트 담보 대출</p><!-- 2024-08-20 2024고도화 : SB기준으로 텍스트 변경 --><!-- 2024-08-26 2024고도화 : [v0.9] 텍스트 변경 -->
+									<p class="banner_tag"><span class="tag">#사업기간 6개월 이상</span><br /><span class="tag">#아파트 보유</span></p><!-- 2024-08-20 2024고도화 : SB기준으로 텍스트 변경 --><!-- 2024-08-26 2024고도화 : [v0.9] 텍스트 변경 -->
 								</a>
 							</li>
 						</ul>
@@ -329,11 +329,19 @@
 					<!-- 자주 찾는 서비스 -->
 					<div class="section_content no_head">
 						<p class="section_title">자주 찾는 서비스</p><!-- 2024-08-20 2024고도화 : SB기준으로 띄어쓰기 변경 -->
-						<ul class="product_reclinks">
+						
+						<!-- 2024-08-26 2024고도화 : 마크업 변경(클래스 추가/삭제 및 이미지 추가), 4개 노출되는 경우 클래스 '.ty_four' -->
+						<ul class="product_reclinks has_img">
 							<!-- 2024-08-20 2024고도화 : 아이콘 클래스 변경됨 -->
-							<li class="product-recitem"><a href="#none" class="product_reclink ico_11">약정신청</a></li>
-							<li class="product-recitem"><a href="#none" class="product_reclink ico_12">전화상담</a></li>
-							<li class="product-recitem"><a href="#none" class="product_reclink ico_13">대출계산기</a></li>
+							<li class="product-recitem">
+								<a href="#none" class="product_reclink" role="button"><div class="product_icon"><img src="../../../../mobile/resource/image/main/ico_favorite_svc_32x36_01.png" alt=""/></div>약정신청</a>
+							</li>
+							<li class="product-recitem">
+								<a href="#none" class="product_reclink" role="button"><div class="product_icon"><img src="../../../../mobile/resource/image/main/ico_favorite_svc_32x36_02.png" alt=""/></div>전화상담</a>
+							</li>
+							<li class="product-recitem">
+								<a href="#none" class="product_reclink" role="button"><div class="product_icon"><img src="../../../../mobile/resource/image/main/ico_favorite_svc_32x36_03.png" alt=""/></div>대출계산기</a>
+							</li>
 						</ul>
 					</div>
 
@@ -407,7 +415,6 @@
 <div id="layoutPopContent" aria-hidden="true"></div>
 
 <script>
-
 // 컨텐츠내용 로드 완료 후 실행
 mainprdnosignSwiper();
 maineventSwiper();// 메인이벤트슬라이더: 1개이상일경우 maineventSwiper()호출
@@ -428,56 +435,9 @@ $(window).on('load', function() {
 
 
 
-
-// 2024-08-09 2024고도화 : 로그인 전/후에 따른 배경색 설정
-// 2024-08-19 2024고도화 : 조건 변경
-if($('.main_section').length > 0){
-	$('.container').css('background-color', '#F4F5F9');
-}
-
-// 2024-08-13 2024고도화 : 메인 이벤트 swiper
-var maineventSwiperNew = new Swiper('.main_event_banners .swiper-container', {
-	speed: 400,
-	slidesPerView: 1,
-	pagination: {
-		clickable: true,
-		el: ".swiper-pagination",
-	},
-	autoplay: {
-		delay: 3000,
-	},
-});
-
-// 2024-08-14 2024고도화 : 보유상품
-var maineventSwiperNew = new Swiper('.section_content.my_product .swiper-container', {
-	speed: 400,
-	slidesPerView: 1,
-	pagination: {
-		clickable: true,
-		el: ".swiper-pagination",
-	},
-	autoplay: {
-		delay: 3000,
-	},
-});
-
-// swiper 공통 - indicator
-$('.renewal_2024 .swiper-container').each(function(){
-
-});
-
-// swiper 토글 버튼
-$('.swiper-toggle-button').on('click', function(){
-	$(this).toggleClass('on');
-	if($(this).hasClass('on')){
-		maineventSwiperNew.autoplay.stop();
-		$(this).attr('aria-label', '재생');
-	}else{
-		maineventSwiperNew.autoplay.start();
-		$(this).attr('aria-label', '정지');
-	}
-});
-
+// 2024-08-26 2024고도화 : 보유상품 및 이벤트 배너, 배경색 설정 코드 'ui_common_2024.js(퍼블js)'로 이동
+myProductsSwiper();// 보유 상품
+mainEventerBannersSwiper()// 메인 이벤트 배너
 </script>
 
 

@@ -5,7 +5,7 @@
 .bg_blue{background-color:var(--primaryColor);}
 
 .header.renewal_2024.bg_blue{background-color:var(--primaryColor); border-bottom:none;}
-.header.renewal_2024.bg_blue .header_area .header_title h2{padding-left:8px; font-family: 'SpoqaHanSansNeo'; font-size:16px; font-weight:500; color:#fff; text-align:left; opacity:1; }
+.header.renewal_2024.bg_blue .header_area .header_title h2{font-family: 'SpoqaHanSansNeo'; font-size:16px; color:#fff; opacity:1; }
 .header.renewal_2024.bg_blue .header_area .header_menu .ebbtn.btn_header_menu{background: url(../image/layout/header_menu_02_white.png) no-repeat center; background-size:25px;}
 .header.renewal_2024.bg_blue .header_area .header_back .ebbtn.btn_header_back{background: url(../image/layout/header_back_white.png) no-repeat center; background-size:9px;}
 
@@ -44,6 +44,17 @@
 .renewal_2024 .product_info .desc_area {height:530px; overscroll-behavior:contain; background-color:#2f6dfc;}
 .renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; background:url(../image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px; box-sizing: border-box;}
 .renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .product_info .icon_box{position:relative; margin-bottom:20px; padding-top:96px; background:url(../image/contents/cdln/ico_noti.png) no-repeat top center; background-size:80px auto; }
+.renewal_2024 .product_info .icon_box .txt_noti{font-size:15px; font-weight:700; text-align:center; }
+
+.renewal_2024 .product_info .call_box{position:absolute; bottom:94px; left:24px;}
+.renewal_2024 .product_info .call_box > div{margin-top:12px;}
+.renewal_2024 .product_info .call_box > div:first-child{margin-top:0;}
+.renewal_2024 .product_info .call_box .btn_txt{position:relative; display:inline-block; padding:0 18px; line-height:18px; font-size: 13px; color:#fff; font-weight:400;}
+.renewal_2024 .product_info .call_box .btn_txt:after{content:""; display:block; position:absolute; top:50%; right:0; margin-top:-8px; width:16px; height:16px; background:url(../image/contents/cdln/icon_arrow_right_white.png) no-repeat center center; background-size:16px auto;}
+.renewal_2024 .product_info .call_box .btn_txt.btn_branch{background:url(../image/contents/cdln/icon_branch_white.png) no-repeat center left; background-size:16px auto;}
+.renewal_2024 .product_info .call_box .btn_txt.btn_tel{background:url(../image/contents/cdln/icon_tel_white.png) no-repeat center left; background-size:16px auto;}
+
 .renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
 .renewal_2024 .prod_info .prod_txt{font-size:26px; color:#fff; font-weight:700;}
 .renewal_2024 .prod_info .prod_data{position:relative; display:flex; margin-top:24px; }
@@ -56,7 +67,7 @@
 .renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{background-color:#0a47d6;}
 
 .renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff;}
-.renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 68px); overflow:hidden;}
+.renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 48px); overflow:hidden;}
 .renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
 .renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
 .renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box{position:absolute;}
@@ -81,21 +92,41 @@
 .renewal_2024 .easy_calculate .btn_box{margin-top:20px;}
 .renewal_2024 .easy_calculate .ebbtn.btn_normal{height:44px; line-height:44px; border-radius:14px;}
 
-.renewal_2024 .accordion_pack.ty_boxing { border: 0; border-radius:20px; background-color: #f3f6fb; }
-.renewal_2024 .accordion_pack.ty_boxing + .accordion_pack.ty_boxing{margin-top:12px;}
-.renewal_2024 .accordion_pack.ty_boxing .accordion_title{min-height:64px; padding:21px 20px 20px;}
-.renewal_2024 .accordion_pack.ty_boxing .accordion_title .title{font-size:16px; font-weight:500;}
-.renewal_2024 .accordion_pack.ty_boxing .accordion_title .control{position:absolute; top:50%; right:20px; margin-top:-10px; width:20px; height:20px;}
-.renewal_2024 .accordion_pack.ty_boxing .accordion_title .control .ebbtn.btn_accordion{width:20px; height:20px; background: url(../image/component/accordion_arrow02.png) no-repeat center; background-size:100%;}
-.renewal_2024 .accordion_pack.ty_boxing .accordion_content{padding-top:0; }
-.renewal_2024 .accordion_pack.ty_boxing .ebullet_circle{margin-top:12px;}
-.renewal_2024 .accordion_pack.ty_boxing .small_title_pack > li .ebullet_circle{margin-top:4px}
-.renewal_2024 .accordion_pack.ty_boxing .base_date{margin-top:20px;}
-.renewal_2024 .accordion_pack.ty_boxing.active{box-shadow:none;}
-.renewal_2024 .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
-.renewal_2024 .accordion_pack.ty_boxing.active .accordion_content{border:0; color:#303030;}
-.renewal_2024 .icon_info{margin-bottom:20px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing { border: 0; border-radius:20px; background-color:#F5F6FA; }
+.renewal_2024 .product_info .accordion_pack.ty_boxing + .accordion_pack.ty_boxing{margin-top:12px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title{min-height:64px; padding:21px 20px 20px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title .title{font-size:16px; font-weight:500;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title .control{position:absolute; top:50%; right:20px; margin-top:-10px; width:20px; height:20px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title .control .ebbtn.btn_accordion{width:20px; height:20px; background: url(../image/component/accordion_arrow02.png) no-repeat center; background-size:100%; transition:all 0.05s ease-in-out;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_content{padding:0 20px 28px 20px; }
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle{margin-top:12px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle > li{margin-top:8px; font-size:14px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle.noti_list{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle.noti_list .color07{font-weight:500;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack{margin-top:24px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack:first-child{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li{margin-top:24px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li .ebullet_circle{margin-top:4px}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .txt_box .tit{font-size:18px; font-weight:700;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .txt_box .txt{margin-top:8px; font-size:14px; color:#707070;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .base_date{margin-top:24px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .img{max-width:400px; margin:28px auto 0; padding:0 4px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing.active{box-shadow:none;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
+.renewal_2024 .product_info .accordion_pack.ty_boxing.active .accordion_content{border:0; color:#303030;}
+.renewal_2024 .product_info .icon_info{margin-bottom:20px;}
 
+.renewal_2024 .product_info .bullet_box{margin-top:8px; padding:14px; line-height:18px; font-size:13px; letter-spacing: -0.5px; border-radius:12px; background:#fff;}
+.renewal_2024 .product_info .bullet_box .bullet_tit{display:block; margin-bottom:12px; font-size:14px; font-weight:700;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li{margin-top:12px;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li .tit{font-size:14px; font-weight:500;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li .txt{margin-top:4px; font-size:13px; color:#707070;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li .bullet_box .ebullet_circle{margin-top:12px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .bullet_box .ebullet_circle > li{font-size:13px; line-height:18px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .bullet_box .ebullet_circle > li:first-child{margin-top:0;}
 .renewal_2024 .product_info .process_list > li{margin-top:13px;}
 .renewal_2024 .product_info .process_list > li:first-child{margin-top:0;}
 .renewal_2024 .product_info .process_box{position:relative; display:flex; flex-wrap:wrap; width:100%; padding:12px 20px 8px 20px; border-radius:16px; box-sizing:border-box; background:#fff;}
@@ -108,6 +139,32 @@
 .renewal_2024 .product_info .step04 .process_box .tit{background:url(../image/contents/cdln/img_step04_x1.png) no-repeat 0 0;}
 .renewal_2024 .product_info .step05 .process_box .tit{background:url(../image/contents/cdln/img_step05_x1.png) no-repeat 0 0;}
 .renewal_2024 .product_info .step06 .process_box .tit{background:url(../image/contents/cdln/img_step06_x1.png) no-repeat 0 0;}
+
+.renewal_2024 .product_info .affiliate_list{display:flex; flex-wrap:wrap; margin-bottom:8px;}
+.renewal_2024 .product_info .affiliate_list > li{ width:33.3%; text-align:center;}
+.renewal_2024 .product_info .affiliate_list > li:nth-child(n + 4){margin-top:20px;}
+.renewal_2024 .product_info .affiliate_box .tit{display:block; margin-top:12px; font-size:14px; color:#707070; font-weight:500;}
+.renewal_2024 .product_info .affiliate_box .ebicon{display:inline-block; width:72px; height:72px; border-radius:20px; background-color:#fff; box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);}
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_nhqv {background:#fff url('../image/icon/icon_logo_nhqv.png') no-repeat center; background-size:44px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_eugene {background:#fff url('../image/icon/icon_logo_eugene.png') no-repeat center; background-size:42px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_hana {background:#fff url('../image/icon/icon_logo_hana.png') no-repeat center; background-size:50px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_kb {background:#fff url('../image/icon/icon_logo_kb.png') no-repeat center; background-size:46px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_daishin {background:#fff url('../image/icon/icon_logo_daishin.png') no-repeat center; background-size:42px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_kiwoom {background:#fff url('../image/icon/icon_logo_kiwoom.png') no-repeat center; background-size:46px auto; }
+
+.renewal_2024 .product_info .table_info_pack .ebtable:after{background-color:#878787;}
+.renewal_2024 .product_info .table_info_pack .ebtable thead tr th{font-size:13px; background:#fff;}
+.renewal_2024 .product_info .table_info_pack .ebtable thead tr th:first-child{border-left:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable thead tr th:last-child{border-right:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr th{font-size:13px; font-weight:400; background:#fff;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td{font-size:13px; color:#707070;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr th:first-child,
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td:first-child{border-left:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr th:last-child,
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td:last-child{border-right:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr:last-child th,
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr:last-child td{border-bottom:0}
+
 
 /* 공통 > 가입유도 팝업 */
 .renewal_2024.modal_popup.ty_popup .popup_layout .popup_header{text-align:left;}
