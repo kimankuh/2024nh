@@ -348,3 +348,12 @@
 
 /* 신용대출 > 대출신청완료 */
 .desc_box.has_divider_thin {margin-top:30px;padding-top:30px;border-top:1px solid #F0F0F0;}
+
+/* 전체메뉴 > 전체메뉴검색 */
+.header_gnb_search.input_pack {margin-top:6px;padding-left:31px;height:44px;}
+.header_gnb_search.input_pack:after {display:none;}
+.header_gnb_search.input_pack .gnb_search_input {font-size:15px;background-color:#F5F6FA;}
+.header_gnb_search.input_pack .btn_input_clear {right:40px;width:32px;height:44px;background:url('../image/component/ico_input_clear_24x24.png') no-repeat center center;background-size:24px auto;}
+.header_gnb_search.input_pack .gnb_search_btn {width:40px;}
+
+.recently_keyword_box {padding-top:20px;}
