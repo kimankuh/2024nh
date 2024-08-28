@@ -9,6 +9,25 @@ $(function(){
     if($('.main_section').length > 0){
         $('.container').css('background-color', '#F4F5F9');
     }
+
+    // 2024-08-28 2024고도화 : 전체 메뉴 depth4
+    $('.totalmenu_layer .menuname.has_menu').each(function(){
+        var $this = $(this);
+        var $depth4 = $(this).siblings('.depth4');
+
+        $this.attr('aria-expanded', false);        
+        $this.on('click', function(){
+            $this.toggleClass('on');
+            if($this.hasClass('on')){
+                $this.attr('aria-expanded', true);
+                $depth4.slideDown(300);
+            }else{
+                $this.attr('aria-expanded', false);
+                $depth4.slideUp(300);
+            }
+        });
+    });    
+
 });
 
 function accoNewInit(){

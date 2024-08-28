@@ -40,32 +40,40 @@
 
 <div class="layout">
 
-	<div class="header">
+	<!-- 2024-08-09 2024고도화 : 헤더 UI 변경됨
+	  - renewal_2024 : 고도화 전용 class(필수)
+	  - has_bg : 로그인 후 추가되는 class
+	// -->
+	<div id="headerLay" class="header renewal_2024"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가, 로그인인 경우 .has_bg 추가 -->
 		<div class="header_area">
+			<!-- 2024-08-09 2024고도화 : 헤더 영역 UI 변경 -->
+			<div class="switch_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_1" title="간편홈 선택" />
+				<label for="chk1_1" class="eblabel"></label>
+			</div>
+			<!-- // 2024-08-09 2024고도화 : 헤더 영역 UI 변경 -->
 
 			<!-- <div class="header_back">
 				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
 			</div> -->
-
-			<div class="header_logo">
-				<a href="#"><img src="../../resource/image/layout/logo.png" alt="NH농협캐피탈"></a>
-			</div>
-
+			<!-- <div class="header_logo">
+				<a href="#"><img src="../../../resource/image/layout/logo.png" alt="NH농협캐피탈"></a>
+			</div> -->
 			<!-- <div class="header_title">
 				<h2 class="ebtitle2">타이틀</h2>
 			</div> -->
-
+			
 			<div class="header_alarm">
+				<a href="#none" class="header_alarm_login" title="로그인 화면으로 이동">로그인</a><!-- 2024-08-20 2024고도화 : 로그인 링크 추가 -->
+				<a href="#noen" class="ebbtn btn_header_point" title="멤버스팟 바로가기, 브라우저로 앱 변환"></a>
 				<button type="button" class="ebbtn btn_header_alarm active" title="알림화면 열기"></button><!-- 새로운 알람 있을 경우 addclass="active" -->
 			</div>
-
 			<div class="header_menu">
 				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
 			</div>
-
-
 		</div>
 	</div>
+	<!-- // 2024-08-09 2024고도화 : 헤더 UI 변경됨 -->
 
 	<div class="totalmenu_layer"><!-- 전체메뉴 열기 addclass="show" -->
 		<div class="layer">
@@ -84,9 +92,11 @@
 						<!-- <a href="#" class="ebbtn btn_setting" title="설정"></a> 2024-07-30 2024고도화 : 환경설정 버튼 위치 변경 -->
 					</div>
 				</div>
-				<div class="log_part">
-					최근접속<span>2022-05-25 13:30:12</span><!-- 2024-07-30 2024고도화 : 콜론 및 공백 삭제 -->
-				</div>
+
+				<!-- 2024-08-28 2024고도화 : SB v0.72 기준. 삭제 -->
+				<!-- <div class="log_part">
+					최근접속<span>2022-05-25 13:30:12</span>!-- 2024-07-30 2024고도화 : 콜론 및 공백 삭제 --
+				</div> -->
 
 				<!-- 2024-07-30 2024고도화 : 검색영역 추가 -->
 				 <div class="gnb_search input_pack"><!-- 입력 후 이동인지, 클릭시 이동인지 확인 후 .input_pack 추가 -->
@@ -110,14 +120,14 @@
 								<span class="text">고객센터</span>
 							</a>
 						</li>
-						<!-- 2024-07-30 2024고도화 :  환경설정 버튼 위치 변경 -->
+						<!-- 2024-07-30 2024고도화 : 환경설정 버튼 위치 변경 -->
 						<li>
 							<a href="#" class="ebbtn btn_quickmenu">
 								<span class="ebicon icon_cunstom_center"></span>
 								<span class="text">환경설정</span>
 							</a>
 						</li>
-						<!-- //2024-07-30 2024고도화 :  환경설정 버튼 위치 변경 -->
+						<!-- //2024-07-30 2024고도화 : 환경설정 버튼 위치 변경 -->
 					</ul>
 				</div>
 
@@ -176,20 +186,16 @@
 													<span class="name">대출상품</span>
 												</div>
 												<ul class="depth3">
-													<!-- <li>
-														<a href="#" class="menuname">
+													<li>
+														<!-- 2024-08-28 2024고도화 : 상품소개 > 4뎁스 생성, 마크업 변경됨 -->
+														<a href="#" class="menuname has_menu"><!-- 하위 메뉴가 있는 경우 '.has_menu' 클래스 추가 -->
 															<span class="name">상품소개</span>
 														</a>
-													</li> -->
-													<li>
-														<a href="#" class="menuname">
-															<span class="name">신용대출(신규)</span>
-														</a>
-													</li>
-													<li>
-														<a href="#" class="menuname">
-															<span class="name">신용대출(추가)</span>
-														</a>
+														<ul class="depth4">
+															<li><a href="#none" class="menuname"><span class="name">신용대출(신규)</span></a></li>
+															<li><a href="#none" class="menuname"><span class="name">신용대출(추가)</span></a></li>
+														</ul>
+														<!-- // 2024-08-28 2024고도화 : 상품소개 > 4뎁스 생성, 마크업 변경됨 -->
 													</li>
 													<li>
 														<a href="#" class="menuname">

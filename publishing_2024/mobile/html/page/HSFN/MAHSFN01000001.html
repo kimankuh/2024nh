@@ -28,308 +28,235 @@
 	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
+	<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+		<div class="header renewal_2024 bg_blue"><!-- 2024-08-16 2024고도화 : 고도화 전용 class .renewal_2024 추가, 상품소개 일때 bg-blue 추가 -->
+			<div class="header_area">
 
-
-<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
-
-	<div class="header">
-		<div class="header_area">
-
-			<div class="header_back">
-				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
-			</div>
-
-			<div class="header_title">
-				<h2 class="ebtitle2">사업자 아파트 담보대출</h2>
-			</div>
-
-			<div class="header_menu">
-				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="container">
-
-		<!-- 컨텐츠 상단 타이틀영역 -->
-		<div class="subheader">
-			<div class="subheader_area">
-				<div class="page_title_part">
+				<div class="header_back">
+					<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+				</div>
+	
+				<div class="header_title">
 					<h2 class="ebtitle2">사업자 아파트 담보대출</h2>
 				</div>
+	
+				<div class="header_menu">
+					<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+				</div>
+	
 			</div>
 		</div>
-
-		<!-- 여기부터 컨텐츠 -->
-		<div class="contents_area">
-			<div class="contents">
-
-
-
-				<div class="inquiry_part">
-					<div class="housing_part bgsimplediv">
-
-						<div class="intro_info_box">
-							<div class="text">
-								아파트를 보유하고 있으며<br>
-								사업자 운영에 자금이 필요한 개인사업자
+		<div class="container renewal_2024"><!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+			<!-- 여기부터 컨텐츠 -->
+			<div class="contents_area product_info apt_owner_loan"><!-- 상품소개 구분 class | 상품공통 : product_info -->
+				<div class="contents">				
+					<div class="section desc_area">
+						<div class="prod_info">
+							<p class="prod_tit">NH농협캐피탈 사업자 아파트 담보대출</p>
+							<p class="prod_txt">아파트 보유 사업자 대출</p>
+							<ul class="prod_data">
+								<li class="max_limit">
+									<span class="tit">최대 한도</span>
+									<strong class="txt"><span class="num">10</span> <span class="unit">억원 이하</span></strong>
+								</li>
+								<li class="interest_rate">
+									<span class="tit">최저금리(연)</span>
+									<strong class="txt"><span class="num">6.4</span><span class="unit">%</span></strong>
+								</li>
+							</ul>
+							<div class="call_box">
+								<div><a href="tel:1644-3900" class="btn_txt btn_tel">상담전화 1644-3900</a></div>
 							</div>
-							<!-- 2022-05-03 수정 : 상단 금리, 한도 안내 수정 -->
-							<div class="data">
-								<dl>
-									<dt>최저 금리</dt>
-									<dd>연 <span class="min">5.7</span>%</dd><!-- 2022-05-17 수정 : 최저 금리 수정 -->
-								</dl>
-								<dl>
-									<dt>최대 한도</dt>
-									<dd><span class="max">10억원</span>미만</dd>
-								</dl>
+							<div class="btn_box_wrap">
+								<div class="btn_box">
+									<button type="button" class="ebbtn btn_main ty_bg">전화상담신청</button>
+								</div>
 							</div>
-							<!-- //2022-05-03 수정 : 상단 금리, 한도 안내 수정 -->
 						</div>
-
-						<!-- 2022-05-03 수정 : 전화상담 버튼 삭제, 상담전화 영역 추가 -->
-						<div class="call_box">
-							<a href="tel:1644-3900" class="ebbtn btn_text_link">
-								<span class="ebicon icon_phone"></span>
-								<span class="text">상담전화</span>
-								<span class="tel">1644-3900</span>
-							</a>
+					</div>
+					<div class="section dragging_bs">
+						<div class="drag_handle">
+							<button type="button" class="btn_handle"></button>
 						</div>
-						<!-- 2022-05-03 수정 : 전화상담 버튼 삭제, 상담전화 영역 추가 -->
-
-					</div>
-
-					<div class="tab_pack ty_normal" data-module-id="introaparttab">
-						<ul class="ebtab">
-							<li class="active">
-								<button type="button" class="ebbtn btn_tab">상품소개</button>
-							</li>
-							<li>
-								<button type="button" class="ebbtn btn_tab">상세정보</button>
-							</li>
-						</ul>
-					</div>
-
-					<div class="tabcontent_pack" data-module-for="introaparttab">
-						<ul class="ebtab_content">
-							<li class="active">
-
-								<div class="intro_part">
-									<div class="intro_main">
-
-
-										<div class="title_wrap">
-											<div class="title">
-												사업기간 3개월 이상 /<br><!-- 2022-05-03 수정 : 상품소개 내용 title 수정 -->
-												아파트 보유자
-											</div>
-											<div class="desc">
-												소득 증빙이 가능한 개인사업자를 위한<br>
-												사업자 아파트 담보대출
+						<div class="cont_detail">
+							<div class="scroll">
+								
+								<!-- accordion_wrap -->
+								<div class="accordion_wrap">
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">필요한 서류를 알아볼까요?</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
 											</div>
 										</div>
-										<!-- <div class="img_wrap widediv">
-											<div class="loan_img_box">
-												<img src="../../../resource/image/contents/loan/intro_businessman.png" alt="개인사업자 - 소득 증빙 가능, 사업기간 3개월 이상, 아파트 보유자">
-											</div>
-										</div> -->
-
-										<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
-										<div class="img_wrap">
-											<div class="loan_img_box">
-												<div class="imgani_box">
-													<div class="ani ani_1">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/hsfn/intro_ani1.png" alt="개인사업자">
-														</span>
-													</div>
-													<div class="ani ani_2">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/hsfn/intro_ani2.png" alt="소득증빙가능">
-														</span>
-													</div>
-													<div class="ani ani_3">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/hsfn/intro_ani3.png" alt="사업기간 3개월 이상">
-														</span>
-													</div>
-													<div class="ani ani_4">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/hsfn/intro_ani4.png" alt="아파트 보유자">
-														</span>
-													</div>
-													<div class="ani ani_5">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/hsfn/intro_ani55.png" alt="">
-														</span>
-													</div>
-												</div>
-											</div>
+										<div class="accordion_content">
+											<ul class="icon_list">
+												<li class="item01">사업자등록증 사본</li>
+												<li class="item02">주민등록등본, 원초본</li>
+												<li class="item03">신분증 사본</li>
+												<li class="item04">소득 서류</li>
+												<li class="item05">자동이체통장 사본</li>
+												<li class="item06">인감증명서</li>
+											</ul>
+											<ul class="ebullet_circle">
+												<li>심사 시 서류를 추가로 요청할 수 있습니다.</li>
+											</ul>
+											<p class="base_date">2024년 05월 02일 기준</p>
 										</div>
-										<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
 									</div>
 
-									<div class="layoutline_light"></div>
-
-									<!-- 2022-05-11 수정 : 금리 내용 수정 -->
-									<!-- 2022-05-03 수정 : 금리, 한도 내용 수정 -->
-									<!-- 2022-04-28 수정 : 금리안내 수정, 안내내용 추가 -->
-									<dl class="small_title_pack">
-										<dt>금리</dt>
-										<dd><b>연 5.7 ~ 9.7 %</b></dd><!-- 2022-05-27 수정 : 문구수정 -->
-									</dl>
-									<ul class="ebullet_circle">
-										<li>고객의 신용평점 등에 따라 금리가 차등 적용됩니다.</li><!-- 2022-05-25 수정 : 문구 수정(신용점수 -> 신용평점) -->
-										<li>이자부과시기 : 이자납입일(매월 등)에 이자를 납입하여야 합니다.</li>
-									</ul>
-									<!-- //2022-05-11 수정 : 금리 내용 수정 -->
-									<dl class="small_title_pack">
-										<dt>한도</dt>
-										<dd>3,000만원 이상 ~ 10억원 미만</dd><!-- 2022-05-27 수정 : 문구수정 -->
-									</dl>
-									<!-- //2022-04-28 수정 : 금리안내 수정, 안내내용 추가 -->
-									<!-- //2022-05-03 수정 : 금리, 한도 내용 수정 -->
-									<dl class="small_title_pack">
-										<dt>기간</dt>
-										<dd>60개월</dd>
-									</dl>
-
-									<div class="base_date">2022년 05월 18일 기준</div><!-- 2022-05-27 수정 : 문구수정 --><!-- 2022-05-11 수정 : 기준날짜 수정 -->
-								</div>
-
-							</li>
-							<li>
-
-								<div class="intro_part">
-									<!-- 2022-04-28 수정 : 상세정보 내용 수정 -->
-									<!-- 2022-05-10 수정 : 상세정보 이자부과시기 삭제 -->
-									<dl class="small_title_pack">
-										<dt>취급수수료</dt>
-										<dd>없음</dd>
-									</dl>
-
-									<!-- 2022-05-04 수정 : 컨텐츠 내용 변경 -->
-									<dl class="small_title_pack">
-										<dt>중도상환수수료율</dt>
-										<dd>2.0 %</dd><!-- 2022-05-11 수정 : 중도상황수수료율 텍스트 수정 -->
-										<dd>
-											<div class="bullet_pack">
-												<div class="ebbullet_title02">중도상환수수료 산식</div>
-												<div class="ebbullet_subtitle02">약정만기 1년이상</div>
-												<div class="ebbullet_text02">상환원금 X 1%(부대비용) + 상환원금 X (중도상환수수료율 - 1%) X 잔존기간* / (대출기간-30일)</div>
-												<div class="ebbullet_subtitle02">약정만기 1년미만</div>
-												<div class="ebbullet_text02">상환원금 X 중도상환수수료율 X 잔존기간* / (대출기간 -30일)<br>* 30일 미만 상환 시 ‘대출 사용기간’을 30일로 간주합니다.</div>
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">상품소개</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
 											</div>
-										</dd>
-									</dl>
-									<!-- //2022-05-04 수정 : 컨텐츠 내용 변경 -->
-									<!-- //2022-04-28 수정 : 상세정보 내용 수정 -->
+										</div>
+										<div class="accordion_content">
+											<ul class="small_title_pack">
+												<li>
+													<strong class="tit">대상</strong>
+													<div class="cont">소득증빙이 가능한 개인사업자</div>
+													<ul class="ebullet_circle">
+														<li>사업기간 6개월 이상</li>
+														<li>아파트 보유자</li>
+														<li>소득 증빙 가능</li>
+													</ul>
+												</li>
+												<li>
+													<strong class="tit">금리</strong>
+													<div class="cont">연 6.45% ~ 12.6%</div>
+												</li>
+												<li>
+													<strong class="tit">한도</strong>
+													<div class="cont">3,000만원 ~ 10억원 이하</div>
+												</li>
+												<li>
+													<strong class="tit">기간</strong>
+													<div class="cont">36, 60개월</div>
+													<ul class="ebullet_circle">
+														<li>고객의 신용평점 등에 따라 금리가 차등 적용됩니다.</li>
+														<li>이자부과시기: 이자납입일(매월 등)에 이자를 납입하여야 합니다.</li>
+													</ul>
+												</li>
+											</ul>
+											<p class="base_date">2024년 05월 02일 기준</p>
+										</div>
+									</div>
 
-									<dl class="small_title_pack">
-										<dt>연체이자율</dt>
-										<dd><b>약정이율 + 최대 3% (단, 법정최고금리 이내)</b></dd><!-- 2022-05-27 수정 : 문구수정 -->
-									</dl>
-
-									<dl class="small_title_pack">
-										<dt>필요서류</dt>
-										<dd>
-											<p>- 사업자등록증 사본<br></p>
-											<p>- 주민등록등본, 원초본<br></p>
-											<p>- 신분증 사본<br></p>
-											<p>- 소득 서류<br></p>
-											<p>- 자동이체통장 사본<br></p>
-											<p>- 인감증명서</p>
-										</dd>
-									</dl>
-
-									<ul class="ebullet_circle">
-										<li>
-											<p>심사 시 추가적인 서류를 요청할 수 있습니다.</p>
-										</li>
-									</ul>
-
-									<dl class="small_title_pack">
-										<dt>상환방식</dt>
-										<dd>
-											<p>만기일시 상환으로 매월 이자만 납부 후 만기시 원금 일시상환</p><!-- 2022-05-27 수정 : 문구수정 -->
-											<div class="boxing_pack">
-												<div class="img_group">
-													<div class="img_box">
-														<img src="../../../resource/image/contents/hsfn/intro_new_loan_chart01.png" alt="1개월, 2개월, 3개월부터 만기일자까지 이자납부, 원금납부 비율"><!-- 2022-05-04 수정 : 이미지 경로 수정 -->
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">상세정보</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
+											</div>
+										</div>
+										<div class="accordion_content">
+											<ul class="small_title_pack">
+												<li>
+													<strong class="tit">취급수수료</strong>
+													<div class="cont">없음</div>
+												</li>
+												<li>
+													<strong class="tit">중도상환수수료율</strong>
+													<div class="cont">2.0%</div>
+													<div class="bullet_box">
+														<p class="bullet_tit">중도상환수수료 산식</p>
+														<ul class="bullet_list">
+															<li>
+																<strong class="tit">약정만기 1년이상</strong>
+																<p class="txt">상환원금 x 1% + 상환원금 x(중도상환수수료율– 1%) X 잔존기간 / (대출기간 - 30일)</p>
+															</li>
+															<li>
+																<strong class="tit">약정만기 1년미만</strong>
+																<p class="txt">상환원금 x 중도상환수수료율 x 잔존기간 / (대출기간 - 30일)</p>
+															</li>
+														</ul>
+														<ul class="ebullet_circle">
+															<li>30일 미만 상환 시 '대출 사용기간'을 30일로 간주합니다.</li>
+															<li>대출실행일로부터 3년 이후 중도상환수수료 면제</li>
+														</ul>
 													</div>
-												</div>
+												</li>
+												<li>
+													<strong class="tit">인지세</strong>
+													<div class="cont">인지세는 대출거래 계약 체결시 대출금액에 따라 납부하는 세금으로, 7만원(대출금액 5천만원 초과) 또는 15만원(대출금액 1억원 초과)이 발생하며 이 중 고객은 50%를 부담합니다.</div>
+												</li>
+												<li>
+													<strong class="tit">국민주택채권 매입비용</strong>
+													<div class="cont">국민주택채권매입비용은 근저당설정금액에 따라 발생하며, 실행일 채권할인율을 기준으로 대출실행일에 정확한 부담금액이 확정됩니다.</div>
+												</li>
+												<li>
+													<strong class="tit">인체이자율</strong>
+													<div class="cont color02">약정이율 + 최대 3% (단, 법정 최고금리 이내)</div>
+												</li>
+												<li>
+													<strong class="tit">상환방식</strong>
+													<div class="cont">만기일시 상환으로 매월 이자만 납부 후 만기시 원금 일시상환</div>
+													<div class="img"><img src="../../../resource/image/contents/hsfn/img_expiration_date.png" alt="대출기간동안 매월 이자만 상황하는 방식으로 만기시 원금을 일시 상환하는 방식입니다."></div>
+												</li>
+											</ul>
+											<p class="base_date">2024년 05월 02일 기준</p>
+										</div>
+									</div>
+
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">안내 유의사항</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
 											</div>
-										</dd>
-									</dl>
-									<div class="base_date">2021년 10월 21일 기준</div><!-- 2022-05-04 수정 : 기준날짜 수정 -->
-								</div>
+										</div>
+										<div class="accordion_content">
+											<ul class="ebullet_circle noti_list">
+												<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
+												<li>금융소비자는 금소법 제 19조 제 1항에 따라 해당상품에 대하여 설명을 받을 권리가 있습니다.</li>
+												<li>고객님의 신용도, 대출기간 등에 따라 한도 및 대출금리 등이 다를 수 있습니다.</li>
+												<li>대출취급이 부정확한 경우(개인신용평점 낮음 등) 대출이 제한될 수 있습니다.</li>
+												<li>담보물건, 담보종류 등에 따라 대출조건이 차등 적용되며, 담보물이 부적합할 경우 대출이 제한될 수 있습니다.</li>
+												<li><span class="color07">상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다.</span></li>
+												<li><span class="color07">개인신용평점 하락시 금융거래와 관련된 불이익일 발생할 수 있습니다.</span></li>
+												<li><span class="color07">일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</span></li>
+											</ul>
+										</div>
+									</div>
 
-							</li>
-						</ul>
-					</div>
-
-					<div class="layoutline nopad"></div>
-
-					<div class="guide_part">
-						<div class="ebbullet_title">안내 유의사항</div>
-						<!-- 2022-05-18 수정 : 안내유의사항 수정 -->
-						<!-- 2022-05-27 수정 : 문구수정 -->
-						<ul class="ebullet_circle">
-							<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
-							<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품에 대하여 설명을 받을 권리가 있습니다.</li>
-							<li>고객님의 신용평점 및 대출기간 등에 따라 한도 및 대출금리 등이 다를 수 있습니다.</li>
-							<li>대출취급이 부적정한 경우(개인신용평점 낮음, 연체(단기 포함) 사유 발생 등) 대출이 제한될 수 있습니다.</li>
-							<li><b>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다.</b></li>
-							<li><b>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</b></li>
-							<li><b>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</b></li>
-						</ul>
-						<!-- //2022-05-27 수정 : 문구수정 -->
-						<!-- //2022-05-18 수정 : 안내유의사항 수정 -->
-						<div class="sub_info">
-							※ 여신금융협회 심의필 제 2022 - L1h - 03547호<br>
-							(2022.05.09 ~ 2023.05.08)
-						</div><!-- 2022-05-11 수정 : 심의필 텍스트 수정 -->
-					</div>
-
-					<div class="intro_fixed_part">
-						<div class="intro_btn_box">
-							<div class="btn_box ty_01">
-								<div class="box_l">
-									<button type="button" class="ebbtn btn_main ty_light">전화상담</button>
-								</div>
-								<div class="box_r">
-									<button type="button" class="ebbtn btn_main ty_bg">신청 접수</button>
+									<p class="icon_info">여신금융협회 심의필 제2024-L1h-08061호<br>(2024.07.09 ~ 2025.07.08)</p>
 								</div>
 							</div>
+
+							<div class="intro_fixed_part">
+								<div class="intro_btn_box">
+									<div class="btn_box">
+										<button type="button" class="ebbtn btn_main ty_bg">상담전화 1644-3900</button>
+									</div>
+								</div>
+							</div>
+
 						</div>
+						
 					</div>
-
 				</div>
-
-
-
 			</div>
+			<!-- //여기까지 컨텐츠 -->
 		</div>
-		<!-- //여기까지 컨텐츠 -->
-
-		<!-- 컨텐츠 하단 버튼영역 -->
-
-
 	</div>
-</div>
 
-<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
-<div id="layoutPopContent" aria-hidden="true"></div>
+	<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+	<div id="layoutPopContent" aria-hidden="true"></div>
 
-
+	
 <script>
 // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
 // pageloadFunc();
 
-introPageFn();//소개페이지 버튼영역 함수
-productAni(); //상품소개 애니메이션 함수
+/* 2024-08-08 2024고도화 : 상품소개 script */
+$(window).on('load',function(){
+	keypadChk();//상품소개 가상키패드 체크
+	dargBottomSheet(); // 상품소개 drag bottom sheet
+});
+
 </script>
 
 

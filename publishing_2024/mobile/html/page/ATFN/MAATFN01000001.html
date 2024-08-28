@@ -28,270 +28,324 @@
 	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
+	<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+		<div class="header renewal_2024 bg_blue"><!-- 2024-08-16 2024고도화 : 고도화 전용 class .renewal_2024 추가, 상품소개 일때 bg-blue 추가 -->
+			<div class="header_area">
 
-
-<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
-
-	<div class="header" >
-		<div class="header_area">
-
-			<div class="header_back">
-				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
-			</div>
-
-			<div class="header_title">
-				<h2 class="ebtitle2">신차</h2><!-- 2022-05-13 수정 : 타이틀변경 -->
-			</div>
-
-			<div class="header_menu">
-				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="container">
-
-		<!-- 컨텐츠 상단 타이틀영역 -->
-		<div class="subheader">
-			<div class="subheader_area">
-				<div class="page_title_part">
-					<h2 class="ebtitle2">신차</h2><!-- 2022-05-13 수정 : 타이틀변경 -->
+				<div class="header_back">
+					<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
 				</div>
+	
+				<div class="header_title">
+					<h2 class="ebtitle2">자동차금융(신차)</h2>
+				</div>
+	
+				<div class="header_menu">
+					<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+				</div>
+	
 			</div>
 		</div>
-
-		<!-- 여기부터 컨텐츠 -->
-		<div class="contents_area">
-			<div class="contents">
-
-
-				<!-- 2022-05-04 수정 : 버튼명변경 및 컨텐츠 내용 변경 -->
-				<div class="inquiry_part">
-					<div class="car_part bgsimplediv">
-
-						<div class="intro_info_box">
-							<div class="text">국산·수입 신차 구분없이 고객님께서 새차를 구입하기 위하여 사용하는 일반적인 금융상품</div>
-							<div class="text">차량 구입 대금을 NH농협캐피탈에서 지급하고, 계약기간 동안 일정 금액을 분할 / 납부하는 상품입니다.</div><!-- 2022-05-13 수정 : 텍스트변경 -->
-							<div class="data">
-								<dl>
-									<dt>최저 금리</dt>
-									<dd>연 <span class="min">4.0</span>%</dd>
-								</dl>
-								<dl>
-									<dt>최대 한도</dt>
-									<dd><span class="max">차량가격</span>이내</dd>
-								</dl>
+		<div class="container renewal_2024"><!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+			<!-- 여기부터 컨텐츠 -->
+			<div class="contents_area product_info car_new"><!-- 상품소개 구분 class | 상품공통 : product_info -->
+				<div class="contents">				
+					<div class="section desc_area">
+						<div class="prod_info">
+							<p class="prod_tit">NH농협캐피탈 자동차금융(신차)</p>
+							<p class="prod_txt">새 차 탈때 신차 대출</p>
+							<ul class="prod_data">
+								<li class="max_limit">
+									<span class="tit">최대 한도</span>
+									<strong class="txt"><span class="unit">차량가격 이내</span></strong>
+								</li>
+								<li class="interest_rate">
+									<span class="tit">최저금리(연)</span>
+									<strong class="txt"><span class="num">5.0</span><span class="unit">%</span></strong>
+								</li>
+							</ul>
+							<div class="call_box">
+								<div><a href="#none" class="btn_txt btn_branch">지점찾기</a></div>
+								<div><a href="tel:1644-3900" class="btn_txt btn_tel">상담전화 1644-3900</a></div>
 							</div>
-						</div>
-
-						<div class="intro_btn_box">
-							<div class="btn_box"><!-- 2022-05-09 수정 : 버튼디자인 수정으로 상하단 클래스 제거 -->
-								<div class="box_l">
-									<button type="button" class="ebbtn btn_main ty_light">전화상담신청</button>
-								</div>
-								<div class="box_r">
+							<div class="btn_box_wrap">
+								<div class="btn_box">
 									<button type="button" class="ebbtn btn_main ty_bg">대출신청</button>
 								</div>
 							</div>
 						</div>
-
-						<div class="call_box">
-							<a href="tel:1644-3900" class="ebbtn btn_text_link">
-								<span class="ebicon icon_phone"></span>
-								<span class="text">상담전화</span>
-								<span class="tel">1644-3900</span>
-							</a>
-							<!-- 2022-05-13 수정 : 지점찾기버튼추가 -->
-							<a href="#" class="ebbtn btn_text_link">
-								<span class="ebicon icon_branch"></span>
-								<span class="text">지점찾기</span>
-							</a>
-							<!--//2022-05-13 수정 : 지점찾기버튼추가 -->
+					</div>
+					<div class="section dragging_bs">
+						<div class="drag_handle">
+							<button type="button" class="btn_handle"></button>
 						</div>
-
-					</div>
-
-					<div class="tab_pack ty_normal" data-module-id="intronewcartab">
-						<ul class="ebtab">
-							<li class="active">
-								<button type="button" class="ebbtn btn_tab">상품소개</button>
-							</li>
-							<li class="">
-								<button type="button" class="ebbtn btn_tab">상세정보</button>
-							</li>
-						</ul>
-					</div>
-
-					<div class="tabcontent_pack" data-module-for="intronewcartab">
-						<ul class="ebtab_content">
-							<li class="active">
-
-								<div class="intro_part">
-									<div class="intro_main">
-
-										<div class="title_wrap">
-											<div class="title">
-												승용 신차 (국산/수입)<br>
-												15인승 이하 승합<br>
-												2.5톤 이하 화물
-											</div>
-											<div class="desc">
-												자동차를 구입하고자 하는 개인, 개인사업자, 법인
+						<div class="cont_detail">
+							<div class="scroll">
+								
+								<!-- accordion_wrap -->
+								<div class="accordion_wrap">
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">상환방식을 알아볼까요?</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
 											</div>
 										</div>
-										<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
-										<div class="img_wrap widediv">
-											<div class="loan_img_box">
-												<div class="imgani_box">
-													<div class="ani ani_1">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/car/intro_car_ani3.png" alt="승용 신차">
-														</span>
-													</div>
-													<div class="ani ani_2">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/car/intro_car_ani2.png" alt="15인승 이하 승합">
-														</span>
-													</div>
-													<div class="ani ani_3">
-														<span class="img_box">
-															<img src="../../../resource/image/contents/car/intro_car_ani1.png" alt="2.5톤 이하 화물">
-														</span>
-													</div>
-												</div>
-											</div>
+										<div class="accordion_content">
+											<ul class="small_title_pack">
+												<li>
+													<strong class="tit">원리금균등상환</strong>
+													<div class="cont">매월 일정한 금액(원금+이자)을 상환하는 방식</div>
+												</li>
+											</ul>
+											<div class="img"><img src="../../../resource/image/contents/cdln/img_repayment01.png" alt="대출기간동안 매월 일정한 금액(원금+이자)을 상황하는 방식으로 대출기간이 지날수로 이자 비율이 줄어듭니다."></div>
 										</div>
-										<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
 									</div>
 
-									<div class="layoutline_light"></div>
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">상품소개</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
+											</div>
+										</div>
+										<div class="accordion_content">
+											<div class="txt_box">
+												<p class="tit">새 차 구매 대출상품의 스테디셀러</p>
+												<p class="txt">국산&middot;수입 신차 구분없이 고객님께서 새차를 구입하기 위하여 사용하는 일반적인 금융상품으로 차량 구입 대금을 NH농협캐피탈에서 지급하고, 계약기간동안 일정 금액을 분할하고 납부하는 상품입니다.</p>
+											</div>
+											<ul class="small_title_pack">
+												<li>
+													<strong class="tit">금리</strong>
+													<div class="cont">연 5.0% ~ 19.9%</div>
+												</li>
+												<li>
+													<strong class="tit">한도</strong>
+													<div class="cont">차량가격 이내</div>
+												</li>
+												<li>
+													<strong class="tit">기간</strong>
+													<div class="cont">12, 24, 36, 48, 60개월</div>
+												</li>
+												<li>
+													<strong class="tit">대상</strong>
+													<div class="cont">승용 신차(국산/수입), 15인승 이하승합, 2.5톤 이하 화물 자동차를 구입하고자 하는 개인, 개인사업자, 법인 고객</div>
+													<ul class="ebullet_circle">
+														<li>고객의 개인신용평점 등에 따라 금리가 차등 적용됩니다.</li>
+													</ul>
+												</li>
+											</ul>
+											<p class="base_date">2022년 11월 11일 기준</p>
+										</div>
+									</div>
 
-									<dl class="small_title_pack">
-										<dt>금리</dt>
-										<dd><b>연 4.0 % ~ 10.5 %</b></dd><!-- 2022-05-27 수정 : 문구수정 -->
-									</dl>
-									<dl class="small_title_pack">
-										<dt>한도</dt>
-										<dd>차량가격 이내</dd>
-									</dl>
-									<dl class="small_title_pack">
-										<dt>기간</dt>
-										<dd>18, 24, 36, 44, 48, 60 개월</dd>
-									</dl>
-									<div class="loan_info_part">
-										<div class="loan_info_pack">
-											<div class="title">신청 프로세스</div>
-											<ul class="process_list ty_intro">
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">상세정보</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
+											</div>
+										</div>
+										<div class="accordion_content">
+											<ul class="small_title_pack">
 												<li>
-													<div class="title_wrap">
-														<span class="num">1</span>
-														<p class="title">상담신청</p>
+													<strong class="tit">취급수수료</strong>
+													<div class="cont">없음</div>
+												</li>
+												<li>
+													<strong class="tit">중도상환수수료율</strong>
+													<div class="cont">2.0%</div>
+													<div class="bullet_box">
+														<p class="bullet_tit">중도상환수수료 산식</p>
+														<ul class="bullet_list">
+															<li>
+																<strong class="tit">약정만기 1년이상</strong>
+																<p class="txt">상환원금 x 1% + 상환원금 x(중도상환수수료율– 1%) X 잔존기간 / (대출기간 - 30일)</p>
+															</li>
+															<li>
+																<strong class="tit">약정만기 1년미만</strong>
+																<p class="txt">상환원금 x 중도상환수수료율 x 잔존기간 / (대출기간 - 30일)</p>
+															</li>
+														</ul>
+														<ul class="ebullet_circle">
+															<li>30일 미만 상환 시 '대출 사용기간'을 30일로 간주합니다. <span class="txt_point">단, 대출계약이 성립한 날부터 3년 이후 상환 시 중도상환수수료 면제(할부/리스 제외)</span></li>
+														</ul>
 													</div>
 												</li>
 												<li>
-													<div class="title_wrap">
-														<span class="num">2</span>
-														<p class="title">상담원 연락</p>
-													</div>
+													<strong class="tit">부대비용</strong>
+													<div class="cont">근저당설정 시 해지 비용은 고객 부담이며, 인지세는 당사와 고객이 50%씩 부담합니다.</div>
 												</li>
 												<li>
-													<div class="title_wrap">
-														<span class="num">3</span>
-														<p class="title">한도확인</p>
-													</div>
+													<strong class="tit">이자납부시기</strong>
+													<div class="cont">매월납부</div>
 												</li>
 												<li>
-													<div class="title_wrap">
-														<span class="num">4</span>
-														<p class="title">약정서 작성(온라인 약정)</p>
+													<strong class="tit">연체이자율</strong>
+													<div class="cont color02">약정이율 + 최대 3% (단, 법정 최고금리 이내)</div>
+												</li>
+											</ul>
+											<div class="table_conts_part">
+												<div class="conts_title_pack">
+													<div class="ebtitle_small">필요서류</div>
+												</div>
+												<div class="table_info_pack">
+													<table class="ebtable">
+														<caption>필요서류</caption>
+														<colgroup>
+															<col style="width: 33%;">
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">구분</th>
+																<th scope="col">필요서류</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">공통</th>
+																<td class="txt_l">
+																	<p>차량등록증사본</p>
+																	<p>매매계약서</p>
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">개인/<br> 개인사업자</th>
+																<td class="txt_l">
+																	<p>운전면허증사본<br> (면허 유 : 신분증 대체)</p>
+																	<p>주민등록등본</p>
+																	<p>인감증명서</p>
+																	<p>자동이체통장사본</p>
+																	<p>소득증명서류</p>
+																	<p>- 개인 : 소득금액증명</p>
+																	<p>- 개인사업자 : 부가세표준증명</p>
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">법인</th>
+																<td class="txt_l">
+																	<p>법인등기부등본</p>
+																	<p>법인인감증명서 / 사업자등록증사본</p>
+																	<p>재무제표</p>
+																	<p>주주명부</p>
+																	<p>자동이체통장사본</p>
+																	<p>보증인 인감증명서 / 주민등록등본 / 신분증 사본</p>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<ul class="ebullet_circle">
+													<li>심사 시 추가적인 서류를 요청할 수 있습니다.</li>
+												</ul>
+											</div>
+											<p class="base_date">2022년 11월 11일 기준</p>
+										</div>
+									</div>
+
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">진행절차</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
+											</div>
+										</div>
+										<div class="accordion_content">
+											<ul class="process_list">
+												<li class="step01">
+													<div class="process_box">
+														<div class="tit"><span class="hidden">STEP01</span></div>
+														<p class="txt">상담신청</p>
 													</div>
 												</li>
-												<li>
-													<div class="title_wrap">
-														<span class="num">5</span>
-														<p class="title">계약실행</p>
+												<li class="step02">
+													<div class="process_box">
+														<div class="tit"><span class="hidden">STEP02</span></div>
+														<p class="txt">상담원 연락</p>
+													</div>
+												</li>
+												<li class="step03">
+													<div class="process_box">
+														<div class="tit"><span class="hidden">STEP03</span></div>
+														<p class="txt">한도확인</p>
+													</div>
+												</li>
+												<li class="step04">
+													<div class="process_box">
+														<div class="tit"><span class="hidden">STEP04</span></div>
+														<p class="txt">온라인 약정</p>
+													</div>
+												</li>
+												<li class="step05">
+													<div class="process_box">
+														<div class="tit"><span class="hidden">STEP05</span></div>
+														<p class="txt">계약실행</p>
 													</div>
 												</li>
 											</ul>
 										</div>
 									</div>
 
-									<div class="base_date">2021년 07월 01일 기준</div><!-- 2022-04-28 수정 : 기준날짜 수정 -->
+									<div class="accordion_pack ty_boxing">
+										<div class="accordion_title" data-function="accordion" tabindex="0">
+											<div class="title">안내 유의사항</div>
+											<div class="control">
+												<button type="button" class="ebbtn btn_accordion" title="아코디언열기"></button>
+											</div>
+										</div>
+										<div class="accordion_content">
+											<ul class="ebullet_circle noti_list">
+												<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
+												<li><span class="color07">상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다.</span></li>
+												<li><span class="color07">개인신용평점 하락시 금융거래와 관련된 불이익일 발생할 수 있습니다.</span></li>
+												<li>대출취급이 부적정한 경우(개인신용평점 낮음, 등) 대출이 제한될 수 있습니다.</li>
+												<li><span class="color07">일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</span></li>
+												<li>금융소비자는 금소법 제 19조 제 1항에 따라 해당상품에 대하여 설명을 받을 권리가 있습니다.</li>
+											</ul>
+										</div>
+									</div>
 
-								</div>
-
-							</li>
-							<li>
-
-								내용 MAATFN01000002.html 확인
-
-							</li>
-						</ul>
-					</div>
-
-					<div class="layoutline nopad"></div>
-
-					<div class="guide_part">
-						<div class="ebbullet_title">안내 유의사항</div>
-
-						<!-- 2022-05-13 수정 : 안내유의사항 내용수정 -->
-						<!-- 2022-05-27 수정 : 문구수정 -->
-						<ul class="ebullet_circle">
-							<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
-							<li><b>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다.</b></li>
-							<li><b>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</b></li>
-							<li>대출취급이 부적정한 경우(개인 신용평점 낮음 등) 대출이 제한될 수 있습니다.</li>
-							<li><b>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</b></li>
-							<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품 또는 서비스에 대하여 설명을 받을 권리가 있습니다.</li>
-						</ul>
-						<!-- //2022-05-27 수정 : 문구수정 -->
-						<!-- 2022-05-13 수정 : 안내유의사항 내용수정 -->
-
-						<div class="sub_info">
-							※ 여신금융협회 심의필 제 2021 - C1h - 08059호<br>
-							( 2021.07.01 ~ 2022.06.30 )
-						</div><!-- 2022-05-25 수정 : 심의필 수정 -->
-					</div>
-
-					<div class="intro_fixed_part">
-						<div class="intro_btn_box">
-							<div class="btn_box"><!-- 2022-05-09 수정 : 버튼디자인 수정으로 상하단 클래스 제거 -->
-								<div class="box_l">
-									<button type="button" class="ebbtn btn_main ty_light">전화상담신청</button>
-								</div>
-								<div class="box_r">
-									<button type="button" class="ebbtn btn_main ty_bg">대출신청</button>
+									<p class="icon_info">여신금융협회 심의필 제2024-L1h-07104호<br>(2024.06.19 ~ 2025.06.18)</p>
 								</div>
 							</div>
+
+							<div class="intro_fixed_part">
+								<div class="intro_btn_box">
+									<div class="btn_box">
+										<div class="box_l">
+											<button type="button" class="ebbtn btn_main ty_light">전화상담신청</button>
+										</div>
+										<div class="box_r">
+											<button type="button" class="ebbtn btn_main ty_bg">대출신청</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
+						
 					</div>
-
 				</div>
-				<!-- //2022-05-04 수정 : 버튼명변경 및 컨텐츠 내용 변경 -->
-
-
-
 			</div>
+			<!-- //여기까지 컨텐츠 -->
 		</div>
-		<!-- //여기까지 컨텐츠 -->
-
-		<!-- 컨텐츠 하단 버튼영역 -->
-
-
 	</div>
-</div>
 
-<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
-<div id="layoutPopContent" aria-hidden="true"></div>
+	<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+	<div id="layoutPopContent" aria-hidden="true"></div>
 
-
+	
 <script>
 // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
 // pageloadFunc();
 
-introPageFn();//소개페이지 버튼영역 함수
-productAni(); //상품소개 애니메이션 함수
+/* 2024-08-08 2024고도화 : 상품소개 script */
+$(window).on('load',function(){
+	keypadChk();//상품소개 가상키패드 체크
+	dargBottomSheet(); // 상품소개 drag bottom sheet
+});
+
 </script>
 
 
