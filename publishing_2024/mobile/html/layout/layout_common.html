@@ -4,17 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 	<meta name="format-detection" content="telephone=no">
-	<title>NH농협캐피탈-전체메뉴(MA)</title>
+	<title>전체메뉴(MA) | NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<!-- <link rel="stylesheet" href="../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../resource/css/ui_style.css"> -->
+
+	<!-- Publishing JS -->
+	<!-- <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../resource/js/ui_plugin.js"></script>
+	<script src="../../resource/js/ui_common.js"></script> -->
+
+	<!-- Plugin JS -->
+    <script src="../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
 
 	<!-- Publishing CSS -->
 	<link rel="stylesheet" href="../../resource/css/ui_plugin.css">
 	<link rel="stylesheet" href="../../resource/css/ui_style.css">
-
-	<!-- Publishing JS -->
-	<script src="../../resource/js/jquery-3.6.0.min.js"></script>
-	<script src="../../resource/js/jquery-ui-1.12.1.min.js"></script>
+    
+	<!-- Publishing JS -->	
 	<script src="../../resource/js/ui_plugin.js"></script>
 	<script src="../../resource/js/ui_common.js"></script>
+	<script src="../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
@@ -70,15 +89,15 @@
 				</div>
 
 				<!-- 2024-07-30 2024고도화 : 검색영역 추가 -->
-				 <div class="gnb-search input_pack"><!-- 입력 후 이동인지, 클릭시 이동인지 확인 후 .input_pack 추가 -->
-					<input type="text" class="gnb-search-input" title="메뉴 검색어 입력" placeholder="검색으로 더 많은 정보를 찾아보세요.">
+				 <div class="gnb_search input_pack"><!-- 입력 후 이동인지, 클릭시 이동인지 확인 후 .input_pack 추가 -->
+					<input type="text" class="gnb_search_input" title="메뉴 검색어 입력" placeholder="메뉴를 찾아 보세요"><!-- 2024-08-27 2024고도화 : placeholder 텍스트 변경 -->
 					<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
-					<button type="button" class="ebbtn gnb-search-btn" title="검색결과 화면으로 이동"></button>
+					<button type="button" class="ebbtn gnb_search_btn" title="검색"></button>
 				 </div>
 				<!-- //2024-07-30 2024고도화 : 검색영역 추가 -->
 
 				<div class="quick_part">
-					<ul class="quick-menu-list"><!--  2024-07-30 2024고도화 : .quick-menu-list 클래스 추가 -->
+					<ul class="quick_menu_list"><!--  2024-07-30 2024고도화 : .quick_menu_list 클래스 추가 -->
 						<li>
 							<a href="#" class="ebbtn btn_quickmenu">
 								<span class="ebicon icon_quickcerti"></span>
@@ -157,9 +176,19 @@
 													<span class="name">대출상품</span>
 												</div>
 												<ul class="depth3">
-													<li>
+													<!-- <li>
 														<a href="#" class="menuname">
 															<span class="name">상품소개</span>
+														</a>
+													</li> -->
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신용대출(신규)</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신용대출(추가)</span>
 														</a>
 													</li>
 													<li>

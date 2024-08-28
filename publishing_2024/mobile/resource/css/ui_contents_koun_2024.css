@@ -46,7 +46,6 @@
 .renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
 .renewal_2024 .product_info .icon_box{position:relative; margin-bottom:20px; padding-top:96px; background:url(../image/contents/cdln/ico_noti.png) no-repeat top center; background-size:80px auto; }
 .renewal_2024 .product_info .icon_box .txt_noti{font-size:15px; font-weight:700; text-align:center; }
-
 .renewal_2024 .product_info .call_box{position:absolute; bottom:94px; left:24px;}
 .renewal_2024 .product_info .call_box > div{margin-top:12px;}
 .renewal_2024 .product_info .call_box > div:first-child{margin-top:0;}
@@ -54,6 +53,10 @@
 .renewal_2024 .product_info .call_box .btn_txt:after{content:""; display:block; position:absolute; top:50%; right:0; margin-top:-8px; width:16px; height:16px; background:url(../image/contents/cdln/icon_arrow_right_white.png) no-repeat center center; background-size:16px auto;}
 .renewal_2024 .product_info .call_box .btn_txt.btn_branch{background:url(../image/contents/cdln/icon_branch_white.png) no-repeat center left; background-size:16px auto;}
 .renewal_2024 .product_info .call_box .btn_txt.btn_tel{background:url(../image/contents/cdln/icon_tel_white.png) no-repeat center left; background-size:16px auto;}
+/*type2(스탁론,)*/
+.renewal_2024 .product_info .prod_info.type_02{background-position:bottom 149px right; }
+.renewal_2024 .product_info .prod_info.type_02:after{bottom:148px;}
+.renewal_2024 .product_info .type_02 .call_box{bottom:146px;}
 
 .renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
 .renewal_2024 .prod_info .prod_txt{font-size:26px; color:#fff; font-weight:700;}
@@ -61,10 +64,16 @@
 .renewal_2024 .prod_info .prod_data:after{content:""; display:block; clear:both;}
 .renewal_2024 .prod_info .prod_data .tit{display:block; font-size:14px; color:#fff;}
 .renewal_2024 .prod_info .prod_data .txt{display:block; font-size:26px; color:#fff; font-weight:700;}
+.renewal_2024 .prod_info .prod_data .txt .num{font-size:30px}
 .renewal_2024 .prod_info .prod_data > li{margin-left:24px;}
 .renewal_2024 .prod_info .prod_data > li:first-child{margin-left:0;}
-.renewal_2024 .prod_info .btn_box{position:absolute; left:0; bottom:0; width:100%; padding:0 20px 16px; box-sizing: border-box;}
-.renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{background-color:#0a47d6;}
+.renewal_2024 .prod_info .btn_box_wrap{position:absolute; left:0; bottom:0; width:100%; padding:0 20px 16px; box-sizing: border-box;}
+.renewal_2024 .prod_info .btn_box_wrap .btn_box.half .box_l,
+.renewal_2024 .prod_info .btn_box_wrap .btn_box.half .box_r{width: calc(50% - 5px);}
+.renewal_2024 .prod_info .btn_box_wrap .btn_box + .btn_box{margin-top:10px;}
+.renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{border-radius:18px; background-color:#0a47d6;}
+.renewal_2024 .prod_info .ebbtn.btn_sub{font-size:16px; font-weight:500; color:#062A7C; border-radius:12px; background-color:#82A8FF;}
+
 
 .renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff;}
 .renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 48px); overflow:hidden;}
@@ -133,6 +142,7 @@
 .renewal_2024 .product_info .process_box:after{content:""; display:block; clear:both;}
 .renewal_2024 .product_info .process_box .tit{display:inline-block; width:30px; height:44px; align-content:center; }
 .renewal_2024 .product_info .process_box .txt{margin-left:25px; align-content:center; font-size:15px; font-weight:700;}
+.renewal_2024 .product_info .process_box .txt .txt_normal{font-weight:400;}
 .renewal_2024 .product_info .step01 .process_box .tit{background:url(../image/contents/cdln/img_step01_x1.png) no-repeat 0 0;}
 .renewal_2024 .product_info .step02 .process_box .tit{background:url(../image/contents/cdln/img_step02_x1.png) no-repeat 0 0;}
 .renewal_2024 .product_info .step03 .process_box .tit{background:url(../image/contents/cdln/img_step03_x1.png) no-repeat 0 0;}
