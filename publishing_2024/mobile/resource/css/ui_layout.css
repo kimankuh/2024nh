@@ -128,7 +128,7 @@
 .header .header_area .tab_pack .ebtab > li {  }
 .header .header_area .tab_pack .ebtab > li + li { padding-right: 0; }
 
-/* 2023-07-10 2024고도화 : 헤더 영역 UI변경 */
+/* 2024-07-10 2024고도화 : 헤더 영역 UI변경 */
 .renewal_2024 .header_alarm .header_alarm_login + .btn_header_point {margin-left:0;}
 .renewal_2024 .header_alarm .btn_header_point + .btn_header_alarm {margin-left:5px;}
 .renewal_2024 .header_alarm .header_alarm_login {margin-right:8px;font-size:14px;font-weight:500;text-decoration:underline;line-height:40px;}
@@ -151,7 +151,7 @@
 .totalmenu_layer.show { display: block; }
 .totalmenu_layer .layer { position: relative; height: 100%; }
 .totalmenu_layer .layer .top_area { padding: 0 20px 20px; box-sizing: border-box; background:#F3F4F8;border-radius:0 0 26px 26px; }/* 2024-07-30 2024고도화 : 패딩, 배경색 변경 */
-.totalmenu_layer .layer .top_part { display: table; width: 100%; height: 55px; padding-right: 23px; box-sizing: border-box; }
+.totalmenu_layer .layer .top_part { display: table; width: 100%; height: 55px; padding-right: 27px; box-sizing: border-box; }/* 2024-08-28 2024고도화 : 패딩 변경 */
 .totalmenu_layer .layer .top_part .cell { display: table-cell; vertical-align: middle; font-size: 19px; font-weight: bold; color: #ffffff; }
 .totalmenu_layer .layer .top_part .cell + .cell { text-align: right;font-size:0; }
 .totalmenu_layer .layer .log_part { padding: 9px 0 0; font-size: 13px; color: #909090;} /* A11Y 240208 명도대비 컬러 수정 *//* 2024-07-30 2024고도화 : 폰트 및 패딩 변경 */
@@ -159,10 +159,11 @@
 .totalmenu_layer .layer .log_part > span {padding-left:8px;}/* 2024-07-30 2024고도화 : 추가 */
 .totalmenu_layer .layer .ebbtn.btn_member { position:relative;margin-top: 1px; padding-right: 15px; font-size: 17px; font-weight: normal; color:#303030; /*background: url('../image/layout/btn_member_arrow.png') no-repeat right center; background-size: 6px;*/ }/* 2024-07-30 2024고도화 : 폰트 스타일 변경 및 bg제거 */
 .totalmenu_layer .layer .ebbtn.btn_setting { width: 35px; height: 35px; background: url('../image/layout/btn_setting.png') no-repeat center; background-size: 17px; }
-.totalmenu_layer .layer .ebbtn.btn_home { width: 35px; height: 35px; background: url('../image/layout/btn_gohome_02.png') no-repeat center; background-size: 24px; }/* 2024-07-30 2024고도화 : 이미지 변경 */
+.totalmenu_layer .layer .ebbtn.btn_home { width: 30px; height: 35px; background: url('../image/layout/btn_gohome_02.png') no-repeat center; background-size: 24px; }/* 2024-07-30 2024고도화 : 가로값, 이미지 변경 */
 .totalmenu_layer .layer .ebbtn.btn_logout { padding: 6px 15px; font-size: 13px; font-weight: 500; color: #ffffff; border: 1px solid #627a94; border-radius: 15px; }
-
 .totalmenu_layer .log_part { font-size: 13px; color: #788ca3; }
+.totalmenu_layer .btn_header_point {position: relative;width:30px;height:40px; background: url('../image/layout/header_btn_point_02.png') no-repeat center; background-size:24px;}/* 2024-08-28 2024고도화 : 전체메뉴 헤더 영역 UI 변경 */
+.totalmenu_layer .btn_header_point + .ebbtn.btn_home {margin-left:6px;}
 
 /* .totalmenu_layer .layer .quick_part { padding: 0 0 21px; }  2024-07-30 2024고도화 : 삭제 */
 .totalmenu_layer .layer .quick_part { display: table; width: 100%; }
@@ -199,6 +200,7 @@
 /* .totalmenu_layer .layer .totalmenu_area .gnb .depth2 > li {  } */
 .totalmenu_layer .layer .totalmenu_area .gnb .depth2 > li > .menuname { display: block; font-size: 14px; font-weight: bold; color: #303030; }
 .totalmenu_layer .layer .totalmenu_area .gnb .depth2 > li > .menuname .name { display: block; padding:0; font-size: 13px; font-weight:normal; color: #909090; }/* 2024-07-31 2024고도화 : 수정 */
+.totalmenu_layer .layer .totalmenu_area .gnb .depth2 > li > a.menuname .name {color:#303030;font-size:16px;font-weight:bold;}/* 2024-08-28 2024고도화 : 2뎁스 타이틀겸링크 case 추가 */
 .totalmenu_layer .layer .totalmenu_area .gnb .depth3 { margin-top:18px;/*margin-bottom: 21px;*/ }/* 2024-07-31 2024고도화 : 수정 */
 /* .totalmenu_layer .layer .totalmenu_area .gnb .depth2 > li:last-child .depth3 { margin-bottom: 32px; } 2024-07-31 2024고도화 : 삭제 */
 .totalmenu_layer .layer .totalmenu_area .gnb .depth2 > li + li > .menuname {padding-top:40px;}
@@ -209,6 +211,18 @@
 .totalmenu_layer .layer .totalmenu_area .gnb .depth3 > li > .menuname .name { display: block; padding:0; }/* 2024-07-31 2024고도화 : 수정 */
 .totalmenu_layer .layer .totalmenu_area .gnb .depth3 > li + li {margin-top:24px;}
 
+/* 2024-08-28 2024고도화 : 전체메뉴 depth4 */
+.totalmenu_layer .totalmenu_area .menuname.has_menu {display:relative;}
+.totalmenu_layer .totalmenu_area .menuname.has_menu:before,
+.totalmenu_layer .totalmenu_area .menuname.has_menu:after {content:'';position:absolute;width:10px;height:2px;background-color:#707070;}
+.totalmenu_layer .totalmenu_area .menuname.has_menu:before {top:7px;right:0;}
+.totalmenu_layer .totalmenu_area .menuname.has_menu:after {top:7px;right:0;transform:rotate(-90deg);}
+.totalmenu_layer .totalmenu_area .menuname.has_menu.on:after {display:none;}
+.totalmenu_layer .totalmenu_area .depth4 {display:none;}
+.totalmenu_layer .totalmenu_area .depth4 > li {margin-top:12px;}
+.totalmenu_layer .totalmenu_area .depth4 > li .menuname {display:block;}
+.totalmenu_layer .totalmenu_area .depth4 > li .name {font-size:14px;}
+
 /* 2024-07-30 2024고도화 : 전체메뉴 UI 개선 */
 .totalmenu_layer .layer .ebbtn.btn_member .name {padding-right:5px;font-weight:bold;}
 .totalmenu_layer .layer .ebbtn.btn_member:before,
@@ -216,9 +230,10 @@
 .totalmenu_layer .layer .ebbtn.btn_member:before {top:8px;right:0;transform:rotate(45deg);}
 .totalmenu_layer .layer .ebbtn.btn_member:after {top:14px;right:0;transform:rotate(-45deg);}
 
+
 /* 2024-07-30 2024고도화 : 전체메뉴 > 검색 */
-.log_part + .gnb_search {margin-top:8px;}
-.gnb_search {position:relative;}
+/* .log_part + .gnb_search {margin-top:8px;} */
+.gnb_search {position:relative;margin-top:8px;}
 .gnb_search.input_pack {height:44px;}
 .gnb_search.input_pack:after {display:none;}
 .gnb_search_input {padding:10px 48px 10px 12px;width:100%;height:44px;font-size:14px;border:none;border-radius:12px;box-sizing:border-box;}
