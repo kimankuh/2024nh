@@ -25,11 +25,17 @@
 .ebbtn.btn_small_wh {color:var(--grayColor02);background-color:#fff;}
 .ebbtn.btn_small_wh.r_arrow:after {background:url('../image/main/ico_arrow_9x13_white.png') no-repeat;background-size:100%;}
 .ebbtn.btn_sm_main {padding:0 12px;color:#fff;font-size:13px;font-weight:400;height:29px;line-height:29px;background-color:var(--primaryColor);border-radius:12px;}
+.btn_box.w_equal {display:flex;}
+.btn_box.w_equal .box_l,
+.btn_box.w_equal .box_r {width:50%;}
 
 /* 공통- as is */
 .renewal_2024 .contents_bottom_area.ty_fixed .box_l {width:40%;}
 .renewal_2024 .contents_bottom_area.ty_fixed .box_r {width:calc(60% - 10px);}
 .page_subtitle_part .sub_info {margin-top:6px;color:var(--primaryColor);}
+.ebullet_circle .color01 {color:var(--pointColor02)!important;}
+.ebullet_circle .color03 {color:var(--primaryColor)!important;}
+.modal_popup .page_title_part.sm .title {font-size:18px;}
 
 /* 캡션 */
 .renewal_2024 .form_pack + .caption_text {margin-top:12px;}
@@ -343,9 +349,13 @@
 .renewal_2024 .section_appdown_intro .ebullet_circle {margin-top:20px;}
 .renewal_2024 .section_appdown_intro .ebullet_circle li + li {margin-top:16px;}
 
-/* 신용대출 > 인증코드찾기 */
+/* 신용대출 > 인증코드찾기 - 팝업 title case */
 .modal_popup.ty_alert .popup_layout .popup_body .popup_container.pd20 {padding:20px;}
 .modal_popup .popup_layout .popup_header .ebtitle3.alL {padding-left:20px;font-size:16px;font-weight:700;}
+.modal_popup .popup_header .popup_title .popup_logo + .title {margin-left:4px;}
+.modal_popup .popup_header .popup_title .popup_logo {display:inline-block;width:146px;height:55px;}
+.modal_popup .popup_header .popup_title .popup_logo img {width:100%;vertical-align:middle;}
+.modal_popup .popup_header .popup_title .title {display:inline-block;font-size:16px;font-weight:bold;vertical-align:top;}
 
 /* 신용대출 > 신용대출 이어하기 알럿 */
 .alert_text_part .text_strong {font-weight:bold;color:var(--grayColor01);}
@@ -358,7 +368,7 @@
 .header_gnb_search.input_pack {margin-top:6px;padding-left:31px;height:44px;}
 .header_gnb_search.input_pack:after {display:none;}
 .header_gnb_search.input_pack .gnb_search_input {font-size:15px;background-color:#F5F6FA;}
-.header_gnb_search.input_pack .btn_input_clear {right:40px;width:32px;height:44px;background:url('../image/component/ico_input_clear_24x24.png') no-repeat center center;background-size:24px auto;}
+.header_gnb_search.input_pack .btn_input_clear {right:40px;width:32px;height:44px;background:url('../image/component/ico_input_clear_24X24.png') no-repeat center center;background-size:24px auto;}
 .header_gnb_search.input_pack .gnb_search_btn {width:40px;}
 .renewal_2024 .recently_keyword_box {margin-left:-5px;margin-right:-5px;padding-top:20px;}
 .renewal_2024 .recently_keyword_head {display:flex;justify-content:space-between;}
