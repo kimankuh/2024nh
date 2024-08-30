@@ -301,7 +301,7 @@ button, a, label, select, div { -webkit-tap-highlight-color: rgba(0,0,0,0.1); }
 .cellbox { position: relative; display: table; width: 100%; }
 .cellbox .cell { display: table-cell; vertical-align: middle; }
 .cellbox .cell + .cell { text-align: right; }
-.cellbox .cell + .cell .ebbtn.btn_icon_golink { position: absolute; top: 50%; right: -12px; margin-top: -20px; }
+.cellbox .cell + .cell .ebbtn.btn_icon_golink { position: absolute; top: 50%; right: -7px; margin-top: -20px; }/* 2024-08-29 2024고도화 : right 위치 변경 */
 
 .reconfirm_text_box { padding-top: 38px; text-align: center; }
 

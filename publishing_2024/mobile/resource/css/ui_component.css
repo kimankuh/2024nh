@@ -62,7 +62,7 @@
 .ebtitle_normal + .small_title_part { margin-top: 23px; }
 
 /* 언더라인 텍스트 */
-.ebunderline.ty_blue { color: #0066b1; border-bottom: 1px solid #0066b1; }
+.ebunderline.ty_blue { color: #2f6dfc; border-bottom: 1px solid #2f6dfc; }/* 2024-08-29 2024고도화 : 색상 변경 */
 
 /* 접근성 숨김텍스트 */
 .hidden_txt { overflow: hidden; position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; clip: rect(0,0,0,0); border: 0; }
