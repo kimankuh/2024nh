@@ -511,6 +511,8 @@
     0% { transform-origin:50% 50%;transform:rotate(0deg);}
     100% { transform-origin:50% 50%;transform:rotate(360deg);}
 }
+.circle_loading_layer + .alert_text_part,
+.alert_text_part + .alert_text_part {margin-top:20px;}/* 2024-08-30 2024고도화 : 마진 추가 */
 
 /*
 	에러페이지

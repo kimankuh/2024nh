@@ -24,6 +24,7 @@
 .renewal_2024 .tooltip_msg_pack{background-color:#fff}
 .renewal_2024 .tooltip_msg_pack .exptxt{font-size:15px; line-height:21px;}
 
+.renewal_2024 .link_blue_underline{color:#2F6DFC; text-decoration:underline;}
 
 /*============= content ============*/
 /* 공통 > 상품소개 */
@@ -269,8 +270,11 @@
 .renewal_2024 .landing .limit_list > li{position:relative; margin-top:24px; padding-top:24px; border-top:1px solid #F0F0F0;}
 .renewal_2024 .landing .limit_list > li:first-child{border:0; margin-top:0; padding-top:0;}
 .renewal_2024 .landing .limit_list > li .img{width:100%; border-radius:24px; overflow:hidden;}
-.renewal_2024 .landing .limit_list > li .tit + .txt{margin-top:8px;}
-.renewal_2024 .landing .limit_list > li .tit + .img{margin-top:24px;}
+.renewal_2024 .landing .limit_list > li .tit + .txt,
+.renewal_2024 .landing .limit_list > li .tit + .ebullet_circle{margin-top:8px;}
+.renewal_2024 .landing .limit_list > li .txt + .tit,
+.renewal_2024 .landing .limit_list > li .tit + .img,
+.renewal_2024 .landing .limit_list > li .ebullet_circle + .img{margin-top:24px;}
 .renewal_2024 .landing .limit_list > li .tit > span{position:relative; display:inline-block;}
 .renewal_2024 .landing .limit_list > li .tit > span.ico_right_arr{padding-left:24px; background:url(../image/contents/cdln/icon_arrow_right.png) no-repeat left 2px center; background-size:20px auto;}
 
