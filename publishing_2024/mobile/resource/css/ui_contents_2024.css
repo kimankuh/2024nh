@@ -29,6 +29,7 @@
 /* 공통- as is */
 .renewal_2024 .contents_bottom_area.ty_fixed .box_l {width:40%;}
 .renewal_2024 .contents_bottom_area.ty_fixed .box_r {width:calc(60% - 10px);}
+.page_subtitle_part .sub_info {margin-top:6px;color:var(--primaryColor);}
 
 /* 캡션 */
 .renewal_2024 .form_pack + .caption_text {margin-top:12px;}
@@ -57,7 +58,7 @@
 
 /* 메인 - 상품 영역 공통 */
 .renewal_2024 .contents {padding-bottom:40px;}
-.renewal_2024 .main_section {position:relative;margin:0 -25px;padding:40px 20px;}
+.renewal_2024 .main_section {z-index:1;position:relative;margin:0 -25px;padding:40px 20px;}
 .renewal_2024 .main_section:first-child {padding-top:20px;}
 .renewal_2024 .main_section.odd {background-color:#fff;border-radius:0 44px 0 44px;}
 .renewal_2024 .main_section.odd:first-child {border-radius:0 0 0 44px;}
@@ -94,6 +95,12 @@
 .renewal_2024 .section_content_head.ico_05:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_12.png') no-repeat right bottom;background-size:100% auto;}/* 2위:스탁론 */
 .renewal_2024 .section_content_head.ico_06:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_13.png') no-repeat right bottom;background-size:100% auto;}/* 2위:자동차금융 */
 .swiper-slide {/*padding-left:20px;padding-right:20px;*/box-sizing:border;}
+
+/* 메인 - 로그인 문구 */
+.renewal_2024 .status_toast + .main_section.even.first {margin-top:-20px;}
+.renewal_2024 .main_section.even.first {padding-top:20px;padding-bottom:24px;}
+.renewal_2024 .login_greeting {padding-left:4px;font-size:18px;font-weight:500;}
+.renewal_2024 .login_greeting strong {font-weight:700;}
 
 /* 메인 - 1위 영역 */
 .renewal_2024 .section_content_head + .product_keywords {margin-top:40px;margin-right:-10px;}
@@ -190,11 +197,6 @@
 .renewal_2024 .swiper-toggle-button {width:8px;height:8px;vertical-align:middle;background:url('../image/main/icon_swiper_pause_02.png') no-repeat center center;background-size:6px auto;}
 .renewal_2024 .swiper-toggle-button.on {background:url('../image/main/icon_swiper_play.png') no-repeat center center;background-size:6px auto;}
 
-/* 메인 - 로그인 문구 */
-.renewal_2024 .contents > .main_section.even:first-child {padding-bottom:24px;}
-.renewal_2024 .login_greeting {padding-left:4px;font-size:18px;font-weight:500;}
-.renewal_2024 .login_greeting strong {font-weight:700;}
-
 /* 메인 - 보유건수 */
 .renewal_2024 .section_content.my_total {margin-top:24px;}
 .renewal_2024 .section_content.my_total {padding:0;border-radius:18px;box-sizing:border-box;}
@@ -207,7 +209,7 @@
 
 /* 메인 - 보유상품 */
 .renewal_2024 .section_content.my_total + .my_product {margin-top:20px;}
-.renewal_2024 .section_content.my_product {position:relative;margin-bottom:12px;padding-top:24px;padding-left:10px;padding-right:10px;height:263px;background-color:var(--primaryColor);box-sizing:border-box;}
+.renewal_2024 .section_content.my_product {position:relative;margin-bottom:27px;padding-top:24px;padding-left:10px;padding-right:10px;height:263px;background-color:var(--primaryColor);box-sizing:border-box;}
 .renewal_2024 .my_product_info {position:relative;height:81px;}
 .renewal_2024 .my_product_info .info_list {margin-top:0;}
 .renewal_2024 .my_product_info .info_list.has_ci {position:relative;padding-left:52px;}
@@ -252,7 +254,7 @@
 
 /* 메인 - 진행상태 알림 */
 .status_toast + .main_section {padding-top:0;}
-.status_toast {margin:0 -5px;padding-top:18px;padding-bottom:28px;}
+.status_toast {z-index:20;position:relative;margin:0 -5px;padding-top:18px;padding-bottom:28px;}/* 2024-08-29 2024고도화 : shadow짤림시 z-index 추가 */
 .status_toast .status_toast_box {position:relative;padding:16px 20px 16px 56px;background:#fff url('../image/main/ico_alarm_24x24.png') no-repeat left 20px top 16px;background-size:24px 24px;border-radius:18px;box-shadow:0px 12px 24px -8px #00000014;}
 .status_toast .status_msg + .status_link {margin-top:2px;}
 .status_toast .status_msg {font-size:15px;font-weight:700;}
@@ -278,7 +280,8 @@
 .renewal_2024 .info_list_value {text-align:right;}
 
 /* 마이페이지 > 내정보확인 */
-.renewal_2024 [class^="form"] + .ebullet_circle {margin-top:12px;}
+.renewal_2024 [class^="form"] + .ebullet_circle,
+.cs_part + .ebullet_circle {margin-top:12px;}
 .renewal_2024 [class^="form"] + .ebullet_circle > li {font-size:13px;color:var(--grayColor03);line-height:1.5;}
 .renewal_2024 [class^="form"] + .ebullet_circle > li:after {width:3px;height:3px;}
 
@@ -389,7 +392,10 @@
 .renewal_2024 .search_result_head {padding-bottom:20px;}
 .renewal_2024 .search_result_head .num,
 .renewal_2024 .search_result_box .text_keyword {color:var(--primaryColor);font-style:normal;}
-.search_result_list {padding:25px 0;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;}
-.search_result_item + .search_result_item {margin-top:22px;}
-.search_result_item .name {font-size:16px;font-weight:700;}
-.search_result_item .location {margin-top:8px;font-size:14px;color:#878787;}
+.renewal_2024 .search_result_list {padding:25px 0;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;}
+.renewal_2024 .search_result_item + .search_result_item {margin-top:22px;}
+.renewal_2024 .search_result_item .name {font-size:16px;font-weight:700;}
+.renewal_2024 .search_result_item .location {margin-top:8px;font-size:14px;color:#878787;}
+
+/* 마이페이지 > 전체대출내역조회 > 계좌상세 - 상단 문서 발송 아이콘 변경(전체 적용) */
+.page_title_part .btn_icon_golink {background:url('../image/component/ico_doc_download_34x34.png') no-repeat right center;background-size:34px;}
