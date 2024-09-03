@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">거래내역확인서 조회</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+				<div class="page_title_part">
+					<h2 class="ebtitle2">거래내역확인서 조회</h2>
+				</div>
+				<div class="page_subtitle_part">
+					<p>
+						상환스케줄과 납부내역을 확인하실 수 있는 증명서입니다.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+				<div class="inquiry_part">
+
+					<!-- 개인사업자 있는 경우 -->
+					<div class="inquiry_select_part borderdiv">
+						<div class="form_pack">
+							<div class="select_pack ty_noborder" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="개인/사업자 선택" title="대출계좌확인">
+									<option value="option1">개인/사업자 선택</option>
+									<option value="option2">옵션2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!-- //개인사업자 있는 경우 -->
+
+					<div class="inquiry_select_part borderdiv">
+						<div class="form_pack">
+							<div class="select_pack ty_noborder has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+								<!-- <button type="button" class="ebbtn btn_select" title="대출계좌확인">상품 선택</button> -->
+								<button type="button" class="ebbtn btn_select" title="대출계좌확인">개인신용다이렉트추가 (일반 직장인론)</button>
+							</div>
+						</div>
+						<div class="btn_box">
+							<button type="button" class="ebbtn btn_normal ty_bg w100per">상세보기</button>
+						</div>
+					</div>
+
+					<!--  조회 후 영역 -->
+					<div class="calc_data_part bgdiv nopad">
+						<div class="data_top_box">
+							<div class="top_l">
+								<div class="ebtitle_normal">거래내역 조회결과</div>
+							</div>
+							<div class="top_r">
+								<button type="button" class="ebbtn btn_icon_golink" title="문서발송"></button>
+							</div>
+						</div>
+						<div class="calc_data_box">
+							<div class="calc_data_list">
+								<ul>
+									<li>
+										<div class="title">원금 총액</div>
+										<div class="conts">100,000,000 원</div>
+									</li>
+									<li>
+										<div class="title">이자 총액</div>
+										<div class="conts">42,000,000 원</div>
+									</li>
+									<li>
+										<div class="title">기타 총액</div>
+										<div class="conts">85,300,000 원</div>
+									</li>
+									<li>
+										<div class="title">자연이자 총액</div>
+										<div class="conts">76,000 원</div>
+									</li>
+									<li>
+										<div class="title"><b class="imp">합계</b></div>
+										<div class="conts"><b class="imp">227,376,000 원</b></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="calc_data_box">
+							<div class="accordion_pack ty_data">
+								<div class="accordion_title">
+									<div class="title"><div class="ebtitle_normal">12회차</div></div>
+									<div class="list">
+										<div class="calc_data_list">
+											<ul>
+												<li>
+													<div class="title">납부일</div>
+													<div class="conts">18302124471290</div>
+												</li>
+												<li>
+													<div class="title">상태</div>
+													<div class="conts">완납</div>
+												</li>
+												<li>
+													<div class="title">청구금액</div>
+													<div class="conts">100,000,000 원</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="control ty_static">
+										<button type="button" class="ebbtn btn_accordion" data-function="accordion">
+											<span class="show">더보기</span>
+											<span class="hide">접기</span>
+										</button>
+									</div>
+								</div>
+								<div class="accordion_content">
+									<div class="calc_data_list">
+										<ul>
+											<li>
+												<div class="title">회차</div>
+												<div class="conts"><b>1회차 / 전체회차</b></div>
+											</li>
+											<li>
+												<div class="title">구분</div>
+												<div class="conts">원리금스케줄</div>
+											</li>
+											<li>
+												<div class="title">상태</div>
+												<div class="conts">완납</div>
+											</li>
+											<li>
+												<div class="title">실납부일</div>
+												<div class="conts">2021-12-12</div>
+											</li>
+											<li>
+												<div class="title">고객입금일</div>
+												<div class="conts">2021-12-12</div>
+											</li>
+											<li>
+												<div class="title">원금</div>
+												<div class="conts">50,000,000 원</div>
+											</li>
+											<li>
+												<div class="title">이자</div>
+												<div class="conts">30,000,000 원</div>
+											</li>
+											<li>
+												<div class="title">기타</div>
+												<div class="conts">10,000,000 원</div>
+											</li>
+											<li>
+												<div class="title">연체이자</div>
+												<div class="conts">10,000,000 원</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="calc_data_box">
+							<div class="accordion_pack ty_data">
+								<div class="accordion_title">
+									<div class="title"><div class="ebtitle_normal">13회차</div></div>
+									<div class="list">
+										<div class="calc_data_list">
+											<ul>
+												<li>
+													<div class="title">납부일</div>
+													<div class="conts">18302124471290</div>
+												</li>
+												<li>
+													<div class="title">상태</div>
+													<div class="conts">완납</div>
+												</li>
+												<li>
+													<div class="title">청구금액</div>
+													<div class="conts">100,000,000 원</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="control ty_static">
+										<button type="button" class="ebbtn btn_accordion" data-function="accordion">
+											<span class="show">더보기</span>
+											<span class="hide">접기</span>
+										</button>
+									</div>
+								</div>
+								<div class="accordion_content">
+									<div class="calc_data_list">
+										<ul>
+											<li>
+												<div class="title">회차</div>
+												<div class="conts"><b>1회차 / 전체회차</b></div>
+											</li>
+											<li>
+												<div class="title">구분</div>
+												<div class="conts">원리금스케줄</div>
+											</li>
+											<li>
+												<div class="title">상태</div>
+												<div class="conts">완납</div>
+											</li>
+											<li>
+												<div class="title">실납부일</div>
+												<div class="conts">2021-12-12</div>
+											</li>
+											<li>
+												<div class="title">고객입금일</div>
+												<div class="conts">2021-12-12</div>
+											</li>
+											<li>
+												<div class="title">원금</div>
+												<div class="conts">50,000,000 원</div>
+											</li>
+											<li>
+												<div class="title">이자</div>
+												<div class="conts">30,000,000 원</div>
+											</li>
+											<li>
+												<div class="title">기타</div>
+												<div class="conts">10,000,000 원</div>
+											</li>
+											<li>
+												<div class="title">연체이자</div>
+												<div class="conts">10,000,000 원</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="list_more">
+							<button type="button" class="ebbtn btn_list_more"><span>더보기</span></button>
+						</div>
+					</div>
+
+
+
+					<!--  //조회 후 영역 -->
+
+					<div class="bullet_part">
+						<div class="bullet_pack">
+							<p class="ebbullet_title">안내 유의사항</p>
+							<ul class="ebullet_circle">
+								<li>인쇄하기 서비스는 PC에서만 가능합니다.</li>
+								<li>직인이 필요하신 경우 대표번호 <a href="tel:1644-3700"><span class="ebunderline ty_blue">1644-3700</span></a>으로 문의 해주세요. (업무시간 : 평일 9:00 ~ 18:00)</li>
+								<li>일부상환의 경우 변동금리로 운영됩니다.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+	</div>
+</div>
+
+<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+<div id="layoutPopContent" aria-hidden="true"></div>
+
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>
