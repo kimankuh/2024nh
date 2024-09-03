@@ -175,74 +175,118 @@ function keypadChk(){
 	
 	});
 }
+
 // 상품소개 -  draggable 바텀시트
 function dargBottomSheet(){
-	var $bs = $('.dragging_bs');
-	var $handle = $('.drag_handle');
-	var wh = $(window).height();        
-	var hh = $('.header').outerHeight();
-	var conh = $('.desc_area').outerHeight() - 48;
-	var bsh = wh - (hh + conh) + 48;
-	var bsMaxH = wh - hh;
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+    var wh = $(window).height();        
+    var hh = $('.header').outerHeight();
+    var $bs = $('.dragging_bs');
+    var $handle = $bs.find('.drag_handle');
+    var conh = $bs.closest('.product_info').find('.desc_area').outerHeight() - 48;
+    var bsh = wh - (hh + conh) + 48;
+    var bsMaxH = wh - hh;
+
 	var touchStart;
 	var touchLast;
 
-	// init
+	if(!isMobile) {
+		//모바일이 아닌 경우 스크립트
+		console.log('PC')
+		dargBottomSheetPC();
+	} else {
+		//모바일인 경우 스크립트
+		dargBottomSheetMobile(); // 상품소개 drag bottom sheet
+	}
+
+    // init
 	$bs.height(bsh);
 	$('.container.renewal_2024').css('height','100%')
 
-	// 초기 터치
-	$handle.on('touchstart', function(e){
-		touchStart = e.touches[0].pageY;
-		touchLast = 0;// touchmove시 저장된 값 초기화
-	});
+    // 아코디언 클릭시 up
+    $bs.find('.accordion_title').on('click', function(){
+        var $this = $(this);
+        var $thisWrap = $this.closest('.accordion_pack');
+        
+        if($thisWrap.hasClass('active') == false){
+            $bs.animate({
+            'height' : bsMaxH
+            }, 200, "swing");
 
-	//핸들을 터치한 경우 => 바텀시트 up
-	$handle.on('touchmove', function(e){
-		touchLast = e.touches[0].pageY;            
-		var gap = touchLast - touchStart;
-		var bsIngH = bsh + (-gap);          
+            $('.dragging_bs').addClass('active');
+            $('.intro_fixed_part').addClass('show');
 
-		if($bs.hasClass('active')) return;// 바텀시트 펼침 상태시 패스
-		if(gap < 0 && bsIngH < bsMaxH){// gap이 마이너스 값임 && 드래그시 bsMaxH까지 높이 적용
-			$bs.height(bsIngH);
-		}
-		$('body').css('overflow', 'hidden');
-		$('body').addClass('bg_blue');
-	});
+            $('body').css('overflow', 'hidden');
+            $('body').addClass('bg_blue');
+        }
+    });
+    
+    //상품소개 Mobile
+    function dargBottomSheetMobile(){
+        // 초기 터치
+        $handle.on('touchstart', function(e){
+            touchStart = e.touches[0].pageY;
+            touchLast = 0;// touchmove시 저장된 값 초기화
+        });
 
-	$handle.on('touchend', function(e){
-		if((touchStart - touchLast) > 0 && touchLast != 0){// up
-			$bs.animate({
-				'height' : bsMaxH
-			}, 200, "swing");
+        //핸들을 터치한 경우 => 바텀시트 up
+        $handle.on('touchmove', function(e){
+            touchLast = e.touches[0].pageY;            
+            var gap = touchLast - touchStart;
+            var bsIngH = bsh + (-gap);          
 
-			$('.dragging_bs').addClass('active');
-			$('.intro_fixed_part').addClass('show');
-		}else if((touchStart - touchLast) < 0 && touchLast != 0){// down
-			$bs.animate({
-				'height' : bsh
-			}, 300, "swing");
+            if($bs.hasClass('active')) return;// 바텀시트 펼침 상태시 패스
+            if(gap < 0 && bsIngH < bsMaxH){// gap이 마이너스 값임 && 드래그시 bsMaxH까지 높이 적용
+                $bs.height(bsIngH);
+            }
+            $('body').css('overflow', 'hidden');
+            $('body').addClass('bg_blue');
+        });
 
-			$('.dragging_bs').removeClass('active');
-			$('.intro_fixed_part').removeClass('show');
-		}       
-	});
+        $handle.on('touchend', function(e){
+            if((touchStart - touchLast) > 0 && touchLast != 0){// up
+                $bs.animate({
+                    'height' : bsMaxH
+                }, 200, "swing");
 
-	$bs.find('.accordion_title').on('click', function(){
-		var $this = $(this);
-		var $thisWrap = $this.closest('.accordion_pack');
-		
-		if($thisWrap.hasClass('active') == false){
-			$bs.animate({
-			'height' : bsMaxH
-			}, 200, "swing");
+                $('.dragging_bs').addClass('active');
+                $('.intro_fixed_part').addClass('show');
+            }else if((touchStart - touchLast) < 0 && touchLast != 0){// down
+                $bs.animate({
+                    'height' : bsh
+                }, 300, "swing");
 
-			$('.dragging_bs').addClass('active');
-			$('.intro_fixed_part').addClass('show');
+                $('.dragging_bs').removeClass('active');
+                $('.intro_fixed_part').removeClass('show');
+            }       
+        });
+    }
 
-			$('body').css('overflow', 'hidden');
-			$('body').addClass('bg_blue');
-		}
-	})
+    //상품소개 PC
+    function dargBottomSheetPC(){
+        $handle.on('click', function(e){
+            if($('.dragging_bs').hasClass('active')){
+                // down
+                $bs.animate({
+                    'height' : bsh
+                }, 300, "swing");
+
+                $('.dragging_bs').removeClass('active');
+                $('.intro_fixed_part').removeClass('show');
+            }else{
+                // up
+                $bs.animate({
+                    'height' : bsMaxH
+                }, 200, "swing");
+
+                $('.dragging_bs').addClass('active');
+                $('.intro_fixed_part').addClass('show');
+            }
+            $('body').css('overflow', 'hidden');
+            $('body').addClass('bg_blue');
+        });
+    }
 }
+
+

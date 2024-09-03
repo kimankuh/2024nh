@@ -249,6 +249,7 @@
 .quick_menu_list .ebbtn.btn_quickmenu > span {display:block;margin:0 auto;}
 .quick_menu_list .ebbtn.btn_quickmenu > .text {color:#303030;}
 .icon_cunstom_center {width:40px;height:40px;background: url('../image/layout/ico_setting.png') no-repeat center;background-size: 100%;}
+.icon_logout {width:40px;height:40px;background: url('../image/layout/icon_totalmenu_logout.png') no-repeat center;background-size: 100%;}/* 2024-09-03 */
 
 
 
