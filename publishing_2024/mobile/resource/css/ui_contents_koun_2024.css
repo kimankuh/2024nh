@@ -233,7 +233,7 @@
 .renewal_2024 .issuance_result .data_list > li:first-child{margin-top:0;}
 .renewal_2024 .issuance_result .data_list > li .key,
 .renewal_2024 .issuance_result .data_list > li .value{font-size:14px; font-weight:500; color:#707070;}
-
+.renewal_2024 .issuance_result .data_list > li .value{text-align:right;}
 /* 마이페이지 > 발급서비스 > 비대면서류발급 */
 .renewal_2024 .smalltitle_part + .ebullet_circle{margin-top:12px;}
 
