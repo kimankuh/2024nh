@@ -289,7 +289,7 @@
 .renewal_2024 .status_box.type_01 {padding-bottom:103px; background:#edf6fd url(../image/contents/cdln/img_status01.png) no-repeat bottom 27px right 28px; background-size:108px auto;}
 .renewal_2024 .status_box.type_02 {background:#edf6fd url(../image/contents/cdln/img_status02.png) no-repeat bottom 24px right 30px; background-size:63px auto;}
 .renewal_2024 .status_box.type_03 {background:#edf6fd url(../image/contents/cdln/img_status03.png) no-repeat bottom 24px right 24px; background-size:80px auto;}
-.renewal_2024 .status_box .tit{font-size:19px; font-weight:700;}
+.renewal_2024 .status_box .tit{min-width:270px; font-size:19px; font-weight:700;}
 .renewal_2024 .status_box .txt{font-size:15px; font-weight:400; color:var(--grayColor02);}
 .renewal_2024 .status_box .tit + .txt{margin-top:8px;}
 
