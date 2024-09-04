@@ -202,7 +202,14 @@ function dargBottomSheet(){
 
     // init
 	$bs.height(bsh);
-	$('.container.renewal_2024').css('height','100%')
+	$('.container.renewal_2024').css('height','100%');
+
+    //아코디언 항목 전체 열림상태 setting
+    $bs.find('.accordion_pack.ty_boxing').addClass('active');
+    $bs.find('.accordion_title').attr('aria-expanded',true);
+    $bs.find('.accordion_content').show();
+    $bs.find('.btn_accordion').attr('title', '아코디언 닫기');
+    
 
     // 아코디언 클릭시 up
     $bs.find('.accordion_title').on('click', function(){
@@ -261,6 +268,9 @@ function dargBottomSheet(){
                 $('.intro_fixed_part').removeClass('show');
             }       
         });
+
+        //click event도 추가
+        dargBottomSheetPC();
     }
 
     //상품소개 PC
