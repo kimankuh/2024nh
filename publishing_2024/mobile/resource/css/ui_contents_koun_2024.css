@@ -81,7 +81,7 @@
 
 .renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff;}
 .renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 48px); overflow:hidden;}
-.renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
+.renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto; box-sizing:border-box;}
 .renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
 .renewal_2024 .dragging_bs.active .cont_detail.type_02{height:calc(100% - 204px);}
 .renewal_2024 .dragging_bs.active .cont_detail.type_03{height:calc(100% - 48px);}
@@ -138,7 +138,6 @@
 .renewal_2024 .product_info .accordion_pack.ty_boxing.active{box-shadow:none;}
 .renewal_2024 .product_info .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
 .renewal_2024 .product_info .accordion_pack.ty_boxing.active .accordion_content{border:0; color:#303030;}
-.renewal_2024 .product_info .icon_info{margin-bottom:20px;}
 
 .renewal_2024 .product_info .table_conts_part{margin-top:24px; padding-top:0;}
 .renewal_2024 .product_info .table_conts_part .conts_title_pack{padding-bottom:8px}
