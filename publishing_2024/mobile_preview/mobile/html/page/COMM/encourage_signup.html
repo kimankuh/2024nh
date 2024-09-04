@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="../../../resource/js/common.js"></script><!-- [임시] 중간보고용 임시 url -->
+    <script type="text/javascript" src="../../../resource/js/commPop.js"></script><!-- [임시] 중간보고용 임시 url -->
+    <script type="text/javascript" src="../../../resource/js/commMsg.js"></script><!-- [임시] 중간보고용 임시 url -->
+    <script type="text/javascript" src="../../../resource/js/commMo.js"></script><!-- [임시] 중간보고용 임시 url -->
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+	-팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="encourage_signup" class="modal_popup ty_popup renewal_2024"><!-- 노출 className = show --><!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+			<div class="popup_header">
+				<div class="popup_title">
+					<div class="popup_logo"><img src="../../../resource/image/contents/cdln/landing_logo.png" alt="NH농협캐피탈"/></div><span class="title">회원 가입하기</span></div><!-- 2024-08-30 2024고도화 : 타이틀 변경 및 logo 추가 -->
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+					<div class="encourage_signup">
+						<p class="txt">비대면 대출의 전문가</p>
+						<p class="tit">NH농협캐피탈과 함께 <br>하시겠어요?</p>
+						<p class="txt">유용한 금융 정보와고객님께 <br>최적화된 서비스를 제공합니다.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+					<div class="btn_box">
+                        <div class="box_l">
+                            <button type="button" class="ebbtn btn_main ty_light">가입하기</button>
+                        </div>
+                        <div class="box_r">
+                            <button type="button" class="ebbtn btn_main ty_bg">로그인</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	//팝업호출
+	popupFunc('#encourage_signup').show();
+</script>
+
+
+</body>
+</html>

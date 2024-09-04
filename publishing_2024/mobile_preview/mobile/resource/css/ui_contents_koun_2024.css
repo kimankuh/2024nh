@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+/*============= common ============*/
+/* 상품소개 - 헤더 */
+.bg_blue{background-color:var(--primaryColor);}
+
+.header.renewal_2024.bg_blue{background-color:var(--primaryColor); border-bottom:none;}
+.header.renewal_2024.bg_blue .header_area .header_title h2{font-family: 'SpoqaHanSansNeo'; font-size:16px; color:#fff; opacity:1; }
+.header.renewal_2024.bg_blue .header_area .header_menu .ebbtn.btn_header_menu{background: url(../image/layout/header_menu_02_white.png) no-repeat center; background-size:25px;}
+.header.renewal_2024.bg_blue .header_area .header_back .ebbtn.btn_header_back{background: url(../image/layout/header_back_white.png) no-repeat center; background-size:9px;}
+
+
+.renewal_2024 .notice_area{position:relative; margin:32px -25px 0; padding:44px 25px 0;}
+.renewal_2024 .notice_area:before{content:""; display:block; position:absolute; top:0; left:0; width:100%; height:12px; background:#F3F4F8}
+.renewal_2024 .notice_area .notice_tit{padding-left:24px; font-size:17px; font-weight:700; background:url(../image/icon/icon_info.png) no-repeat 0 2px; background-size:20px auto;}
+.renewal_2024 .notice_area .notice_list{margin-top:16px;}
+.renewal_2024 .notice_area .notice_list > li {position:relative; margin-top:12px; padding-left:10px; font-size:14px; line-height:19px; color:#707070;}
+.renewal_2024 .notice_area .notice_list > li:after{content:""; display:block; position:absolute; top:8px; left:0; width:3px; height:3px; border-radius:50%; background:#707070;}
+.renewal_2024 .notice_area .notice_list > li:first-child {margin-top: 0;}
+
+.renewal_2024 .color10{color:#2F6DFC !important}
+
+.renewal_2024 .ebbtn.icon_tooltip.type_02{width:16px; height:16px; overflow: hidden; vertical-align:top; margin-top:2px; background:url('../image/icon/icon_tooltip02.png') no-repeat center; background-size:16px; text-indent:-9999px;}
+.renewal_2024 .tooltip_msg_pack{background-color:#fff}
+.renewal_2024 .tooltip_msg_pack .exptxt{font-size:15px; line-height:21px;}
+
+.renewal_2024 .link_blue_underline{color:#2F6DFC; text-decoration:underline;}
+
+/*============= content ============*/
+/* 공통 > 상품소개 */
+.renewal_2024 .contents_area.product_info{height:100%; padding:0; overscroll-behavior:contain; background-color:#2f6dfc;}
+.renewal_2024 .contents_area.product_info .contents {position:relative; height:100%; padding:0;}
+
+.renewal_2024 .small_title_pack > li{margin-top:16px}
+.renewal_2024 .small_title_pack > li:first-child{margin-top:0}
+.renewal_2024 .small_title_pack > li .tit{display:block; font-size:15px; color:#303030; font-weight:700;}
+.renewal_2024 .small_title_pack > li .cont{margin-top:4px; display:block; font-size:15px; color:#303030;}
+.renewal_2024 .small_title_pack > li .img{display:block; box-sizing: border-box;}
+.renewal_2024 .small_title_pack > li .img img{display:block; width:100%}
+.renewal_2024 .small_title_pack > li .cont + .img{margin-top:4px;}
+
+.renewal_2024 .intro_btn_box .btn_box .box_l {width: 40%; }
+.renewal_2024 .intro_btn_box .btn_box .box_r {width: 60%;}
+
+.renewal_2024 .product_info .desc_area {height:530px; overscroll-behavior:contain; background-color:#2f6dfc;}
+.renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; background:url(../image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px; box-sizing: border-box;}
+.renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .product_info .icon_box{position:relative; margin-bottom:20px; padding-top:96px; background:url(../image/contents/cdln/ico_noti.png) no-repeat top center; background-size:80px auto; }
+.renewal_2024 .product_info .icon_box .txt_noti{font-size:15px; font-weight:700; text-align:center; }
+.renewal_2024 .product_info .call_box{position:absolute; bottom:94px; left:24px;}
+.renewal_2024 .product_info .call_box > div{margin-top:12px;}
+.renewal_2024 .product_info .call_box > div:first-child{margin-top:0;}
+.renewal_2024 .product_info .call_box .btn_txt{position:relative; display:inline-block; padding:0 18px; line-height:18px; font-size: 13px; color:#fff; font-weight:400;}
+.renewal_2024 .product_info .call_box .btn_txt:after{content:""; display:block; position:absolute; top:50%; right:0; margin-top:-8px; width:16px; height:16px; background:url(../image/contents/cdln/icon_arrow_right_white.png) no-repeat center center; background-size:16px auto;}
+.renewal_2024 .product_info .call_box .btn_txt.btn_branch{background:url(../image/contents/cdln/icon_branch_white.png) no-repeat center left; background-size:16px auto;}
+.renewal_2024 .product_info .call_box .btn_txt.btn_tel{background:url(../image/contents/cdln/icon_tel_white.png) no-repeat center left; background-size:16px auto;}
+
+.renewal_2024 .product_info .prod_info.type_02{background-position:bottom 149px right; }
+.renewal_2024 .product_info .prod_info.type_02:after{bottom:148px;}
+.renewal_2024 .product_info .type_02 .call_box{bottom:146px;}
+.renewal_2024 .product_info .prod_info.type_03{background-position:bottom 20px right; }
+.renewal_2024 .product_info .prod_info.type_03:after{bottom:19px;}
+.renewal_2024 .product_info .type_03 .call_box{bottom:17px;}
+
+.renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
+.renewal_2024 .prod_info .prod_txt{font-size:26px; color:#fff; font-weight:700;}
+.renewal_2024 .prod_info .prod_data{position:relative; display:flex; margin-top:24px; }
+.renewal_2024 .prod_info .prod_data:after{content:""; display:block; clear:both;}
+.renewal_2024 .prod_info .prod_data .tit{display:block; font-size:14px; color:#fff;}
+.renewal_2024 .prod_info .prod_data .txt{display:block; font-size:26px; color:#fff; font-weight:700; line-height:38px;}
+.renewal_2024 .prod_info .prod_data .txt .num{font-size:30px}
+.renewal_2024 .prod_info .prod_data > li{margin-left:24px;}
+.renewal_2024 .prod_info .prod_data > li:first-child{margin-left:0;}
+.renewal_2024 .prod_info .btn_box_wrap{position:absolute; left:0; bottom:0; width:100%; padding:0 20px 16px; box-sizing: border-box;}
+.renewal_2024 .prod_info .btn_box_wrap .btn_box.half .box_l,
+.renewal_2024 .prod_info .btn_box_wrap .btn_box.half .box_r{width: calc(50% - 5px);}
+.renewal_2024 .prod_info .btn_box_wrap .btn_box + .btn_box{margin-top:10px;}
+.renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{border-radius:18px; background-color:#0a47d6;}
+.renewal_2024 .prod_info .ebbtn.btn_sub{font-size:16px; font-weight:500; color:#062A7C; border-radius:12px; background-color:#82A8FF;}
+
+
+.renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff;}
+.renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 48px); overflow:hidden;}
+.renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto;}
+.renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
+.renewal_2024 .dragging_bs.active .cont_detail.type_02{height:calc(100% - 204px);}
+.renewal_2024 .dragging_bs.active .cont_detail.type_03{height:calc(100% - 48px);}
+.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box{position:absolute;}
+.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box .btn_box.half .box_l{width:calc(50%);}
+.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box .btn_box.half .box_r{width:calc(50%);}
+.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box .btn_box.half .btn_sub{color:#303030; border-radius:12px; background:#DCE2F1;}
+.renewal_2024 .drag_handle{position:relative;}
+.renewal_2024 .drag_handle:after{content:""; display:block; clear:both;}
+.renewal_2024 .drag_handle .btn_handle { display:flex; width:100%;height:48px; border:0; border-radius: 18px 48px 0 0; background:#fff;}
+.renewal_2024 .drag_handle .btn_handle:after{content:""; display:block; clear:both;}
+.renewal_2024 .drag_handle .btn_handle:before {content:''; display:block; margin:12px auto 0; padding:0; width:50px; height:5px; border-radius:5px; background-color:#909090;}
+
+.renewal_2024 .easy_calculate .input_pack.ty_word1{height:36px; padding-right:20px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput{height:36px; font-size:18px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput::placeholder{font-size:16px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .ebinput:-ms-input-placeholder{font-size:16px;}
+.renewal_2024 .easy_calculate .input_pack.ty_word1 .unit{width:20px; height:36px; line-height:36px; font-size:16px;}
+
+.renewal_2024 .easy_calculate .result{margin-top:12px; text-align:right;}
+.renewal_2024 .easy_calculate .result .tit{margin-right:4px; font-size:14px; color:#303030;}
+.renewal_2024 .easy_calculate .result .val{display:inline-block; font-size:22px; font-weight:700; color:#2f6dfc; }
+.renewal_2024 .easy_calculate .result .val .num{display:inline-block; }
+.renewal_2024 .easy_calculate .result .val .unit{display:inline-block; margin-left:4px; font-size:20px;}
+
+.renewal_2024 .easy_calculate .btn_box{margin-top:20px;}
+.renewal_2024 .easy_calculate .ebbtn.btn_normal{height:44px; line-height:44px; border-radius:14px;}
+
+.renewal_2024 .product_info .accordion_pack.ty_boxing { border: 0; border-radius:20px; background-color:#F5F6FA; }
+.renewal_2024 .product_info .accordion_pack.ty_boxing + .accordion_pack.ty_boxing{margin-top:12px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title{min-height:64px; padding:21px 20px 20px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title .title{font-size:16px; font-weight:500;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title .control{position:absolute; top:50%; right:20px; margin-top:-10px; width:20px; height:20px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_title .control .ebbtn.btn_accordion{width:20px; height:20px; background: url(../image/component/accordion_arrow02.png) no-repeat center; background-size:100%; transition:all 0.05s ease-in-out;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .accordion_content{padding:0 20px 28px 20px; }
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle{margin-top:12px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle > li{margin-top:8px; font-size:14px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle.noti_list{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .ebullet_circle.noti_list .color07{font-weight:500;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .noti_tit{margin-bottom:8px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .noti_list + .noti_tit{margin-top:24px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack{margin-top:24px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack:first-child{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li{margin-top:24px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li .ebullet_circle{margin-top:4px}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .txt_box .tit{font-size:18px; font-weight:700;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .txt_box .txt{margin-top:8px; font-size:14px; color:#707070;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .base_date{margin-top:24px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .img_area{margin-top:20px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .img_area .img_tit{font-size:13px; font-weight:700; text-align:center;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .img{max-width:400px; margin:12px auto 0;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing.active{box-shadow:none;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
+.renewal_2024 .product_info .accordion_pack.ty_boxing.active .accordion_content{border:0; color:#303030;}
+.renewal_2024 .product_info .icon_info{margin-bottom:20px;}
+
+.renewal_2024 .product_info .table_conts_part{margin-top:24px; padding-top:0;}
+.renewal_2024 .product_info .table_conts_part .conts_title_pack{padding-bottom:8px}
+.renewal_2024 .product_info .table_conts_part > .ebullet_circle{padding-top:0;}
+
+.renewal_2024 .product_info .bullet_box{margin-top:8px; padding:14px; line-height:18px; font-size:13px; letter-spacing: -0.5px; border-radius:12px; background:#fff;}
+.renewal_2024 .product_info .bullet_box .bullet_tit{display:block; margin-bottom:12px; font-size:14px; font-weight:700;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li{margin-top:12px;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li .tit{font-size:14px; font-weight:500;}
+.renewal_2024 .product_info .bullet_box .bullet_list > li .txt{margin-top:4px; font-size:13px; color:#707070;}
+.renewal_2024 .product_info .bullet_box .txt_point{color:#FF0000;}
+.renewal_2024 .product_info .bullet_box .normal_list > li{margin-top:8px;}
+.renewal_2024 .product_info .bullet_box .normal_list > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .bullet_box p + .normal_list{margin-top:12px;}
+
+.renewal_2024 .product_info .accordion_pack.ty_boxing .small_title_pack > li .bullet_box .ebullet_circle{margin-top:12px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .bullet_box .ebullet_circle > li{font-size:13px; line-height:18px;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .bullet_box .ebullet_circle > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .process_list > li{margin-top:13px;}
+.renewal_2024 .product_info .process_list > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .process_box{position:relative; display:flex; flex-wrap:wrap; width:100%; padding:12px 20px 8px 20px; border-radius:16px; box-sizing:border-box; background:#fff;}
+.renewal_2024 .product_info .process_box:after{content:""; display:block; clear:both;}
+.renewal_2024 .product_info .process_box .tit{display:inline-block; width:30px; height:44px; align-content:center; }
+.renewal_2024 .product_info .process_box .txt{margin-left:25px; align-content:center; font-size:15px; font-weight:700;}
+.renewal_2024 .product_info .process_box .txt .txt_normal{font-weight:400;}
+.renewal_2024 .product_info .step01 .process_box .tit{background:url(../image/contents/cdln/img_step01_x1.png) no-repeat 0 0;}
+.renewal_2024 .product_info .step02 .process_box .tit{background:url(../image/contents/cdln/img_step02_x1.png) no-repeat 0 0;}
+.renewal_2024 .product_info .step03 .process_box .tit{background:url(../image/contents/cdln/img_step03_x1.png) no-repeat 0 0;}
+.renewal_2024 .product_info .step04 .process_box .tit{background:url(../image/contents/cdln/img_step04_x1.png) no-repeat 0 0;}
+.renewal_2024 .product_info .step05 .process_box .tit{background:url(../image/contents/cdln/img_step05_x1.png) no-repeat 0 0;}
+.renewal_2024 .product_info .step06 .process_box .tit{background:url(../image/contents/cdln/img_step06_x1.png) no-repeat 0 0;}
+
+.renewal_2024 .product_info .affiliate_list{display:flex; flex-wrap:wrap; margin-bottom:8px;}
+.renewal_2024 .product_info .affiliate_list > li{ width:33.3%; text-align:center;}
+.renewal_2024 .product_info .affiliate_list > li:nth-child(n + 4){margin-top:20px;}
+.renewal_2024 .product_info .affiliate_box .tit{display:block; margin-top:12px; font-size:14px; color:#707070; font-weight:500;}
+.renewal_2024 .product_info .affiliate_box .ebicon{display:inline-block; width:72px; height:72px; border-radius:20px; background-color:#fff; box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);}
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_nhqv {background:#fff url('../image/icon/icon_logo_nhqv.png') no-repeat center; background-size:44px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_eugene {background:#fff url('../image/icon/icon_logo_eugene.png') no-repeat center; background-size:42px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_hana {background:#fff url('../image/icon/icon_logo_hana.png') no-repeat center; background-size:50px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_kb {background:#fff url('../image/icon/icon_logo_kb.png') no-repeat center; background-size:46px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_daishin {background:#fff url('../image/icon/icon_logo_daishin.png') no-repeat center; background-size:42px auto; }
+.renewal_2024 .product_info .affiliate_box .ebicon.icon_logo_kiwoom {background:#fff url('../image/icon/icon_logo_kiwoom.png') no-repeat center; background-size:46px auto; }
+
+.renewal_2024 .product_info .table_info_pack .ebtable:after{background-color:#878787;}
+.renewal_2024 .product_info .table_info_pack .ebtable thead tr th{font-size:13px; background:#fff;}
+.renewal_2024 .product_info .table_info_pack .ebtable thead tr th:first-child{border-left:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable thead tr th:last-child{border-right:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr th{font-size:13px; font-weight:400; background:#fff;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td{font-size:13px; color:#707070;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr th:first-child,
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td:first-child{border-left:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr th:last-child,
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td:last-child{border-right:0;}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr:last-child th,
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr:last-child td{border-bottom:0}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td.bor_t_none{border-top:0}
+.renewal_2024 .product_info .table_info_pack .ebtable tbody tr td.bor_b_none{border-bottom:0}
+
+.renewal_2024 .product_info .hashtag_list{margin-top:20px;}
+.renewal_2024 .product_info .hashtag_list > li{margin-top:10px;}
+.renewal_2024 .product_info .hashtag_list > li:first-child{margin-top:0;}
+.renewal_2024 .product_info .hashtag_list > li .icon_hashtag{position:relative; display:inline-block; padding:8px 14px 8px 33px; font-size:15px; font-weight:500; border-radius:20px; background:#fff;}
+.renewal_2024 .product_info .hashtag_list > li .icon_hashtag:before{content:""; display:block; position:absolute; top:50%; left:14px; width:15px; height:15px; margin-top:-7px; background:url(../image/contents/car/icon_hashtag.png) no-repeat 0 0; background-size:100% auto;}
+
+.renewal_2024 .product_info .icon_list > li{position:relative; margin-top:12px; padding-left:38px; line-height:28px; font-size:14px; }
+.renewal_2024 .product_info .icon_list > li:before{content:""; display:block; position:absolute; top:0; left:0; width:28px; height:28px; border-radius:100%; background:#D9D9D9;}
+.renewal_2024 .product_info .icon_list > li:first-child{margin-top:0;}
+
+/* 공통 > 가입유도 팝업 */
+.renewal_2024.modal_popup.ty_popup .popup_layout .popup_header{text-align:left;}
+.renewal_2024.modal_popup.ty_popup .popup_layout .popup_header .popup_title{padding:0 55px 0 24px; font-family: 'IBM_Plex_Sans_KR', 'malgun gothic', 'sans-serif', 'dotum';font-size:17px; font-weight:500;}
+
+.renewal_2024 .encourage_signup{margin-bottom:20px; padding:24px 0 68px 0; background:url(../image/contents/common/encourage_signup.png) no-repeat bottom right;background-size:115px auto;}
+.renewal_2024 .encourage_signup .txt{font-size:14px; color:#707070;}
+.renewal_2024 .encourage_signup .tit{font-size:24px; font-weight:700; line-height:34px; letter-spacing: -0.5%;}
+.renewal_2024 .encourage_signup .tit + .txt{margin-top:20px;}
+
+/* 마이페이지 > 발급서비스 > 발급내역조회 */
+.renewal_2024 .issuance_details{margin-top:10px;}
+.renewal_2024 .issuance_details .borderdiv{margin-top:24px; padding:20px 25px;}
+.renewal_2024 .issuance_details .search_noresult_part .icon_box{margin-top:40px;}
+.renewal_2024 .issuance_cont{display:none;}
+.renewal_2024 .issuance_cont.active{display:block;}
+.renewal_2024 .issuance_result_area{margin-top:24px;}
+.renewal_2024 .issuance_result_area .issuance_result:first-child{padding-top:0;}
+.renewal_2024 .issuance_result{padding:32px 0;border-bottom:1px solid #F0F0F0;}
+.renewal_2024 .issuance_result .data_list{position:relative; margin-top:22px;}
+.renewal_2024 .issuance_result .data_list:after{content:""; display:block; clear:both;}
+.renewal_2024 .issuance_result .data_list > li{position:relative; display:flex; justify-content: space-between; margin-top:16px;}
+.renewal_2024 .issuance_result .data_list > li:first-child{margin-top:0;}
+.renewal_2024 .issuance_result .data_list > li .key,
+.renewal_2024 .issuance_result .data_list > li .value{font-size:14px; font-weight:500; color:#707070;}
+
+/* 마이페이지 > 발급서비스 > 비대면서류발급 */
+.renewal_2024 .smalltitle_part + .ebullet_circle{margin-top:12px;}
+
+/* 신용대출 > 랜딩페이지 */
+.renewal_2024 .landing .landing_tit{font-size:22px; font-weight:700; color:#000;}
+.renewal_2024 .landing .visual_area{position:relative; margin:0 -25px; padding-bottom:30px;}
+.renewal_2024 .landing .visual_area .cont{position:relative; padding:16px 140px 80px 24px; border-radius:0 0 0 44px; background-color:#F5F6FA}
+.renewal_2024 .landing .visual_area .cont:before{content:""; display:block; position:absolute; bottom:-30px; right:0; width:143px; height:189px; background:url(../image/contents/cdln/landing_visual.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .landing .visual_area .logo{width:146px; height:24px; background:url(../image/contents/cdln/landing_logo.png) no-repeat 0 0; background-size:auto 24px;}
+.renewal_2024 .landing .visual_area .tit{margin-top:47px; font-family: 'IBM_Plex_Sans_KR', 'malgun gothic', 'sans-serif', 'dotum'; font-size:26px; font-weight:600; line-height:36px; color:#000;}
+.renewal_2024 .landing .visual_area .txt{font-size:15px; color:#707070;}
+.renewal_2024 .landing .visual_area .tit + .txt{margin-top:12px;}
+
+.renewal_2024 .landing .landing_sec{position:relative; margin-top:32px;}
+.renewal_2024 .landing .landing_sec.ty_line{margin:40px -25px 0; padding:40px 25px 0; border-top:12px solid #F3F4F8;}
+.renewal_2024 .landing .landing_list {margin-top:32px;}
+.renewal_2024 .landing .landing_list > li .tit{font-size:17px; font-weight:700; color:#000;}
+.renewal_2024 .landing .landing_list > li .txt{font-size:15px; color:#707070;}
+
+.renewal_2024 .landing .app_info_area .btn_box{margin-top:40px;}
+.renewal_2024 .landing .app_info_area .ebbtn.btn_app_go{padding-left:38px; background:none; overflow:visible;}
+.renewal_2024 .landing .app_info_area .ebbtn.btn_app_go:before{content:""; display:block; position:absolute; top:0; left:0; width:76px; height:62px; background:url(../image/contents/cdln/ico_appDownload.png) no-repeat 0 0; background-size:100% auto; z-index:1}
+.renewal_2024 .landing .app_info_area .ebbtn.btn_app_go > span{position:relative; display:block; padding-right:38px; border-radius:0 14px 14px 0; background:#E5F0FC}
+.renewal_2024 .landing .app_info_area .ebbtn.btn_app_go > span:after{content:""; display:block; position:absolute; top:50%; right:15px; margin-top:-12px; width:24px; height:24px; background:url(../image/contents/cdln/icon_arrow_right_up.png) no-repeat 0 0; background-size:100% auto; z-index:1}
+
+.renewal_2024 .landing .app_list > li{position:relative; padding:32px 0 0 60px;}
+.renewal_2024 .landing .app_list > li:first-child{padding-top:0;}
+.renewal_2024 .landing .app_list > li:before{content:""; display:block; position:absolute; top:0; left:20px; width:1px; height:100%; background:url(../image/contents/cdln/bg_dotted.png) repeat; background-size:1px auto;}
+.renewal_2024 .landing .app_list > li:last-child:before{height:70px;}
+.renewal_2024 .landing .app_list > li .num{display:inline-block; position:absolute; top:32px; left:0; width:40px; height:40px; line-height:40px; font-size:18px; font-weight:700; color:#2F6DFC; text-align:center; border-radius:100%; background-color:#E5F0FC}
+.renewal_2024 .landing .app_list > li:first-child .num{top:0;}
+.renewal_2024 .landing .app_list > li .tit + .txt{margin-top:4px;}
+
+.renewal_2024 .landing .limit_list > li{position:relative; margin-top:24px; padding-top:24px; border-top:1px solid #F0F0F0;}
+.renewal_2024 .landing .limit_list > li:first-child{border:0; margin-top:0; padding-top:0;}
+.renewal_2024 .landing .limit_list > li .img{width:100%; border-radius:24px; overflow:hidden;}
+.renewal_2024 .landing .limit_list > li .tit + .txt,
+.renewal_2024 .landing .limit_list > li .tit + .ebullet_circle{margin-top:8px;}
+.renewal_2024 .landing .limit_list > li .txt + .tit,
+.renewal_2024 .landing .limit_list > li .tit + .img,
+.renewal_2024 .landing .limit_list > li .ebullet_circle + .img{margin-top:24px;}
+.renewal_2024 .landing .limit_list > li .tit > span{position:relative; display:inline-block;}
+.renewal_2024 .landing .limit_list > li .tit > span.ico_right_arr{padding-left:24px; background:url(../image/contents/cdln/icon_arrow_right.png) no-repeat left 2px center; background-size:20px auto;}
+
+.renewal_2024 .landing .cs_area .ebullet_circle{margin-top:12px;}
+.renewal_2024 .landing .cs_area .ebullet_circle > li{font-size:15px;}
+.renewal_2024 .landing .cs_area .btn_box{margin-top:32px;}
+.renewal_2024 .landing .cs_area .btn_box .ebbtn.btn_main.ty_bg{color:#303030; background-color:#E5F0FC}
+
+
+/* 신용대출 > 대환대출 > 한도조회 결과*/
+.renewal_2024 .status_box{margin-top:20px; padding:24px 68px 93px 20px; border-radius:22px; background-color:#edf6fd}
+.renewal_2024 .status_box.type_01 {padding-bottom:103px; background:#edf6fd url(../image/contents/cdln/img_status01.png) no-repeat bottom 27px right 28px; background-size:108px auto;}
+.renewal_2024 .status_box.type_02 {background:#edf6fd url(../image/contents/cdln/img_status02.png) no-repeat bottom 24px right 30px; background-size:63px auto;}
+.renewal_2024 .status_box.type_03 {background:#edf6fd url(../image/contents/cdln/img_status03.png) no-repeat bottom 24px right 24px; background-size:80px auto;}
+.renewal_2024 .status_box .tit{font-size:19px; font-weight:700;}
+.renewal_2024 .status_box .txt{font-size:15px; font-weight:400; color:var(--grayColor02);}
+.renewal_2024 .status_box .tit + .txt{margin-top:8px;}
+
+.renewal_2024 .data_gray_box{margin-top:32px; padding:22px 20px; display:block; border-radius:22px; background-color:#f5f6fa; box-sizing:border-box; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.renewal_2024 .data_gray_box + .form_part{margin-top:32px;}
+
+.renewal_2024 .data_result_box{position:relative; display:flex; flex-wrap:wrap; }
+.renewal_2024 .data_result_box:after{content:""; display:block; clear:both;}
+.renewal_2024 .data_result_box .top{width:100%; margin-bottom:32px; box-sizing:border-box;}
+.renewal_2024 .data_result_box .left{width:60%; box-sizing:border-box;}
+.renewal_2024 .data_result_box .right{width:40%; padding-left:24px; border-left:1px solid #E6E8F0; box-sizing:border-box;}
+.renewal_2024 .data_result_box .tit{font-size:14px; font-weight:400; color:var(--grayColor02);}
+.renewal_2024 .data_result_box .cost,
+.renewal_2024 .data_result_box .info{margin-top:6px; font-size:22px; font-weight:700;}
+.renewal_2024 .data_result_box .txt{margin-top:6px; font-size:17px; font-weight:700;}
+
+.renewal_2024 .radio_box_pack{margin:32px 0;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box{display:block; margin-top:16px; border-radius:22px; box-shadow:0 4px 30px -8px rgba(0, 0, 0, 0.05);} 
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio{position:absolute;margin:-1px;padding:0;overflow:hidden;width:1px;height:1px;clip:rect(0,0,0,0);} 
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio[chekced="checked"],
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio:checked{background:none;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio + .eblabel{display:block; padding:22px 20px; border-radius:22px; box-sizing:border-box; border:1px solid #E6E6E6; background:none;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio[chekced="checked"] + .eblabel,
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio:checked + .eblabel{padding:21px 19px; border:2px solid #2F6DFC; background:none;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box .data_gray_box{margin:0; padding:0; background:none; } 
+
+/* 신용대출 > 대환대출 > 대환대출 상품안내*/
+.renewal_2024 .info_list{margin-top:32px;}
+.renewal_2024 .info_list > li{margin-top:24px;}
+.renewal_2024 .info_list > li:first-child{margin-top:0;}
+.renewal_2024 .info_list > li .ebbullet_title{padding-bottom:12px;}
+
+/* 신용대출 > 대환대출 > 송금가능안내 바텀시트 */
+.renewal_2024 .remittance_info{margin:16px 0 40px;}
+.renewal_2024 .remittance_info .ebullet_circle > li{margin-top:12px;}
+
+/* 신용대출 > 대환대출 > 기대출내역 */
+.renewal_2024 .detail_part{margin-top:32px;}
+.renewal_2024 .detail_part > .detail_data_box{margin-top:12px;}
+.renewal_2024 .detail_data_box{position:relative; margin-top:20px; padding:20px; border-radius:21px; background:#F5F6FA;}
+.renewal_2024 .detail_data_box:after{content:""; display:block; clear:both;}
+.renewal_2024 .detail_data_box .detail_acco_tit{margin-bottom:16px; font-size:17px; font-weight:700;}
+.renewal_2024 .detail_data_box .detail_total{position:relative; display:flex; margin-top:12px; padding-top:12px; width:100%; border-top:1px solid #e6e6e6; align-items:center; justify-content:space-between;}
+.renewal_2024 .detail_data_box .detail_total .title{font-size:15px; font-weight:500;}
+.renewal_2024 .detail_data_box .detail_total .conts{font-size:22px; font-weight:700; color:#2F6DFC;}
+.renewal_2024 .detail_data_list > ul > li{display:flex; width:100%; margin-top:12px; justify-content:space-between;}
+.renewal_2024 .detail_data_list > ul > li:first-child{margin-top:0}
+.renewal_2024 .detail_data_list > ul > li .title{font-size:15px; color:#707070;}
+.renewal_2024 .detail_data_list > ul > li .conts{font-size:15px;}
+
+.renewal_2024 .acco_box .detail_data_list > ul > li:first-child{margin-top:12px}
+.renewal_2024 .acco_box .control{position:relative; margin-top:12px; text-align:center;}
+.renewal_2024 .acco_box .btn_acco{position:relative; display:inline-block; padding-right:17px; font-size:14px; color:#878787;}
+.renewal_2024 .acco_box .btn_acco:after{content:""; display:block; position:absolute; top:50%; right:0; width:9px; height:5px; margin-top:-2px; background:url('../image/component/accordion_arrow.png') no-repeat center; background-size: 100%;  transition: all .3s;}
+.renewal_2024 .acco_box.active .btn_acco:after{transform:rotate(180deg)}
+
+/* 신용대출 > 대환대출 > 실지급예정액확인 */
+.renewal_2024 .payment_amount_box{position:relative; margin-top:36px; padding:24px 20px; border-radius:20px; background:#EDF6FD;}
+.renewal_2024 .payment_amount_box:before{content:""; display:block; position:absolute; top:-24px; right:0; width:91px; height:48px; background:url('../image/contents/cdln/img_cdln06.png') no-repeat 0 0; background-size:100%;}
+.renewal_2024 .payment_amount_box .tit{font-size:15px;}
+.renewal_2024 .payment_amount_box .tit > span{display:inline-block; vertical-align:middle;}
+
+.renewal_2024 .payment_amount_box .value{margin-top:8px; font-size:30px;}
+.renewal_2024 .payment_amount_box .value .num{font-weight:700;}
+.renewal_2024 .payment_amount_box .value .unit{font-weight:400;}
+
+/* 신용대출 > 대환대출 > 동의여부확인 */
+.renewal_2024 .confirm_consent{margin:40px 0;}
+.renewal_2024 .confirm_consent .eblabel{font-size:14px;}
+.renewal_2024 .confirm_consent .form_set{margin-top:18px;}
