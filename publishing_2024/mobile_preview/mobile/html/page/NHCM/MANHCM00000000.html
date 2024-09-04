@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>- 메인(MA) 로그인전 | NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="../../../resource/js/common.js"></script><!-- [임시] 중간보고용 임시 url -->
+    <script type="text/javascript" src="../../../resource/js/commPop.js"></script><!-- [임시] 중간보고용 임시 url -->
+    <script type="text/javascript" src="../../../resource/js/commMsg.js"></script><!-- [임시] 중간보고용 임시 url -->
+    <script type="text/javascript" src="../../../resource/js/commMo.js"></script><!-- [임시] 중간보고용 임시 url -->
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<!-- 상단 안내 영역 : toast -->
+<div class="banner_layer" style="display:none"><!-- 노출 class="show" --><!--  2024-08-09 2024고도화 : 개발 사용시 style="display:none" 삭제요 -->
+	<div class="layer">
+		<div class="banner_conts">
+			<!-- 이어하기 상태 -->
+			<div class="banner_title">
+				<span class="name">김농협</span> 고객님, 신청중이던 상품이 있습니다.<br> <b>계속 <span class="color02">이어</span>하시겠어요?</b>
+			</div>
+
+			<!-- 마감 임박 7일전 -->
+			<!-- <div class="banner_title">
+				<span class="name">김농협</span> 고객님, 만기가 얼마 남지 않은<br> <b><span class="color02">대출 상품</span>이 있습니다.</b>
+			</div> -->
+
+			<!-- 상품 연체 -->
+			<!-- <div class="banner_title">
+				<span class="name">김농협</span> 고객님, 이용중이신 대출 상품이<br> <b><span class="color02">연체</span>되었습니다.</b>
+			</div> -->
+
+			<!-- 상환 알림 -->
+			<!-- <div class="banner_title">
+				<span class="name">김농협</span> 고객님, 대출상품명이 상환되었습니다.<br> <b>25회차 납부예정 금액은 <span class="color02">213,000원</span>입니다.</b>
+			</div> -->
+		</div>
+		<button type="button" class="ebbtn btn_banner_close" title="배너닫기"></button>
+	</div>
+</div>
+<!-- //상단 안내 영역 : toast -->
+
+<!-- Android 뒤로가기 안내 영역 : toast -->
+<div class="comment_layer show" style="display:none"><!-- 노출 class="show" --><!-- 2024-08-09 2024고도화 : 개발 사용시 style="display:none" 삭제요 -->
+	<div class="layer">
+		<div class="comment_conts">
+			뒤로가기 버튼을 한번 더 누르시면 종료됩니다.
+		</div>
+	</div>
+</div>
+<!-- //Android 뒤로가기 안내 영역 : toast -->
+
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+	<!-- 2024-08-09 2024고도화 : 헤더 UI 변경됨
+	  - renewal_2024 : 고도화 전용 class(필수)
+	  - has_bg : 로그인 후 추가되는 class
+	// -->
+	<div id="headerLay" class="header renewal_2024"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가, 로그인인 경우 .has_bg 추가 -->
+		<div class="header_area">
+			<!-- 2024-08-09 2024고도화 : 헤더 영역 UI 변경 -->
+			<div class="switch_pack">
+				<input type="checkbox" class="ebcheckbox" id="chk1_1" title="간편홈 선택" />
+				<label for="chk1_1" class="eblabel"></label>
+			</div>
+			<!-- // 2024-08-09 2024고도화 : 헤더 영역 UI 변경 -->
+
+			<!-- <div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div> -->
+			<!-- <div class="header_logo">
+				<a href="#"><img src="../../../resource/image/layout/logo.png" alt="NH농협캐피탈"></a>
+			</div> -->
+			<!-- <div class="header_title">
+				<h2 class="ebtitle2">타이틀</h2>
+			</div> -->
+			
+			<div class="header_alarm">
+				<a href="../NHCM/MANHCM00000000_원장보유.html" class="header_alarm_login" title="로그인 화면으로 이동">로그인</a><!-- 2024-08-20 2024고도화 : 로그인 링크 추가 -->
+				<!-- <a href="#noen" class="ebbtn btn_header_point" title="멤버스팟 바로가기, 브라우저로 앱 변환"></a> -->
+				<button type="button" class="ebbtn btn_header_alarm active" title="알림화면 열기"></button><!-- 새로운 알람 있을 경우 addclass="active" -->
+			</div>
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+		</div>
+	</div>
+	<!-- // 2024-08-09 2024고도화 : 헤더 UI 변경됨 -->
+
+	<div class="totalmenu_layer"><!-- 전체메뉴 열기 addclass="show" -->
+		<div class="layer">
+			<div class="top_area">
+				<div class="top_part">
+					<div class="cell">
+						<a href="#" class="ebbtn btn_member" title="회원정보"><span class="name">김농협</span>님</a>
+					</div>
+					<div class="cell">
+						<a href="#" class="ebbtn btn_header_point" title="멤버스팟 바로가기, 브라우저로 앱 변환"></a>
+						<!-- 2022-04-14 수정 : 전체메뉴 홈이동버튼 추가 -->
+						<a href="../NHCM/MANHCM00000000_원장보유.html" class="ebbtn btn_home" title="홈으로 가기"></a>
+						<!-- //2022-04-14 수정 : 전체메뉴 홈이동버튼 추가 -->
+						<!-- <a href="#" class="ebbtn btn_setting" title="설정"></a> 2024-07-30 2024고도화 : 환경설정 버튼 위치 변경 -->
+					</div>
+				</div>
+
+				<!-- 2024-08-28 2024고도화 : SB v0.72 기준. 삭제 -->
+				<!-- <div class="log_part">
+					최근접속<span>2022-05-25 13:30:12</span>!-- 2024-07-30 2024고도화 : 콜론 및 공백 삭제 --
+				</div> -->
+
+				<!-- 2024-07-30 2024고도화 : 검색영역 추가 -->
+				<!-- 2024-08-29 2024고도화 : 검색영역 클릭시 이동으로 input삭제. 마크업 변경 -->
+				 <div class="gnb_search">
+					<a href="#none" class="gnb_search_link" title="선택시 전체 메뉴 검색으로 이동">메뉴를 찾아보세요</a>
+				 </div>
+				<!-- //2024-07-30 2024고도화 : 검색영역 추가 -->
+
+				<div class="quick_part">
+					<ul class="quick_menu_list"><!--  2024-07-30 2024고도화 : .quick_menu_list 클래스 추가 -->
+						<li>
+							<a href="#" class="ebbtn btn_quickmenu">
+								<span class="ebicon icon_quickcerti"></span>
+								<span class="text">인증센터</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="ebbtn btn_quickmenu">
+								<span class="ebicon icon_quickservice"></span>
+								<span class="text">고객센터</span>
+							</a>
+						</li>
+						<!-- 2024-07-30 2024고도화 : 환경설정 버튼 위치 변경 -->
+						<li>
+							<a href="#" class="ebbtn btn_quickmenu">
+								<span class="ebicon icon_cunstom_center"></span>
+								<span class="text">환경설정</span>
+							</a>
+						</li>
+						<!-- //2024-07-30 2024고도화 : 환경설정 버튼 위치 변경 -->
+					</ul>
+				</div>
+
+			</div>
+			<div class="totalmenu_area">
+
+				<div class="tab_pack" data-module-id="totalmentab">
+					<ul class="ebtab">
+						<li class="active">
+							<a href="javascript:void(0)" class="ebbtn btn_tab">신용대출</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">스탁론</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">자동차금융</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">산업재금융</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">주택금융</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">기업투자금융</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">NH임직원MALL</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">My페이지</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">고객센터</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">금융소비자보호</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="ebbtn btn_tab">인증센터</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tabcontent_pack" data-module-for="totalmentab">
+					<ul class="ebtab_content">
+						<li class="active">
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">신용대출</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">대출상품</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<!-- 2024-08-28 2024고도화 : 상품소개 > 4뎁스 생성, 마크업 변경됨 -->
+														<a href="#" class="menuname has_menu"><!-- 하위 메뉴가 있는 경우 '.has_menu' 클래스 추가 -->
+															<span class="name">상품소개</span>
+														</a>
+														<ul class="depth4">
+															<li><a href="#none" class="menuname"><span class="name">신용대출(신규)</span></a></li>
+															<li><a href="#none" class="menuname"><span class="name">신용대출(추가)</span></a></li>
+														</ul>
+														<!-- // 2024-08-28 2024고도화 : 상품소개 > 4뎁스 생성, 마크업 변경됨 -->
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">대출신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">온라인약정</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">스탁론</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">대출상품</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신규대출</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">대환대출</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">추가대출</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">한도관리</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">한도증액신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">한도감액신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">계좌관리</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">일부상환신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">만기연장신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">해지신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">당일대출취소</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">당일한도증액취소</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">자동차금융</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">신차</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">대출신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">중고차</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">대출신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">자동차리스</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">견적만들기</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">장기렌터카</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">견적만들기</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">대출신청관리</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신청현황(약정)</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">산업재금융</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">신산업재 할부</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">신산업재 론</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">중고산업재 론</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">대출신청관리</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신청현황(약정)</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">주택금융</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">사업자 아파트담보대출</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신청서작성</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전화상담신청</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">임차보증금대출</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">기업·투자금융</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">기업금융</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">투자금융</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">일반리스</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품소개</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">NH임직원MALL</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">NH임직원 신용대출</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">대출신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">온라인약정</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">NH임직원 자동차금융</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신차 대출신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">중고차 대출신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">자동차리스 견적신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신청현황(약정)</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">MY페이지</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">My Account</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전체대출내역</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상환스케줄 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">납부예정금액 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">납부내역 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">연체내역 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">입금계좌번호 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">멤버스 포인트 조회</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">결제서비스</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">청구금액결제</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">중도상환해지신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">근저당 설정해지 신청</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">결제일 변경</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">결제계좌 변경</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">명세서수령방법 변경</span>
+														</a>
+													</li>
+
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">자동차관리</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">범칙금 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">만기차량 관리</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">재리스/재렌탈 신청정보</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">승계 신청정보</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">발급서비스</span>
+												</div>
+												<!-- 2024-09-02 2024고도화 : [SB v0.92] 발급서비스 > 메뉴 변경 -->
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">비대면 서류 발급</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신청서 발급</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">발급내역 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">서류 조회 서비스</span><!-- App 전용 -->
+														</a>
+													</li>
+												</ul>
+												<!-- // 2024-09-02 2024고도화 : [SB v0.92] 발급서비스 > 메뉴 변경 -->
+
+												<!-- old -->
+												<!-- <ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">금융거래확인서 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">거래내역확인서 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">납입영수증 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">연체대금완납확인서 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">완납증명서 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전자계산서 발급절차 안내</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">신용대출약정서 발급</span>
+														</a>
+													</li>
+												</ul> -->
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">비대면서류제출서비스</span>
+												</a>
+											</li>
+											<li>
+												<!-- 2024-09-02 2024고도화 : [SB v0.92] 회원정보관리 > 메뉴 변경 -->
+												<div class="menuname">
+													<span class="name">회원정보관리</span>
+												</div>												
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">내 정보 확인</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">가입정보 확인</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">동의정보신청</span>
+														</a>
+													</li>
+												</ul>
+												<!-- //2024-09-02 2024고도화 : [SB v0.92] 회원정보관리 > 메뉴 변경 -->
+
+												<!-- old -->
+												<!-- <a href="#" class="menuname">
+													<span class="name">회원정보관리</span>
+												</a> -->
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">고객센터</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">전화상담신청</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">ARS 서비스 안내</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">FAQ</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">금융용어검색 및 설명</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">전자금융거래 10계명</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">대출모집인/전화상담원 조회</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">공지사항</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">뉴스</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">이벤트</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">중도상환수수료면제 안내</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">대출이용절차안내</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">제휴서비스 사이트 안내</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">지점안내</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">상품별 신청서/안내 리스트</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">금융소비자보호</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">전자민원접수</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">전자민원접수/조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">주요 민원 유형</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#" class="menuname">
+													<span class="name">금융소비자보호 체계 및 제규정</span>
+												</a>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">금융소비자 정보 조회</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">본인정보 이용/제공 조회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">개인(신용)정보 열람/정정등 요구</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">개인신용정보 동의서(표준안)</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">금리인하요구권</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">청약철회권</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">위법계약해지권</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">연락중지 청구</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">제공동의 철회</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">개인신용평가 결과 대응권</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">금융소비자 유익정보 제공</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">보이스피싱 피해예방 10계명</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">금융소비자 유익 사이트</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">금융소비자 이슈 메시지</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">금융소비자보호 민원건수 공시</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<div class="menuname">
+													<span class="name">약관</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">이용약관 및 규정</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">상품별 각종 약관 리스트</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="gnb">
+								<ul class="depth1">
+									<li>
+										<div class="menuname">
+											<span class="name">인증센터</span>
+										</div>
+										<ul class="depth2">
+											<li>
+												<div class="menuname">
+													<span class="name">인증센터</span>
+												</div>
+												<ul class="depth3">
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">PIN 번호 변경</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">PIN 번호 재설정</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">패턴 변경</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">패턴 재설정</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">공동인증서 관리</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">공동인증서 가져오기</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="menuname">
+															<span class="name">공동인증서 등록</span>
+														</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<button type="button" class="ebbtn btn_totalmenu_close" title="전체메뉴 닫기"></button>
+
+		</div>
+	</div>
+	<!-- // 전체메뉴  -->
+
+	<div class="container renewal_2024"><!-- 2024-08-09 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader"></div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+				<!-- 2024-08-09 2024고도화 : 메인 컨텐츠 영역 UI 변경 -->
+				<!-- 상품 영역 : 
+					- BG 설정 : .odd / .even
+					- 2위 영역 노출시 : .second
+				// -->						
+				<div class="main_section odd">
+					<!-- 1위 : 신용대출 -->
+					<div class="section_box">
+						<p class="text_section_title">쉽고 빠른 대출이 필요하세요?</p><!-- 2024-08-20 2024고도화 : 섹션타이틀 우측 아이콘 클래스 삭제 -->
+						<div class="section_content">
+							<div class="section_content_head ico_01"><!-- 2024-08-20 2024고도화 : 신용대출 헤더영역 아이콘 클래스 추가 .ico_01 -->
+								<p class="text_head_title"><em>365</em>일 <em>24</em>시간 언제나<br/> 대출이 가능해요!</p>
+								<a href="../CDLN/MACDLN01000001.html" class="ebbtn btn_small r_arrow">상품보기</a><!-- 2024-08-20 2024고도화 : 신용대출 > 상품보기 버튼 추가 -->
+							</div>
+							<ul class="product_keywords">
+								<!-- 2024-08-20 2024고도화 : 키워드 아이콘 클래스 추가 & SB기준으로 텍스트/순서변경 -->
+								<li class="product_keyword ico_01">최대 1.5억원</li>
+								<li class="product_keyword ico_02">최저 연7.5%</li>								
+								<li class="product_keyword ico_04">직장인</li>
+								<li class="product_keyword ico_05">자영업자</li>
+								<li class="product_keyword ico_03">주부</li>
+							</ul>
+							<button type="button" class="ebbtn btn_normal full">나의 한도 알아보기</button>
+						</div>
+					</div>				
+				</div>
+				<!-- // odd -->
+
+				<div class="main_section even second"><!-- 2위 영역 : .second -->
+					
+					<!-- 2위 : 스탁론 -->
+					<div class="section_box">
+						<p class="text_section_title">내 주식으로 받을 수 있는 한도는?</p><!-- 2024-08-20 2024고도화 : 섹션타이틀 우측 아이콘 클래스 삭제 -->
+						<div class="section_content">						
+							<div class="section_content_head ico_05"><!-- 2024-08-20 2024고도화 : 신용대출 헤더영역 아이콘 클래스 추가 .ico_05 -->
+								<p class="text_head_title">증권계좌 평가금액의<br/> 최대 300%까지!</p>
+								<a href="../STLN/MASTLN01000001.html" class="ebbtn btn_small_wh r_arrow">상품보기</a><!-- 2024-08-26 2024고도화 : 스탁론 > 상품보기 버튼 추가 '.btn_small_wh' -->
+							</div>
+							<ul class="product_conditions">
+								<li class="product_condition">
+									<div class="condition_item">
+										<span class="text title">신규대출</span>
+										<span class="text normal">계좌당 3억원</span>
+									</div>
+									<div class="condition_item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 6.0%</span>  
+									</div>
+								</li>
+								<li class="product_condition">
+									<div class="condition_item">
+										<span class="text title">대환대출</span>
+										<span class="text normal">계좌당 3억원</span>
+									</div>
+									<div class="condition_item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 6.0%</span>  
+									</div>
+								</li>
+								<li class="product_condition">
+									<div class="condition_item">
+										<span class="text title">추가대출</span>
+										<span class="text normal">계좌당 3억원</span>
+									</div>
+									<div class="condition_item">
+										<span class="text normal">최저</span>
+										<span class="text highlight">연 6.0%</span>  
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- // even -->
+
+				<div class="main_section odd">
+					<div class="section_box">
+						<p class="text_section_title">다양한 금융상품을 만나보세요.</p><!-- 2024-08-20 2024고도화 : 섹션타이틀 우측 아이콘 클래스 삭제 -->
+						<ul class="product_banners">
+							
+							<li class="banner_item">
+								<a href="../ATFN/MAATFN01000001.html" role="button" class="banner_link type_03"><!-- 자동차금융 : type_03 -->
+									<p class="banner_title">자동차금융</p>
+									<p class="banner_text">자동차 구입 또는 리스</p>
+									<p class="banner_tag"><span class="tag">#신차</span><span class="tag">#리스</span><span class="tag">#장기렌터카</span></p>
+								</a>
+							</li>
+							<li class="banner_item">
+								<a href="../CMFN/MACMFN01000001.html" role="button" class="banner_link type_04"><!-- 산업재금융 : type_04 -->
+									<p class="banner_title">산업재금융</p>
+									<p class="banner_text">건설기계, 상용차 구입</p>
+									<p class="banner_tag"><span class="tag">#개인</span><span class="tag">#개인사업자</span><span class="tag">#법인</span></p>
+								</a>
+							</li>							
+							<li class="banner_item">
+								<a href="../HSFN/MAHSFN01000001.html" role="button" class="banner_link type_05"><!-- 주택금융 : type_05 -->
+									<p class="banner_title">주택금융</p>
+									<p class="banner_text">아파트 담보 대출</p><!-- 2024-08-20 2024고도화 : SB기준으로 텍스트 변경 --><!-- 2024-08-26 2024고도화 : [v0.9] 텍스트 변경 -->
+									<p class="banner_tag"><span class="tag">#사업기간 6개월 이상</span><br /><span class="tag">#아파트 보유</span></p><!-- 2024-08-20 2024고도화 : SB기준으로 텍스트 변경 --><!-- 2024-08-26 2024고도화 : [v0.9] 텍스트 변경 -->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="main_section even">
+					<!-- 자주 찾는 서비스 -->
+					<div class="section_content no_head">
+						<p class="section_title">자주 찾는 서비스</p><!-- 2024-08-20 2024고도화 : SB기준으로 띄어쓰기 변경 -->
+						
+						<!-- 2024-08-26 2024고도화 : 마크업 변경(클래스 추가/삭제 및 이미지 추가), 4개 노출되는 경우 클래스 '.ty_four' -->
+						<ul class="product_reclinks has_img">
+							<!-- 2024-08-20 2024고도화 : 아이콘 클래스 변경됨 -->
+							<li class="product-recitem">
+								<a href="#none" class="product_reclink" role="button"><div class="product_icon"><img src="../../../../mobile/resource/image/main/ico_favorite_svc_32x36_01.png" alt=""/></div>약정신청</a>
+							</li>
+							<li class="product-recitem">
+								<a href="#none" class="product_reclink" role="button"><div class="product_icon"><img src="../../../../mobile/resource/image/main/ico_favorite_svc_32x36_02.png" alt=""/></div>전화상담</a>
+							</li>
+							<li class="product-recitem">
+								<a href="#none" class="product_reclink" role="button"><div class="product_icon"><img src="../../../../mobile/resource/image/main/ico_favorite_svc_32x36_03.png" alt=""/></div>대출계산기</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 이벤트 배너 -->
+					<div class="main_event_banners">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">			
+								<div class="swiper-slide">
+									<a href="#none" class="event_banner" role="button">
+										<img src="../../../../mobile/resource/image/temp/mainbanner03.jpg" alt="우수고객 추가대출 바로가기 : NH농협캐피탈 거래 고객이세요? 우대금리 및 한도를 지금 확인해보세요 중도상환수수료 면제 혜택 제공"><!-- 임시 이미지 -->
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#none" class="event_banner" role="button">
+										<img src="../../../../mobile/resource/image/temp/mainbanner05.jpg" alt="nh저축은행 기본 연 2.2% ~ 최고 연 3.0% (세전) 하루만 맡겨도 이자가 통장에 fic nh fic-one 보통예금 저축은행중앙회심의필 제2024-00165호(2024.02.14~2025.02.13) nh저축은행준법감시인심의필 제2024-003호(2024.02.02~2025.02.01)"><!-- 임시 이미지 -->
+									</a>
+								</div>
+							</div>
+							<div class="swiper-controls">
+								<div class="swiper-pagination"></div>
+								<div class="swiper-toggle"><button type="button" aria-label="정지" class="swiper-toggle-button ebbtn"></button></div>
+							</div>							
+						</div>
+					</div>	
+				</div>
+				<!-- // 2024-08-09 2024고도화 : 메인 컨텐츠 영역 UI 변경 -->
+
+				<!-- 하단 fixed 빠른메뉴 -->
+				<div class="main_gnb_part">
+					<div class="main_gnb_layer">
+						<div class="main_gnb">
+							<ul>
+								<li>
+									<a href="#" class="ebbtn btn_main_menu">
+										<span class="ebicon icon_main_home"><img src="../../../resource/image/main/icon_gnb_home.png" alt=""></span>
+										<span class="text">홈</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="ebbtn btn_main_menu">
+										<span class="ebicon icon_main_member"><img src="../../../resource/image/main/icon_gnb_member.png" alt=""></span>
+										<span class="text">내정보</span><!-- 2024-08-13 2024고도화 : 메뉴명 변경, old)회원정보관리 --><!-- 2024-08-20 2024고도화 : 메뉴명 SB기준으로 변경 -->
+									</a>
+								</li>
+								<li>
+									<a href="#" class="ebbtn btn_main_menu">
+										<span class="ebicon icon_main_service"><img src="../../../resource/image/main/icon_gnb_service.png" alt=""></span>
+										<span class="text">발급서비스</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="ebbtn btn_main_menu">
+										<span class="ebicon icon_main_call"><img src="../../../resource/image/main/icon_gnb_call.png" alt=""></span>
+										<span class="text">간편상담</span><!-- 2024-08-13 2024고도화 : 메뉴명 변경, old)전화상담신청 --><!-- 2024-08-20 2024고도화 : 메뉴명 SB기준으로 변경 -->
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>		
+				<!-- // 하단 fixed 빠른메뉴 -->		
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+	</div>
+</div>
+
+<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+<div id="layoutPopContent" aria-hidden="true">
+
+
+</div>
+
+<script>
+// 컨텐츠내용 로드 완료 후 실행
+mainprdnosignSwiper();
+maineventSwiper();// 메인이벤트슬라이더: 1개이상일경우 maineventSwiper()호출
+mainboardSwiper();
+
+//팝업호출
+// popupFunc('#tempId').show();
+
+// 상단 안내 노출 예시
+$(window).on('load', function() {
+	setTimeout(function(){
+		$('.banner_layer').addClass('showapp');
+	},100)
+})
+
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+
+
+
+// 2024-08-26 2024고도화 : 보유상품 및 이벤트 배너, 배경색 설정 코드 'ui_common_2024.js(퍼블js)'로 이동
+myProductsSwiper();// 보유 상품
+mainEventerBannersSwiper()// 메인 이벤트 배너
+</script>
+
+
+</body>
+</html>

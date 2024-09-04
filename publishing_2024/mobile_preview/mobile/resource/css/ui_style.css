@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* v1.0 | 2022-06-02 */
+/*
+	테스트용-올원뱅크리소스
+
+	1. '테스트용-올원뱅크리소스' 호출.
+	2. 스크립트는 각각HTML 하단에 선언하여 테스트할것.
+
+	※참고사항※
+	-범위 정해져있음(신용대출, My페이지-전체대출내역 조회)
+	-mother사이트의 tag자체에 걸려있는 reset까지 해제할 수 없음
+*/
+/* @import url("../test_inapp_res/allonebank_new/assets/css/common.css"); */
+
+
+/* NH농협캐피탈 */
+@import url("ui_layout.css");
+@import url("ui_common.css");
+@import url("ui_component.css");
+@import url("ui_contents.css");
+@import url("ui_contents_2024.css"); /* 2024-08 고도화 */
+@import url("ui_contents_koun_2024.css"); /* 2024-08 고도화 - 임시 */
+@import url("ui_helper.css");

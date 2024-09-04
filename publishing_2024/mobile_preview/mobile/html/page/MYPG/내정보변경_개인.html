@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>내 정보 변경 | NH농협캐피탈</title>
+
+    <!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+	<div class="header">
+		<div class="header_area">
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+			<div class="header_title">
+				<h2 class="ebtitle2">내 정보 변경</h2>
+			</div>
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container renewal_2024"><!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+				<div class="page_title_part">
+					<h2 class="ebtitle2">내 정보 변경</h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+				<div class="form_part">
+                    <h3 class="section_title">기본정보</h3>
+
+                    <div class="form_set">
+						<div class="ebform_label">이름</div>
+						<div class="input_pack">
+                            <input type="text" class="ebinput" title="고객 이름" value="김농협" readonly="readonly" />
+                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                        </div>
+					</div>
+                    
+                    <div class="form_set">
+                        <div class="ebform_label required">휴대폰 번호</div><!-- 필수 항목 : .required 클래스 추가 -->
+                        <div class="form_pack ty_phonenum">
+                            <div class="select_pack" data-ui="customSelect">
+                                <select class="ebselect" data-placeholder="통신사" title="통신사">
+                                    <option value="">선택</option>
+                                    <option value="01">SKT</option>
+                                    <option value="02">KT</option>
+                                    <option value="03">LGU+</option>
+                                    <option value="05">알뜰폰(SKT)</option>
+                                    <option value="06">알뜰폰(KT)</option>
+                                    <option value="07">알뜰폰(LGU+)</option>
+                                </select>
+                            </div>
+                            <div class="input_pack">
+                                <input type="tel" class="ebinput" placeholder="휴대폰 번호 입력" value="" title="휴대폰 번호">
+                                <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                            </div>
+                        </div>
+						<ul class="ebullet_circle">
+							<li>안전한 전자금융거래를 위하여 휴대폰 번호 변경 시 휴대폰 본인인증을 진행합니다.</li>
+						</ul>
+                    </div>
+
+                    <div class="form_set">
+						<div class="ebform_label">이메일</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+                    <h3 class="section_title">집정보</h3>
+
+                    <div class="form_set">
+						<div class="ebform_label">집 전화번호</div>
+						<div class="form_pack ty_phonenum">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" title="지역번호 입력" data-placeholder="지역번호">
+									<option value="">선택</option>
+									<option value="option1" selected="selected">02</option>
+									<option value="option2">031</option>
+									<option value="option3">option3</option>
+								</select>
+							</div>
+							<div class="input_pack">
+								<input type="tel" class="ebinput" title="집 전화번호" placeholder="-없이 숫자만 입력" value="1111-2222">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+                    <!-- 주소 미입력 상태 시 -->
+					<div class="form_set">
+						<div class="ebform_label">집 주소</div>
+						<div class="form_pack">
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="집 주소 검색">주소 검색</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 주소 검색 후 활성화  -->
+					<div class="form_set">
+						<div class="ebform_label">집 주소</div>
+						<div class="form_pack ty_flex">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="집 주소 입력" title="집 주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+							<div class="btn_pack">
+								<button type="button" class="ebbtn btn_multi">주소수정</button>
+							</div>
+						</div>
+						<!-- 2024-08-21 2024고도화 : 상세주소 마크업 위치 변경 -->
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+                    <h3 class="section_title">직장정보</h3>
+                    <div class="form_set">
+						<div class="ebform_label">직장 전화번호</div>
+						<div class="form_pack ty_phonenum">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" title="지역번호 입력" data-placeholder="지역번호">
+									<option value="option1">02</option>
+									<option value="option2" selected="selected">031</option>
+									<option value="option3">option3</option>
+								</select>
+							</div>
+							<div class="input_pack">
+								<input type="tel" class="ebinput" title="직장 화번호" placeholder="-없이 숫자만 입력" value="1111-2223">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 주소 미입력 상태 시 -->
+                    <div class="form_set">
+						<div class="ebform_label">직장 주소
+							<!-- 2024-08-21 2024고도화 : 항목 삭제
+							<div class="checkbox_pack ebform_option">
+								<input type="checkbox" class="ebcheckbox" id="chk1_1">
+								<label for="chk1_1" class="eblabel">집 주소와 동일</label>
+							</div> -->
+						</div>						
+						<div class="form_pack">
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="직장 주소 검색">주소 검색</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 주소 검색 후 활성화 -->
+					<!-- <div class="form_set">
+						<div class="ebform_label">직장 주소</div>
+						<div class="form_pack ty_flex">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="직장주소 입력" title="직장주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+							<div class="btn_pack">
+								<button type="button" class="ebbtn btn_multi">주소수정</button>
+							</div>
+						</div>
+						!-- 2024-08-21 2024고도화 : 상세주소 마크업 위치 변경 --
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div> -->
+
+                    <h3 class="section_title">기타정보</h3>
+                    <!-- 주소 미입력 상태 시 -->
+					<div class="form_set">
+						<div class="ebform_label">기타 주소
+							<!-- 2024-08-21 2024고도화 : 항목 삭제
+							<div class="checkbox_pack ebform_option">
+								<input type="checkbox" class="ebcheckbox" id="chk1_1">
+								<label for="chk1_1" class="eblabel">집 주소와 동일</label>
+							</div> -->
+						</div>
+						<div class="form_pack">
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="기타 주소">주소 검색</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- 주소 검색 후 활성화 -->
+					<!-- <div class="form_set">
+						<div class="ebform_label">기타 주소</div>
+						</div>
+						<div class="form_pack ty_flex">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="기타 주소 입력" title="기타 주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+							<div class="btn_pack">
+								<button type="button" class="ebbtn btn_multi">주소수정</button>
+							</div>
+						</div>
+						!-- 2024-08-21 2024고도화 : 상세주소 마크업 위치 변경 --
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- 2024-08-21 2024고도화 : 캡션 추가됨 -->
+					<ul class="ebullet_circle">
+						<li>휴대폰 번호와 이메일 변경 시, 가입정보의 휴대폰 번호, 이메일도 동일한 정보로 변경됩니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<div class="btn_box">
+				<div class="box_l">
+					<button type="button" class="ebbtn btn_main ty_light">취소</button>
+				</div>
+				<div class="box_r">
+					<button type="button" class="ebbtn btn_main ty_bg">저장</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+<div id="layoutPopContent" aria-hidden="true"></div>
+
+
+<script>
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

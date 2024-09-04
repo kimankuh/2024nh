@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="z_eilab/favicon.png">
+	<title>-NH농협캐피탈(2024)</title>
+    <!-- 공통 library -->
+    <script type="text/javascript" src="resource/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="resource/js/jquery-ui-1.12.1.min.js"></script>
+    <!-- 2024 퍼블현황판 css -->
+    <link rel="stylesheet" href="resource/css/mobile_preview_2024.css">
+</head>
+
+<body>
+    <div id="wrap" class="nav-active">
+        <div id="nav">
+            <h1 class="h1">NH농협캐피탈<br/> 디지털 채널 모바일 앱, 웹<br/> 개선 및 24x365</h1>
+            
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="mobile/html/page/NHCM/MANHCM00000000.html" class="nav-menu-link active" target="preview">메인(로그인전)</a></li>
+                <li class="nav-menu-item"><a href="mobile/html/page/NHCM/MANHCM00000000_원장보유.html" class="nav-menu-link" target="preview">메인(로그인후)</a></li>
+                <li class="nav-menu-item"><a href="mobile/html/page/NHCM/MANHCM00000000_간편홈.html" class="nav-menu-link" target="preview">메인(간편홈)</a></li>
+                <li class="nav-menu-item"><a href="mobile/html/page/CDLN/MACDLN01000001.html" class="nav-menu-link" target="preview">상품소개(신용대출)</a></li>
+                <li class="nav-menu-item"><a href="mobile/html/page/CDLN/MACDLN01000001.html" class="nav-menu-link" target="_blank">새창보기</a></li>
+            </ul>
+        </div>
+        <!-- // #nav  -->
+
+        <div id="contents">
+            <!-- <div class="header">
+                <h2 class="h2">Mobile MW/MA 작업 목록</h2>
+            </div> -->
+            <div class="content">
+                <div class="preview_wrap"><iframe src="mobile/html/page/NHCM/MANHCM00000000.html" name="preview" frameborder="0" class="preview_box"></iframe></div>
+            </div>
+            <!-- <button type="button" class="btn-top">Top</button> -->
+        </div>
+        <!-- // #contents -->
+    </div>
+    <!-- // #wrap -->
+
+    <!-- 2024 퍼블현황판 js -->
+    <script type="text/javascript" src="resource/js/mobile_preview_2024.js"></script>
+    <!-- <script type="text/javascript" src="guide/js/nhcapital_list_2024.js"></script> -->
+    <script>
+        $(function(){
+            // nav
+            $('.btn-nav-toggle').on('click', function(){
+                $(this).closest('#wrap').toggleClass('nav-active');
+
+                if($(this).closest('#wrap').hasClass('nav-active')){
+                    $(this).attr('title', '메뉴 닫기');
+                } else {
+                    $(this).attr('title', '메뉴 열기');
+                }
+            });
+
+            // status
+            var del = $('[data-status="삭제"]').length;
+            var ing = $('[data-status="진행"]').length;
+            var done = $('[data-status="완료"]').length;
+            var total = $('.page-list-tr').length  - del;    
+
+            // console.log('전체 : ', total)
+            // console.log('진행 : ', ing)
+            // console.log('완료 : ', done)
+            // console.log('삭제 : ', del)
+            $('.status-item .total').text(total);
+            $('.status-item .ing').text(ing);
+            $('.status-item .done').text(done);
+            $('.status-item .del').text(del);
+            $('.status-item .percent').text(Math.floor((done/total)*100));
+
+            $('[data-status="삭제"]').each(function(){
+                $(this).closest('tr').addClass('del-tr');
+            });
+
+            // preview
+            $('.btn-preview-toggle').on('click', function(){
+                $(this).closest('#wrap').toggleClass('prev-active');
+
+                if($(this).closest('#wrap').hasClass('prev-active')){
+                    $(this).attr('title', '미리보기 닫기');
+                } else {
+                    $(this).attr('title', '미리보기 열기');
+                }
+            });
+
+            $('.link-id').each(function(){
+                $(this).on('mouseover', function(){
+                    var url = $(this).attr('href');
+                    $('.preview').attr('src', url);
+                }).on('click', function(){
+                    $('.link-id').css('color', '');
+                    $(this).css('color', '#0765e5');
+                });
+            });
+
+
+            // scrollTop
+            $('.btn-top').on('click', function(){
+                $('html').animate({scrollTop:0}, 300);
+            });
+        });
+    </script>
+</body>
+</html>
