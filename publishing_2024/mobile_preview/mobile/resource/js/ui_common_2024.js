@@ -300,3 +300,35 @@ function dargBottomSheet(){
 }
 
 
+
+
+
+
+
+/////////////////// [임시]중간보고용 스크립트  ///////////////////
+$(function(){
+    // 메인 > 토스트 닫기
+    $('.btn_banner_close').on('click', function(){
+        $(this).closest('.banner_layer').remove();
+    });
+
+    // 메인 > 진행상태 닫기
+    $('.btn_status_close').on('click', function(){
+        $(this).closest('.status_toast').remove();
+    });
+
+    // 간편홈
+    var simpleToggle = $('.header_area').find('.switch_pack input[type="checkbox"]');
+    
+    simpleToggle.on('change', function(){
+        if(simpleToggle.is(':checked')){
+            console.log('1')
+            location.href="../../../html/page/NHCM/MANHCM00000000_간편홈.html"
+        }else{
+            console.log('2') 
+            location.href="../../../html/page/NHCM/MANHCM00000000_원장보유.html"
+        }
+    });    
+
+    // console.log('simpleToggle : ', simpleToggle.is(':checked'))
+});
