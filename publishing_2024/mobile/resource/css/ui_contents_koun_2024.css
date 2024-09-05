@@ -26,6 +26,8 @@
 
 .renewal_2024 .link_blue_underline{color:#2F6DFC; text-decoration:underline;}
 
+.renewal_2024 .ebullet_circle .color07{font-weight:500;}
+
 /*============= content ============*/
 /* 공통 > 상품소개 */
 .renewal_2024 .contents_area.product_info{height:100%; padding:0; overscroll-behavior:contain; background-color:#2f6dfc;}
