@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 
-	<title>NH농협캐피탈</title>
+	<title>제출서류관리 | NH농협캐피탈</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="header_title">
-				<h2 class="ebtitle2">서류 선택</h2>
+				<h2 class="ebtitle2">제출 서류 관리</h2><!-- 2024-09-04 2024고도화 : 타이틀 변경 -->
 			</div>
 
 			<div class="header_menu">
@@ -56,12 +56,12 @@
 		<div class="subheader">
 			<div class="subheader_area">
 				<div class="page_title_part">
-					<h2 class="ebtitle2">비대면서류제출서비스</h2>
+					<h2 class="ebtitle2">제출 서류 관리</h2><!-- 2024-09-04 2024고도화 : 타이틀 변경 -->
 				</div>
 
 				<!-- 2022-04-14 수정 : sb현행화에따른 텍스트/마크업 수정 -->
 				<div class="page_subtitle_part">
-					<p>제출하실 서류를 선택해주세요.</p>
+					<p>제출이 필요한 서류를 확인 하시고, 제출하실 서류를 선택 해 주세요</p><!-- 2024-09-04 2024고도화 : 문구 변경 -->
 
 					<!-- 추가서류제출 대상자가 아닌경우 -->
 					<!-- <p>쉽게 온라인으로 서류를 제출하실 수 있습니다.</p> -->
@@ -74,38 +74,63 @@
 			<div class="contents">
 
 				<!-- 2022-05-04 수정 : 개인/사업자 셀렉트 추가 -->
-				<div class="form_part borderdiv">
+				<div class="form_part"><!-- 2024-09-04 2024고도화 : 클래스 삭제 '.borderdiv' -->
+					<div class="ebform_label">결제일</div><!-- 2024-09-04 2024고도화 : label 추가 -->
 					<div class="form_pack">
-						<div class="select_pack ty_noborder" data-ui="customSelect">
+						<div class="select_pack" data-ui="customSelect"><!-- 2024-09-04 2024고도화 : 클래스 삭제 '.ty_noborder' -->
 							<select class="ebselect" data-placeholder="개인/사업자 선택" title="개인/사업자 구분">
-								<option value="option1">개인</option>
+								<option value="option1" selected="selected">개인</option>
 								<option value="option2">사업자이름1 노출</option>
 								<option value="option3">사업자이름2 노출</option>
 							</select>
 						</div>
 					</div>
 				</div>
-				<div class="choice_method_part ty_noborder">
-					<div class="choice_method_list">
+
+				<div class="choice_method_part"><!-- 2024-09-04 2024고도화 : 클래스 삭제 '.ty_noborder' -->
+					<div class="choice_method_list rBox_wh">
+						<!-- 2024-09-04 2024고도화 : '제출 요청 서류' 마크업 변경 -->
 						<ul>
-							<li>
-								<a href="#" class="method">
-									<span class="name">추가제출서류명 노출</span>
+							<li>								
+								<a href="#none" class="method" role="button">
+									<ul class="data_list">
+										<li class="data_list_item">
+											<div class="label">요청서류명/대출상품명</div>
+											<div class="data">면허증 or 자격증/장기렌터카장기렌터카장기렌터카장기렌터카</div>
+										</li>
+										<li class="data_list_item">
+											<div class="label">제출기한</div>
+											<div class="data num">2024-12-31-00:00</div>
+										</li>
+									</ul>
 								</a>
 							</li>
-                            <li>
-								<a href="#" class="method">
-									<span class="name">추가제출서류명 노출</span>
+                            <li>								
+								<a href="#none" class="method" role="button">
+									<ul class="data_list">
+										<li class="data_list_item">
+											<div class="label">요청서류명/대출상품명</div>
+											<div class="data">면허증 or 자격증/장기렌터카</div>
+										</li>
+										<li class="data_list_item">
+											<div class="label">제출기한</div>
+											<div class="data num">2024-12-31-00:00</div>
+										</li>
+									</ul>
 								</a>
 							</li>
-                            <li>
-								<a href="#" class="method">
-									<span class="name">추가제출서류명 노출</span>
-								</a>
-							</li>
-                            <li>
-								<a href="#" class="method">
-									<span class="name">추가제출서류명 노출</span>
+                            <li>								
+								<a href="#none" class="method done" role="button"><!-- 제출완료시 클래스 추가 '.done'-->
+									<ul class="data_list">
+										<li class="data_list_item">
+											<div class="label">요청서류명/대출상품명</div>
+											<div class="data">면허증 or 자격증/장기렌터카</div>
+										</li>
+										<li class="data_list_item">
+											<div class="label">제출기한</div>
+											<div class="data num">제출완료</div>
+										</li>
+									</ul>
 								</a>
 							</li>
 						</ul>

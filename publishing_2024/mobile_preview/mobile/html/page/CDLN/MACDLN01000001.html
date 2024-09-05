@@ -1393,17 +1393,7 @@
 /* 2024-08-08 2024고도화 : 상품소개 script */
 $(window).on('load',function(){
 	keypadChk();//상품소개 가상키패드 체크
-
-	// [임시] 중간보고용 디바이스 체크
-	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;   
-	if(!isMobile) {
-		//모바일이 아닌 경우 스크립트
-		console.log('PC')
-		dargBottomSheetPC();
-	} else {
-		//모바일인 경우 스크립트
-		dargBottomSheet(); // 상품소개 drag bottom sheet
-	}	
+	dargBottomSheet();
 });
 
 </script>

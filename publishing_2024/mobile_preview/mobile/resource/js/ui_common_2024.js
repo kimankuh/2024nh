@@ -175,171 +175,128 @@ function keypadChk(){
 	
 	});
 }
+
 // 상품소개 -  draggable 바텀시트
 function dargBottomSheet(){
-	var $bs = $('.dragging_bs');
-	var $handle = $('.drag_handle');
-	var wh = $(window).height();        
-	var hh = $('.header').outerHeight();
-	var conh = $('.desc_area').outerHeight() - 48;
-	var bsh = wh - (hh + conh) + 48;
-	var bsMaxH = wh - hh;
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+    var wh = $(window).height();        
+    var hh = $('.header').outerHeight();
+    var $bs = $('.dragging_bs');
+    var $handle = $bs.find('.drag_handle');
+    var conh = $bs.closest('.product_info').find('.desc_area').outerHeight() - 48;
+    var bsh = wh - (hh + conh) + 48;
+    var bsMaxH = wh - hh;
+
 	var touchStart;
 	var touchLast;
 
-	// init
+	if(!isMobile) {
+		//모바일이 아닌 경우 스크립트
+		console.log('PC')
+		dargBottomSheetPC();
+	} else {
+		//모바일인 경우 스크립트
+		dargBottomSheetMobile(); // 상품소개 drag bottom sheet
+	}
+
+    // init
 	$bs.height(bsh);
-	$('.container.renewal_2024').css('height','100%')
+	$('.container.renewal_2024').css('height','100%');
 
-	// 초기 터치
-	$handle.on('touchstart', function(e){
-		touchStart = e.touches[0].pageY;
-		touchLast = 0;// touchmove시 저장된 값 초기화
-	});
-
-	//핸들을 터치한 경우 => 바텀시트 up
-	$handle.on('touchmove', function(e){
-		touchLast = e.touches[0].pageY;            
-		var gap = touchLast - touchStart;
-		var bsIngH = bsh + (-gap);          
-
-		if($bs.hasClass('active')) return;// 바텀시트 펼침 상태시 패스
-		if(gap < 0 && bsIngH < bsMaxH){// gap이 마이너스 값임 && 드래그시 bsMaxH까지 높이 적용
-			$bs.height(bsIngH);
-		}
-		$('body').css('overflow', 'hidden');
-		$('body').addClass('bg_blue');
-	});
-
-	$handle.on('touchend', function(e){
-		if((touchStart - touchLast) > 0 && touchLast != 0){// up
-			$bs.animate({
-				'height' : bsMaxH
-			}, 200, "swing");
-
-			$('.dragging_bs').addClass('active');
-			$('.intro_fixed_part').addClass('show');
-		}else if((touchStart - touchLast) < 0 && touchLast != 0){// down
-			$bs.animate({
-				'height' : bsh
-			}, 300, "swing");
-
-			$('.dragging_bs').removeClass('active');
-			$('.intro_fixed_part').removeClass('show');
-		}       
-	});
-
-	$bs.find('.accordion_title').on('click', function(){
-		var $this = $(this);
-		var $thisWrap = $this.closest('.accordion_pack');
-		
-		if($thisWrap.hasClass('active') == false){
-			$bs.animate({
-			'height' : bsMaxH
-			}, 200, "swing");
-
-			$('.dragging_bs').addClass('active');
-			$('.intro_fixed_part').addClass('show');
-
-			$('body').css('overflow', 'hidden');
-			$('body').addClass('bg_blue');
-		}
-	})
-}
-
-
-
-
-
-
-
-
-/////////////////// [임시]중간보고용 스크립트 => PC용 ///////////////////
-// 상품소개 -  draggable 바텀시트
-function dargBottomSheetPC(){
-	var $bs = $('.dragging_bs');
-	var $handle = $('.drag_handle');
-	var wh = $(window).height();        
-	var hh = $('.header').outerHeight();
-	var conh = $('.desc_area').outerHeight() - 48;
-	var bsh = wh - (hh + conh) + 48;
-	var bsMaxH = wh - hh;
-
-	// init
-	$bs.height(bsh);
-	$('.container.renewal_2024').css('height','100%')
-
-	$handle.on('click', function(e){
-		var bsIngH = bsh;          
-
-        $bs.height(bsIngH);// 바텀시트 초기 높이 설정
-
-        if($('.dragging_bs').hasClass('active')){
-            //펼침 상태
-            console.log('bsh??', bsh)
-            $bs.animate({
-				'height' : bsh
-			}, 300, "swing");
-
-			$('.dragging_bs').removeClass('active');
-			$('.intro_fixed_part').removeClass('show');
-        }else{
-            // 닫힘 상태
-            console.log('bsMaxH??', bsMaxH)
-            $bs.animate({
-				'height' : bsMaxH
-			}, 200, "swing");
-
-			$('.dragging_bs').addClass('active');
-			$('.intro_fixed_part').addClass('show');
-        }
-
-		$('body').css('overflow', 'hidden');
-		$('body').addClass('bg_blue');
-	});
-
-	$bs.find('.accordion_title').on('click', function(){
-		var $this = $(this);
-		var $thisWrap = $this.closest('.accordion_pack');
-		
-		if($thisWrap.hasClass('active') == false){
-			$bs.animate({
-			'height' : bsMaxH
-			}, 200, "swing");
-
-			$('.dragging_bs').addClass('active');
-			$('.intro_fixed_part').addClass('show');
-
-			$('body').css('overflow', 'hidden');
-			$('body').addClass('bg_blue');
-		}
-	})
-}
-
-
-$(function(){
-    // 메인 > 토스트 닫기
-    $('.btn_banner_close').on('click', function(){
-        $(this).closest('.banner_layer').remove();
-    });
-
-    // 메인 > 진행상태 닫기
-    $('.btn_status_close').on('click', function(){
-        $(this).closest('.status_toast').remove();
-    });
-
-    // 간편홈
-    var simpleToggle = $('.header_area').find('.switch_pack input[type="checkbox"]');
+    //아코디언 항목 전체 열림상태 setting
+    $bs.find('.accordion_pack.ty_boxing').addClass('active');
+    $bs.find('.accordion_title').attr('aria-expanded',true);
+    $bs.find('.accordion_content').show();
+    $bs.find('.btn_accordion').attr('title', '아코디언 닫기');
     
-    simpleToggle.on('change', function(){
-        if(simpleToggle.is(':checked')){
-            console.log('1')
-            location.href="../../../html/page/NHCM/MANHCM00000000_간편홈.html"
-        }else{
-            console.log('2') 
-            location.href="../../../html/page/NHCM/MANHCM00000000_원장보유.html"
-        }
-    });    
 
-    // console.log('simpleToggle : ', simpleToggle.is(':checked'))
-});
+    // 아코디언 클릭시 up
+    $bs.find('.accordion_title').on('click', function(){
+        var $this = $(this);
+        var $thisWrap = $this.closest('.accordion_pack');
+        
+        if($thisWrap.hasClass('active') == false){
+            $bs.animate({
+            'height' : bsMaxH
+            }, 200, "swing");
+
+            $('.dragging_bs').addClass('active');
+            $('.intro_fixed_part').addClass('show');
+
+            $('body').css('overflow', 'hidden');
+            $('body').addClass('bg_blue');
+        }
+    });
+    
+    //상품소개 Mobile
+    function dargBottomSheetMobile(){
+        // 초기 터치
+        $handle.on('touchstart', function(e){
+            touchStart = e.touches[0].pageY;
+            touchLast = 0;// touchmove시 저장된 값 초기화
+        });
+
+        //핸들을 터치한 경우 => 바텀시트 up
+        $handle.on('touchmove', function(e){
+            touchLast = e.touches[0].pageY;            
+            var gap = touchLast - touchStart;
+            var bsIngH = bsh + (-gap);          
+
+            if($bs.hasClass('active')) return;// 바텀시트 펼침 상태시 패스
+            if(gap < 0 && bsIngH < bsMaxH){// gap이 마이너스 값임 && 드래그시 bsMaxH까지 높이 적용
+                $bs.height(bsIngH);
+            }
+            $('body').css('overflow', 'hidden');
+            $('body').addClass('bg_blue');
+        });
+
+        $handle.on('touchend', function(e){
+            if((touchStart - touchLast) > 0 && touchLast != 0){// up
+                $bs.animate({
+                    'height' : bsMaxH
+                }, 200, "swing");
+
+                $('.dragging_bs').addClass('active');
+                $('.intro_fixed_part').addClass('show');
+            }else if((touchStart - touchLast) < 0 && touchLast != 0){// down
+                $bs.animate({
+                    'height' : bsh
+                }, 300, "swing");
+
+                $('.dragging_bs').removeClass('active');
+                $('.intro_fixed_part').removeClass('show');
+            }       
+        });
+
+        //click event도 추가
+        dargBottomSheetPC();
+    }
+
+    //상품소개 PC
+    function dargBottomSheetPC(){
+        $handle.on('click', function(e){
+            if($('.dragging_bs').hasClass('active')){
+                // down
+                $bs.animate({
+                    'height' : bsh
+                }, 300, "swing");
+
+                $('.dragging_bs').removeClass('active');
+                $('.intro_fixed_part').removeClass('show');
+            }else{
+                // up
+                $bs.animate({
+                    'height' : bsMaxH
+                }, 200, "swing");
+
+                $('.dragging_bs').addClass('active');
+                $('.intro_fixed_part').addClass('show');
+            }
+            $('body').css('overflow', 'hidden');
+            $('body').addClass('bg_blue');
+        });
+    }
+}
+
+
