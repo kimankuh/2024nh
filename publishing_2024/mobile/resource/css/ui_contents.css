@@ -273,20 +273,24 @@
 /*
 	서류제출
 */
-.docu_part { padding-top: 24px; }
-.docu_list { margin: 0 -16px -16px 0; }
-.docu_list > li { display: inline-block; width: calc(50% - 18px); vertical-align: top; margin: 0 16px 16px 0; font-size: 0; }
-.docu_list .docu_added { position: relative; padding: 60.7% 0 60.7% 0; text-align: center; background: #f3f4f8; border-radius: 5px; overflow: hidden; }
-.docu_list .docu_added img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* .docu_part { padding-top: 24px; } *//* 2024-09-05 2024고도화 : 삭제 */
+.docu_list { margin-right:-8px;/*margin: 0 -16px -16px 0;*/font-size:0;}/* 2024-09-05 2024고도화 : 마진 삭제 */
+.docu_list > li { position:relative;display:inline-block;padding-top:calc(33.3% - 8px);width: calc(33.3% - 8px); vertical-align: top; margin: 0 8px 8px 0; /*font-size: 0;*/box-sizing:border-box;}/* 2024-09-05 2024고도화 : 스타일 변경 */
+.docu_list .docu_added { position:absolute;top:0;overflow: hidden;width:100%;height:100%;/*padding: 60.7% 0 60.7% 0;*/text-align: center;background: #f3f4f8;border-radius:12px;}/* 2024-09-05 2024고도화 : 스타일 변경 */
+.docu_list > li:nth-child(3n) {margin-right:0;}/* 2024-09-05 2024고도화 : 추가 */
+.docu_list .docu_added img { /*position: absolute; top: 0; left: 0;*/ width: 100%; height: 100%; }
 .docu_list .docu_added .docu_loading { position: absolute; top: 50%; left: 0; display: inline-block; width: 100%; height: 7px; margin: -3px 0 0 0; }
 .docu_list .docu_added .docu_loading .circle { display: inline-block; margin-left: 6px; width: 7px; height: 7px; border-radius: 50%; }
 .docu_list .docu_added .docu_loading .circle:nth-child(1) { margin-left: 0; background: #cccdd0; }
 .docu_list .docu_added .docu_loading .circle:nth-child(2) { background: #b8b9bc; }
 .docu_list .docu_added .docu_loading .circle:nth-child(3) { background: #919294; }
-.docu_list .ebbtn.btn_docu_delete { position: absolute; top: 0px; right: 0; width: 45px; height: 45px; background: url('../image/icon/btn_delete.png') no-repeat center/25px; }
+.docu_list .ebbtn.btn_docu_delete { z-index:10;position: absolute; top: 0px; right: 0; width:40px; height:40px; background: url('../image/icon/ico_item_delete_28x28.png') no-repeat left 4px bottom 4px / 28px; }/* 2024-09-05 2024고도화 : 스타일 변경 */
 .docu_list .ebbtn.btn_docu_add { position: absolute; top: 0; left: 0; width: 100%; height: 100%;  }
 .docu_list .ebbtn.btn_docu_add span { position: relative; top: 16px; font-weight: 500; font-size: 15px; color: #909090; }
 .docu_list .ebbtn.btn_docu_add span:after { content: ''; position: absolute; top: -30px; left: 50%; margin-left: -12px; width: 25px; height: 25px; background: url('../image/icon/btn_add.png') no-repeat center; background-size: 100%; }
+.docu_list .docu_added.active:before {content:'';z-index:10;position:absolute;top:0;left:0;width:100%;height:100%;border:4px solid var(--primaryColor);box-sizing:border-box;border-radius:12px;}
+.docu_list .docu_added.active:after {content:'';z-index:10;position:absolute;top:40px;right:8px;width:28px;height:28px;background:var(--primaryColor) url('../image/component/checkbox_checked.png') no-repeat left top/28px;border-radius:50%;}
+.docu_list .docu_added.active .docu_img:before {content:'';z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(48,48,48, 0.5);}
 
 /* 서류제출 미리보기 */
 .docu_detail_part { height: calc(100% + 25px); padding: 10px; margin: 0 -25px; box-sizing: border-box; background: #f8f8fa; }

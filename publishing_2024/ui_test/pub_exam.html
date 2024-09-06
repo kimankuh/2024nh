@@ -6,26 +6,35 @@
 	<meta name="format-detection" content="telephone=no">
 	<title>publishing exam</title>
 
+	<!-- Plugin JS -->
+    <script src="../mobile/resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../mobile/resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
 	<!-- Publishing CSS -->
 	<link rel="stylesheet" href="../mobile/resource/css/ui_plugin.css">
 	<link rel="stylesheet" href="../mobile/resource/css/ui_style.css">
-
-	<!-- Publishing JS -->
-	<script src="../mobile/resource/js/jquery-3.6.0.min.js"></script>
-	<script src="../mobile/resource/js/jquery-ui-1.12.1.min.js"></script>
+    
+	<!-- Publishing JS -->	
 	<script src="../mobile/resource/js/ui_plugin.js"></script>
 	<script src="../mobile/resource/js/ui_common.js"></script>
+	<script src="../mobile/resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 
-	
 	<style>
-		.b_title{margin:10px 0; padding:20px 20px 10px 0; font-weight:bold; color:#0765e5; border-bottom:2px solid #0765e5;}
+		.b_title{margin:10px -25px; padding:10px 25px; font-weight:bold; color:#fff; background:#0765e5;}
+		.b_title:first-child{margin-top:0}
 		.s_title{margin-top:30px; font-size:14px; color:#0093e1}
 		.btn_box{margin-top:20px;}
 	</style>
 </head>
 <body id="layoutBody">
 <div id="layoutContent" class="layout">
-	<div class="container">
+	<div class="container renewal_2024"><!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 		<!-- 여기부터 컨텐츠 -->
 		<div class="contents">
 			<p class="b_title">타이틀,텍스트</p>
@@ -51,6 +60,62 @@
 
 			<p class="s_title">기준일텍스트</p>
 			<p class="base_date">2022년 05년 13일 기준</p>
+
+			<!--===============================================================================================================-->
+			<p class="b_title">툴팁 (as-is는 사용안하는듯 확인 불가)</p>
+
+			<p class="s_title">2024 고도화 툴팁 type_02 추가</p>
+			<button type="button" class="ebbtn icon_tooltip type_02">툴팁열기</button>
+			<div class="tooltip_msg_part">
+				<div class="tooltip_msg_pack">
+					<div class="tooltip_msg">
+						<div class="ttl">중도상환수수료 산식</div>
+						<div class="desc_txt">
+							<dl>
+								<dt><b>약정만기 1년이상</b></dt>
+								<dd>
+									상환원금 X 1% + 상환원금 X (중도상환수수료율 - 1%) X 잔존기간* / (대출기간-30일)
+								</dd>
+							</dl>
+						</div>
+						<div class="desc_txt">
+							<dl>
+								<dt><b>약정만기 1년미만</b></dt>
+								<dd>
+									상환원금 X (중도상환수수료율) X 잔존기간* / (대출기간 -30일)
+								</dd>
+								<dd>* 30일 미만 상환 시 대출 사용기간을 30일로 간주합니다.</dd>
+							</dl>
+						</div>
+						<div class="notice_txt">단, 대출계약이 성립한 날부터 3년 이후 상환 시 중도상환수수료 면제 (할부/리스 제외)</div>
+					</div>
+					<button type="button" class="ebbtn btn_tooltip_close">툴팁닫기</button>
+				</div>
+			</div>
+
+			<p class="s_title">기존 툴팁 (사용하지 않는듯 툴팁 레이어배경컬러가 없어 흰배경 추가함)</p>
+			<span>
+				<button type="button" class="ebbtn icon_tooltip">툴팁열기</button>
+				<div class="tooltip_msg_part">
+					<div class="tooltip_msg_pack">
+						<div class="tooltip_msg">
+							<div class="exptxt">
+								<ul class="ebullet_circle">
+									<li>중도상환수수료 산식</li>
+								</ul>
+								약정만기 1년이상 : 상환원금 X 1% + 상환원금 X (중도상환수수료율 - 1%) X 잔존기간* / (대출기간-30일)<br>											
+								약정만기 1년미만 : 상환원금 X 중도상환수수료율 X 잔존기간* / (대출기간 -30일)<br>
+								<span class="color05"> 
+									* 총 대출(약정) 기간 - 대출사용기간 (30일 미만 사용 시 대출사용기간을 30일로 간주)</span><br>
+								<span class="color01"> 
+									단, 대출계약이 성립한 날부터 3년 이후 상환 시 중도상환수수료 면제 (할부/리스 제외)
+								</span>
+							</div>
+						</div>
+						<button type="button" class="ebbtn btn_tooltip_close">툴팁닫기</button>
+					</div>
+				</div>
+			</span>
 
 			<!--===============================================================================================================-->
 			<p class="b_title">토글버튼(role="radio")</p>
@@ -122,9 +187,135 @@
 					</li>
 				</ul>
 			</div>
+			<br>
+			<div class="toggle_pack ty_linebreak">
+				<ul>
+					<li class="active">
+						<button type="button" class="ebbtn btn_toggle">금융거래확인서</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">완납증명서</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">종료확인서(일반)</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">종료확인서<br>(오토리스,렌트)</button>
+					</li>
+					<li>
+						<button type="button" class="ebbtn btn_toggle">종료확인서(리스)</button>
+					</li>
+				</ul>
+			</div>
+			<br>
+			<div class="toggle_boxing_pack ty_divide2">
+				<ul>
+					<li class=""><!-- 선택시 addclass="active" -->
+						<button type="button" class="ebbtn btn_toggle">
+							<span class="model_box">
+								<span class="text">내장탑</span>
+							</span>
+						</button>
+					</li>
+					<li class="">
+						<button type="button" class="ebbtn btn_toggle">
+							<span class="model_box">
+								<span class="text">냉·온탑</span>
+							</span>
+						</button>
+					</li>
+					<li class="">
+						<button type="button" class="ebbtn btn_toggle">
+							<span class="model_box">
+								<span class="text">믹서트럭</span>
+							</span>
+						</button>
+					</li>
+					<li class="">
+						<button type="button" class="ebbtn btn_toggle">
+							<span class="model_box">
+								<span class="text">윙바디</span>
+							</span>
+						</button>
+					</li>
+					<li class="active">
+						<button type="button" class="ebbtn btn_toggle">
+							<span class="model_box">
+								<span class="text">집게차</span>
+							</span>
+						</button>
+					</li>
+					<li class="">
+						<button type="button" class="ebbtn btn_toggle">
+							<span class="model_box">
+								<span class="text">카고트럭</span>
+							</span>
+						</button>
+					</li>
+					<li class="">
+						<button type="button" class="ebbtn btn_toggle">
+							<span class="model_box">
+								<span class="text">터널용고소<br>작업차</span>
+							</span>
+						</button>
+					</li>
+					<li class="">
+						<button type="button" class="ebbtn btn_toggle" disabled="disabled">
+							<span class="model_box">
+								<span class="text">트랙터</span>
+							</span>
+						</button>
+					</li>
+				</ul>
+			</div>
 			<!--===============================================================================================================-->
 
 			<p class="b_title">폼요소</p>
+			<p class="s_title">인풋 (인증번호 input type text 였는데 number로 교체함)</p>
+			<div class="form_part ty_ani">
+				<div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
+					<div class="ebform_label">인증번호(6자리)</div>
+					<div class="form_pack">
+						<div class="input_pack ty_wordtime">
+							<input type="number" class="ebinput" placeholder="" value="" title="인증번호">
+							<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							<span class="time">3:00</span>
+						</div>
+					</div>
+
+					<div class="form_multi_box">
+						<button type="button" class="ebbtn btn_multi">인증번호 재전송</button>
+					</div>
+
+					<div class="form_next_box show"><!-- 버튼 활성화시 addclass="show" -->
+						<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+					</div>
+				</div>
+			</div>
+			
+			<p class="s_title">이메일 선택시 show/hide</p>
+			<div class="smalltitle_part">
+				<div class="ebform_label">발급방법 선택</div>
+				<div class="toggle_pack ty_linebreak">
+					<ul>
+						<li class="active">
+							<button type="button" class="ebbtn btn_toggle ">이메일</button>
+						</li>
+						<li>
+							<button type="button" class="ebbtn btn_toggle">알림톡</button>
+						</li>
+					</ul>
+				</div>
+				<div class="form_part email_input">
+					<div class="form_pack">
+						<div class="input_pack">
+							<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="Hongabc@bac.cp.kr">
+							<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<p class="s_title">체크박스</p>
 			<div>
 				<input type="checkbox" class="ebcheckbox" title="라벨명">
@@ -376,7 +567,108 @@
 				</div>
 			</div>
 
-		
+			<p class="s_title">2024 고도화 new 아코디언 추가</p>
+			<div class="detail_part">
+				<div class="detail_data_box">
+					<div class="acco_box">
+						<div class="detail_acco_tit">개인신용다이렉트</div>
+						<div class="detail_data_list">
+							<ul>
+								<li>
+									<div class="title">대출일</div>
+									<div class="conts">YYYY.MM.DD</div>
+								</li>
+								<li>
+									<div class="title">대출만기일</div>
+									<div class="conts">YYYY.MM.DD</div>
+								</li>
+								<li>
+									<div class="title">대출금액</div>
+									<div class="conts">100,000,000 원</div>
+								</li>
+								<li>
+									<div class="title">대출금리</div>
+									<div class="conts">연 15%</div>
+								</li>
+							</ul>
+							<ul class="acco_cont">
+								<li>
+									<div class="title">원리금</div>
+									<div class="conts">10,000,000 원</div>
+								</li>
+								<li>
+									<div class="title">상환원금</div>
+									<div class="conts">10,000,000 원</div>
+								</li>
+								<li>
+									<div class="title">경과이자</div>
+									<div class="conts">10,000,000 원</div>
+								</li>
+							</ul>
+						</div>
+						<div class="control">
+							<button type="button" class="ebbtn btn_acco">
+								<span class="txt">더보기</span>
+							</button>
+						</div>
+					</div>
+					<div class="detail_total">
+						<div class="title">대환예정금액</div>
+						<div class="conts">7,800만원</div>
+					</div>
+				</div>
+
+				<div class="detail_data_box">
+					<div class="acco_box">
+						<div class="detail_acco_tit">개인신용다이렉트(추가)</div>
+						<div class="detail_data_list">
+							<ul>
+								<li>
+									<div class="title">대출일</div>
+									<div class="conts">YYYY.MM.DD</div>
+								</li>
+								<li>
+									<div class="title">대출만기일</div>
+									<div class="conts">YYYY.MM.DD</div>
+								</li>
+								<li>
+									<div class="title">대출금액</div>
+									<div class="conts">100,000,000 원</div>
+								</li>
+								<li>
+									<div class="title">대출금리</div>
+									<div class="conts">연 15%</div>
+								</li>
+							</ul>
+							<ul class="acco_cont">
+								<li>
+									<div class="title">원리금</div>
+									<div class="conts">10,000,000 원</div>
+								</li>
+								<li>
+									<div class="title">상환원금</div>
+									<div class="conts">10,000,000 원</div>
+								</li>
+								<li>
+									<div class="title">경과이자</div>
+									<div class="conts">10,000,000 원</div>
+								</li>
+							</ul>
+						</div>
+						<div class="control">
+							<button type="button" class="ebbtn btn_acco">
+								<span class="txt">더보기</span>
+							</button>
+						</div>
+					</div>
+					<div class="detail_total">
+						<div class="title">대환예정금액</div>
+						<div class="conts">7,800만원</div>
+					</div>
+				</div>
+
+			</div>
+
 
 			<!--===============================================================================================================-->
 			<p class="b_title">step</p>
@@ -486,10 +778,31 @@
 					<h2 class="ebtitle2">대출 신청 완료</h2>
 				</div>
 			</div>
+
+			<!--===============================================================================================================-->
+			<p class="b_title">하단 알려드립니다 영역</p>
+
+			<div class="notice_area">
+				<p class="notice_tit">알려드립니다.</p>
+				<ul class="notice_list">
+					<li>중도 반납 시에는, 반납 이후 차량진단 평가 후 원상회복비용, 가치감가비용 및 초과운행수수료에 대한 추가 비용 징수가 있을 수 있습니다.</li>
+					<li>차세는 직전 차세 납부일 ~ 기준일자 일할 계산분이며, 승계인 경우 명의 이전일까지의 일할 차세가 추가로 발생됩니다.</li>
+					<li>중도해지 매입 시에는 이전비용(취득세, 공채 등) 추가 발생됩니다.</li>
+					<li>계산 내역 기준일(실제 마감일), 이전 회차 렌탈료 완납 여부에 따라 계산 내역이 달라질 수 있습니다.</li>
+					<li>궁금하신 사항은 대표번호 <span class="color03">1644-3700</span>으로 문의해주세요. (업무시간: 평일 09:00 ~ 18:00)</li>
+				</ul>
+			</div>
+
+			<div class="radius_box">
+				<div class="cont"></div>
+			</div>
 		</div>
 		<!-- //여기까지 컨텐츠 -->
 	</div>
 </div>
-
+<style>
+	.radius_box{position:fixed; top:-120px; right:-120px; width:240px; height:240px; border-radius:120px; overflow:hidden;}
+	.radius_box .cont{position:absolute; bottom:0; left:0; width:120px; height:120px; background:#ddd; overflow:hidden;}
+</style>
 </body>
 </html>

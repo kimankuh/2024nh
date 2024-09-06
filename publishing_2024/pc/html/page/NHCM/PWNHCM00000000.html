@@ -4,19 +4,26 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
-
 	<title>NH농협캐피탈</title>
 
 	<!-- Publishing CSS -->
 	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
 	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
 
-	<!-- Publishing JS -->
+	<!-- Plugin JS -->
 	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
 	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+	<!-- 개발 JS -->
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024-09-04 2024고도화 : 2024고도화 전용 js -->
 </head>
 <body>
 
@@ -25,22 +32,21 @@
 	<div class="header"></div>
 
 
-	<div class="container">
+	<div class="container renewal_2024"><!-- 2024-09-06 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 		<div class="subheader"></div>
-		<div class="contents_zone">
+		<div class="contents_zone full_side"><!-- 2024-09-06 2024고도화 : 고도화 전용 class .main 추가 -->
 
 			<!-- 여기부터 컨텐츠 -->
 			<div class="contents_area">
 				<div class="contents">
 
-
-					<!-- 상품 이어하기 배너 영역 --><!-- 2022-03-28 수정 : 위치이동. 개발로직상 컨텐츠쪽 요소는 container 안쪽에 위치. -->
+					<!-- 상품 이어하기 배너 영역 -->
 					<div class="banner_layer"><!-- 노출 class="show" -->
 						<div class="layer">
 							<div class="banner_conts">
 								<div class="banner_title">
 									<div class="title"><span class="name">홍길동</span> 고객님</div>
-									<div class="text">신청 중이던 상품이 있습니다. 계속 이어하시겠어요?</div>
+									<div class="text">신청 중이던 상품이 있습니다. <span class="txt_point">계속 이어하시겠어요?</span></div><!-- 2024-09-06 2024고도화 : txt_point 영역 추가 -->
 								</div>
 								<div class="banner_btn">
 									<button type="button" class="ebbtn btn_sub">이어하기</button>
@@ -51,7 +57,6 @@
 					</div>
 					<!-- //상품 이어하기 배너 영역 -->
 
-
 					<div class="main_part">
 						<div class="main_visual_part">
 							<div class="main_visual">
@@ -61,14 +66,15 @@
 									<div class="main">NH농협캐피탈</div>
 								</div>
 
-								<!-- 2022-05-02 수정 : 메인 버튼명 수정 및 디자인 변경에따른 마크업 수정 -->
 								<div class="visual_items">
 									<div class="item_box">
 										<div class="cell">
 											<div class="main_item">
+												<!-- 2024-09-06 2024고도화 : 아이콘 삭제
 												<div class="icon_box">
 													<span class="ebicon"><img src="../../../resource/image/main/icon_main_credit.png" alt=""></span>
 												</div>
+												-->
 												<div class="text_box">
 													<div class="text">나의 한도와 금리는 얼마일까?</div>
 													<div class="title">NH농협캐피탈<br> 개인신용대출</div>
@@ -85,10 +91,10 @@
 											<div class="norm_item ty_stock" tabindex="0">
 												<div class="normal_box">
 													<div class="icon_box">
-														<span class="ebicon"><img src="../../../resource/image/main/icon_main_stock.png" alt=""></span>
+														<span class="ebicon"><img src="../../../resource/image/main/icon_main_stock_02.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
 													</div>
 													<div class="text_box">
-														<div class="text">성공적인 주식투자를 위한<br> 주식매입자금 대출 상품</div><!-- 2022-04-13 수정 : 오타 수정 -->
+														<div class="text">성공적인 주식투자를 위한<br> 주식매입자금 대출 상품</div>
 														<div class="title">스탁론</div>
 													</div>
 												</div>
@@ -115,7 +121,7 @@
 											<div class="norm_item ty_car" tabindex="0">
 												<div class="normal_box">
 													<div class="icon_box">
-														<span class="ebicon"><img src="../../../resource/image/main/icon_main_car.png" alt=""></span>
+														<span class="ebicon"><img src="../../../resource/image/main/icon_main_car_02.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
 													</div>
 													<div class="text_box">
 														<div class="text">자동차구입 또는 리스가 필요할 때</div>
@@ -123,7 +129,7 @@
 													</div>
 												</div>
 												<div class="hover_box">
-													<div class="btn_box">
+													<div class="btn_box"> 
 														<div class="row">
 															<a href="#" class="ebbtn btn_main_normal">장기렌터카</a>
 														</div>
@@ -142,7 +148,7 @@
 											<div class="norm_item ty_indust" tabindex="0">
 												<div class="normal_box">
 													<div class="icon_box">
-														<span class="ebicon"><img src="../../../resource/image/main/icon_main_indust.png" alt=""></span>
+														<span class="ebicon"><img src="../../../resource/image/main/icon_main_indust_02.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
 													</div>
 													<div class="text_box">
 														<div class="text">건설기계 및 화물자동차를 구입할 때</div>
@@ -150,7 +156,6 @@
 													</div>
 												</div>
 												<div class="hover_box">
-													<!-- 2022-04-08 수정 : 산업재 버튼변경 -->
 													<div class="btn_box">
 														<div class="row">
 															<a href="#" class="ebbtn btn_main_normal">신산업재 할부</a>
@@ -162,7 +167,6 @@
 															<a href="#" class="ebbtn btn_main_normal">중고산업재</a>
 														</div>
 													</div>
-													<!-- //2022-04-08 수정 : 산업재 버튼변경 -->
 													<div class="text_box">
 														<div class="title">산업재금융</div>
 													</div>
@@ -171,7 +175,7 @@
 											<div class="norm_item ty_house" tabindex="0">
 												<div class="normal_box">
 													<div class="icon_box">
-														<span class="ebicon"><img src="../../../resource/image/main/icon_main_house.png" alt=""></span>
+														<span class="ebicon"><img src="../../../resource/image/main/icon_main_house_02.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
 													</div>
 													<div class="text_box">
 														<div class="text">개인사업자 및 공공 임대 아파트에<br> 거주하거나 입주 예정자를 위한</div>
@@ -195,7 +199,6 @@
 										</div>
 									</div>
 								</div>
-								<!-- //2022-05-02 수정 : 메인 버튼명 수정 및 마크업 수정 -->
 
 							</div>
 						</div>
@@ -210,26 +213,26 @@
 										<ul>
 											<li>
 												<a href="#" class="ebbtn btn_main_service">
-													<span class="ebicon"><img src="../../../resource/image/main/icon_service_date.png" alt=""></span>
-													<span class="text">결제일변경</span>
+													<span class="ebicon"><img src="../../../resource/image/main/icon_favorite_svc_48x48_01.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
+													<span class="text">서류제출</span><!-- 2024-09-06 2024고도화 : 문구변경 -->
 												</a>
 											</li>
 											<li>
 												<a href="#" class="ebbtn btn_main_service">
-													<span class="ebicon"><img src="../../../resource/image/main/icon_service_account.png" alt=""></span>
-													<span class="text">결제계좌변경</span>
+													<span class="ebicon"><img src="../../../resource/image/main/icon_favorite_svc_48x48_02.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
+													<span class="text">전자약정</span><!-- 2024-09-06 2024고도화 : 문구변경 -->
 												</a>
 											</li>
 											<li>
 												<a href="#" class="ebbtn btn_main_service">
-													<span class="ebicon"><img src="../../../resource/image/main/icon_service_list.png" alt=""></span>
-													<span class="text">거래내역확인</span>
+													<span class="ebicon"><img src="../../../resource/image/main/icon_favorite_svc_48x48_03.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
+													<span class="text">간편한도조회</span><!-- 2024-09-06 2024고도화 : 문구변경 -->
 												</a>
 											</li>
 											<li>
 												<a href="#" class="ebbtn btn_main_service">
-													<span class="ebicon"><img src="../../../resource/image/main/icon_service_inquiry.png" alt=""></span>
-													<span class="text">납부예정금액조회</span>
+													<span class="ebicon"><img src="../../../resource/image/main/icon_favorite_svc_48x48_04.png" alt=""></span><!-- 2024-09-06 2024고도화 : 이미지변경 -->
+													<span class="text">전화상담신청</span><!-- 2024-09-06 2024고도화 : 문구변경 -->
 												</a>
 											</li>
 										</ul>
@@ -398,6 +401,9 @@
 
 	<div class="footer"></div>
 </div>
+
+<!-- 2024-09-04 2024고도화 : 운영과 동일한 팝업영역 추가 -->
+<div id="layoutPopContent"></div>
 
 
 <script>

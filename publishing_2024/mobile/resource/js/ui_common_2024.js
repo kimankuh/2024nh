@@ -26,8 +26,18 @@ $(function(){
                 $depth4.slideUp(300);
             }
         });
-    });    
-
+    });   
+    
+    // active toggle
+    $('.js_toggle.active').attr('aria-selected', 'true');
+    $(document).on('click', '.js_toggle', function(){
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).attr('aria-selected', 'true');
+        }else{
+            $(this).attr('aria-selected', 'false');
+        }
+    });
 });
 
 function accoNewInit(){
