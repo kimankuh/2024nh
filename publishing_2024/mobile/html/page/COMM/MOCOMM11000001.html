@@ -69,37 +69,62 @@
 		<!-- 여기부터 컨텐츠 -->
 		<div class="contents_area">
 			<div class="contents">
+				<div class="btn_box mt30">
+					<button type="button" class="ebbtn btn_normal ty_bg w100per" >+ 서류추가</button><!-- 2024-09-05 2024고도화 : 5장 등록시 비활성 속성 추가 'disabled'-->
+				</div>
+				<ul class="ebullet_circle">
+					<li class="color01">사진 파일의 용량에 따라 업로드 속도가 다소 느려질 수 있습니다.</li>
+				</ul>
 
+				<!-- 2024-09-05 2024고도화 : 서류 이미지 목록 마크업 변경 -->
+				<div class="divider"></div>
 
 				<div class="docu_part">
-					<ul class="docu_list">
+					<h3 class="hidden" id="docu_list_title">서류 목록</h3>
+					<ul class="docu_list" role="group" aria-labelledby="docu_list_title">
 						<li>
-							<div class="docu_added">
-
-								<!-- 2022-02-11 수정 : 부분로딩추가 -->
-								<span class="docu_loading">
-									<span class="circle"></span>
-									<span class="circle"></span>
-									<span class="circle"></span>
-								</span>
-								<!-- //2022-02-11 수정 : 부분로딩추가 -->
-
-							</div>
-						</li>
-						<li>
-							<div class="docu_added">
+							<div class="docu_added js_toggle active" role="button" aria-label="선택시 제출 서류에 추가"><!-- 선택된 case -->
 								<!-- 촬영된 서류 이미지 영역 -->
+								<div class="docu_img"><img src="../../../resource/image/temp/doc_sample_img.png" alt="" /></div><!-- 임시 이미지 -->
 								<!-- //촬영된 서류 이미지 영역 -->
-								<button type="button" class="ebbtn btn_docu_delete" title="삭제"></button>
 							</div>
+							<button type="button" class="ebbtn btn_docu_delete" title="목록에서 삭제"></button>
 						</li>
 						<li>
-							<div class="docu_added">
-								<button type="button" class="ebbtn btn_docu_add"><span>서류추가</span></button>
+							<div class="docu_added js_toggle" role="button" aria-label="선택시 제출 서류에 추가">
+								<!-- 촬영된 서류 이미지 영역 -->
+								<div class="docu_img"><img src="../../../resource/image/temp/doc_sample_img.png" alt="" /></div><!-- 임시 이미지 -->
+								<!-- //촬영된 서류 이미지 영역 -->
 							</div>
+							<button type="button" class="ebbtn btn_docu_delete" title="목록에서 삭제"></button>
+						</li>
+						<li>
+							<div class="docu_added js_toggle" role="button" aria-label="선택시 제출 서류에 추가">
+								<!-- 촬영된 서류 이미지 영역 -->
+								<div class="docu_img"><img src="../../../resource/image/temp/doc_sample_img.png" alt="" /></div><!-- 임시 이미지 -->
+								<!-- //촬영된 서류 이미지 영역 -->
+							</div>
+							<button type="button" class="ebbtn btn_docu_delete" title="목록에서 삭제"></button>
+						</li>
+						<li>
+							<div class="docu_added js_toggle" role="button" aria-label="선택시 제출 서류에 추가">
+								<!-- 촬영된 서류 이미지 영역 -->
+								<div class="docu_img"><img src="../../../resource/image/temp/doc_sample_img.png" alt="" /></div><!-- 임시 이미지 -->
+								<!-- //촬영된 서류 이미지 영역 -->
+							</div>
+							<button type="button" class="ebbtn btn_docu_delete" title="목록에서 삭제"></button>
+						</li>
+						<li>
+							<div class="docu_added js_toggle" role="button" aria-label="선택시 제출 서류에 추가">
+								<!-- 촬영된 서류 이미지 영역 -->
+								<div class="docu_img"><img src="../../../resource/image/temp/doc_sample_img.png" alt="" /></div><!-- 임시 이미지 -->
+								<!-- //촬영된 서류 이미지 영역 -->
+							</div>
+							<button type="button" class="ebbtn btn_docu_delete" title="목록에서 삭제"></button>
 						</li>
 					</ul>
 				</div>
+				<!-- // 2024-09-05 2024고도화 : 서류 이미지 목록 마크업 변경 -->
 
 
 			</div>
@@ -108,10 +133,10 @@
 
 		<!-- 컨텐츠 하단 버튼영역 -->
 		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
-			<button type="button" class="ebbtn btn_main ty_bg"><span>총 <em>5</em>장</span> 제출하기</button>
+			<button type="button" class="ebbtn btn_main ty_bg"><span>총 <em>1</em>장 </span>제출하기</button><!-- 2024-09-05 2024고도화 : 사진 선택시 문구 추가됨 -->
 		</div>
 
-	</div>
+	</div> 
 </div>
 
 <!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->

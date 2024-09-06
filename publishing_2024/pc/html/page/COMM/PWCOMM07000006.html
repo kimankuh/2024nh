@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+	-팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup"><!-- 노출 className = show -->
+	<div class="popup_layout" style="width: 800px; height: 700px;">
+
+		<div class="popup_inner">
+
+			<div class="popup_header">
+				<h3 class="ebtitle3">직장 검색</h3>
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+					<div class="fixed_tab_part">
+						<div class="tab_pack ty_search">
+							<div class="tab_scroll">
+								<ul class="ebtab">
+									<li>
+										<button type="button" class="ebbtn btn_tab">직장명</button>
+									</li>
+									<li>
+										<button type="button" class="ebbtn btn_tab">사업자번호</button>
+									</li>
+									<li class="active">
+										<button type="button" class="ebbtn btn_tab">직장명+대표명</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="tabcontent_pack">
+						<ul class="ebtab_content">
+							<li class="active">
+
+								<div class="fixed_part">
+									<!-- 2022-01-27 수정 : 검색영역수정 -->
+									<div class="form_pack ty_search">
+										<div class="input_group">
+											<div class="input_pack ty_search">
+												<input type="text" class="ebinput" placeholder="직장명을 검색해주세요." title="직장명" value="">
+												<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+											</div>
+										</div>
+										<div class="input_group">
+											<div class="input_pack ty_search">
+												<input type="text" class="ebinput" placeholder="대표자명을 검색해주세요." title="대표자명" value="">
+												<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+												<button type="button" class="ebbtn btn_input_search" title="검색"></button>
+											</div>
+										</div>
+									</div>
+									<!-- //2022-01-27 수정 : 검색영역수정 -->
+
+									<!-- 직접입력 선택 영역 -->
+									<div class="search_direct_wrap">
+										<div class="desc_box">
+											<p>직장명이 검색되지 않을 경우 직접 입력해주세요.</p>
+										</div>
+										<div class="btn_box">
+											<button type="button" class="ebbtn btn_multi">직접입력</button>
+										</div>
+										<div class="layoutline"></div>
+									</div>
+									<!-- //직접입력 선택 영역 -->
+								</div>
+
+								<div class="scroll_part">
+									<!-- 검색결과 -->
+									<div class="search_result_part widediv">
+										<div class="search_result_list">
+											<ul>
+												<li>
+													<a href="#">
+														<div class="title">농협은행(주)</div>
+														<div class="conts">
+															<dl>
+																<dt>사업자번호</dt>
+																<dd>104-86-39742</dd>
+															</dl>
+															<dl>
+																<dt>대표자</dt>
+																<dd>권준학</dd>
+															</dl>
+															<dl>
+																<dt>사업자 주소</dt>
+																<dd>서울시 중구 통일로 120</dd>
+															</dl>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="title">농협은행(주)</div>
+														<div class="conts">
+															<dl>
+																<dt>사업자번호</dt>
+																<dd>104-86-39742</dd>
+															</dl>
+															<dl>
+																<dt>대표자</dt>
+																<dd>권준학</dd>
+															</dl>
+															<dl>
+																<dt>사업자 주소</dt>
+																<dd>서울시 중구 통일로 120</dd>
+															</dl>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="pagination_pack">
+										<div class="prevpg">
+											<button type="button" class="ebbtn btn_start" disabled="disabled">처음으로</button>
+											<button type="button" class="ebbtn btn_prev" disabled="disabled">이전페이지</button>
+										</div>
+										<div class="pagenum">
+											<ul>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+											</ul>
+										</div>
+										<div class="nextpg">
+											<button type="button" class="ebbtn btn_next">다음페이지</button>
+											<button type="button" class="ebbtn btn_end">끝으로</button>
+										</div>
+									</div>
+									<!-- //검색결과 -->
+
+
+									<!-- 검색결과 없는 경우 -->
+									<!-- <div class="search_noresult_part">
+										<div class="icon_box">
+											<span class="ebicon icon_fail"></span>
+										</div>
+										<div class="text_box">
+											검색결과가 없습니다.
+										</div>
+									</div> -->
+									<!-- 검색결과 없는 경우 -->
+								</div>
+
+
+							</li>
+						</ul>
+					</div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	//팝업호출
+	popupFunc('#tempId').show();
+
+	//팝업닫기
+	// popupFunc('#tempId').close();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

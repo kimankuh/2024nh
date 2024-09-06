@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup"><!-- 노출 className = show -->
+	<div class="popup_layout" style="width: 800px; height: 700px;"><!-- 크기지정 : style=" width: **px; height: **px" -->
+
+		<div class="popup_inner">
+			<!-- 2022-03-31 수정 : 팝업 헤더 버튼 수정 -->
+			<div class="popup_header">
+                <h3 class="ebtitle3">직장 검색</h3>
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+			<!-- //2022-03-31 수정 : 팝업 헤더 버튼 수정 -->
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+					<div class="fixed_tab_part">
+                        <div class="tab_pack ty_search">
+                            <div class="tab_scroll">
+                                <ul class="ebtab">
+                                    <li>
+                                        <button type="button" class="ebbtn btn_tab">직장명</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="ebbtn btn_tab">사업자번호</button>
+                                    </li>
+                                    <li class="active">
+                                        <button type="button" class="ebbtn btn_tab">직장명+대표명</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="tabcontent_pack">
+						<ul class="ebtab_content">
+							<li class="active">
+
+								<!-- S: 220105 수정이력(텍스트수정, 버튼삭제) -->
+								<div class="scroll_part">
+									<div class="page_title_part">
+										<div class="ebtitle_normal">직장명이 검색되지 않을 경우 직접 입력해주세요.</div>
+									</div>
+									<div class="page_subtitle_part">
+										<p>단, 검색 결과의 직장을 선택하시는 방법이 대출심사시 유리할 수 있습니다.</p>
+									</div>
+
+									<div class="form_part">
+										<div class="form_set">
+											<div class="ebform_label">직장명</div>
+											<div class="form_pack">
+												<div class="input_pack">
+													<input type="text" class="ebinput" placeholder="직장명 입력" value="" title="직장명">
+													<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+												</div>
+											</div>
+										</div>
+
+										<!-- 2022-04-21 수정 : 사업자등록번호 입력폼 추가 -->
+										<div class="form_set">
+											<div class="ebform_label">사업자등록번호</div>
+											<div class="form_pack">
+												<div class="input_pack">
+													<input type="tel" class="ebinput" placeholder="-없이 숫자만 입력" value="" title="사업자등록번호">
+													<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+												</div>
+											</div>
+										</div>
+										<!-- //2022-04-21 수정 : 사업자등록번호 입력폼 추가 -->
+									</div>
+								</div>
+								<!-- E: 220105 수정이력(텍스트수정, 버튼삭제) -->
+
+							</li>
+						</ul>
+					</div>
+
+
+
+
+				</div>
+			</div>
+
+			<!-- S: 220105 수정이력(버튼추가) -->
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+                    <button type="button" class="ebbtn btn_main ty_bg">입력</button>
+				</div>
+			</div>
+			<!-- E: 220105 수정이력(버튼추가) -->
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+
+    // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+    // pageloadFunc();
+</script>
+
+
+</body>
+</html>

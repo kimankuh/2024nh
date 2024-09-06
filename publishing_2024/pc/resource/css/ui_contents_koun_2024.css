@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* main */
+.renewal_2024 .contents_zone.full_side{position:relative; max-width:100%; padding:0}
+
+.renewal_2024 .main_part{margin:0;}
+.renewal_2024 .main_visual_part{position:relative; border-radius:0 0 0 100px; background:#F4F5F9} 
+.renewal_2024 .main_visual_part:after{content:""; display:block; }
+.renewal_2024 .main_visual_part .main_visual {max-width:1080px; margin:0 auto;}
+.renewal_2024 .main_visual_part .main_visual:after{display:none;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .main_item{padding:72px 40px 50px 40px; border-radius:28px 54px 28px 54px; background:#2F6DFC;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .main_item:before{content:""; display:block; position:absolute; bottom:136px; right:0; width:214px; height:78px; background:url(../image/main/bg_main_item_nh.png) no-repeat 0 0;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .main_item:after{content:""; display:block; position:absolute; bottom:136px; right:26px; width:118px; height:165px; background:url(../image/main/bg_main_item_character.png) no-repeat 0 0;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .main_item .title{line-height:42px;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .main_item .ebbtn.btn_main_normal.ty_bg {text-align:center; font-size:20px; font-weight:500; color:#fff; border-radius:14px 24px 14px 24px; background:#0A47D6; }
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .link_box .ebbtn.btn_item_golink{background:#0A47D6 url(../image/main/btn_item_golink_02.png) no-repeat center;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .link_box .ebbtn.btn_item_golink:hover { background-color:#0033AB; }
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .link_box .ebbtn.btn_item_golink:focus { background-color:#0033AB; }
+
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item{padding:30px 40px; border-radius:28px;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.ty_stock:hover {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15); }
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.ty_car:hover {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15); }
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.ty_house:hover {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15); }
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.ty_indust:hover {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15);}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.active.ty_stock {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15);  }
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.active.ty_car {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15);}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.active.ty_house {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15);}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item.active.ty_indust {background:#2F6DFC; box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15);}
+
+.renewal_2024 .main_service_part{padding:0; border-top:0; border-bottom: 1px solid #f0f0f0; border-radius:0 100px 0 0; background:#fff;}
+.renewal_2024 .main_service_part .main_service{max-width:1080px; margin:0 auto; padding: 75px 0 72px; border-top:0;}
+.renewal_2024 .main_service_part:before{border:0;}
+.renewal_2024 .main_service_part:after{left:auto; right:0; width:120px; height:120px; border:0; background:#F4F5F9; z-index:-1;}
+.renewal_2024 .main_board_part{max-width:1080px; margin:96px auto 0;}
+.renewal_2024 .main_notice_part{max-width:1080px; margin:120px auto 0;}
+.renewal_2024 .main_info_part{max-width:1080px; margin:100px auto 0;}
+
+
+/* 이어하기 배너 */
+.renewal_2024 .banner_layer .layer{padding:27px 0 29px 26px; border-radius:16px 20px 16px 20px; background:rgba(0, 0, 0, 0.9); box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);}
+.renewal_2024 .banner_layer .layer .banner_conts .banner_btn .ebbtn.btn_sub{background:#2F6DFC;}
+.renewal_2024 .banner_layer .layer .banner_conts .banner_title{padding-left:44px; background:url(../image/main/icon_banner_title.png) no-repeat 0 4px;}
+.renewal_2024 .banner_layer .layer .banner_conts .banner_title .txt_point{color:#FFD400}
+
+/* 진행상황 */
+.renewal_2024 .main_visual_part .status_toast{position:absolute; top:61px; right:0; width:328px;}
+.renewal_2024 .status_toast .my_total_link{position:relative; display:block; margin-bottom:12px; padding:18px 20px; border-radius:18px; background:#fff; box-shadow: 0 4px 30px -8px rgba(0, 0, 0, 0.05);}
+.renewal_2024 .status_toast .my_total_link:after{content:""; display:block; clear:both;}
+
+.renewal_2024 .status_toast .my_total_link span{line-height:26px; display:block;}
+.renewal_2024 .status_toast .my_total_link .my_total_txt{float:left; padding-left:36px; background:url(../image/main/icon_my_total_link_char.png) no-repeat left center;}
+.renewal_2024 .status_toast .my_total_link .my_total_num{position:relative; float:right; padding-right:22px; font-weight:700;}
+.renewal_2024 .status_toast .my_total_link .my_total_num:after{content:""; display:block; position:absolute; top:50%; right:0; width:20px; height:20px; margin-top:-10px; background:url(../image/main/btn_my_total_link_arr.png) no-repeat center center; }
+
+.renewal_2024 .status_toast .status_toast_box{position:relative; padding:16px 20px; border-radius:18px; background:#fff; box-shadow: 0px 12px 24px -8px rgba(0, 0, 0, 0.05);}
+.renewal_2024 .status_toast .status_msg{padding-left:36px; font-size: 15px;font-weight:700; background:url('../image/main/icon_alarm_24x24.png') no-repeat left top;}
+.renewal_2024 .status_toast .status_link{display:inline-block; margin-left:36px; font-size:14px; font-weight:400; color: var(--grayColor02);}
+/*
+.renewal_2024 .status_toast .status_link:hover,
+.renewal_2024 .status_toast .status_link:focus{padding-right:12px; background:url(../image/component/btn_arrow.png) no-repeat right top 6px;}
+*/
+.renewal_2024 .status_toast .status_msg + .status_link {margin-top:2px;}
+.renewal_2024 .status_toast .status_toast_box .btn_status_close {position:absolute; top:16px; right:20px; width:20px; height:20px; background:url('../image/main/btn_banner_close_black.png') no-repeat center;}
+

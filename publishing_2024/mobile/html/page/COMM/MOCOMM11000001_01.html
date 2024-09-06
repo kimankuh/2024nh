@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 
-	<title>NH농협캐피탈</title>
+	<title>서류등록방법선택 | NH농협캐피탈</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -44,7 +44,7 @@
 	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
 -->
 
-<div id="tempId" class="modal_popup ty_popuplayer"><!-- 노출 className = show -->
+<div id="tempId" class="modal_popup ty_popuplayer renewal_2024"><!-- 노출 className = show --><!-- 2024-09-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 	<div class="popup_layout">
 
 		<div class="popup_inner">
@@ -55,22 +55,25 @@
 
 			<div class="popup_body">
 				<div class="popup_container">
+					<!-- 2024-09-05 2024고도화 : 타이틀 추가 -->
+					<div class="page_title_part">
+						<p class="title">서류 등록 방법 선택</p>
+					</div>
 
-					<div class="option_list">
+					<div class="option_list doc_select_type"><!-- 2024-09-05 2024고도화 : 클래스 추가 '.doc_select_type' -->
 						<ul>
 							<li class="active"><!-- 클릭시 활성화 className = "active" -->
-								<button type="button" class="ebbtn btn_option">
-									<span class="text">카메라 촬영</span>
+								<button type="button" class="ebbtn btn_option btn_album">
+									<span class="text">앨범에서 선택</span><!-- 2024-09-05 2024고도화 : 문구 변경 -->
 								</button>
 							</li>
 							<li>
-								<button type="button" class="ebbtn btn_option">
-									<span class="text">앨범에서 선택</span>
+								<button type="button" class="ebbtn btn_option btn_camera">
+									<span class="text">사진촬영</span><!-- 2024-09-05 2024고도화 : 문구 변경 -->
 								</button>
 							</li>
 						</ul>
 					</div>
-
 				</div>
 			</div>
 

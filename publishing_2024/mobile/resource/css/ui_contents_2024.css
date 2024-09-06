@@ -424,3 +424,26 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .choice_method_list.rBox_wh .method:after {content:'';position:absolute;}
 .renewal_2024 .choice_method_list.rBox_wh .method.done {border:none;background:#F5F6FA;box-shadow:none;}
 .renewal_2024 .choice_method_list.rBox_wh .method.done .data.num {color:var(--primaryColor);}
+
+/* 마이페이지 > 서류제출 */
+.divider {margin:30px -25px;height:12px;background-color:#F3F4F8;}
+.renewal_2024 .page_title_part + .option_list.doc_select_type {margin-top:26px;}
+.renewal_2024 .btn_box + .ebullet_circle {margin-top:12px;}
+.renewal_2024 .option_list.doc_select_type ul {display:flex;}
+.renewal_2024 .option_list.doc_select_type li + li {margin-left:15px;}
+.renewal_2024 .option_list.doc_select_type li {flex:1;}
+.renewal_2024.modal_popup.ty_popuplayer .option_list.doc_select_type ul > li .ebbtn.btn_option {padding-top:99px;height:145px;text-align:center;border-radius:20px;}
+.renewal_2024 .option_list.doc_select_type li:first-child .btn_option {background:#F5F6FA url('../image/contents/mypg/bg_album_68x68.png') no-repeat center top 24px / 68px!important;}
+.renewal_2024 .option_list.doc_select_type li:nth-child(2) .btn_option {background:#F5F6FA url('../image/contents/mypg/bg_camera_68x68.png') no-repeat center top 24px / 68px!important;}
+.renewal_2024 .option_list.doc_select_type .text {font-weight:700;}
+
+/* 수령방법 입력 */
+.renewal_2024 .calc_data_part.bgdiv.nopad .calc_data_box {border:1px solid #E6E6E6;}
+.renewal_2024 .calc_data_part.bgdiv.nopad .calc_data_box .calc_data_list > ul > li .title,
+.renewal_2024 .calc_data_part.bgdiv.nopad .calc_data_box .calc_data_list > ul > li .conts {color:var(--grayColor02);}
+
+/* 로그인 */
+.login_intro_page.init_login .login_golink + .login_golink {margin-top:22px;padding-top:0;}
+.login_intro_page.init_login .login_golink .ebbtn.btn_boxing_golink {padding-top:129px;padding-bottom:32px;font-size:15px;font-weight:500;text-align:center;box-shadow: 0px 20px 40px -12px #0000001A;border-radius:22px;border:1px solid #F0F0F0;}
+.login_intro_page.init_login .login_golink .ebbtn.btn_boxing_golink.type_01 {background:#fff url('../image/contents/logn/bg_login_yn_80x80_01.png') no-repeat center top 32px / 80px;}
+.login_intro_page.init_login .login_golink .ebbtn.btn_boxing_golink.type_02 {background:#fff url('../image/contents/logn/bg_login_yn_80x80_02.png') no-repeat center top 32px / 80px;}
