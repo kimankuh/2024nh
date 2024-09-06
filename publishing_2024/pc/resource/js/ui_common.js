@@ -30,14 +30,6 @@ var ySCR = new yscrStatus(0, 0, ''); // y 상태값 생성
 	ready, load
 */
 $(document).ready(function(){
-	//라디오 버튼 클릭시 하위 라디오버튼
-	$("input:radio[name=radioLoanType]").click(function(){
-		if($("#radioLoanMortgageLoan").prop("checked")){
-			$(".radio_pack_two_depth_hidden").show()
-		}else{
-			$(".radio_pack_two_depth_hidden").hide()
-		}
-	})
 });
 
 
@@ -942,7 +934,7 @@ function accordionSetting(element){
     for(var i=0; i < $accordion.length; i++){
 		//아코디언 초기에 열려있는 경우
         if( $accordion.eq(i).hasClass('active') ){
-            $accordion.eq(i).find('.accordion_content').slideDown(0);
+        	$accordion.eq(i).children('.accordion_content').slideDown(0);
         }
     }
 };
@@ -967,6 +959,7 @@ $(document).on('click','[data-function="accordion"]',function(e){
 	e.stopPropagation();
 	accordionFunc($(this));
 });
+
 
 /*
 	대화창팝업 - 2022-10-28 추가
@@ -1660,4 +1653,5 @@ function lpmainSwiper() {
 		lpmainSlider.push(lpmainswiper);
     });
 }
+
 
