@@ -3126,6 +3126,9 @@ ul.calc_datalist_part > li:last-child .calc_data_box { background-color: #f6f9fe
 .esg_result_part .esg_result_area .txt .sub_title_section{margin-bottom:15px; }
 .esg_result_part .accordion_absolute_pack_wrap .accordion_absolute_pack .accordion_absolute_content{left: 146px;
     right: initial; max-height: inherit; padding: 0; top: -117px; }
+.esg_result_part .tab_pack.ty_round .tab_scroll .ebtab > li .ebbtn.btn_tab,
+.esg_bond_part .tab_pack.ty_round .tab_scroll .ebtab > li .ebbtn.btn_tab,
+.esg_human_rights .tab_pack.ty_round .tab_scroll .ebtab > li .ebbtn.btn_tab{border: 1px solid #e6e6e6; }
    
 /* ESG 홍보*/
 .report_download_pack{margin:120px 0; }
