@@ -305,9 +305,9 @@ dl, dt, dd, ol, ul, li { margin: 0; padding: 0; list-style: none; }
 .bullet_part + .form_part { margin-top: 27px; }
 .guide_part { padding-top: 40px; }
 .guide_part { padding-top: 28px; }
-.guide_part + .sub_info { padding-top: 16px; font-size: 15px; color: #2564ac; }
+.guide_part + .sub_info { padding-top: 16px; font-size: 15px; color: #2F6DFC; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .guide_part .bullet_pack + .sub_info { margin-top: 14px; }
-.guide_part .bullet_pack .sub_info { letter-spacing: -0.4px; color: #2564ac; }
+.guide_part .bullet_pack .sub_info { letter-spacing: -0.4px; color: #2F6DFC; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .bullet_wrap { padding-top: 11px; }
 .bullet_wrap { padding-top: 0; }
 .bullet_wrap .bullet_part { padding-top: 0; }

@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* common */
 .renewal_2024 .contents_zone.full_side{position:relative; max-width:100%; padding:0}
-
+.renewal_2024 .mt0 { margin-top:0 !important; }
 /* main */
 .renewal_2024 .main_part{margin:0;}
 .renewal_2024 .main_visual_part{position:relative; border-radius:0 0 0 100px; background:#F4F5F9} 
@@ -68,6 +68,11 @@
 .renewal_2024 .subheader.product_info .page_title_part .ebtitle2{font-size:46px;}
 .renewal_2024 .subheader.product_info .page_subtitle_part{margin-top:16px; padding:0; line-height:25px; color:#303030;}
 
+.renewal_2024 .subheader.product_info .breadcrumbs_part{position:relative; padding-right:116px;}
+.renewal_2024 .subheader.product_info .breadcrumbs_part .accordion_absolute_pack_wrap{position:absolute; top:68px; right:0; text-align:left;}
+.renewal_2024 .subheader.product_info .breadcrumbs_part .accordion_absolute_pack_wrap .ebbtn.btn_multi{height:28px; border:0; font-size:13px; color:#707070; border-radius:8px;}
+.renewal_2024 .subheader.product_info .breadcrumbs_part .zoom_pop_wrap .accordion_absolute_content .zoom_pop_footer .close{color:#2F6DFC; background:#E5F0FC;}
+
 .renewal_2024 .contents_area.product_info{padding-bottom:100px}
 .renewal_2024 .contents_area.product_info .intro_part{max-width:1080px; margin:0 auto;}
 
@@ -87,21 +92,30 @@
 .renewal_2024 .contents_area.product_info .info_box .prod_detail{position:relative; display:table; table-layout:fixed; width:100%; }
 .renewal_2024 .contents_area.product_info .info_box .prod_detail:after{content:""; display:block; clear:both;}
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .left{display:table-cell; width:40%}
-.renewal_2024 .contents_area.product_info .info_box .prod_detail .right{display:table-cell; width:60%; text-align:right;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .right{display:table-cell; width:60%; text-align:right; vertical-align:baseline;}
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list > li + li{margin-top:20px;}
-.renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list .tit{display:inline-block; min-width:64px; line-height:30px; text-align:center; font-size:14px; color:#009870; border-radius:8px; background:#E8F6EB}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list .tit{display:inline-block; min-width:64px; padding:0 10px; line-height:30px; text-align:center; font-size:14px; color:#009870; border-radius:8px; box-sizing:border-box; background:#E8F6EB}
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list .cont{display:inline-block; font-size:18px;}
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list .tit + .cont{margin-left:16px;}
 
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .intro_btn_box{display:block;}
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .intro_btn_box .btn_box{display:block;}
-.renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main{display:inline-block;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main{display:inline-block; margin-top:56px; min-width:140px; margin-left:12px; padding:18px 20px; line-height:24px; font-size:18px; font-weight:500; border-radius:14px;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main:first-child{margin-left:0;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main:hover{box-shadow: 0 20px 30px -8px rgba(0, 0, 0, 0.15);}
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main.ty_light{color:#2F6DFC; background:#E5F0FC}
 .renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main.ty_bg{color:#fff; background:#2F6DFC}
 
-.renewal_2024 .contents_area.product_info .info_box .prod_noti{position:relative; display:table; table-layout:fixed; width:100%; margin-top:40px; padding-top:16px; border-top:1px solid #F0F0F0;}
+.renewal_2024 .contents_area.product_info .intro_btn_box .intro_box > .btn_box .ebbtn.btn_main.ty_light{color:#2F6DFC; background:#E5F0FC; border:0;}
+.renewal_2024 .contents_area.product_info .intro_btn_box .intro_box > .btn_box .ebbtn.btn_main.ty_bg{color:#fff; background:#2F6DFC; border:0;}
+
+.renewal_2024 .contents_area.product_info .info_box .prod_noti{position:relative; display:table; table-layout:fixed; width:100%; margin-top:40px; padding-top:24px; border-top:1px solid #F0F0F0;}
 .renewal_2024 .contents_area.product_info .info_box .prod_noti:after{content:""; display:block; clear:both;}
 .renewal_2024 .contents_area.product_info .info_box .prod_noti .left{display:table-cell; width:60%; }
 .renewal_2024 .contents_area.product_info .info_box .prod_noti .right{display:table-cell;  width:40%; text-align:right;}
 .renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box {display:inline-block; text-align:left;}
-.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div{display:inline-block;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div{display:inline-block; margin-left:28px;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div:first-child{margin-left:0;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div > .icon_phone{display:inline-block; padding-left:30px; line-height:30px; font-size:16px; color:#707070; background:url(../image/contents/cdln/icon_phone.png) no-repeat left center;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div > .icon_branch{position:relative; display:inline-block; padding-left:30px; padding-right:20px; line-height:30px; font-size:16px; color:#707070; background:url(../image/contents/cdln/icon_branch.png) no-repeat left center;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div > .icon_branch:after{content:""; display:block; position:absolute; top:50%; right:0; margin-top:-10px; width:20px; height:20px; background:url(../image/contents/cdln/icon_branch_arr.png) no-repeat center center;}

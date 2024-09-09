@@ -1,1 +1,75 @@
 @charset "utf-8";
+
+:root {
+    --primaryColor : #2F6DFC;
+    --grayColor01 : #303030;
+    --grayColor02 : #707070;
+    --grayColor03 : #909090;
+    --grayColor04 : #F3F4F8;
+    --pointColor01 : #FFD400;
+    --pointColor02 : #FF0000;
+}
+
+/* 한도조회 결과 > 대환 */
+.renewal_2024 .result_data_part + .form_part {margin-top:30px;}
+.renewal_2024 .data_result_box{position:relative; display:flex; flex-wrap:wrap; }
+.renewal_2024 .data_result_box:after{content:""; display:block; clear:both;}
+.renewal_2024 .data_result_box .top{width:100%; margin-bottom:32px; box-sizing:border-box;}
+.renewal_2024 .data_result_box .left{width:60%; box-sizing:border-box;}
+.renewal_2024 .data_result_box .right{width:40%; padding-left:24px; border-left:1px solid #E6E8F0; box-sizing:border-box;}
+.renewal_2024 .data_result_box .tit{font-size:14px; font-weight:400; color:var(--grayColor02);}
+.renewal_2024 .data_result_box .cost,
+.renewal_2024 .data_result_box .info{margin-top:4px; font-size:22px; font-weight:700;}
+.renewal_2024 .data_result_box .txt{margin-top:4px; font-size:17px; font-weight:700;}
+.renewal_2024 .radio_pack_list {display:flex;}
+.renewal_2024 .radio_pack_list .radio_pack + .radio_pack {margin-left:20px;}
+.renewal_2024 .radio_box_pack{margin:32px 0;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box{display:block; margin-top:16px;border-radius:22px; box-shadow:0 4px 30px -8px rgba(0, 0, 0, 0.05);} 
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio{position:absolute;margin:-1px;padding:0;overflow:hidden;width:1px;height:1px;clip:rect(0,0,0,0);} 
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio[chekced="checked"],
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio:checked{background:none;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio + .eblabel{display:block; padding:21px 19px; border-radius:22px; box-sizing:border-box; border:1px solid #E6E6E6; background:none;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio[chekced="checked"] + .eblabel,
+.renewal_2024 .radio_box_pack .radio_pack.type_box .ebradio:checked + .eblabel{padding:20px 18px; border:2px solid var(--primaryColor); background:none;}
+.renewal_2024 .radio_box_pack .radio_pack.type_box .data_gray_box{margin:0; padding:0; background:none; } 
+
+/* 대환대출 상품안내 */
+.ebullet_circle.single {position:relative;padding-left:12px;font-size:15px;line-height:1.6;color:var(--grayColor02);}
+.ebullet_circle.single.md {font-size:18px;}
+.ebullet_circle.single:after {content: '';position:absolute;top:12px;left:0;width:4px;height:4px;border-radius:50%;background:var(--grayColor02);}
+.p_title {font-size:24px;font-weight:700;}
+.p_title + .ebullet_circle.single {margin-top:20px;}
+.ebullet_circle.single + .p_title {margin-top:50px;}
+
+/* 신용대출 > 대환대출 > 기대출내역 */
+.renewal_2024 .detail_part{margin-top:32px;}
+.renewal_2024 .detail_part > .detail_data_box{margin-top:12px;}
+.renewal_2024 .detail_data_box.lined{position:relative; margin-top:20px; padding:20px; border-radius:21px; background:#F5F6FA;}
+.renewal_2024 .detail_data_box:after{content:""; display:block; clear:both;}
+.renewal_2024 .detail_data_box .detail_acco_tit{margin-bottom:16px; font-size:17px; font-weight:700;}
+.renewal_2024 .detail_data_box .detail_total{position:relative; display:flex; margin-top:12px; padding-top:12px; width:100%; border-top:1px solid #e6e6e6; align-items:center; justify-content:space-between;}
+.renewal_2024 .detail_data_box .detail_total .title{font-size:15px; font-weight:500;}
+.renewal_2024 .detail_data_box .detail_total .conts{font-size:22px; font-weight:700; color:var(--primaryColor);}
+.renewal_2024 .detail_data_list > ul > li{display:flex; width:100%; margin-top:12px; justify-content:space-between;}
+.renewal_2024 .detail_data_list > ul > li:first-child{margin-top:0}
+.renewal_2024 .detail_data_list > ul > li .title{font-size:15px; color:var(--grayColor02);}
+.renewal_2024 .detail_data_list > ul > li .conts{font-size:15px;}
+.renewal_2024 .acco_box .detail_data_list > ul > li:first-child{margin-top:12px}
+.renewal_2024 .acco_box .control{position:relative; margin-top:12px; text-align:center;}
+.renewal_2024 .acco_box .btn_acco{position:relative; display:inline-block; padding-right:17px; font-size:14px; color:#878787;}
+.renewal_2024 .acco_box .btn_acco:after{content:""; display:block; position:absolute; top:50%; right:0; width:9px; height:5px; margin-top:-2px; background:url('../image/component/accordion_arrow.png') no-repeat center; background-size: 100%;  transition: all .3s;}
+.renewal_2024 .acco_box.active .btn_acco:after{transform:rotate(180deg)}
+
+.renewal_2024 .detail_data_box.lined {padding:30px;border-radius:10px; background:#fff;border:1px solid var(--grayColor01);}
+.renewal_2024 .detail_data_box.lined .detail_acco_tit {font-size:20px;}
+.renewal_2024 .detail_data_box.lined .detail_total {justify-content:end;border-top:none;}
+.renewal_2024 .detail_data_box.lined .detail_total .title {color:var(--grayColor02);font-weight:400;}
+.renewal_2024 .detail_data_box.lined .detail_total .conts {margin-left:36px;}
+.renewal_2024 .detail_data_box.lined .control {padding-top:15px;padding-bottom:0;text-align:left;}
+.renewal_2024 .detail_data_box.lined .acco_box.active .control {padding-bottom:30px;border-bottom:1px solid #F3F4F8;}
+.renewal_2024 .detail_data_box.lined .acco_box .btn_acco {padding-left:17px;padding-right:0;}
+.renewal_2024 .detail_data_box.lined .acco_box .btn_acco:after {left:0;right:initial;transform:rotate(180deg);}
+.renewal_2024 .detail_data_box.lined .acco_box.active .btn_acco:after {transform:rotate(0deg);}
+.renewal_2024 .detail_data_list.acco_cont {display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:8px;}
+.renewal_2024 .detail_data_list.acco_cont > ul {padding-left:20px;padding-right:20px;min-width:270px;}
+.renewal_2024 .detail_data_list.acco_cont .date {flex:1;margin-top:20px;padding-right:20px;text-align:right;font-weight:700;}

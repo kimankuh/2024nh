@@ -6,7 +6,7 @@
 
 
 
-	<title>한도조회결과_대환만 | NH농협캐피탈</title>
+	<title>한도조회결과_추가또는대환 | NH농협캐피탈</title>
 
 	<!-- Publishing CSS -->
 	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
@@ -88,18 +88,57 @@
             <div class="contents_area">
                 <div class="contents">
 
-                    <div class="result_data_part">
-                        <div class="result_data_box">
-                            <div class="title">대환가능한도</div>
-                            <div class="cost"><span class="value">2억 7,000</span> <span class="unit">만원</span></div>
-                            <dl>
-                                <dt>대출금리</dt>
-                                <dd>
-                                    <div class="info"><span class="value">2.3</span> %</div>
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
+                    <div class="radio_box_pack">
+						<div class="ebtitle_medium">신청하고 싶은 대출을 선택해 주세요.</div>
+
+                        <div class="radio_pack_list">
+                            <div class="radio_pack type_box">
+                                <input type="radio" class="ebradio" name="chk_loan" id="chk_loan_1" checked="checked">
+                                <label for="chk_loan_1" class="eblabel">
+                                    <div class="data_gray_box">
+                                        <div class="data_result_box">
+                                            <div class="top">
+                                                <div class="tit">기존 보유중인 신용대출을 더 좋은 조건의</div><!-- 2024-08-30 2024고도화 : 문구 변경됨 -->
+                                                <!-- <div class="tit">기존 신용대출을 더 좋은 조건의</div> -->
+                                                <div class="txt">대출로 갈아타기 (대환대출)</div>
+                                            </div>
+                                            <div class="left">
+                                                <div class="tit">대환가능한도</div>
+                                                <div class="cost"><span class="value">2억 7,000</span><span class="unit">만원</span></div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="tit">예상적용금리</div>
+                                                <div class="info"><span class="value">15.7</span><span class="unit">%</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="radio_pack type_box">
+                                <input type="radio" class="ebradio" name="chk_loan" id="chk_loan_2">
+                                <label for="chk_loan_2" class="eblabel">
+                                    <div class="data_gray_box" role="button">
+                                        <div class="data_result_box">
+                                            <div class="top">
+                                                <div class="tit">한도가 남아있다면 대출가능 한도 내</div><!-- 2024-08-30 2024고도화 : 문구 변경됨 -->
+                                                <!-- <div class="tit">대출 가능 한도 내</div> -->
+                                                <div class="txt">추가로 대출 받기 (추가대출)</div>
+                                            </div>
+                                            <div class="left">
+                                                <div class="tit">추가대출한도</div>
+                                                <div class="cost"><span class="value">2억 7,000</span><span class="unit">만원</span></div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="tit">예상적용금리</div>
+                                                <div class="info"><span class="value">15.7</span><span class="unit">%</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>						
+					</div>
 
                     <div class="form_part">
                         <div class="form_set">
