@@ -1,8 +1,8 @@
 @charset "utf-8";
-
-/* main */
+/* common */
 .renewal_2024 .contents_zone.full_side{position:relative; max-width:100%; padding:0}
 
+/* main */
 .renewal_2024 .main_part{margin:0;}
 .renewal_2024 .main_visual_part{position:relative; border-radius:0 0 0 100px; background:#F4F5F9} 
 .renewal_2024 .main_visual_part:after{content:""; display:block; }
@@ -36,13 +36,13 @@
 .renewal_2024 .main_info_part{max-width:1080px; margin:100px auto 0;}
 
 
-/* 이어하기 배너 */
+/* main - 이어하기 배너 */
 .renewal_2024 .banner_layer .layer{padding:27px 0 29px 26px; border-radius:16px 20px 16px 20px; background:rgba(0, 0, 0, 0.9); box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);}
 .renewal_2024 .banner_layer .layer .banner_conts .banner_btn .ebbtn.btn_sub{background:#2F6DFC;}
 .renewal_2024 .banner_layer .layer .banner_conts .banner_title{padding-left:44px; background:url(../image/main/icon_banner_title.png) no-repeat 0 4px;}
 .renewal_2024 .banner_layer .layer .banner_conts .banner_title .txt_point{color:#FFD400}
 
-/* 진행상황 */
+/* main - 진행상황 */
 .renewal_2024 .main_visual_part .status_toast{position:absolute; top:61px; right:0; width:328px;}
 .renewal_2024 .status_toast .my_total_link{position:relative; display:block; margin-bottom:12px; padding:18px 20px; border-radius:18px; background:#fff; box-shadow: 0 4px 30px -8px rgba(0, 0, 0, 0.05);}
 .renewal_2024 .status_toast .my_total_link:after{content:""; display:block; clear:both;}
@@ -62,3 +62,46 @@
 .renewal_2024 .status_toast .status_msg + .status_link {margin-top:2px;}
 .renewal_2024 .status_toast .status_toast_box .btn_status_close {position:absolute; top:16px; right:20px; width:20px; height:20px; background:url('../image/main/btn_banner_close_black.png') no-repeat center;}
 
+/* 상품소개 */
+.renewal_2024 .subheader.product_info .ebtext_desc01{margin-top:40px;}
+.renewal_2024 .subheader.product_info .page_title_part{margin-top:16px; padding:0;}
+.renewal_2024 .subheader.product_info .page_title_part .ebtitle2{font-size:46px;}
+.renewal_2024 .subheader.product_info .page_subtitle_part{margin-top:16px; padding:0; line-height:25px; color:#303030;}
+
+.renewal_2024 .contents_area.product_info{padding-bottom:100px}
+.renewal_2024 .contents_area.product_info .intro_part{max-width:1080px; margin:0 auto;}
+
+.renewal_2024 .contents_area.product_info .loan_part{position:relative; margin-top:90px; background:none;}
+.renewal_2024 .contents_area.product_info .loan_part .bg_area{position:absolute; top:-366px; left:0; width:100%; height:567px; border-radius:0 0 0 80px; background:#E9EDFF; z-index:-1;}
+.renewal_2024 .contents_area.product_info .loan_part .bg_area:before{content:""; display:block; position:absolute; bottom:-80px; right:0; width:80px; height:80px; background:url(../image/contents/cdln/bg_product_info.png) no-repeat 0 0;}
+.renewal_2024 .contents_area.product_info .info_box{position:relative; max-width:1080px; margin:0 auto; padding:40px 48px; border-radius:46px; background:#fff; box-sizing:border-box; box-shadow: 0px 30px 40px -20px rgba(0, 0, 0, 0.15);}
+.renewal_2024 .contents_area.product_info .info_box:before{content:""; display:block; position:absolute; top:-103px; right:0; width:339px; height:123px; background:url(../image/contents/cdln/bg_product_nh.png) no-repeat 0 0; z-index:-1}
+.renewal_2024 .contents_area.product_info .info_box:after{content:""; display:block; position:absolute; top:-170px; right:56px; width:163px; height:236px; background:url(../image/contents/cdln/bg_product_char.png) no-repeat 0 0;}
+.renewal_2024 .contents_area.product_info .info_box .prod_data{position:relative;}
+.renewal_2024 .contents_area.product_info .info_box .prod_data > li{display:inline-block;}
+.renewal_2024 .contents_area.product_info .info_box .prod_data > li + li {margin-left:72px}
+.renewal_2024 .contents_area.product_info .info_box .prod_data > li .tit{display:block; font-size:16px; font-weight:400; color:#707070;}
+.renewal_2024 .contents_area.product_info .info_box .prod_data > li .txt{display:block; font-size:30px; font-weight:700;}
+.renewal_2024 .contents_area.product_info .info_box .prod_data > li .txt .num{font-size:34px;}
+
+.renewal_2024 .contents_area.product_info .info_box .prod_detail{position:relative; display:table; table-layout:fixed; width:100%; }
+.renewal_2024 .contents_area.product_info .info_box .prod_detail:after{content:""; display:block; clear:both;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .left{display:table-cell; width:40%}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .right{display:table-cell; width:60%; text-align:right;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list > li + li{margin-top:20px;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list .tit{display:inline-block; min-width:64px; line-height:30px; text-align:center; font-size:14px; color:#009870; border-radius:8px; background:#E8F6EB}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list .cont{display:inline-block; font-size:18px;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .data_list .tit + .cont{margin-left:16px;}
+
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .intro_btn_box{display:block;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .intro_btn_box .btn_box{display:block;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main{display:inline-block;}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main.ty_light{color:#2F6DFC; background:#E5F0FC}
+.renewal_2024 .contents_area.product_info .info_box .prod_detail .ebbtn.btn_main.ty_bg{color:#fff; background:#2F6DFC}
+
+.renewal_2024 .contents_area.product_info .info_box .prod_noti{position:relative; display:table; table-layout:fixed; width:100%; margin-top:40px; padding-top:16px; border-top:1px solid #F0F0F0;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti:after{content:""; display:block; clear:both;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .left{display:table-cell; width:60%; }
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .right{display:table-cell;  width:40%; text-align:right;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box {display:inline-block; text-align:left;}
+.renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div{display:inline-block;}
