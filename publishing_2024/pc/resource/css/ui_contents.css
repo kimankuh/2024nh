@@ -343,9 +343,9 @@
 .result_data_box .title { margin-bottom: 7px; font-size: 13px; color: #707070; }
 .result_data_box .cost { margin-bottom: 27px; font-size: 19px; font-weight: bold; color: #303030; }
 .result_data_box .cost .unit { font-size: 19px; color: #303030; font-weight: bold; }
-.result_data_box .info { font-size: 14px; color: #00ba89; font-weight: bold; }
+.result_data_box .info { font-size: 14px; color: #2F6DFC; font-weight: bold; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .result_data_box.ty_loading { border: none; background: linear-gradient(#f2f4fb 50%, #fff); }
-.result_data_box.ty_loading .cost { color: #00ba89; }
+.result_data_box.ty_loading .cost { color: #2F6DFC; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .result_data_box dl { display: table; table-layout: fixed; padding-top: 17px; width: 100%; border-top: 1px solid #f0f0f0; }
 .result_data_box dt,
 .result_data_box dd { display: table-cell; vertical-align: middle; }

@@ -56,7 +56,7 @@ function accoNewInit(){
             $(this).attr('aria-expanded', true);
             $(this).closest('.acco_box').addClass('active');
             $(this).closest('.acco_box').find('.acco_cont').slideDown(300);
-            $(this).find('.txt').text('닫기');
+            $(this).find('.txt').text('접기');
         }
     });
 

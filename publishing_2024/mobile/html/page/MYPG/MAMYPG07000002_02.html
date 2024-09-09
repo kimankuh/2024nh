@@ -83,8 +83,10 @@
                     
                     <div class="form_set">
                         <div class="ebform_label required">휴대폰 번호</div><!-- 필수 항목 : .required 클래스 추가 -->
-                        <div class="form_pack ty_phonenum">
-                            <div class="select_pack" data-ui="customSelect">
+                        <div class="form_pack"><!-- 2024-09-09 2024고도화 : 통신사 항목 삭제 > 클래스 삭제 '.ty_phonenum' -->
+
+                            <!-- 2024-09-09 2024고도화 : 통신사 항목 삭제 -->
+                            <!-- <div class="select_pack" data-ui="customSelect">
                                 <select class="ebselect" data-placeholder="통신사" title="통신사">
                                     <option value="">선택</option>
                                     <option value="01">SKT</option>
@@ -94,7 +96,7 @@
                                     <option value="06">알뜰폰(KT)</option>
                                     <option value="07">알뜰폰(LGU+)</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <div class="input_pack">
                                 <input type="tel" class="ebinput" placeholder="휴대폰 번호 입력" value="" title="휴대폰 번호">
                                 <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
