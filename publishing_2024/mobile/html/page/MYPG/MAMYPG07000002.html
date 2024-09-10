@@ -98,9 +98,14 @@
                     <div class="form_set">
 						<div class="ebform_label">이메일</div>
 						<div class="form_pack">
-							<div class="input_pack">
+							<div class="input_pack ty_email"><!-- 20204-09-10 2024고도화 : 개발 현행화. 이메일 입력 폼인 경우, 클래스 추가 '.ty_email' -->
 								<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="">
 								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+
+								<!-- 20204-09-10 2024고도화 : 개발 현행화. 이메일 입력 폼인 경우, 아래 div 추가 -->
+								<div class="email_layer"><!-- 레이어 활성화시 addClass="show" -->
+									<!-- 이메일 목록 표시 영역 -->
+								</div>
 							</div>
 						</div>
 					</div>

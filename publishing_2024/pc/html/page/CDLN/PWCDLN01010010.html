@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+	<title>주소/연락처정보 | NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Plugin JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+	<!-- 개발 JS -->
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/common.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024-09-04 2024고도화 : 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div class="layout temp">
+
+	<div class="header">
+		<div class="header_area">
+		</div>
+	</div>
+
+	<div class="container renewal_2024"><!-- 2024-09-09 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="breadcrumbs_part">
+					<div class="breadcrumbs_pack">
+						<ul>
+							<li><a href="#" class="bcname" title="홈"></a></li>
+							<li><a href="#" class="bcname">신용대출</a></li>
+							<li><a href="#" class="bcname">대출신청</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="step_part"><!-- addClass="is_scroll"시 스텝영역 바뀜 -->
+
+					<div class="step_pack">
+						<ol>
+							<li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">한도조회</span>
+							</li>
+							<li class="active">
+								<span class="num">2</span>
+								<span class="txt">대출신청</span>
+							</li>
+							<li>
+								<span class="num">3</span>
+								<span class="txt">약정석확인</span>
+							</li>
+						</ol>
+					</div>
+
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">주소/연락처정보</h2>
+				</div>
+
+				<div class="page_subtitle_part">
+					<p>주소와 연락처 정보를 입력해주세요.</p><!-- 2024-09-10 2024고도화 : 문구 개선 -->
+				</div>
+
+			</div>
+		</div>
+
+		<div class="contents_zone has_step">
+
+			<!-- 여기부터 컨텐츠 -->
+			<div class="contents_area">
+				<div class="contents">
+
+					<!-- 2022-02-09 수정 : 입력폼 수정 -->
+					<div class="form_part">
+						<!-- 주소 미입력 상태 시 -->
+						<!-- <div class="form_set">
+							<div class="ebform_label">자택주소</div>
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="자택주소">주소 검색</button>
+							</div>
+						</div> -->
+						<!-- 주소 검색 후 활성화 -->
+						<div class="form_set">
+							<div class="ebform_label">자택주소</div>
+							<div class="form_pack ty_flex">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="자택주소 입력" title="자택주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+								<div class="btn_box">
+									<button type="button" class="ebbtn btn_multi">주소수정</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="form_set">
+							<div class="ebform_label">상세주소</div>
+							<div class="form_pack">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+						<!-- //주소 검색 후 활성화 -->
+
+						<div class="form_set">
+							<div class="ebform_label">상세주소</div>
+							<div class="form_pack">
+								<div class="input_pack">
+									<input type="text" class="ebinput" title="상세주소" placeholder="placeholder" value="심팩빌딩 16층">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+
+						<!-- 2024-09-10 2024고도화 : 항목 삭제 -->
+						<!-- <div class="form_set">
+							<div class="ebform_label">자택전화번호</div>
+							<div class="form_pack ty_phonenum">
+								<div class="select_pack" data-ui="customSelect">
+									<select class="ebselect" title="지역번호" data-placeholder="지역번호">
+										<option value="option1" selected="selected">02</option>
+										<option value="option2">031</option>
+										<option value="option3">option3</option>
+									</select>
+								</div>
+								<div class="input_pack">
+									<input type="tel" class="ebinput" title="자택전화번호" placeholder="-없이 숫자만 입력" value="1111-2222">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div> -->
+
+						<!-- 주소 미입력 상태 시 -->
+						<!-- <div class="form_set">
+							<div class="ebform_label">직장주소</div>
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="직장주소">주소 검색</button>
+							</div>
+						</div> -->
+						<!-- 주소 검색 후 활성화 -->
+						<div class="form_set">
+							<div class="ebform_label">직장주소</div>
+							<div class="form_pack ty_flex">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="직장주소 입력" title="직장주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+								<div class="btn_box">
+									<button type="button" class="ebbtn btn_multi">주소수정</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="form_set">
+							<div class="ebform_label">상세주소</div>
+							<div class="form_pack">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+						<!-- //주소 검색 후 활성화 -->
+
+						<div class="form_set">
+							<div class="ebform_label">직장전화번호</div>
+							<div class="form_pack ty_phonenum">
+								<div class="select_pack" data-ui="customSelect">
+									<select class="ebselect" title="지역번호" data-placeholder="지역번호">
+										<option value="option1" selected="selected">02</option>
+										<option value="option2">031</option>
+										<option value="option3">option3</option>
+									</select>
+								</div>
+								<div class="input_pack">
+									<input type="tel" class="ebinput" title="직장전화번호" placeholder="-없이 숫자만 입력" value="1111-2223">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+
+						<!-- 2024-09-10 2024고도화 : 청구방식 추가 -->
+						<div class="form_set">
+							<div class="form_pack ty_half">
+								<div class="ebform_label">청구방식</div>
+								<div class="form_pack">
+									<div class="select_pack" data-ui="customSelect">
+										<select class="ebselect" title="청구방식" data-placeholder="청구방식 선택">
+											<option value="option1">모바일</option>
+											<option value="option2">이메일</option>
+											<option value="option3" selected="selected">우편수령</option>
+										</select>
+									</div>										
+								</div>
+								<div class="form_pack">
+									<div class="select_pack" data-ui="customSelect">
+										<select class="ebselect" title="청구지" data-placeholder="청구지 선택">
+											<option value="option1" selected="selected">자택</option>
+											<option value="option2">직장</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>		
+						
+						<!-- 기타주소 -->
+						<!-- 주소 미입력 상태 시 -->
+						<div class="form_set">
+							<div class="ebform_label">기타주소</div>
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="기타주소">주소 검색</button>
+							</div>
+						</div>
+
+						<!-- 주소 검색 후 활성화 -->
+						<!-- <div class="form_set">
+							<div class="ebform_label">기타주소</div>
+							<div class="form_pack ty_flex">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="기타주소 입력" title="기타주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+								<div class="btn_box">
+									<button type="button" class="ebbtn btn_multi">주소수정</button>
+								</div>
+							</div>
+						</div>
+						<div class="form_set">
+							<div class="ebform_label">상세주소</div>
+							<div class="form_pack">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div> -->
+						<!-- //주소 검색 후 활성화 -->
+
+						<!-- 기타주소 추가 버튼 -->
+						<div class="btn_box mt20">
+							<button type="button" class="ebbtn btn_normal ty_bg">주소추가</button>
+
+							<!-- '주소추가' 선택시 아래 버튼으로 교체됨 -->
+							<!-- <button type="button" class="ebbtn btn_normal ty_bg">취소</button>
+							<button type="button" class="ebbtn btn_normal ty_bg">추가완료</button> -->
+						</div>
+
+						<div class="form_set">
+							<div class="ebform_label">이메일</div>
+							<div class="form_pack ty_email">
+								<div class="input_pack">
+									<input type="text" class="ebinput" placeholder="이메일 입력" value="" title="이메일 아이디">
+									<span class="unit">@</span>
+									<input type="text" class="ebinput" placeholder="" value="" title="이메일 도메인주소">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+								<div class="select_pack" data-ui="customSelect">
+									<select class="ebselect" data-placeholder="직접입력" title="도메인">
+										<option value="option1">직접입력</option>
+										<option value="option2">naver.com</option>
+										<option value="option3">hanmail.com</option>
+										<option value="option4">gmail.com</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- 2022-02-09 수정 : 입력폼 수정 -->
+
+				</div>
+			</div>
+
+			<!-- 컨텐츠 하단 버튼영역 -->
+			<div class="contents_bottom_area">
+				<button type="button" class="ebbtn btn_main ty_bg">대출신청</button>
+			</div>
+			<!-- //여기까지 컨텐츠 -->
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer_area"></div>
+	</div>
+</div>
+
+<!-- 2024-09-09 2024고도화 : 운영과 동일한 팝업영역 추가 -->
+<div id="layoutPopContent"></div>
+
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

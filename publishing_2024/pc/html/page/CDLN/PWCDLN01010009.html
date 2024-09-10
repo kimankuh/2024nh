@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+	<title>결제정보 | NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Plugin JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+	<!-- 개발 JS -->
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/common.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024-09-04 2024고도화 : 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div class="layout temp">
+
+	<div class="header">
+		<div class="header_area">
+		</div>
+	</div>
+
+	<div class="container renewal_2024"><!-- 2024-09-09 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="breadcrumbs_part">
+					<div class="breadcrumbs_pack">
+						<ul>
+							<li><a href="#" class="bcname" title="홈"></a></li>
+							<li><a href="#" class="bcname">신용대출</a></li>
+							<li><a href="#" class="bcname">대출신청</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="step_part"><!-- addClass="is_scroll"시 스텝영역 바뀜 -->
+
+					<div class="step_pack">
+						<ol>
+							<li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">한도조회</span>
+							</li>
+							<li class="active">
+								<span class="num">2</span>
+								<span class="txt">대출신청</span>
+							</li>
+							<li>
+								<span class="num">3</span>
+								<span class="txt">약정서작성</span>
+							</li>
+						</ol>
+					</div>
+
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">결제정보</h2>
+				</div>
+
+				<div class="page_subtitle_part">
+					<p>결제정보를 입력해주세요.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="contents_zone has_step">
+
+			<!-- 여기부터 컨텐츠 -->
+			<div class="contents_area">
+				<div class="contents">
+
+
+
+					<div class="form_part">
+						<div class="form_set">
+							<div class="ebform_label">결제일</div>
+							<div class="form_pack">
+								<div class="select_pack" data-ui="customSelect">
+									<select class="ebselect" title="결제일" data-placeholder="선택">
+										<option value="option1" selected="selected">1일</option>
+										<option value="option2">5일</option>
+										<!-- <option value="option3">option3</option> -->
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form_set">
+							<div class="ebform_label">월상환금액</div>
+							<div class="form_pack">
+								<div class="input_pack ty_word1">
+									<input type="text" class="ebinput" title="월상환금액" value="921,150" readonly="readonly">
+									<span class="unit">원</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form_set">
+							<div class="ebform_label">결제계좌</div>
+							<div class="form_pack ty_account">
+								<div class="select_pack has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+									<button type="button" class="ebbtn btn_select" title="결제계좌">
+										<!-- 2022-03-16 수정 : 은행아이콘 이미지로 마크업구조변경 -->
+										<span class="icon_pack">
+											<span class="ebicon icon_bank">
+												<img src="../../../resource/image/ci/ci_004.png" alt=""><!-- 2022-03-31 수정 : 은행로고 이미지 경로 수정 -->
+											</span>
+											<span class="text">국민은행</span>
+										</span>
+										<!-- //2022-03-16 수정 : 은행아이콘 이미지로 마크업구조변경 -->
+									</button>
+									<!-- 2022-03-16 수정 :
+										은행선택드롭다운삭제(팝업으로대체 참고: html/page/MUTUALCOMM/PW_BANKLIST01.html)
+										<div class="select_option_layer"></div> 삭제
+									-->
+								</div>
+								<div class="input_pack">
+									<input type="tel" class="ebinput" placeholder="-없이 숫자만 입력" value="12-123412-1251-21" title="계좌번호 입력">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+							<div class="btn_box">
+								<button type="button" class="ebbtn btn_normal ty_bg">본인계좌확인</button>
+							</div>
+
+							<!-- 2024-09-10 2024고도화 : 유의사항 추가 -->
+							<ul class="ebullet_circle">
+								<li>결제계좌 등록을 완료하신 이후에 수정이 필요 하실 경우 ‘본인계좌변경‘ 버튼을 선택하셔서 수정이 가능해요</li>
+								<li>결제계좌 입력 후 ‘본인계좌확인’ 버튼을 선택해 주시면 해당 계좌로 1원을 송금 해요</li>
+								<li>현재 당사 신용대출을 이용 중이신 경우, 추가대출은 동일한 계좌로 대출신청이 가능해요</li>
+								<li>평생계좌(핸드폰번호 등)는 등록이  불가능 해요</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="form_part ty_ani">
+						<!-- 2024-09-10 2024고도화 : SB기준 항목 삭제 -->
+						<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+							<div class="ebform_label">청구방식</div>
+							<div class="form_pack">
+								<div class="select_pack" data-ui="customSelect">
+									<select class="ebselect" title="청구방식" data-placeholder="청구방식 선택">
+										<option value="option1">모바일</option>
+										<option value="option2">이메일</option>
+										<option value="option3" selected="selected">우편수령</option>
+									</select>
+								</div>
+							</div>
+							<ul class="ebullet_circle">
+								<li>
+									모바일, 이메일 외 청구방법 선택 시에는 모바일로 먼저 선택 후 고객행복센터 (1644-3700)로 연락 부탁드립니다.!-- 2022-05-27 수정 : 고객행복센터 전화번호 수정 --
+								</li>
+							</ul>
+						</div>
+
+						<div class="form_set show">!-- 청구방식 option 우편수령 선택시 노출 / 입력폼 활성화시 addclass="show" --
+							<div class="ebform_label">청구지</div>
+							<div class="form_pack">
+								<div class="select_pack" data-ui="customSelect">
+									<select class="ebselect" title="청구지" data-placeholder="청구지 선택">
+										<option value="option1" selected="selected">자택</option>
+										<option value="option2">직장</option>
+									</select>
+								</div>
+							</div>
+						</div> -->
+
+						<div class="form_next_box show"><!-- 마지막 form까지 입력 완료 후 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
+							<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+			<!-- //여기까지 컨텐츠 -->
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer_area"></div>
+	</div>
+</div>
+
+<!-- 2024-09-09 2024고도화 : 운영과 동일한 팝업영역 추가 -->
+<div id="layoutPopContent"></div>
+
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

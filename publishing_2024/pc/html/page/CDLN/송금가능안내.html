@@ -6,7 +6,7 @@
 
 
 
-	<title>팝업모음 | NH농협캐피탈</title>
+	<title>송금가능안내 | NH농협캐피탈</title>
 
 	<!-- Publishing CSS -->
 	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
@@ -77,20 +77,7 @@
 
         <div class="contents_zone has_step">
             <!-- 여기부터 컨텐츠 -->
-            <div class="contents_area">
-                <div class="contents">
-
-                    <ul style="padding:20px;">
-                        <li style="margin-top:20px;">
-                            <div class="btn_box"><button onclick="popupFunc('#alertDialogHtml_01').show();" class="ebbtn btn_sub">송금 가능 안내</button></div>
-                        </li>    
-                        <li style="margin-top:20px;">
-                            <div class="btn_box"><button onclick="popupFunc('#alertDialogHtml_02').show();" class="ebbtn btn_sub">동의여부 확인 팝업</button></div>
-                        </li>    
-                    </ul>
-                    
-                </div>
-            </div>
+            
             <!-- //여기까지 컨텐츠 -->
         </div>
 	</div>
@@ -110,7 +97,7 @@
 -->
 
 <!-- 송금 가능 안내 -->
-<div id="alertDialogHtml_01" class="modal_popup"><!-- 노출 className = show -->
+<div id="tempId" class="modal_popup"><!-- 노출 className = show -->
 	<div class="popup_layout" style="width:502px"><!-- 크기지정 : style=" width: **px; height: **px" -->
 		<div class="popup_inner">
             <div class="popup_header">
@@ -137,41 +124,12 @@
 </div>
 <!-- // 송금 가능 안내 -->
 
-
-<!-- 동의여부 확인 팝업 -->
-<div id="alertDialogHtml_02" class="modal_popup"><!-- 노출 className = show -->
-	<div class="popup_layout" style="width:502px"><!-- 크기지정 : style=" width: **px; height: **px" -->
-		<div class="popup_inner">
-            <div class="popup_header">
-                <h3 class="ebtitle3">이 내용으로 대출을 실행할까요?</h3>
-                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
-            </div>
-			<div class="popup_body">
-				<div class="popup_container">
-                    <div class="checkbox_pack">
-                        <input type="checkbox" class="ebcheckbox" id="chk1_0">
-                        <label for="chk1_0" class="eblabel">대환대출 상품 내용을 모두 확인하고 이해했습니다.</label>
-                    </div>
-				</div>
-			</div>
-			<div class="popup_footer">
-				<div class="popup_footer_area">
-					<div class="btn_box">
-                        <button type="button" class="ebbtn btn_main ty_bg">확인</button>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- // 동의여부 확인 팝업 -->
-
 <script>
 // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
 // pageloadFunc();
 
 //팝업호출
-    // popupFunc('#tempId').show();
+    popupFunc('#tempId').show();
 </script>
 
 

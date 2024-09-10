@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"></div><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <button type="button" class="ebbtn btn_modal_back" title="뒤로가기"></button>
+                <h3 class="ebtitle3">직장 검색</h3>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+                    <div class="page_title_part">
+                        <div class="ebtitle_normal">직장명이 검색되지 않을 경우 직접<br> 입력해주세요.</div>
+                    </div>
+                    <div class="page_subtitle_part">
+                        <p>단, 검색 결과의 직장을 선택하시는 방법이 대출심사시 유리할 수 있어요.</p><!-- 2024-09-10 2024고도화 : 문구 개선 -->
+                    </div>
+
+                    <div class="form_part ty_ani">
+                        <div class="form_set show">
+                            <div class="ebform_label">직장명</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="text" class="ebinput" placeholder="직장명 입력" value="" title="직장명 입력">
+                                    <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+
+						<!-- 2022-04-21 수정 : 사업자등록번호 입력폼 추가 -->
+						<div class="form_set show">
+                            <div class="ebform_label">사업자등록번호</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="tel" class="ebinput" placeholder="-없이 숫자만 입력" value="" title="사업자등록번호">
+                                    <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+						<!-- //2022-04-21 수정 : 사업자등록번호 입력폼 추가 -->
+                    </div>
+
+
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+					<button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+
+    // 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+    // pageloadFunc();
+</script>
+
+
+</body>
+</html>

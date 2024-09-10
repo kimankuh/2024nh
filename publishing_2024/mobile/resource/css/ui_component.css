@@ -222,7 +222,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 
 /* 인풋 - 에러 */
 .input_pack.has_error:after { height: 2px; background: #ea3636; }
-.input_pack.has_error.has_focus:after { height: 2px; background: #009870; } /* A11Y 240401 명도대비 컬러 수정 */
+.input_pack.has_error.has_focus:after { height: 2px; background: #2f6dfc; } /* A11Y 240401 명도대비 컬러 수정 *//* 2024-09-10 2024고도화 : 컬러 수정 */
 
 /* 인풋 + 단위 */
 .input_pack.ty_wordtime { padding-right: 49px; }
