@@ -2704,3 +2704,16 @@ background: url(/resource/mobile/image/component/accordion_arrow.png) no-repeat 
 	top: 18px; left: 0; }
 .simui_wrap{background:#23262d; }
 .simui_wrap .simui_inner{font-size:18px; color:#fff; padding:8px 6.5% 11px 6.5%; word-break: keep-all;}
+
+/*
+	카카오뱅크 브릿지페이지 - 2024-08-02
+*/
+.kakao_bank .bg_gray{background:#f1f1f1;}
+.kakao_bank .icon_notice{display: inline-block; width: 24px; height: 24px; vertical-align: text-top;			   margin-right: 5px; }
+.kakao_bank .circle_num{width:20px; height:20px; background:#303030; border-radius:50%; text-align:center;		   color:#fff; display: inline-block; font-size:13px; line-height: 20px; }
+.kakao_bank .num_list{margin-top:12px; }
+.kakao_bank .num_list li{position: relative; padding-left: 28px; margin-bottom: 14px; font-size: 15px;
+color: #303030; }
+.kakao_bank .num_list li .circle_num{position: absolute; left: 0; }
+.kakao_bank.bridge .page_subtitle_part{border-bottom: 2px solid #f0f0f0; padding-bottom: 27px; margin-bottom: 26px; }
+.kakao_bank.bridge .btn_wrap{margin-bottom: 78px; }
