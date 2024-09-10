@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>한도조회중 | NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+<div id="tempId" class="layer_popup"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="result_loading_part">
+			<div class="process_end_part">
+				<div class="title_box">
+					<h2 class="ebtitle2">한도조회 진행 중이예요</h2><!-- 2024-09-10 2024고도화 : 문구 개선 -->
+				</div>
+				<div class="desc_box">
+					<p><span class="name">홍길동</span>님<br>고객님의 한도를 조회하고 있어요</p><!-- 2024-09-10 2024고도화 : 문구 개선 -->
+					<p>잠시만 기다려주세요.</p>
+				</div>
+				<!-- 2022-04-13 수정 : 한도조회 로딩 애니메이션 수정 -->
+				<div class="loading_img_box">
+					<!-- 로딩 이미지 영역 -->
+					<div class="imgani_box active">
+						<div class="ani ani_1">
+							<span class="img_box">
+								<img src="../../../resource/image/contents/common/img_ani1.png" alt="내 예상한도 ???? 만원">
+							</span>
+						</div>
+						<div class="ani ani_2">
+							<span class="img_box">
+								<img src="../../../resource/image/contents/common/img_ani2.png" alt="">
+							</span>
+						</div>
+						<div class="ani ani_3">
+							<span class="img_box">
+								<img src="../../../resource/image/contents/common/img_ani3.png" alt="">
+							</span>
+						</div>
+					</div>
+					<!-- //로딩 이미지 영역 -->
+				</div>
+				<!-- //2022-04-13 수정 : 한도조회 로딩 애니메이션 수정 -->
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<script>
+	//팝업호출
+	ui_layerpopupShow('#tempId');
+
+	//팝업닫기
+	// ui_layerpopupHide('#tempId');
+
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

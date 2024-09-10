@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+<div class="layout">
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">적합성·적정성 진단</h2><!-- 2022-04-12 수정 : 타이틀 텍스트 수정 -->
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="active"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">step명</span>
+							</li>
+							<li>
+								<span class="num">2</span>
+								<span class="txt">step명</span>
+							</li>
+							<li>
+								<span class="num">3</span>
+								<span class="txt">step명</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">적합성·적정성 진단</h2><!-- 2022-04-12 수정 : 타이틀 텍스트 수정 -->
+				</div>
+
+				<div class="guide_part">
+					<div class="bullet_pack">
+						<div class="ebbullet_subtitle">고객님, 저희 NH농협캐피탈을 이용해 주셔서 감사합니다.</div>
+						<!-- 2022-04-12 수정 : 텍스트 수정 -->
+						<div class="ebbullet_text">
+							본 확인서는 「금융소비자 보호에 관한 법률」에 의거
+							하여 고객님의 재산상황, 금융상품 취득·처분 경험
+							등을 파악하여, 고객님께서 신청하신 상품이 고객
+							님의 상황에 적합·적정한지 여부를 확인하기 위해
+							활용됩니다.<br>
+							아래 체크리스트에 고객님의 상황에 부합하거나
+							가장 가까운 항목을 정확히 선택하여 주시기 바랍니다.
+						</div>
+						<!-- //2022-04-12 수정 : 텍스트 수정 -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">소비자 분류</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">일반금융소비자</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">전문금융소비자</button>
+							</li>
+						</ul>
+					</div>
+					<ul class="ebullet_circle">
+						<li>전문금융소비자 : 상시근로자 5인 이상 법인, 조합, SPC 등</li>
+					</ul>
+					<div class="form_part">
+						<div class="form_set">
+							<div class="ebform_label">연령</div>
+							<div class="form_pack">
+								<div class="input_pack">
+									<input type="tel" class="ebinput" placeholder="연령(만 나이)" value="" title="연령">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">대출용도</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">가계자금</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">사업자금</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">주택자금</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">타기관 대출금상환</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">자동차구입</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">임차보증금</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">보유자산</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">5억원 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">5억원 이상</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">연간소득</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">5천만원 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">5천만원 이상</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">부채</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">1억원 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">1억원 이상</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">연체여부</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">연체정보 없음</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">연체정보 있음</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 2022-05-18 수정 : 고정지출(월) 항목 삭제 -->
+				<!-- <div class="smalltitle_part">
+					<h3 class="ebtitle_medium">고정지출(월)</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">500만원 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">500만원 이상</button>
+							</li>
+						</ul>
+					</div>
+				</div> -->
+				<!-- //2022-05-18 수정 : 고정지출(월) 항목 삭제 -->
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">신용점수</h3>
+					<div class="toggle_pack ty_linebreak divide3">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">500점 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">500점 이상</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">잘 모름</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">변제계획</h3>
+					<div class="toggle_pack ty_linebreak divide3">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">1일</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">5일</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">10일</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">15일</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">20일</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="smalltitle_part">
+					<h3 class="ebtitle_medium">고정지출</h3>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle">연간소득의 50% 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">연간소득의 50% 이상</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="term_part">
+					<div class="term_simple_pack">
+						<div class="ebterm_title">본인은 당사에 제공한 적합성/적정성 관련 정보와 관련하여 다음의 사항을 확인합니다.</div>
+						<!-- 2022-04-12 수정 : 텍스트 수정 -->
+						<ul class="ebterm_list">
+							<li>1. 당사에 제공한 적합성·적정성 관련 정보는 본인 의 재산상황, 용도 등의 정보를 정확히 알려드린 것 입니다.</li>
+							<li>2. 본인이 제공한 정보가 정확하지 않거나, 정보에 변경사항이 발생한 경우에는 적합성·적정성 판단 이 달라질 수 있음을 설명 받았습니다.</li>
+							<li>3. 상기 목적을 위해 개인정보를 수집, 이용, 제공하 는 것에 동의 합니다.</li>
+						</ul>
+						<!-- //2022-04-12 수정 : 텍스트 수정 -->
+						<div class="checkbox_pack">
+							<input type="checkbox" class="ebcheckbox" id="chk1_1">
+							<label for="chk1_1" class="eblabel">동의함</label>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<button type="button" class="ebbtn btn_main ty_bg">다음</button>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

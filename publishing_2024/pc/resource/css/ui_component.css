@@ -723,7 +723,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebbtn.btn_main.ty_bg:disabled { color: #858f99; background: #b4bec8; }
 .ebbtn.btn_main.ty_bg.disabled { color: #858f99; background: #b4bec8; }
 .ebbtn.btn_main.ty_bg:hover { background-color: #1E59E2; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_bg:active { color: #c4c6c9; background-color: #114bd1; }/* 2024-09-09 2024고도화 : 색상 변경 */
+.ebbtn.btn_main.ty_bg:active { color: rgba(196,198,201,0.9); background-color: #114bd1; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .ebbtn.btn_main.ty_bg[disabled="disabled"],
 .ebbtn.btn_main.ty_bg:disabled,
 .ebbtn.btn_main.ty_bg.disabled { background: #bdc5ce; color: #8f9aa7; }
@@ -754,15 +754,15 @@ a.ebbtn.btn_normal.disabled { line-height: 44px; }
 .ebbtn.btn_normal:hover { border-color: #909090; }
 .ebbtn.btn_normal:active { border-color: #909090; color: rgba(112,112,112,0.9); background-color: #f8f8f8; }
 
-.ebbtn.btn_normal.ty_bg { color: #00ba89; background: #ebfaf6; }
+.ebbtn.btn_normal.ty_bg { color: #2F6DFC; background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg { border: none; }
-.ebbtn.btn_normal.ty_bg[disabled="disabled"] { color: #9ed0c3; background: #eff5f3; }
-.ebbtn.btn_normal.ty_bg:disabled { color: #9ed0c3; background: #eff5f3; }
-.ebbtn.btn_normal.ty_bg.disabled { color: #9ed0c3; background: #eff5f3; }
+.ebbtn.btn_normal.ty_bg[disabled="disabled"] { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg:disabled { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg.disabled { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg.checked span { padding-left: 21px; background: url('../image/component/checkbox_check_checked.png') no-repeat left center; background-size: 11px; }
-.ebbtn.btn_normal.ty_bg:hover { background-color: #e2f6f1; }
-.ebbtn.btn_normal.ty_bg:active { background-color: #cbe9e1; }
-.ebbtn.btn_normal.ty_bg:active { color: rgba(41, 196, 155, 0.9); }
+.ebbtn.btn_normal.ty_bg:hover { background-color: #C1D7EF; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg:active { background-color: #bbd1e8; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg:active { color: rgba(47, 109, 252, 0.9); }/* 2024-09-10 2024고도화 : 색상 변경 */
 
 .ebbtn.btn_normal.ty_line { color: #303030; border: 1px solid #e6e6e6; background: #ffffff; }
 .ebbtn.btn_normal.ty_line[disabled="disabled"],
@@ -805,10 +805,10 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 
 /* 버튼 안에 아이콘 */
 .ebbtn.btn_arrow { min-width: 100px; padding: 0 42px 0 20px; height: 45px; line-height: 45px; border-radius: 9px 5px 9px 5px; font-weight: bold; text-align: left; }
-.ebbtn.btn_arrow { color: #ffffff; background: #00ba89 url('../image/component/btn_arrow_white.png') no-repeat right 20px center; background-size: 11px; box-shadow: 0 3px 12px rgba(0,94,69,0.24); }
-.ebbtn.btn_arrow { height: 60px; line-height: 60px; padding: 0 76px 0 28px; border-radius: 10px 5px; font-size: 20px; background-position: right 28px center; background-size: 16px; background-color: #00ba89; }
-.ebbtn.btn_arrow:hover { background-color: #00d39b; }
-.ebbtn.btn_arrow:active { color: rgba(255,255,255,0.9); background-color: #009e74; }
+.ebbtn.btn_arrow { color: #ffffff; background: #2F6DFC url('../image/component/btn_arrow_white.png') no-repeat right 20px center; background-size: 11px; box-shadow: 0 3px 12px rgba(0,94,69,0.24); }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_arrow { height: 60px; line-height: 60px; padding: 0 76px 0 28px; border-radius: 10px 5px; font-size: 20px; background-position: right 28px center; background-size: 16px; background-color: #2F6DFC; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_arrow:hover { background-color: #1E59E2; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_arrow:active { color: rgba(196,198,201,0.9); background-color: #114bd1; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_arrow[disabled="disabled"] { color: #8f9aa7; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; }
 .ebbtn.btn_arrow:disabled { color: #8f9aa7; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; }
 .ebbtn.btn_arrow.disabled { color: #8f9aa7; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; }
@@ -1164,8 +1164,8 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle { color: #909090; }
 .toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle:disabled,
 .toggle_pack.ty_linebreak > ul > li .ebbtn.btn_toggle[disabld="disabled"] { color: #b4b4b4; background-color: #f5f5f5; color: #f0f0f0; color: rgb(144, 144, 144) }
-.toggle_pack.ty_linebreak > ul > li.active { z-index: 10; position: relative; border-color: #00ba89; background: #f4fdfb; }
-.toggle_pack.ty_linebreak > ul > li.active .ebbtn.btn_toggle { color: #00ba89; }
+.toggle_pack.ty_linebreak > ul > li.active { z-index: 10; position: relative; border-color: #2F6DFC; background: #EDF6FD; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.toggle_pack.ty_linebreak > ul > li.active .ebbtn.btn_toggle { color: #2F6DFC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .toggle_pack.ty_linebreak.ty_01 { display: inline-block; vertical-align: middle; width: 120px; border: 0; }
 .toggle_pack.ty_linebreak.ty_01 .ebbtn.btn_toggle { display: inline-block; padding: 5px 12px; vertical-align: middle; font-size: 14px; }
 .toggle_pack.ty_linebreak.ty_01 > ul > li.active .ebbtn.btn_toggle { font-weight: 500; }
@@ -1392,7 +1392,7 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .tab_pack.ty_filter .ebtab > li .ebbtn.btn_tab { width: 100%; font-size: 18px; font-weight: normal; color: #303030; }
 .tab_pack.ty_filter .ebtab > li .ebbtn.btn_tab { padding: 18px 0 17px; }
 .tab_pack.ty_filter .ebtab > li .ebbtn.btn_tab:hover { color: #a0a0a0; }
-.tab_pack.ty_filter .ebtab > li.active { border-radius: 5px; border-color: #1e4066; box-shadow: 4px 0 16px rgba(0,0,0,0.2); background-color: #1e4066; }
+.tab_pack.ty_filter .ebtab > li.active { border-radius: 5px; border-color: #2F6DFC; box-shadow: 4px 0 16px rgba(0,0,0,0.2); background-color: #2F6DFC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .tab_pack.ty_filter .ebtab > li.active:before { content: none; }
 .tab_pack.ty_filter .ebtab > li.active .ebbtn.btn_tab { font-weight: bold; color: #303030; }
 .tab_pack.ty_filter .ebtab > li.active .ebbtn.btn_tab { color: #fff; font-weight: bold; }
@@ -1780,7 +1780,7 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .pagination_pack .pagenum ul > li { display: inline-block;  vertical-align: middle; }
 .pagination_pack .pagenum ul > li:not(:last-child) { margin-right: 5px; }
 .pagination_pack .pagenum ul > li > a { display: inline-block; min-width: 30px; padding: 0 5px; line-height: 30px; box-sizing: border-box; border-radius: 5px; text-align: center; }
-.pagination_pack .pagenum ul > li.active a { background-color: #1e4066; color: #fff; }
+.pagination_pack .pagenum ul > li.active a { background-color: #2f6dfc; color: #fff; }/* 2024-09-10 2024고도화 : 색상 변경 */
 
 .pagination_pack .nextpg { display: inline-block; vertical-align: middle; }
 .pagination_pack .nextpg .ebbtn.btn_next { width: 30px; height: 30px; background: url('../image/component/pagenext.png') no-repeat center; }

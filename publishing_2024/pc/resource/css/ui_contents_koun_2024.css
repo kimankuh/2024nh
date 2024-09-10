@@ -147,3 +147,14 @@
 .renewal_2024 .my_status_list .my_status_step.done .step_num:before{content:""; display:block; position:absolute; top:-10px; left:-10px; width:161px; height:160px; background:url(../image/contents/mypg/img_status_done.png) no-repeat 0 0; z-index:1}
 .renewal_2024 .my_status_list .my_status_step.done .step_title,
 .renewal_2024 .my_status_list .my_status_step.active .step_title {color:var(--grayColor01);}
+
+/* 마이페이지 > 서류조회서비스 */
+.renewal_2024 .list_pack .eblist > li { margin-bottom:0; border-bottom:1px solid #f0f0f0; }
+.renewal_2024 .list_pack .eblist > li:first-of-type { border-top:1px solid #303030; }
+.renewal_2024 .list_pack .eblist > li .ebbtn.btn_right_arrow {display:block; width:100%; padding:26px 50px 26px 30px; text-align:left; font-size:18px; font-weight:700; color:#303030; background:url('../image/component/btn_arrow_right.png') no-repeat right 20px center;}
+.renewal_2024 .list_pack + .ebullet_circle{margin-top:18px}
+
+/* 마이페이지 > 비대면서류발급 */
+.renewal_2024 .smalltitle_part .ebform_label + .toggle_pack.ty_linebreak{margin-top:10px;}
+.renewal_2024 .smalltitle_part .subtitle + .toggle_pack.ty_linebreak{margin-top:20px;}
+.renewal_2024 .smalltitle_part + .smalltitle_part{padding-top:50px;}

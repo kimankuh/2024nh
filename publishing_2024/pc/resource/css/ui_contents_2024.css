@@ -81,7 +81,17 @@
 
 /* 기대출내역 */
 .renewal_2024 .detail_data_list.border_top {margin-top:57px;padding-top:20px;border-top:1px solid #F3F4F8;}
-.detail_data_box > .title {font-size:20px;font-weight:700;color:var(--grayColor02);}
+.detail_data_box .title strong {font-size:20px;color:var(--grayColor02);}
 .detail_data_box > .cost {font-size:32px;font-weight:700;color:var(--grayColor01);}
 .bullet_pack .p + .ebullet_circle {margin-top:8px;}
 .bullet_pack .p {font-size:16px;color:var(--grayColor02);}
+
+/* 팝업 내 버튼 */
+.popup_footer_area .ebbtn.btn_main {width:100%;}
+
+/* 신용대출 > 주소/연락처정보 */
+.form_pack.ty_half {display:flex;flex-wrap:wrap;}
+.form_pack.ty_half .ebform_label + .form_pack {margin-top:0;}
+.form_pack.ty_half .ebform_label {width:100%;}
+.form_pack.ty_half .form_pack + .form_pack {margin-left:30px;}
+.form_pack.ty_half .form_pack {flex:1;}
