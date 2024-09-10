@@ -340,6 +340,7 @@
 .renewal_2024 .detail_data_list > ul > li:first-child{margin-top:0}
 .renewal_2024 .detail_data_list > ul > li .title{font-size:15px; color:#707070;}
 .renewal_2024 .detail_data_list > ul > li .conts{font-size:15px;}
+.renewal_2024 .detail_data_list > ul > li .base_date{display:block; margin:0; width:100%; font-size:15px; font-weight:700;}
 
 .renewal_2024 .acco_box .detail_data_list > ul > li:first-child{margin-top:12px}
 .renewal_2024 .acco_box .control{position:relative; margin-top:12px; text-align:center;}

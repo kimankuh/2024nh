@@ -119,3 +119,31 @@
 .renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div > .icon_phone{display:inline-block; padding-left:30px; line-height:30px; font-size:16px; color:#707070; background:url(../image/contents/cdln/icon_phone.png) no-repeat left center;}
 .renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div > .icon_branch{position:relative; display:inline-block; padding-left:30px; padding-right:20px; line-height:30px; font-size:16px; color:#707070; background:url(../image/contents/cdln/icon_branch.png) no-repeat left center;}
 .renewal_2024 .contents_area.product_info .info_box .prod_noti .call_box > div > .icon_branch:after{content:""; display:block; position:absolute; top:50%; right:0; margin-top:-10px; width:20px; height:20px; background:url(../image/contents/cdln/icon_branch_arr.png) no-repeat center center;}
+
+/* 마이페이지 > 개인신용대출 진행 현황 */
+.renewal_2024 .section_bdonly_box{padding:50px 60px 60px 60px; border:1px solid #303030; border-radius:10px; background:url(../image/contents/mypg/bg_progress.png) no-repeat right 60px center}
+.renewal_2024 .section_bdonly_box .product_name {font-size:28px;font-weight:700;}
+.renewal_2024 .section_bdonly_box .product_name + .product_info {margin-top:60px;}
+.renewal_2024 .section_bdonly_box .product_info {position:relative; font-size:32px; font-weight:700;}
+.renewal_2024 .section_bdonly_box .product_info:after{content:""; display:block; clear:both;}
+.renewal_2024 .section_bdonly_box .product_info > li{float:left; margin-left:80px;}
+.renewal_2024 .section_bdonly_box .product_info > li:first-child{margin-left:0;}
+.renewal_2024 .section_bdonly_box .product_info .label {display:block; font-size:20px; font-weight:700; color:var(--grayColor02);}
+.renewal_2024 .section_bdonly_box .product_info_item {position:relative;}
+
+.renewal_2024 .section_bdonly_box + .my_status_list {margin-top:100px;}
+.renewal_2024 .my_status_list {display:table; table-layout:fixed; width:calc(100% + 64px); margin:0 -32px; counter-reset: num;}
+.renewal_2024 .my_status_list .my_status_step {position:relative; display:table-cell; box-sizing:border-box; padding-top:220px; text-align:center;}
+.renewal_2024 .my_status_list .my_status_step:after {content:'';position:absolute; top:78px; left:0; right:0; height:4px; background:url('../image/contents/mypg/bg_dotted_line.png') repeat; z-index:-1}
+.renewal_2024 .my_status_list .my_status_step:first-child:after{left:50%;}
+.renewal_2024 .my_status_list .my_status_step:last-child:after{width:50%;}
+.renewal_2024 .my_status_list .my_status_step:last-child {min-height:56px;}
+.renewal_2024 .my_status_list .step_num{position:absolute; top:0; left:50%; display:inline-block; margin-left:-80px; width:160px; height:160px; line-height:140px; text-align:center; font-size:52px; font-weight:700; color:#878787; background-color:#fff; border-radius:50%; border:10px solid #E5E8F0; box-sizing:border-box;}
+.renewal_2024 .my_status_list .step_title {font-size:24px;font-weight:700;color:#878787;}
+.renewal_2024 .my_status_list .step_title + .step_description {margin-top:12px;}
+.renewal_2024 .my_status_list .step_description {display:inline-block; max-width:170px; font-size:18px; font-weight:400; color:var(--grayColor02);}
+
+.renewal_2024 .my_status_list .my_status_step.active .step_num{color:var(--grayColor01);border-color:var(--primaryColor);}
+.renewal_2024 .my_status_list .my_status_step.done .step_num:before{content:""; display:block; position:absolute; top:-10px; left:-10px; width:161px; height:160px; background:url(../image/contents/mypg/img_status_done.png) no-repeat 0 0; z-index:1}
+.renewal_2024 .my_status_list .my_status_step.done .step_title,
+.renewal_2024 .my_status_list .my_status_step.active .step_title {color:var(--grayColor01);}

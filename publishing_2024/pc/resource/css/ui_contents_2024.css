@@ -10,6 +10,11 @@
     --pointColor02 : #FF0000;
 }
 
+/* 공통 */
+.alC {text-align:center!important;}
+.alL {text-align:left!important;}
+.renewal_2024 .ebbtn.icon_tooltip {background:url('../image/icon/icon_tooltip_16x16.png') no-repeat center;}
+
 /* 한도조회 결과 > 대환 */
 .renewal_2024 .result_data_part + .form_part {margin-top:30px;}
 .renewal_2024 .data_result_box{position:relative; display:flex; flex-wrap:wrap; }
@@ -70,6 +75,13 @@
 .renewal_2024 .detail_data_box.lined .acco_box .btn_acco {padding-left:17px;padding-right:0;}
 .renewal_2024 .detail_data_box.lined .acco_box .btn_acco:after {left:0;right:initial;transform:rotate(180deg);}
 .renewal_2024 .detail_data_box.lined .acco_box.active .btn_acco:after {transform:rotate(0deg);}
-.renewal_2024 .detail_data_list.acco_cont {display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:8px;}
-.renewal_2024 .detail_data_list.acco_cont > ul {padding-left:20px;padding-right:20px;min-width:270px;}
-.renewal_2024 .detail_data_list.acco_cont .date {flex:1;margin-top:20px;padding-right:20px;text-align:right;font-weight:700;}
+.renewal_2024 .detail_data_list.double {display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:8px;}
+.renewal_2024 .detail_data_list.double > ul {padding-left:20px;padding-right:20px;min-width:270px;}
+.renewal_2024 .detail_data_list.double .date {flex:1;margin-top:20px;padding-right:20px;text-align:right;font-weight:700;}
+
+/* 기대출내역 */
+.renewal_2024 .detail_data_list.border_top {margin-top:57px;padding-top:20px;border-top:1px solid #F3F4F8;}
+.detail_data_box > .title {font-size:20px;font-weight:700;color:var(--grayColor02);}
+.detail_data_box > .cost {font-size:32px;font-weight:700;color:var(--grayColor01);}
+.bullet_pack .p + .ebullet_circle {margin-top:8px;}
+.bullet_pack .p {font-size:16px;color:var(--grayColor02);}
