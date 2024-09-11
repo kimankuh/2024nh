@@ -14,6 +14,7 @@
 .alC {text-align:center!important;}
 .alL {text-align:left!important;}
 .renewal_2024 .ebbtn.icon_tooltip {background:url('../image/icon/icon_tooltip_16x16.png') no-repeat center;}
+.hidden {position:absolute;margin:-1px;padding:0;overflow:hidden;width:1px;height:1px;clip:rect(0,0,0,0);}
 
 /* 한도조회 결과 > 대환 */
 .renewal_2024 .result_data_part + .form_part {margin-top:30px;}

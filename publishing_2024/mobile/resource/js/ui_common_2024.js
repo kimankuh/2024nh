@@ -38,6 +38,9 @@ $(function(){
             $(this).attr('aria-selected', 'false');
         }
     });
+
+    // 비대면 서류 발급
+    oneSelectableRadio();
 });
 
 function accoNewInit(){
@@ -309,4 +312,17 @@ function dargBottomSheet(){
     }
 }
 
+// 비대면 서류 발급 - 페이지내 라디오 중 택 1
+function oneSelectableRadio(){
+    $('.toggle_pack').each(function(){
+        var $this = $(this);
 
+        if($this.hasClass('js_oneSelected')){
+            var $radio = $this.find('.btn_toggle');
+            $radio.on('click', function(){
+                $('.btn_toggle').parent().removeClass('active');
+                $radio.parent().removeClass('active');
+            });
+        }
+    });    
+}
