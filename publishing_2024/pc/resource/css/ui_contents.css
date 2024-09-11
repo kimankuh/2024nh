@@ -474,7 +474,7 @@
 .content_pack ul li dt { position: relative; text-align: center; }
 .content_pack ul li dt > span { display: inline-block; width: 27px; height: 27px; background: #ebf3f9; border-radius: 9px 5px 9px 5px; line-height: 27px; font-weight: bold; font-size: 14px; color: #0066b1; }
 .content_pack ul li dd { padding-left: 16px; font-size: 15px; }
-.content_pack .content_ex { padding-top: 6px; font-size: 14px; color: #00ba89; }
+.content_pack .content_ex { padding-top: 6px; font-size: 14px; color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 
 
 
@@ -791,7 +791,7 @@
 .search_noresult_part .icon_box .ebicon.icon_fail { width: 70px; height: 70px; }
 .search_noresult_part .info_pack { display: inline-block; width: auto; margin: 40px auto 0; padding: 28px; }
 .search_noresult_part .info_pack .conts .text { margin-top: 0; font-size: 16px; }
-.search_noresult_part .info_pack .conts .text b { color: #00ba89; }
+.search_noresult_part .info_pack .conts .text b { color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .search_noresult_part .text_box { font-size: 20px; }
 .search_noresult_part .desc_box { font-size: 16px; }
 .search_noresult_part.ty_white { padding: 109px; border-radius: 8px; border-top: 0; background-color: #fff; }
@@ -1033,7 +1033,7 @@
 .board_result_part { margin-top: 74px; }
 .board_result_part:first-child { margin-top: 0; }
 .board_result_part .ebtitle_normal { font-size: 24px; }
-.board_result_part .ebtitle_normal > span { color: #1e4066; }
+.board_result_part .ebtitle_normal > span { color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .board_result_part .result_box { border-top: 1px solid #303030; }
 
 .board_search_part { padding-top: 0; margin-bottom: 20px; }
@@ -2807,8 +2807,8 @@ a.open_link { color: #0066b1; text-decoration: underline; }
 .calc_data_box.ty_border .accordion_content .detail_box .detail_conts > dl > dt { font-size: 15px; color: #707070; }
 .calc_data_box.ty_border .accordion_content .detail_box .detail_conts > dl > dd { font-size: 15px; color: #303030;}
 .calc_data_box.ty_border { border: 1px solid #f0f0f0; }
-.calc_data_box.ty_border.active { background-color: #f4fdfb; border-color: #00ba89; box-shadow: 0 2px 6px rgb(0 0 0 / 12%); }
-.calc_data_box.ty_border.active .detail_box { background-color: #f4fdfb; }
+.calc_data_box.ty_border.active { background-color: #EDF6FD; border-color: #2F6DFC; box-shadow: 0 2px 6px rgb(0 0 0 / 12%); }/* 2024-09-11 2024고도화 : 색상 변경 */
+.calc_data_box.ty_border.active .detail_box { background-color: #EDF6FD; }/* 2024-09-11 2024고도화 : 색상 변경 */
 
 .contents_zone.has_step .inquiry_part { margin-top: 0; }
 .inquiry_part { padding-top: 0; margin-top: 0; }
@@ -2849,8 +2849,8 @@ a.open_link { color: #0066b1; text-decoration: underline; }
 
 .inquiry_select_part.borderdiv .form_pack .select_pack { position: relative; _padding: 12px 0; box-sizing: border-box; border-radius: 10px; border: 1px solid #f5f6f8; }
 .inquiry_select_part.borderdiv .form_pack .select_pack:after { content: none; }
-.inquiry_select_part.borderdiv .form_pack .select_pack.has_focus { border-color: #00ba89; }
-.inquiry_select_part.borderdiv .form_pack .select_pack.has_focus:hover { border-color: #00ba89; }
+.inquiry_select_part.borderdiv .form_pack .select_pack.has_focus { border-color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
+.inquiry_select_part.borderdiv .form_pack .select_pack.has_focus:hover { border-color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .inquiry_select_part.borderdiv .form_pack .select_pack .select_layer { top: 92px; }
 .inquiry_select_part.borderdiv .form_pack .select_pack.ty_noborder.has_disabled { background-color: #f5f6f8; }
 .inquiry_select_part.borderdiv .form_pack .select_pack.ty_noborder.has_disabled:hover  { border-color: transparent; }
@@ -2866,7 +2866,7 @@ a.open_link { color: #0066b1; text-decoration: underline; }
 
 .calc_data_part .ebtitle_normal { font-size: 24px; }
 .bgdiv .calc_data_part .calc_data_box { border: 1px solid #f0f0f0; }
-.bgdiv .calc_data_part .calc_data_box.active { border-color: #00ba89; }
+.bgdiv .calc_data_part .calc_data_box.active { border-color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .bgdiv .accordion_pack .accordion_content { margin: 0 -30px; }
 .bgdiv .accordion_pack .accordion_content .calc_data_list + .calc_data_list { padding-top: 30px; margin-top: 27px; border-top: 1px solid #f0f0f0; }
 .bgdiv .accordion_pack.ty_data .accordion_content .calc_data_list { margin-top: 30px; padding: 27px 30px 0; }

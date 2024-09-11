@@ -78,7 +78,7 @@ ul.ebullet_bar > li { position: relative; padding-left: 10px; font-size: 16px; l
 ul.ebullet_bar > li:before { content:''; position: absolute; left: 0; top: 12px; width: 6px; height: 2px; background-color: #bcbcbc;  }
 
 /* 언더라인 텍스트 */
-.ebunderline.ty_blue { color: #0066b1; border-bottom: 1px solid #0066b1; }
+.ebunderline.ty_blue { color: #2F6DFC; border-bottom: 1px solid #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 
 /* 접근성 숨김텍스트 */
 .hidden_txt { overflow: hidden; position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; clip: rect(0,0,0,0); border: 0; }
@@ -105,7 +105,7 @@ ul.ebullet_bar > li:before { content:''; position: absolute; left: 0; top: 12px;
 .form_set .form_cellpack + .form_pack { margin-top: 6px; }
 .form_set > .form_pack > .checkbox_pack { margin-top: 9px; }
 .form_set + .location_branch_part { margin-top: 34px; }
-.chkstatus { display: inline-block; padding-left: 17px; vertical-align: middle; font-size: 14px; color: #707070; background: url('../image/component/checkbox_check_checked.png') no-repeat left center; background-size: 10px; }
+.chkstatus { display: inline-block; padding-left: 17px; vertical-align: middle; font-size: 14px; color: #707070; background: url('../image/component/checkbox_check_checked_02.png') no-repeat left center; background-size: 10px; }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .input_mask .mask { width: 12px; height: 56px; }
 .input_mask .mask:after { width: 12px; height: 12px; margin-top:  -6px; }
 
@@ -297,7 +297,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 /* 인풋 + 단위 */
 .input_pack.ty_wordtime { padding-right: 50px; }
 .input_pack.ty_wordtime { padding-right: 144px; }
-.input_pack.ty_wordtime .time { position: absolute; top: 50%; right: 0; font-size: 15px; font-weight: bold; color: #00ba89; transform: translateY(-50%); }
+.input_pack.ty_wordtime .time { position: absolute; top: 50%; right: 0; font-size: 15px; font-weight: bold; color: #2F6DFC; transform: translateY(-50%); }/* 2024-09-11 2024고도화 : 색생 변경 */
 .input_pack.ty_wordtime .time { width: 144px; height: 56px; line-height: 56px; text-align: right; font-size: 16px; font-weight: normal; }
 .input_pack.ty_wordtime .btn_input_clear { right: 50px; }
 .input_pack.ty_wordtime .btn_input_clear { right: 144px; }
@@ -481,8 +481,8 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ui-datepicker table.ui-datepicker-calendar tbody tr td .ui-state-default { display: inline-block; margin: 0 11px 7px 0; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; box-sizing: border-box; vertical-align: middle; font-size: 16px; }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-other-month .ui-state-default { background-color: #fff; }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-today .ui-state-default { position: relative; }
-.ui-datepicker table.ui-datepicker-calendar tbody tr td .ui-state-default.ui-state-highlight { font-weight: bold; color: #00ba89; }
-.ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-current-day .ui-state-default { overflow: hidden; border-radius: 50%; background-color: #00ba89; color: #fff; }
+.ui-datepicker table.ui-datepicker-calendar tbody tr td .ui-state-default.ui-state-highlight { font-weight: bold; color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
+.ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-current-day .ui-state-default { overflow: hidden; border-radius: 50%; background-color: #2F6DFC; color: #fff; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .ui-datepicker table.ui-datepicker-calendar .ui-state-disabled { color: #c1c6de }
 
 
@@ -497,9 +497,9 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 /* 라디오 */
 .ebradio { width: 24px; height: 24px; vertical-align: middle; background: url('../image/component/radio.png') no-repeat center; background-size: 100%; cursor: pointer; }
 .ebradio[chekced="checked"],
-.ebradio:checked { background-image: url('../image/component/radio_checked.png');  }
+.ebradio:checked { background-image: url('../image/component/radio_checked_02.png');  }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .ebradio[chekced="checked"],
-.ebradio:checked { background-image: url('../image/component/radio_checked.png'); }
+.ebradio:checked { background-image: url('../image/component/radio_checked_02.png'); }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .ebradio:disabled { background-image: url('../image/component/radio_disabled.png'); cursor: default; }
 .ebradio[disabled="disabled"] { background-image: url('../image/component/radio_disabled.png'); cursor: default; }
 .ebradio[disabled="disabled"]:hover,
@@ -525,9 +525,9 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 /* 체크박스 */
 .ebcheckbox { width: 24px; height: 24px; vertical-align: middle; background: url('../image/component/checkbox.png') no-repeat center; background-size: 100%; cursor: pointer; }
 .ebcheckbox[chekced="checked"],
-.ebcheckbox:checked { background-image: url('../image/component/checkbox_checked.png'); }
+.ebcheckbox:checked { background-image: url('../image/component/checkbox_checked_02.png'); }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .ebcheckbox[chekced="checked"],
-.ebcheckbox:checked { background-image: url('../image/component/checkbox_checked.png'); }
+.ebcheckbox:checked { background-image: url('../image/component/checkbox_checked_02.png'); }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .ebcheckbox:disabled { background-image: url('../image/component/checkbox_disabled.png'); cursor: default; }
 .ebcheckbox[disabled="disabled"] { background-image: url('../image/component/checkbox_disabled.png'); cursor: default; }
 .ebcheckbox:checked:disabled { background-image: url('../image/component/checkbox_checked_disabled.png'); cursor: default; }
@@ -547,7 +547,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .checkbox_pack.ty_01 .ebcheckbox { width: 11px; height: 8px; margin-top: -4px; background: url('../image/component/checkbox_check.png') no-repeat center; background-size: 100%; }
 .checkbox_pack.ty_01 .ebcheckbox { width: 11px; height: 8px; margin-top: -4px; }
 .checkbox_pack.ty_01 .ebcheckbox[chekced="checked"],
-.checkbox_pack.ty_01 .ebcheckbox:checked { background-image: url('../image/component/checkbox_check_checked.png'); }
+.checkbox_pack.ty_01 .ebcheckbox:checked { background-image: url('../image/component/checkbox_check_checked_02.png'); }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .checkbox_pack.ty_01 .ebcheckbox:disabled { background-image: url('../image/component/checkbox_check.png'); }
 .checkbox_pack.ty_01 .ebcheckbox[disabled="disabled"] { background-image: url('../image/component/checkbox_check.png'); }
 .checkbox_pack.ty_01 .ebcheckbox:checked:disabled { background-image: url('../image/component/checkbox_check.png'); }
@@ -628,7 +628,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .select_layer .option_scroll { overflow-y: auto; position: relative; width: 100%; max-height: 200px; }
 .select_layer .option_list .option { width: 100%; max-height: 228px; padding: 15px 44px 15px 29px; font-size: 18px; text-align: left; word-wrap: break-word; }
 .select_layer .option_list .option:hover { background-color: #fafafc; }
-.select_layer .option_list .option.on { font-weight: 900; background: url('../image/component/select_check.png') no-repeat right 30px center; background-size: 14px; }
+.select_layer .option_list .option.on { font-weight: 900; background: url('../image/component/select_check_02.png') no-repeat right 30px center; background-size: 14px; }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .select_layer .option_list .option.on:hover { background-color: #fafafc; }
 .select_layer .option_list .option:disabled,
 .select_layer .option_list .option[disabled="disabled"] { color: #c8c8c8; }
@@ -689,17 +689,17 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebtextarea[disabled="disabled"] { color: #c8c8c8; border: 1px solid #f5f6f8; background: #f5f6f8; }
 
 /* 텍스트에어리어 - 포커스 */
-.ebtextarea:focus { border-color: #00ba89; }
+.ebtextarea:focus { border-color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .ebtextarea:read-only:focus { border: 1px solid #f5f6f8; }
 .ebtextarea[readonly="readonly"]:focus { border: 1px solid #f5f6f8; }
 .ebtextarea:disabled:focus { border: 1px solid #f5f6f8; }
 .ebtextarea[disabled="disabled"]:focus { border: 1px solid #f5f6f8; }
-.ebtextarea:focus:hover { border-color: #00ba89; }
+.ebtextarea:focus:hover { border-color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .ebtextarea:hover { border-color: #303030; }
 
 /* 텍스트에어리어 - 에러 */
 .textarea_pack.has_error .ebtextarea { border-color: #ea3636; }
-.textarea_pack.has_error .ebtextarea:focus { border-color: #00ba89; }
+.textarea_pack.has_error .ebtextarea:focus { border-color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 
 
 
@@ -759,7 +759,7 @@ a.ebbtn.btn_normal.disabled { line-height: 44px; }
 .ebbtn.btn_normal.ty_bg[disabled="disabled"] { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg:disabled { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg.disabled { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
-.ebbtn.btn_normal.ty_bg.checked span { padding-left: 21px; background: url('../image/component/checkbox_check_checked.png') no-repeat left center; background-size: 11px; }
+.ebbtn.btn_normal.ty_bg.checked span { padding-left: 21px; background: url('../image/component/checkbox_check_checked_02.png') no-repeat left center; background-size: 11px; }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .ebbtn.btn_normal.ty_bg:hover { background-color: #C1D7EF; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg:active { background-color: #bbd1e8; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg:active { color: rgba(47, 109, 252, 0.9); }/* 2024-09-10 2024고도화 : 색상 변경 */
@@ -1208,11 +1208,11 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .toggle_boxing_pack > ul > li .ebbtn.btn_toggle:disabled:hover .brand_box > .text:after { border-color: #f0f0f0; }
 .toggle_boxing_pack > ul > li .ebbtn.btn_toggle[disabled="disabled"]:hover .model_box > .text:after,
 .toggle_boxing_pack > ul > li .ebbtn.btn_toggle:disabled:hover .model_box > .text:after { border-color: #f0f0f0; }
-.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle { overflow: visible; position: relative; border: 0; background: #f4fdfb; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
-.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle { border: 1px solid #00ba89; }
-.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; border: 2px solid #00ba89; box-sizing: border-box; }
+.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle { overflow: visible; position: relative; border: 0; background: #EDF6FD; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }/* 2024-09-11 2024고도화 : 색상 변경 */
+.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle { border: 1px solid #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
+.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; border: 2px solid #2F6DFC; box-sizing: border-box; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle:after { content: none; }
-.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle:hover { border-color: #00ba89; }
+.toggle_boxing_pack > ul > li.active .ebbtn.btn_toggle:hover { border-color: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .toggle_boxing_pack > ul > li.active .brand_box > .text:after { border-color: #fff; }
 .toggle_boxing_pack > ul > li.active .model_box > .text:after { border-color: #fff; }
 .toggle_boxing_pack > ul > li .icon_pack { display: inline-block; width: 100%; }
@@ -1283,7 +1283,7 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .toggle_check_pack ul > li .carclr_pack .text_box { display: inline-block; width: calc(100% - 42px); margin-left: 8px; vertical-align: middle; }
 .toggle_check_pack ul > li .ebbtn.btn_toggle { position: relative; width: 100%; min-height: 24px; padding: 0 60px 0 35px; text-align: left; font-size: 16px; font-weight: 500; }
 .toggle_check_pack ul > li .ebbtn.btn_toggle:after { content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 24px; height: 24px; background: url('../image/component/checkbox.png') no-repeat center; background-size: 100%; }
-.toggle_check_pack ul > li.active .ebbtn.btn_toggle:after { background-image: url('../image/component/checkbox_checked.png'); }
+.toggle_check_pack ul > li.active .ebbtn.btn_toggle:after { background-image: url('../image/component/checkbox_checked_02.png'); }/* 2023-09-11 2024고도화 : 이미지 변경 */
 
 .toggle_check_pack.ty_border.full ul > li { width: 100%; border-right: none; }
 .toggle_check_pack.ty_border.full ul > li:nth-child(2n+1):nth-last-child(2) { border-bottom: 1px solid #f0f0f0; }
@@ -1426,9 +1426,9 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .tab_pack.ty_round .tab_scroll .ebtab > li .ebbtn.btn_tab { height: 44px; padding: 0 20px; font-weight: normal; }
 .tab_pack.ty_round .tab_scroll .ebtab > li .ebbtn.btn_tab:hover { border-color: #909090;  }
 .tab_pack.ty_round .tab_scroll .ebtab > li .ebbtn.btn_tab.ty_01 { height: 36px; line-height: 36px; padding-left: 40px; background: #f5f5f8 url('../image/component/icon_bfcheck.png') no-repeat center left 18px; background-size: 14px; }
-.tab_pack.ty_round .tab_scroll .ebtab > li.active .ebbtn.btn_tab { font-weight: bold; color: #ffffff; border: 1px solid #00ba89; background: #00ba89; }
+.tab_pack.ty_round .tab_scroll .ebtab > li.active .ebbtn.btn_tab { font-weight: bold; color: #ffffff; border: 1px solid #2F6DFC; background: #2F6DFC; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .tab_pack.ty_round .tab_scroll .ebtab > li.active .ebbtn.btn_tab:hover { border-color: transparent;  }
-.tab_pack.ty_round .tab_scroll .ebtab > li.active .ebbtn.btn_tab.ty_01 { background: #00ba89 url('../image/component/icon_afcheck.png') no-repeat center left 18px; }
+.tab_pack.ty_round .tab_scroll .ebtab > li.active .ebbtn.btn_tab.ty_01 { background: #2F6DFC url('../image/component/icon_afcheck.png') no-repeat center left 18px; }/* 2024-09-11 2024고도화 : 색상 변경 */
 .tab_pack.ty_round + .tabcontent_pack .toggle_boxing_pack { padding-top: 22px; }
 
 /* 탭컨텐츠 */
@@ -1600,7 +1600,7 @@ a.ebbtn.btn_normal.ty_01.disabled { line-height: 40px; }
 .term_pack .total_agree .checkbox_pack .ebcheckbox[chekced="checked"],
 .term_pack .total_agree .checkbox_pack .ebcheckbox:checked { background-image: url('../image/component/select_check_total.png'); }
 .term_pack .total_agree .checkbox_pack .ebcheckbox[chekced="checked"],
-.term_pack .total_agree .checkbox_pack .ebcheckbox:checked { background-image: url('../image/component/checkbox_checked.png'); }
+.term_pack .total_agree .checkbox_pack .ebcheckbox:checked { background-image: url('../image/component/checkbox_checked_02.png'); }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .term_pack .total_agree .checkbox_pack .ebcheckbox[chekced="checked"] + .eblabel,
 .term_pack .total_agree .checkbox_pack .ebcheckbox:checked + .eblabel { border: 1px solid #303030; }
 .term_pack .total_agree .checkbox_pack .ebcheckbox[chekced="checked"] + .eblabel,
