@@ -734,14 +734,14 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebbtn.btn_main.ty_bg:disabled:active,
 .ebbtn.btn_main.ty_bg.disabled:active { color: #8f9aa7; }
 
-.ebbtn.btn_main.ty_light { color: #303030; background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_light[disabled="disabled"] { color: #858F99; background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_light:disabled { color: #858F99; background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_light.disabled { color: #858F99; background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
+.ebbtn.btn_main.ty_light { color: #2F6DFC; background: #E5F0FC; }/* 2024-09-09 2024고도화 : 색상 변경 */
+.ebbtn.btn_main.ty_light[disabled="disabled"] { color: rgba(47, 109, 252, 0.4); background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
+.ebbtn.btn_main.ty_light:disabled { color: rgba(47, 109, 252, 0.4); background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
+.ebbtn.btn_main.ty_light.disabled { color: rgba(47, 109, 252, 0.4); background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .ebbtn.btn_main.ty_light { border:none }/* 2024-09-09 2024고도화 : 보더 삭제 */
 /* .ebbtn.btn_main.ty_light { color: #657a91; } */
-.ebbtn.btn_main.ty_light:hover { /*border-color: #657a91;*/ background-color: #C2C8D6; }/* 2024-09-09 2024고도화 : 보더 삭제 및 색상 변경 */
-.ebbtn.btn_main.ty_light:active { color: rgba(48,48,48, 0.9); background-color: #abb3c5; /*border-color: #aab1c1;*/ }/* 2024-09-09 2024고도화 : 보더 삭제 및 색상 변경 */
+.ebbtn.btn_main.ty_light:hover { /*border-color: #657a91;*/ background-color: #C1D7EF; }/* 2024-09-09 2024고도화 : 보더 삭제 및 색상 변경 */
+.ebbtn.btn_main.ty_light:active { color: rgba(47, 109, 252, 0.9); background-color: #bbd1e8; /*border-color: #aab1c1;*/ }/* 2024-09-09 2024고도화 : 보더 삭제 및 색상 변경 */
 
 /* 일반버튼 */
 .ebbtn.btn_normal { min-width: 90px; padding: 0 15px; height: 40px; line-height: 40px; border-radius: 6px; font-size: 15px; font-weight: 500; }
@@ -757,10 +757,10 @@ a.ebbtn.btn_normal.disabled { line-height: 44px; }
 .ebbtn.btn_normal.ty_bg { color: #2F6DFC; background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg { border: none; }
 .ebbtn.btn_normal.ty_bg[disabled="disabled"] { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
-.ebbtn.btn_normal.ty_bg:disabled { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg:disabled { color: rgba(47, 109, 252, 0.4); background: #040a10; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg.disabled { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg.checked span { padding-left: 21px; background: url('../image/component/checkbox_check_checked_02.png') no-repeat left center; background-size: 11px; }/* 2024-09-11 2024고도화 : 이미지 변경 */
-.ebbtn.btn_normal.ty_bg:hover { background-color: #C1D7EF; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg:hover { background-color: #C1D7EF; ; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg:active { background-color: #bbd1e8; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg:active { color: rgba(47, 109, 252, 0.9); }/* 2024-09-10 2024고도화 : 색상 변경 */
 
