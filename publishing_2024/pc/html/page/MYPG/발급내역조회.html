@@ -23,7 +23,7 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
-	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024-09-10 2024고도화 : 2024고도화 전용 js -->
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024-09-11 2024고도화 : 2024고도화 전용 js -->
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<div class="container renewal_2024"><!-- 2024-09-10 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+	<div class="container renewal_2024"><!-- 2024-09-11 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 
 		<div class="subheader">
 			<div class="subheader_area">
@@ -81,29 +81,25 @@
 							<ul class="ebtab_content">
 								<li class="active">
 									<!-- [start] 비대면 서류 -->
-									<div class="borderdiv">
-										<div class="form_pack">
-											<div class="select_pack ty_noborder" data-ui="customSelect">
-												<button type="button" class="ebbtn btn_slct_trigr" title="발급일자 구분 선택"></button>
-												<select class="ebselect" data-placeholder="" title="발급일자 구분 선택" tabindex="-1">
+									<div class="issuance_result_area">
+										<div class="board_search_part">
+											<div class="select_pack has_selected" data-ui="customSelect">
+												<select class="ebselect" data-placeholder="선택" title="발급일자 구분 선택">
 													<option value="option1" selected>발급일자 최신순</option>
 													<option value="option2">발급일자 과거순</option>
 												</select>
 											</div>
 										</div>
-									</div>
-									
-									<div class="issuance_result_area">
+
 										<div class="issuance_result">
 											<p class="ebtitle_normal">완납증명서</h3>
 											<ul class="data_list">
 												<li>
 													<div class="key">발급방법</div>
 													<div class="value">
-														<p>이메일</p>
-														<p>(nhcapital@naver.com)</p>
+														<span>이메일</span>
+														<span>(nhcapital@naver.com)</span>
 													</div>
-													<!-- 2024-09-03 2024고도화 : 구조 및 문구 변경 -->
 												</li>
 												<li>
 													<div class="key">발급일자</div>
@@ -117,10 +113,9 @@
 												<li>
 													<div class="key">발급방법</div>
 													<div class="value">
-														<p>알림톡</p>
-														<p>(010-1111-1111)</p>
+														<span>알림톡</span>
+														<span>(010-1111-1111)</span>
 													</div>
-													<!-- 2024-09-03 2024고도화 : 구조 및 문구 변경 -->
 												</li>
 												<li>
 													<div class="key">발급일자</div>
@@ -128,47 +123,64 @@
 												</li>
 											</ul>
 										</div>
+
+										<div class="pagination_pack">
+											<div class="prevpg">
+												<button type="button" class="ebbtn btn_start" disabled="disabled">처음으로</button>
+												<button type="button" class="ebbtn btn_prev" disabled="disabled">이전페이지</button>
+											</div>
+											<div class="pagenum">
+												<ul>
+													<li class="active"><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li><a href="#">6</a></li>
+													<li><a href="#">7</a></li>
+													<li><a href="#">8</a></li>
+													<li><a href="#">9</a></li>
+													<li><a href="#">10</a></li>
+												</ul>
+											</div>
+											<div class="nextpg">
+												<button type="button" class="ebbtn btn_next">다음페이지</button>
+												<button type="button" class="ebbtn btn_end">끝으로</button>
+											</div>
+										</div>
 									</div>
-	
-									<!-- 2024-08-30 2024고도화 : 더보기 ui 추가 -->
-									<div class="list_more widediv">
-										<button type="button" class="ebbtn btn_list_more"><span>더보기</span></button>
-									</div>
-			
-									<div class="search_noresult_part">
+									
+									<div class="search_noresult_part ty_white">
 										<div class="icon_box">
 											<span class="ebicon icon_fail"></span>
 										</div>
 										<div class="text_box">
 											발급 신청내역이 없습니다.
 										</div>
-									</div>								
+									</div>		
 									<!-- //[end] 비대면 서류 -->
 								</li>
 								<li>
 									<!-- [start] 신청서 -->
-									<div class="borderdiv">
-										<div class="form_pack">
-											<div class="select_pack ty_noborder" data-ui="customSelect">
-												<button type="button" class="ebbtn btn_slct_trigr" title="발급일자 구분 선택"></button>
-												<select class="ebselect" data-placeholder="" title="발급일자 구분 선택" tabindex="-1">
+									<div class="issuance_result_area">
+										<div class="board_search_part">
+											<div class="select_pack has_selected" data-ui="customSelect">
+												<select class="ebselect" data-placeholder="선택" title="발급일자 구분 선택">
 													<option value="option1" selected>발급일자 최신순</option>
 													<option value="option2">발급일자 과거순</option>
 												</select>
 											</div>
 										</div>
-									</div>
-									<div class="issuance_result_area">
+
 										<div class="issuance_result">
 											<p class="ebtitle_normal">결제계좌/결제일 변경 신청서</p>
 											<ul class="data_list">
 												<li>
 													<div class="key">발급방법</div>
 													<div class="value">
-														<p>이메일</p>
-														<p>(nhcapital@naver.com)</p>
+														<span>이메일</span>
+														<span>(nhcapital@naver.com)</span>
 													</div>
-													<!-- 2024-09-03 2024고도화 : 구조 및 문구 변경 -->
 												</li>
 												<li>
 													<div class="key">발급일자</div>
@@ -182,10 +194,9 @@
 												<li>
 													<div class="key">발급방법</div>
 													<div class="value">
-														<p>알림톡</p>
-														<p>(010-1111-1111)</p>
+														<span>알림톡</span>
+														<span>(010-1111-1111)</span>
 													</div>
-													<!-- 2024-09-03 2024고도화 : 구조 및 문구 변경 -->
 												</li>
 												<li>
 													<div class="key">발급일자</div>
@@ -193,14 +204,33 @@
 												</li>
 											</ul>
 										</div>
-									</div>
-	
-									<!-- 2024-08-30 2024고도화 : 더보기 ui 추가 -->
-									<div class="list_more widediv">
-										<button type="button" class="ebbtn btn_list_more"><span>더보기</span></button>
+										<div class="pagination_pack">
+											<div class="prevpg">
+												<button type="button" class="ebbtn btn_start" disabled="disabled">처음으로</button>
+												<button type="button" class="ebbtn btn_prev" disabled="disabled">이전페이지</button>
+											</div>
+											<div class="pagenum">
+												<ul>
+													<li class="active"><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li><a href="#">6</a></li>
+													<li><a href="#">7</a></li>
+													<li><a href="#">8</a></li>
+													<li><a href="#">9</a></li>
+													<li><a href="#">10</a></li>
+												</ul>
+											</div>
+											<div class="nextpg">
+												<button type="button" class="ebbtn btn_next">다음페이지</button>
+												<button type="button" class="ebbtn btn_end">끝으로</button>
+											</div>
+										</div>
 									</div>
 									
-									<div class="search_noresult_part">
+									<div class="search_noresult_part ty_white">
 										<div class="icon_box">
 											<span class="ebicon icon_fail"></span>
 										</div>
@@ -214,33 +244,6 @@
 						</div>
 					</div>
 
-				
-					
-					
-					<div class="inquiry_select_part borderdiv">
-						<div class="form_pack ty_flex">
-							<div class="select_pack ty_noborder has_selected" data-ui="customSelect"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
-								<select class="ebselect" data-placeholder="상품선택" title="상품선택">
-									<option value="option1" selected="">개인</option>
-								</select>
-							</div>
-
-							<div class="select_pack ty_noborder has_selected" data-ui="customSelect"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
-								<select class="ebselect" data-placeholder="상품선택" title="상품선택">
-									<option value="option1" selected="">대출계좌를 선택하세요</option>
-									<option value="option2">개인신용다이렉트추가(일반직장인론)</option>
-									<option value="option3">개인신용다이렉트추가(일반직장인론)</option>
-								</select>
-							</div>
-						</div>
-					</div>
-
-                    <div class="contents_bottom_area">
-                        <button type="button" class="ebbtn btn_main ty_bg">다음</button>
-						<!-- 비활성화 -->
-						<!-- <button type="button" class="ebbtn btn_main ty_bg" disabled>다음</button>-->
-                    </div>
-			
 				</div>
 			</div>
 			<!-- //여기까지 컨텐츠 -->
@@ -253,7 +256,7 @@
 	</div>
 </div>
 
-<!-- 2024-09-10 2024고도화 : 운영과 동일한 팝업영역 추가 -->
+<!-- 2024-09-11 2024고도화 : 운영과 동일한 팝업영역 추가 -->
 <div id="layoutPopContent"></div>
 
 <script>

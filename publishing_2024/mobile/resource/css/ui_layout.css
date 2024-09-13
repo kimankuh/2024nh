@@ -218,10 +218,11 @@
 .totalmenu_layer .totalmenu_area .menuname.has_menu:before {top:7px;right:0;}
 .totalmenu_layer .totalmenu_area .menuname.has_menu:after {top:7px;right:0;transform:rotate(-90deg);}
 .totalmenu_layer .totalmenu_area .menuname.has_menu.on:after {display:none;}
-.totalmenu_layer .totalmenu_area .depth4 {display:none;}
+/* .totalmenu_layer .totalmenu_area .depth4 {display:none;} */
 .totalmenu_layer .totalmenu_area .depth4 > li {margin-top:12px;}
-.totalmenu_layer .totalmenu_area .depth4 > li .menuname {display:block;}
-.totalmenu_layer .totalmenu_area .depth4 > li .name {font-size:14px;}
+.totalmenu_layer .totalmenu_area .depth4 > li:before {content:'';display:inline-block;margin:0 9px;width:4px;height:4px;vertical-align:middle;background-color:#303030;border-radius:50%;}
+.totalmenu_layer .totalmenu_area .depth4 > li .menuname {display:inline-block;}
+.totalmenu_layer .totalmenu_area .depth4 > li .name {font-size:15px;font-weight:700;}
 
 /* 2024-07-30 2024고도화 : 전체메뉴 UI 개선 */
 .totalmenu_layer .layer .ebbtn.btn_member .name {padding-right:5px;font-weight:bold;}

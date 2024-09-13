@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+	<title>내정보변경 | NH농협캐피탈</title>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+
+	<!-- Plugin JS -->
+	<script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+	<!-- 개발 JS -->
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/common.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+	<script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024-09-11 2024고도화 : 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div class="layout temp">
+
+	<div class="header"></div>
+
+	<div class="container renewal_2024"><!-- 2024-09-11 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="breadcrumbs_part">
+					<div class="breadcrumbs_pack">
+						<ul>
+							<li><a href="#" class="bcname" title="홈"></a></li>
+							<li><a href="#" class="bcname">MY페이지</a></li>
+							<li><a href="#" class="bcname">내 정보 변경</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">내 정보 변경</h2>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="contents_zone"><!-- 스탭영역이 있는 경우 addClass="has_step" -->
+
+			<div class="contents_area">
+				<div class="contents">
+					<!-- 여기부터 컨텐츠 -->
+                    
+                    <div class="top_sort_selection">
+                        <div class="form_pack">
+                            <div class="select_pack has_selected" data-ui="customSelect">
+                                <button type="button" class="ebbtn btn_slct_trigr" title="개인/개인사업자 선택"></button>
+                                <select class="ebselect" name="loanMcnt" title="개인/개인사업자 선택" data-placeholder="선택" tabindex="-1" disabled="disabled">
+                                    <option selected="selected">개인</option>
+                                    <option>무한 코퍼레이션</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>        
+                    
+                    <div class="subtitle_wrap">
+						<div class="title_box">
+							<div class="ebtitle_normal">기본정보</div>
+						</div>
+						<div class="conts_box">
+							<div class="form_part">
+								<div class="form_set">
+									<div class="ebform_label ">이름</div>
+									<div class="form_pack">
+										<div class="input_pack">
+											<input type="text" class="ebinput" placeholder="이름을 입력해주세요." title="이름" readonly="readonly" value="김농협">
+											<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+										</div>
+									</div>
+								</div>
+
+                                <div class="form_set">
+									<div class="ebform_label required">휴대폰 번호</div>
+									<div class="form_pack">
+										<div class="input_pack">
+                                            <input type="tel" class="ebinput" placeholder="-없이 숫자만 입력 " value="" title="휴대전화번호">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+									</div>
+                                    <ul class="ebullet_circle">
+                                        <li>안전한 전자금융거래를 위하여 휴대폰 번호 변경 시 휴대폰 본인인증을 진행합니다.</li>
+                                    </ul>
+								</div>
+
+                                <div class="form_set"><!-- 해당영역 노출시 addclass = "show" -->
+                                    <div class="ebform_label">이메일</div>
+                                    <div class="form_pack ty_email">
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" placeholder="이메일 입력" value="" title="이메일 아이디">
+                                            <span class="unit">@</span>
+                                            <input type="text" class="ebinput" placeholder="" value="" title="이메일 도메인주소">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                        <div class="select_pack" data-ui="customSelect">
+                                            <select class="ebselect" data-placeholder="직접입력" title="도메인">
+                                                <option value="option1">직접입력</option>
+                                                <option value="option2">naver.com</option>
+                                                <option value="option2">hanmail.com</option>
+                                                <option value="option2">gmail.com</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>                        
+                    </div>
+
+                    <!-- 집정보 -->
+                    <div class="subtitle_wrap">
+						<div class="title_box">
+							<div class="ebtitle_normal">집정보</div>
+						</div>
+						<div class="conts_box">
+                            <div class="form_part">
+                                <!-- 집 전화번호 -->
+                                <div class="form_set">
+                                    <div class="ebform_label">집 전화번호</div>
+                                    <div class="form_pack ty_phonenum">
+                                        <div class="select_pack" data-ui="customSelect">
+                                            <select class="ebselect" title="지역번호" data-placeholder="선택">
+                                                <option value="option1">02</option>
+                                                <option value="option2">031</option>
+                                            </select>
+                                        </div>
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" title="집 전화번호" placeholder="-없이 숫자만 입력">
+                                            <input type="hidden" value="">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <!-- 집 주소 -->
+                                <!-- 주소 미입력 상태 시 -->
+                                <div class="form_set">
+                                    <div class="ebform_label">집 주소</div>
+                                    <div class="select_pack">
+                                        <button type="button" class="ebbtn btn_select ty_search" title="집 주소">주소 검색</button>
+                                    </div>
+                                </div>
+    
+                                <!-- 주소 검색 후 활성화 -->
+                                <!-- <div class="form_set">
+                                    <div class="ebform_label">집 주소</div>
+                                    <div class="form_pack ty_flex">
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" placeholder="집 주소 입력" title="집 주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button type="button" class="ebbtn btn_multi">주소수정</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_set">
+                                    <div class="ebform_label">상세주소</div>
+                                    <div class="form_pack">
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- //주소 검색 후 활성화 -->                                
+                            </div>  
+						</div>                        
+                    </div>
+
+                    <!-- 직장정보 -->
+                    <div class="subtitle_wrap">
+						<div class="title_box">
+							<div class="ebtitle_normal">직장정보</div>
+						</div>
+						<div class="conts_box">
+                            <div class="form_part">
+                                <!-- 직장 전화번호 -->
+                                <div class="form_set">
+                                    <div class="ebform_label">직장 전화번호</div>
+                                    <div class="form_pack ty_phonenum">
+                                        <div class="select_pack" data-ui="customSelect">
+                                            <select class="ebselect" title="지역번호" data-placeholder="선택">
+                                                <option value="option1">02</option>
+                                                <option value="option2">031</option>
+                                            </select>
+                                        </div>
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" title="직장 전화번호" placeholder="-없이 숫자만 입력">
+                                            <input type="hidden" value="">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <!-- 직장 주소 -->
+                                <!-- 주소 미입력 상태 시 -->
+                                <div class="form_set">
+                                    <div class="ebform_label">직장 주소</div>
+                                    <div class="select_pack">
+                                        <button type="button" class="ebbtn btn_select ty_search" title="직장 주소">주소 검색</button>
+                                    </div>
+                                </div>
+    
+                                <!-- 주소 검색 후 활성화 -->
+                                <!-- <div class="form_set">
+                                    <div class="ebform_label">직장 주소</div>
+                                    <div class="form_pack ty_flex">
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" placeholder="직장 주소 입력" title="직장 주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button type="button" class="ebbtn btn_multi">주소수정</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_set">
+                                    <div class="ebform_label">상세주소</div>
+                                    <div class="form_pack">
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- //주소 검색 후 활성화 -->                                
+                            </div>  
+						</div>                        
+                    </div>
+
+                    <!-- 기타정보 -->
+                    <div class="subtitle_wrap">
+						<div class="title_box">
+							<div class="ebtitle_normal">기타정보</div>
+						</div>
+						<div class="conts_box">
+                            <div class="form_part">
+                                <!-- 기타 전화번호 -->
+                                <div class="form_set">
+                                    <div class="ebform_label">기타 전화번호</div>
+                                    <div class="form_pack ty_phonenum">
+                                        <div class="select_pack" data-ui="customSelect">
+                                            <select class="ebselect" title="지역번호" data-placeholder="선택">
+                                                <option value="option1">02</option>
+                                                <option value="option2">031</option>
+                                            </select>
+                                        </div>
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" title="기타전화번호" placeholder="-없이 숫자만 입력">
+                                            <input type="hidden" value="">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <!-- 기타 주소 -->
+                                <!-- 주소 미입력 상태 시 -->
+                                <!-- <div class="form_set">
+                                    <div class="ebform_label">기타 주소</div>
+                                    <div class="select_pack">
+                                        <button type="button" class="ebbtn btn_select ty_search" title="기타 주소">주소 검색</button>
+                                    </div>
+                                </div> -->
+    
+                                <!-- 주소 검색 후 활성화 -->
+                                <div class="form_set">
+                                    <div class="ebform_label">기타 주소</div>
+                                    <div class="form_pack ty_flex">
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" placeholder="기타 주소 입력" title="기타 주소" value="서울 영등포구 국제금융로 52" readonly="readonly">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                        <div class="btn_box">
+                                            <button type="button" class="ebbtn btn_multi">주소수정</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_set">
+                                    <div class="ebform_label">상세주소</div>
+                                    <div class="form_pack">
+                                        <div class="input_pack">
+                                            <input type="text" class="ebinput" placeholder="상세주소 입력" title="상세주소" value="">
+                                            <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        </div>
+                                    </div>
+                                    <ul class="ebullet_circle">
+                                        <li>휴대폰 번호와 이메일 변경 시, 가입정보의 휴대폰 번호, 이메일도 동일한 정보로 변경됩니다.</li>
+                                    </ul>
+                                </div>
+                                <!-- //주소 검색 후 활성화 -->                                
+                            </div>  
+						</div>                        
+                    </div>
+
+				</div>
+			</div>
+
+			<div class="contents_bottom_area">
+                <div class="btn_box">
+					<div class="box_l">
+						<button type="button" class="ebbtn btn_main ty_light">취소</button>
+					</div>
+					<div class="box_r">
+						<a href="#" class="ebbtn btn_main ty_bg">저장</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer_area"></div>
+	</div>
+</div>
+
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

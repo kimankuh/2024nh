@@ -96,3 +96,16 @@
 .form_pack.ty_half .ebform_label {width:100%;}
 .form_pack.ty_half .form_pack + .form_pack {margin-left:30px;}
 .form_pack.ty_half .form_pack {flex:1;}
+
+/* MY페이지 > 내 정보 확인 */
+.top_sort_selection + .table_conts_part {margin-top:0;}
+.contents_bottom_area + .guide_part {margin-top:60px;}
+.top_sort_selection {display:flex;justify-content:right;}
+.top_sort_selection .select_pack {min-height:43px}
+.top_sort_selection .ebselect {width:280px;height:43px;line-height:43px;font-size:16px;background-position:right top 18px;}
+.top_sort_selection .select_layer .option_list .option {font-size:16px;}
+.contents_bottom_area {position:relative;}
+.contents_bottom_area .btn_box.pos_left {position:absolute;top:50px;left:0;}
+
+/* 입력폼 - 필수항목 */
+.ebform_label.required:before {content:'*';display:inline;color:var(--pointColor02);}
