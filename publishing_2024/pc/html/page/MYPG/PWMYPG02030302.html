@@ -98,7 +98,7 @@
 							<div class="select_pack" data-ui="customSelect">
 								<select class="ebselect" title="수령방법 선택" data-placeholder="선택">
 									<option value="11">모바일</option>
-									<option value="22">이베일</option>
+									<option value="22">이메일</option>
 									<option value="33">우편</option>
 									<option value="44">받지않음</option>
 								</select>
@@ -126,12 +126,29 @@
 									</div>
 								</div>
 							</div>
+							<!-- 2024-09-20 2024고도화 : 회원정보변경 버튼 삭제
 							<div class="linkbtn_part">
 								<button type="button" class="ebbtn btn_txt_arrow">회원정보변경</button>
 							</div>
+							-->
 						</div>
 
+						<!-- 2024-09-20 2024고도화 : 주소 영역 수정 -->
 						<div class="form_set show"><!-- 수령방법 선택 옵션 우편 선택시만 노출 / 입력폼 활성화시 addclass="show" -->
+							<div class="ebform_label">주소</div>
+							<div class="form_pack">
+								<div class="select_pack" data-ui="customSelect">
+									<select class="ebselect" title="주소 선택" data-placeholder="선택">
+										<option value="00">주소 선택</option>
+										<option value="11">서울시 영등포구 국제금융로8길 27-8</option>
+										<option value="22">서울시 영등포구 은행로 54-2</option>
+										<option value="33">서울시 영등포구 국제금융로8길 27-8 엔에이치농협캐피탈빌딩</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!-- 
+						<div class="form_set show">
 							<div class="ebform_label">청구지 선택</div>
 							<div class="form_pack">
 								<div class="select_pack" data-ui="customSelect">
@@ -147,15 +164,15 @@
 							</div>
 						</div>
 
-						<!-- 주소 미입력 상태 시 -->
+						
 						<div class="form_set show">
 							<div class="ebform_label">주소</div>
-							<div class="select_pack"><!-- 값이 입력된 경우 addclass="has_selected" -->
+							<div class="select_pack">
 								<button type="button" class="ebbtn btn_select ty_search" title="주소">주소 검색</button>
 							</div>
 						</div>
 
-						<!-- 주소 검색 후 활성화 -->
+						
 						<div class="form_set show">
 							<div class="ebform_label">주소</div>
 							<div class="form_pack ty_flex">
@@ -178,7 +195,8 @@
 								</div>
 							</div>
 						</div>
-						<!-- //주소 검색 후 활성화 -->
+						//주소 검색 후 활성화 -->
+						<!-- //2024-09-20 2024고도화 : 주소 영역 수정 -->
 
 
 					</div>
