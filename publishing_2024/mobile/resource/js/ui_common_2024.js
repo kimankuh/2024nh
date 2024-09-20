@@ -134,13 +134,52 @@ function mainEventerBannersSwiper(){
         }        
     });
 
-    $('.swiper-toggle-button').on('click', function(){
+    $('.main_event_banners .swiper-toggle-button').on('click', function(){
         $(this).toggleClass('on');
         if($(this).hasClass('on')){
             maineventSwiperNew.autoplay.stop();
             $(this).attr('aria-label', '재생');
         }else{
             maineventSwiperNew.autoplay.start();
+            $(this).attr('aria-label', '정지');
+        }
+    });
+}
+
+// 메인 swiper - 이벤트 배너
+function mainEventSecondSwiper(){
+    var slideLength = $('.main_event_banners_02 .swiper-slide').length;
+    var maineventSwiperNew02 = new Swiper('.main_event_banners_02 .swiper-container', {
+        speed: 400,
+        slidesPerView: 1,
+        pagination: {
+            clickable: true,
+            el: ".swiper-pagination",
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        watchOverflow: true, //A11Y 2024 슬라이드가 1개 일 때 pager, button 숨김 여부 설정
+        on:{
+            init: function(){
+                var elParent = $(this.el).parent();
+                setSwiperPropA11y(elParent, slideLength);
+            },
+            slideChange: function(){
+                var elParent = $(this.el).parent();
+                setSwiperPropA11y(elParent, slideLength);
+                $(elParent).find('.swiper-slide').eq(this.activeIndex).attr({'tabindex' : 0, 'aria-hidden' : false});
+            },
+        }        
+    });
+
+    $('.main_event_banners_02 .swiper-toggle-button').on('click', function(){
+        $(this).toggleClass('on');
+        if($(this).hasClass('on')){
+            maineventSwiperNew02.autoplay.stop();
+            $(this).attr('aria-label', '재생');
+        }else{
+            maineventSwiperNew02.autoplay.start();
             $(this).attr('aria-label', '정지');
         }
     });

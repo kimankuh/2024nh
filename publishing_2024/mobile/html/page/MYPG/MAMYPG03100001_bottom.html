@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"></div><!-- 2024-08-13 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+	-팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popuplayer"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+			<div class="popup_header">
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+					
+					<div class="option_list ty_line">
+						<ul>
+							<li class="active"><!-- 클릭시 활성화 className = "active" -->
+								<button type="button" class="ebbtn btn_option">
+									<span class="product_box">
+										<span class="title">개인신용(일반직장인론)</span>
+										<span class="conts">
+											<span class="data">
+												<span class="ttl">대출금</span>
+												<span class="txt">15,000,000원</span>
+											</span>
+											<span class="data">
+												<span class="ttl">대출계좌번호</span>
+												<span class="txt">18302118706000</span>
+											</span>
+											<span class="data">
+												<span class="ttl">대출일자</span>
+												<span class="txt">2023/02/16</span>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_option">
+									<span class="product_box">
+										<span class="title">NH가득론다이렉트</span>
+										<span class="conts">
+											<span class="data">
+												<span class="ttl">대출금</span>
+												<span class="txt">5,000,000원</span>
+											</span>
+											<span class="data">
+												<span class="ttl">대출계좌번호</span>
+												<span class="txt">18302118706000</span>
+											</span>
+											<span class="data">
+												<span class="ttl">대출일자</span>
+												<span class="txt">2023/02/16</span>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_option">
+									<span class="product_box">
+										<span class="title">NH가득론다이렉트 [마감]</span>
+										<span class="conts">
+											<span class="data">
+												<span class="ttl">대출금</span>
+												<span class="txt">5,000,000원</span>
+											</span>
+											<span class="data">
+												<span class="ttl">대출계좌번호</span>
+												<span class="txt">18302118706000</span>
+											</span>
+											<span class="data">
+												<span class="ttl">대출일자</span>
+												<span class="txt">2023/02/16</span>
+											</span>
+										</span>
+									</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="search_noresult_part">
+						<div class="icon_box">
+							<span class="ebicon icon_fail"></span>
+						</div>
+						<div class="text_box">
+							대출 내역이 없습니다.
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	//팝업호출
+	popupFunc('#tempId').show();
+
+	//팝업닫기
+	// popupFunc('#tempId').close();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

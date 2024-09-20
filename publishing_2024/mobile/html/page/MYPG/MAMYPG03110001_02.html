@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"><!-- 2024-08-13 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">신청서 발급</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container renewal_2024"><!-- 2024-08-13 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">신청서 선택</span>
+							</li>
+							<li class="active">
+								<span class="num">2</span>
+								<span class="txt">발급방법 선택</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li></li><!-- 현재 스텝에 addClass="active" -->
+							<li class="active"></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">신청서 발급</h2>
+				</div>
+
+				<div class="page_subtitle_part">
+					<p>
+						발급방법을 선택해 주세요
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+				<div class="smalltitle_part">
+					<div class="ebform_label">발급방법 선택</div>
+					<div class="toggle_pack ty_linebreak">
+						<ul>
+							<li class="active">
+								<button type="button" class="ebbtn btn_toggle ">이메일</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">알림톡</button><!-- 2024-09-03 2024고도화 : 문구 변경 -->
+							</li>
+						</ul>
+					</div>
+					<div class="form_part email_input">
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="Hongabc@bac.cp.kr">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<button type="button" class="ebbtn btn_main ty_bg">신청하기</button>
+		</div>
+
+	</div>
+</div>
+
+<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+<div id="layoutPopContent" aria-hidden="true"></div>
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

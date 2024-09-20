@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"><!-- 2024-08-13 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">비대면 서류 발급</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container renewal_2024"><!-- 2024-08-13 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">발급상품 선택</span>
+							</li>
+							<li class="finish">
+								<span class="num">2</span>
+								<span class="txt">발급서류 선택</span>
+							</li>
+							<li class="active">
+								<span class="num">3</span>
+								<span class="txt">발급정보 선택</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li></li><!-- 현재 스텝에 addClass="active" -->
+							<li></li>
+							<li class="active"></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">비대면 서류 발급</h2>
+				</div>
+
+				<div class="page_subtitle_part">
+					<p>
+						발급정보를 선택해 주세요 
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+				<div class="form_part">
+					<div class="form_set">
+						<div class="ebform_label">고객명</div>
+						<div class="form_pack">
+							<div class="input_pack has_readonly">
+								<input type="tel" class="ebinput" placeholder="" value="김농협" title="고객명" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form_set">
+						<div class="ebform_label">제출처 및 용도</div>
+						<div class="form_pack">
+							<div class="select_pack has_selected" data-ui="customSelect">
+								<button type="button" class="ebbtn btn_slct_trigr" title="제출처 및 용도 선택"></button>
+								<select class="ebselect" data-placeholder="선택해주세요" title="제출처 및 용도 선택" tabindex="-1">
+									<option value="1">기관제출용</option>
+									<option value="2">개인회생용</option>
+									<option value="3">개인파산용</option>
+									<option value="4">회계감사용</option>
+									<option value="5">기타</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="smalltitle_part">
+						<div class="ebform_label">발급기준일</div>
+						<div class="toggle_pack ty_linebreak">
+							<ul>
+								<li class="active">
+									<button type="button" class="ebbtn btn_toggle">YYYY-MM-DD</button><!--오늘 기준 직전 영업일자 표기-->
+								</li>
+								<li>
+									<button type="button" class="ebbtn btn_toggle">YYYY-MM-DD</button><!--오늘 기준 작년 말일일자 표기-->
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="smalltitle_part">
+						<div class="ebform_label">발급방법 선택</div>
+						<div class="toggle_pack ty_linebreak">
+							<ul>
+								<li class="active">
+									<button type="button" class="ebbtn btn_toggle ">이메일</button>
+								</li>
+								<li>
+									<button type="button" class="ebbtn btn_toggle">알림톡</button><!-- 2024-09-03 2024고도화 : 문구 변경 -->
+								</li>
+							</ul>
+						</div>
+						<div class="form_part email_input">
+							<div class="form_pack">
+								<div class="input_pack">
+									<input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bullet_part">
+					<div class="bullet_pack">
+						<p class="ebbullet_title">안내 유의사항</p>
+						<!-- [start]2024-09-03 2024고도화 : 문구 순서 및 내용 변경 -->
+						<ul class="ebullet_circle">
+							<li>발급된 문서는 고객 정보제공 이력을 통해 관리되므로 본인이 아닌 경우 발급을 중단하시길 바랍니다.</li><!-- 2024-09-06 2024고도화 : 유의사항 문구 변경 '조회를' -> '발급을' -->
+							<li>공휴일에 가상 계좌를 통해 납부된 금액은 같은 날 서류 발급 시 내역이 표기되지 않는 점 유의하시기 바랍니다.(*익영업일 발급 권장)</li><!-- 2024-09-10 2024고도화 : 유의사항 문구 추가 -->
+							<li>본 증명서는 인터넷으로 발급되었으며, 문서 하단의 바코드를 통해 진위 여부 확인이 가능합니다.</li>
+							<li>궁금하신 사항은 행복드림센터(<a href="tel:1644-3700" title="전화 앱 화면으로 전환됩니다"><span class="ebunderline ty_blue">1644-3700</span></a>)를 통해 상담 가능합니다. (업무시간 : 평일 09:00 ~ 18:00)</li>
+						</ul>
+						<!-- [end]2024-09-03 2024고도화 : 문구 순서 및 내용 변경 --><!-- 2024-09-04 2024고도화 : 문구 변경 - )을 -> )를 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<button type="button" class="ebbtn btn_main ty_bg">신청하기
+			</button>
+			<!-- disabed 일때
+			<button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">신청하기</button>
+			-->
+		</div>
+
+	</div>
+</div>
+
+<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+<div id="layoutPopContent" aria-hidden="true"></div>
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>

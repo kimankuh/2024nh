@@ -204,6 +204,15 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .swiper-controls .swiper-pagination + .swiper-toggle {margin-left:3px;}
 .renewal_2024 .swiper-toggle-button {width:8px;height:8px;vertical-align:middle;background:url('../image/main/icon_swiper_pause_02.png') no-repeat center center;background-size:6px auto;}
 .renewal_2024 .swiper-toggle-button.on {background:url('../image/main/icon_swiper_play.png') no-repeat center center;background-size:6px auto;}
+.renewal_2024 .swiper-slide .event_banner {font-size:0;}
+
+/* 메인 - 이벤트 swiper 02 */
+.renewal_2024 .section_box + .main_event_banners_02 {margin-top:32px;}
+.renewal_2024 .main_event_banners_02 .swiper-container {padding-bottom:24px;}
+.renewal_2024 .main_event_banners_02 .event_banner {display:block;overflow:hidden;border-radius:24px;}
+.text_section_title + .swiper-container {margin-top:12px;}
+.renewal_2024 .main_event_banners_02 .banner_title {margin-top:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px;font-weight:500;}
+.renewal_2024 .main_event_banners_02 .banner_title + .swiper-controls {margin-top:5px;}
 
 /* 메인 - 보유건수 */
 .renewal_2024 .section_content.my_total {margin-top:24px;}

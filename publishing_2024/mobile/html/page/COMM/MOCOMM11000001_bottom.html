@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 
-	<title>NH농협캐피탈</title>
+	<title>서류등록방법선택 | NH농협캐피탈</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -30,7 +31,7 @@
 <body>
 
 
-<div class="layout"></div>
+<div id="layoutContent" class="layout"></div><!-- 2024-08-13 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 
 
@@ -43,40 +44,36 @@
 	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
 -->
 
-<div id="remittance_info" class="modal_popup ty_popup renewal_2024"><!-- 노출 className = show --><!-- 2024-08-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
+<div id="tempId" class="modal_popup ty_popuplayer renewal_2024"><!-- 노출 className = show --><!-- 2024-09-05 2024고도화 : 고도화 전용 class .renewal_2024 추가 -->
 	<div class="popup_layout">
 
 		<div class="popup_inner">
 
 			<div class="popup_header">
-				<!-- <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button> --><!-- 2024-09-20 2024고도화 : 확인 필수 내용으로 '닫기' 삭제 -->
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
 			</div>
 
 			<div class="popup_body">
 				<div class="popup_container">
+					<!-- 2024-09-05 2024고도화 : 타이틀 추가 -->
 					<div class="page_title_part">
-						<p class="title">송금가능 안내</p>
+						<p class="title">서류 등록 방법 선택</p>
 					</div>
-					<div class="remittance_info">
-						<!-- 2024-09-09 2024고도화 : 뷸릿제거
-						<ul class="ebullet_circle">
-							<li>22시 이전에 접수한 대출 신청건은 오늘 고객님의 계좌로 대출 금액을 송금해 드려요. 이후 신청건은 (심사 결과에 따라) 익일 송금 예정이에요.</li><!-- 2024-08-30 2024고도화 : 문구 수정됨 -->
 
-							<!-- 2024-08-30 2024고도화 : 인적심사 대상인 경우 문구 추가 -->
-							<!-- <li>심사 결과에 따라 순차적으로 송금 예정이에요.</li> 
+					<div class="option_list doc_select_type"><!-- 2024-09-05 2024고도화 : 클래스 추가 '.doc_select_type' -->
+						<ul>
+							<li class="active"><!-- 클릭시 활성화 className = "active" -->
+								<button type="button" class="ebbtn btn_option btn_album">
+									<span class="text">앨범에서 선택</span><!-- 2024-09-05 2024고도화 : 문구 변경 -->
+								</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_option btn_camera">
+									<span class="text">사진촬영</span><!-- 2024-09-05 2024고도화 : 문구 변경 -->
+								</button>
+							</li>
 						</ul>
-						-->
-						<p class="ebtext_desc01">22시 이전에 접수한 대출 신청건은 오늘 고객님의 계좌로 대출 금액을 송금해 드려요. 이후 신청건은 (심사 결과에 따라) 익일 송금 예정이에요.</p>
-						<!-- //2024-09-09 2024고도화 : 뷸릿제거 -->
 					</div>
-				</div>
-			</div>
-
-			<div class="popup_footer">
-				<div class="popup_footer_area">
-					<div class="btn_box">
-                        <button type="button" class="ebbtn btn_main ty_bg">확인했어요</button>
-                    </div>
 				</div>
 			</div>
 
@@ -88,7 +85,13 @@
 
 <script>
 	//팝업호출
-	popupFunc('#remittance_info').show();
+	popupFunc('#tempId').show();
+
+	//팝업닫기
+	// popupFunc('#tempId').close();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
 </script>
 
 
