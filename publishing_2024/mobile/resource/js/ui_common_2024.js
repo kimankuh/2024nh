@@ -107,7 +107,7 @@ function myProductsSwiper(){
     });   
 }
 
-// 메인 swiper - 이벤트 배너
+// 메인 swiper - 이벤트 배너(자주찾는 서비스 하단)
 function mainEventerBannersSwiper(){
     var slideLength = $('.main_event_banners .swiper-slide').length;
     var maineventSwiperNew = new Swiper('.main_event_banners .swiper-container', {
@@ -119,6 +119,7 @@ function mainEventerBannersSwiper(){
         },
         autoplay: {
             delay: 3000,
+            disableOnInteraction: false,// 수동으로 스와이프 후 자동 재생
         },
         watchOverflow: true, //A11Y 2024 슬라이드가 1개 일 때 pager, button 숨김 여부 설정
         on:{
@@ -127,9 +128,9 @@ function mainEventerBannersSwiper(){
                 setSwiperPropA11y(elParent, slideLength);
             },
             slideChange: function(){
-                var elParent = $(this.el).parent();
-                setSwiperPropA11y(elParent, slideLength);
-                $(elParent).find('.swiper-slide').eq(this.activeIndex).attr({'tabindex' : 0, 'aria-hidden' : false});
+                // var elParent = $(this.el).parent();
+                // setSwiperPropA11y(elParent, slideLength);
+                // $(elParent).find('.swiper-slide').eq(this.activeIndex).attr({'tabindex' : 0, 'aria-hidden' : false});
             },
         }        
     });
@@ -146,7 +147,7 @@ function mainEventerBannersSwiper(){
     });
 }
 
-// 메인 swiper - 이벤트 배너
+// 메인 swiper - 이벤트 배너(1위 영역내 위치)
 function mainEventSecondSwiper(){
     var slideLength = $('.main_event_banners_02 .swiper-slide').length;
     var maineventSwiperNew02 = new Swiper('.main_event_banners_02 .swiper-container', {
@@ -158,6 +159,7 @@ function mainEventSecondSwiper(){
         },
         autoplay: {
             delay: 3000,
+            disableOnInteraction: false,// 수동으로 스와이프 후 자동 재생
         },
         watchOverflow: true, //A11Y 2024 슬라이드가 1개 일 때 pager, button 숨김 여부 설정
         on:{
