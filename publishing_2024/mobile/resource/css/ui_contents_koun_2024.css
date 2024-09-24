@@ -212,7 +212,7 @@
 
 /* 공통 > 가입유도 팝업 */
 .renewal_2024.modal_popup.ty_popup .popup_layout .popup_header{text-align:left;}
-.renewal_2024.modal_popup.ty_popup .popup_layout .popup_header .popup_title{padding:0 55px 0 24px; font-family: 'IBM_Plex_Sans_KR', 'malgun gothic', 'sans-serif', 'dotum';font-size:17px; font-weight:500;}
+.renewal_2024.modal_popup.ty_popup .popup_layout .popup_header .popup_title{padding:0 55px 0 24px;/*font-family: 'IBM_Plex_Sans_KR', 'malgun gothic', 'sans-serif', 'dotum';*/font-size:17px; font-weight:500;}/* 2024-09-24 2024고도화 : 폰트 설정 삭제 */
 
 .renewal_2024 .encourage_signup{margin-bottom:20px; padding:24px 0 68px 0; background:url(../image/contents/common/encourage_signup.png) no-repeat bottom right;background-size:115px auto;}
 .renewal_2024 .encourage_signup .txt{font-size:14px; color:#707070;}
