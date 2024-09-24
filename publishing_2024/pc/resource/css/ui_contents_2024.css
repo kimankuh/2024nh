@@ -78,7 +78,7 @@
 .renewal_2024 .detail_data_box.lined .acco_box.active .btn_acco:after {transform:rotate(0deg);}
 .renewal_2024 .detail_data_list.double {display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:8px;}
 .renewal_2024 .detail_data_list.double > ul {padding-left:20px;padding-right:20px;min-width:270px;}
-.renewal_2024 .detail_data_list.double .date {flex:1;margin-top:20px;padding-right:20px;text-align:right;font-weight:700;}
+.renewal_2024 .detail_data_list .date {flex:1;margin-top:20px;padding-right:20px;text-align:right;font-weight:700;}
 
 /* 기대출내역 */
 .renewal_2024 .detail_data_list.border_top {margin-top:57px;padding-top:20px;border-top:1px solid #F3F4F8;}

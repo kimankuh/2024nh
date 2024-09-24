@@ -361,12 +361,14 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .section_appdown_intro .ebullet_circle li + li {margin-top:16px;}
 
 /* 신용대출 > 인증코드찾기 - 팝업 title case */
-.modal_popup.ty_alert .popup_layout .popup_body .popup_container.pd20 {padding:20px;}
-.modal_popup .popup_layout .popup_header .ebtitle3.alL {padding-left:20px;font-size:16px;font-weight:700;}
-.modal_popup .popup_header .popup_title .popup_logo + .title {margin-left:4px;}
-.modal_popup .popup_header .popup_title .popup_logo {display:inline-block;width:146px;height:55px;}
-.modal_popup .popup_header .popup_title .popup_logo img {width:100%;vertical-align:middle;}
-.modal_popup .popup_header .popup_title .title {display:inline-block;font-size:16px;font-weight:bold;vertical-align:top;}
+.renewal_2024.modal_popup.ty_alert .popup_layout .popup_body .popup_container.pd20 {padding:20px;}
+.renewal_2024.modal_popup .popup_layout .popup_header .ebtitle3.alL {padding-left:20px;font-size:16px;font-weight:700;}
+.renewal_2024.modal_popup .popup_layout .popup_header .ebtitle3,
+.renewal_2024.modal_popup .popup_layout .popup_header .popup_title {font-family:'SpoqaHanSansNeo', 'malgun gothic', 'sans-serif', 'dotum';}
+.renewal_2024.modal_popup .popup_header .popup_title .popup_logo + .title {margin-left:4px;}
+.renewal_2024.modal_popup .popup_header .popup_title .popup_logo {display:inline-block;width:146px;height:55px;}
+.renewal_2024.modal_popup .popup_header .popup_title .popup_logo img {width:100%;vertical-align:middle;}
+.renewal_2024.modal_popup .popup_header .popup_title .title {display:inline-block;font-size:16px;font-weight:bold;vertical-align:middle;}
 
 /* 신용대출 > 신용대출 이어하기 알럿 */
 .alert_text_part .text_strong {font-weight:bold;color:var(--grayColor01);}

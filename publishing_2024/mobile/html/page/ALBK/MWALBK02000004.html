@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>올원뱅크 - 신용대출 약관동의</title>
+	<title>고객정보입력 | 올원뱅크</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -32,15 +32,12 @@
 
 	<div class="header">
 		<div class="header_area">
-
 			<div class="header_back">
 				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
 			</div>
-
 			<div class="header_title">
 				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
 			</div>
-
 			<div class="header_home">
 				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
 			</div>
@@ -48,11 +45,9 @@
 	</div>
 
 	<div class="container">
-
 		<!-- 컨텐츠 상단 타이틀영역 -->
         <div class="subheader">
-            <div class="subheader_area">
-    
+            <div class="subheader_area">    
                 <div class="step_part">
                     <div class="step_pack">
                         <ol>
@@ -69,8 +64,7 @@
                                 <span class="txt">약정서 작성</span>
                             </li>
                         </ol>
-                    </div>
-    
+                    </div>    
                     <div class="progress_pack">
                         <ul>
                             <li class="active"></li><!-- 현재 스텝에 addClass="active" -->
@@ -78,87 +72,156 @@
                             <li></li>
                         </ul>
                     </div>
-                </div>
-    
+                </div>    
                 <div class="page_title_part">
                     <h2 class="ebtitle2">고객정보입력</h2>
-                </div>
-    
+                </div>    
                 <div class="page_subtitle_part">
                     <p>직장정보와 추가정보를 입력해주세요.</p>
-                </div>
-    
+                </div>    
             </div>
         </div>
 
-
 		<!-- 여기부터 컨텐츠 -->
         <div class="contents_area">
-            <div class="contents">
+            <div class="contents">   
     
-    
-                    <!-- 2022-03-30 수정 : 입력항목 추가 -->
-                    <!-- 2022-03-25 수정 : 입력항목 추가 -->
+                <!-- 2022-03-30 수정 : 입력항목 추가 -->
+                <!-- 2022-03-25 수정 : 입력항목 추가 -->
+                
+                <div class="form_part ty_ani">
+                    <c:if test="${inflDvcd eq 'A'}">
+                        <div class="form_set show">
+                            <div class="ebform_label">직업정보</div>
+                            <div class="form_pack">
+                                <div class="select_pack" data-ui="customSelect">
+                                    <select class="ebselect" data-placeholder="선택" title="직업정보" id="selectWork"  name="aplctQlfcStdCd">
+                                        <option value="">선택</option>
+                                        <option value="01">직장인</option>
+                                        <!-- 
+                                        <option value="02">자영업자</option>
+                                        <option value="03">프리랜서</option>
+                                        <option value="14">무직</option>
+                                            -->
+                                        <option value="13">직장인 외</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     
-                    <div class="form_part ty_ani">
-                        <c:if test="${inflDvcd eq 'A'}">
-                            <div class="form_set show">
-                                <div class="ebform_label">직업정보</div>
-                                <div class="form_pack">
-                                    <div class="select_pack" data-ui="customSelect">
-                                        <select class="ebselect" data-placeholder="선택" title="직업정보" id="selectWork"  name="aplctQlfcStdCd">
-                                            <option value="">선택</option>
-                                            <option value="01">직장인</option>
-                                            <!-- 
-                                            <option value="02">자영업자</option>
-                                            <option value="03">프리랜서</option>
-                                            <option value="14">무직</option>
-                                             -->
-                                            <option value="13">직장인 외</option>
-                                        </select>
-                                    </div>
+                        <!-- 직업정보 직장인 선택시 노출 -->
+                        <!-- 2022-04-06 수정 : 직장명 영역 추가 -->
+                        <div class="form_set " id="work_div">
+                            <div class="ebform_label">직장명</div>
+                            <div class="form_pack">
+                                <div class="select_pack">
+                                    <button type="button" class="ebbtn btn_select ty_search" title="직장명" id="searchCompany">직장정보 검색</button>
                                 </div>
                             </div>
+                        </div>
+                        <!-- //2022-04-06 수정 : 직장명 영역 추가 -->
+                        <div class="form_set " id="jbty_div"><!-- 입력폼 활성화시 addclass="show" -->
+                            <div class="ebform_label">고용형태</div>
+                            <div class="form_pack">
+                                <div class="select_pack" data-ui="customSelect">
+                                    <select class="ebselect" data-placeholder="선택" title="고용형태" id="selectJbty" name="jbtyPstnCd">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         
-                            <!-- 직업정보 직장인 선택시 노출 -->
-                            <!-- 2022-04-06 수정 : 직장명 영역 추가 -->
-                            <div class="form_set " id="work_div">
-                                <div class="ebform_label">직장명</div>
-                                <div class="form_pack">
-                                    <div class="select_pack">
-                                        <button type="button" class="ebbtn btn_select ty_search" title="직장명" id="searchCompany">직장정보 검색</button>
-                                    </div>
+                        <div class="form_set" id="joindt_div">
+                            <div class="ebform_label">입사일시</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="text" id="cofcEncmDt" name="cofcEncmDt" class="ebinput" inputmode="decimal" placeholder="예 : 2010.01.01" title="입사일시" maxlength="10"/>
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div>
+                                
+                                
+                                
+                                <!-- div class="input_pack ty_date">
+                                    <input type="text"  id="cofcEncmDt" name="cofcEncmDt" class="ebinput" data-date="trigger" placeholder="입사년월일" title="입사일시" readonly="readonly"/>
+                                    <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                </div-->
+                            </div>
+                        </div>
+
+                        <div class="form_set input_vdt" id="annincome_div">
+                            <div class="ebform_label">연소득</div>
+                            <div class="form_pack" id="annincome_input">
+                                <div class="input_pack ty_word2">
+                                    <input type="tel" id="annincome" name="lastAnlicAmt" class="ebinput" title="연소득" placeholder="입력" value="">
+                                    <span class="unit">만원</span>
                                 </div>
                             </div>
-                            <!-- //2022-04-06 수정 : 직장명 영역 추가 -->
-                            <div class="form_set " id="jbty_div"><!-- 입력폼 활성화시 addclass="show" -->
-                                <div class="ebform_label">고용형태</div>
+                        </div>
+                    </c:if>
+
+                    <c:if test="${inflDvcd eq 'B'}">
+                        <!-- 임직원으로 접근 시 노출 -->
+
+                        <input type="hidden" id="hidJbtyPstnIncmClcd" name="jbtyPstnIncmClcd" value="0010" />	<!-- 직군직위소득분류코드 -->
+                        <input type="hidden" id="hidJbtyPstnLclCd" name="jbtyPstnLclCd" value="" />				<!-- 직군직위대분류코드 -->
+                        <input type="hidden" id="hidJbtyPstnMclCd" name="jbtyPstnMclCd" value="" />				<!-- 직군직위중분류코드 -->
+                        <input type="hidden" id="hidJbtyPstnSclCd" name="jbtyPstnSclCd" value="" />				<!-- 직군직위소분류코드 -->
+                        <input type="hidden" id="hidAplctQlfcStdCd" name="aplctQlfcStdCd" value="01" />			<!-- 직군직위소분류코드 -->
+
+                        <div class="form_part">
+                            <div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
+                                <div class="ebform_label">계열사명</div>
                                 <div class="form_pack">
                                     <div class="select_pack" data-ui="customSelect">
-                                        <select class="ebselect" data-placeholder="선택" title="고용형태" id="selectJbty" name="jbtyPstnCd">
+                                        <select class="ebselect" id="selAfcmLclDvcd" data-placeholder="선택" title="계열사 대분류">
+                                            <option value="">선택</option>	
+                                            <c:forEach var="item" items="${xcsmAfcmDvcdList}">
+                                                <option value="${item.CD_VALD_VAL}">${item.CD_VALD_VAL_NM}</option>
+                                            </c:forEach>
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="form_set" id="joindt_div">
+
+                            <div class="form_set" id="selAfcmMclDvcd_div"><!-- 입력폼 활성화시 addclass="show" -->
+                                <div class="ebform_label">계열사명</div>
+                                <div class="form_pack">
+                                    <div class="select_pack" data-ui="customSelect">
+                                        <select class="ebselect" id="selAfcmMclDvcd" data-placeholder="선택" title="계열사 소분류">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form_set" id="position_div"><!-- 입력폼 활성화시 addclass="show" -->
+                                <div class="ebform_label">직위</div>
+                                <div class="form_pack">
+                                    <div class="select_pack" data-ui="customSelect">
+                                        <select class="ebselect" data-placeholder="선택" title="직위" id="selJbtyPstnCd" name="jbtyPstnCd">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_set show">
+                                <div class="ebform_label">부서명</div>
+                                <div class="form_pack" id="dpt_input">
+                                    <div class="input_pack">
+                                        <input type="text" class="ebinput" placeholder="입력" title="부서명" value="" name="dptNm" id="dptNm">
+                                        <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+                            <div class="form_set show" id="joindt_div">
                                 <div class="ebform_label">입사일시</div>
                                 <div class="form_pack">
-                                    <div class="input_pack">
-                                        <input type="text" id="cofcEncmDt" name="cofcEncmDt" class="ebinput" inputmode="decimal" placeholder="예 : 2010.01.01" title="입사일시" maxlength="10"/>
+                                    <div class="input_pack" role="button" aria-label="입사일시" onclick="comm.fnDatePicker('cofcEncmDt');">
+                                        <input type="text" id="cofcEncmDt" name="cofcEncmDt" class="ebinput" aria-hidden="true" data-date="trigger" placeholder="입사년월일" title="입사일시" readonly="readonly" />
                                         <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
                                     </div>
-                                    
-                                    
-                                    
-                                    <!-- div class="input_pack ty_date">
-                                        <input type="text"  id="cofcEncmDt" name="cofcEncmDt" class="ebinput" data-date="trigger" placeholder="입사년월일" title="입사일시" readonly="readonly"/>
-                                        <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
-                                    </div-->
                                 </div>
                             </div>
-    
-                            <div class="form_set input_vdt" id="annincome_div">
+                            <!-- //2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+                            <div class="form_set show input_vdt" id="annincome_div">
                                 <div class="ebform_label">연소득</div>
                                 <div class="form_pack" id="annincome_input">
                                     <div class="input_pack ty_word2">
@@ -167,84 +230,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </c:if>
-    
-                        <c:if test="${inflDvcd eq 'B'}">
-                            <!-- 임직원으로 접근 시 노출 -->
-    
-                            <input type="hidden" id="hidJbtyPstnIncmClcd" name="jbtyPstnIncmClcd" value="0010" />	<!-- 직군직위소득분류코드 -->
-                            <input type="hidden" id="hidJbtyPstnLclCd" name="jbtyPstnLclCd" value="" />				<!-- 직군직위대분류코드 -->
-                            <input type="hidden" id="hidJbtyPstnMclCd" name="jbtyPstnMclCd" value="" />				<!-- 직군직위중분류코드 -->
-                            <input type="hidden" id="hidJbtyPstnSclCd" name="jbtyPstnSclCd" value="" />				<!-- 직군직위소분류코드 -->
-                            <input type="hidden" id="hidAplctQlfcStdCd" name="aplctQlfcStdCd" value="01" />			<!-- 직군직위소분류코드 -->
-    
-                            <div class="form_part">
-                                <div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
-                                    <div class="ebform_label">계열사명</div>
-                                    <div class="form_pack">
-                                        <div class="select_pack" data-ui="customSelect">
-                                            <select class="ebselect" id="selAfcmLclDvcd" data-placeholder="선택" title="계열사 대분류">
-                                                <option value="">선택</option>	
-                                                <c:forEach var="item" items="${xcsmAfcmDvcdList}">
-                                                    <option value="${item.CD_VALD_VAL}">${item.CD_VALD_VAL_NM}</option>
-                                                </c:forEach>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="form_set" id="selAfcmMclDvcd_div"><!-- 입력폼 활성화시 addclass="show" -->
-                                    <%-- <div class="ebform_label">계열사명</div> --%>
-                                    <div class="form_pack">
-                                        <div class="select_pack" data-ui="customSelect">
-                                            <select class="ebselect" id="selAfcmMclDvcd" data-placeholder="선택" title="계열사 소분류">
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="form_set" id="position_div"><!-- 입력폼 활성화시 addclass="show" -->
-                                    <div class="ebform_label">직위</div>
-                                    <div class="form_pack">
-                                        <div class="select_pack" data-ui="customSelect">
-                                            <select class="ebselect" data-placeholder="선택" title="직위" id="selJbtyPstnCd" name="jbtyPstnCd">
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form_set show">
-                                    <div class="ebform_label">부서명</div>
-                                    <div class="form_pack" id="dpt_input">
-                                        <div class="input_pack">
-                                            <input type="text" class="ebinput" placeholder="입력" title="부서명" value="" name="dptNm" id="dptNm">
-                                            <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
-                                <div class="form_set show" id="joindt_div">
-                                    <div class="ebform_label">입사일시</div>
-                                    <div class="form_pack">
-                                        <div class="input_pack" role="button" aria-label="입사일시" onclick="comm.fnDatePicker('cofcEncmDt');">
-                                            <input type="text" id="cofcEncmDt" name="cofcEncmDt" class="ebinput" aria-hidden="true" data-date="trigger" placeholder="입사년월일" title="입사일시" readonly="readonly" />
-                                            <button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
-                                <div class="form_set show input_vdt" id="annincome_div">
-                                    <div class="ebform_label">연소득</div>
-                                    <div class="form_pack" id="annincome_input">
-                                        <div class="input_pack ty_word2">
-                                            <input type="tel" id="annincome" name="lastAnlicAmt" class="ebinput" title="연소득" placeholder="입력" value="">
-                                            <span class="unit">만원</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //2022-04-01 수정 : input type 수정 -->
-                            <!-- //임직원으로 접근 시 노출 -->
-                        </c:if>
+                        </div>
+                        <!-- //2022-04-01 수정 : input type 수정 -->
+                        <!-- //임직원으로 접근 시 노출 -->
+                    </c:if>
     
                     
                     

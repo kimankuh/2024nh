@@ -49,15 +49,15 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container product_info"><!-- 2024-09-23 2024고도화 : 상품소개 구분 class product_info 추가 -->
 
 		<!-- 컨텐츠 상단 타이틀영역 -->
 		<div class="subheader">
             <div class="subheader_area">
                 <div class="page_title_part">
                     <h2 class="ebtitle2">
-                        NH농협캐피탈<br> 개인신용대출
-                    </h2>
+                        NH농협캐피탈 개인신용대출
+                    </h2><!-- 2024-09-23 2024고도화 : br 제거 -->
                     <!-- 2022-05-03 수정 : 페이지 타이틀 수정 -->
                 </div>
             </div>
@@ -82,7 +82,7 @@
                                 </dl>
                                 <dl>
                                     <dt>최대 한도</dt>
-                                    <dd>	
+                                    <dd class="black"><!-- 2024-09-23 2024고도화 : black 클래스 추가 -->
                                         <span class="max">1.5억</span>원
                                         <!-- <%-- <span class="max">${limitContent[1]}</span>원 --%>퍼블리싱과 상이 -->
                                     </dd>
@@ -100,14 +100,62 @@
                                 </div>
                             </div>
                         </div>
-                        
-                         <div class="call_box">
+                        <!-- 2024-09-23 2024고도화 :삭제
+                        <div class="call_box">
                             <a href="tel:${result.consultContent}" class="ebbtn btn_text_link" title="전화 앱 화면으로 전환됩니다" role="button">
                                 <span class="ebicon icon_phone"></span>
                                 <span class="text">상담전화</span>
                                 <span class="tel">1644-3900</span>
                             </a>
-                        </div> 
+                        </div>
+                        -->
+
+                        <!-- 2024-09-23 2024고도화 : 수정및위치변경 -->
+                        <div class="intro_main">
+                            <div class="cont_box active">
+                                <div class="title_wrap">
+                                    <div class="title">직장인 고객</div>
+                                    <div class="desc">
+                                        <p>재직기간 1개월 이상인 직장인</p>
+                                        <p>신용 우수 고객 우대 (당사 내부 기준)</p>
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <img src="../../../resource/image/contents/cdln/img_cdln01.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="cont_box active">
+                                <div class="title_wrap">
+                                    <div class="title">
+                                        아파트(주택)를<br> 소유하신 고객
+                                    </div>
+                                    <div class="desc">
+                                        <p>본인/배우자 명의 아파트(주택)<br>
+                                            소유고객 연소득 증빙이 없이도<br>
+                                            신청 가능</p>
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <img src="../../../resource/image/contents/cdln/img_cdln02.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="cont_box active">
+                                <div class="title_wrap">
+                                    <div class="title">
+                                        간편하게 소액이<br> 필요한 고객
+                                    </div>
+                                    <div class="desc">
+                                        <p>직장인, 자영업자, <br>자유소득자, 주부 등</p>
+                                    </div>
+                                </div>
+                                <div class="img_box">
+                                    <img src="../../../resource/image/contents/cdln/img_cdln03.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //2024-09-23 2024고도화 : 수정및위치변경 -->
     
                     </div>
     
@@ -126,96 +174,86 @@
                         <ul class="ebtab_content">
                             <li class="active">
     
-                                <div class="intro_part">
-                                    <div class="intro_main">
-    
-                                        <div class="cont_box">
-                                            <div class="img_box">
-                                                <img
-                                                    src="/resource/mobile/image/contents/cdln/img_cdln01.png"
-                                                    alt="">
-                                            </div>
-    
-                                            <div class="title_wrap">
-                                                <div class="title">직장인 고객</div>
-                                                <div class="desc">
-                                                    <p>재직기간 1개월 이상인 직장인</p>
-                                                    <p>신용 우수 고객 우대 (당사 내부 기준)</p>
-                                                </div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="cont_box">
-                                            <div class="img_box">
-                                                <img
-                                                    src="/resource/mobile/image/contents/cdln/img_cdln02.png"
-                                                    alt="">
-                                            </div>
-    
-                                            <div class="title_wrap">
-                                                <div class="title">
-                                                    아파트(주택)를<br> 소유하신 고객
-                                                </div>
-                                                <div class="desc">
-                                                    <p>본인/배우자 명의 아파트(주택) 소유고객</p>
-                                                    <p>연소득 증빙이 없어도 신청 가능</p>
-                                                </div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="cont_box">
-                                            <div class="img_box">
-                                                <img
-                                                    src="/resource/mobile/image/contents/cdln/img_cdln03.png"
-                                                    alt="">
-                                            </div>
-    
-                                            <div class="title_wrap">
-                                                <div class="title">
-                                                    간편하게 소액이<br> 필요한 고객
-                                                </div>
-                                                <div class="desc">
-                                                    <p>직장인, 자영업자, 자유소득자, 주부 등</p>
-                                                </div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="layoutline_light"></div>
-                                        <c:set var="lowestContent"
-                                            value="${fn:split(result.limitContent, '~')}" />
-                                        <c:set var="maxIntrRateContent"
-                                            value="${fn:split(result.intrRateContent, '~')}" />
-    
-                                        <dl class="small_title_pack">
-                                            <dt>${(empty result.intrRateSubtitle) ? '금리' : result.intrRateSubtitle}</dt>
-                                            <dd><b>연 ${intrRateContent[0]} ~ ${maxIntrRateContent[1]}</b></dd>
-                                        </dl>
-    
-                                        <dl class="small_title_pack">
-                                            <dt>${(empty result.limitSubtitle) ? '한도' : result.limitSubtitle}</dt>
-                                            <dd>${lowestContent[0]}만원 ~ ${limitContent[1]}만원</dd>
-                                        </dl>
-                                        <dl class="small_title_pack">
-                                            <dt>${(empty result.periodSubtitle) ? '기간' : result.periodSubtitle}</dt>
-                                            <dd>${result.periodContent}개월</dd>
-                                        </dl>
-                                        <ul class="ebullet_circle">
-                                            <li>금리, 한도, 기간 등 대출조건은 고객의 신용평점,<br> (대출)금액 등에 따라 차등
-                                                적용됩니다.
-                                            </li>
-                                        </ul>
-                                        <!-- //2022-05-11 수정 : 안내문구 텍스트, 위치 변경 -->
-                                        <dl class="small_title_pack">
-                                            <dt>대상</dt>
-                                            <dd>개인, 개인사업자</dd>
-                                        </dl>
-                                        <!-- //2022-05-03 수정 : 안내내용 수정 -->
-    
-                                        <!-- <div class="base_date">2021년 10월 22일 기준</div> -->
-                                        <div class="base_date">${result.baseDateContent}</div><!-- 퍼블리싱과 상이 -->
-    
-                                    </div>
-                                </div>
+                                <div class="intro_part"><!-- 2024-09-23 2024고도화 : 클래스 변경 -->
+                                    <!-- 2024-09-23 2024고도화 : 디자인변경및위치변경 
+									<div class="cont_box active">
+										<div class="img_box">
+											<img src="../../../resource/image/contents/cdln/img_cdln01.png" alt="">
+										</div>
+
+										<div class="title_wrap">
+											<div class="title">직장인 고객</div>
+											<div class="desc">
+												<p>재직기간 1개월 이상인 직장인</p>
+												<p>신용 우수 고객 우대 (당사 내부 기준)</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="cont_box active">
+										<div class="img_box">
+											<img src="../../../resource/image/contents/cdln/img_cdln02.png" alt="">
+										</div>
+
+										<div class="title_wrap">
+											<div class="title">
+												아파트(주택)를<br> 소유하신 고객
+											</div>
+											<div class="desc">
+												<p>본인/배우자 명의 아파트(주택) 소유고객</p>
+												<p>연소득 증빙이 없어도 신청 가능</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="cont_box active">
+										<div class="img_box">
+											<img src="../../../resource/image/contents/cdln/img_cdln03.png" alt="">
+										</div>
+
+										<div class="title_wrap">
+											<div class="title">
+												간편하게 소액이<br> 필요한 고객
+											</div>
+											<div class="desc">
+												<p>직장인, 자영업자, 자유소득자, 주부 등</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="layoutline_light"></div>
+                                    -->
+									
+
+									<dl class="small_title_pack">
+										<dt>금리</dt>
+										<dd><b>연 6.6% ~  19.9%</b></dd>
+									</dl>
+
+									<dl class="small_title_pack">
+										<dt>한도</dt>
+										<dd>200만원  ~  1억 5,000만원</dd>
+									</dl>
+									<dl class="small_title_pack">
+										<dt>기간</dt>
+										<dd>12, 24, 36, 48, 60, 72, 84개월</dd>
+									</dl>
+									<ul class="ebullet_circle">
+										<li>금리, 한도, 기간 등 대출조건은 고객의 신용평점,<br> (대출)금액 등에 따라 차등
+											적용됩니다.</li>
+										<li>우수고객 대상자는 한도조회 시 별도 안내됩니다.</li>
+									</ul>
+									<!-- //2022-05-11 수정 : 안내문구 텍스트, 위치 변경 -->
+									<dl class="small_title_pack">
+										<dt>대상</dt>
+										<dd>개인, 개인사업자</dd>
+									</dl>
+									<!-- //2022-05-03 수정 : 안내내용 수정 -->
+
+									<!-- <div class="base_date">2021년 10월 22일 기준</div> -->
+									<div class="base_date">2024년 8월 30일 기준</div><!-- 퍼블리싱과 상이 -->
+
+								</div>
     
                             </li>
                             <li>
@@ -231,12 +269,12 @@
                                     </dl>
                                     <!-- 2022-05-04 수정 : 컨텐츠 내용 변경 -->
                                     <dl class="small_title_pack">
-                                        <dt>${(empty result.commisionSubtitle) ? '중도상환수수료율' : result.commisionSubtitle}</dt>
-                                        <dd>${(empty result.commisionContent) ? '&nbsp;' : result.commisionContent}</dd>
+                                        <dt>중도상환수수료율</dt>
+                                        <dd>2.0 %</dd>
                                         <dd>
-                                        <c:set var="comFormulaContent" value="${fn:split(result.comFormulaContent, '#@_@#')}" />
+                                        
                                             <div class="bullet_pack">
-                                                <div class="ebbullet_title02">${result.comFormulaSubtitle }</div>
+                                                <div class="ebbullet_title02">중도상환수수료 산식</div>
                                                 <div class="ebbullet_subtitle02">약정만기 1년이상</div>
                                                 <div class="ebbullet_text02">상환원금 X 1% + 상환원금 X
                                                     (중도상환수수료율 - 1%) X 잔존기간 / (대출기간-30일)</div>
@@ -245,7 +283,7 @@
                                                     상환원금 X 중도상환수수료율 X 잔존기간 / (대출기간 -30일)
                                                 </div>
                                                 <ul class="ebullet_circle ty_01">
-                                                    <li>30일 미만 상환 시 ‘대출 사용기간’을 30일로 간주. 중도상환수수료는 실제 대출사용기간에 따라 차등 적용</li>
+                                                    <li>30일 미만 상환 시 '대출 사용기간'을 30일로 간주. 중도상환수수료는 실제 대출사용기간에 따라 차등 적용</li>
                                                 </ul>
                                                 <ul class="ebullet_circle ty_01">
                                                     <li>대출실행일로부터 3년 이후 중도상환수수료 면제</li>
@@ -254,8 +292,12 @@
                                         </dd>
                                     </dl>
                                     <dl class="small_title_pack">
-                                        <dt>${(empty result.intrSubtitle) ? '연체이자율' : result.intrSubtitle}</dt>
-                                        <dd><b>${result.intrContent}</b></dd>
+                                      <dt>인지세</dt>
+                                      <dd>인지세는 대출거래 계약 체결시 대출금액에 따라 납부하는 세금으로, 7만원(대출금액 5천만원 초과) 또는 15만원(대출금액 1억원 초과)이 발생하며 이 중 고객은 50%를 부담합니다.</dd>
+                                    </dl>					                
+                                    <dl class="small_title_pack">
+                                        <dt>연체이자율</dt>
+                                        <dd><b>약정이율 + 최대 3% (단, 법정 최고금리 이내)</b></dd>
                                     </dl>
                                     <dl class="small_title_pack">
                                         <dt>필요서류</dt>
@@ -267,7 +309,7 @@
                                     </dl>
     
                                     <!-- <div class="base_date">2021년 10월 22일 기준</div> -->
-                                    <div class="base_date">${result.baseDateContent}</div><!-- 퍼블리싱과 상이 -->
+                                    <div class="base_date">2024년 8월 30일 기준</div><!-- 퍼블리싱과 상이 -->
                                     <!-- 2022-05-04 수정 : 컨텐츠 내용 변경 -->
     
                                 </div>
@@ -294,7 +336,8 @@
                             <!-- //2022-05-27 수정 : 문구수정 -->
                         <!-- //2022-05-03 수정 : 안내 유의사항 내용 수정 -->
                         <div class="sub_info">
-                            ※ <c:set var="deliberateMoContent" value="${fn:split(result.deliberateMoContent, '/')}" />${deliberateMoContent[0]} <br> ${deliberateMoContent[1]}
+                            ※ 여신금융협회 심의필 제2024-L1h-08061호<br>
+                            (2024.07.09 ~ 2025.07.08)
                         </div>
                     </div>
                     <!-- //2022-05-04 수정 : 컨텐츠 내용 변경 -->

@@ -506,7 +506,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebradio:disabled:hover { background-image: url('../image/component/radio_disabled.png'); }
 .ebradio:checked:disabled { background-image: url('../image/component/radio_checked_disabled.png'); cursor: default; }
 .ebradio:checked[disabled="disabled"] { background-image: url('../image/component/radio_checked_disabled.png'); cursor: default; }
-.ebradio:hover { background-image: url('../image/component/radio_hover.png'); }
+/* .ebradio:hover { background-image: url('../image/component/radio_hover.png'); } *//* 2024-09-24 2024고도화 : hover 삭제. 고객확인 */
 
 /* 라디오 + 라벨 */
 .radio_pack { position: relative; display: inline-block; vertical-align: middle; font-size: 0; }
@@ -532,7 +532,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebcheckbox[disabled="disabled"] { background-image: url('../image/component/checkbox_disabled.png'); cursor: default; }
 .ebcheckbox:checked:disabled { background-image: url('../image/component/checkbox_checked_disabled.png'); cursor: default; }
 .ebcheckbox:checked[disabled="disabled"] { background-image: url('../image/component/checkbox_checked_disabled.png'); cursor: default; }
-.ebcheckbox:hover { background-image: url('../image/component/checkbox_hover.png'); }
+/* .ebcheckbox:hover { background-image: url('../image/component/checkbox_hover.png'); } *//* 2024-09-24 2024고도화 : hover 삭제. 고객확인 */
 
 /* 체크박스 + 라벨 */
 .checkbox_pack { position: relative; display: inline-block; vertical-align: middle; font-size: 0; }

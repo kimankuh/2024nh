@@ -1,10 +1,11 @@
 @charset "utf-8";
 /* v1.0 | 2022-06-27 */
 
-
+@import url("ui_allonebank_override_song.css");/* 2024-09-23 2024고도화 : 송재연 only - 추후 취합 후 삭제 */
 
 /* 웹폰트 */
 /* NotoSansKR */
+/* 
 @font-face {
 	font-family: 'NotoSansKR';
 	src: url('../font/NotoSansKR/NotoSansKR-Regular.eot');
@@ -23,16 +24,9 @@
 	font-style: normal;
 	font-weight: 600;
 }
-
-/* 2024 Pretendard */
-/* @font-face {
-	font-family: 'Pretendard Variable';
-	font-weight: 45 920;
-	font-style: normal;
-	font-display: swap;
-	src: url('../font/Pretendard/variable/woff2/PretendardVariable.woff2') format('woff2-variations');
-} */
-
+*/
+/* 2024-09-23 2024고도화 : Pretendard로 폰트 교체*/
+/*
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 900;
@@ -113,17 +107,25 @@
 		url(../font/Pretendard/Pretendard-Thin.woff2) format('woff2'),
 		url(../font/Pretendard/Pretendard-Thin.woff) format('woff');
 }
-
+*/
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('../font/Pretendard/variable/woff2/PretendardVariable.woff2') format('woff2-variations');
+}
 
 /* reset override */
-html { font-size:62.5%; }
-body { font-family:  'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; font-size: 1.6rem; -webkit-text-size-adjust: none; }
-button, input, textarea, select, a { font-family: 'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; }
+html { font-size:62.5%; } 
+body { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum' !important; font-size: 1.6rem; -webkit-text-size-adjust: none; }
+button, input, textarea, select, a { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum' !important; }
 
 /* contents override */
-.header .header_area .header_title h2 { font-size: 1.7rem; }
-.ebtitle2 { font-family:  'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; font-size: 2.2rem; }
-.ebtitle3 { font-family:  'NotoSansKR', 'malgun gothic', 'sans-serif', 'dotum' !important; }
+/* 2024고도화 수정
+.header .header_area .header_title h2 { font-size: 1.7rem; }*/
+.ebtitle2 { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum' !important; font-size: 2.2rem; }
+.ebtitle3 { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum' !important; }
 
 /* footer */
 .call_part { position: relative; margin: -1px -25px 0; padding-top: 12px; text-align: center; font-size: 1.3rem; color: #707070; background: #f2f2f4; }
@@ -134,6 +136,9 @@ button, input, textarea, select, a { font-family: 'NotoSansKR', 'malgun gothic',
 .call_pack .ebbtn.btn_cscall .icon_cscall { margin-right: 0px; }
 .call_pack .ebbtn.btn_cscall .num { vertical-align: middle; font-size: 1.3rem; font-weight: normal; text-decoration: underline; }
 .call_pack .ebicon.icon_cscall { width: 17px; height: 17px; background: url('../image/contents/albk/icon_cscall.png') no-repeat center; background-size: 100%; }
+
+
+/* .checkbox_pack.ty_01 .ebcheckbox.chk_all_credit {width:2.4rem;height:2.4rem;background-image: url('../image/contents/albk/checkbox_check_rec_24x24.png');} */
 
 .accordion_pack.ty_data .accordion_title .ebbtn.btn_txt_golink { font-size: 1.8rem; }
 .accordion_pack.ty_data .accordion_title .info .titltxt { font-size: 1.6rem; }
@@ -165,3 +170,37 @@ button, input, textarea, select, a { font-family: 'NotoSansKR', 'malgun gothic',
 /* 장기렌터카 */
 .car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box.ty_02.active .ani.ani_8 .img_box { transition: none; }
 .car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box.ty_02.active .ani.ani_9 { opacity: 1; transition: none; }
+
+
+
+/* 2024-09-23 2024고도화 */
+.header .header_area .header_title h2 { font-size: 1.6rem; font-weight:600; color:#000;}
+.tab_pack.ty_normal .ebtab > li.active .ebbtn.btn_tab:after{background:#111;}
+
+.product_info .subheader{margin-top:2.4rem;}
+.product_info .inquiry_part{margin-top:1.2rem;}
+.product_info .intro_info_box .text{font-size:1.5rem; color:#505050;}
+.product_info .intro_info_box .text + .text{margin-top:1.2rem;}
+.product_info .intro_info_box dl{margin-bottom:0;}
+.product_info .intro_info_box dl dt{padding:0; font-weight:400; color:#505050; background:none;}
+.product_info .intro_info_box dl dd{position:relative; margin:0; font-size:3.6rem; font-weight:400; color:#00AC47;}
+.product_info .intro_info_box dl dd span{margin:0; font-size:3.6rem; font-weight:600; }
+.product_info .intro_info_box dl dd.black{color:#121212;}
+.product_info .intro_info_box dl + dl dd:before{content:"~"; display:block; position:absolute; top:0; left:-2.8rem; width:2.2rem; height:5rem;}
+.product_info .bgsimplediv .intro_btn_box{margin-top:3.6rem;}
+
+.product_info .loan_part.bgsimplediv{padding:0 2.4rem; background:none;}
+.product_info .loan_part .ebbtn.btn_main.ty_light{height:4.8rem; line-height:4.8rem; color:#121212; border-radius:1.2rem; border:1px solid #D3D3D3; background-color:#fff;}
+.product_info .loan_part .ebbtn.btn_main.ty_bg{height:4.8rem; line-height:4.8rem; color:#fff; border-radius:1.2rem; background-color:#00AC47;}
+
+.product_info .loan_part .intro_main{margin:3.6rem -24px 0}
+.product_info .loan_part .intro_main .cont_box{position:relative; padding:7.6rem; text-align:center; box-sizing:border-box;}
+.product_info .loan_part .intro_main .cont_box:nth-child(odd){background:#F6F6F6}
+.product_info .loan_part .intro_main .cont_box .img_box{display:inline-block; margin-top:3rem; width:15rem;}
+.product_info .loan_part .intro_main .cont_box .title_wrap{margin:0}
+.product_info .loan_part .intro_main .cont_box .title_wrap .title{line-height:3.4rem; font-size:2.4rem; font-weight:600; color:#121212;}
+.product_info .loan_part .intro_main .cont_box .title_wrap .desc{line-height:2.1rem; font-size:1.5rem; font-weight:400; color:#505050;}
+.product_info .loan_part .intro_main .cont_box .title_wrap .title + .desc{margin-top:1.6rem;}
+
+.product_info .intro_fixed_part .ebbtn.btn_main.ty_light{font-size:1.8rem; font-weight:500; color:#121212; border-radius:1.2rem; border:1px solid #D3D3D3; background-color:#fff;}
+.product_info .intro_fixed_part .ebbtn.btn_main.ty_bg{font-size:1.8rem; font-weight:500; color:#fff; border-radius:1.2rem; background-color:#00AC47;}
