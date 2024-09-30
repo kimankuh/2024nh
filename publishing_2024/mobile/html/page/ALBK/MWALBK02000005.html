@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>올원뱅크 - 신용대출 약관동의</title>
+	<title>신용대출 약관동의 | 올원뱅크</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -24,11 +24,12 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 <!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 	<div class="header">
 		<div class="header_area">
@@ -85,7 +86,7 @@
                 </div>
     
                 <div class="page_subtitle_part">
-                    <p><span class="name">${custNm}</span>님의 한도를 안내해드립니다.</p>
+                    <p><span class="name">김농협</span>님의 한도를 안내해드립니다.</p>
                 </div>
     
             </div>
@@ -98,11 +99,11 @@
                 <div class="result_data_part">
                     <div class="result_data_box">
                         <div class="title">대출가능한도</div>
-                        <div class="cost"><span class="value">${fn:substringBefore((lmtAmt/10000),".")}</span> <span class="unit">만원</span></div>
+                        <div class="cost"><span class="value">1,000</span> <span class="unit">만원</span></div>
                         <dl>
                             <dt>대출금리</dt>
                             <dd>
-                                <div class="info"><span class="value">${aplyIntr}</span> %</div>
+                                <div class="info"><span class="value">3.0</span> %</div>
                             </dd>
                         </dl>
                     </div>
@@ -115,7 +116,7 @@
                                 <div class="cont_box">
                                     <div class="cell">
                                         <div class="img_box">
-                                            <img src="/resource/mobile/image/icon/icon_nhcapital_app.png" alt="NH농협캐피탈 앱 이미지">
+                                            <img src="../../../resource/image/icon/icon_nhcapital_app.png" alt="NH농협캐피탈 앱 이미지"><!-- 2024-09-25 2024고도화 : 퍼블 기준 경로 -->
                                         </div>
                                     </div>
                                     <div class="cell">
@@ -135,7 +136,7 @@
                                 <div class="cont_box">
                                     <div class="cell">
                                         <div class="img_box">
-                                            <img src="/resource/mobile/image/icon/icon_nhcapital_app.png" alt="NH농협캐피탈 앱 이미지">
+                                            <img src="../../../resource/image/icon/icon_nhcapital_app.png" alt="NH농협캐피탈 앱 이미지"><!-- 2024-09-25 2024고도화 : 퍼블 기준 경로 -->
                                         </div>
                                     </div>
                                     <div class="cell">
@@ -176,6 +177,9 @@
 
 	</div>
 </div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
 
 <script>
 	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>NH농협캐피탈</title>
+	<title>메인 | NH농협캐피탈</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -24,29 +24,26 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 <!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
-	<div class="header">
+	<div class="header main"><!-- 2024-09-25 2024고도화 : 메인 헤더 > 클래스 추가 '.main' -->
 		<div class="header_area">
-
 			<div class="header_back">
-				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+				<a href="#none" class="ebbtn btn_header_back" title="뒤로가기"></a>
 			</div>
-
 			<!-- 2022-06-10 수정 : 헤더 타이틀, 홈버튼 추가 -->
 			<div class="header_title">
 				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
 			</div>
-
 			<div class="header_home">
 				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
 			</div>
 			<!-- //2022-06-10 수정 : 헤더 타이틀, 홈버튼 추가 -->
-
 		</div>
 	</div>
 
@@ -56,7 +53,8 @@
 		<div class="subheader">
 			<div class="subheader_area">
 				<div class="page_title_part">
-					<h2 class="ebtitle2">NH농협캐피탈은 <br/>농협의 신뢰로 함께합니다.</h2>
+					<h2 class="ebtitle2">NH농협캐피탈</h2><!-- 2024-09-25 2024고도화 : 문구 수정 -->
+					<!-- <h2 class="ebtitle2">NH농협캐피탈은 <br/>농협의 신뢰로 함께합니다.</h2> -->
 				</div>
 				<div class="page_subtitle_part">
 					<p>
@@ -72,15 +70,14 @@
 
 				<div class="allonebg_part">
 					<div class="img_box">
-						<img src="../../../resource/image/contents/albk/img_allonebankbg.png" alt="">
+						<img src="../../../resource/image/contents/albk/img_allonebankbg_02.png" alt=""><!--2024-09-25 2024고도화 : 이미지 변경 -->
 					</div>
 				</div>
 
 				<div class="inquiry_part">
-
 					<div class="inquiry_select_part borderdiv02">
 						<div class="form_pack">
-							<div class="select_pack ty_noborder" data-ui="customSelect">
+							<div class="select_pack" data-ui="customSelect"><!-- 2024-09-25 2024고도화 : 클래스 삭제 '.ty_noborder' -->
 								<select class="ebselect" data-placeholder="개인/사업자 선택" title="상품 구분">
 								<option value="option1">개인</option>
 								<option value="option2">사업자이름1 노출</option>
@@ -102,7 +99,7 @@
 							<div class="utility_pack">
 								<ul>
 									<li>
-										<a href="#" class="ebbtn btn_multicase">
+										<a href="#none" class="ebbtn btn_multicase">
 											<span class="title">한도조회</span>
 											<span class="desc"><!-- 2022-06-13 수정 : 텍스트수정 -->
 												고객님의 신용평점에 영향을 주지 않습니다.
@@ -110,14 +107,13 @@
 										</a>
 									</li>
 									<li>
-										<a href="#" class="ebbtn btn_multicase">
+										<a href="#none" class="ebbtn btn_multicase">
 											<span class="title">대출신청</span>
 											<span class="desc"><!-- 2022-06-13 수정 : 텍스트수정 -->
 												한도조회부터 대출신청까지 진행하기
 											</span>
 										</a>
 									</li>
-
 								</ul>
 							</div>
 						</div>
@@ -128,31 +124,30 @@
 						<!-- 상품 슬라이드 -->
 						<div class="allonebk_slider">
 							<div class="swiper-container">
-
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<div class="product_banner ty_credit">
-											<a href="#" class="ebbtn btn_chkprod">
+											<a href="#none" class="ebbtn btn_chkprod">
 												<dl>
 													<dt>개인신용대출</dt>
-													<dd>원리금균등상환으로 안정적인 머니플랜!</dd>
+													<dd>원리금균등상환으로 안정적인<br/>머니플랜!</dd><!-- 2024-09-26 2024고도화 : 줄바꿈 -->
 												</dl>
 											</a>
 										</div>
 									</div>
 									<div class="swiper-slide">
 										<div class="product_banner ty_autolease">
-											<a href="#" class="ebbtn btn_chkprod">
+											<a href="#none" class="ebbtn btn_chkprod">
 												<dl>
 													<dt>오토리스</dt>
-													<dd>구매와 임대를 복합적으로 선택할 수 있는!</dd>
+													<dd>구매와 임대를 복합적으로<br/>선택할 수 있는!</dd><!-- 2024-09-26 2024고도화 : 줄바꿈 -->
 												</dl>
 											</a>
 										</div>
 									</div>
 									<div class="swiper-slide">
 										<div class="product_banner ty_rentcar">
-											<a href="#" class="ebbtn btn_chkprod">
+											<a href="#none" class="ebbtn btn_chkprod">
 												<dl>
 													<dt>장기렌터카</dt>
 													<dd>맞춤형 장기렌터카 프로그램!</dd>
@@ -161,56 +156,62 @@
 										</div>
 									</div>
 								</div>
-								<div class="swiper-pagination">
+								<div class="swiper-pagination"></div>
+								<div class="swiper-toggle">
+									<button type="button" aria-label="재생" class="swiper-toggle-button ebbtn play"></button>
+									<button type="button" aria-label="정지" class="swiper-toggle-button ebbtn stop"></button>
 								</div>
-
 							</div>
 						</div>
 						<!-- //상품 슬라이드 -->
 
-
-						<ul class="linklist_pack">
-							<li>
-								<button type="button" class="ebbtn btn_pagelink">
-									<span class="iconbox">
-										<span class="ebicon icon_useguide"></span>
-									</span>
-									<span class="text">
-										<span class="ttl">이용안내</span>
-										<span class="etc">한도 및 대출 신청에 대한 안내</span>
-									</span>
-								</button>
-							</li>
-							<li>
-								<button type="button" class="ebbtn btn_pagelink">
-									<span class="iconbox">
-										<span class="ebicon icon_consult"></span>
-									</span>
-									<span class="text">
-										<span class="ttl">상담신청</span>
-										<span class="etc">NH농협캐피탈에서 답변해 드립니다.</span>
-									</span>
-								</button>
-							</li>
-						</ul>
-
+						<!-- 2024-09-26 2024고도화 : 마크업 변경. 'div.linklist_pack_box' 구조 및 타이틀 추가 -->
+						<div class="linklist_pack_box">
+							<h3 class="ebtitle3">고객센터</h3>
+							<ul class="linklist_pack">
+								<li>
+									<button type="button" class="ebbtn btn_pagelink">
+										<span class="iconbox">
+											<span class="ebicon icon_useguide"></span>
+										</span>
+										<span class="text">
+											<span class="ttl">이용안내</span>
+											<span class="etc">한도 및 대출 신청에 대한 안내</span>
+										</span>
+									</button>
+								</li>
+								<li>
+									<button type="button" class="ebbtn btn_pagelink">
+										<span class="iconbox">
+											<span class="ebicon icon_consult"></span>
+										</span>
+										<span class="text">
+											<span class="ttl">상담신청</span>
+											<span class="etc">NH농협캐피탈에서 답변해 드립니다.</span>
+										</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<!-- // 2024-09-26 2024고도화 : 마크업 변경. 'div.linklist_pack_box' 구조 및 타이틀 추가 -->
 					</div>
 
-					<div class="layoutline nopad"></div>
+					<!-- <div class="layoutline nopad"></div> --><!-- 2024-09-26 2024고도화 : divider 삭제 -->
 
 					<div class="toapp">
-						<a href="#" class="ebbtn btn_toapp">
-							<span class="ebicon">
+						<a href="#none" class="ebbtn btn_toapp">
+							<!-- 2024-09-26 2024고도화 : 아이콘 삭제 -->
+							<!-- <span class="ebicon">
 								<img src="../../../resource/image/contents/albk/icon_applogo.png" alt="NH농협캐피탈 앱 아이콘">
-							</span>
+							</span> -->
 							<span class="text">
-								<span class="ttl">언제나 어디서나 손쉽고 편리하게!</span>
+								<span class="ttl">언제나 어디서나<br/>손쉽고 편리하게!</span><!-- 2024-09-26 2024고도화 : 줄바꿈 -->
 								<span class="etc">앱으로 이동</span>
 							</span>
 						</a>
 					</div>
 
-					<div class="layoutline nopad"></div>
+					<!-- <div class="layoutline nopad"></div> --><!-- 2024-09-26 2024고도화 : divider 삭제 -->
 
 					<div class="call_part">
 						<p>해당 서비스는 <span>NH농협캐피탈</span>에서 제공합니다.</p>
@@ -224,12 +225,7 @@
 						</div>
 					</div>
 					<!-- //올원뱅크일 경우만 노출 -->
-
-
-
-
 				</div>
-
 
 				<!-- 2022-06-17 수정 : 금융그룹홈 버튼 추가 -->
 				<div class="home-link-move">
@@ -237,8 +233,6 @@
 					<a href="#none" class="home-link"><span class="visualhide">계열사 메인 페이지로 이동</span></a>
 				</div>
 				<!-- //2022-06-17 수정 : 금융그룹홈 버튼 추가 -->
-
-
 			</div>
 		</div>
 		<!-- //여기까지 컨텐츠 -->
@@ -246,6 +240,8 @@
 	</div>
 </div>
 <!-- //2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
 
 <script>
 	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
@@ -256,7 +252,5 @@
 	alloneSwiper();
 </script>
 
-
 </body>
-
 </html>

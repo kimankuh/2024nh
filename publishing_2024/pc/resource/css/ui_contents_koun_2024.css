@@ -194,6 +194,27 @@
 
 .renewal_2024 .contents_area.product_info.regular_lease .otfn_part ~ .intro_part .intro_main .title_wrap{width:630px; padding-left:50px; box-sizing:border-box;}
 
+.renewal_2024 .contents_area.product_info.stock_loan .ebicon.icon_terms_agree{background: url('../image/icon/icon_terms_agree_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.stock_loan .ebicon.icon_account{background: url('../image/icon/icon_account_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.stock_loan .ebicon.icon_limit{background: url('../image/icon/icon_limit_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.stock_loan .ebicon.icon_paper{background: url('../image/icon/icon_paper_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.stock_loan .ebicon.icon_loan{background: url('../image/icon/icon_loan_02.png') no-repeat center/contain;}
+
+.renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_cs {background: url('../image/icon/icon_cs_02.png') no-repeat center/contain; }
+.renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_call{background: url('../image/icon/icon_call_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_limit{background: url('../image/icon/icon_limit_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_paper{background: url('../image/icon/icon_paper_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_carry{background: url('../image/icon/icon_carry_02.png') no-repeat center/contain;}
+
+.renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_calc {background: url('../image/icon/icon_calc_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_cs {background: url('../image/icon/icon_cs_02.png') no-repeat center/contain; }
+.renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_limit{background: url('../image/icon/icon_limit_03.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_paper{background: url('../image/icon/icon_paper_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_car01 {background: url('../image/icon/icon_car01_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_check {background: url('../image/icon/icon_check_02.png') no-repeat center/contain; }
+
+
+
 /* 마이페이지 > 개인신용대출 진행 현황 */
 .renewal_2024 .section_bdonly_box{padding:50px 60px 60px 60px; border:1px solid #303030; border-radius:10px; background:url(../image/contents/mypg/bg_progress.png) no-repeat right 60px center}
 .renewal_2024 .section_bdonly_box .product_name {font-size:28px;font-weight:700;}

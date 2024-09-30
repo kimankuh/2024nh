@@ -140,7 +140,7 @@
 .renewal_2024 .product_info .accordion_pack.ty_boxing .txt_box .tit + .txt{margin-top:8px;}
 .renewal_2024 .product_info .accordion_pack.ty_boxing .base_date{margin-top:24px;}
 .renewal_2024 .product_info .accordion_pack.ty_boxing .img_area{margin-top:20px;}
-.renewal_2024 .product_info .accordion_pack.ty_boxing .img_area .img_tit{font-size:13px; font-weight:700; text-align:center;}
+.renewal_2024 .product_info .accordion_pack.ty_boxing .img_area .img_tit{position:absolute; top:-999px; left:-999px; font-size:0; line-height:0; font-weight:700; text-align:center;}
 .renewal_2024 .product_info .accordion_pack.ty_boxing .img{max-width:400px; margin:12px auto 0;}
 .renewal_2024 .product_info .accordion_pack.ty_boxing.active{box-shadow:none;}
 .renewal_2024 .product_info .accordion_pack.ty_boxing.active .accordion_title .control .ebbtn.btn_accordion{transform: rotate(180deg);}
@@ -243,6 +243,18 @@
 .renewal_2024 .product_info.regular_lease .icon_list > li.item06:before{background:url(../image/contents/otfn/icon_paper06.png) no-repeat 0 0; background-size:100% auto;}
 .renewal_2024 .product_info.regular_lease .icon_list > li.item07:before{background:url(../image/contents/otfn/icon_paper07.png) no-repeat 0 0; background-size:100% auto;}
 
+.renewal_2024 .product_info.stock_loan .process_list > li.step01 .process_box{background:#fff url(../image/contents/stln/icon_process01.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.stock_loan .process_list > li.step02 .process_box{background:#fff url(../image/contents/stln/icon_process02.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.stock_loan .process_list > li.step03 .process_box{background:#fff url(../image/contents/stln/icon_process03.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.stock_loan .process_list > li.step04 .process_box{background:#fff url(../image/contents/stln/icon_process04.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.stock_loan .process_list > li.step05 .process_box{background:#fff url(../image/contents/stln/icon_process05.png) no-repeat center right 20px; background-size:28px auto;}
+
+.renewal_2024 .product_info.car_rental .process_list > li.step01 .process_box{background:#fff url(../image/contents/car/icon_process01.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_rental .process_list > li.step02 .process_box{background:#fff url(../image/contents/car/icon_process02.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_rental .process_list > li.step03 .process_box{background:#fff url(../image/contents/car/icon_process03.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_rental .process_list > li.step04 .process_box{background:#fff url(../image/contents/car/icon_process04.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_rental .process_list > li.step05 .process_box{background:#fff url(../image/contents/car/icon_process05.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_rental .process_list > li.step06 .process_box{background:#fff url(../image/contents/car/icon_process06.png) no-repeat center right 20px; background-size:28px auto;}
 
 /* 공통 > 가입유도 팝업 */
 .renewal_2024.modal_popup.ty_popup .popup_layout .popup_header{text-align:left;}

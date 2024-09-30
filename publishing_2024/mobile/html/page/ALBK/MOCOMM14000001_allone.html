@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>[ALBK]직작검색_직장명 | NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	
+	<!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css -->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"></div><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <h3 class="ebtitle3">직장 검색</h3>
+                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+
+                    <div class="fixed_tab_part">
+                        <div class="tab_pack ty_search">
+                            <div class="tab_scroll">
+                                <ul class="ebtab">
+                                    <li class="active">
+                                        <button type="button" class="ebbtn btn_tab">직장명</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="ebbtn btn_tab">사업자번호</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="ebbtn btn_tab">직장명+대표명</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent_pack">
+                        <ul class="ebtab_content">
+                            <li class="active">
+
+                                <div class="fixed_part">
+                                    <div class="input_pack ty_search">
+                                        <input type="text" class="ebinput" placeholder="직장명을 검색해주세요." value="" title="직장명검색">
+                                        <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                        <button type="button" class="ebbtn btn_input_search" title="검색"></button>
+                                    </div>
+                                </div>
+
+                                <div class="scroll_part">
+                                    <!-- 최초진입했을 경우 -->
+                                    <div class="search_guide_part">
+                                        <div class="bullet_pack">
+                                            <div class="ebbullet_title">직장명을 찾으실 때 참고해주세요</div><!-- 2024-09-10 2024고도화 : 문구 개선 -->
+                                            <ul class="ebullet_circle">
+                                                <li>
+                                                    <p>직장명에 영문이 포함되어 있을 경우<br> 아래 예시처럼 영문과 한글 모두 검색해주세요.</p>
+                                                    <p class="color02">예) NH농협캐피탈 > NH농협캐피탈, 엔에이치농협캐피탈</p><!-- 2024-09-24 2024고도화 : 문구 수정 -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- //최초진입했을 경우 -->
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

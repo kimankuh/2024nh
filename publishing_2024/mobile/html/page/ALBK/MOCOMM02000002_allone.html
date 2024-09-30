@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>[ALBK]휴대폰본인확인서비스동의 | NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	
+	<!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css -->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">휴대폰 본인확인 서비스 동의</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+        <!-- 컨텐츠 상단 타이틀영역 -->
+        <div class="subheader">
+            <div class="subheader_area">
+
+                <div class="step_part">
+                    <div class="step_pack">
+                        <ol>
+                            <li class="active"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+                                <span class="num">1</span>
+                                <span class="txt">step1</span>
+                            </li>
+                            <li>
+                                <span class="num">2</span>
+                                <span class="txt">step2</span>
+                            </li>
+                            <li>
+                                <span class="num">3</span>
+                                <span class="txt">step3</span>
+                            </li>
+                            <li>
+                                <span class="num">4</span>
+                                <span class="txt">step4</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="progress_pack">
+                        <ul>
+                            <li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="page_title_part">
+                    <h2 class="ebtitle2">휴대폰 본인확인<br> 서비스 동의</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+
+                <div class="term_part">
+
+                    <div class="term_pack">
+                        <div class="total_agree">
+                            <div class="checkbox_pack ty_01">
+                                <input type="checkbox" class="ebcheckbox" id="chk0_0">
+                                <label for="chk0_0" class="eblabel">전체동의</label>
+                            </div>
+                        </div>
+
+                        <div class="detail_agree">
+                            <ul>
+                                <li>
+                                    <div class="detail_title">
+                                        <div class="checkbox_pack">
+                                            <input type="checkbox" class="ebcheckbox" id="chk1_0">
+                                            <label for="chk1_0" class="eblabel">개인정보 이용/제공 동의</label>
+                                        </div>
+                                        <button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="detail_title">
+                                        <div class="checkbox_pack">
+                                            <input type="checkbox" class="ebcheckbox" id="chk2_0">
+                                            <label for="chk2_0" class="eblabel">본인확인서비스 이용약관 동의</label>
+                                        </div>
+                                        <button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="detail_title">
+                                        <div class="checkbox_pack">
+                                            <input type="checkbox" class="ebcheckbox" id="chk3_0">
+                                            <label for="chk3_0" class="eblabel">고유식별정보 처리동의</label>
+                                        </div>
+                                        <button type="button" class="ebbtn btn_agree_detail" title="상세보기"></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="form_next_box show"><!-- 버튼 활성화시 addclass="show" -->
+                        <button type="button" class="ebbtn btn_arrow"><span>인증번호 요청</span></button>
+                    </div>
+                </div>
+
+
+
+
+			</div>
+		</div>
+        <!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+        <div class="contents_bottom_area">
+            <div class="bottom_arrow_box">
+                <button type="button" class="ebbtn btn_txt_arrow">다른 방법으로 인증하기</button>
+            </div>
+		</div>
+
+	</div>
+</div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+
+</body>
+</html>
