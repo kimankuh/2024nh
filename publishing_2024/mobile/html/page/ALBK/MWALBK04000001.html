@@ -24,11 +24,12 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 <!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 	<div class="header">
 		<div class="header_area">
@@ -38,7 +39,7 @@
 			</div>
 
 			<div class="header_title">
-				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+				<h2 class="ebtitle2 showdefault">NH농협캐피탈 장기렌터카</h2><!-- 2024-09-25 2024고도화 : 문구수정 -->
 			</div>
 
 			<div class="header_home">
@@ -47,7 +48,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container product_info"><!-- 2024-09-25 2024고도화 : 상품소개 구분 class product_info 추가 -->
 
 		<!-- 컨텐츠 상단 타이틀영역 -->
 	<div class="subheader">
@@ -63,30 +64,37 @@
 	<div class="contents_area">
 		<div class="contents">
 
-			<input type="hidden" id="enterType" name="enterType" value="${menu}"
-				data-mid="${mid}" />
-
 			<!-- 2022-05-04 수정 : 버튼명변경 및 컨텐츠 내용 변경 -->
 			<div class="inquiry_part">
 				<div class="car_part bgsimplediv">
 
 					<div class="intro_info_box">
-						<div class="text">맞춤형 장기렌터카 프로그램으로 저렴한 렌탈료, 초기비용 부담 절감, 간편한
-							유지 및 관리</div>
+						<div class="text">맞춤형 장기렌터카 프로그램으로 저렴한 렌탈료, 초기 비용 부담 절감, 간단한 유지 및 관리</div>
+						<!-- 2024-09-25 2024고도화 : 마크업 변경
 						<div class="icon_text">
 							<span class="ebicon icon_checklist"></span> <span class="text">만기반납
 								/ 인수 / 재렌트 선택 가능!</span>
-							<!-- 2022-05-13 수정 : 띄어쓰기 수정 -->
+							// 2022-05-13 수정 : 띄어쓰기 수정 
 						</div>
 						<div class="icon_text">
 							<span class="ebicon icon_checklist"></span> <span class="text">임대상품으로
 								신용평점 하락 걱정 NO!</span>
-							<!-- 2022-05-27 수정 : 문구수정 -->
+							// 2022-05-27 수정 : 문구수정 
 						</div>
 						<div class="icon_text">
 							<span class="ebicon icon_checklist"></span> <span class="text">렌터카사
 								보험관리로 사고에 따른 요율상향 걱정 NO!</span>
 						</div>
+						-->
+						<div class="data">
+							<dl>
+								<dt>계약기간</dt>
+								<dd>
+									<span class="max">60</span>개월(최장)
+								</dd>
+							</dl>
+						</div>
+						<!-- //2024-09-25 2024고도화 : 마크업 변경 -->
 					</div>
 
 					<div class="intro_btn_box">
@@ -99,6 +107,34 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- 2024-09-25 2024고도화 : 수정및위치변경 -->
+					<div class="intro_main">
+						<div class="title_wrap">
+							<div class="title">
+								내차처럼 부담없이<br>
+								이용, 비용절감에<br>
+								다양한 혜택까지
+							</div>
+						</div>
+						<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+						<div class="img_wrap widediv">
+							<div class="loan_img_box">
+								<div class="imgani_box ty_02">
+									<div class="imgframe_box">
+										<div class="ani ani_8">
+											<span class="img_box"> <img
+												src="../../../resource/image/contents/car/intro_car04.png"
+												alt="">
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+					</div>
+					<!-- //2024-09-25 2024고도화 : 수정및위치변경 -->
 				</div>
 
 				<div class="tab_pack ty_normal" data-module-id="introlongcartab">
@@ -117,6 +153,7 @@
 						<li class="active">
 
 							<div class="intro_part">
+								<!-- 2024-09-25 2024고도화 : 디자인변경및위치변경 
 								<div class="intro_main">
 
 									<div class="title_wrap">
@@ -124,7 +161,7 @@
 											내차처럼 부담없이 이용,<br> 비용절감에 다양한 혜택까지
 										</div>
 									</div>
-									<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+									// 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 
 									<div class="img_wrap widediv">
 										<div class="loan_img_box">
 											<div class="imgani_box ty_02">
@@ -145,11 +182,9 @@
 											</div>
 										</div>
 									</div>
-									<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
-
-
-
+									 //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 
 								</div>
+								-->
 
 								<!-- 2022-04-28 수정 : sb현행화에 따른 내용 수정 -->
 								<div class="loan_info_part">
@@ -207,10 +242,6 @@
 						<li>
 
 							<div class="intro_part">
-								<c:set var="periodContent"
-									value="${fn:split(productInfo.periodContent, '#@_@#')}" />
-								<c:set var="commisionContent"
-									value="${fn:split(productInfo.commisionContent, '#@_@#')}" />
 								<dl class="small_title_pack">
 									<dt>취급차종</dt>
 									<dd>국산신차 (승용 및 12인승 이하 승합차)</dd>
@@ -399,6 +430,9 @@
 
 	</div>
 </div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
 
 <script>
 	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>올원뱅크 - 신용대출 약관동의</title>
+	<title>올원뱅크 - 자동차리스 상품소개</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -24,11 +24,12 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 <!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 	<div class="header">
 		<div class="header_area">
@@ -38,7 +39,7 @@
 			</div>
 
 			<div class="header_title">
-				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
+				<h2 class="ebtitle2 showdefault">자동차 리스</h2><!-- 2024-09-25 2024고도화 : 문구수정 -->
 			</div>
 
 			<div class="header_home">
@@ -47,7 +48,7 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container product_info"><!-- 2024-09-25 2024고도화 : 상품소개 구분 class product_info 추가 -->
 
 		<!-- 컨텐츠 상단 타이틀영역 -->
 	<div class="subheader">
@@ -63,22 +64,17 @@
 	<div class="contents_area">
 		<div class="contents">
 
-			<input type="hidden" id="enterType" name="enterType" value="${menu}"
-				data-mid="${mid}" />
-
 			<!-- 2022-05-04 수정 : 버튼명변경 및 컨텐츠 내용 변경 -->
 			<div class="inquiry_part">
 				<div class="car_part bgsimplediv">
 
 					<div class="intro_info_box">
-						<div class="text">구매와 임대를 복합적으로 선택할 수 있는 선진 자동차 금융상품으로써 고객이
-							원하는 차량을 각종 부대비용 및 편의서비스를 포함하여 매월 일정 리스료로 대여해 주는 상품입니다.</div>
+						<div class="text">구매와 임대 복합적으로 선택할 수 있는 선진 자동차 금융성품으로써 고객이 원하는 차량을 각종 부대비용 및 편의서비스를 포함하여 매월 일정 리스료로 대여해주는상품 입니다.</div>
 						<div class="data">
 							<dl>
-								<dt>${(empty productInfo.periodSubtitle) ? '리스 기간' : productInfo.periodSubtitle}</dt>
+								<dt>리스기간</dt>
 								<dd>
-									<c:set var="periodContent" value="${fn:split(productInfo.periodContent, ' ,')}"></c:set>
-									<span class="max"><c:forEach var="text" items="${periodContent }" varStatus="i"><c:if test="${i.last }">${text }</c:if></c:forEach></span>개월(최장)
+									<span class="max">60</span>개월(최장)
 								</dd>
 							</dl>
 						</div>
@@ -94,6 +90,45 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- 2024-09-25 2024고도화 : 수정및위치변경 -->
+					<div class="intro_main">
+
+						<div class="title_wrap">
+							<div class="title">
+								승용 신차 (국산/수입)<br> 15인승 이하 승합<br> 2.5톤 이하 화물
+							</div>
+							<div class="desc">자동차를 구입하고자 하는 개인, <br>개인사업자, 법인</div><!-- //2024-09-25 2024고도화 : br 추가 -->
+						</div>
+						<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+						<div class="img_wrap widediv">
+							<div class="loan_img_box">
+								<div class="imgani_box">
+									<div class="ani ani_1">
+										<span class="img_box"> <img
+											src="../../../resource/image/contents/car/intro_car01.png"
+											alt="승용 신차">
+										</span>
+									</div>
+									<div class="ani ani_2">
+										<span class="img_box"> <img
+											src="../../../resource/image/contents/car/intro_car02.png"
+											alt="15인승 이하 승합">
+										</span>
+									</div>
+									<div class="ani ani_3">
+										<span class="img_box"> <img
+											src="../../../resource/image/contents/car/intro_car03.png"
+											alt="2.5톤 이하 화물">
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+
+					</div>
+					<!-- //2024-09-25 2024고도화 : 수정및위치변경 -->
 				</div>
 
 				<div class="tab_pack ty_normal" data-module-id="introleasecartab">
@@ -112,6 +147,7 @@
 						<li class="active">
 
 							<div class="intro_part">
+								<!-- 2024-09-25 2024고도화 : 디자인변경및위치변경 
 								<div class="intro_main">
 
 									<div class="title_wrap">
@@ -120,46 +156,43 @@
 										</div>
 										<div class="desc">자동차를 구입하고자 하는 개인, 개인사업자, 법인</div>
 									</div>
-									<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+									//2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 
 									<div class="img_wrap widediv">
 										<div class="loan_img_box">
 											<div class="imgani_box">
 												<div class="ani ani_1">
 													<span class="img_box"> <img
-														src="/resource/mobile/image/contents/car/intro_car_ani3.png"
+														src="../../../resource/image/contents/car/intro_car_ani3.png"
 														alt="승용 신차">
 													</span>
 												</div>
 												<div class="ani ani_2">
 													<span class="img_box"> <img
-														src="/resource/mobile/image/contents/car/intro_car_ani2.png"
+														src="../../../resource/image/contents/car/intro_car_ani2.png"
 														alt="15인승 이하 승합">
 													</span>
 												</div>
 												<div class="ani ani_3">
 													<span class="img_box"> <img
-														src="/resource/mobile/image/contents/car/intro_car_ani1.png"
+														src="../../../resource/image/contents/car/intro_car_ani1.png"
 														alt="2.5톤 이하 화물">
 													</span>
 												</div>
 											</div>
 										</div>
 									</div>
-									<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
-
 								</div>
 
 								<div class="layoutline_light"></div>
-
+								-->
 								<dl class="small_title_pack">
 									<dt>종료 후 처리</dt>
 									<dd>- 운용리스 : 인수, 반납 또는 재리스 중 선택</dd>
 									<dd>- 금융리스 : 인수</dd>
 								</dl>
 								<dl class="small_title_pack">
-									<dt>${(empty productInfo.periodSubtitle) ? '리스기간' : productInfo.periodSubtitle}</dt>
-									<!-- 										<dd>18, 24, 36, 44, 48, 60 개월</dd> -->
-									<dd>${productInfo.periodContent}개월</dd>
+									<dt>리스기간</dt>
+									<dd>12, 24, 36, 48, 60개월</dd>
 								</dl>
 								<div class="loan_info_part">
 									<div class="loan_info_pack">
@@ -201,7 +234,7 @@
 								</div>
 
 								<!-- 									<div class="base_date">2021년 07월 01일 기준</div>2022-04-28 수정 : 기준날짜 수정 -->
-								<div class="base_date">${productInfo.baseDateContent}</div>
+								<div class="base_date">2022년 06월 28일 기준</div>
 							</div>
 
 						</li>
@@ -219,8 +252,8 @@
 								</dl>
 								<dl class="small_title_pack">
 									<dt><b>연체이자율</b></dt>
-									<dd>- <b>${fn:split(productInfo.intrContent, '#@_@#')[0]}</b></dd>
-									<dd>- <b>${fn:split(productInfo.intrContent, '#@_@#')[1]}</b></dd>
+									<dd>- <b>운용리스 : 19%</b></dd>
+									<dd>- <b>금융리스 : 약정이율 + 최대 3%(단, 법정 최고금리 이내)</b></dd>
 									<dd>
 										<div class="bullet_pack">
 											<ul class="ebullet_circle">
@@ -320,7 +353,7 @@
 											<div class="img_group">
 												<div class="img_box">
 													<img
-														src="/resource/mobile/image/contents/car/intro_newcar01.png"
+														src="../../../resource/image/contents/car/intro_newcar01.png"
 														alt="1개월, 2개월, 3개월부터 만기일자까지 원금+이자를 매월 일정하게 납부하세요.">
 												</div>
 											</div>
@@ -336,7 +369,7 @@
 											<div class="img_group">
 												<div class="img_box">
 													<img
-														src="/resource/mobile/image/contents/car/intro_leasecar01.png"
+														src="../../../resource/image/contents/car/intro_leasecar01.png"
 														alt="할부 및 현금 구입일 경우는 차량가격과 차량등록비용, 자동차세를 합산한 가격입니다.
 														자동차리스 이용인 경우에는 전체 금액에서 잔존가치를 제외한 금액이 리스료(지불총액)입니다.
 														예시로 일시불 또는 할부 구입 시 지불 총액이 오천 만원일 경우(그림A)에 자동차리스를 이용하는 경우에는 리스료 지불총액이 이천오백만원(그림B)이며 잔존가치 이천오백만원(그림C)를 제외한 예시입니다"> 
@@ -369,7 +402,7 @@
 											<div class="img_group">
 												<div class="img_box">
 													<img
-														src="/resource/mobile/image/contents/car/intro_leasecar02.png"
+														src="../../../resource/image/contents/car/intro_leasecar02.png"
 														alt="할부 및 현금 구입일 경우는불입금액만 존재하며, 지동자리스이용 시에는 불입금액과 잔존가치가 있습니다. 이에 리스 종료 시에는 중고차 가치와 잔존가치를 비교하게 됩니다.(그림A) 비교를 한 결과 중고차시세가 잔존가치보다  높을 시 매입을 선택할 수 있으며(재무상태를 고려하여 잔존가치에 대해서 재 리스 가능), 중고차시세가 잔존가치 보다 낮을 시 반납을 선택하게 됩니다.(그림B)"> 
 														<!-- <span class="hidden_txt"> 할부 및 현급 구입
 														- 불입금액, 자동차리스 이용 - 불입금액, 잔존가치 - 신차가격, 중고차 시세A, 중고차 시세B A
@@ -388,7 +421,7 @@
 								</dl>
 
 								<!-- 									<div class="base_date">2021년 07월 01일 기준</div>2022-04-28 수정 : 기준날짜 수정 -->
-								<div class="base_date">${productInfo.baseDateContent}</div>
+								<div class="base_date">2022년 06월 28일 기준</div>
 
 							</div>
 
@@ -411,7 +444,7 @@
 						<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품 또는 서비스에 대하여 설명을 받을 권리가 있습니다.</li>
 					</ul>
 					<div class="sub_info" id="deliberation">
-						※ ${fn:split(productInfo.deliberateMoContent, '#@_@#')[0]}<br>${fn:split(productInfo.deliberateMoContent, '#@_@#')[1]}
+						※ 여신금융협회 심의필 제 2024 - C1h - 07319호 <br>(20204.06.24 ~ 2025.06.23 )
 					</div>
 				</div>
 
@@ -434,16 +467,16 @@
 
 	</div>
 
-	<input type="hidden" name="INTFLDCHN" value="${intfldchn}" />
-	<!-- 유입채널 매체 -->
-	<input type="hidden" name="INTFLDTYP" value="${intfldtyp}" />
 </div>
-	<input type="hidden" id="loadingType" name="loadingType" value="allone" />
+
 </div>
 <!-- //여기까지 컨텐츠 -->
 
 	</div>
 </div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
 
 <script>
 	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행

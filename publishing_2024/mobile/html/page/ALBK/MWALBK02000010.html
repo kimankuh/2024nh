@@ -24,11 +24,12 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 <!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 	<div class="header">
 		<div class="header_area">
@@ -56,7 +57,7 @@
                 <div class="step_part">
                     <div class="step_pack">
                         <ol>
-                            <li ><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+                            <li class="finish"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
                                 <span class="num">1</span>
                                 <span class="txt">step명</span>
                             </li>
@@ -73,8 +74,8 @@
 
                     <div class="progress_pack">
                         <ul>
-                            <li class="active"></li><!-- 현재 스텝에 addClass="active" -->
-                            <li></li>
+                            <li class="finish"></li><!-- 현재 스텝에 addClass="active" -->
+                            <li class="active"></li>
                             <li></li>
                         </ul>
                     </div>
@@ -137,12 +138,7 @@
                     <h3 class="ebtitle_medium">대출용도</h3>
                     <div  class="toggle_pack ty_linebreak hidPfcLoanPpcd">
                         <ul id="loan_usage">
-                            <c:forEach var="item" items="${pfcLoanPpCdList}" varStatus="status">
-                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
-                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
-                                </li>
-                            </c:forEach>
-                            <%-- <li class="active">
+                            <li class="active">
                                 <button type="button" class="ebbtn btn_toggle">가계자금</button>
                             </li>
                             <li>
@@ -159,7 +155,7 @@
                             </li>
                             <li>
                                 <button type="button" class="ebbtn btn_toggle">임차보증금</button>
-                            </li> --%>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -168,17 +164,12 @@
                     <h3 class="ebtitle_medium">보유자산</h3>
                     <div class="toggle_pack ty_linebreak hidPfcHoldAsetScalCd">
                         <ul id="assets">
-                            <c:forEach var="item" items="${pfcHoldAsetScalCdList}" varStatus="status">
-                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
-                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
-                                </li>
-                            </c:forEach>
-                            <%-- <li class="active">
+                            <li class="active">
                                 <button type="button" class="ebbtn btn_toggle">5억원 미만</button>
                             </li>
                             <li>
                                 <button type="button" class="ebbtn btn_toggle">5억원 이상</button>
-                            </li> --%>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -187,17 +178,12 @@
                     <h3 class="ebtitle_medium">연간소득</h3>
                     <div class="toggle_pack ty_linebreak hidPfcAnlicSecd">
                         <ul id="income_yearly">
-                            <c:forEach var="item" items="${pfcAnlicSecdList}" varStatus="status">
-                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
-                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
-                                </li>
-                            </c:forEach>
-                            <%-- <li class="active">
+                            <li class="active">
                                 <button type="button" class="ebbtn btn_toggle">5천만원 미만</button>
                             </li>
                             <li>
                                 <button type="button" class="ebbtn btn_toggle">5천만원 이상</button>
-                            </li> --%>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -206,11 +192,12 @@
                     <h3 class="ebtitle_medium">부채</h3>
                     <div  class="toggle_pack ty_linebreak hidPfcDebtSecd">
                         <ul id="liability">
-                            <c:forEach var="item" items="${pfcDebtSecdList}" varStatus="status">
-                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
-                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
-                                </li>
-                            </c:forEach>
+                            <li class="active">
+                                <button type="button" class="ebbtn btn_toggle">1억 미만</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">1억 이상</button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -219,11 +206,12 @@
                     <h3 class="ebtitle_medium">연체여부</h3>
                     <div class="toggle_pack ty_linebreak hidPfcOvrdXnDvcd">
                         <ul id="overdue_status">
-                            <c:forEach var="item" items="${pfcOvrdXnDvcdList}" varStatus="status">
-                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
-                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
-                                </li>
-                            </c:forEach>
+                            <li class="active">
+                                <button type="button" class="ebbtn btn_toggle">연체정보 없음</button>
+                            </li>
+                            <li>
+                                <button type="button" class="ebbtn btn_toggle">연체정보 있음</button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -231,11 +219,15 @@
                     <h3 class="ebtitle_medium">신용점수</h3>
                     <div class="toggle_pack ty_linebreak divide3 hidPfcCredScrSecd">
                         <ul id="credit_score">
-                             <c:forEach var="item" items="${pfcCredScrSecdList}" varStatus="status">
-                                <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
-                                    <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
-                                </li>
-                            </c:forEach>
+                            <li class="active">
+								<button type="button" class="ebbtn btn_toggle">500점 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">500점 이상</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">잘 모름</button>
+							</li>
                         </ul>
                     </div>
                 </div>
@@ -267,13 +259,12 @@
                     <h3 class="ebtitle_medium">고정지출</h3>
                     <div class="toggle_pack ty_linebreak hidPfcFixXpndIncmSecd">
                         <ul id="fixed_outcome_rate">
-                             <c:forEach var="item" items="${pfcFixXpndIncmSecdList}" varStatus="status">
-                                <c:if test="${item.CD_VALD_VAL eq '01' or item.CD_VALD_VAL eq '02'}">
-                                    <li <c:if test="${status.index eq 0}">class="active"</c:if> data-code="${item.CD_VALD_VAL}">
-                                        <button type="button" class="ebbtn btn_toggle">${item.CD_VALD_VAL_NM}</button>
-                                    </li>
-                                </c:if>
-                            </c:forEach>
+                            <li class="active">
+								<button type="button" class="ebbtn btn_toggle">연간소득의 50% 미만</button>
+							</li>
+							<li>
+								<button type="button" class="ebbtn btn_toggle">연간소득의 50% 이상</button>
+							</li>
                         </ul>
                     </div>
                 </div>
@@ -304,6 +295,9 @@
 
 	</div>
 </div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
 
 <script>
 	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행

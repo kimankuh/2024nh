@@ -24,11 +24,12 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 
-<div class="layout"></div>
+<div id="layoutContent" class="layout"></div><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 <!--
 	◆조작가이드
@@ -74,52 +75,32 @@
 									<ul class="chklist_box">
 										<li>
 										<div class="radio_pack">
-											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCredit" checked="checked" value="credit"
-											<c:if test="${fn:contains(loanCodesCredit, mid)}">
-														checked
-											</c:if> 
-											>
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCredit" checked="checked" value="credit" checked>
 											<label for="radioLoanCredit" class="eblabel">신용대출</label>
 										</div>
 									</li>
 									
 									<li>
 										<div class="radio_pack">
-											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCreditM" value="creditM"
-											<c:if test="${fn:contains(loanCodesCreditMember, mid)}">
-														checked
-											</c:if> 
-											>
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCreditM" value="creditM">
 											<label for="radioLoanCreditM" class="eblabel">임직원신용대출</label>
 										</div>
 									</li>
 									<li>
 										<div class="radio_pack">
-											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanNewCar" value="newCar"
-											<c:if test="${fn:contains(loanCodesNewCar, mid)}">
-														checked
-											</c:if>
-											>
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanNewCar" value="newCar">
 											<label for="radioLoanNewCar" class="eblabel">신차</label>
 										</div>
 									</li>
 									<li>
 										<div class="radio_pack">
-											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCarLease" value="carLease"
-											<c:if test="${fn:contains(loanCodesCarLease, mid)}">
-														checked
-											</c:if>
-											>
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanCarLease" value="carLease">
 											<label for="radioLoanCarLease" class="eblabel">자동차리스</label>
 										</div>
 									</li>
 									<li>
 										<div class="radio_pack">
-											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanLongTermRentalCar" value="longTermRentalCar"
-											<c:if test="${fn:contains(loanCodesLongTermRentalCar, mid)}">
-														checked
-											</c:if>
-											>
+											<input type="radio" class="ebradio" name="radioLoanType" id="radioLoanLongTermRentalCar" value="longTermRentalCar">
 											<label for="radioLoanLongTermRentalCar" class="eblabel">장기렌터카</label>
 										</div>
 									</li>
@@ -130,7 +111,7 @@
 								<div class="ebform_label">휴대전화번호</div>
 								<div class="form_pack">
 									<div class="input_pack">
-										<input maxLength="13" type="tel" id="inputPhone" class="ebinput" placeholder="-없이 숫자만 입력" title="휴대전화번호" 입력" value="">
+										<input maxLength="13" type="tel" id="inputPhone" class="ebinput" placeholder="-없이 숫자만 입력" title="휴대전화번호 입력" value="">
 										<button type="button" class="ebbtn btn_input_clear" title="입력된 텍스트 삭제"></button>
 									</div>
 								</div>

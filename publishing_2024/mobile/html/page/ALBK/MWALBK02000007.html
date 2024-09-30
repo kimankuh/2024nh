@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>올원뱅크 - 신용대출 약관동의</title>
+	<title>대출신청정보 | 올원뱅크</title>
 
 	<!-- Plugin JS -->
     <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
@@ -24,23 +24,21 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 <!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 	<div class="header">
 		<div class="header_area">
-
 			<div class="header_back">
 				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
 			</div>
-
 			<div class="header_title">
 				<h2 class="ebtitle2 showdefault">NH농협캐피탈</h2>
 			</div>
-
 			<div class="header_home">
 				<button type="button" class="ebbtn btn_header_home" title="홈"></button>
 			</div>
@@ -103,9 +101,9 @@
                         <div class="ebform_label">대출신청금액(만원단위)</div>
                         <div class="form_pack"  id="amountDiv">
                             <div class="input_pack ty_word2">
-                                <%-- <fmt:parseNumber var="limtAmt" integerOnly="true" value="${lmtAmt / 10000}" /> --%>
-                                <input type="hidden" id="getLmtAmtFormat" value="${lmtAmt}">
-                                <%--input type="hidden" id="getLmtAmtFormat" value="100000000"--%>
+                                <!-- <%-- <fmt:parseNumber var="limtAmt" integerOnly="true" value="${lmtAmt / 10000}" /> --%> -->
+                                <!-- <input type="hidden" id="getLmtAmtFormat" value="${lmtAmt}"> -->
+                                <!-- <%--input type="hidden" id="getLmtAmtFormat" value="100000000"--%> -->
                                 <input type="text" class="ebinput" title="대출신청금액(만원단위)" placeholder="대출신청금액(만원단위) 입력" value="" id="amount" name="aplcAmt" maxlength="6">
                                 <span class="unit">만원</span>
                             </div>
@@ -117,13 +115,13 @@
                         <div class="form_pack">
                             <div class="select_pack" data-ui="customSelect">
                                 <select class="ebselect" title="대출기간" data-placeholder="선택"  id="selectLoanMth" name="loanMcnt">
-                                    <%--option value="">선택</option>
+                                    <option value="">선택</option>
                                     <option value="12">12개월</option>
                                     <option value="24">24개월</option>
                                     <option value="36">36개월</option>
                                     <option value="48">48개월</option>
                                     <option value="60">60개월</option>
-                                    <option value="72" selected="selected">72개월</option --%>
+                                    <option value="72" selected="selected">72개월</option>
                                 </select>
                             </div>
                         </div>
@@ -151,6 +149,9 @@
 
 	</div>
 </div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
 
 <script>
 	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행

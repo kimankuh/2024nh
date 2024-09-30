@@ -24,11 +24,12 @@
 	<!-- Publishing JS -->
 	<script src="../../../resource/js/ui_plugin.js"></script>
 	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
 </head>
 <body>
 
 <!-- 2022-05-16 수정 : 기획 및 디자인 변경에 따른 마크업 구조 전수수정, 케이스 페이지 추가 -->
-<div class="layout">
+<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
 
 	<div class="header">
 		<div class="header_area">
@@ -95,18 +96,6 @@
         <!-- 여기부터 컨텐츠 -->
         <div class="contents_area">
             <div class="contents">
-                <input type="hidden" id="bladDvcd" value="${bladDvcd}" /> <!-- 수령방법 // 3이 이메일 -->
-                <input type="hidden" id="aplctQlfcStdCd" value="${aplctQlfcStdCd}" />		<!-- 직업구분 // 01이 직장인, 02가 자영업자 -->
-    
-                <form id="frm" method="post">
-                    <input type="hidden" id="hidHomeAdrDvcd" name="homeAdrDvcd" value="" />			<!-- 자택주소구분코드 -->
-                    <input type="hidden" id="hidHomeZpcd" name="homeZpcd" value="" />				<!-- 자택우편번호 -->
-                    <input type="hidden" id="hidHomeZpcdSqn" name="homeZpcdSqn" value="" />			<!-- 자택우편번호순번 -->
-                    <input type="hidden" id="hidWkplcAdrDvcd" name="wkplcAdrDvcd" value="" />		<!-- 직장주소구분코드 -->
-                    <input type="hidden" id="hidWkplcZpcd" name="wkplcZpcd" value="" />				<!-- 직장우편번호 -->
-                    <input type="hidden" id="hidWkplcZpcdSqn" name="wkplcZpcdSqn" value="" />		<!-- 직장우편번호순번 -->
-                    
-                    
                     <div class="form_part">
     
                         <!-- 주소 미입력 상태 시 -->
@@ -148,9 +137,9 @@
                             <div class="form_pack ty_phonenum tel_input">
                                 <div class="select_pack " data-ui="customSelect">
                                     <select class="ebselect area_code" title="지역번호 입력" data-placeholder="지역번호" name="homeTellno">
-                                        <!-- <option value="option1" selected="selected">02</option>
+                                        <option value="option1" selected="selected">02</option>
                                         <option value="option2">031</option>
-                                        <option value="option3">option3</option> -->
+                                        <option value="option3">option3</option>
                                     </select>
                                 </div>
                                 <div class="input_pack">
@@ -161,14 +150,14 @@
                         </div>
     
                     <!-- 2022-04-05 수정 : 직장검색 입력형태 변경 -->
-                        <%-- <div class="form_set" id="searchOffice_div">
+                        <div class="form_set" id="searchOffice_div">
                             <div class="ebform_label">직장주소</div>
                             <div class="form_pack">
                                 <div class="select_pack">
                                     <button type="button" id="searchOffice" class="ebbtn btn_select ty_search" title="직장주소">직장검색</button>
                                 </div>
                             </div>
-                        </div> --%>
+                        </div>
                     <!-- //2022-04-05 수정 : 직장검색 입력형태 변경 -->
                     <!-- 직장주소 미입력 상태 -->
                         <div class="form_set" id="searchOffice_div">
@@ -208,9 +197,9 @@
                             <div class="form_pack ty_phonenum officeTel_input">
                                 <div class="select_pack " data-ui="customSelect">
                                     <select class="ebselect area_code" title="지역번호 입력" data-placeholder="지역번호" name="wkplcTellno">
-                                        <!-- <option value="option1">02</option>
+                                        <option value="option1">02</option>
                                         <option value="option2" selected="selected">031</option>
-                                        <option value="option3">option3</option> -->
+                                        <option value="option3">option3</option>
                                     </select>
                                 </div>
                                 <div class="input_pack">
@@ -243,6 +232,9 @@
 
 	</div>
 </div>
+
+<div id="layoutPopContent" aria-hidden="false"></div><!-- 2024-09-26 개발 싱크용 팝업 영역. 개발시 반영 X -->
+
 
 <script>
 	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행

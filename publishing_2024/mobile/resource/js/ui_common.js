@@ -10,6 +10,23 @@
 	ready, load
 */
 $(document).ready(function(){	
+	// 2024-09-27 2024고도화 : [개발요청] 올원뱅크에서 호출하는 공통화면에 올원뱅크전용 css를 호출하기 위한 로직 추가
+	// 2024고도화 올원뱅크인 경우 css 분기 처리
+	if(sessionStorage.getItem('isAllone')) {
+		const linkElement = document.createElement('link');
+				linkElement.rel = 'stylesheet';
+				linkElement.type = 'text/css';
+				linkElement.href = '/resource/mobile/css/ui_allonebank_override.css';
+				linkElement.id = 'allonebankCss';
+			
+		document.head.appendChild(linkElement);
+	} else {
+		const allonebankCss = document.getElementById('allonebankCss');
+
+		if (allonebankCss) {
+			allonebankCss.parentNode.removeChild(allonebankCss);
+		}
+	}	
 });
 
 /* A11Y 2024 팝업 focus 회귀용 */
@@ -2752,9 +2769,29 @@ function alloneSwiper() {
 			},
 			slidesPerView: "auto",
 			spaceBetween: 30,
+			slidesPerView: 1,// 2024-09-26 2024고도화 : 속성 추가
+			autoplay: {// 2024-09-26 2024고도화 : 속성 추가
+				delay: 3000,
+				disableOnInteraction: false,// 수동으로 스와이프 후 자동 재생
+			},
 		});
 
 		alloneBankSlider.push(alloneBankswiper);
+
+		// 2024-09-26 2024고도화 : 올원뱅크 배너 play/stop
+		$('.swiper-toggle-button.play').attr('aria-label', '재생 선택됨');
+		$('.allonebk_slider .swiper-toggle-button').on('click', function(){
+			$(this).toggleClass('on');
+			if($(this).hasClass('stop')){
+				alloneBankswiper.autoplay.stop();
+				$('.swiper-toggle-button.play').attr('aria-label', '재생');
+				$('.swiper-toggle-button.stop').attr('aria-label', '정지 선택됨');
+			}else if($(this).hasClass('play')){
+				alloneBankswiper.autoplay.start();
+				$('.swiper-toggle-button.stop').attr('aria-label', '정지');
+				$('.swiper-toggle-button.play').attr('aria-label', '재생 선택됨');				
+			}
+		});
 	});
 }
 
