@@ -101,6 +101,7 @@ em {font-style:normal;}
 .link-id:hover {color:var(--primaryColor);}
 .del-tr *,
 .del-tr .link-id:hover {text-decoration:line-through;background-color:#f7f7f7;}
+[data-markup-modified="true"] {color:#009870;}
 
 /* status */
 .status-item {display:inline-block;padding:3px 10px;font-size:13px;color:#666;background-color:#eee;border-radius:12px;}
@@ -125,6 +126,22 @@ em {font-style:normal;}
 .prev-active .btn-top {right:422px;}
 
 .hidden-area{z-index:110;position:fixed;left:0;bottom:0;color:var(--primaryColor);}
+
+/* PC */
+.preview-pc {display:none;position:fixed;bottom:20px;width:400px;height:250px;/*background-color:#fff;border:1px solid #999;*/}
+.preview-pc .preview {position:fixed;top:initial;right:initial;width:100%;height:100%;
+    -ms-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    -webkit-transform: scale(0.25);
+    transform: scale(0.25);
+    
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
 
 
 /* media query */
