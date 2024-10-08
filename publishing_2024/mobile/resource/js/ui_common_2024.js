@@ -247,7 +247,6 @@ function dargBottomSheet(){
 
 	if(!isMobile) {
 		//모바일이 아닌 경우 스크립트
-		console.log('PC')
 		dargBottomSheetPC();
 	} else {
 		//모바일인 경우 스크립트

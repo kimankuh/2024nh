@@ -227,8 +227,9 @@ button, input, textarea, select, a {color:var(--grayColor01);}
 .ebbtn.btn_select {width:100%; height:4.9rem; padding-left:2rem; padding-right:4rem; font-size:1.8rem; font-weight:500; color:var(--grayColor04); border-radius:1.2rem; background:url('../image/component/select_arrow.png') no-repeat right 1.6rem center; background-size:1.1rem;}
 .ebbtn.btn_select:disabled,
 .ebbtn.btn_selec[disabled="disabled"] {background-color:#F2F2F2}
-.ebbtn.btn_select.ty_search{background:url(../image/contents/albk/icon_search_24x24.png) no-repeat right 1.6rem center; background-size:2.4rem;}
-.ebbtn.btn_select.ty_search:after{display:none;}
+.ebbtn.btn_select.ty_search:after {right:-0.4rem;}
+.ebbtn.btn_select.searchHouseBtn{background:url(../image/contents/albk/icon_search_24x24.png) no-repeat right 1.6rem center; background-size:2.4rem;}
+.ebbtn.btn_select.searchHouseBtn:after{display:none;}
 
 /* 폼_내부에 주소검색 버튼 */
 .form_pack.ty_flex{position:relative; width:100%;}
@@ -406,7 +407,8 @@ button, input, textarea, select, a {color:var(--grayColor01);}
 .header.main + .container .subheader,
 .allonebg_part,
 .allonebg_part + .inquiry_part .borderdiv02,
-.bgsimplediv {background-color:#F6F6F6;}
+.bgsimplediv,
+.container.main .subheader {background-color:#F6F6F6;}
 .header.main + .container .subheader .page_title_part {padding-top:2.4rem;}
 .allonebg_part {margin:0 -2.5rem;padding:4.8rem 2.5rem 3.8rem;}
 .page_subtitle_part {padding-top:0.8rem;}
@@ -421,6 +423,8 @@ button, input, textarea, select, a {color:var(--grayColor01);}
 .allonebg_part + .inquiry_part .utility_pack .ebbtn.btn_multicase .desc {padding-top:0.8rem;font-size:1.4rem;}
 .bgsimplediv {padding-top:1.6rem;padding-bottom:3.2rem;}
 .home-link-move {top:8rem;}
+.container.main .inquiry_part {margin-top:0;}
+.container.main  .inquiry_select_part {padding-top:2.5rem;}
 
 /* 메인 - 배너 */
 .allonebk_slider .product_banner {border-radius:1.8rem;}

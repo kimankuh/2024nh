@@ -568,7 +568,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebbtn.btn_sub.disabled { opacity: .4; }
 
 /* 일반버튼 */
-.ebbtn.btn_normal { min-width: 90px; padding: 0 15px; height: 40px; line-height: 40px; border-radius: 6px; font-size: 14px; font-weight: 500; }/* 2024-08-09 2024고도화 : 폰트사이즈 수정 */
+.ebbtn.btn_normal { min-width: 90px; padding: 0 15px; height: 40px; line-height: 40px; border-radius: 10px; font-size: 14px; font-weight: 500; }/* 2024-08-09 2024고도화 : 폰트사이즈 수정 */
 .ebbtn.btn_normal.ty_bg { color: #2f6dfc; background: #e5f0fc; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 폰트, 백그라운드 컬러 수정 */
 .ebbtn.btn_normal.ty_bg:active{background:#c1d7ef;}/* 2024-08-09 2024고도화 : active 케이스 추가 */
 .ebbtn.btn_normal.ty_bg[disabled="disabled"] { color: #608b7d; background: #eff5f3; } /* A11Y 240213 명도대비 컬러 수정 */
@@ -577,7 +577,8 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 
 .ebbtn.btn_normal.ty_bg.checked span { padding-left: 21px; background: url('../image/component/checkbox_check_checked.png') no-repeat left center; background-size: 11px; }
 
-.ebbtn.btn_normal.ty_line { color: #303030; border: 1px solid #e6e6e6; background: #ffffff; }
+.ebbtn.btn_normal.ty_line { color: #707070;font-weight:normal; border: 1px solid #e6e6e6; background: #ffffff; }/* 2024-10-07 2024고도화 : 폰트 색상, 두께 변경 */
+.ebbtn.btn_normal.ty_line:active {color:#707070;background:#F5F6F8;border-color:#E6E6E6;}/* 2024-08-09 2024고도화 : 추가 */
 .ebbtn.btn_normal.ty_line[disabled="disabled"],
 .ebbtn.btn_normal.ty_line:disabled { color: #878787; border: 1px solid #f0f0f0; background: #f5f6f8; } /* A11Y 240213 명도대비 컬러 수정 */
 .ebbtn.btn_normal.ty_line.disabled { color: #878787; border: 1px solid #f0f0f0; background: #f5f6f8; } /* A11Y 240213 명도대비 컬러 수정 */
@@ -596,10 +597,10 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 /* 버튼 안에 아이콘 */
 .ebbtn.btn_arrow { min-width: 100px; padding: 0 42px 0 20px; height: 45px; line-height: 45px; border-radius:12px; font-weight: bold; text-align: left; }/* 2024-08-09 2024고도화 : 보더 라운드 수정 */
 .ebbtn.btn_arrow { color: #ffffff; background: #2F6DFC url('../image/component/btn_arrow_white.png') no-repeat right 20px center; background-size: 11px; /*box-shadow: 0 3px 12px rgba(0,94,69,0.24);*/ } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 컬러 수정, 그림자 삭제 */
-.ebbtn.btn_arrow:active { color: #ffffff; background: #005b49 url('../image/component/btn_arrow_white_press.png') no-repeat right 20px center; background-size: 11px; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 컬러 수정 */
+.ebbtn.btn_arrow:active { color: #ffffff; background: #1e59e2 url('../image/component/btn_arrow_white_press.png') no-repeat right 20px center; background-size: 11px; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 컬러 수정 *//* 2024-10-07 2024고도화 : 컬러 수정 */
 .ebbtn.btn_arrow[disabled="disabled"] { color: #526577; background: #bdc5ce url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
-.ebbtn.btn_arrow:disabled { color: #858f99; background: #e5e9ec url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 */
-.ebbtn.btn_arrow.disabled { color: #858f99; background: #e5e9ec url('../image/component/btn_arrow_white_disabled.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 컬러 수정 */
+.ebbtn.btn_arrow:disabled { color: #858f99; background: #e5e9ec url('../image/component/btn_arrow_white_disabled_02.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-10-07 2024고도화 : 버튼 컬러 및 이미지명 */
+.ebbtn.btn_arrow.disabled { color: #858f99; background: #e5e9ec url('../image/component/btn_arrow_white_disabled_02.png') no-repeat right 20px center; background-size: 11px; box-shadow: none; } /* A11Y 240213 명도대비 컬러 수정 *//* 2024-08-09 2024고도화 : 버튼 컬러 및 이미지명 */
 
 .ebbtn.btn_reset { min-width: 62px; padding: 0 13px; height: 30px; line-height: 30px; border-radius: 15px; font-size: 14px; }
 .ebbtn.btn_reset { color: #707070; border: 1px solid #e6e6e6; background: #ffffff; }
