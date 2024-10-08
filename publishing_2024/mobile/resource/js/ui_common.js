@@ -14,19 +14,26 @@ $(document).ready(function(){
 	// 2024고도화 올원뱅크인 경우 css 분기 처리
 	if(sessionStorage.getItem('isAllone')) {
 		const linkElement = document.createElement('link');
-				linkElement.rel = 'stylesheet';
-				linkElement.type = 'text/css';
-				linkElement.href = '/resource/mobile/css/ui_allonebank_override.css';
-				linkElement.id = 'allonebankCss';
-			
+			  linkElement.rel = 'stylesheet';
+			  linkElement.type = 'text/css';
+			  linkElement.href = '/resource/mobile/css/ui_allonebank_override.css';
+			  linkElement.id = 'allonebankCss';
+		   
 		document.head.appendChild(linkElement);
-	} else {
+		
+		// 2024-10-07 올원뱅크인 경우 타이틀 일괄 적용
+		setTimeout(function(){
+		   $("div.header_area div.header_title .ebtitle2").addClass("showdefault");
+		   $("div.header_area div.header_title .ebtitle2").text("NH농협캐피탈");
+		}, 100);
+		// 2024-10-07 올원뱅크인 경우 타이틀 일괄 적용
+	 } else {
 		const allonebankCss = document.getElementById('allonebankCss');
-
+	 
 		if (allonebankCss) {
-			allonebankCss.parentNode.removeChild(allonebankCss);
+		   allonebankCss.parentNode.removeChild(allonebankCss);
 		}
-	}	
+	 }
 });
 
 /* A11Y 2024 팝업 focus 회귀용 */

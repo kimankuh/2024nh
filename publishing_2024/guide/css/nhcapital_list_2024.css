@@ -67,8 +67,8 @@ em {font-style:normal;}
     .prev-active #contents {margin-right:375px;}
 }
 
-/* header */
-.header {display:flex;padding-top:40px;}
+/* guide-header */
+.guide-header {display:flex;padding-top:40px;}
 .status-area {flex-grow:1;padding-top:7px;padding-right:40px;text-align:right;}
 
 /* content */
@@ -143,6 +143,43 @@ em {font-style:normal;}
     transform-origin: 0 0;
 }
 
+/*  퍼블리싱 Guide */
+.guide-content {display:flex;}
+.guide-nav-link {font-size:12px;}
+.guide-nav + .guide-section {margin-left:50px;}
+
+.guide-nav {padding-top:20px;width:100px;}
+.guide-nav-link {display:block;padding:5px;border-bottom:1px dotted #ddd;}
+.guide-nav-link:before {content:'';display:inline-block;margin-top:-2px;margin-right:7px;width:3px;height:2px;vertical-align:middle;background-color:var(--primaryColor);}
+.guide-nav-link:hover {background-color:#f7f7f7;}
+
+.guide-section {flex:1;padding-top:20px;width:calc(100% - 300px);}
+.guide-section .section + .section {margin-top:50px;}
+.guide-section .h3 {font-size:22px;color:#000;}
+.guide-section .h3:before {content:'';display:inline-block;margin-top:-3px;margin-right:8px;width:8px;height:8px;vertical-align:middle;background-color:#aaa;}
+.guide-section .section .h4 {margin-top:15px;padding-left:10px;font-size:18px;color:#333;}
+.guide-section .section .h4:before {content:'';display:inline-block;margin-right:7px;margin-top:-3px;width:4px;height:4px;vertical-align:middle;border:2px solid rgb(143, 165, 255);border-radius:5px;}
+.guide-section .section .h5 {font-size:14px;}
+.guide-section .section .h5.rounded {display:inline-block;margin-top:15px;margin-left:20px;padding-left:10px;padding-right:10px;color:#fff;height:20px;line-height:20px;background-color:rgb(143, 165, 255);border-radius:10px;}
+.guide-section .section .p {padding-left:23px;font-size:14px;color:#666;}
+
+.guide-code-box + [class*='h'] {margin-top:30px!important;}
+[class*='h'] + .p {margin-top:15px;}
+.syntaxhighlighter {font-size:13px!important;}
+.guide-prev-box,
+.guide-code-box {margin-left:20px;}
+.guide-prev-box {margin-top:15px;padding:30px 20px;border:1px solid #ddd;border-bottom:none;}
+.guide-prev-box .guide-prev {width:375px;}
+.guide-code-box {border:1px solid #ddd;}
+.guide-prev-title {margin-bottom:10px;font-weight:bold;font-size:13px;}
+
+
+
+
+
+
+
+
 
 /* media query */
 @media (max-width:768px) {    
@@ -153,14 +190,14 @@ em {font-style:normal;}
     .btn-preview-toggle {display:none;}
     #nav {position:relative;left:0;padding-top:15px;padding-bottom:15px;width:100%;}    
     .nav-active #contents {padding-left:0;}
-    .header {padding-top:10px;}
+    .guide-header {padding-top:10px;}
     .status-area {padding-right:10px;}
     .content {padding-left:10px;padding-right:10px;}
     .hidden-area {position:absolute;color:#fff;}
 }
 
 @media (max-width:414px) {
-    .header {display:block;}
+    .guide-header {display:block;}
     .h2 {padding-left:10px;}
     .status-area {margin-top:10px;}
     .page-list-table col:nth-child(1),

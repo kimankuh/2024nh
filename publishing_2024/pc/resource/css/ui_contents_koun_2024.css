@@ -177,7 +177,11 @@
 
 .renewal_2024 .contents_area.product_info .car_part ~ .intro_part .intro_main .title_wrap {width:480px; padding-left: 50px; box-sizing: border-box; }
 .renewal_2024 .contents_area.product_info .car_part ~ .intro_part .table_conts_part .table_view_pack .ebtable tbody > tr > th { vertical-align: middle; }
-.renewal_2024 .contents_area.product_info .car_part ~ .intro_part .loan_info_part > .loan_info_pack > .title_wrap { width: 445px; }
+.renewal_2024 .contents_area.product_info .car_part ~ .intro_part .loan_info_part > .loan_info_pack > .title_wrap ,
+.renewal_2024 .contents_area.product_info .new_loan_part ~ .intro_part .loan_info_part > .loan_info_pack > .title_wrap ,
+.renewal_2024 .contents_area.product_info .housing_finance_part ~ .intro_part .loan_info_part > .loan_info_pack > .title_wrap ,
+.renewal_2024 .contents_area.product_info .loan_part ~ .intro_part .loan_info_part > .loan_info_pack > .title_wrap { width: 445px; }
+
 
 .renewal_2024 .contents_area.product_info.car_lease .info_box .prod_detail .left{width:60%}
 .renewal_2024 .contents_area.product_info.car_lease .info_box .prod_detail .right{width:40%;}
@@ -200,6 +204,12 @@
 .renewal_2024 .contents_area.product_info.stock_loan .ebicon.icon_paper{background: url('../image/icon/icon_paper_02.png') no-repeat center/contain;}
 .renewal_2024 .contents_area.product_info.stock_loan .ebicon.icon_loan{background: url('../image/icon/icon_loan_02.png') no-repeat center/contain;}
 
+.renewal_2024 .contents_area.product_info.car_new .ebicon.icon_cs {background: url('../image/icon/icon_cs_02.png') no-repeat center/contain; }
+.renewal_2024 .contents_area.product_info.car_new .ebicon.icon_call{background: url('../image/icon/icon_call_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_new .ebicon.icon_limit{background: url('../image/icon/icon_limit_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_new .ebicon.icon_paper{background: url('../image/icon/icon_paper_02.png') no-repeat center/contain;}
+.renewal_2024 .contents_area.product_info.car_new .ebicon.icon_carry{background: url('../image/icon/icon_carry_02.png') no-repeat center/contain;}
+
 .renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_cs {background: url('../image/icon/icon_cs_02.png') no-repeat center/contain; }
 .renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_call{background: url('../image/icon/icon_call_02.png') no-repeat center/contain;}
 .renewal_2024 .contents_area.product_info.car_lease .ebicon.icon_limit{background: url('../image/icon/icon_limit_02.png') no-repeat center/contain;}
@@ -213,6 +223,11 @@
 .renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_car01 {background: url('../image/icon/icon_car01_02.png') no-repeat center/contain;}
 .renewal_2024 .contents_area.product_info.car_rental .ebicon.icon_check {background: url('../image/icon/icon_check_02.png') no-repeat center/contain; }
 
+.renewal_2024 .contents_area.product_info.credit_new .loan_part ~ .intro_part .intro_main > .cont_box.active .img_box img,
+.renewal_2024 .contents_area.product_info.credit_new .loan_part ~ .intro_part .intro_main > .cont_box.active .title_wrap .smalltitle,
+.renewal_2024 .contents_area.product_info.credit_new .loan_part ~ .intro_part .intro_main > .cont_box.active .title_wrap .desc {
+	animation:none; opacity:1; transform:translate3d(0px, 0px, 0px);
+}
 
 
 /* 마이페이지 > 개인신용대출 진행 현황 */

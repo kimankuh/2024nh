@@ -91,7 +91,7 @@
                 <!-- 2022-03-25 수정 : 입력항목 추가 -->
                 
                 <div class="form_part ty_ani">
-                    <c:if test="${inflDvcd eq 'A'}">
+                    <!-- <c:if test="${inflDvcd eq 'A'}"> -->
                         <div class="form_set show">
                             <div class="ebform_label">직업정보</div>
                             <div class="form_pack">
@@ -112,7 +112,7 @@
                     
                         <!-- 직업정보 직장인 선택시 노출 -->
                         <!-- 2022-04-06 수정 : 직장명 영역 추가 -->
-                        <div class="form_set " id="work_div">
+                        <div class="form_set show" id="work_div">
                             <div class="ebform_label">직장명</div>
                             <div class="form_pack">
                                 <div class="select_pack">
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <!-- //2022-04-06 수정 : 직장명 영역 추가 -->
-                        <div class="form_set " id="jbty_div"><!-- 입력폼 활성화시 addclass="show" -->
+                        <div class="form_set show" id="jbty_div"><!-- 입력폼 활성화시 addclass="show" -->
                             <div class="ebform_label">고용형태</div>
                             <div class="form_pack">
                                 <div class="select_pack" data-ui="customSelect">
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                         </div>
-                    </c:if>
+                    <!-- </c:if> -->
 
                     <!-- 임직원으로 접근 시 노출 -->                    
                     <div class="form_part">

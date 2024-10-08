@@ -15,8 +15,12 @@
 .tit_big {font-size:26px;font-weight:600;}
 .text_normal {font-size:14px;font-weight:400;color:var(--grayColor02);}
 .text_point_01 {color:var(--pointColor01);}/* 토스트 포인트 컬러 */
-.ebbtn.ty_solid {height:40px;line-height:40px;font-size:14px;background-color:var(--grayColor04);border-radius:10px;}
-.ebbtn.full {width:100%;}
+.ebbtn.ty_solid {height:40px;line-height:40px;font-size:14px;color:var(--grayColor02);background-color:var(--grayColor04);border-radius:10px;}
+.ebbtn.ty_solid:active {background-color:#DDDFE6;}
+.ebbtn.ty_solid:disabled,
+.ebbtn.ty_solid[disabled="disabled"],
+.ebbtn.ty_solid.disabled {color:#858f99;background:#e5e9ec;}
+.ebbtn.full {width:100%!important;}
 .ebbtn.btn_small,
 .ebbtn.btn_small_wh {padding:0 16px;height:29px;line-height:29px;font-size:13px;font-weight:400;border-radius:12px;}
 .ebbtn.btn_small {color:#fff;background-color:#0A47D6;}
