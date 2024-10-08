@@ -155,11 +155,44 @@
                                 <button type="button" class="ebbtn btn_main ty_light" id="chkaccountBtn">본인계좌확인</button>
                                 <!-- //2024-09-27 2024고도화 : 버튼 클래스 변경  -->
                             </div>
+
+                            <!-- 2024-10-08 2024고도화 : 문구 추가 -->
                             <ul class="ebullet_circle">
-                                <li>현재 당사 신용대출을 이용 중이신 경우, 추가대출은 동일한 계좌로 대출신청이 가능합니다. 평생계좌(휴대폰 번호 등)는 등록이 불가능합니다.</li>
+                                <li>결제계좌 등록을 완료하신 이후에 수정이 필요 하실 경우 ‘본인계좌변경‘ 버튼을 선택하셔서 수정이 가능해요</li>
+                                <li>결제계좌 입력 후 ‘본인계좌확인’ 버튼을 선택해 주시면 해당 계좌로 1원을 송금 해요</li>
+                                <li>현재 당사 신용대출을 이용 중이신 경우, 추가대출은 동일한 계좌로 대출신청이 가능해요</li>
+                                <li>평생계좌(휴대폰 번호 등)는 등록이 불가능 해요</li>
                             </ul>
+                            <!-- // 2024-10-08 2024고도화 : 문구 추가 -->
                         </div>
-    
+
+                        <!-- 2024-10-08 2024고도화 : '인증코드 입력' 항목 추가 -->
+                        <div class="form_set show"><!-- 입력폼 활성화시 addclass="show" -->
+							<div class="ebform_label">인증코드 입력</div>
+							<div class="form_pack">
+								<div class="input_pack ty_wordtime">
+									<input type="number" class="ebinput" placeholder="숫자로 된 세 자리 인증코드" value="" title="인증번호">
+									<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+									<span class="time">3:00</span>
+								</div>
+							</div>
+		
+							<div class="form_multi_box">
+								<button type="button" class="ebbtn btn_multi">인증코드 찾기</button>
+							</div>
+
+							<div class="btn_box">
+								<button type="button" class="ebbtn btn_main ty_light">인증코드 일치 확인</button>
+							</div>
+							<ul class="ebullet_circle">
+								<li>입금내역이 없으시다면 계좌 정보를 다시 확인해 주세요</li>
+							</ul>
+		
+							<div class="form_next_box show"><!-- 버튼 활성화시 addclass="show" -->
+								<button type="button" class="ebbtn btn_arrow"><span>다음</span></button>
+							</div>
+						</div>
+                        <!-- // 2024-10-08 2024고도화 : '인증코드 입력' 항목 추가 -->   
                     </div>
     
                     <div class="form_part ty_ani">
@@ -192,7 +225,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div id="secondNextBtn" class="form_next_box"><!-- 마지막 form까지 입력 완료 후 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
+                            <div id="secondNextBtn" class="form_next_box show"><!-- 마지막 form까지 입력 완료 후 버튼 영역 활성화 / 버튼 활성화시 addclass="show" -->
                                 <button type="button" class="ebbtn btn_arrow btn_next"><span>다음</span></button>
                             </div>
                         </div>
