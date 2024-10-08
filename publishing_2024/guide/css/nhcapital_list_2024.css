@@ -146,22 +146,23 @@ em {font-style:normal;}
 /*  퍼블리싱 Guide */
 .guide-content {display:flex;}
 .guide-nav-link {font-size:12px;}
-.guide-nav + .guide-section {margin-left:50px;}
+.guide-nav + .guide-section-box {margin-left:50px;}
 
 .guide-nav {padding-top:20px;width:100px;}
 .guide-nav-link {display:block;padding:5px;border-bottom:1px dotted #ddd;}
 .guide-nav-link:before {content:'';display:inline-block;margin-top:-2px;margin-right:7px;width:3px;height:2px;vertical-align:middle;background-color:var(--primaryColor);}
 .guide-nav-link:hover {background-color:#f7f7f7;}
 
-.guide-section {flex:1;padding-top:20px;width:calc(100% - 300px);}
-.guide-section .section + .section {margin-top:50px;}
-.guide-section .h3 {font-size:22px;color:#000;}
-.guide-section .h3:before {content:'';display:inline-block;margin-top:-3px;margin-right:8px;width:8px;height:8px;vertical-align:middle;background-color:#aaa;}
-.guide-section .section .h4 {margin-top:15px;padding-left:10px;font-size:18px;color:#333;}
-.guide-section .section .h4:before {content:'';display:inline-block;margin-right:7px;margin-top:-3px;width:4px;height:4px;vertical-align:middle;border:2px solid rgb(143, 165, 255);border-radius:5px;}
-.guide-section .section .h5 {font-size:14px;}
-.guide-section .section .h5.rounded {display:inline-block;margin-top:15px;margin-left:20px;padding-left:10px;padding-right:10px;color:#fff;height:20px;line-height:20px;background-color:rgb(143, 165, 255);border-radius:10px;}
-.guide-section .section .p {padding-left:23px;font-size:14px;color:#666;}
+.guide-section-box {flex:1;padding-top:20px;width:calc(100% - 300px);}
+.guide-sections .guide-section + .guide-section {margin-top:50px;}
+.guide-sections {padding-left:50px;padding-right:30px;}
+.guide-sections .h3 {font-size:22px;color:#000;}
+.guide-sections .h3:before {content:'';display:inline-block;margin-top:-3px;margin-right:8px;width:8px;height:8px;vertical-align:middle;background-color:#aaa;}
+.guide-sections .guide-section .h4 {margin-top:15px;padding-left:10px;font-size:18px;color:#333;}
+.guide-sections .guide-section .h4:before {content:'';display:inline-block;margin-right:7px;margin-top:-3px;width:4px;height:4px;vertical-align:middle;border:2px solid rgb(143, 165, 255);border-radius:5px;}
+.guide-sections .guide-section .h5 {font-size:14px;}
+.guide-sections .guide-section .h5.rounded {display:inline-block;margin-top:15px;margin-left:20px;padding-left:10px;padding-right:10px;color:#fff;height:20px;line-height:20px;background-color:rgb(143, 165, 255);border-radius:10px;}
+.guide-sections .guide-section .p {padding-left:23px;font-size:14px;color:#666;}
 
 .guide-code-box + [class*='h'] {margin-top:30px!important;}
 [class*='h'] + .p {margin-top:15px;}
@@ -172,6 +173,8 @@ em {font-style:normal;}
 .guide-prev-box .guide-prev {width:375px;}
 .guide-code-box {border:1px solid #ddd;}
 .guide-prev-title {margin-bottom:10px;font-weight:bold;font-size:13px;}
+
+.frame-pageview {width:100%;}
 
 
 

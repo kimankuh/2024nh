@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="z_eilab/favicon.png">
+	<title>퍼블리싱Guide - NH농협캐피탈(2024)</title>
+    <!-- 공통 library -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- Plugin JS -->
+    <!-- <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script> -->
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../mobile/resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../mobile/resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../mobile/resource/js/ui_plugin.js"></script>
+	<script src="../../mobile/resource/js/ui_common.js"></script>
+	<script src="../../mobile/resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+
+    <!-- SyntaxHighlighter // -->
+	<script src="../syntaxhighlighter/scripts/shCore.js"></script>
+	<script src="../syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<link rel="stylesheet" href="../syntaxhighlighter/styles/shCoreDefault.css">
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+
+    <!-- 2024 퍼블현황판 css -->
+    <link rel="stylesheet" href="../css/nhcapital_list_2024.css">
+</head>
+
+<body>
+
+    <div class="guide-sections">
+        <div class="guide-section">
+            <h3 class="h3">Button</h3>
+            <h4 class="h4">Confirm Button</h4>
+
+            <!-- case 1 -->
+            <h5 class="h5 rounded">case 1</h5>
+            <p class="p">주로 페이지 하단에 고정하여 사용하는 버튼</p>
+            <div class="guide-prev-box">
+                <div class="guide-prev">
+
+                    <p class="guide-prev-title">[Primary]</p>
+                    <button type="button" class="ebbtn btn_main ty_bg">다음</button><br/><br/>
+                    <button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button><br/><br/>
+
+                    <p class="guide-prev-title">[Secondary]</p>
+                    <button type="button" class="ebbtn btn_main ty_light">버튼</button><br/><br/>
+                    <button type="button" class="ebbtn btn_main ty_light" disabled="disabled">버튼</button>
+
+                </div> 
+            </div>                          
+            <div class="guide-code-box">
+                <pre class="brush:js">
+
+                    <!-- Primary -->
+                    <button type="button" class="ebbtn btn_main ty_bg">다음</button>
+                    <button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button>
+
+                    <a href="#none" class="ebbtn btn_main ty_bg">다음</a>
+                    <a href="#none" class="ebbtn btn_main ty_bg" disabled="disabled">다음</a>
+                    
+                    <!-- Secondary -->
+                    <button type="button" class="ebbtn btn_main ty_light">버튼</button>
+                    <button type="button" class="ebbtn btn_main ty_light" disabled="disabled">버튼</button>
+
+                    <a href="#none" class="ebbtn btn_main ty_light">다음</a>
+                    <a href="#none" class="ebbtn btn_main ty_light" disabled="disabled">다음</a>
+
+                </pre>   
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- 2024 퍼블현황판 js -->
+    <script type="text/javascript" src="../js/nhcapital_list_2024.js"></script>
+</body>
+</html>

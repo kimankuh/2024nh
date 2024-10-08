@@ -11,6 +11,7 @@
 }
 
 /* 공통 */
+em {font-style:normal;}
 .alC {text-align:center!important;}
 .alL {text-align:left!important;}
 .renewal_2024 .ebbtn.icon_tooltip {background:url('../image/icon/icon_tooltip_16x16.png') no-repeat center;}
