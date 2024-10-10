@@ -5,7 +5,6 @@
 @import url("ui_common.css");
 @import url("ui_component.css");
 @import url("ui_contents.css");
-@import url("ui_contents_2024.css"); /* 2024-08 고도화 */
-@import url("ui_contents_koun_2024.css"); /* 2024-08 고도화 - 임시 */
+@import url("ui_contents_2024.css"); /* 2024 고도화 */
 @import url("ui_helper.css");
 
