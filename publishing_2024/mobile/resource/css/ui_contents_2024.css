@@ -545,19 +545,19 @@ button[type="button"] em {font-style:normal;}
 
 /* 상품소개 BG */
 .product_info.credit_new .prod_info:before,
-.product_info.employee_credit_loan .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_261x180_01.png) no-repeat 0 0; background-size:100%;}
-.product_info.stock_loan .prod_info:before {bottom:146px;background:url(../image/contents/cdln/bg_product_intro_261x180_02.png) no-repeat 0 0; background-size:100%;}
+.product_info.employee_credit_loan .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_cdln_261x180.png) no-repeat 0 0; background-size:100%;}
+.product_info.stock_loan .prod_info:before {bottom:146px;background:url(../image/contents/stln/bg_product_intro_stln_261x180.png) no-repeat 0 0; background-size:100%;}
 .product_info.car_new .prod_info:before,
 .product_info.car_lease .prod_info:before,
-.product_info.car_rental .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_261x180_03.png) no-repeat 0 0; background-size:100%;}
+.product_info.car_rental .prod_info:before {background:url(../image/contents/atfn/bg_product_intro_atfn_261x180.png) no-repeat 0 0; background-size:100%;}
 .product_info.industry_installment .prod_info:before,
 .product_info.industry_loan .prod_info:before,
-.product_info.industry_used .prod_info:before {bottom:16px;background:url(../image/contents/cdln/bg_product_intro_261x180_04.png) no-repeat 0 0; background-size:100%;}
-.product_info.apt_owner_loan .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_261x180_05.png) no-repeat 0 0; background-size:100%;}
-.product_info.rental_deposit_loan .prod_info:before {bottom:16px;background:url(../image/contents/cdln/bg_product_intro_261x180_05.png) no-repeat 0 0; background-size:100%;}
+.product_info.industry_used .prod_info:before {bottom:16px;background:url(../image/contents/cmfn/bg_product_intro_cmfn_261x180.png) no-repeat 0 0; background-size:100%;}
+.product_info.apt_owner_loan .prod_info:before {background:url(../image/contents/hsfn/bg_product_intro_hsfn_261x180.png) no-repeat 0 0; background-size:100%;}
+.product_info.rental_deposit_loan .prod_info:before {bottom:16px;background:url(../image/contents/hsfn/bg_product_intro_hsfn_261x180.png) no-repeat 0 0; background-size:100%;}
 .product_info.corporate_finance .prod_info:before,
 .product_info.invest_finance .prod_info:before,
-.product_info.regular_lease .prod_info:before {bottom:16px;background:url(../image/contents/cdln/bg_product_intro_261x180_06.png) no-repeat 0 0; background-size:100%;}
+.product_info.regular_lease .prod_info:before {bottom:16px;background:url(../image/contents/otfn/bg_product_intro_otfn_261x180.png) no-repeat 0 0; background-size:100%;}
 
 .renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
 .renewal_2024 .prod_info .prod_txt{font-size:26px; color:#fff; font-weight:700;}
