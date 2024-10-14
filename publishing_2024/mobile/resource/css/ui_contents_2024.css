@@ -386,7 +386,9 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .desc_box.has_divider_thin {margin-top:30px;padding-top:30px;border-top:1px solid #F0F0F0;}
 
 /* 전체메뉴 > 전체메뉴검색 - 최근검색어 => header 검색영역은 .renewal_2024 제거 */
-.header_gnb_search.input_pack {margin-top:6px;padding-left:31px;height:44px;}
+.header_back {z-index:10;}
+.header .header_area .header_title.hidden {padding:0;}
+.header_gnb_search.input_pack {margin-top:6px;margin-left:31px;width:calc(100% - 31px);height:44px;}
 .header_gnb_search.input_pack:after {display:none;}
 .header_gnb_search.input_pack .gnb_search_input {font-size:15px;background-color:#F5F6FA;}
 .header_gnb_search.input_pack .btn_input_clear {right:40px;width:32px;height:44px;background:url('../image/component/ico_input_clear_24X24.png') no-repeat center center;background-size:24px auto;}
@@ -521,8 +523,9 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .intro_btn_box .btn_box .box_r {width: 60%;}
 
 .renewal_2024 .product_info .desc_area {height:530px; overscroll-behavior:contain; background-color:#2f6dfc;}
-.renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; background:url(../image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px; box-sizing: border-box;}
-.renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .product_info .prod_info{position:relative; height:calc(100% - 98px); padding:24px 0 0 24px; /*background:url(../image/contents/cdln/img_cdln04.png) no-repeat bottom 97px right; background-size:261px;*/ box-sizing: border-box;}
+.renewal_2024 .product_info .prod_info:before{content:""; display:block; position:absolute; right:0; bottom:96px; width:261px; height:180px;}
+/* .renewal_2024 .product_info .prod_info:after{content:""; display:block; position:absolute; right:20px; bottom:96px; width:100px; height:147px; background:url(../image/contents/cdln/img_cdln05.png) no-repeat 0 0; background-size:100%;} */
 .renewal_2024 .product_info .icon_box{position:relative; margin-bottom:20px; padding-top:96px; background:url(../image/contents/cdln/ico_noti.png) no-repeat top center; background-size:80px auto; }
 .renewal_2024 .product_info .icon_box .txt_noti{font-size:15px; font-weight:700; text-align:center; }
 .renewal_2024 .product_info .call_box{position:absolute; bottom:94px; left:24px;}
@@ -539,6 +542,22 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .product_info .prod_info.type_03{background-position:bottom 20px right; }
 .renewal_2024 .product_info .prod_info.type_03:after{bottom:19px;}
 .renewal_2024 .product_info .type_03 .call_box{bottom:17px;}
+
+/* 상품소개 BG */
+.product_info.credit_new .prod_info:before,
+.product_info.employee_credit_loan .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_261x180_01.png) no-repeat 0 0; background-size:100%;}
+.product_info.stock_loan .prod_info:before {bottom:146px;background:url(../image/contents/cdln/bg_product_intro_261x180_02.png) no-repeat 0 0; background-size:100%;}
+.product_info.car_new .prod_info:before,
+.product_info.car_lease .prod_info:before,
+.product_info.car_rental .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_261x180_03.png) no-repeat 0 0; background-size:100%;}
+.product_info.industry_installment .prod_info:before,
+.product_info.industry_loan .prod_info:before,
+.product_info.industry_used .prod_info:before {bottom:16px;background:url(../image/contents/cdln/bg_product_intro_261x180_04.png) no-repeat 0 0; background-size:100%;}
+.product_info.apt_owner_loan .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_261x180_05.png) no-repeat 0 0; background-size:100%;}
+.product_info.rental_deposit_loan .prod_info:before {bottom:16px;background:url(../image/contents/cdln/bg_product_intro_261x180_05.png) no-repeat 0 0; background-size:100%;}
+.product_info.corporate_finance .prod_info:before,
+.product_info.invest_finance .prod_info:before,
+.product_info.regular_lease .prod_info:before {bottom:16px;background:url(../image/contents/cdln/bg_product_intro_261x180_06.png) no-repeat 0 0; background-size:100%;}
 
 .renewal_2024 .prod_info .prod_tit{font-size:14px; color:#fff;}
 .renewal_2024 .prod_info .prod_txt{font-size:26px; color:#fff; font-weight:700;}
