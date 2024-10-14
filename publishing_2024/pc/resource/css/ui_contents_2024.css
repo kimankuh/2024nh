@@ -391,3 +391,9 @@ em {font-style:normal;}
 .renewal_2024 .issuance_result .data_list > li:first-child{margin-top:0;}
 .renewal_2024 .issuance_result .data_list > li .key{display:table-cell; width:40%; padding-left:20px;}
 .renewal_2024 .issuance_result .data_list > li .value{display:table-cell; width:60%; padding-right:20px; text-align:right;}
+
+/* 점검중 */
+.renewal_2024 .inspection_wrap{margin:250px 0 350px; padding-top:130px; text-align:center; background:url(../image/contents/cdln/img_inspection.png) no-repeat center top;}
+.renewal_2024 .inspection_wrap .tit{font-size:28px; font-weight:700; color:#303030;}
+.renewal_2024 .inspection_wrap .txt{font-size:18px; font-weight:400; color:#707070;}
+.renewal_2024 .inspection_wrap .tit + .txt{margin-top:10px;}

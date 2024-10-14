@@ -95,13 +95,13 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .section_content_head {position:relative;margin-left:-20px;margin-right:-20px;padding:20px;height:150px;background:var(--primaryColor) url('../image/layout/bg_nh_text_01.png') no-repeat right bottom;background-size:167px auto;border-radius:18px 36px 18px 36px;box-sizing:border-box;}
 .renewal_2024 .section_content_head.ico_01:after,
 .renewal_2024 .section_content_head.ico_02:after,
-.renewal_2024 .section_content_head.ico_03:after {content:'';position:absolute;right:20px;bottom:-20px;}
+.renewal_2024 .section_content_head.ico_03:after {content:'';position:absolute;right:20px;bottom:-24px;}
 .renewal_2024 .section_content_head.ico_04:after,
 .renewal_2024 .section_content_head.ico_05:after,
 .renewal_2024 .section_content_head.ico_06:after {content:'';position:absolute;right:16px;bottom:-27px;}
-.renewal_2024 .section_content_head.ico_01:after {width:82px;height:115px;background:url('../image/main/img_character_01.png') no-repeat right bottom;background-size:100% auto;}/* 1위:신용대출 */
-.renewal_2024 .section_content_head.ico_02:after {width:82px;height:115px;background:url('../image/main/img_character_01.png') no-repeat right bottom;background-size:100% auto;}/* 2위:스탁론 */
-.renewal_2024 .section_content_head.ico_03:after {width:82px;height:115px;background:url('../image/main/img_character_01.png') no-repeat right bottom;background-size:100% auto;}/* 3위:자동차금융 */
+.renewal_2024 .section_content_head.ico_01:after {right:16px; width:140px;height:130px;background:url('../image/main/img_main_charactor_01.png') no-repeat right bottom;background-size:100% auto;}/* 1위:신용대출 */
+.renewal_2024 .section_content_head.ico_02:after {right:16px; width:140px;height:130px;background:url('../image/main/img_main_charactor_02.png') no-repeat right bottom;background-size:100% auto;}/* 2위:스탁론 */
+.renewal_2024 .section_content_head.ico_03:after {right:16px; width:140px;height:130px;background:url('../image/main/img_main_charactor_03.png') no-repeat right bottom;background-size:100% auto;}/* 3위:자동차금융 */
 .renewal_2024 .section_content_head.ico_04:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_11.png') no-repeat right bottom;background-size:100% auto;}/* 2위:신용대출 */
 .renewal_2024 .section_content_head.ico_05:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_12.png') no-repeat right bottom;background-size:100% auto;}/* 2위:스탁론 */
 .renewal_2024 .section_content_head.ico_06:after {width:140px;height:130px;background:url('../image/main/bg_banner_product_140x130_13.png') no-repeat right bottom;background-size:100% auto;}/* 2위:자동차금융 */
@@ -112,6 +112,7 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .main_section.even.first {padding-top:20px;padding-bottom:24px;}
 .renewal_2024 .login_greeting {padding-left:4px;font-size:18px;font-weight:500;}
 .renewal_2024 .login_greeting strong {font-weight:700;}
+.renewal_2024 .login_greeting.mb24{margin-bottom:24px;}
 
 /* 메인 - 1위 영역 */
 .renewal_2024 .section_content_head + .product_keywords {margin-top:40px;margin-right:-10px;}
@@ -214,6 +215,7 @@ button[type="button"] em {font-style:normal;}
 
 /* 메인 - 이벤트 swiper 02 */
 .renewal_2024 .section_box + .main_event_banners_02 {margin-top:32px;}
+.renewal_2024 .section_content.my_product + .main_event_banners_02 {margin-top:60px;}
 .renewal_2024 .main_event_banners_02 .swiper-container {padding-bottom:24px;}
 .renewal_2024 .main_event_banners_02 .event_banner {display:block;overflow:hidden;border-radius:24px;}
 .text_section_title + .swiper-container {margin-top:12px;}
@@ -223,7 +225,7 @@ button[type="button"] em {font-style:normal;}
 /* 메인 - 보유건수 */
 .renewal_2024 .section_content.my_total {margin-top:24px;}
 .renewal_2024 .section_content.my_total {padding:0;border-radius:18px;box-sizing:border-box;}
-.renewal_2024 .section_content.my_total .my_total_link {display:flex;justify-content:space-between;padding-left:62px;height:64px;line-height:64px;font-size:15px;font-weight:400;background:url('../image/main/ico_character_40x40_01.png') no-repeat left 14px top 12px; background-size:40px auto;}
+.renewal_2024 .section_content.my_total .my_total_link {display:flex;justify-content:space-between;padding-left:62px;height:64px;line-height:64px;font-size:15px;font-weight:400;background:url('../image/main/icon_loan_history.png') no-repeat left 14px top 12px; background-size:40px auto;}
 .renewal_2024 .section_content.my_total .my_total_num {position:relative;padding-right:38px;font-weight:700;}
 .renewal_2024 .section_content.my_total .my_total_num:before,
 .renewal_2024 .section_content.my_total .my_total_num:after {content:'';position:absolute;width:10px;height:2px;background-color:var(--grayColor01);border-radius:1px;}
@@ -355,11 +357,11 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .status_box.app_down {padding:20px 20px 15px;}
 .renewal_2024 .status_box.app_down .down_intro_item + .down_intro_item {padding-top:15px;border-top:1px solid #C5DBED;}
 .renewal_2024 .status_box.app_down .down_intro_item {display:flex;justify-content:space-between;}
-.renewal_2024 .status_box.app_down .down_intro_item:first-child {padding-bottom:17px;padding-left:75px;background:url('../image/contents/cdln/ico_appDownload.png') no-repeat left 5px top;background-size:61px auto;}
+.renewal_2024 .status_box.app_down .down_intro_item:first-child {padding-bottom:17px;padding-left:63px;background:url('../image/contents/cdln/ico_appDownload2.png') no-repeat left 0 top;background-size:51px auto;}
 .renewal_2024 .status_box.app_down .down_intro_item .text {font-size:14px;font-weight:400;}
 .renewal_2024 .status_box.app_down .down_intro_item .text strong {font-size:16px;}
 .renewal_2024 .status_box.app_down .down_intro_item .btn_sm_main {margin-top:10px;}
-.renewal_2024 .status_box.app_down .down_intro_item .text.has_ico {padding-left:45px;background:url('../image/contents/cdln/ico_shield_22x22.png') no-repeat left 14px center;background-size:22px auto;}
+.renewal_2024 .status_box.app_down .down_intro_item .text.has_ico {padding-left:31px;background:url('../image/contents/cdln/ico_shield_22x22.png') no-repeat left 0 center;background-size:22px auto;}
 .renewal_2024 .status_box.app_down + .section_appdown_intro {margin-top:32px;}
 .renewal_2024 .section_appdown_intro .tit_big + .text_normal {margin-top:12px;}
 .renewal_2024 .section_appdown_intro .text_normal + .img_box {margin-top:20px;}
@@ -760,8 +762,8 @@ button[type="button"] em {font-style:normal;}
 /* 신용대출 > 랜딩페이지 */
 .renewal_2024 .landing .landing_tit{font-size:22px; font-weight:700; color:#000;}
 .renewal_2024 .landing .visual_area{position:relative; margin:0 -25px; padding-bottom:30px;}
-.renewal_2024 .landing .visual_area .cont{position:relative; padding:16px 140px 80px 24px; border-radius:0 0 0 44px; background-color:#F5F6FA}
-.renewal_2024 .landing .visual_area .cont:before{content:""; display:block; position:absolute; bottom:-30px; right:0; width:143px; height:189px; background:url(../image/contents/cdln/landing_visual.png) no-repeat 0 0; background-size:100%;}
+.renewal_2024 .landing .visual_area .cont{position:relative; padding:16px 20px 80px 24px; border-radius:0 0 0 44px; background-color:#F5F6FA}
+.renewal_2024 .landing .visual_area .cont:before{content:""; display:block; position:absolute; bottom:-30px; right:0; width:144px; height:189px; background:url(../image/contents/cdln/landing_visual.png) no-repeat 0 0; background-size:100%;}
 .renewal_2024 .landing .visual_area .logo{width:146px; height:24px; background:url(../image/contents/cdln/landing_logo.png) no-repeat 0 0; background-size:auto 24px;}
 .renewal_2024 .landing .visual_area .tit{margin-top:47px; font-family: 'IBM_Plex_Sans_KR', 'malgun gothic', 'sans-serif', 'dotum'; font-size:26px; font-weight:600; line-height:36px; color:#000;}
 .renewal_2024 .landing .visual_area .txt{font-size:15px; color:#707070;}
@@ -775,7 +777,7 @@ button[type="button"] em {font-style:normal;}
 
 .renewal_2024 .landing .app_info_area .btn_box{margin-top:40px;}
 .renewal_2024 .landing .app_info_area .ebbtn.btn_app_go{padding-left:38px; background:none; overflow:visible;}
-.renewal_2024 .landing .app_info_area .ebbtn.btn_app_go:before{content:""; display:block; position:absolute; top:0; left:0; width:76px; height:62px; background:url(../image/contents/cdln/ico_appDownload.png) no-repeat 0 0; background-size:100% auto; z-index:1}
+.renewal_2024 .landing .app_info_area .ebbtn.btn_app_go:before{content:""; display:block; position:absolute; top:-6px; left:0; width:72px; height:62px; background:url(../image/contents/cdln/ico_appDownload2.png) no-repeat 0 0; background-size:100% auto; z-index:1}
 .renewal_2024 .landing .app_info_area .ebbtn.btn_app_go > span{position:relative; display:block; padding-right:38px; border-radius:0 14px 14px 0; background:#E5F0FC}
 .renewal_2024 .landing .app_info_area .ebbtn.btn_app_go > span:after{content:""; display:block; position:absolute; top:50%; right:15px; margin-top:-12px; width:24px; height:24px; background:url(../image/contents/cdln/icon_arrow_right_up.png) no-repeat 0 0; background-size:100% auto; z-index:1}
 
@@ -805,9 +807,9 @@ button[type="button"] em {font-style:normal;}
 
 /* 신용대출 > 대환대출 > 한도조회 결과*/
 .renewal_2024 .status_box{margin-top:20px; padding:24px 68px 93px 20px; border-radius:22px; background-color:#edf6fd}
-.renewal_2024 .status_box.type_01 {padding-bottom:103px; background:#edf6fd url(../image/contents/cdln/img_status01.png) no-repeat bottom 27px right 28px; background-size:108px auto;}
-.renewal_2024 .status_box.type_02 {background:#edf6fd url(../image/contents/cdln/img_status02.png) no-repeat bottom 24px right 30px; background-size:63px auto;}
-.renewal_2024 .status_box.type_03 {background:#edf6fd url(../image/contents/cdln/img_status03.png) no-repeat bottom 24px right 24px; background-size:80px auto;}
+.renewal_2024 .status_box.type_01 {padding-bottom:73px; min-height:221px; box-sizing:border-box; background:#edf6fd url(../image/contents/cdln/img_status01.png) no-repeat bottom 27px right 28px; background-size:108px auto;}
+.renewal_2024 .status_box.type_02 {padding-bottom:73px; min-height:221px; box-sizing:border-box; background:#edf6fd url(../image/contents/cdln/img_status02.png) no-repeat bottom 24px right 30px; background-size:63px auto;}
+.renewal_2024 .status_box.type_03 {padding-bottom:73px; min-height:221px; box-sizing:border-box; background:#edf6fd url(../image/contents/cdln/img_status03.png) no-repeat bottom 24px right 24px; background-size:80px auto;}
 .renewal_2024 .status_box .tit{min-width:270px; font-size:19px; font-weight:700;}
 .renewal_2024 .status_box .txt{font-size:15px; font-weight:400; color:var(--grayColor02);}
 .renewal_2024 .status_box .tit + .txt{margin-top:8px;}
