@@ -11,6 +11,7 @@
 }
 
 /* 공통 */
+body {overscroll-behavior-y: none;}
 .alL {text-align:left;}
 .tit_big {font-size:26px;font-weight:600;}
 .text_normal {font-size:14px;font-weight:400;color:var(--grayColor02);}
@@ -80,7 +81,7 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .main_section.odd:first-child:before {display:none;}
 .renewal_2024 .main_section.even {z-index:10;background-color:#F4F5F9;border-radius:0 44px 0 44px;}
 .renewal_2024 .text_section_title + .section_content {margin-top:16px;}
-.renewal_2024 .section_content {padding:0 20px 20px;background-color:#fff;border-radius:18px 36px 18px 36px;box-shadow:0px 10px 40px -8px rgba(0, 0, 0, 0.15);}
+.renewal_2024 .section_content {padding:0 20px 20px;background-color:#fff;border-radius:18px 36px 18px 36px; box-shadow:0px 10px 40px -8px rgba(0, 0, 0, 0.15);}
 .renewal_2024 .section_content .btn_normal {height:52px;line-height:52px;font-size:16px;font-weight:700;color:var(--primaryColor);background-color:#F2F5FF;border-radius:10px 20px 10px 20px;}
 .renewal_2024 .text_section_title {font-size:19px;font-weight:bold;}
 .renewal_2024 .text_section_title:after {content:'';display:inline-block;margin-top:-4px;margin-left:4px;width:20px;height:20px;vertical-align:middle;}
@@ -545,7 +546,8 @@ button[type="button"] em {font-style:normal;}
 
 /* 상품소개 BG */
 .product_info.credit_new .prod_info:before,
-.product_info.employee_credit_loan .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_cdln_261x180.png) no-repeat 0 0; background-size:100%;}
+.product_info.employee_credit_loan .prod_info:before,
+.product_info.credit_add .prod_info:before {background:url(../image/contents/cdln/bg_product_intro_cdln_261x180.png) no-repeat 0 0; background-size:100%;}
 .product_info.stock_loan .prod_info:before {bottom:146px;background:url(../image/contents/stln/bg_product_intro_stln_261x180.png) no-repeat 0 0; background-size:100%;}
 .product_info.car_new .prod_info:before,
 .product_info.car_lease .prod_info:before,
@@ -901,3 +903,56 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .confirm_consent{margin:40px 0;}
 .renewal_2024 .confirm_consent .eblabel{font-size:14px;}
 .renewal_2024 .confirm_consent .form_set{margin-top:18px;}
+
+/* 여행플러스 */
+.renewal_2024 .travel_plus{margin-top:20px; background:#fff; border-radius:44px 44px 36px 36px; box-shadow:0px 10px 40px -8px rgba(0, 0, 0, 0.2);}
+.renewal_2024 .travel_tit{position:relative; min-height:88px; border-radius:44px 44px 44px 12px;  overflow:hidden;}
+.renewal_2024 .travel_tit:after{content:""; display:block; position:absolute; top:0; right:0; width:110px; height:88px; background:url(../image/contents/plus/bg_travel_plus01.png) no-repeat center right; background-size:110px; z-index:1;}
+
+.renewal_2024 .travel_tit .ebtitle3{position:relative; display:block; width:100%; padding:30px 0 0 24px; min-height:88px; font-size:20px; font-weight:700; color:#fff; z-index:1; box-sizing:border-box; background:linear-gradient(90deg, #2F6DFC 55%, #2EB6FF 128%); }
+.renewal_2024 .travel_tit .ebtitle3:before{content:""; display:block; position:absolute; top:0; left:0; width:88px; height:88px; border-radius:88px 88px 88px 0; background:linear-gradient(50deg, #0045E3 54%, #306EFD 123%);z-index:0}
+.renewal_2024 .travel_tit .ebtitle3:after{content:""; display:block; position:absolute; top:27px; left:27px; width:34px; height:34px; border-radius:32px; background-color: rgba(255,255,255,20%);z-index:0}
+.renewal_2024 .travel_tit .ebtitle3 span{position:relative; display:inline-block; z-index: 1;}
+
+.renewal_2024 .travel_cont{padding:22px 20px;}
+.renewal_2024 .travel_list > li{margin-top:22px;}
+.renewal_2024 .travel_list > li:first-child{margin-top:0;}
+.renewal_2024 .travel_list > li > .ebbtn{position:relative; display:flex; flex-wrap:wrap; min-height:72px; padding-left:84px; padding-right:36px; text-align:left; align-items:center;}
+.renewal_2024 .travel_list > li > .ebbtn:before{content:""; display:block; position:absolute; top:0; left:0; width:68px; height:68px; border-radius:24px; background:#EDF6FD}
+.renewal_2024 .travel_list > li > .ebbtn:after{content:""; display:block; position:absolute; top:50%; right:0; margin-top:-10px; width:20px; height:20px; border-radius:24px; background:url(../image/contents/plus/btn_travel_plus_arr.png) no-repeat center center; background-size:20px;}
+.renewal_2024 .travel_list > li > .ebbtn .tit{display:block; font-size:16px; font-weight:700; color:#303030;}
+.renewal_2024 .travel_list > li > .ebbtn .txt{display:block; margin-top:4px; line-height:18px; font-size:13px; color:#707070;}
+
+.renewal_2024 .travel_list > li > .ebbtn.ico_01:before{background:url(../image/contents/plus/icon_travel_plus01.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_02:before{background:url(../image/contents/plus/icon_travel_plus02.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_03:before{background:url(../image/contents/plus/icon_travel_plus03.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_04:before{background:url(../image/contents/plus/icon_travel_plus04.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_05:before{background:url(../image/contents/plus/icon_travel_plus05.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_06:before{background:url(../image/contents/plus/icon_travel_plus06.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_07:before{background:url(../image/contents/plus/icon_travel_plus07.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_08:before{background:url(../image/contents/plus/icon_travel_plus08.png) no-repeat center center; background-size:68px;}
+
+.renewal_2024 .travel_plus.type_02{margin-top:32px;}
+.renewal_2024 .travel_plus.type_02 .travel_tit:after{background:url(../image/contents/plus/bg_travel_plus02.png) no-repeat center right; background-size:110px;}
+.renewal_2024 .travel_plus.type_02 .travel_tit .ebtitle3{background: linear-gradient(90deg, #009870 53%, #00BE8C 109%);}
+.renewal_2024 .travel_plus.type_02 .travel_tit .ebtitle3:before{background: linear-gradient(50deg, #006951 -1%, #008D68 89%);}
+
+.renewal_2024 .travel_bridge{margin-top:28px;}
+.renewal_2024 .travel_bridge .info_area{position:relative; padding-top:196px; text-align:center;}
+.renewal_2024 .travel_bridge .info_area:before{content:""; display:block; position:absolute; top:0; left:50%; margin-left:-82px; width:164px; height:164px; border-radius:50px; background:#EDF6FD; overflow:hidden;}
+.renewal_2024 .travel_bridge .info_area .tit{font-size:20px; font-weight:700;}
+.renewal_2024 .travel_bridge .info_area .txt{margin-top:8px; font-size:16px; font-weight:400;}
+.renewal_2024 .travel_bridge .desc_area{position:relative; padding-top:42px; text-align:center;}
+.renewal_2024 .travel_bridge .desc_area:before{content:""; display:block; position:absolute; top:20px; left:50%; margin-left:-16px; width:32px; height:2px; background:#E6E8F0;}
+.renewal_2024 .travel_bridge .desc_area .txt{font-size:14px; color:#707070;}
+
+.renewal_2024 .travel_bridge .info_area.ico_01:before{background:url(../image/contents/plus/icon_travel_bridge01.png) no-repeat center center; background-size:164px;}
+.renewal_2024 .travel_bridge .info_area.ico_02:before{background:url(../image/contents/plus/icon_travel_bridge02.png) no-repeat center center; background-size:164px;}
+.renewal_2024 .travel_bridge .info_area.ico_03:before{background:url(../image/contents/plus/icon_travel_bridge03.png) no-repeat center center; background-size:164px;}
+.renewal_2024 .travel_bridge .info_area.ico_04:before{background:url(../image/contents/plus/icon_travel_bridge04.png) no-repeat center center; background-size:164px;}
+.renewal_2024 .travel_bridge .info_area.ico_05:before{background:url(../image/contents/plus/icon_travel_bridge05.png) no-repeat center center; background-size:164px;}
+.renewal_2024 .travel_bridge .info_area.ico_06:before{background:url(../image/contents/plus/icon_travel_bridge06.png) no-repeat center center; background-size:164px;}
+.renewal_2024 .travel_bridge .info_area.ico_07:before{background:url(../image/contents/plus/icon_travel_bridge07.png) no-repeat center center; background-size:164px;}
+
+.renewal_2024 .contents_bottom_area.ty_fixed .txt_fix_noti{margin-bottom:20px; font-size:14px; color:#707070;}
+
