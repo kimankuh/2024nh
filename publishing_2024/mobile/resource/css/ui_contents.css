@@ -937,7 +937,7 @@
 /*
 	로그인
 */
-.login_intro_page { z-index: 0; overflow: hidden; position: relative; min-height: 100%; padding: 115px 40px 40px; box-sizing: border-box; }
+.login_intro_page { z-index: 0; overflow: hidden; position: relative; min-height: 100%; padding: 68px 40px 40px; box-sizing: border-box; }/* 2024-10-15 2024고도화 : 상단 패딩값 변경 */
 .login_intro_page:before { content: ''; z-index: -1; position: absolute; top: 0; left: 0; z-index: -10; width: 590px; height: 100%; background: url('../image/contents/logn/intro_bg1.png') no-repeat center; background-size: 100%; }
 .login_intro_page:after { content: ''; z-index: -1; position: absolute; top: 0; left: -86px; z-index: -10; width: 409px; height: 100%; background: url('../image/contents/logn/intro_bg2.png') no-repeat center; background-size: 100%; }
 
