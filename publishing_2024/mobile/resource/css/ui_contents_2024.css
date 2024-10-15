@@ -11,7 +11,7 @@
 }
 
 /* 공통 */
-body {overscroll-behavior-y: none;}
+body {overflow-y:scroll;overscroll-behavior:none;}
 .alL {text-align:left;}
 .tit_big {font-size:26px;font-weight:600;}
 .text_normal {font-size:14px;font-weight:400;color:var(--grayColor02);}
