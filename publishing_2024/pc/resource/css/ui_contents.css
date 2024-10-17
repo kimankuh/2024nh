@@ -1325,7 +1325,7 @@ a.cont_box .cont .info .desc { padding-top: 22px; color: #707070; }
 .car_part .accordion_pack.ty_boxing.finish .select_item .ebicon img { max-width: 73px; }
 .car_part .accordion_pack.ty_boxing.finish .select_item .desc { display: none; }
 .car_part .accordion_pack.ty_boxing.finish .select_item .text .ttl { vertical-align: middle; font-size: 20px; font-weight: bold; }
-.car_part .accordion_pack.ty_boxing.finish .select_item .amount { position: absolute; right: 35px; top: 50%; transform: translateY(-50%); font-size: 20px; font-weight: bold; color: #00ba89; }
+.car_part .accordion_pack.ty_boxing.finish .select_item .amount { position: absolute; right: 35px; top: 50%; transform: translateY(-50%); font-size: 20px; font-weight: bold; color: #2F6DFC; }/* 2024-10-17 2024고도화 : 컬러 수정 */
 .car_part .accordion_pack.ty_boxing.finish .select_item .carclr_pack .ebicon { margin-right: 11px; }
 .car_part .accordion_pack.ty_boxing.finish .select_item .carclr_pack .desc { display: inline-block; margin-left: 10px; vertical-align: middle; color: #707070; }
 .car_part .accordion_pack.ty_boxing.finish .select_item .infotag { margin-left: 16px; display: inline-block; padding: 0 9px; vertical-align: middle; height: 24px; line-height: 24px; border-radius: 12px; font-size: 12px; font-weight: 500; color: #707070; background: #f0f0f0; }
@@ -1337,12 +1337,12 @@ a.cont_box .cont .info .desc { padding-top: 22px; color: #707070; }
 .gauge_pack .percent div { display: inline-block; vertical-align: middle; font-size: 16px; color: #707070; text-align: left; }
 
 .gauge_pack .noUi-target { height: 16px; margin: 0 18px 0 5px; border-radius: 10px; border: none; box-shadow: none;   background: none;   }
-.gauge_pack .noUi-connect { background: #00ba89; border: none ; opacity: 1; }
+.gauge_pack .noUi-connect { background: #2F6DFC; border: none ; opacity: 1; }/* 2024-10-17 2024고도화 : 컬러 수정 */
 .gauge_pack .noUi-connects { height: 16px; background: #f3f4f8; border: none; border-radius: 10px; cursor: pointer; }
 .gauge_pack .noUi-handle { width: 30px; height: 30px; cursor: pointer }
 .gauge_pack .noUi-handle-lower { background: #ffffff; border-radius: 50px; border: none; margin-top: 0px; box-shadow: 0px 4px 12px rgba(0,0,0,0.24);}
 .gauge_pack .noUi-handle-lower:before { display: none; }
-.gauge_pack .noUi-handle-lower:after { content: ''; position: absolute; top: 50%; left: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: #00ba89; }
+.gauge_pack .noUi-handle-lower:after { content: ''; position: absolute; top: 50%; left: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: #2F6DFC; }/* 2024-10-17 2024고도화 : 컬러 수정 */
 .gauge_pack .noUi-horizontal .noUi-tooltip { bottom: 40px; }
 .gauge_pack .noUi-tooltip { height: 32px; line-height: 32px; padding: 0 11px; font-size: 14px; font-weight: bold; border-radius: 8px; border: none; background: #fff; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.24); }
 .gauge_pack .noUi-tooltip:after { content: ''; position: absolute; bottom: -3px; left: 50%; width: 12px; height: 12px; margin-left: -6px; background: #ffffff; transform: rotate(45deg); }

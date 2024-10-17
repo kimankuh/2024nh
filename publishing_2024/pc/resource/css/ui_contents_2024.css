@@ -411,3 +411,12 @@ em {font-style:normal;}
 .renewal_2024 .inspection_wrap .tit{font-size:28px; font-weight:700; color:#303030;}
 .renewal_2024 .inspection_wrap .txt{font-size:18px; font-weight:400; color:#707070;}
 .renewal_2024 .inspection_wrap .tit + .txt{margin-top:10px;}
+
+/* 회원가입유도 팝업 */
+.modal_popup .ebtitle3 .popup_logo {display:inline-block;width:192px;height:23px;vertical-align:middle;}
+.modal_popup .ebtitle3 .popup_logo img {width:100%;height:100%;}
+.modal_popup .ebtitle3 .title {margin-left:11px;vertical-align:middle;}
+.encourage_signup {padding-right:170px;background:url('../image/contents/common/encourage_signup.png') no-repeat right bottom;}
+.encourage_signup .tit + .txt {margin-top:24px;}
+.encourage_signup .tit {font-size:28px;font-weight:700;color:var(--grayColor01);line-height:1.3;}
+.encourage_signup .txt {font-size:16px;font-weight:400;color:var(--grayColor02);}

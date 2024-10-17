@@ -225,7 +225,7 @@ ul.ebullet_bar > li:before { content:''; position: absolute; left: 0; top: 12px;
 .input_pack { height: 56px; }
 .input_pack:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #f3f4f8; }
 .input_pack:after { height: 2px; }
-.input_pack:hover:after { background-color: #707070; }
+.input_pack:hover:after { background-color:#2F6DFC; }/* 2024-10-15 2024고도화 : 색상 변경 */
 
 /* 인풋안 버튼 20230828추가*/
 .input_pack.btn_right .btn_box{position:absolute; top: -13px; right: 0; }
@@ -569,7 +569,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .select_pack { min-height: 56px; }
 .select_pack:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: #f3f4f8; }
 .select_pack:after { height: 2px; }
-.select_pack:hover:after { background-color: #707070; }
+.select_pack:hover:after { background-color: #2F6DFC; }/* 2023-09-09 2024고도화 : 색상 변경 */
 .select_pack.has_focus:hover:after { background-color: #2F6DFC; }/* 2023-09-09 2024고도화 : 색상 변경 */
 .ebselect { width: 100%; height: 49px; padding-right: 11px; vertical-align: middle; font-size: 19px; font-weight: bold; color: #c8c8c8; background: url('../image/component/select_arrow.png') no-repeat right center; background-size: 11px; cursor: pointer; }
 .ebselect { height: 56px; line-height: 56px; font-size: 20px; background-size: auto; outline: none; text-overflow: ellipsis; }
@@ -719,29 +719,29 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebbtn.btn_main { font-weight: bold; padding: 16px 22px; }
 
 .ebbtn.btn_main.ty_bg { color: #fff; background: #2F6DFC; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_bg[disabled="disabled"],
-.ebbtn.btn_main.ty_bg:disabled { color: #858f99; background: #b4bec8; }
-.ebbtn.btn_main.ty_bg.disabled { color: #858f99; background: #b4bec8; }
 .ebbtn.btn_main.ty_bg:hover { background-color: #1E59E2; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .ebbtn.btn_main.ty_bg:active { color: rgba(196,198,201,0.9); background-color: #114bd1; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .ebbtn.btn_main.ty_bg[disabled="disabled"],
 .ebbtn.btn_main.ty_bg:disabled,
-.ebbtn.btn_main.ty_bg.disabled { background: #bdc5ce; color: #8f9aa7; }
-.ebbtn.btn_main.ty_bg[disabled="disabled"]:hover,
+.ebbtn.btn_main.ty_bg.disabled { color: #707070; background: #E5E9EC; }/* 2024-09-09 2024고도화 : 색상 변경 */
+/* .ebbtn.btn_main.ty_bg[disabled="disabled"],
+.ebbtn.btn_main.ty_bg:disabled,
+.ebbtn.btn_main.ty_bg.disabled { background: #bdc5ce; color: #8f9aa7; } *//* 2024-10-16 2024고도화 : disabled 중복 선언 삭제 */
+/* .ebbtn.btn_main.ty_bg[disabled="disabled"]:hover,
 .ebbtn.btn_main.ty_bg:disabled:hover,
 .ebbtn.btn_main.ty_bg.disabled:hover { background-color: #bdc5ce; }
 .ebbtn.btn_main.ty_bg[disabled="disabled"]:active,
 .ebbtn.btn_main.ty_bg:disabled:active,
-.ebbtn.btn_main.ty_bg.disabled:active { color: #8f9aa7; }
+.ebbtn.btn_main.ty_bg.disabled:active { color: #8f9aa7; } *//* 2024-10-16 2024고도화 : disabled:hover,  disabled:active 선언 삭제 */
 
 .ebbtn.btn_main.ty_light { color: #2F6DFC; background: #E5F0FC; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_light[disabled="disabled"] { color: rgba(47, 109, 252, 0.4); background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_light:disabled { color: rgba(47, 109, 252, 0.4); background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
-.ebbtn.btn_main.ty_light.disabled { color: rgba(47, 109, 252, 0.4); background: #DCE2F1; }/* 2024-09-09 2024고도화 : 색상 변경 */
 .ebbtn.btn_main.ty_light { border:none }/* 2024-09-09 2024고도화 : 보더 삭제 */
 /* .ebbtn.btn_main.ty_light { color: #657a91; } */
 .ebbtn.btn_main.ty_light:hover { /*border-color: #657a91;*/ background-color: #C1D7EF; }/* 2024-09-09 2024고도화 : 보더 삭제 및 색상 변경 */
 .ebbtn.btn_main.ty_light:active { color: rgba(47, 109, 252, 0.9); background-color: #bbd1e8; /*border-color: #aab1c1;*/ }/* 2024-09-09 2024고도화 : 보더 삭제 및 색상 변경 */
+.ebbtn.btn_main.ty_light[disabled="disabled"] { color:#707070; background: #E5E9EC; }/* 2024-09-09 2024고도화 : 색상 변경 */
+.ebbtn.btn_main.ty_light:disabled { color:#707070; background: #E5E9EC; }/* 2024-09-09 2024고도화 : 색상 변경 */
+.ebbtn.btn_main.ty_light.disabled { color:#707070; background: #E5E9EC; }/* 2024-09-09 2024고도화 : 색상 변경 */
 
 /* 일반버튼 */
 .ebbtn.btn_normal { min-width: 90px; padding: 0 15px; height: 40px; line-height: 40px; border-radius: 6px; font-size: 15px; font-weight: 500; }
@@ -757,8 +757,9 @@ a.ebbtn.btn_normal.disabled { line-height: 44px; }
 .ebbtn.btn_normal.ty_bg { color: #2F6DFC; background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg { border: none; }
 .ebbtn.btn_normal.ty_bg[disabled="disabled"] { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
-.ebbtn.btn_normal.ty_bg:disabled { color: rgba(47, 109, 252, 0.4); background: #040a10; }/* 2024-09-10 2024고도화 : 색상 변경 */
-.ebbtn.btn_normal.ty_bg.disabled { color: rgba(47, 109, 252, 0.4); background: #E5F0FC; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg:disabled,
+.ebbtn.btn_normal.ty_bg:disabled:hover { color: #707070; background: #E5E9EC; }/* 2024-09-10 2024고도화 : 색상 변경 */
+.ebbtn.btn_normal.ty_bg.disabled { color: #707070; background: #E5E9EC; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg.checked span { padding-left: 21px; background: url('../image/component/checkbox_check_checked_02.png') no-repeat left center; background-size: 11px; }/* 2024-09-11 2024고도화 : 이미지 변경 */
 .ebbtn.btn_normal.ty_bg:hover { background-color: #C1D7EF; ; }/* 2024-09-10 2024고도화 : 색상 변경 */
 .ebbtn.btn_normal.ty_bg:active { background-color: #bbd1e8; }/* 2024-09-10 2024고도화 : 색상 변경 */

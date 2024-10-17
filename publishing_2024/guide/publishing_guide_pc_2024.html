@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="z_eilab/favicon.png">
+	<title>PC Guide - NH농협캐피탈(2024)</title>
+    <!-- 공통 library -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- Plugin JS -->
+    <!-- <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script> -->
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../pc/resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../pc/resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../pc/resource/js/ui_plugin.js"></script>
+	<script src="../pc/resource/js/ui_common.js"></script>
+	<script src="../pc/resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+
+    <!-- SyntaxHighlighter // -->
+	<script src="syntaxhighlighter/scripts/shCore.js"></script>
+	<script src="syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<link rel="stylesheet" href="syntaxhighlighter/styles/shCoreDefault.css">
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+
+    <!-- 2024 퍼블현황판 css -->
+    <link rel="stylesheet" href="css/nhcapital_list_2024.css">
+</head>
+
+<body>
+    <div id="wrap" class="nav-active">
+        <div id="nav">
+            <h1 class="h1">NH농협캐피탈<br/> 디지털 채널 모바일 앱, 웹<br/> 개선 및 24x365</h1>
+            <button type="button" class="btn-nav-toggle" title="메뉴 닫기"></button>      
+            
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="../index_2024.html" class="nav-menu-link">MW/MA</a></li>
+                <li class="nav-menu-item"><a href="../index_pc_2024.html" class="nav-menu-link">PC</a></li>
+                <li class="nav-menu-item"><a href="../index_albk_2024.html" class="nav-menu-link">올원뱅크</a></li>
+                <li>
+                    <ul class="sub-nav-links">
+                        <li class="sub-nav-item"><a href="publishing_guide_2024.html" class="sub-nav-link">Mobile Guide</a></li>
+                        <li class="sub-nav-item"><a href="publishing_guide_pc_2024.html" class="sub-nav-link active">PC Guide</a></li>
+                    </ul>
+                </li>
+                <!--<li class="nav-menu-item"><a href="index_legacy_2024.html" class="nav-menu-link">2022 퍼블리싱(삭제예정)</a></li>--><!-- 임시링크 : 산출물 제출시 삭제 예정 -->
+            </ul>
+        </div>
+        <!-- // #nav  -->
+
+        <div id="contents" style="padding-bottom:0;">
+            <div class="guide-header">
+                <h2 class="h2">퍼블리싱 Guide - PC</h2>
+            </div>
+            <div class="content">
+                <div class="guide-content">
+                    <div class="guide-nav-box">
+                        <ul class="guide-nav">
+                            <!-- <li class="guide-nav-item"><a href="guide/page/publishing_guide_common.html" target="pageViewArea" class="guide-nav-link">공통</a></li> -->
+                            <li class="guide-nav-item"><a href="page/publishing_guide_button.html" target="pageViewArea" class="guide-nav-link">Button</a></li>
+                            <li class="guide-nav-item"><a href="page/publishing_guide_input.html" target="pageViewArea" class="guide-nav-link">Input</a></li>                 
+                            <li class="guide-nav-item"><a href="page/publishing_guide_radio.html" target="pageViewArea" class="guide-nav-link">Radio</a></li>                 
+                            <li class="guide-nav-item"><a href="page/publishing_guide_radiobutton.html" target="pageViewArea" class="guide-nav-link">Radio Button</a></li>                 
+                            <li class="guide-nav-item"><a href="page/publishing_guide_checkbox.html" target="pageViewArea" class="guide-nav-link">Checkbox</a></li>                 
+                            <li class="guide-nav-item"><a href="page/publishing_guide_select.html" target="pageViewArea" class="guide-nav-link">Select</a></li>                 
+                            <li class="guide-nav-item"><a href="page/publishing_guide_tab.html" target="pageViewArea" class="guide-nav-link">Tab</a></li>                     
+                        </ul>
+                        <!-- <a href="#none" class="btn-outlink">PC 가이드</a> -->
+                    </div>
+                    
+                    <div class="guide-section-box">
+                        <iframe src="page/publishing_guide_pc_button.html" name="pageViewArea" frameborder="0" class="frame-pageview"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- // content -->
+            <!-- <button type="button" class="btn-top">Top</button> -->
+        </div>
+        <!-- // #contents -->
+    </div>
+    <!-- // #wrap -->
+
+    <!-- 2024 퍼블현황판 js -->
+    <script type="text/javascript" src="js/nhcapital_list_2024.js"></script>
+    <script>
+        $(function(){
+            // nav
+            $('.btn-nav-toggle').on('click', function(){
+                $(this).closest('#wrap').toggleClass('nav-active');
+
+                if($(this).closest('#wrap').hasClass('nav-active')){
+                    $(this).attr('title', '메뉴 닫기');
+                } else {
+                    $(this).attr('title', '메뉴 열기');
+                }
+            });
+
+            // status
+            var del = $('[data-status="삭제"]').length;
+            var ing = $('[data-status="진행"]').length;
+            var done = $('[data-status="완료"]').length;
+            var total = $('.page-list-tr').length  - del;    
+
+            // console.log('전체 : ', total)
+            // console.log('진행 : ', ing)
+            // console.log('완료 : ', done)
+            // console.log('삭제 : ', del)
+            $('.status-item .total').text(total);
+            $('.status-item .ing').text(ing);
+            $('.status-item .done').text(done);
+            $('.status-item .del').text(del);
+            $('.status-item .percent').text(Math.floor((done/total)*100));
+
+            $('[data-status="삭제"]').each(function(){
+                $(this).closest('tr').addClass('del-tr');
+            });
+
+            // preview
+            $('.btn-preview-toggle').on('click', function(){
+                $(this).closest('#wrap').toggleClass('prev-active');
+
+                if($(this).closest('#wrap').hasClass('prev-active')){
+                    $(this).attr('title', '미리보기 닫기');
+                } else {
+                    $(this).attr('title', '미리보기 열기');
+                }
+            });
+
+            $('.link-id').each(function(){
+                $(this).on('mouseover', function(){
+                    var url = $(this).attr('href');
+                    $('.preview').attr('src', url);
+                }).on('click', function(){
+                    $('.link-id').css('color', '');
+                    $(this).css('color', '#0765e5');
+                });
+            });
+
+
+            // scrollTop
+            $('.btn-top').on('click', function(){
+                $('html').animate({scrollTop:0}, 300);
+            });
+        });
+    </script>
+</body>
+</html>

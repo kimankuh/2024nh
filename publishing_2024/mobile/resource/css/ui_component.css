@@ -281,7 +281,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ui-datepicker table.ui-datepicker-calendar tbody tr td .ui-state-default { display: inline-block; margin: 0 6px 14px 0; width: 100%; height: 30px; line-height: 30px; border-radius: 50%; box-sizing: border-box; vertical-align: middle; font-size: 14px; }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-other-month .ui-state-default { background-color: #fff; }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-today .ui-state-default { position: relative; }
-.ui-datepicker table.ui-datepicker-calendar tbody tr td .ui-state-default.ui-state-highlight { font-weight: bold; color: #009870; } /* A11Y 240214 명도대비 컬러 수정 */
+.ui-datepicker table.ui-datepicker-calendar tbody tr td .ui-state-default.ui-state-highlight { font-weight: bold; color: #2F6DFC; } /* A11Y 240214 명도대비 컬러 수정 *//* 2024-10-15 2024고도화 : 컬러 수정 */
 .ui-datepicker table.ui-datepicker-calendar tbody tr td .ui-state-default.ui-state-highlight:after { content: ''; position: absolute; bottom: 3px; left: 50%; margin-left: -2px; width: 4px; height: 4px; border-radius: 50%; background: #009870; } /* A11Y 240214 명도대비 컬러 수정 */
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-current-day .ui-state-default { position: relative; z-index: 10; color: #fff; }
 .ui-datepicker table.ui-datepicker-calendar tbody tr td.ui-datepicker-current-day .ui-state-default:after { content: ''; z-index: -10; position: absolute; top: 0; left: 50%; margin-left: -15px; width: 30px; height: 30px; border-radius: 50%; background-color: #009870; } /* A11Y 240214 명도대비 컬러 수정 */
@@ -983,7 +983,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .toggle_check_pack.ty_border ul > li:first-child { border-top: none; }
 .toggle_check_pack.ty_border ul > li .ebbtn.btn_toggle  { width: 100%; padding-left: 0; }
 .toggle_check_pack.ty_border ul > li .ebbtn.btn_toggle:after { content: none; }
-.toggle_check_pack.ty_border ul > li .ebbtn.btn_toggle .cellbox { position: relative; padding-left: 35px; box-sizing: border-box; }
+.toggle_check_pack.ty_border ul > li .ebbtn.btn_toggle .cellbox { position: relative; padding-left: 35px; box-sizing: border-box; min-height:24px; }/* 2024-10-17 2024고도화 : 체크아이콘 짤림으로 min-height 추가 */
 .toggle_check_pack.ty_border ul > li .ebbtn.btn_toggle .cellbox:after { content: ''; position: absolute; top: 50%; left: 0; margin-top: -12px; width: 24px; height: 24px; background: url('../image/component/checkbox.png') no-repeat center; background-size: 100%; }
 .toggle_check_pack.ty_border ul > li .ebbtn.btn_toggle > .text {  }
 .toggle_check_pack.ty_border ul > li .ebbtn.btn_toggle > .text .ttl { position: relative; display: inline-block; padding-left: 35px; box-sizing: border-box; }
@@ -1148,9 +1148,10 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .accordion_pack.ty_boxing .accordion_title .select_item .title { display: inline-block; }
 .accordion_pack.ty_boxing .accordion_title .select_item .text { display: inline-block; vertical-align: middle; word-break: break-word; }
 .accordion_pack.ty_boxing .accordion_title .select_item .text .ttl { display: block; font-size: 17px; font-weight: bold; }
-.accordion_pack.ty_boxing .accordion_title .select_item .text .desc { display: block; font-size: 15px; font-weight: bold; color: #00ba89; }
+.accordion_pack.ty_boxing .accordion_title .select_item .text .desc { display: block; font-size: 15px; font-weight: bold; color: #2F6DFC; }/* 2024-10-17 2024고도화 : 컬러 수정 */
+
 .accordion_pack.ty_boxing .accordion_title .select_item .cellbox .desc { display: none; }
-.accordion_pack.ty_boxing .accordion_title .select_item .amount { display: block; font-size: 15px; font-weight: bold; color: #009870; } /* A11Y 240320 명도대비 컬러 수정 */
+.accordion_pack.ty_boxing .accordion_title .select_item .amount { display: block; font-size: 15px; font-weight: bold; color: #2F6DFC; } /* A11Y 240320 명도대비 컬러 수정 *//* 2024-10-17 2024고도화 : 컬러 수정 */
 .accordion_pack.ty_boxing .accordion_title .select_item .carclr_pack { position: relative; display: block; }
 .accordion_pack.ty_boxing .accordion_title .select_item .carclr_pack .cellbox { position: static; }
 .accordion_pack.ty_boxing .accordion_title .select_item .carclr_pack .text_box { display: inline-block; vertical-align: middle; padding-left: 42px; }
@@ -1219,7 +1220,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .term_pack .detail_agree > ul > li.active .detail_conts { display: block; }
 .term_pack .detail_agree .detail_title { position: relative; padding: 20px 20px 20px 0; }
 .term_pack .detail_agree .detail_title .checkbox_pack .eblabel span { padding-right: 4px; }
-.term_pack .detail_agree .detail_title .checkbox_pack .eblabel .emph { color: #009870; } /* A11Y 240320 명도대비 컬러 수정 */
+.term_pack .detail_agree .detail_title .checkbox_pack .eblabel .emph { color: #2F6DFC; } /* A11Y 240320 명도대비 컬러 수정 *//* 2024-10-15 2024고도화 : 컬러 수정 */
 .term_pack .detail_agree .detail_title .ebbtn.btn_agree_detail { background-size: 7px; }
 .term_pack .detail_agree .detail_conts { display: none; padding: 0 0 20px 22px; }
 .term_pack .detail_agree .detail_conts > ul > li { position: relative; padding: 3px 15px 3px 0; margin-bottom: 15px; }
@@ -1445,7 +1446,7 @@ ul.chk_list > li + li { margin-top: 15px; }
 .content_pack ul li dt { position: relative; text-align: center; }
 .content_pack ul li dt > span { display: inline-block; width: 27px; height: 27px; background: #ebf3f9; border-radius: 9px 5px 9px 5px; line-height: 27px; font-weight: bold; font-size: 14px; color: #0066b1; }
 .content_pack ul li dd { padding-left: 16px; font-size: 15px; }
-.content_pack .content_ex { padding-top: 6px; font-size: 14px; color: #009870; } /* A11Y 240326 명도대비 컬러 수정 */
+.content_pack .content_ex { padding-top: 6px; font-size: 14px; color: #2F6DFC; } /* A11Y 240326 명도대비 컬러 수정 *//* 2024-10-15 2024고도화 : 컬러 수정 */
 .content_pack.ty_nobrd { margin-top: 26px; border-top: 1px solid #f0f0f0; }
 .content_pack.ty_nobrd ul { margin-top: 0; border-top: 0; border-bottom: 0; }
 .content_pack > ul > li > dl > dd .desc { padding-top: 9px; font-size: 14px; }
@@ -1485,12 +1486,12 @@ ul.chk_list > li + li { margin-top: 15px; }
 .gauge_pack .percent { margin-top: 16px; display: flex; display: -ms-flexbox; display: -moz-box; display: -moz-flex; display: -webkit-box; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between; -ms-flex-pack: justify; -moz-box-pack: justify; }
 .gauge_pack .percent div { display: inline-block; vertical-align: middle; font-size: 11px; color: #707070; text-align: left; }
 .gauge_pack .noUi-target { height: 10px; margin: 0 10px; border-radius: 7px; border: none; box-shadow: none; background: none; }
-.gauge_pack .noUi-connect { background: #00ba89; border: none ; opacity: 1; }
+.gauge_pack .noUi-connect { background: #2F6DFC; border: none ; opacity: 1; }/* 2024-10-17 2024고도화 : 컬러 수정 */
 .gauge_pack .noUi-connects { height: 10px; background: #f3f4f8; border: none; border-radius: 7px; cursor: pointer; }
 .gauge_pack .noUi-handle { width: 25px; height: 25px; cursor: pointer }
 .gauge_pack .noUi-handle-lower { right: -12px; background: #ffffff; border-radius: 50%; border: none; margin-top: 0px; box-shadow: 0px 4px 12px rgba(0,0,0,0.24); }
 .gauge_pack .noUi-handle-lower:before { display: none; }
-.gauge_pack .noUi-handle-lower:after { content: ''; position: absolute; top: 50%; left: 50%; width: 11px; height: 11px; margin: -6px 0 0 -6px; border-radius: 50%; background: #00ba89; }
+.gauge_pack .noUi-handle-lower:after { content: ''; position: absolute; top: 50%; left: 50%; width: 11px; height: 11px; margin: -6px 0 0 -6px; border-radius: 50%; background: #2F6DFC; }/* 2024-10-17 2024고도화 : 컬러 수정 */
 .gauge_pack .noUi-horizontal .noUi-tooltip { bottom: 33px; }
 .gauge_pack .noUi-tooltip { height: 22px; line-height: 22px; padding: 0 6px; font-size: 11px; font-weight: bold; border-radius: 4px; border: none; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16); }
 .gauge_pack .noUi-tooltip:after { content: ''; position: absolute; bottom: -3px; left: 50%; width: 6px; height: 6px; margin-left: -3px; background: #ffffff; transform: rotate(45deg); }
