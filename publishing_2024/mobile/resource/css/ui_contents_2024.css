@@ -350,7 +350,7 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .my_status_list .my_status_step.done:after {background:url('../image/contents/mypg/bg_dotted_line_2x2_active.png') repeat;background-size:2px auto;}
 
 /* 신용대출 > 한도조회결과(가능) */
-.renewal_2024 .status_box.no_bg {padding:24px;}
+.renewal_2024 .status_box.no_bg {padding:24px 20px;}
 .renewal_2024 .status_box .txt.type_01 {font-size:19px;font-weight:400;line-height:1.7;}
 
 /* 신용대출 > 앱다운로드안내 */
@@ -387,6 +387,7 @@ button[type="button"] em {font-style:normal;}
 
 /* 전체메뉴 > 전체메뉴검색 - 최근검색어 => header 검색영역은 .renewal_2024 제거 */
 .header_back {z-index:10;}
+.header .header_area {padding-right:20px;}
 .header .header_area .header_title.hidden {padding:0;}
 .header_gnb_search.input_pack {margin-top:6px;margin-left:31px;width:calc(100% - 31px);height:44px;}
 .header_gnb_search.input_pack:after {display:none;}
@@ -404,10 +405,10 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .recently_keyword_item .date {font-size:14px;color:#878787;}
 .renewal_2024 .recently_keyword_item .date + .btn_del {margin-left:4px;}
 .renewal_2024 .recently_keyword_item .btn_del {width:17px;;height:17px;background:url('../image/component/ico_delete_14x14.png') no-repeat right center;background-size:14px;}
-.renewal_2024 .recently_keyword_list + .recently_keyword_btm {margin-top:32px;} 
+.renewal_2024 .recently_keyword_list + .recently_keyword_btm {margin-top:32px;padding-bottom:12px;} 
 
 /* 전체메뉴 > 전체메뉴검색 - 인기검색어 */
-.renewal_2024 .recently_keyword_box + .popular_keyword_box {margin-top:12px;}
+/* .renewal_2024 .recently_keyword_box[style="display:none"] + .popular_keyword_box {margin-top:12px;} */
 .renewal_2024 .popular_keyword_box {padding-top:20px;}
 .popular_keyword_head .title {font-size:17px;font-weight:500;}
 .renewal_2024 .popular_keyword_list {display:flex;flex-wrap:wrap;}
@@ -930,6 +931,7 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .travel_list > li > .ebbtn.ico_06:before{background:url(../image/contents/plus/icon_travel_plus06.png) no-repeat center center; background-size:68px;}
 .renewal_2024 .travel_list > li > .ebbtn.ico_07:before{background:url(../image/contents/plus/icon_travel_plus07.png) no-repeat center center; background-size:68px;}
 .renewal_2024 .travel_list > li > .ebbtn.ico_08:before{background:url(../image/contents/plus/icon_travel_plus08.png) no-repeat center center; background-size:68px;}
+.renewal_2024 .travel_list > li > .ebbtn.ico_09:before{background:url(../image/contents/plus/icon_travel_plus09.png) no-repeat center center; background-size:68px;}
 
 .renewal_2024 .travel_plus.type_02{margin-top:32px;}
 .renewal_2024 .travel_plus.type_02 .travel_tit:after{background:url(../image/contents/plus/bg_travel_plus02.png) no-repeat center right; background-size:110px;}
@@ -955,3 +957,5 @@ button[type="button"] em {font-style:normal;}
 
 .renewal_2024 .contents_bottom_area.ty_fixed .txt_fix_noti{margin-bottom:20px; font-size:14px; color:#707070;}
 
+/* 회사소개 */
+.greeting_ceo .words_box .cell_box > .cell p.color09{color:#2F6DFC !important;}

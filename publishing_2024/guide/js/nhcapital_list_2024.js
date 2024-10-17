@@ -12,6 +12,6 @@ function setFrameHeight(){
     var $iframe = $('.frame-pageview');
     
     if($('.guide-sections').length == false){        
-        $iframe.height(docH - headerH - 120);
+        $iframe.height(docH - headerH - 50);
     }
 }

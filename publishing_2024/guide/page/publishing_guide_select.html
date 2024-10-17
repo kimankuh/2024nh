@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="z_eilab/favicon.png">
+	<title>퍼블리싱Guide - NH농협캐피탈(2024)</title>
+    <!-- 공통 library -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- Plugin JS -->
+    <!-- <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script> -->
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../mobile/resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../mobile/resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../mobile/resource/js/ui_plugin.js"></script>
+	<script src="../../mobile/resource/js/ui_common.js"></script>
+	<script src="../../mobile/resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+
+    <!-- SyntaxHighlighter // -->
+	<script src="../syntaxhighlighter/scripts/shCore.js"></script>
+	<script src="../syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<link rel="stylesheet" href="../syntaxhighlighter/styles/shCoreDefault.css">
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+
+    <!-- 2024 퍼블현황판 css -->
+    <link rel="stylesheet" href="../css/nhcapital_list_2024.css">
+</head>
+
+<body>
+
+    <div class="guide-sections">
+        <h3 class="h3">Select</h3>
+
+        <div class="guide-section">            
+            <h4 class="h4">Normal</h4>
+            <p class="p">개발 환경에서 바텀시트는 팝업영역(#layoutPopContent)내에서 생성됨. 개발 환경과 동일한 구조 필요.</p>
+            <p class="p">html 작성시 커스텀셀렉트를 사용하는 경우 문서 최상단(.layout)에 id="layoutContent" 추가, 최하단의 팝업영역(#layoutPopContent)이 필수로 포함되어 있어야 바텀시트가 생성됨.</p>
+            <div class="guide-prev-box">
+                <div class="guide-prev">
+
+                    <div id="layoutContent" class="layout"><!-- id(#layoutContent) 필수 -->
+
+                        <!-- (중략) -->
+
+                        <div class="form_part">
+                            <div class="form_set">
+                                <div class="ebform_label">결제일</div>
+                                <div class="form_pack">
+                                    <div class="select_pack" data-ui="customSelect">
+                                        <select class="ebselect" title="결제일" data-placeholder="선택">
+                                            <option value="option1" selected="selected">1일</option>
+                                            <option value="option2">5일</option>
+                                            <option value="option3">option3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- disabled -->
+                            <div class="form_set">
+                                <div class="ebform_label">결제일</div>
+                                <div class="form_pack">
+                                    <div class="select_pack" data-ui="customSelect">
+                                        <select class="ebselect" title="결제일" data-placeholder="선택" disabled="disabled">
+                                            <option value="option1" selected="selected">1일</option>
+                                            <option value="option2">5일</option>
+                                            <option value="option3">option3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- (중략) -->
+
+                    </div>
+
+                    <!-- (중략) -->
+
+                    <div id="layoutPopContent" aria-hidden="true"></div><!-- 팝업 영역(#layoutPopContent) 필수 -->
+
+                </div>  
+            </div>                          
+            <div class="guide-code-box">
+                <pre class="brush:js">
+
+                    <div id="layoutContent" class="layout"><!-- id(#layoutContent) 필수 -->
+
+                        <!-- (중략) -->
+
+                        <div class="form_part">
+                            <div class="form_set">
+                                <div class="ebform_label">결제일</div>
+                                <div class="form_pack">
+                                    <div class="select_pack" data-ui="customSelect">
+                                        <select class="ebselect" title="결제일" data-placeholder="선택">
+                                            <option value="option1" selected="selected">1일</option>
+                                            <option value="option2">5일</option>
+                                            <option value="option3">option3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- disabled -->
+                            <div class="form_set">
+                                <div class="ebform_label">결제일</div>
+                                <div class="form_pack">
+                                    <div class="select_pack" data-ui="customSelect">
+                                        <select class="ebselect" title="결제일" data-placeholder="선택" disabled="disabled">
+                                            <option value="option1" selected="selected">1일</option>
+                                            <option value="option2">5일</option>
+                                            <option value="option3">option3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- (중략) -->
+
+                    </div>
+
+                    <!-- (중략) -->
+
+                    <div id="layoutPopContent" aria-hidden="true"></div><!-- 팝업 영역(#layoutPopContent) 필수 -->
+                    
+                </pre>   
+            </div>
+        </div>
+
+        <div class="guide-section">            
+            <h4 class="h4">기관 선택</h4>
+            <div class="guide-prev-box">
+                <div class="guide-prev">
+
+                    <div id="layoutContent" class="layout"><!-- id(#layoutContent) 필수 -->
+
+                        <!-- (중략) -->
+
+                        <div class="form_part">
+                            <div class="form_set">
+                                <div class="ebform_label">결제계좌</div>    
+                                <div class="form_pack ty_account">
+                                    <div class="select_pack has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+                                        <button type="button" class="ebbtn btn_select" title="결제계좌">
+                                            <span class="icon_pack">
+                                                <span class="ebicon icon_bank">
+                                                    <img src="../../mobile/resource/image/ci/ci_004.png" alt="">
+                                                </span>
+                                                <span class="text">국민은행</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- disabled -->
+                            <div class="form_set">
+                                <div class="ebform_label">결제계좌</div>    
+                                <div class="form_pack ty_account">
+                                    <div class="select_pack has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+                                        <button type="button" class="ebbtn btn_select" title="결제계좌" disabled="disabled">
+                                            <span class="icon_pack">
+                                                <span class="ebicon icon_bank">
+                                                    <img src="../../mobile/resource/image/ci/ci_004.png" alt="">
+                                                </span>
+                                                <span class="text">국민은행</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- (중략) -->
+
+                    </div>
+
+                    <!-- (중략) -->
+
+                    <div id="layoutPopContent" aria-hidden="true"></div><!-- 팝업 영역(#layoutPopContent) 필수 -->
+
+                </div>  
+            </div>                          
+            <div class="guide-code-box">
+                <pre class="brush:js">
+
+                    <div id="layoutContent" class="layout"><!-- id(#layoutContent) 필수 -->
+
+                        <!-- (중략) -->
+
+                        <div class="form_part">
+                            <div class="form_set">
+                                <div class="ebform_label">결제계좌</div>    
+                                <div class="form_pack ty_account">
+                                    <div class="select_pack has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+                                        <button type="button" class="ebbtn btn_select" title="결제계좌">
+                                            <span class="icon_pack">
+                                                <span class="ebicon icon_bank">
+                                                    <img src="../../mobile/resource/image/ci/ci_004.png" alt="">
+                                                </span>
+                                                <span class="text">국민은행</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- disabled -->
+                            <div class="form_set">
+                                <div class="ebform_label">결제계좌</div>    
+                                <div class="form_pack ty_account">
+                                    <div class="select_pack has_selected"><!-- 옵션중 selected가 있는 경우 addClass="has_selected" -->
+                                        <button type="button" class="ebbtn btn_select" title="결제계좌" disabled="disabled">
+                                            <span class="icon_pack">
+                                                <span class="ebicon icon_bank">
+                                                    <img src="../../mobile/resource/image/ci/ci_004.png" alt="">
+                                                </span>
+                                                <span class="text">국민은행</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- (중략) -->
+
+                    </div>
+
+                    <!-- (중략) -->
+
+                    <div id="layoutPopContent" aria-hidden="true"></div><!-- 팝업 영역(#layoutPopContent) 필수 -->
+                    
+                </pre>   
+            </div>
+        </div>
+
+    </div>    
+
+    <!-- 2024 퍼블현황판 js -->
+    <script type="text/javascript" src="../js/nhcapital_list_2024.js"></script>
+</body>
+</html>

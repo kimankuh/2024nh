@@ -526,7 +526,8 @@
 .error_area .text .smttl { font-size: 15px; color: #707070; }
 .error_area .text .bigttl + .smttl { margin-top: 20px; }
 .error_area .ebbtn.btn_error_gohome { position: absolute; left: 50%; bottom: 30px; width: calc(100% - 50px); transform: translateX(-50%); flex: none;  }
-.error_area .ebbtn.btn_error_gohome { padding: 0 36px; min-height: 60px; line-height: 60px; box-sizing: border-box; border-radius: 10px; font-size: 17px; font-weight: 500; color: #fff; background-color: #1e4066; }
+.error_area .ebbtn.btn_error_gohome { padding: 0 36px; min-height: 60px; line-height: 60px; box-sizing: border-box; border-radius: 10px; font-size: 17px; font-weight: 500; color: #fff; background-color:#2f6dfc; }/* 2024-10-16 2024고도화 : 배경색상 변경 */
+.error_area .ebbtn.btn_error_gohome:active { color: #e5e5e5; background-color:#1e59e2; }/* 2024-10-16 2024고도화 : active 캐이스 추가 */
 .error_area .timenote { position: relative; margin-top: 26px; padding: 22px 30px; box-sizing: border-box; border: 1px solid #e6e6e6; border-radius: 5px; font-size: 14px; color: #707070;  }
 .error_area .timenote:before { content:''; position: absolute; left: 19px; top: 29px; width: 4px; height: 4px; border-radius: 50%; background-color: #707070; }
 

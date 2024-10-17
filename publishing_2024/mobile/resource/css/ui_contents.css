@@ -774,7 +774,7 @@
 .loan_info_part .loan_info_pack ul.ty_intro li + li::after { content: none; }
 .loan_info_part .loan_info_pack + .ebullet_circle { padding-top: 20px; }
 .popup_container .loan_info_pack { line-height: normal; }
-.content_ex { color: #009870; } /* A11Y 240326 명도대비 컬러 수정 */
+.content_ex { color: #2F6DFC; } /* A11Y 240326 명도대비 컬러 수정 *//* 2024-10-15 2024고도화 : 컬러 수정 */
 
 
 /*
@@ -825,7 +825,7 @@
 .calc_data_box .calc_data_list > ul > li:first-child { margin-top: 0; }
 .calc_data_box .calc_data_list > ul > li .title { font-size: 14px; color: #707070; }
 .calc_data_box .calc_data_list > ul > li .conts { font-size: 14px; }
-.calc_data_box.active { border: 1px solid #00ba89; }
+.calc_data_box.active { border: 1px solid #2F6DFC; }/* 2024-10-15 2024고도화 : border 컬러 수정 */
 
 .calc_data_box.ty_border .accordion_title { padding: 0; }
 .calc_data_box.ty_border .accordion_title .mdselect_box + .control { position: static; padding-top: 12px; }
@@ -837,7 +837,7 @@
 .calc_data_box.ty_border .accordion_content .detail_box .detail_conts .desc { margin-top: 8px; font-size: 14px; font-weight: 500; word-break: break-word; color: #707070; }
 .calc_data_box.ty_border .accordion_content .detail_divide_box { margin-top: 17px; padding: 20px 20px 0; border-top: 1px solid #f0f0f0; }
 .calc_data_box.ty_border { border: 1px solid #f0f0f0; }
-.calc_data_box.ty_border.active { background-color: #f4fdfb; border-color: #00ba89; box-shadow: 0 2px 6px rgb(0 0 0 / 12%); }
+.calc_data_box.ty_border.active { background-color: #f4fdfb; border-color: #2F6DFC; box-shadow: 0 2px 6px rgb(0 0 0 / 12%); }/* 2024-10-15 2024고도화 : border 컬러 수정 */
 .calc_data_box.ty_border.active.bg_color_none{background-color: #fff;}/*2024-04-30추가*/
 .calc_data_box.ty_border.active .detail_box { background-color: #f4fdfb; }
 

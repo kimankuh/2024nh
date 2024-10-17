@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="z_eilab/favicon.png">
+	<title>퍼블리싱Guide - NH농협캐피탈(2024)</title>
+    <!-- 공통 library -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- Plugin JS -->
+    <!-- <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script> -->
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../mobile/resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../mobile/resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../mobile/resource/js/ui_plugin.js"></script>
+	<script src="../../mobile/resource/js/ui_common.js"></script>
+	<script src="../../mobile/resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+
+    <!-- SyntaxHighlighter // -->
+	<script src="../syntaxhighlighter/scripts/shCore.js"></script>
+	<script src="../syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<link rel="stylesheet" href="../syntaxhighlighter/styles/shCoreDefault.css">
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+
+    <!-- 2024 퍼블현황판 css -->
+    <link rel="stylesheet" href="../css/nhcapital_list_2024.css">
+</head>
+
+<body>
+
+    <div class="guide-sections">        
+        <h3 class="h3">Checkbox</h3>
+
+        <div class="guide-section">
+            <h4 class="h4">Normal</h4>
+            
+            <!-- case 1 -->
+            <h5 class="h5 rounded">case 1</h5>
+            <div class="guide-prev-box">
+                <div class="guide-prev">
+
+                    <input type="checkbox" class="ebcheckbox" title="라벨명">
+                    <input type="checkbox" class="ebcheckbox" title="라벨명" checked="checked">
+                    <input type="checkbox" class="ebcheckbox" title="라벨명" disabled="disabled">
+                    <input type="checkbox" class="ebcheckbox" title="라벨명" checked="checked" disabled="disabled">
+
+                </div>  
+            </div>                          
+            <div class="guide-code-box">
+                <pre class="brush:js">
+
+                    <input type="checkbox" class="ebcheckbox" title="라벨명">
+                    <input type="checkbox" class="ebcheckbox" title="라벨명" checked="checked">
+                    <input type="checkbox" class="ebcheckbox" title="라벨명" disabled="disabled">
+                    <input type="checkbox" class="ebcheckbox" title="라벨명" checked="checked" disabled="disabled">
+                    
+                </pre>   
+            </div>
+
+            <!-- case 2 -->
+            <h5 class="h5 rounded">case 2</h5>
+            <div class="guide-prev-box">
+                <div class="guide-prev">
+
+                    <!-- normal -->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk1_1">
+                        <label for="chk1_1" class="eblabel">체크박스</label>
+                    </div>
+
+                    <!-- checked -->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk1_2" checked="checked">
+                        <label for="chk1_2" class="eblabel">체크박스<br>체크박스</label>
+                    </div>
+                    
+                    <!-- disabled -->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk1_3" disabled="disabled">
+                        <label for="chk1_3" class="eblabel">체크박스</label>
+                    </div>
+
+                    <!-- checked + disabled-->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk1_4" checked="checked" disabled="disabled">
+                        <label for="chk1_4" class="eblabel">체크박스</label>
+                    </div>
+
+                </div>  
+            </div>                          
+            <div class="guide-code-box">
+                <pre class="brush:js">
+
+                    <!-- normal -->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk2_1">
+                        <label for="chk2_1" class="eblabel">체크박스</label>
+                    </div>
+
+                    <!-- checked -->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk2_2" checked="checked">
+                        <label for="chk2_2" class="eblabel">체크박스<br>체크박스</label>
+                    </div>
+
+                    <!-- disabled -->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk2_3" disabled="disabled">
+                        <label for="chk2_3" class="eblabel">체크박스</label>
+                    </div>
+
+                    <!-- checked + disabled-->
+                    <div class="checkbox_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk2_4" checked="checked" disabled="disabled">
+                        <label for="chk2_4" class="eblabel">체크박스</label>
+                    </div>
+                    
+                </pre>   
+            </div>
+        </div> 
+
+        <div class="guide-section">
+            <h4 class="h4">Toggle Button</h4>
+            <div class="guide-prev-box">
+                <div class="guide-prev">
+
+                    <div class="switch_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk3_1" title="간편홈 선택" />
+                        <label for="chk3_1" class="eblabel"></label>
+                    </div>
+
+                </div>  
+            </div>                          
+            <div class="guide-code-box">
+                <pre class="brush:js">
+
+                    <div class="switch_pack">
+                        <input type="checkbox" class="ebcheckbox" id="chk4_1" title="간편홈 선택" />
+                        <label for="chk4_1" class="eblabel"></label>
+                    </div>
+                    
+                </pre>   
+            </div>
+        </div> 
+        
+    </div>
+    
+
+    <!-- 2024 퍼블현황판 js -->
+    <script type="text/javascript" src="../js/nhcapital_list_2024.js"></script>
+</body>
+</html>
