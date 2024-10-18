@@ -256,7 +256,8 @@ function dargBottomSheet(){
 
     // init
 	$bs.height(bsh);
-	$('.container.renewal_2024').css('height','100%');
+    $bs.addClass('ready');
+
 
     //아코디언 항목 전체 열림상태 setting
     $bs.find('.accordion_pack.ty_boxing').addClass('active');
@@ -279,7 +280,7 @@ function dargBottomSheet(){
             $('.intro_fixed_part').addClass('show');
 
             $('body').css('overflow', 'hidden');
-            $('body').addClass('bg_blue');
+            //$('body').addClass('bg_blue');
         }
     });
     
@@ -302,7 +303,7 @@ function dargBottomSheet(){
                 $bs.height(bsIngH);
             }
             $('body').css('overflow', 'hidden');
-            $('body').addClass('bg_blue');
+            //$('body').addClass('bg_blue');
         });
 
         $handle.on('touchend', function(e){
@@ -348,7 +349,7 @@ function dargBottomSheet(){
                 $('.intro_fixed_part').addClass('show');
             }
             $('body').css('overflow', 'hidden');
-            $('body').addClass('bg_blue');
+            //$('body').addClass('bg_blue');
         });
     }
 }
