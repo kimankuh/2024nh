@@ -151,7 +151,7 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .main_section.second .section_content_head {/*height:135px;*/background:#E2E8FF url('../image/layout/bg_nh_text_02.png') no-repeat right bottom;background-size:167px auto;}
 .renewal_2024 .main_section.second .text_head_title {color:var(--grayColor01);}
 
-/* 목록 */
+/* 메인 - 목록 */
 .renewal_2024 .section_content_head + .product_conditions {margin-top:32px;}
 .renewal_2024 .product_conditions {padding-bottom:12px;}
 .renewal_2024 .product_condition + .product_condition {margin-top:24px;}
@@ -164,8 +164,9 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .condition_item .text.normal {font-size:14px;color:var(--grayColor02);}
 .renewal_2024 .condition_item .text.highlight {text-align:right;font-size:15px;font-weight:bold;color:var(--primaryColor);}
 .renewal_2024 .condition_item:nth-child(even) .text.normal {text-align:right;}
+.renewal_2024 .product_condition_link {display:flex;justify-content:space-between;width:100%;}
 
-/* 배너 */
+/* 메인 - 배너 */
 .renewal_2024 .text_section_title + .product_banners,
 .renewal_2024 .product_banners .banner_item + .banner_item {margin-top:20px;}
 .renewal_2024 .product_banners .banner_link {display:block;padding:24px 126px 24px 20px;min-height:150px;border-radius:26px;box-sizing:border-box;}
@@ -509,6 +510,7 @@ button[type="button"] em {font-style:normal;}
 
 /*============= content ============*/
 /* 공통 > 상품소개 */
+.renewal_2024.container.h100per{height:100%;}
 .renewal_2024 .contents_area.product_info{height:100%; padding:0; overscroll-behavior:contain; background-color:#2f6dfc;}
 .renewal_2024 .contents_area.product_info .contents {position:relative; height:100%; padding:0;}
 
@@ -581,7 +583,8 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .prod_info .ebbtn.btn_main.ty_bg{border-radius:18px; background-color:#0a47d6;}
 .renewal_2024 .prod_info .ebbtn.btn_sub{font-size:16px; font-weight:500; color:#062A7C; border-radius:12px; background-color:#82A8FF;}
 
-.renewal_2024 .dragging_bs {position:fixed;bottom:0;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff;}
+.renewal_2024 .dragging_bs {position:fixed;bottom:-100%;width:100%;height:auto;border-radius: 18px 48px 0 0; background-color:#fff; transition:bottom 0.2s ease-in-out;}
+.renewal_2024 .dragging_bs.ready{bottom:0;}
 .renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 48px); overflow:hidden;}
 .renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto; box-sizing:border-box;}
 .renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
