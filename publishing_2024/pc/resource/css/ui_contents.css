@@ -776,7 +776,9 @@
 .error_area .text .smttl { font-size: 18px; color: #707070; }
 .error_area .text .bigttl + .smttl { margin-top: 10px; }
 .error_area .ebbtn.btn_error_gohome { margin-top: 43px; }
-.error_area .ebbtn.btn_error_gohome { padding: 0 36px; min-height: 60px; line-height: 60px; box-sizing: border-box; border-radius: 5px; font-size: 20px; font-weight: bold; color: #fff; background-color: #1e4066; }
+.error_area .ebbtn.btn_error_gohome { padding: 0 36px; min-height: 60px; line-height: 60px; box-sizing: border-box; border-radius: 5px; font-size: 20px; font-weight: bold; color: #fff; background-color: #2F6DFC; }/* 2024-10-17 2024고도화 : 색상 변경 */
+.error_area .ebbtn.btn_error_gohome:hover {background-color: #1E59E2;}/* 2024-10-17 2024고도화 : 추가 */
+.error_area .ebbtn.btn_error_gohome:active {color: rgba(196,198,201,0.9);background-color: #114bd1;}/* 2024-10-17 2024고도화 : 추가 */
 .error_area .timenote { margin-top: 45px; padding: 28px 40px; box-sizing: border-box; border: 1px solid #f0f0f0; white-space: nowrap; background-color: #fafafc; }
 .error_area.ty_01 { padding: 104px 0 150px; }
 .ebicon.icon_error_warning { width: 70px; height: 70px; background: url('../image/icon/icon_fail.png') no-repeat center; background-size: 100%; }

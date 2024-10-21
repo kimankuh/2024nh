@@ -108,7 +108,8 @@ button[type="button"] em {font-style:normal;}
 .swiper-slide {/*padding-left:20px;padding-right:20px;*/box-sizing:border;}
 
 /* 메인 - 로그인 문구 */
-.renewal_2024 .status_toast + .main_section.even.first {margin-top:-20px;}
+.renewal_2024 .status_toast + .main_section.even.first,
+.renewal_2024 #loanPrgsStDiv + .main_section.even.first {margin-top:-20px;}
 .renewal_2024 .main_section.even.first {padding-top:20px;padding-bottom:24px;}
 .renewal_2024 .login_greeting {padding-left:4px;font-size:18px;font-weight:500;}
 .renewal_2024 .login_greeting strong {font-weight:700;}
@@ -747,6 +748,12 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .product_info.stock_loan .process_list > li.step03 .process_box{background:#fff url(../image/contents/stln/icon_process03.png) no-repeat center right 20px; background-size:28px auto;}
 .renewal_2024 .product_info.stock_loan .process_list > li.step04 .process_box{background:#fff url(../image/contents/stln/icon_process04.png) no-repeat center right 20px; background-size:28px auto;}
 .renewal_2024 .product_info.stock_loan .process_list > li.step05 .process_box{background:#fff url(../image/contents/stln/icon_process05.png) no-repeat center right 20px; background-size:28px auto;}
+
+.renewal_2024 .product_info.car_new .process_list > li.step01 .process_box{background:#fff url(../image/contents/atfn/icon_process01.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_new .process_list > li.step02 .process_box{background:#fff url(../image/contents/atfn/icon_process02.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_new .process_list > li.step03 .process_box{background:#fff url(../image/contents/atfn/icon_process03.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_new .process_list > li.step04 .process_box{background:#fff url(../image/contents/atfn/icon_process04.png) no-repeat center right 20px; background-size:28px auto;}
+.renewal_2024 .product_info.car_new .process_list > li.step05 .process_box{background:#fff url(../image/contents/atfn/icon_process05.png) no-repeat center right 20px; background-size:28px auto;}
 
 .renewal_2024 .product_info.car_rental .process_list > li.step01 .process_box{background:#fff url(../image/contents/car/icon_process01.png) no-repeat center right 20px; background-size:28px auto;}
 .renewal_2024 .product_info.car_rental .process_list > li.step02 .process_box{background:#fff url(../image/contents/car/icon_process02.png) no-repeat center right 20px; background-size:28px auto;}

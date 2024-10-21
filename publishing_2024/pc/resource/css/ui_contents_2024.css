@@ -139,7 +139,7 @@ em {font-style:normal;}
 /* 2024-09-13 2024고도화 : 메인 > 카드flip 변경 */
 .renewal_2024 .main_visual_part .main_visual .visual_items .item_box {display:flex;}
 .renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell:nth-child(2) {flex:1;}
-.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item {overflow:visible;padding:0;perspective:2000px;background:none;}
+.renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item {overflow:visible;padding:0;perspective:2000px;background:none!important;box-shadow:none!important;border-radius:0;}
 .renewal_2024 .main_visual_part .norm_item_boxes {position:relative;transition:transform 0.8s;transform-style:preserve-3d;}
 .renewal_2024 .main_visual_part .norm_item:hover .norm_item_boxes {transform:rotateY(180deg);}
 .renewal_2024 .main_visual_part .main_visual .visual_items .item_box .cell .norm_item .normal_box,
