@@ -211,8 +211,10 @@ function keypadChk(){
 	var wh = $(window).outerHeight();
 	var bsh = $('.dragging_bs').outerHeight();
 	var hh = $('.header').outerHeight();
+    var conh = $('.dragging_bs').closest('.product_info').find('.desc_area').outerHeight() - 48;
 	var bsMaxH = wh - hh;
-
+    var first_bsh = wh - (hh + conh) + 48;
+    
 	$(window).resize(function() {
 		if($(window).outerWidth() + $(window).outerHeight() != originalSize) {
 			// 키보드가 올라온 경우
@@ -225,9 +227,12 @@ function keypadChk(){
 			}
 		}else {
 			// 키보드가 다시 내려간 경우
-			$('.dragging_bs').height(bsMaxH);
+            if($('.dragging_bs').hasClass('active') == true){
+                $('.dragging_bs').height(bsMaxH);
+            }else{
+                $('.dragging_bs').height(first_bsh);
+            }
 		}
-	
 	});
 }
 

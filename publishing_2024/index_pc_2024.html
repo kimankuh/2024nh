@@ -89,6 +89,7 @@
                                 <td class="td align-c"></td>
                                 <td class="td">
                                     <p class="text-memo" data-date="1017">신규 추가</p>
+                                    <p class="text-memo" data-date="1022">문구 변경</p>
                                 </td>
                             </tr>
                             <tr class="page-list-tr">
@@ -1043,7 +1044,7 @@
             });
 
             // PC 미리보기
-            var $previewBox = $('<div class="preview-pc"><iframe src="pc/html/page/NHCM/PWNHCM00000000.html" name="preview" class="preview"></div>');
+            var $previewBox = $('<div class="preview-pc"><button type="button" class="btn-close-preview" title="미리보기 닫기"></button><iframe src="pc/html/page/NHCM/PWNHCM00000000.html" name="preview" class="preview" /></div>');
             $('.content').append($previewBox);
 
             $('.link-id').each(function(){
@@ -1053,11 +1054,15 @@
                     $('.preview-pc').show();
                     $('.preview').attr('src', url);
                 }).on('mouseout', function(){
-                    $('.preview-pc').hide();
+                    // $('.preview-pc').hide();
                 }).on('click', function(){                    
                     $('.link-id').css('color', '');
                     $(this).css('color', '#0765e5');
                 });
+            });
+
+            $('.btn-close-preview').on('click', function(){
+                $('.preview-pc').hide();
             });
 
 
