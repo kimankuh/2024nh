@@ -110,6 +110,7 @@ button[type="button"] em {font-style:normal;}
 /* 메인 - 로그인 문구 */
 .renewal_2024 .status_toast + .main_section.even.first,
 .renewal_2024 #loanPrgsStDiv + .main_section.even.first {margin-top:-20px;}
+.renewal_2024 #loanPrgsStDiv {min-height:20px;}
 .renewal_2024 .main_section.even.first {padding-top:20px;padding-bottom:24px;}
 .renewal_2024 .login_greeting {padding-left:4px;font-size:18px;font-weight:500;}
 .renewal_2024 .login_greeting strong {font-weight:700;}
@@ -588,13 +589,18 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .dragging_bs.ready{bottom:0;}
 .renewal_2024 .dragging_bs .cont_detail{height:calc(100% - 48px); overflow:hidden;}
 .renewal_2024 .dragging_bs .cont_detail .scroll{height:100%; padding:0 20px 20px; overflow-y:auto; box-sizing:border-box;}
+.renewal_2024 .dragging_bs .intro_fixed_part .intro_btn_box{transform: translateY(200%);transition: .2s .1s;}
+.renewal_2024 .dragging_bs .intro_fixed_part.show .intro_btn_box{transform: translateY(0);}
+.renewal_2024 .dragging_bs .intro_fixed_part .intro_btn_box .btn_box.half .btn_sub{color:#303030; border-radius:12px; background:#DCE2F1;}
+.renewal_2024 .dragging_bs .intro_fixed_part .intro_btn_box .btn_box.half .box_l{width:calc(50%);}
+.renewal_2024 .dragging_bs .intro_fixed_part .intro_btn_box .btn_box.half .box_r{width:calc(50%);}
+
 .renewal_2024 .dragging_bs.active .cont_detail{height:calc(100% - 148px);}
 .renewal_2024 .dragging_bs.active .cont_detail.type_02{height:calc(100% - 204px);}
 .renewal_2024 .dragging_bs.active .cont_detail.type_03{height:calc(100% - 48px);}
 .renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box{position:absolute;}
-.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box .btn_box.half .box_l{width:calc(50%);}
-.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box .btn_box.half .box_r{width:calc(50%);}
-.renewal_2024 .dragging_bs.active .intro_fixed_part .intro_btn_box .btn_box.half .btn_sub{color:#303030; border-radius:12px; background:#DCE2F1;}
+
+
 .renewal_2024 .drag_handle{position:relative;}
 .renewal_2024 .drag_handle:after{content:""; display:block; clear:both;}
 .renewal_2024 .drag_handle .btn_handle { display:flex; width:100%;height:48px; border:0; border-radius: 18px 48px 0 0; background:#fff;}
