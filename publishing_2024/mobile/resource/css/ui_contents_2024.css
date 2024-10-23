@@ -975,3 +975,6 @@ button[type="button"] em {font-style:normal;}
 
 /* 회사소개 */
 .greeting_ceo .words_box .cell_box > .cell p.color09{color:#2F6DFC !important;}
+
+/* 대출신청 > 주소/연락처정보 - 개발대응 */
+#btnAddEtcPadrDiv + #btnCnfmEtcPadrDiv {margin-top:20px;}

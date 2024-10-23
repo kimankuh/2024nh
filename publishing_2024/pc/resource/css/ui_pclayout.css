@@ -141,7 +141,7 @@
 
 /* 레이아웃 배치 */
 .header {
-    min-width: 1510px;
+    min-width: 1535px;/* 2024-10-23 2024고도화 : 로그인 후 기준으로 가로값 변경 old)1510*/
 }
 
 .subheader {
