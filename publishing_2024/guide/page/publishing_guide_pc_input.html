@@ -8,18 +8,18 @@
 	<link rel="shortcut icon" href="z_eilab/favicon.png">
 	<title>PC Guide - NH농협캐피탈(2024)</title>
     <!-- 공통 library -->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.12.1.min.js"></script>
 
     <!-- Plugin JS -->
     <!-- <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
 	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script> -->
 
     <!-- 개발 JS -->
-    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/common.js"></script>
-    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/commPop.js"></script>
-    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/commMsg.js"></script>
-    <script type="text/javascript" src="https://nhcapital.co.kr/resource/common/js/commMo.js"></script>
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://www.nhcapital.co.kr/resource/common/js/commMo.js"></script>
 
 	<!-- Publishing CSS -->
 	<link rel="stylesheet" href="../../pc/resource/css/ui_plugin.css">
@@ -45,162 +45,138 @@
 <body>
 
     <div class="guide-sections">     
-        <h3 class="h3">Button</h3>
+        <h3 class="h3">Input</h3>
         
         <div class="guide-section">            
-            <h4 class="h4">Confirm Button</h4>
+            <!-- <h4 class="h4">Confirm Button</h4> -->
 
             <!-- case 1 -->
             <!-- <h5 class="h5 rounded">case 1</h5> -->
             <div class="guide-prev-box">
-                <div class="guide-prev">
 
-                    <p class="guide-prev-title">[Primary]</p>
-                    <button type="button" class="ebbtn btn_main ty_bg">확인했어요</button>
-                    <button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">확인했어요</button>
+                <div class="form_part">
+                    <!-- 입력 전 -->
+                    <div class="form_set">
+                        <div class="ebform_label">이메일</div>
+                        <div class="form_pack">
+                            <div class="input_pack">
+                                <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력">
+                                <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 입력 후 -->
+                    <div class="form_set">
+                        <div class="ebform_label">이메일</div>
+                        <div class="form_pack">
+                            <div class="input_pack">
+                                <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com">
+                                <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                            </div>
+                        </div>
+                    </div>                                        
+                
+                    <!-- readonly -->
+                    <div class="form_set">
+                        <div class="ebform_label">이메일</div>
+                        <div class="form_pack">
+                            <div class="input_pack has_readonly">
+                                <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com" readonly="">
+                                <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- disabled -->
+                    <div class="form_set">
+                        <div class="ebform_label">이메일</div>
+                        <div class="form_pack">
+                            <div class="input_pack has_disabled">
+                                <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com" disabled="">
+                                <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- error -->
+                    <div class="form_set">
+                        <div class="ebform_label">이메일</div>
+                        <div class="form_pack">
+                            <div class="input_pack has_error">
+                                <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com">
+                                <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                            </div>
+                            <div class="ebform_msg ty_error">에러 메세지</div>
+                        </div>
+                    </div>
+                </div>
 
-                </div> 
             </div>                          
             <div class="guide-code-box">
                 <pre class="brush:js">
 
-                    <!-- Primary -->
-                    <button type="button" class="ebbtn btn_main ty_bg">다음</button>
-                    <button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button>
-
-                    <a href="#none" class="ebbtn btn_main ty_bg">다음</a>
-                    <a href="#none" class="ebbtn btn_main ty_bg" disabled="disabled">다음</a>
-                    
-                    <!-- Secondary -->
-                    <button type="button" class="ebbtn btn_main ty_light">버튼</button>
-                    <button type="button" class="ebbtn btn_main ty_light" disabled="disabled">버튼</button>
-
-                    <a href="#none" class="ebbtn btn_main ty_light">다음</a>
-                    <a href="#none" class="ebbtn btn_main ty_light" disabled="disabled">다음</a>
-
-                </pre>   
-            </div>
-
-            <!-- case 2 -->
-            <!-- <h5 class="h5 rounded">case 2</h5>
-            <div class="guide-prev-box">
-                <div class="guide-prev">    
-
-                    <div class="btn_box">
-                        <div class="box_t">
-                            <button type="button" class="ebbtn btn_main ty_light" data-focused="on">온라인 약정 화면으로 이동</button>
+                    <div class="form_part">
+                        <!-- 입력 전 -->
+                        <div class="form_set">
+                            <div class="ebform_label">이메일</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력">
+                                    <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box_b">
-                            <button type="button" class="ebbtn btn_main ty_bg">홈으로 이동</button>
+                    
+                        <!-- 입력 후 -->
+                        <div class="form_set">
+                            <div class="ebform_label">이메일</div>
+                            <div class="form_pack">
+                                <div class="input_pack">
+                                    <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com">
+                                    <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                </div>
+                            </div>
+                        </div>                                        
+                    
+                        <!-- readonly -->
+                        <div class="form_set">
+                            <div class="ebform_label">이메일</div>
+                            <div class="form_pack">
+                                <div class="input_pack has_readonly">
+                                    <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com" readonly="">
+                                    <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- disabled -->
+                        <div class="form_set">
+                            <div class="ebform_label">이메일</div>
+                            <div class="form_pack">
+                                <div class="input_pack has_disabled">
+                                    <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com" disabled="">
+                                    <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- error -->
+                        <div class="form_set">
+                            <div class="ebform_label">이메일</div>
+                            <div class="form_pack">
+                                <div class="input_pack has_error">
+                                    <input type="email" class="ebinput" title="이메일" placeholder="이메일 입력" value="nhcapital@naver.com">
+                                    <button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+                                </div>
+                                <div class="ebform_msg ty_error">에러 메세지</div>
+                            </div>
                         </div>
                     </div>
 
-                </div> 
-            </div>
-            <div class="guide-code-box">
-                <pre class="brush:js">
-
-                    <div class="btn_box">
-                        <div class="box_t">
-                            <button type="button" class="ebbtn btn_main ty_light" data-focused="on">온라인 약정 화면으로 이동</button>
-                        </div>
-                        <div class="box_b">
-                            <button type="button" class="ebbtn btn_main ty_bg">홈으로 이동</button>
-                        </div>
-                    </div>
-                    
-                </pre>   
-            </div> -->
-
-            <!-- case 3 -->
-            <!-- <h5 class="h5 rounded">case 3</h5>
-            <div class="guide-prev-box">
-                <div class="guide-prev">
-                    <div class="btn_box">
-                        <div class="box_l">
-                            <button type="button" class="ebbtn btn_main ty_light">가입하기</button>
-                        </div>
-                        <div class="box_r">
-                            <button type="button" class="ebbtn btn_main ty_bg" data-focused="on">로그인</button>
-                        </div>
-                    </div>
-                </div> 
-            </div>                          
-            <div class="guide-code-box">
-                <pre class="brush:js">
-
-                    <div class="btn_box">
-                        <div class="box_l">
-                            <button type="button" class="ebbtn btn_main ty_light">가입하기</button>
-                        </div>
-                        <div class="box_r">
-                            <button type="button" class="ebbtn btn_main ty_bg" data-focused="on">로그인</button>
-                        </div>
-                    </div>
-                    
-                </pre>   
-            </div> -->
-        </div>
-
-        <div class="guide-section">            
-            <h4 class="h4">Normal Button</h4>
-            <div class="guide-prev-box">
-                <div class="guide-prev">
-
-                    <p class="guide-prev-title">[Primary]</p>
-                    <button type="button" class="ebbtn btn_normal ty_bg">중버튼</button>
-                    <button type="button" class="ebbtn btn_normal ty_bg" disabled="disabled">중버튼</button><br/><br/>
-
-                    <p class="guide-prev-title">[Secondary]</p>
-                    <button type="button" class="ebbtn btn_main ty_light">확인했어요</button>
-                    <button type="button" class="ebbtn btn_main ty_light" disabled="disabled">확인했어요</button>
-
-                </div> 
-            </div>                          
-            <div class="guide-code-box">
-                <pre class="brush:js">
-
-                    <!-- Primary -->
-                    <button type="button" class="ebbtn btn_main ty_bg">다음</button>
-                    <button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button>
-
-                    <a href="#none" class="ebbtn btn_main ty_bg">다음</a>
-                    <a href="#none" class="ebbtn btn_main ty_bg" disabled="disabled">다음</a>
-                    
-                    <!-- Secondary -->
-                    <button type="button" class="ebbtn btn_main ty_light">버튼</button>
-                    <button type="button" class="ebbtn btn_main ty_light" disabled="disabled">버튼</button>
-
-                    <a href="#none" class="ebbtn btn_main ty_light">다음</a>
-                    <a href="#none" class="ebbtn btn_main ty_light" disabled="disabled">다음</a>
-
-                </pre>   
-            </div>
-        </div>
-
-        <div class="guide-section">
-            <h4 class="h4">Process Button</h4>
-            <div class="guide-prev-box">
-                <div class="guide-prev">
-                    <button type="button" class="ebbtn btn_arrow">버튼</button>
-                    <button type="button" class="ebbtn btn_arrow" disabled="disabled">버튼</button>
-                </div>  
-            </div>                          
-            <div class="guide-code-box">
-                <pre class="brush:js">
-
-                    <!-- button 태그 사용 -->
-                    <button type="button" class="ebbtn btn_arrow">버튼</button>
-                    <button type="button" class="ebbtn btn_arrow" disabled="disabled">버튼</button>
-
-                    <!-- a 태그 사용 -->
-                    <a href="#none" class="ebbtn btn_arrow">버튼</a>
-                    <a href="#none" class="ebbtn btn_arrow disabled">버튼</a>
-                    
                 </pre>   
             </div>
         </div>
-
     </div>
     
 
