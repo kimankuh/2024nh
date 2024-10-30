@@ -455,7 +455,7 @@
 .onboarding_part .onboarding_start { position: fixed; box-shadow: 0 0 12px 16px rgb(255,255,255); left: 50%; bottom: 0; width: 100%; transform: translateX(-50%); background-color: #fff;  }
 .onboarding_part .onboarding_start.show { opacity: 1; pointer-events: initial; }
 
-.onboarding_part .onboarding_box .img_box { position: relative; width: 220px; height: 350px;  margin: 0 auto; padding: 8px 8px 0; box-sizing: border-box; }
+.onboarding_part .onboarding_box .img_box { position: relative; width: 220px; height: 350px;  margin: 0 auto; /*padding: 8px 8px 0;*/padding:7px 6px 0;box-sizing: border-box; }
 .onboarding_part .onboarding_box .img_box:after { z-index: -10; content: ''; position: absolute; top: 0; left: 0; width: 220px; height: 310px; border: 8px solid #d2d9e0; border-radius: 26px 26px 0 0; box-sizing: border-box; border-bottom: none;  }
 .slide_bg { z-index: -20; position: relative; width: 100%; height: 300px; }
 .slide01_ani { }
@@ -533,7 +533,7 @@
 }
 
 .slide05_bg { z-index: -20; position: relative; width: 100%; height: 300px; }
-.slide05_bg:after { content: ''; opacity: 0; position: absolute; top:137px;left:23px;width:50px;height:20px;background: url('../image/contents/common/onboarding_slide5_bg.png') no-repeat center; background-size: 100%; }/* 2024-10-30 2024고도화 : 이미지 변경 */
+.slide05_bg:after { content: ''; opacity: 0; position: absolute; top:139px;left:23px;width:51px;height:20px;background: url('../image/contents/common/onboarding_slide5_bg.png') no-repeat center; background-size: 100%; }/* 2024-10-30 2024고도화 : 이미지 변경 */
 /* .slide05_bg:after { content: ''; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 170px; background: url('../image/contents/common/onboarding_slide5_bg.png') no-repeat center; background-size: 100%; } */
 .slide05_click { position: absolute; top: 147px; left:34px; width: 35px; height: 16px; border-radius: 3px; background: rgba(0, 0, 0, 0.1); }/* 2024-10-30 2024고도화 : 위치 변경 */
 .slide05_click { opacity: 0; }
@@ -543,7 +543,7 @@
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }
-.slide05_ani { position: absolute; top: 175px; left: 23px; width: 175px; height: 98px; }
+.slide05_ani { position: absolute; top: 177px; left: 22px; width: 176px; height: 99px; }/* 2024-10-30 2024고도화 : 크기 및 위치 변경 */
 .slide05_ani img { height: 0; transform: rotateX(45deg); }
 .ani .slide05_ani img { animation: slide05ani .4s 1s forwards; }
 @keyframes slide05ani {
