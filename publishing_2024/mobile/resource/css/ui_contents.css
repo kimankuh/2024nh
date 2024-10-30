@@ -514,9 +514,9 @@
 .slide04_ani ul > li:after { content: ''; position: absolute; top: 26px; left: 7px; width: 2px; height: 15px; border-radius: 2px; background: #f0f0f0; }
 .slide04_ani ul > li .num { display: inline-block; vertical-align: middle; text-align: center; line-height: 17px; width: 17px; height: 17px; font-size: 11px; font-weight: bold; color: #ffffff; border-radius: 50%; background: #303030; }
 .slide04_ani ul > li .txt { display: inline-block; vertical-align: middle; margin-left: 3px; font-size: 13px; font-weight: bold; }
-.slide04_ani ul > li .check { overflow: hidden; position: relative; display: inline-block; vertical-align: middle; width: 25px; height: 25px; border-radius: 50%; background: #00ba89 url('../image/contents/common/onboarding_slide4_check.png') no-repeat center; background-size: 12px; }
-.slide04_ani ul > li .check:after { content: ''; position: absolute; top: 0; left: 0; width: 25px; height: 25px; border-radius: 50%; background: #00ba89; }
-.slide04_ani ul > li:last-child .txt { font-size: 15px; color: #00ba89; }
+.slide04_ani ul > li .check { overflow: hidden; position: relative; display: inline-block; vertical-align: middle; width: 25px; height: 25px; border-radius: 50%; background:#2F6DFC url('../image/contents/common/onboarding_slide4_check.png') no-repeat center; background-size: 12px; }/* 2024-10-29 2024고도화 : 온보딩 컬러 변경 */
+.slide04_ani ul > li .check:after { content: ''; position: absolute; top: 0; left: 0; width: 25px; height: 25px; border-radius: 50%; background: #2F6DFC; }/* 2024-10-29 2024고도화 : 온보딩 컬러 변경 */
+.slide04_ani ul > li:last-child .txt { font-size: 15px; color: #2F6DFC; }/* 2024-10-29 2024고도화 : 온보딩 컬러 변경 */
 .slide04_ani ul > li { opacity: 0; }
 .ani .slide04_ani ul > li:nth-of-type(1) { animation: slide04ani .4s forwards; }
 .ani .slide04_ani ul > li:nth-of-type(2) { animation: slide04ani .4s .2s forwards; }
@@ -533,8 +533,9 @@
 }
 
 .slide05_bg { z-index: -20; position: relative; width: 100%; height: 300px; }
-.slide05_bg:after { content: ''; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 170px; background: url('../image/contents/common/onboarding_slide5_bg.png') no-repeat center; background-size: 100%; }
-.slide05_click { position: absolute; top: 154px; left: 29px; width: 35px; height: 16px; border-radius: 3px; background: rgba(0, 0, 0, 0.1); }
+.slide05_bg:after { content: ''; opacity: 0; position: absolute; top:137px;left:23px;width:50px;height:20px;background: url('../image/contents/common/onboarding_slide5_bg.png') no-repeat center; background-size: 100%; }/* 2024-10-30 2024고도화 : 이미지 변경 */
+/* .slide05_bg:after { content: ''; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 170px; background: url('../image/contents/common/onboarding_slide5_bg.png') no-repeat center; background-size: 100%; } */
+.slide05_click { position: absolute; top: 147px; left:34px; width: 35px; height: 16px; border-radius: 3px; background: rgba(0, 0, 0, 0.1); }/* 2024-10-30 2024고도화 : 위치 변경 */
 .slide05_click { opacity: 0; }
 .ani .slide05_click { animation: slideclickani .5s .5s; }
 .ani .slide05_bg:after { animation: slidebgani .1s 1s forwards; }
