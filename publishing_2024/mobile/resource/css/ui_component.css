@@ -702,6 +702,7 @@ input[type=password]:-ms-input-placeholder { font-family: 'SpoqaHanSansNeo', 'ma
 .ebicon.icon_business { width: 30px; height: 30px; background: url('../image/icon/icon_company.png') no-repeat center; background-size: 100%; }
 .ebicon.icon_cell { width: 32px; height: 31px; background: url('../image/icon/icon_cell.png') no-repeat center; background-size: 100%; }
 .ebicon.icon_store { width: 32px; height: 32px; background: url('../image/icon/icon_store.png') no-repeat center; background-size: 100%; }
+.ebicon.icon_phishing{width: 32px; height: 32px; background: url('../image/icon/icon_phishing.png') no-repeat center; background-size: 100%; }/* 2024-10-28 2024고도화 : 운영버전 현행화 */
 .ebicon.icon_cam { width: 32px; height: 28px; background: url('../image/icon/icon_cam.png') no-repeat center; background-size: 100%; }
 .ebicon.icon_alram { width: 32px; height: 30px; background: url('../image/icon/icon_alram.png') no-repeat center; background-size: 100%; }
 .ebicon.icon_bio { width: 32px; height: 30px; background: url('../image/icon/icon_bio.png') no-repeat center; background-size: 100%; }
