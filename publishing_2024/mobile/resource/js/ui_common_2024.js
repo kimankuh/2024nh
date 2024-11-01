@@ -127,11 +127,12 @@ function mainEventerBannersSwiper(){
             init: function(){
                 var elParent = $(this.el).parent();
                 setSwiperPropA11y(elParent, slideLength);
+                if(slideLength <= 1) $('.swiper-toggle').remove();
             },
             slideChange: function(){
-                // var elParent = $(this.el).parent();
-                // setSwiperPropA11y(elParent, slideLength);
-                // $(elParent).find('.swiper-slide').eq(this.activeIndex).attr({'tabindex' : 0, 'aria-hidden' : false});
+                var elParent = $(this.el).parent();
+                setSwiperPropA11y(elParent, slideLength);
+                $(elParent).find('.swiper-slide').eq(this.activeIndex).attr({'tabindex' : 0, 'aria-hidden' : false});
             },
         }        
     });
@@ -167,12 +168,16 @@ function mainEventSecondSwiper(){
             init: function(){
                 var elParent = $(this.el).parent();
                 setSwiperPropA11y(elParent, slideLength);
+                if(slideLength <= 1){
+                    $('.swiper-toggle').remove();
+                    $(this.el).css('margin-bottom', '-24px');
+                }
             },
             slideChange: function(){
                 var elParent = $(this.el).parent();
                 setSwiperPropA11y(elParent, slideLength);
                 $(elParent).find('.swiper-slide').eq(this.activeIndex).attr({'tabindex' : 0, 'aria-hidden' : false});
-            },
+            }
         }        
     });
 

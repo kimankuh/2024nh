@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>고객정보입력 | NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+</head>
+<body>
+
+
+	<div id="layoutContent" class="layout"><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+	<div class="header" >
+		<div class="header_area">
+
+			<div class="header_back">
+				<a href="#" class="ebbtn btn_header_back" title="뒤로가기"></a>
+			</div>
+
+			<div class="header_title">
+				<h2 class="ebtitle2">고객정보입력</h2>
+			</div>
+
+			<div class="header_menu">
+				<button type="button" class="ebbtn btn_header_menu" title="전체메뉴 열기"></button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!-- 컨텐츠 상단 타이틀영역 -->
+		<div class="subheader">
+			<div class="subheader_area">
+
+				<div class="step_part">
+					<div class="step_pack">
+						<ol>
+							<li class="active"><!-- 현재 스텝에 addClass="active" / 완료된 스텝인 경우 addClass="finish" -->
+								<span class="num">1</span>
+								<span class="txt">한도조회</span>
+							</li>
+							<li>
+								<span class="num">2</span>
+								<span class="txt">대출신청</span>
+							</li>
+							<li>
+								<span class="num">3</span>
+								<span class="txt">약정서 작성</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="progress_pack">
+						<ul>
+							<li class="active"></li><!-- 현재 스텝에 addClass="active" -->
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="page_title_part">
+					<h2 class="ebtitle2">고객정보입력</h2>
+				</div>
+
+				<div class="page_subtitle_part">
+					<p>직장정보와 추가정보를 입력해주세요.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 여기부터 컨텐츠 -->
+		<div class="contents_area">
+			<div class="contents">
+
+
+				<!-- 2022-05-10 수정 : 케이스별 폼입력 내용 수정 -->
+				<!-- 2022-03-30 수정 : 입력항목 추가 -->
+				<!-- 2022-03-25 수정 : 입력항목 추가 -->
+
+				<div class="form_part ty_ani">
+					<div class="form_set show">
+						<div class="ebform_label">직업정보</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="직업정보">
+									<option value="option1">선택</option>
+									<option value="option2">직장인</option>
+									<option value="option3">직장인 외</option><!-- 2024-11-01 2024고도화 : [SB v2.1] 파트별 현행화 -->
+									<!-- <option value="option3">자영업자</option> -->
+									<!-- <option value="option4">프리랜서</option> -->
+									<!-- <option value="option5">무직</option> -->
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<!-- 2024-11-01 2024고도화 : [SB v2.1] '직장인 외' 선택시 항목 추가. 파트별 현행화 -->
+					<div class="form_set show">
+						<div class="ebform_label">사업자명</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="사업자명 입력" value="" title="사업자명 입력">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form_set show">
+						<div class="ebform_label">사업자번호등록번호</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="tel" class="ebinput" placeholder="- 없이 숫자만 입력" value="" title="사업자번호등록번호 입력">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 2024-11-01 2024고도화 : [SB v2.1] '직장인 외' 선택시 항목 추가. 파트별 현행화 -->
+
+					<!-- 직업정보 직장인 선택시 노출 -->
+					<!-- 2022-04-06 수정 : 직장명 영역 추가 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">직장명</div>
+						<div class="form_pack">
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="직장명">직장정보 검색</button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-04-06 수정 : 직장명 영역 추가 -->
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">고용형태</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="고용형태">
+									<option value="option1">선택</option>
+									<option value="option2">정규직</option>
+									<option value="option3">계약직</option>
+									<option value="option4">파견직</option>
+									<option value="option5">임시직</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+					<!-- 2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">입사일시</div>
+						<div class="form_pack">
+							
+							<div class="input_pack">
+								<input type="text" class="ebinput" inputmode="decimal" placeholder="예 : 2010.01.01" title="입사일시"/>
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+					<!-- 2022-04-01 수정 : input type 수정 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">연소득</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="연소득" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div> -->
+					<!-- //직업정보 직장인 선택시 노출 -->
+
+					<!-- 직업정보 자영업자 선택시 노출 -->
+					<!-- 2022-04-06 수정 : 직장명 영역 추가, 사업장명, 사업자번호 삭제 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">직장명</div>
+						<div class="form_pack">
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search" title="직장명">직장정보 검색</button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-04-06 수정 : 직장명 영역 추가, 사업장명, 사업자번호 삭제 -->
+					<!-- 2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">영업시작일</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" inputmode="decimal" placeholder="예 : 2010.01.01" title="영업시작일"/>
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">연소득</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="연소득" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div> -->
+					<!-- //직업정보 자영업자 선택시 노출 -->
+
+					<!-- 직업정보 프리랜서 선택시 노출 -->
+					<!-- 2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">입사일시</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" inputmode="decimal" placeholder="예 : 2010.01.01" title="입사일시"/>
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-04-08 수정 : lable, title, placeholder 텍스트 수정 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">연소득</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="연소득" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div> -->
+					<!-- //직업정보 프리랜서 선택시 노출 -->
+
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<p class="ebtitle_small">주택정보를 입력하시면 더 많은 한도를<br> 받으실 수 있어요.</p>
+						<div class="ebform_label">주택정보</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="주택정보">
+									<option value="option1">선택</option>
+									<option value="option2">입력하겠습니다.</option>
+									<option value="option3">입력하지 않겠습니다.</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- 입력하겠습니다 선택시 노출 -->
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">주택유형</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="주택유형">
+									<option value="option1">선택</option>
+									<option value="option2">아파트</option>
+									<option value="option3">아파트외</option>
+									<option value="option4">오피스텔/원룸</option>
+									<option value="option5">아파트(임대)</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">소유여부</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="소유여부">
+									<option value="option1">선택</option>
+									<option value="option2">자가-본인소유</option>
+									<option value="option3">(반)전세</option>
+									<option value="option4">공동소유</option>
+									<option value="option5">기타</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- 소유여부 공동소유 선택시 노출 -->
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">본인지분율</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word1">
+								<input type="tel" class="ebinput" title="본인지분율" placeholder="입력" value="">
+								<span class="unit">%</span>
+							</div>
+						</div>
+						<ul class="ebullet_circle">
+							<li>부부 공동소유인 경우는 지분율 100% 입력 해주세요. <br/>(단, 제 3자 존재시 100% 인정 불가)</li>
+						</ul>
+					</div> -->
+					<!-- //소유여부 공동소유 선택시 노출 -->
+
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">거주여부</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="거주여부">
+									<option value="option1">선택</option>
+									<option value="option2">거주합니다.</option>
+									<option value="option3">거주하지 않습니다.</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- 주택정보 미입력 상태 시 -->
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">주택정보</div>
+						<div class="form_pack">
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search">주택정보 검색</button>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- 주택정보 검색 후 활성화 -->
+					<!-- 입력 후 아파트 케이스 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">지역</div>
+						<div class="form_pack ty_flex">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="지역 입력" title="지역" value="서울시 강남구 개포동" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+							<div class="btn_pack">
+								<button type="button" class="ebbtn btn_multi">주택정보 수정</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set show">
+						<div class="ebform_label">주거지</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="주거지 입력" title="주거지" value="LG 개포자이, 120동 2301호" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set show">
+						<div class="ebform_label">공용/전용면적</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="tel" class="ebinput" placeholder="공용/전용면적 입력" title="공용/전용면적" value="175.68 / 135.27" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form_set show">
+						<div class="ebform_label">매매시세</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="매매시세" placeholder="입력" value="10,000" readonly="readonly">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div>
+					<div class="form_set show">
+						<div class="ebform_label">전세시세</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="전세시세" placeholder="입력" value="8,000" readonly="readonly">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+						!-- 2022-04-06 수정 : 설정금액 입력 폼 추가 --
+					</div>
+					<div class="form_set show">
+						<div class="ebform_label">설정금액</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="설정금액" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+						<ul class="ebullet_circle">
+							<li>주택담보를 설정할 금액을 입력해주세요.</li>
+						</ul>
+					</div>
+
+					<div class="form_set show">
+						<div class="ebform_label">시세 출처</div>
+						<div class="form_pack">
+							<div class="input_pack has_readonly">
+								<input type="text" class="ebinput" placeholder="" value="KB부동산" title="시세 출처" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-04-06 수정 : 설정금액 입력 폼 추가 -->
+
+					<!-- //입력 후 아파트 케이스 -->
+
+					
+					<!-- 아파트(임대) 선택시 케이스  -->
+
+					<!-- 2022-05-24 수정 : 입력 폼 추가 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">현거주 시작일</div>
+						<div class="form_pack">
+							
+							<div class="input_pack">
+								<input type="text" class="ebinput" inputmode="decimal" placeholder="예 : 2010.01.01" title="현거주 시작일">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-05-24 수정 : 입력 폼 추가 -->
+
+					<!-- <div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">주택정보</div>
+						<div class="form_pack">
+							<div class="select_pack">
+								<button type="button" class="ebbtn btn_select ty_search">주택정보 검색</button>
+							</div>
+						</div>
+					</div> -->
+					<!-- //아파트(임대) 선택시 케이스  -->
+
+
+					<!-- 아파트(임대) 직접입력 케이스  -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">지역</div>
+						<div class="form_pack ty_flex">
+							<div class="input_pack has_readonly">
+								<input type="text" class="ebinput" placeholder="지역 입력" title="지역" value="서울시 강남구 개포동" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+							<div class="btn_pack">
+								<button type="button" class="ebbtn btn_multi">주택정보 수정</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set show">
+						<div class="ebform_label">주거지</div>
+						<div class="form_pack">
+							<div class="input_pack has_readonly">
+								<input type="text" class="ebinput" placeholder="주거지 입력" title="주거지" value="LG 개포자이, 120동 2301호" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set show">
+						<div class="ebform_label">전세시세</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2 has_readonly">
+								<input type="tel" class="ebinput" title="전세시세" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set show">
+						<div class="ebform_label">시세출처</div>
+						<div class="form_pack">
+							<div class="select_pack has_selected" data-ui="customSelect">
+								<button type="button" class="ebbtn btn_slct_trigr" title="시세출처 선택"></button><select class="ebselect" data-placeholder="선택" title="시세출처" tabindex="-1">
+									<option value="option1">선택</option>
+									<option value="option2">KB부동산시세</option>
+									<option value="option3">부동산테크</option>
+									<option value="option4">부동산114</option>
+									<option value="option5">국토교통부(실)</option>
+									<option value="option6">국토교통부(공)</option>
+									<option value="option7">한국감정원</option>
+									<option value="option8">기타</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+					
+					<!-- 아파트(임대) 직접입력 케이스  -->
+
+
+					<!-- //입력 후 직접입력 케이스 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">지역</div>
+						<div class="form_pack ty_flex">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="지역 입력" title="지역" value="서울시 강남구 개포동" readonly="readonly">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+							<div class="btn_pack">
+								<button type="button" class="ebbtn btn_multi">주택정보 수정</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_set show">
+						<div class="ebform_label">주거지</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="주거지 입력" title="주거지" value="">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="form_set show">
+						<div class="ebform_label">매매시세</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="매매시세" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div>
+					<div class="form_set show">
+						<div class="ebform_label">전세시세</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="전세시세" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div> -->
+					<!-- 2022-04-06 수정 : 설정금액 입력 폼 추가, 시세출처 선택 추가 -->
+					<!-- <div class="form_set show">
+						<div class="ebform_label">설정금액</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="설정금액" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+						<ul class="ebullet_circle">
+							<li>주택담보를 설정할 금액을 입력해주세요.</li>
+						</ul>
+					</div>
+					<div class="form_set show">
+						<div class="ebform_label">시세출처</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="시세출처">
+									<option value="option1">선택</option>
+									<option value="option2">KB부동산시세</option>
+									<option value="option3">부동산테크</option>
+									<option value="option4">부동산114</option>
+									<option value="option5">국토교통부(실)</option>
+									<option value="option6">국토교통부(공)</option>
+									<option value="option7">한국감정원</option>
+									<option value="option8">기타</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+					<!-- //2022-04-06 수정 : 설정금액 입력 폼 추가, 시세출처 선택 추가 -->
+				</div>
+				<!-- //입력하겠습니다 선택시 노출 -->
+
+				<!-- 임직원으로 접근 시 노출 -->
+				<!-- <div class="form_part">
+					<div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">계열사명</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="계열사명">
+									<option value="option1">선택</option>
+									<option value="option2">옵션</option>
+									<option value="option3">옵션</option>
+									<option value="option4">옵션</option>
+									<option value="option5">옵션</option>
+								</select>
+							</div>
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="계열사명">
+									<option value="option1">선택</option>
+									<option value="option2">옵션</option>
+									<option value="option3">옵션</option>
+									<option value="option4">옵션</option>
+									<option value="option5">옵션</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form_set show">!-- 입력폼 활성화시 addclass="show" --
+						<div class="ebform_label">직위</div>
+						<div class="form_pack">
+							<div class="select_pack" data-ui="customSelect">
+								<select class="ebselect" data-placeholder="선택" title="직위">
+									<option value="option1">선택</option>
+									<option value="option2">옵션</option>
+									<option value="option3">옵션</option>
+									<option value="option4">옵션</option>
+									<option value="option5">옵션</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form_set show">
+						<div class="ebform_label">부서명</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" placeholder="입력" title="부서명" value="">
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+					!-- 2022-04-08 수정 : lable, title, placeholder 텍스트 수정 --
+					<div class="form_set show">
+						<div class="ebform_label">입사일시</div>
+						<div class="form_pack">
+							<div class="input_pack">
+								<input type="text" class="ebinput" inputmode="decimal" placeholder="예 : 2010.01.01" title="입사일시"/>
+								<button type="button" class="ebbtn btn_input_clear" title="문구삭제"></button>
+							</div>
+						</div>
+					</div>
+					!-- //2022-04-08 수정 : lable, title, placeholder 텍스트 수정 --
+					<div class="form_set show">
+						<div class="ebform_label">연소득</div>
+						<div class="form_pack">
+							<div class="input_pack ty_word2">
+								<input type="tel" class="ebinput" title="연소득" placeholder="입력" value="">
+								<span class="unit">만원</span>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- //2022-04-01 수정 : input type 수정 -->
+				<!-- //임직원으로 접근 시 노출 -->
+
+				<!-- //2022-03-25 수정 : 입력항목 추가 -->
+				<!-- //2022-03-30 수정 : 입력항목 추가 -->
+				<!-- //2022-05-10 수정 : 케이스별 폼입력 내용 수정 -->
+
+			</div>
+		</div>
+		<!-- //여기까지 컨텐츠 -->
+
+		<!-- 컨텐츠 하단 버튼영역 -->
+		<div class="contents_bottom_area ty_fixed"><!-- 하단고정영역인 경우 addclass="ty_fixed" -->
+			<button type="button" class="ebbtn btn_main ty_bg" disabled="disabled">다음</button>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 2024-08-08 2024고도화 : 운영과 동일한 팝업영역 추가 for 바텀시트 호출 -->
+<div id="layoutPopContent" aria-hidden="true"></div>
+
+
+<script>
+// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+// pageloadFunc();
+</script>
+
+</body>
+</html>
