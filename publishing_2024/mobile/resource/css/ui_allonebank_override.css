@@ -372,6 +372,8 @@ button, input, textarea, select, a {color:var(--grayColor01);}
 .product_info .car_part .intro_main .img_wrap .ani.ani_8{width:25.6rem;}
 .product_info .loan_info_part{margin-top:0; border-top:0; padding-top:0;}
 
+.small_title_pack + .loan_info_part {margin-top:30px;}
+
 /* 아이콘_성공 */
 .ebicon.icon_complete{width:6.8rem; height:6.8rem; background:url(../image/contents/albk/icon_complete_re.png) no-repeat center; background-size:100%;}
 
