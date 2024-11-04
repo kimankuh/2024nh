@@ -76,6 +76,7 @@ em {font-style:normal;}
 /* guide-header */
 .guide-header {display:flex;padding-top:40px;}
 .status-area {flex-grow:1;padding-top:7px;padding-right:40px;text-align:right;}
+.title-desc {margin-left:10px;line-height:31px;font-size:13px;color:#999;}
 
 /* content */
 .content {padding:10px 30px;}
