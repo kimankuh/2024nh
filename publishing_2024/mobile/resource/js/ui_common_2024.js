@@ -98,6 +98,9 @@ function myProductsSwiper(){
             init: function(){
                 var elParent = $(this.el).parent();
                 setSwiperPropA11y(elParent, slideLength);
+                if(slideLength <= 1){
+                    $(this.el).css('margin-bottom', '-20px');
+                }
             },
             slideChange: function(){
                 var elParent = $(this.el).parent();
@@ -114,6 +117,7 @@ function mainEventerBannersSwiper(){
     var maineventSwiperNew = new Swiper('.main_event_banners .swiper-container', {
         speed: 400,
         slidesPerView: 1,
+        spaceBetween : 10,
         pagination: {
             clickable: true,
             el: ".swiper-pagination",
@@ -127,7 +131,10 @@ function mainEventerBannersSwiper(){
             init: function(){
                 var elParent = $(this.el).parent();
                 setSwiperPropA11y(elParent, slideLength);
-                if(slideLength <= 1) $('.swiper-toggle').remove();
+                if(slideLength <= 1){
+                    $('.swiper-toggle').remove();
+                    $(this.el).css('margin-bottom', '-24px');
+                }
             },
             slideChange: function(){
                 var elParent = $(this.el).parent();
@@ -155,6 +162,7 @@ function mainEventSecondSwiper(){
     var maineventSwiperNew02 = new Swiper('.main_event_banners_02 .swiper-container', {
         speed: 400,
         slidesPerView: 1,
+        spaceBetween : 10,
         pagination: {
             clickable: true,
             el: ".swiper-pagination",
