@@ -973,3 +973,7 @@ button[type="button"] em {font-style:normal;}
 
 /* 신용대출 > 인증코드입력 */
 .layoutline.md {margin-top:32px;margin-bottom:32px;}
+
+/* 최초 진입 화면 > 홈버튼 추가 */
+.header_menu .ebbtn.btn_home {width:40px;height:40px;background: url('../image/layout/btn_gohome_02.png') no-repeat center;background-size:24px;}
+.login_intro_page.has_header {padding-top:123px;}
