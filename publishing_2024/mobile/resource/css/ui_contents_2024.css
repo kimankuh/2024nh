@@ -338,7 +338,11 @@ button[type="button"] em {font-style:normal;}
 .renewal_2024 .section_bdonly_box + .my_status_list {margin-top:32px;}
 .renewal_2024 .my_status_list {counter-reset:num;}
 .renewal_2024 .my_status_list .my_status_step {position:relative;padding:5px 0 32px 72px;min-height:56px;box-sizing:border-box;}
-.renewal_2024 .my_status_list .my_status_step:before {z-index:1;position:absolute;top:0;left:0;counter-increment:num;content:counter(num);display:inline-block;width:56px;height:56px;line-height:50px;text-align:center;font-size:22px;font-weight:700;color:#878787;background-color:#fff;border-radius:50%;border:4px solid #E5E8F0;box-sizing:border-box;}
+.renewal_2024 .my_status_list .my_status_step:before {z-index:1;position:absolute;top:0;left:0;/*counter-increment:num;content:counter(num);*/display:block;width:56px;height:56px;line-height:50px;text-align:center;font-size:22px;font-weight:700;color:#878787;background-color:#fff;border-radius:50%;border:4px solid #E5E8F0;box-sizing:border-box;}
+.renewal_2024 .my_status_list .my_status_step:nth-child(1):before {content:'1';}/* 2024-11-07 2024고도화 : li 채번 수동으로 변경 */
+.renewal_2024 .my_status_list .my_status_step:nth-child(2):before {content:'2';}
+.renewal_2024 .my_status_list .my_status_step:nth-child(3):before {content:'3';}
+.renewal_2024 .my_status_list .my_status_step:nth-child(4):before {content:'4';}
 .renewal_2024 .my_status_list .my_status_step:after {content:'';position:absolute;top:0;left:27px;bottom:0;width:2px;background:url('../image/contents/mypg/bg_dotted_line_2x2.png') repeat;background-size:2px auto;}
 .renewal_2024 .my_status_list .my_status_step:last-child {min-height:56px;}
 .renewal_2024 .my_status_list .my_status_step:last-child:after {display:none;}
