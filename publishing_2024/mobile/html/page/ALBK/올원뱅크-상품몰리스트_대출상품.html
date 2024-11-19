@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 상품몰리스트_대출상품</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	
+	<!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css -->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <h3 class="ebtitle3">NH농협캐피탈</h3>
+                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container pdt_popup">
+				
+				<!--상품몰 리스트-->
+                   
+				<div class="albk_pdt_list_part">
+				  <div class="albk_pdt_list_pack">
+					<ul>
+						<li>
+							<a href="">
+								<dl>
+									<dt>
+										<p class="title">개인신용대출</p>
+									</dt>
+									<dd>
+										직장인, 자영업자, 자유소득자, 주부도 가능
+										<div class="content_ex">
+											<span>최저 연 6.6%</span>
+											<span>최대 1억 5천만원</span>
+										</div>
+									</dd>
+								</dl>
+								<div class="icon_wrap">
+									<span class="ebicon icon_credit"></span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<dl>
+									<dt>
+										<p class="title">사업자아파트담보대출</p>
+									</dt>
+									<dd>
+										아파트를 보유하고 있는 개인사업자 대상
+										<div class="content_ex">
+											<span>최저 연 6.4%</span>
+											<span>최대 10억원</span>
+										</div>
+									</dd>
+								</dl>
+								<div class="icon_wrap">
+									<span class="ebicon icon_apt"></span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				  </div>
+				</div>
+
+				<!--//상품몰 리스트-->
+
+				</div>
+			</div>
+
+			
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+</script>
+
+
+</body>
+</html>

@@ -49,7 +49,6 @@ body { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum
 button, input, textarea, select, a { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum' !important; }
 
 /* contents override */
-/*.header .header_area .header_title h2 { font-size: 1.7rem; }*/
 .ebtitle2 { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum' !important; font-size: 2.2rem; }
 .ebtitle3 { font-family: 'Pretendard Variable', 'malgun gothic', 'sans-serif', 'dotum' !important; }
 
@@ -341,8 +340,8 @@ button, input, textarea, select, a {color:var(--grayColor01);}
 .product_info .intro_info_box .text + .text{margin-top:1.2rem;}
 .product_info .intro_info_box dl{margin-bottom:0;}
 .product_info .intro_info_box dl dt{padding:0; font-weight:400; color:var(--grayColor02); background:none;}
-.product_info .intro_info_box dl dd{position:relative; margin:0; font-size:3.6rem; font-weight:400; color:var(--primaryColor);}
-.product_info .intro_info_box dl dd span{margin:0; font-size:3.6rem; font-weight:600; }
+.product_info .intro_info_box dl dd{position:relative; margin:0; font-size:3.1rem; font-weight:400; color:var(--primaryColor);}/* 2024-11-18 폰트크기 변경 */
+.product_info .intro_info_box dl dd span{margin:0; font-size:3.1rem; font-weight:600; }/* 2024-11-18 폰트크기 변경 */
 .product_info .intro_info_box dl dd.black{color:var(--grayColor01);}
 .product_info .intro_info_box dl + dl dd:before{content:"~"; display:block; position:absolute; top:0; left:-2.8rem; width:2.2rem; height:5rem;}
 .product_info .bgsimplediv .intro_btn_box{margin-top:3.6rem;}
@@ -558,3 +557,57 @@ button, input, textarea, select, a {color:var(--grayColor01);}
 /* 팝업 */
 .modal_popup.ty_popupfull .popup_layout .popup_header .ebtitle2,
 .modal_popup .popup_layout .popup_header .ebtitle3 {padding-left:2.4rem;text-align:left;font-weight:600;font-size:1.6rem;color:#000;}
+
+/***** 2024-11-18 SR반영분 *****/
+/*신차*/
+.car_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box .ani{opacity: 1;}
+
+/*가이드 디자인 변경*/
+.modal_popup .popup_layout .popup_header{min-height: 50px; line-height: 50px; }
+.modal_popup .popup_layout .popup_header .ebtitle3{line-height: 50px; }
+.ebbtn.btn_modal_close{width:50px; height:50px; }
+.modal_popup .popup_layout .popup_header .ebtitle3{font-size: 17px; font-weight: 500; color: #121212; }
+
+/*헤더 홈버튼 이미지*/
+.header .header_area .header_back{left:8px; }
+.header .header_area .header_home{right:14px; }
+.header .header_area .header_home .ebbtn.btn_header_home{background: url("../image/contents/albk/ico-func-home.svg") no-repeat center; }
+
+/* 브릿지페이지 */
+.loading_area{top: 50%; left: 50%; transform: translate(-50%, -50% ); position: absolute; text-align: center;
+	font-size:0; }
+.loading_area .img{width: 190px; margin: 0 auto;}
+.loading_area .txt{font-size: 21px; margin-top: 25px; color: #121212; font-family: 'NotoSansKR'; }
+
+/*상품소개 팝업 */
+.modal_popup .popup_layout .pdt_popup{line-height: initial; }
+
+/*상품몰 리스트*/
+.albk_pdt_list_part .albk_pdt_list_pack li{position: relative; display: table; table-layout: fixed; box-sizing: border-box;
+    border-radius: 7px; background: #fafafc; width: 100%; margin-top:15px; }
+.albk_pdt_list_part .albk_pdt_list_pack li a{display:block; padding: 20px 25px 21px 25px; }
+.albk_pdt_list_part .albk_pdt_list_pack li dl{display: table-cell; vertical-align: middle; width: 100%; }
+.albk_pdt_list_part .albk_pdt_list_pack li dt{position: relative;  }
+.albk_pdt_list_part .albk_pdt_list_pack li dt p{font-size:16px; font-weight:bold; }
+.albk_pdt_list_part .albk_pdt_list_pack li dd{display: table; table-layout: fixed; padding-top: 8px; 
+    vertical-align: top; font-size: 13px; color: #707070; word-break: keep-all; }
+.albk_pdt_list_part .albk_pdt_list_pack li .icon_wrap{display: table-cell; vertical-align: top; width: 38px; text-align: right; }
+.albk_pdt_list_part .albk_pdt_list_pack li .icon_wrap .ebicon{background-position-y: 4px; }
+.albk_pdt_list_part .albk_pdt_list_pack li .content_ex{font-size:13px; color:#1f9853; margin-top: 15px; }
+.albk_pdt_list_part .albk_pdt_list_pack li .content_ex span+span{padding-left: 12px; }
+.ebicon.icon_credit{width: 45px; height: 47px; background: url("../image/contents/albk/icon_credit.png") no-repeat center/contain; }
+.ebicon.icon_apt{width: 50px; height: 39px; background: url("../image/contents/albk/icon_apt.png") no-repeat center/contain; }
+.ebicon.icon_rent{width: 45px; height: 50px; background: url("../image/contents/albk/icon_rent.png") no-repeat center/contain; }
+.ebicon.icon_lease{width: 45px; height: 50px; background: url("../image/contents/albk/icon_lease.png") no-repeat center/contain; }
+.ebicon.icon_newcar{width: 45px; height: 50px; background: url("../image/contents/albk/icon_newcar.png") no-repeat center/contain; }
+.housing_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box .ani.ani_1, .housing_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box .ani.ani_2, 
+.housing_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box .ani.ani_3, .housing_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box .ani.ani_4{z-index:2; }
+.housing_part ~ .tabcontent_pack .intro_part .img_wrap .imgani_box .ani.ani_5{z-index:0; }
+
+/* 2024-11-18 추가 */
+/* 사업자 아파트 담보대출 상세 */
+.housing_part .intro_main .cont_box {padding-top:92px;}
+.housing_part .intro_main .title_wrap {margin-top:0;text-align:center;letter-spacing:-1px;}
+.housing_part .intro_main .title {font-size:24px;font-weight:600;}
+.housing_part .intro_main .desc {padding-top:16px;font-size:15px;}
+.housing_part .intro_main .img_wrap  {margin:0 auto;padding-top:16px;width:239px;}

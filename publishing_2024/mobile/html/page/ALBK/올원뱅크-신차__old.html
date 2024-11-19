@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>올원뱅크 - 신차 상품소개</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+	
+	<!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_allonebank_override.css"><!-- 올원뱅크 전용 css -->
+
+	<!-- Publishing JS -->
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+
+<div class="layout"></div>
+
+
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+    -팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+
+		<div class="popup_inner">
+
+            <div class="popup_header">
+                <h3 class="ebtitle3">신차</h3>
+                <button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container pdt_popup">
+					<div class="page_title_part">
+						<h2 class="ebtitle2">
+							신차
+						</h2>
+					</div>
+
+				<!--사업자담부대출 컨텐츠-->
+                   <div class="inquiry_part">
+						<div class="car_part bgsimplediv">
+
+							<div class="intro_info_box">
+								<div class="text">국산·수입 신차 구분없이 고객님께서 새차를 구입하기 위하여 사용하는 일반적인 금융상품</div>
+								<div class="text">차량 구입 대금을 NH농협캐피탈에서 지급하고, 계약기간 동안 일정 금액을 분할 / 납부하는 상품입니다.</div> <!-- 2022-05-13 수정 : 텍스트변경 -->
+								<div class="data">
+									
+									
+									<dl>	
+										<dt>최저 금리</dt>
+										<dd>연 <span class="min">5.5</span>%</dd>
+									</dl>
+									<dl>
+										<dt>최대 한도</dt>
+										<dd><span class="max">차량가격</span>이내</dd>
+									</dl>
+								</div>
+							</div>
+
+							<div class="intro_btn_box">
+								<div class="btn_box"><!-- 2022-05-09 수정 : 버튼디자인 수정으로 상하단 클래스 제거 -->
+									<div class="box_l">
+										<button type="button" id="btn_call_counsel1" class="ebbtn btn_main ty_light btn_call_counsel" data-mid="2413">전화상담신청</button>
+									</div>
+									<div class="box_r">
+										<button type="button" id="btn_apply_loan1" class="ebbtn btn_main ty_bg btn_apply_loan" data-mid="ncar">대출신청</button>
+									</div>
+								</div>
+							</div>
+							
+							<!-- <div class="call_box">
+								<a href="tel:1644-3900" class="ebbtn btn_text_link">
+									<span class="ebicon icon_phone"></span>
+									<span class="text">상담전화</span>
+									<span class="tel">1644-3900</span>
+								</a>
+							</div> -->
+							
+							
+							<div class="call_box">
+								<a href="tel:1644-3900" class="ebbtn btn_text_link" title="전화 앱 화면으로 전환됩니다" role="button">
+									<span class="ebicon icon_phone"></span>
+									<span class="text">상담전화</span>
+									<span class="tel">1644-3900</span>
+								</a>
+								<!-- 2022-05-13 수정 : 지점찾기버튼추가 -->
+								<a href="javascript:void(0);" class="ebbtn btn_text_link" onclick="comm.goPage('/aboutus/branch/selectBranch.nh')" role="button">
+									<span class="ebicon icon_branch"></span>
+									<span class="text">지점찾기</span>
+								</a>
+								<!--//2022-05-13 수정 : 지점찾기버튼추가 -->							
+							</div>
+
+						</div>
+
+						<div class="tab_pack ty_normal" data-module-id="intronewcartab">
+							<ul class="ebtab" role="tablist">
+								<li class="active">
+									<button type="button" class="ebbtn btn_tab" role="tab" aria-selected="true">상품소개</button>
+								</li>
+								<li class="">
+									<button type="button" class="ebbtn btn_tab" role="tab" aria-selected="false">상세정보</button>
+								</li>
+							</ul>
+						</div>
+
+						<div class="tabcontent_pack" data-module-for="intronewcartab">
+							<ul class="ebtab_content">
+								<li class="active" role="tabpanel">
+
+									<div class="intro_part">
+										<div class="intro_main">
+
+											<div class="title_wrap">
+												<div class="title">
+													승용 신차 (국산/수입)<br>
+													15인승 이하 승합<br>
+													2.5톤 이하 화물
+												</div>
+												<div class="desc">
+													자동차를 구입하고자 하는 개인, 개인사업자, 법인
+												</div>
+											</div>
+											<!-- 2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+											<div class="img_wrap widediv">
+												<div class="loan_img_box">
+													<div class="imgani_box">
+														<div class="ani ani_1">
+															<span class="img_box">
+																<img src="../../../resource/image/contents/car/intro_car_ani3.png" alt="승용 신차">
+															</span>
+														</div>
+														<div class="ani ani_2">
+															<span class="img_box">
+																<img src="../../../resource/image/contents/car/intro_car_ani2.png" alt="15인승 이하 승합">
+															</span>
+														</div>
+														<div class="ani ani_3">
+															<span class="img_box">
+																<img src="../../../resource/image/contents/car/intro_car_ani1.png" alt="2.5톤 이하 화물">
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- //2022-04-13 수정 : 상품소개 애니메이션 추가에 따른 마크업 수정 -->
+										</div>
+
+										<div class="layoutline_light"></div>
+										
+										
+										<dl class="small_title_pack">
+											<dt>금리</dt>
+											<dd><b>연 5.5% ~  19.9%</b></dd>
+											<dd>·고객의 개인신용평점 등에 따라 금리가 차등 적용됩니다.</dd>
+										</dl>
+
+										<dl class="small_title_pack">
+											<dt>한도</dt>
+											<dd>차량가격 이내</dd>
+										</dl>
+										<dl class="small_title_pack">
+											<dt>기간</dt>
+											<dd>12, 24, 36, 48, 60 개월</dd>
+	<!-- 										<dd>18, 24, 36, 44, 48, 60 개월</dd> -->
+										</dl>
+										<div class="loan_info_part">
+											<div class="loan_info_pack">
+												<div class="title">신청 프로세스</div>
+												<ul class="process_list ty_intro">
+													<li>
+														<div class="title_wrap">
+															<span class="num">1</span>
+															<p class="title">상담신청</p>
+														</div>
+													</li>
+													<li>
+														<div class="title_wrap">
+															<span class="num">2</span>
+															<p class="title">상담원 연락</p>
+														</div>
+													</li>
+													<li>
+														<div class="title_wrap">
+															<span class="num">3</span>
+															<p class="title">한도확인</p>
+														</div>
+													</li>
+													<li>
+														<div class="title_wrap">
+															<span class="num">4</span>
+															<p class="title">약정서 작성(온라인 약정)</p>
+														</div>
+													</li>
+													<li>
+														<div class="title_wrap">
+															<span class="num">5</span>
+															<p class="title">계약실행</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<!-- <div class="base_date">2021년 07월 01일 기준</div> --><!-- 2022-04-28 수정 : 기준날짜 수정 -->
+										<div class="base_date">2022년 06월 28일 기준</div><!-- 퍼블리싱과 상이 -->
+									</div>
+
+								</li>
+								<li role="tabpanel">
+									<div class="intro_part">
+										<!-- 2022-05-02 수정 : 상세정보 내용 수정 -->
+										<dl class="small_title_pack">
+											<dt>취급수수료</dt>
+											<dd>없음</dd><!-- 2022-05-13 수정 : 텍스트변경 -->
+										</dl>
+										<dl class="small_title_pack">
+											<dt>중도상환수수료율</dt>
+											<dd>2.0 % 이내</dd>
+											<dd>
+												<div class="bullet_pack">
+													<div class="ebbullet_title02">중도상환수수료 산식</div>
+													<div class="ebbullet_subtitle02">약정만기 1년이상</div>
+													<div class="ebbullet_text02">
+	상환원금 X 1% + 상환원금 X (중도상환수수료율 - 1%) X 잔존기간* / (대출기간-30일)</div>
+													<div class="ebbullet_subtitle02">
+	약정만기 1년미만</div>
+													<div class="ebbullet_text02">
+														 
+	상환원금 X 중도상환수수료율 X 잔존기간* / (대출기간 -30일)<br>
+														 
+	* 30일 미만 상환 시 ‘대출 사용기간’을 30일로 간주합니다.<br>
+														<span class="color01"> 
+	단, 대출계약이 성립한 날부터 3년 이후 상환 시 중도상환수수료 면제 (할부/리스 제외)</span>
+													</div>
+												</div>
+											</dd>
+										</dl>
+										<dl class="small_title_pack">
+											<dt>부대비용</dt>
+											<dd>근저당설정 시 해지 비용은 고객 부담이며,<br>인지세는 당사와 고객이 50%씩 부담합니다.</dd><!-- 2022-05-13 수정 : 텍스트변경 -->
+										</dl>
+										<dl class="small_title_pack">
+											<dt>이자부과시기</dt>
+											<dd>매월 납부</dd>
+										</dl>
+										<dl class="small_title_pack">
+										<dt>연체이자율</dt>
+										<dd><b>약정이율 + 최대 3% (단, 법정 최고금리 이내)
+	</b></dd>
+										<!-- <dd>약정이율 + 최대 3% (단, 법정 최고금리 이내)
+	</dd> 퍼블리싱과 상이 -->
+									</dl>
+
+										<div class="table_conts_part">
+											<div class="conts_title_pack">
+												<div class="ebtitle_small">필요서류</div>
+											</div>
+											<!-- 2022-05-23 수정 : 테이블 마크업 수정 -->
+											<div class="table_info_pack">
+												<table class="ebtable">
+													<caption>필요서류</caption>
+													<colgroup>
+														<col style="width: 33%;">
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">구분</th>
+															<th scope="col">필요서류</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">공통</th>
+															<td class="txt_l">
+																<p>차량등록증사본</p>
+																<p>매매계약서</p>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">개인/<br> 개인사업자</th>
+															<td class="txt_l">
+																<p>운전면허증사본<br> (면허 유 : 신분증 대체)</p>
+																<p>주민등록등본</p>
+																<p>인감증명서</p>
+																<p>자동이체통장사본</p>
+																<p>소득증명서류</p>
+																<p>- 개인 : 소득금액증명</p>
+																<p>- 개인사업자 : 부가세표준증명</p>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">법인</th>
+															<td class="txt_l">
+																<p>법인등기부등본</p>
+																<p>법인인감증명서 / 사업자등록증사본</p>
+																<p>재무제표</p>
+																<p>주주명부</p>
+																<p>자동이체통장사본</p>
+																<p>보증인 인감증명서 / 주민등록등본 / 신분증 사본</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<!-- //2022-05-23 수정 : 테이블 마크업 수정 -->
+											<ul class="ebullet_circle">
+												<li>심사 시 추가적인 서류를 요청할 수 있습니다.</li>
+											</ul>
+										</div>
+										<!-- //2022-05-02 수정 : 상세정보 내용 수정 -->
+										<dl class="small_title_pack">
+											<dt>상환방식</dt>
+											<dd>
+												<p>원리금균등상환으로 매월 일정한 금액을 상환하는 방식</p>
+												<div class="boxing_pack">
+													<div class="img_group">
+														<div class="img_box">
+															<img src="../../../resource/image/contents/car/intro_newcar01.png" alt="1개월, 2개월, 3개월부터 만기일자까지 원금+이자를 매월 일정하게 납부하세요.">
+														</div>
+													</div>
+												</div>
+											</dd>
+										</dl>
+
+										<!-- <div class="base_date">2021년 07월 01일 기준</div> --><!-- 2022-04-28 수정 : 기준날짜 수정 -->
+										<div class="base_date">2022년 06월 28일 기준</div><!-- 퍼블리싱과 상이 -->
+										
+								</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="layoutline nopad"></div>
+
+						<div class="guide_part">
+							<div class="ebbullet_title">안내 유의사항</div>
+							<!-- 2022-05-13 수정 : 안내유의사항 내용수정 -->
+							<!-- 2022-05-27 수정 : 문구수정 -->
+							<ul class="ebullet_circle">
+								<li>계약을 체결하기 전에 금융상품설명서와 약관을 확인하시기 바랍니다.</li>
+								<li><b>상환능력에 비해 대출금이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다.</b></li>
+								<li><b>개인신용평점 하락시 금융거래와 관련된 불이익이 발생할 수 있습니다.</b></li>
+								<li>대출취급이 부적정한 경우(개인 신용평점 낮음 등) 대출이 제한될 수 있습니다.</li>
+								<li><b>일정기간 원리금(또는 대출금, 납부대금 등)을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</b></li>
+								<li>금융소비자는 금소법 제19조 제1항에 따라 해당상품 또는 서비스에 대하여 설명을 받을 권리가 있습니다.</li>
+							</ul>
+							<!-- //2022-05-27 수정 : 문구수정 -->
+							<!-- 2022-05-13 수정 : 안내유의사항 내용수정 -->
+							<div class="sub_info" id="deliberation">
+								※ 여신금융협회 심의필 제 2022 - C1h - 05091호 (2022.06.28 ~ 2023.06.27)<br>
+							</div>
+						</div>
+
+						<div class="intro_fixed_part">
+							<div class="intro_btn_box">
+								<div class="btn_box"><!-- 2022-05-09 수정 : 버튼디자인 수정으로 상하단 클래스 제거 -->
+									<div class="box_l">
+										<button type="button" id="btn_call_counsel2" class="ebbtn btn_main ty_light btn_call_counsel" data-mid="2413">전화상담신청</button>
+									</div>
+									<div class="box_r">
+										<button type="button" id="btn_apply_loan2" class="ebbtn btn_main ty_bg btn_apply_loan" data-mid="ncar">대출신청</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				<!--//사업자담부대출 컨텐츠-->
+
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+
+             
+					  <div class="intro_btn_box">
+						<div class="btn_box">
+						  <div class="box_l">
+							<button type="button" id="consulting2" class="ebbtn btn_main ty_light consulting">전화상담</button>
+						  </div>
+						  <div class="box_r">
+							<button type="button" id="apply2" class="ebbtn btn_main ty_bg apply">대출신청</button>
+						  </div>
+						</div>
+					  </div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+    //팝업호출
+    popupFunc('#tempId').show();
+</script>
+
+
+</body>
+</html>

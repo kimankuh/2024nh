@@ -99,7 +99,7 @@ function myProductsSwiper(){
                 var elParent = $(this.el).parent();
                 setSwiperPropA11y(elParent, slideLength);
                 if(slideLength <= 1){
-                    $(this.el).css('margin-bottom', '-20px');
+                    $(this.el).closest('.my_product').css('margin-bottom', 0);
                 }
             },
             slideChange: function(){
