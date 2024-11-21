@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+
+	<title>소화기설치확인서 | NH농협캐피탈</title>
+
+	<!-- Plugin JS -->
+    <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+	<script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- 개발 JS -->
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/common.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commPop.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMsg.js"></script>
+    <script type="text/javascript" src="https://m.nhcapital.co.kr/resource/common/js/commMo.js"></script>
+
+	<!-- Publishing CSS -->
+	<link rel="stylesheet" href="../../../resource/css/ui_plugin.css">
+	<link rel="stylesheet" href="../../../resource/css/ui_style.css">
+    
+	<!-- Publishing JS -->	
+	<script src="../../../resource/js/ui_plugin.js"></script>
+	<script src="../../../resource/js/ui_common.js"></script>
+	<script src="../../../resource/js/ui_common_2024.js"></script><!-- 2024고도화 전용 js -->
+</head>
+<body>
+
+<div id="layoutContent" class="layout"></div><!-- 2024-08-08 2024고도화 : 운영과 동일한 id추가 for 바텀시트 호출 -->
+
+<!--
+	◆조작가이드
+	-팝업열기 : <div class="modal_popup show">
+	-팝업닫기 : 닫기버튼에 data-action="close" 추가
+	-열려있는팝업모두닫기 : 닫기버튼에 data-action="close_all" 추가
+	-팝업삭제 : 닫기버튼에 data-action="remove" 추가
+	-팝업모두삭제 : 닫기버튼에 data-action="remove_all" 추가
+-->
+
+<div id="tempId" class="modal_popup ty_popupfull"><!-- 노출 className = show -->
+	<div class="popup_layout">
+		<div class="popup_inner">
+			<div class="popup_header">
+				<button type="button" class="ebbtn btn_modal_close" title="팝업닫기" data-action="remove"></button>
+			</div>
+
+			<div class="popup_body">
+				<div class="popup_container">
+					<div class="indemnity_part">
+						<div class="title_box">
+							<h2 class="ebtitle2">소화기 설치 확인서</h2>
+						</div>
+                        <div class="sub_title_box alR">
+                            <span class="sub_title has_underline">엔에이치농협캐피탈 주식회사 귀중</span>
+                        </div>
+						<ol>
+							<li>
+                                <p class="item_title fwb">가. 설치 확인</p>
+                                소방시설 설치 및 관리에 관한 법률 제11조(자동차에 설치 또는 비치하는 소화기)에 따른 귀사 소유의 소화기를 수령하여 설치(또는 인도시점에 설치)하였음을 확인하였습니다.
+                            </li>
+							<li>
+                                <p class="item_title fwb">나. 소화기 관리의무</p>
+                                본인은 위 소화기를 선량한 관리자의 주의로 유지·관리할 의무 및 여신전문금융업법 제34조(의무이행상의 특례)에 따라 자동차관리법 제43조 제1항 법령상 검사 등 물건의 유지·관리에 관한 각종의무를 이행할 것을 확약합니다.
+                            </li>
+						</ol>
+					</div>
+                    <p>(※ 본 확인서 교부시 소화기 관리의무를 부담하며, 소화기 분실시 책임을 부담합니다.)</p>
+				</div>
+			</div>
+
+			<div class="popup_footer">
+				<div class="popup_footer_area">
+					<button type="button" class="ebbtn btn_main ty_bg">확인하였습니다.</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	//팝업호출
+	popupFunc('#tempId').show();
+
+	//팝업닫기
+	// popupFunc('#tempId').close();
+
+	// 비동기로 들어오는 컨텐츠가 있는 경우 함수 실행
+	// pageloadFunc();
+</script>
+
+
+</body>
+</html>

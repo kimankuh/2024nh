@@ -13,6 +13,7 @@
 
 /* 공통 */
 .alL {text-align:left;}
+.alR {text-align:right;}
 .tit_big {font-size:26px;font-weight:600;}
 .text_normal {font-size:14px;font-weight:400;color:var(--grayColor02);}
 .text_point_01 {color:var(--pointColor01);}/* 토스트 포인트 컬러 */
@@ -987,3 +988,9 @@ button[type="button"] em {font-style:normal;}
     .login_intro_page .login_btns {padding-bottom:0;}
     .login_intro_page .login_btns .btn_box .box_t {margin-bottom:25px;}
 }
+
+/* 소화기 설치 확인서 */
+.sub_title_box {margin-top:40px;}
+.sub_title_box .sub_title {font-weight:500;}
+.has_underline {border-bottom: 1px solid #333;}
+.indemnity_part ol .item_title {margin-bottom:7px;}
